@@ -3,18 +3,33 @@
   "records": {
     "alcatraz-island-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Alcatraz Island's National Park Service microgrid combines a 305 kW photovoltaic array, lead-acid storage, diesel generation, bidirectional power conversion, and supervisory controls. Current federal sources document the operating concept and outcomes; the archived Princeton Power case study supplies controller and inverter detail.",
+      "status": "Operational National Park Service island microgrid; completed in 2012",
       "classification": "Island",
       "historicalLocation": "Alcatraz Island, San Francisco, CA, United States",
       "archiveCapturedAt": "2020-11-30",
       "organizations": [
         {
-          "name": "Princeton Power Systems",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "name": "National Park Service",
+          "role": "Site owner and microgrid operator",
           "sourceIds": [
-            "archive"
+            "doe-alcatraz",
+            "nps-alcatraz"
+          ]
+        },
+        {
+          "name": "Princeton Power Systems",
+          "role": "Power-conversion and microgrid-control supplier",
+          "sourceIds": [
+            "original-1"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy Federal Energy Management Program",
+          "role": "Feasibility, design-review, and performance-assessment support",
+          "sourceIds": [
+            "doe-alcatraz"
           ]
         }
       ],
@@ -32,15 +47,102 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Verified solar PV rating",
+          "value": "305 kW",
+          "sourceIds": [
+            "doe-alcatraz"
+          ]
+        },
+        {
+          "label": "PV module count",
+          "value": "959 panels",
+          "sourceIds": [
+            "nps-alcatraz"
+          ]
+        },
+        {
+          "label": "Typical island demand",
+          "value": "Approximately 70–80 kW",
+          "sourceIds": [
+            "nps-alcatraz"
+          ]
+        },
+        {
+          "label": "Reported annual electricity production",
+          "value": "Approximately 400,000 kWh",
+          "sourceIds": [
+            "doe-alcatraz"
+          ]
+        },
+        {
+          "label": "Reported diesel reduction",
+          "value": "Approximately 75%",
+          "sourceIds": [
+            "doe-alcatraz",
+            "nps-alcatraz"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Microgrid controller",
+          "manufacturer": "Princeton Power Systems",
+          "model": "PPS Site Controller",
+          "detail": "Coordinates solar, battery, and diesel resources and starts diesel generation when renewable energy and stored energy cannot meet load.",
+          "sourceIds": [
+            "original-1",
+            "nps-alcatraz"
+          ]
+        },
+        {
+          "category": "Bidirectional inverters",
+          "manufacturer": "Princeton Power Systems",
+          "model": "GTIB-100",
+          "detail": "The archived manufacturer case study identifies eight 100 kW-class power-conversion units; the federal page does not restate the model count.",
+          "sourceIds": [
+            "original-1"
+          ]
+        },
+        {
+          "category": "Battery storage",
+          "detail": "Lead-acid battery bank. The reviewed sources do not disclose a battery manufacturer or cell model.",
+          "sourceIds": [
+            "archive",
+            "nps-alcatraz"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Storage",
           "detail": "Lead Acid Battery Bank",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Dispatch sequence",
+          "detail": "The controller prioritizes photovoltaic production, then battery energy, and calls diesel generation when those resources cannot support island load.",
+          "sourceIds": [
+            "nps-alcatraz"
+          ]
+        },
+        {
+          "category": "Source reconciliation",
+          "detail": "DOE reports a verified 305 kW array, while the recovered directory listed 400 kW; both values are preserved with provenance instead of silently selecting one.",
+          "sourceIds": [
+            "doe-alcatraz",
+            "archive"
+          ]
+        },
+        {
+          "category": "Disclosure gap",
+          "detail": "Public federal sources do not identify the PV-module, battery-cell, diesel-genset, switchgear, or communications-network model numbers.",
+          "sourceIds": [
+            "doe-alcatraz",
+            "nps-alcatraz"
           ]
         }
       ],
@@ -60,6 +162,20 @@
           "publisher": "princetonpower.com",
           "kind": "archive",
           "capturedAt": "2020-11-30"
+        },
+        {
+          "id": "doe-alcatraz",
+          "title": "Alcatraz Island",
+          "url": "https://www.energy.gov/cmei/femp/alcatraz-island",
+          "publisher": "U.S. Department of Energy Federal Energy Management Program",
+          "kind": "primary"
+        },
+        {
+          "id": "nps-alcatraz",
+          "title": "Sustainable Alcatraz",
+          "url": "https://www.nps.gov/goga/learn/nature/sustainable-alcatraz.htm",
+          "publisher": "National Park Service",
+          "kind": "primary"
         }
       ]
     },
@@ -3110,18 +3226,90 @@
     },
     "de-grussa-copper-mine-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": null,
+      "coverage": "detailed",
+      "summary": "DeGrussa was a utility-scale off-grid mine hybrid: 10.6 MW AC of single-axis-tracking PV, a 6 MW battery, and an existing 19 MW diesel station serving an 11–13 MW continuous mine load. ARENA's final knowledge report documents the integration controls, operating reserves, participants, and a field communications failure down to the named controller bridge.",
+      "status": "Commissioned in June 2016 for the DeGrussa mine; post-mine operating status is not established by the cited project reports",
       "classification": null,
       "historicalLocation": "DeGrussa Copper Mine, Sandfire Resources, Meekatharra, Western Australia, Australia",
       "archiveCapturedAt": "2020-07-05",
       "organizations": [
         {
+          "name": "ABB",
+          "role": "Battery control-system supplier identified in the commissioning report",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "name": "Australian Renewable Energy Agency",
+          "role": "Project funding and knowledge-sharing agency",
+          "sourceIds": [
+            "arena-degrussa",
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "name": "ComAp",
+          "role": "InteliSys communications-bridge supplier",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "name": "DeGrussa Solar Project Pty Ltd",
+          "role": "ARENA project lead and project company",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
           "name": "Juwi",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "juwi AG",
+          "role": "Project partner",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
+          "name": "juwi Renewable Energy Pty Ltd",
+          "role": "Hybrid-system developer, EPC integrator, and knowledge-report author",
+          "sourceIds": [
+            "arena-degrussa",
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "name": "Kalgoorlie Power Systems",
+          "role": "Owner and operator of the existing 19 MW diesel power station",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
+          "name": "Neoen",
+          "role": "Solar-battery project owner in the cited operating period",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
+          "name": "OTOC Limited",
+          "role": "Construction partner",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
+          "name": "Sandfire Resources NL",
+          "role": "Mine owner and solar power purchaser",
+          "sourceIds": [
+            "arena-degrussa"
           ]
         }
       ],
@@ -3146,10 +3334,116 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Solar PV",
+          "value": "10.6 MW AC, single-axis tracking",
+          "sourceIds": [
+            "arena-degrussa",
+            "juwi-degrussa"
+          ]
+        },
+        {
+          "label": "PV module count",
+          "value": "Approximately 34,000 modules",
+          "sourceIds": [
+            "juwi-degrussa"
+          ]
+        },
+        {
+          "label": "Battery power",
+          "value": "6 MW",
+          "sourceIds": [
+            "arena-degrussa-report",
+            "juwi-degrussa"
+          ]
+        },
+        {
+          "label": "Existing diesel station",
+          "value": "19 MW",
+          "sourceIds": [
+            "arena-degrussa"
+          ]
+        },
+        {
+          "label": "Continuous mine load",
+          "value": "Approximately 11–13 MW",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "label": "Battery transformer",
+          "value": "One 5 MVA transformer",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "label": "Reported annual solar production",
+          "value": "Approximately 20.4 GWh",
+          "sourceIds": [
+            "juwi-degrussa"
+          ]
         }
       ],
-      "equipment": [],
-      "technicalDetails": [],
+      "equipment": [
+        {
+          "category": "Controller communications bridge",
+          "manufacturer": "ComAp",
+          "model": "InteliSys Bridge",
+          "detail": "Interfaces plant controls; the knowledge report traces intermittent commissioning communications failures to outdated bridge firmware.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "category": "Battery control system",
+          "manufacturer": "ABB",
+          "detail": "Named in the knowledge report's controller-communications incident; the exact ABB product model is not disclosed.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "category": "Battery transformer",
+          "detail": "Single 5 MVA battery transformer; manufacturer and model are not stated in the reviewed report.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "category": "Plant integration controls",
+          "manufacturer": "juwi",
+          "detail": "Coordinates PV, battery, and diesel operating constraints; the cited reports do not name a commercial software release.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "category": "Operating reserve",
+          "detail": "The operating philosophy maintained spinning reserve equal to 1 MW plus 85% of instantaneous PV output across battery and diesel resources.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "category": "Grid support",
+          "detail": "The battery provides ramp-rate control, frequency support, reactive-power control, voltage support, and spinning reserve for the isolated mine grid.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        },
+        {
+          "category": "Commissioning lesson",
+          "detail": "A controller communications fault was resolved by updating ComAp InteliSys Bridge firmware, a rare publicly documented field-level integration detail.",
+          "sourceIds": [
+            "arena-degrussa-report"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -3166,6 +3460,27 @@
           "publisher": "microgridmedia.com",
           "kind": "archive",
           "capturedAt": "2020-07-05"
+        },
+        {
+          "id": "arena-degrussa",
+          "title": "DeGrussa Solar Project",
+          "url": "https://arena.gov.au/projects/degrussa-solar-project/",
+          "publisher": "Australian Renewable Energy Agency",
+          "kind": "primary"
+        },
+        {
+          "id": "arena-degrussa-report",
+          "title": "DeGrussa Solar Project Knowledge Sharing Report",
+          "url": "https://arena.gov.au/assets/2017/05/juwi_ARENA-DeGrussa-Knowledge-Sharing-Reports_170309_Rev2.pdf",
+          "publisher": "juwi / Australian Renewable Energy Agency",
+          "kind": "primary"
+        },
+        {
+          "id": "juwi-degrussa",
+          "title": "Solar Hybrid Power Plant DeGrussa",
+          "url": "https://www.juwi.com/references/project-stories/article/solar-hybrid-power-plant-degrussa",
+          "publisher": "juwi",
+          "kind": "primary"
         }
       ]
     },
@@ -4681,18 +4996,124 @@
     },
     "fort-carson-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Fort Carson hosted Phase 2 of the U.S. SPIDERS cybersecure microgrid program. The seven-building demonstration combined existing diesel assets, part of a 2 MW PV field, five vehicle-to-grid electric vehicles, motor-operated switching, and IPERC's distributed control architecture; DOE's transition report documents both equipment and black-start sequence.",
+      "status": "SPIDERS Phase 2 demonstration completed in 2013; current field configuration is not established by the cited transition report",
       "classification": "Military",
       "historicalLocation": "Fort Carson, CO, United States",
       "archiveCapturedAt": "2020-07-06",
       "organizations": [
         {
+          "name": "Boulder Electric Vehicle",
+          "role": "Supplier of two vehicle-to-grid electric vehicles",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Coritech Services",
+          "role": "Bidirectional high-capacity EV charger manufacturer",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Idaho National Laboratory",
+          "role": "SPIDERS national-laboratory technical support",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "IPERC",
+          "role": "Distributed microgrid-control designer and master-controller supplier",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "National Renewable Energy Laboratory",
+          "role": "SPIDERS national-laboratory technical support",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Oak Ridge National Laboratory",
+          "role": "SPIDERS national-laboratory technical support",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Pacific Northwest National Laboratory",
+          "role": "SPIDERS national-laboratory technical support",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Sandia National Laboratories",
+          "role": "SPIDERS national-laboratory technical support",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "Smith Electric Vehicles",
+          "role": "Supplier of three vehicle-to-grid electric vehicles",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
           "name": "Spiders",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "U.S. Army ERDC-CERL",
+          "role": "Military-facilities research and technical partner",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "U.S. Army Fort Carson",
+          "role": "Host installation and system operator",
+          "sourceIds": [
+            "doe-spiders-report",
+            "doe-spiders-presentation"
+          ]
+        },
+        {
+          "name": "U.S. Army TARDEC",
+          "role": "Vehicle-to-grid integration partner",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "U.S. Department of Defense",
+          "role": "SPIDERS co-sponsor",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy",
+          "role": "SPIDERS co-sponsor and technical-transition lead",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "name": "U.S. Department of Homeland Security",
+          "role": "SPIDERS cybersecurity and resilience partner",
+          "sourceIds": [
+            "doe-spiders-report"
           ]
         }
       ],
@@ -4710,10 +5131,102 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Critical load",
+          "value": "Approximately 1.1 MW across seven buildings",
+          "sourceIds": [
+            "doe-spiders-presentation",
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "label": "Priority load",
+          "value": "Approximately 1 MW",
+          "sourceIds": [
+            "doe-spiders-presentation"
+          ]
+        },
+        {
+          "label": "Existing diesel capacity",
+          "value": "Approximately 3.25 MVA across three directly connected assets",
+          "sourceIds": [
+            "doe-spiders-presentation",
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "label": "Solar connected to microgrid",
+          "value": "1 MW from an existing 2 MW field; 500 kW was available during the cited demonstration",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "label": "Vehicle-to-grid fleet",
+          "value": "Five EVs and five bidirectional chargers",
+          "sourceIds": [
+            "doe-spiders-report",
+            "doe-spiders-presentation"
+          ]
         }
       ],
-      "equipment": [],
-      "technicalDetails": [],
+      "equipment": [
+        {
+          "category": "Microgrid control system",
+          "manufacturer": "IPERC",
+          "detail": "Distributed intelligent power controllers, master control, HMI/GUI, and supervisory cybersecurity functions; the Fort Carson report does not give a product model.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "category": "Bidirectional EV chargers",
+          "manufacturer": "Coritech Services",
+          "detail": "Five high-capacity bidirectional chargers used the EV fleet as controllable generation and storage resources.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "category": "Vehicle-to-grid EVs",
+          "manufacturer": "Smith Electric Vehicles / Boulder Electric Vehicle",
+          "detail": "Three Smith and two Boulder vehicles participated in the demonstration; individual battery-pack models are not reported.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "category": "Distribution switching",
+          "detail": "Motor-operated sectionalizing switches, generator bypass breakers, automatic synchronizers, and a neutral-deriving transformer enabled island formation; manufacturers are not consistently disclosed.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "category": "Black start",
+          "detail": "The microgrid formed in roughly ten minutes; PV inverters required an additional five to ten minutes before reconnecting to the islanded bus.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "category": "Control architecture",
+          "detail": "IPERC's distributed controllers coordinated local assets under a supervisory master controller instead of relying on one central field I/O point.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        },
+        {
+          "category": "Renewable availability",
+          "detail": "The design connected 1 MW of the 2 MW PV field, but the final demonstration had only 500 kW available; the page keeps design and test conditions separate.",
+          "sourceIds": [
+            "doe-spiders-report"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -4722,6 +5235,20 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2020-07-06"
+        },
+        {
+          "id": "doe-spiders-report",
+          "title": "SPIDERS Phase 2 Fort Carson Technology Transition Consolidated Report",
+          "url": "https://www.energy.gov/sites/prod/files/2015/05/f22/spiders_phase2_report.pdf",
+          "publisher": "U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "doe-spiders-presentation",
+          "title": "SPIDERS: Smart Power Infrastructure Demonstration for Energy Reliability and Security",
+          "url": "https://www.energy.gov/sites/prod/files/2015/11/f27/fupwg_fall2015_johnson.pdf",
+          "publisher": "U.S. Department of Energy",
+          "kind": "primary"
         }
       ]
     },
@@ -6052,18 +6579,49 @@
     },
     "hartley-bay-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Hartley Bay was Canada's first smart remote microgrid demonstration, adding demand-response controls and feeder instrumentation to the Gitga'at Nation's diesel system. Government technical papers document the generator sizes, 600 V-to-25 kV distribution architecture, controllable building loads, and project collaborators in substantially more detail than the recovered directory.",
+      "status": "Smart remote microgrid demonstration commissioned; cited 2012–2013 reports do not establish the current control configuration",
       "classification": "Community",
       "historicalLocation": "Hartley Bay, BC, Canada",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
-          "name": "Pulse Energy",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "name": "Aboriginal Affairs and Northern Development Canada",
+          "role": "Federal project collaborator",
           "sourceIds": [
-            "archive"
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "name": "Gitga'at First Nation",
+          "role": "Community host and local system stakeholder",
+          "sourceIds": [
+            "nrcan-hartley",
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "name": "Government of British Columbia",
+          "role": "Project collaborator",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "name": "Natural Resources Canada CanmetENERGY",
+          "role": "Project lead, research, and technical integration",
+          "sourceIds": [
+            "nrcan-hartley",
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "name": "Pulse Energy",
+          "role": "Energy-management and load-control technology collaborator",
+          "sourceIds": [
+            "nrcan-hartley",
+            "nrcan-hartley-paper"
           ]
         }
       ],
@@ -6088,9 +6646,81 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Diesel generation",
+          "value": "Two 420 kW gensets plus one 210 kW genset (1.05 MW total)",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Primary generator bus",
+          "value": "600 V",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Community distribution",
+          "value": "Approximately 2 km at 25 kV, stepped down to 120/240/208 V",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Distribution transformers",
+          "value": "25 kVA and 50 kVA units",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Community scale",
+          "value": "Approximately 170 residents and 82 buildings in the project report",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Annual electricity consumption",
+          "value": "Approximately 2 GWh",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "label": "Controllable winter load",
+          "value": "Approximately 20% of winter peak",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Load controllers",
+          "detail": "Networked controllers and adjustable 30 A thermostats were deployed at the school, health clinic, and community centre; commercial model numbers are not disclosed.",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "category": "Energy-management system",
+          "manufacturer": "Pulse Energy",
+          "detail": "Monitoring and load-management system added or removed controllable loads according to a system-efficiency algorithm.",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "category": "Distribution system",
+          "detail": "600 V generation, step-up to 25 kV community distribution, and building-level step-down service. Transformer and genset manufacturers are not named.",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
@@ -6105,6 +6735,36 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Demand response",
+          "detail": "The controller shifted thermostatically controlled building loads according to generator efficiency and available system margin rather than using battery storage.",
+          "sourceIds": [
+            "nrcan-hartley-paper"
+          ]
+        },
+        {
+          "category": "Reported result",
+          "detail": "The recovered project page reported a 61.3 kW peak reduction and about 77,000 litres of annual diesel savings; these remain archive-sourced figures.",
+          "sourceIds": [
+            "archive"
+          ]
+        },
+        {
+          "category": "Source reconciliation",
+          "detail": "The government paper documents 1.05 MW of installed diesel generation; the recovered directory's 3 MW figure is retained separately and should not be treated as the same verified configuration.",
+          "sourceIds": [
+            "nrcan-hartley-paper",
+            "archive"
+          ]
+        },
+        {
+          "category": "Hydro status",
+          "detail": "The reviewed smart-microgrid papers do not document an operating 900 kW hydro plant, so the recovered hydro value is not presented as installed equipment.",
+          "sourceIds": [
+            "nrcan-hartley-paper",
+            "archive"
+          ]
         }
       ],
       "sources": [
@@ -6115,6 +6775,27 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "nrcan-hartley",
+          "title": "First Canadian Smart Remote Microgrid: Hartley Bay, BC",
+          "url": "https://natural-resources.canada.ca/maps-tools-publications/publications/first-canadian-smart-remote-microgrid-hartley-bay-bc",
+          "publisher": "Natural Resources Canada",
+          "kind": "primary"
+        },
+        {
+          "id": "nrcan-hartley-paper",
+          "title": "The First Canadian Smart Remote Microgrid: Hartley Bay, BC",
+          "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/canmetenergy/files/pubs/2013-035_en.pdf",
+          "publisher": "Natural Resources Canada CanmetENERGY",
+          "kind": "primary"
+        },
+        {
+          "id": "nrcan-hartley-report",
+          "title": "Hartley Bay Smart Microgrid technical report",
+          "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/canmetenergy/files/pubs/2012-177-eng.pdf",
+          "publisher": "Natural Resources Canada CanmetENERGY",
+          "kind": "primary"
         }
       ]
     },
@@ -12531,18 +13212,47 @@
     },
     "ramea-newfoundland-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Ramea's isolated power system evolved from a wind-diesel installation into a 2007–2011 wind-hydrogen-diesel research initiative. A peer-reviewed open-access engineering paper supplies rare component-level detail—including Caterpillar diesel ratings, Windmatic turbine generator sizes, capacitor banks, dump load, and governor modes—while the provincial record defines the later hydrogen scope.",
+      "status": "Historical wind-hydrogen research configuration; current hydrogen-system operation is not claimed",
       "classification": "Community",
       "historicalLocation": "Ramea, NL, Canada",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
+          "name": "Caterpillar",
+          "role": "Diesel generator manufacturer",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "name": "Environment Canada",
+          "role": "Operating-data contributor acknowledged by the engineering study",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
           "name": "Frontier Power Systems",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Participant named in the recovered project record; precise contractual role was not recovered",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "Newfoundland and Labrador Hydro",
+          "role": "Project proponent, isolated-system owner, and operating-data provider",
+          "sourceIds": [
+            "nl-ramea",
+            "ramea-paper"
+          ]
+        },
+        {
+          "name": "Windmatic",
+          "role": "Wind turbine manufacturer",
+          "sourceIds": [
+            "ramea-paper"
           ]
         }
       ],
@@ -12553,15 +13263,125 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Diesel generation",
+          "value": "Three 925 kW, 4.16 kV, 1,200 rpm generator sets",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Original wind plant",
+          "value": "Six Windmatic WM15S turbines; each carries 65 kW and 13 kW induction generators",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Later wind addition described by paper",
+          "value": "Three 100 kW wind turbines",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Controllable dump load",
+          "value": "200 kW",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Reactive compensation",
+          "value": "Six 30 kvar capacitor banks",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Typical load",
+          "value": "Approximately 650 kW average; reported winter peak up to 1.1 MW",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "label": "Hydrogen project period",
+          "value": "2007–2011 research initiative",
+          "sourceIds": [
+            "nl-ramea"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Diesel generator sets",
+          "manufacturer": "Caterpillar",
+          "model": "D3512 / 3512",
+          "detail": "Three 925 kW, 4.16 kV units at 1,200 rpm with AVR and governor controls; the paper also identifies the 1,400 hp 3512 engine family.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Wind turbines",
+          "manufacturer": "Windmatic",
+          "model": "WM15S",
+          "detail": "Six machines, each with 65 kW and 13 kW induction generators.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Diesel master control",
+          "detail": "Coordinates multiple gensets operating with speed-droop and isochronous governor modes; a commercial controller model is not given.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Hydrogen system",
+          "detail": "Electrolyser, three storage tanks, and an internal-combustion hydrogen generator were within the provincial research scope; manufacturers and model numbers are not disclosed on the cited project page.",
+          "sourceIds": [
+            "nl-ramea"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
           "detail": "• Community load 250 kW – 1,000 kW",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Generator control",
+          "detail": "Automatic voltage regulators and governor controls support droop and isochronous operation, with a diesel master controller coordinating unit commitment.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Wind integration",
+          "detail": "The original induction-generator wind plant used six switched 30 kvar capacitor banks and a 200 kW controllable dump load for isolated-grid operation.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Research boundary",
+          "detail": "The paper's 150 kW pumped-hydro system is a modeled proposal, not documented installed equipment, and is deliberately excluded from the equipment list.",
+          "sourceIds": [
+            "ramea-paper"
+          ]
+        },
+        {
+          "category": "Hydrogen configuration",
+          "detail": "Provincial filings describe wind-powered electrolysis, hydrogen storage, and later electricity production through an internal-combustion hydrogen generator.",
+          "sourceIds": [
+            "nl-ramea"
           ]
         }
       ],
@@ -12573,6 +13393,20 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "nl-ramea",
+          "title": "Ramea Wind-Hydrogen Diesel Project",
+          "url": "https://www.gov.nl.ca/eccc/projects/project-1357/",
+          "publisher": "Government of Newfoundland and Labrador",
+          "kind": "primary"
+        },
+        {
+          "id": "ramea-paper",
+          "title": "Increasing wind energy penetration level using pumped hydro storage in island micro-grid system",
+          "url": "https://link.springer.com/article/10.1186/2251-6832-3-9",
+          "publisher": "International Journal of Energy and Environmental Engineering",
+          "kind": "primary"
         }
       ]
     },
@@ -15002,18 +15836,145 @@
     },
     "tilos-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Planning",
+      "coverage": "detailed",
+      "summary": "Tilos is an EU Horizon 2020 smart-island demonstrator built around an 800 kW wind turbine, 160 kW of PV, and an 800 kW / 2.88 MWh sodium-nickel-chloride battery. The CORDIS record identifies the coordinator and full consortium, while an open-access engineering paper documents battery modules, inverter models, transformers, and grid-connected/islanded operating modes.",
+      "status": "Horizon 2020 project closed in January 2019; hybrid station described in the 2021 engineering paper",
       "classification": "Community",
       "historicalLocation": "Tilos, Greece",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
+          "name": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
+          "role": "Research consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Eunice Ferousa S.A.",
+          "role": "Greek energy-company consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Eurosol Projekt und Management GmbH",
+          "role": "Project-development consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Hellenic Electricity Distribution Network Operator (HEDNO / DEDDIE)",
+          "role": "Distribution-system operator and consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Indrivetec AG",
+          "role": "Battery inverter supplier",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "name": "Instituto Tecnológico de Canarias",
+          "role": "Island-energy research consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "KTH Royal Institute of Technology",
+          "role": "Academic consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Open Energi Limited",
+          "role": "Demand-side-management consortium participant; participation ended",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "RWTH Aachen University",
+          "role": "Academic consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Schleswig-Holstein Netz AG",
+          "role": "Distribution-network consortium participant; participation ended",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "SMA Solar Technology AG",
+          "role": "Consortium participant; participation ended before project close",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "SONICK S.p.A. / FZSoNick",
+          "role": "NaNiCl2 battery manufacturer and consortium participant",
+          "sourceIds": [
+            "cordis-tilos",
+            "tilos-paper"
+          ]
+        },
+        {
+          "name": "Uniper Technologies GmbH",
+          "role": "Third-party technical participant; participation ended",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "Université de Corse Pascal Paoli",
+          "role": "Academic and island-platform consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "University of East Anglia",
+          "role": "Academic consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "University of West Attica",
+          "role": "Horizon 2020 project coordinator",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "name": "WWF Greece",
+          "role": "Environmental and public-engagement consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
           "name": "Younicos",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "Younicos GmbH",
+          "role": "Energy-storage and control-technology consortium participant",
+          "sourceIds": [
+            "cordis-tilos"
           ]
         }
       ],
@@ -15024,15 +15985,128 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Wind generation",
+          "value": "800 kW",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "label": "Solar PV",
+          "value": "160 kW",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "label": "Battery energy storage",
+          "value": "800 kW / 2.88 MWh NaNiCl2",
+          "sourceIds": [
+            "tilos-paper",
+            "cordis-tilos"
+          ]
+        },
+        {
+          "label": "Battery containers",
+          "value": "Two 20-foot containers, each with 64 parallel FZSoNick ST523 modules",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "label": "Battery inverters",
+          "value": "Two 500 kVA units",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "label": "Battery transformers",
+          "value": "Two 630 kVA, 20/0.3 kV transformers",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "label": "Horizon 2020 project cost",
+          "value": "€13.75 million total; €11.01 million EU contribution",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Battery modules",
+          "manufacturer": "FZSoNick / SONICK S.p.A.",
+          "model": "ST523",
+          "detail": "128 sodium-nickel-chloride modules arranged as 64 parallel modules in each of two 20-foot battery containers.",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "category": "Battery inverters",
+          "manufacturer": "Indrivetec",
+          "model": "SOLO S 500",
+          "detail": "Two 500 kVA bidirectional inverter systems couple the battery containers to the plant.",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "category": "Battery transformers",
+          "detail": "Two 630 kVA, 20/0.3 kV units; the academic paper does not identify their manufacturer or model.",
+          "sourceIds": [
+            "tilos-paper"
+          ]
+        },
+        {
+          "category": "Smart-grid control system",
+          "detail": "Optimizes storage for renewable penetration, stability, guaranteed exports, and ancillary services; the reviewed sources do not provide a commercial controller model.",
+          "sourceIds": [
+            "cordis-tilos",
+            "tilos-paper"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
           "detail": "Planned Assets: Diesel, Solar, Storage",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Operating modes",
+          "detail": "The hybrid station supports both grid-connected operation with the Kos-Kalymnos system and autonomous island operation.",
+          "sourceIds": [
+            "cordis-tilos",
+            "tilos-paper"
+          ]
+        },
+        {
+          "category": "Demand flexibility",
+          "detail": "The research program integrated demand-side management and distributed domestic-hot-water thermal storage with the electrical microgrid.",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "category": "Storage services",
+          "detail": "The battery was designed for energy management, renewable maximization, grid stability, guaranteed export, and ancillary services.",
+          "sourceIds": [
+            "cordis-tilos"
+          ]
+        },
+        {
+          "category": "Consortium record",
+          "detail": "CORDIS lists the coordinator, 16 participating organizations, ended participations, and a third-party entity; the page preserves those distinctions.",
+          "sourceIds": [
+            "cordis-tilos"
           ]
         }
       ],
@@ -15060,6 +16134,20 @@
           "publisher": "tilos.gr",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "cordis-tilos",
+          "title": "TILOS: Technology Innovation for the Local Scale, Optimum Integration of Battery Energy Storage",
+          "url": "https://cordis.europa.eu/project/id/646529",
+          "publisher": "European Commission CORDIS",
+          "kind": "primary"
+        },
+        {
+          "id": "tilos-paper",
+          "title": "Supporting the Clean Electrification for Remote Islands: The Case of the Greek Tilos Island",
+          "url": "https://www.mdpi.com/1996-1073/14/5/1336",
+          "publisher": "Energies",
+          "kind": "primary"
         }
       ]
     },
@@ -16771,9 +17859,9 @@
     },
     "thabazimbi-chrome-mine-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "The Thabazimbi chrome-mine hybrid power plant couples a 1 MW photovoltaic field to two 800 kVA diesel generators. SMA's official project sheet identifies all 63 inverter units, the Fuel Save Controller, nominal inverter capacity, planner/EPC entities, commissioning date, and expected annual generation.",
+      "status": "Commissioned in November 2012; present mine operating status not independently confirmed",
       "classification": "Mining",
       "historicalLocation": "Thabazimbi, Limpopo, South Africa",
       "archiveCapturedAt": "2020-07-06",
@@ -16786,10 +17874,40 @@
           ]
         },
         {
+          "name": "Cronimet Chrome Mining SA (Pty) Ltd.",
+          "role": "Mine and hybrid-power-system operator",
+          "sourceIds": [
+            "sma-thabazimbi-sheet",
+            "sma-thabazimbi-page"
+          ]
+        },
+        {
           "name": "SMA",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "SMA Solar Technology",
+          "role": "PV inverter and Fuel Save Controller supplier",
+          "sourceIds": [
+            "sma-thabazimbi-sheet",
+            "sma-thabazimbi-page"
+          ]
+        },
+        {
+          "name": "Solea AG",
+          "role": "Project planning and realization",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "name": "Solea Renewables (Pty) Ltd.",
+          "role": "South African project planning and realization partner",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
           ]
         }
       ],
@@ -16807,15 +17925,92 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Solar PV",
+          "value": "1 MW",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "label": "PV inverter fleet",
+          "value": "63 Sunny Tripower 17000TL units; 1,071 kVA nominal aggregate",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "label": "Diesel generation",
+          "value": "Two 800 kVA generators",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "label": "Expected solar generation",
+          "value": "Up to 1.8 GWh per year",
+          "sourceIds": [
+            "sma-thabazimbi-sheet",
+            "sma-thabazimbi-page"
+          ]
+        },
+        {
+          "label": "Expected diesel reduction",
+          "value": "Up to 450,000 litres per year",
+          "sourceIds": [
+            "sma-thabazimbi-page"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "PV inverters",
+          "manufacturer": "SMA Solar Technology",
+          "model": "Sunny Tripower 17000TL",
+          "detail": "63 units with 1,071 kVA aggregate nominal capacity.",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "category": "Hybrid controller",
+          "manufacturer": "SMA Solar Technology",
+          "model": "Fuel Save Controller",
+          "detail": "One controller balances PV output against mine load and diesel operating requirements.",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "category": "Diesel generators",
+          "detail": "Two 800 kVA units; manufacturer and genset model are not disclosed in SMA's project sheet.",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Generation",
           "detail": " Inverter: 63 STP 17000 + FSC1",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Control objective",
+          "detail": "The Fuel Save Controller supervises renewable penetration while maintaining the operating reserve and stability requirements of the isolated diesel grid.",
+          "sourceIds": [
+            "sma-thabazimbi-sheet"
+          ]
+        },
+        {
+          "category": "Disclosure gap",
+          "detail": "The reviewed official sources do not name PV modules, diesel genset models, communications protocols, protection relays, or switchgear.",
+          "sourceIds": [
+            "sma-thabazimbi-sheet",
+            "sma-thabazimbi-page"
           ]
         }
       ],
@@ -16827,6 +18022,20 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2020-07-06"
+        },
+        {
+          "id": "sma-thabazimbi-sheet",
+          "title": "Thabazimbi, South Africa: PV Diesel Hybrid System",
+          "url": "https://www.sma-america.com/fileadmin/content/www.sma-america.com/references/large-scale/Africa/Thabazimbi__South_Africa/REFTHABAZIMBI-AEN131110.pdf?v=1654594335",
+          "publisher": "SMA Solar Technology",
+          "kind": "primary"
+        },
+        {
+          "id": "sma-thabazimbi-page",
+          "title": "Thabazimbi, South Africa",
+          "url": "https://www.sma.de/referenzen/thabazimbi-suedafrika",
+          "publisher": "SMA Solar Technology",
+          "kind": "primary"
         }
       ]
     }

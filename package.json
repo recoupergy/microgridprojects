@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "audit:legacy": "node scripts/audit-legacy-routes.mjs",
     "start": "next start",
     "lint": "eslint ."
   },

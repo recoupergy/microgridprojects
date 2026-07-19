@@ -90,6 +90,17 @@ function mergeSpecifications(base, additions) {
   });
 }
 
+function mergeTechnicalDetails(base, additions) {
+  const all = [...base, ...(additions ?? [])];
+  const seen = new Set();
+  return all.filter((item) => {
+    const key = `${item.category}:${item.detail}`.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 const records = {};
 for (const record of legacy.records) {
   const manual = overrides[record.slug] ?? {};
@@ -102,7 +113,7 @@ for (const record of legacy.records) {
     (record.specifications ?? []).map((item) => ({ label: cleanText(item.label), value: cleanText(item.value), sourceIds: ["archive"] })),
     manual.specifications,
   );
-  const technicalDetails = historicalDetails(record);
+  const technicalDetails = mergeTechnicalDetails(historicalDetails(record), manual.technicalDetails);
   const evidenceCount = organizations.length + specifications.length + technicalDetails.length + (manual.equipment ?? []).length;
   const coverage = evidenceCount >= 7 && organizations.length ? "detailed" : evidenceCount > 0 ? "partial" : "limited";
   const classificationParts = cleanText(record.classification ?? "").split("·").map((item) => item.trim()).filter(Boolean);
