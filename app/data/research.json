@@ -7664,9 +7664,9 @@
     },
     "intelligent-dc-microgrid-living-lab": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Feasibility",
+      "coverage": "detailed",
+      "summary": "Aalborg University's iDClab was a 2014–2017 research program for residential and commercial DC microgrids. Its peer-reviewed living-lab paper describes a side-by-side 380-to-12 V DC apartment and 230 V AC reference apartment, ZigBee home controls, Kamstrup multi-utility metering, renewable generation, batteries, and hydrogen-based micro-CHP.",
+      "status": "Research project finished in December 2017",
       "classification": "Building",
       "historicalLocation": "Aalborg University, Fredrik Bajers Vej, Aalborg, Denmark",
       "archiveCapturedAt": "2021-04-20",
@@ -7677,6 +7677,35 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "name": "Aalborg University / AAU Energy",
+          "role": "Danish project lead and residential living-lab host",
+          "sourceIds": [
+            "aau-idclab",
+            "idclab-paper"
+          ]
+        },
+        {
+          "name": "Danish Council for Strategic Research",
+          "role": "Project funder; university portal reports DKK 5,396,587",
+          "sourceIds": [
+            "aau-idclab"
+          ]
+        },
+        {
+          "name": "Kamstrup",
+          "role": "Smart multi-utility metering-system supplier",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "name": "North China Electric Power University",
+          "role": "Chinese project partner and industrial DC living-lab host",
+          "sourceIds": [
+            "idclab-paper"
+          ]
         }
       ],
       "specifications": [
@@ -7686,9 +7715,77 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Project period",
+          "value": "January 2014–December 2017",
+          "sourceIds": [
+            "aau-idclab"
+          ]
+        },
+        {
+          "label": "Reported Danish project funding",
+          "value": "DKK 5,396,587",
+          "sourceIds": [
+            "aau-idclab"
+          ]
+        },
+        {
+          "label": "Residential DC buses",
+          "value": "380 VDC, 48 VDC, 24 VDC, and 12 VDC",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "label": "AC comparison apartment",
+          "value": "230 V, 50 Hz",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "label": "Industrial partner-lab buses",
+          "value": "Two 750 VDC buses at North China Electric Power University",
+          "sourceIds": [
+            "idclab-paper"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Advanced metering infrastructure",
+          "manufacturer": "Kamstrup",
+          "model": "OMNIA",
+          "detail": "Integrates electricity, gas, and district-heating meters so the energy-management system can coordinate whole-building energy use.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "category": "Home-area communications",
+          "model": "ZigBee",
+          "detail": "Low-bit-rate wireless devices communicate through a gateway to the building energy-management system.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "category": "Micro-CHP research system",
+          "detail": "Electrolyser, hydrogen storage, and fuel cell provide electricity and useful heat; commercial models are not disclosed.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "category": "Renewable and electrical storage test assets",
+          "detail": "PV, small wind turbines, and batteries are included in the laboratory architecture, but the paper does not provide fielded model numbers for each asset.",
+          "sourceIds": [
+            "idclab-paper",
+            "archive"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Storage",
@@ -7717,6 +7814,34 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Experimental design",
+          "detail": "Two fully functional residential sections—one multi-bus low-voltage DC and one conventional AC—were designed for direct efficiency comparison.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "category": "Sector coupling",
+          "detail": "The EMS architecture spans electricity, gas, and district heating and can choose between battery storage and hydrogen production during renewable surplus.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
+        },
+        {
+          "category": "Research scope",
+          "detail": "The program studied design, modeling, control, coordination, communications, and management rather than documenting a commercial production microgrid.",
+          "sourceIds": [
+            "aau-idclab"
+          ]
+        },
+        {
+          "category": "Disclosure gap",
+          "detail": "The reviewed paper does not name PV modules, battery cells, DC/DC converters, fuel-cell stack, electrolyser, or central EMS software model.",
+          "sourceIds": [
+            "idclab-paper"
+          ]
         }
       ],
       "sources": [
@@ -7735,6 +7860,20 @@
           "publisher": "et.aau.dk",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "aau-idclab",
+          "title": "Intelligent DC Microgrid Living Lab",
+          "url": "https://vbn.aau.dk/en/projects/idclab-intelligent-microgrid-living-lab/",
+          "publisher": "Aalborg University Research Portal",
+          "kind": "primary"
+        },
+        {
+          "id": "idclab-paper",
+          "title": "Intelligent DC Microgrid Living Labs — A Chinese-Danish Cooperation Project",
+          "url": "https://vbn.aau.dk/files/214827024/2015_ICDCM_INTELLIGENT_DC_MICROGRID_LIVING_LABS.pdf",
+          "publisher": "IEEE International Conference on DC Microgrids / Aalborg University",
+          "kind": "primary"
         }
       ]
     },
@@ -8545,18 +8684,69 @@
     },
     "kwig-alaska-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Kwigillingok's high-penetration wind-diesel-heat microgrid uses five 95 kW Windmatic turbines, distributed electric-thermal-storage heaters, a load regulator, smart metering, Frontier's supervisory control, and a later battery integration. Alaska Energy Authority and DOE records separate the installed Kwigillingok equipment from broader Chaninik Wind Group results.",
+      "status": "Operational project in the cited state and DOE reporting periods; later technical assistance documented maintenance needs",
       "classification": "Remote",
       "historicalLocation": "Kwig Village Public Safety, Airport Road, Kwigillingok, AK, United States",
       "archiveCapturedAt": "2020-07-06",
       "organizations": [
         {
-          "name": "Frontier Power Systems",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "name": "Alaska Energy Authority",
+          "role": "State project partner and case-study publisher",
           "sourceIds": [
-            "archive"
+            "aea-kwig"
+          ]
+        },
+        {
+          "name": "Chaninik Wind Group",
+          "role": "Multi-village program organization",
+          "sourceIds": [
+            "doe-chaninik"
+          ]
+        },
+        {
+          "name": "Frontier Power Systems",
+          "role": "Microgrid control, SCADA, and battery-integration provider",
+          "sourceIds": [
+            "frontier-alaska",
+            "frontier-projects"
+          ]
+        },
+        {
+          "name": "Intelligent Energy Systems",
+          "role": "Wind-diesel technical and system-integration partner",
+          "sourceIds": [
+            "frontier-alaska"
+          ]
+        },
+        {
+          "name": "Kwigillingok Power Company",
+          "role": "Community utility and project owner",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "name": "Native Village of Kwigillingok",
+          "role": "Community and tribal project stakeholder",
+          "sourceIds": [
+            "doe-kwig-assistance"
+          ]
+        },
+        {
+          "name": "Puvurnaq Power Company",
+          "role": "Peer-utility technical-assistance provider from Kongiganak",
+          "sourceIds": [
+            "doe-kwig-assistance"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy",
+          "role": "Chaninik program funder and later technical-assistance sponsor",
+          "sourceIds": [
+            "doe-chaninik",
+            "doe-kwig-assistance"
           ]
         }
       ],
@@ -8581,9 +8771,96 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Wind generation",
+          "value": "Five 95 kW turbines; 475 kW total rated capacity",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "label": "Wind-turbine rotor",
+          "value": "17 m diameter",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "label": "Wind-turbine hub height",
+          "value": "24.4 m",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "label": "Reported wind capacity factor",
+          "value": "24.5%",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "label": "Electric thermal storage",
+          "value": "27 residential units in the Alaska Energy Authority project sheet; 20 remained in the 2019 technical-assistance account",
+          "sourceIds": [
+            "aea-kwig",
+            "doe-kwig-assistance"
+          ]
+        },
+        {
+          "label": "Project cost",
+          "value": "$3.2 million ($208,204 design; $2,991,796 construction)",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "label": "Archived battery value",
+          "value": "256 kW / 166 kWh",
+          "sourceIds": [
+            "archive"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Wind turbines",
+          "manufacturer": "Windmatic",
+          "model": "17-S",
+          "detail": "Five 95 kW units, 17 m rotor diameter, 24.4 m hub height.",
+          "sourceIds": [
+            "aea-kwig"
+          ]
+        },
+        {
+          "category": "Microgrid controller",
+          "manufacturer": "Frontier Power Systems",
+          "model": "e+micro",
+          "detail": "System master, distributed asset controllers, SCADA, and fast load-regulator functions integrate wind, diesel, thermal storage, and battery resources.",
+          "sourceIds": [
+            "frontier-alaska",
+            "frontier-projects"
+          ]
+        },
+        {
+          "category": "Electric thermal storage",
+          "detail": "Residential heat-storage units absorb surplus wind energy; manufacturer and heater model are not stated in the reviewed state project sheet.",
+          "sourceIds": [
+            "aea-kwig",
+            "doe-chaninik"
+          ]
+        },
+        {
+          "category": "Battery energy storage",
+          "detail": "Integrated in 2015 to enable diesel-off operation; the recovered record supplies power and energy values but reviewed public sources do not identify the battery or inverter manufacturer.",
+          "sourceIds": [
+            "frontier-alaska",
+            "frontier-projects",
+            "archive"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Storage",
@@ -8597,6 +8874,35 @@
           "detail": "Battery Energy Storage System (BESS) added in 2014 (260 kW x 15",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Surplus-energy dispatch",
+          "detail": "At high wind output, the smart-grid controller diverts surplus electricity to metered residential thermal-storage heaters instead of curtailing all excess generation.",
+          "sourceIds": [
+            "doe-chaninik",
+            "aea-kwig"
+          ]
+        },
+        {
+          "category": "Diesel-off operation",
+          "detail": "Frontier reports that the battery and control-system expansion allowed the community to shut down diesel generation during suitable wind and load conditions.",
+          "sourceIds": [
+            "frontier-alaska"
+          ]
+        },
+        {
+          "category": "Operational history",
+          "detail": "A 2019 assistance report found one of five turbines inoperable and arranged peer troubleshooting and Yup'ik-language resident training on thermal-storage use.",
+          "sourceIds": [
+            "doe-kwig-assistance"
+          ]
+        },
+        {
+          "category": "Program boundary",
+          "detail": "DOE's 30% power-plant fuel reduction is a multi-community Chaninik result and is not presented as a Kwigillingok-only measured value.",
+          "sourceIds": [
+            "doe-chaninik"
           ]
         }
       ],
@@ -8616,6 +8922,41 @@
           "publisher": "bullfrogpower.com",
           "kind": "archive",
           "capturedAt": "2020-07-06"
+        },
+        {
+          "id": "aea-kwig",
+          "title": "Kwigillingok Wind-Diesel Smart Grid",
+          "url": "https://akenergyauthority.org/Portals/0/What%20We%20Do/Renewable%20Energy%20and%20Energy%20Efficiency/Wind/Case%20Studies/KwigillingokWindDieselSmartGrid2016.pdf?ver=2019-06-19-133904-757",
+          "publisher": "Alaska Energy Authority",
+          "kind": "primary"
+        },
+        {
+          "id": "doe-chaninik",
+          "title": "Enhanced Efficiency of Wind-Diesel Power Generation in Tribal Villages",
+          "url": "https://www.energy.gov/cmei/success-stories/articles/eere-success-story-enhanced-efficiency-wind-diesel-power-generation",
+          "publisher": "U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "frontier-alaska",
+          "title": "Alaska wind-diesel-heat projects",
+          "url": "https://frontierpowersystems.ca/alaska/",
+          "publisher": "Frontier Power Systems",
+          "kind": "primary"
+        },
+        {
+          "id": "frontier-projects",
+          "title": "Microgrid Experience",
+          "url": "https://frontierpowersystems.ca/projects/",
+          "publisher": "Frontier Power Systems",
+          "kind": "primary"
+        },
+        {
+          "id": "doe-kwig-assistance",
+          "title": "DOE Office of Indian Energy Final Report — Calista Regional Corporation",
+          "url": "https://www.osti.gov/servlets/purl/1906261",
+          "publisher": "U.S. Department of Energy Office of Indian Energy",
+          "kind": "primary"
         }
       ]
     },
@@ -12848,18 +13189,41 @@
     },
     "princeton-university-microgrid": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "Princeton University's campus microgrid is anchored by a 15 MW General Electric LM1600 combined-heat-and-power plant, a multi-megawatt solar field, chilled-water thermal storage, and real-time economic dispatch. University sources document its island operation during Hurricane Sandy and its current transition toward expanded solar, geo-exchange, heat pumps, and hot/cold thermal storage.",
+      "status": "Operational and being modernized as part of Princeton's net-zero campus program",
       "classification": "Building",
       "historicalLocation": "Princeton University, Princeton, NJ, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
+          "name": "General Electric",
+          "role": "LM1600 gas-turbine manufacturer",
+          "sourceIds": [
+            "princeton-plant"
+          ]
+        },
+        {
           "name": "Princeton University",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "Princeton University Facilities",
+          "role": "Microgrid owner, operator, and campus utility",
+          "sourceIds": [
+            "princeton-plant",
+            "princeton-sandy",
+            "princeton-netzero"
+          ]
+        },
+        {
+          "name": "Public Service Electric & Gas (PSE&G)",
+          "role": "Interconnecting electric utility",
+          "sourceIds": [
+            "princeton-sandy"
           ]
         }
       ],
@@ -12884,9 +13248,94 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Cogeneration electric capacity",
+          "value": "15 MW",
+          "sourceIds": [
+            "princeton-plant",
+            "princeton-sandy"
+          ]
+        },
+        {
+          "label": "Gas turbine",
+          "value": "General Electric LM1600, natural-gas or diesel capable",
+          "sourceIds": [
+            "princeton-plant"
+          ]
+        },
+        {
+          "label": "Chilled-water thermal storage",
+          "value": "2.6 million gallons",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
+        },
+        {
+          "label": "Campus electric demand in 2014 account",
+          "value": "Approximately 16 MW average; 10 MW night minimum; 27 MW hot-day peak",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
+        },
+        {
+          "label": "Reported CHP efficiency",
+          "value": "Approximately 75–85%",
+          "sourceIds": [
+            "princeton-sandy",
+            "princeton-plant"
+          ]
+        },
+        {
+          "label": "2012 solar field",
+          "value": "5.3 MW and 16,500 modules",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
+        },
+        {
+          "label": "Hurricane Sandy island output",
+          "value": "Approximately 13 MW for about a day and a half",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Cogeneration turbine",
+          "manufacturer": "General Electric",
+          "model": "LM1600",
+          "detail": "Dual-fuel aeroderivative gas turbine drives the 15 MW generator; exhaust heat produces campus steam.",
+          "sourceIds": [
+            "princeton-plant"
+          ]
+        },
+        {
+          "category": "Economic dispatch system",
+          "detail": "Real-time model monitors electricity and fuel prices plus campus electric, steam, and chilled-water demand to guide operators; vendor and software release are not disclosed.",
+          "sourceIds": [
+            "princeton-plant",
+            "princeton-sandy"
+          ]
+        },
+        {
+          "category": "Thermal energy storage",
+          "detail": "2.6 million gallons of chilled water shift chiller load to lower-cost hours; newer TIGER and CUB facilities add separate hot- and cold-water storage tanks.",
+          "sourceIds": [
+            "princeton-sandy",
+            "princeton-netzero"
+          ]
+        },
+        {
+          "category": "Heat-recovery steam generation",
+          "detail": "Gas-turbine exhaust heats water to make steam for heat, hot water, sterilization, and steam-driven cooling; equipment model is not stated.",
+          "sourceIds": [
+            "princeton-plant",
+            "princeton-sandy"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
@@ -12900,6 +13349,35 @@
           "detail": "The heart of the Princeton microgrid is the cogeneration plant (center), which was constructed in 1996.",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Grid interaction",
+          "detail": "Operators import or export power based on real-time economics and can disconnect the campus to run as an electrical island during utility outages.",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
+        },
+        {
+          "category": "Hurricane Sandy",
+          "detail": "After a roughly 20-minute interruption and turbine restart, the campus islanded at about 13 MW until reconnection shortly before midnight on October 31, 2012.",
+          "sourceIds": [
+            "princeton-sandy"
+          ]
+        },
+        {
+          "category": "Combined heat and power",
+          "detail": "The gas turbine produces electricity while exhaust heat supplies steam; the district-energy plant also dispatches steam- and electric-driven chillers.",
+          "sourceIds": [
+            "princeton-plant",
+            "princeton-sandy"
+          ]
+        },
+        {
+          "category": "Modernization",
+          "detail": "The upgraded microgrid is adding solar, geo-exchange, heat pumps, natural-gas backup generation, and paired hot/cold thermal-storage tanks at TIGER and CUB.",
+          "sourceIds": [
+            "princeton-netzero"
           ]
         }
       ],
@@ -12919,6 +13397,27 @@
           "publisher": "princeton.edu",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "princeton-plant",
+          "title": "The Princeton Energy Plant",
+          "url": "https://facilities.princeton.edu/news/the-princeton-energy-plant",
+          "publisher": "Princeton University Facilities",
+          "kind": "primary"
+        },
+        {
+          "id": "princeton-sandy",
+          "title": "Two years after Hurricane Sandy, recognition of Princeton's microgrid still surges",
+          "url": "https://www.princeton.edu/news/2014/10/23/two-years-after-hurricane-sandy-recognition-princetons-microgrid-still-surges",
+          "publisher": "Princeton University",
+          "kind": "primary"
+        },
+        {
+          "id": "princeton-netzero",
+          "title": "Path to Net Zero: New Energy Facilities",
+          "url": "https://facilities.princeton.edu/projects/path-net-zero-new-energy-facilities",
+          "publisher": "Princeton University Facilities",
+          "kind": "primary"
         }
       ]
     },
