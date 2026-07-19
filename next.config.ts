@@ -10,9 +10,9 @@ type PermanentRedirect = {
 // of the 197-item geocoded export used to build the modern directory. Keep the
 // old URLs out of the generic project redirect so they never land on a 404.
 const legacyProjectAliases = [
-  ["boa-vista-island", "/projects?region=Africa%2520%2526%2520Middle%2520East"],
+  ["boa-vista-island", "/projects?region=africa-middle-east"],
   ["mersing-island", "/projects?region=Asia"],
-  ["new-york-microgrid-prizes", "/projects?q=New%2520York"],
+  ["new-york-microgrid-prizes", "/projects?q=new-york"],
   ["philadephia-navy-yard", "/projects/philadelphia-navy-yard-microgrid"],
   ["russia-far-east-microgrid-portfolio", "/projects?q=Russia"],
   ["toyko-island", "/projects/tokyo-metropolitan-microgrid-high-reliability"],
@@ -79,7 +79,7 @@ const nextConfig: NextConfig = {
       { source: "/ucsd-updates-microgrid-management-and-control-system-developed-by-schweitzer-engineering-laboratories-sel", destination: "/projects/ucsd-microgrid-2#equipment", permanent: true },
       // Editorial and taxonomy URLs land on the closest maintained answer,
       // with an immediately adjacent link to matching directory records.
-      { source: "/africa-microgrids", destination: "/projects?region=Africa%2520%2526%2520Middle%2520East", permanent: true },
+      { source: "/africa-microgrids", destination: "/projects?region=africa-middle-east", permanent: true },
       { source: "/india-microgrids", destination: "/projects?region=Asia", permanent: true },
       // This misspelling appears verbatim in an externally published citation.
       { source: "/india-rnicrogrids", destination: "/projects?region=Asia", permanent: true },
@@ -91,9 +91,9 @@ const nextConfig: NextConfig = {
       { source: "/property-location/india", destination: "/projects?region=Asia", permanent: true },
       { source: "/property-location/karnataka", destination: "/projects?region=Asia", permanent: true },
       { source: "/property-location/japan", destination: "/projects?region=Asia", permanent: true },
-      { source: "/property-location/united-states", destination: "/projects?region=North%2520America", permanent: true },
+      { source: "/property-location/united-states", destination: "/projects?region=north-america", permanent: true },
       // One peer-reviewed paper dropped the hyphen from property-location.
-      { source: "/propertylocation/united-states", destination: "/projects?region=North%2520America", permanent: true },
+      { source: "/propertylocation/united-states", destination: "/projects?region=north-america", permanent: true },
       { source: "/propertylocation/:location/page/:page", destination: "/projects", permanent: true },
       { source: "/propertylocation/:location", destination: "/projects", permanent: true },
       // WordPress also indexed paginated taxonomy archives. Match those before
