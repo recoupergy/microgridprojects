@@ -1,18 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { breadcrumbJsonLd, pageMetadata } from "../data/seo";
 import { siteContact } from "../data/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact and Submit a Project",
   description: `Contact Microgrid Projects, maintained by ${siteContact.organization}, to submit a project or suggest a correction.`,
-  alternates: { canonical: "/contact" },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   const submitHref = `mailto:${siteContact.email}?subject=${encodeURIComponent("Microgrid Projects submission")}&body=${encodeURIComponent("Project name:\nLocation / coordinates:\nProject owner or developer:\nCapacity and technologies:\nOperating status and commissioning date:\nPrimary-source links:\nNotes:\n")}`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        name: "Contact and submit a microgrid project",
+        url: "https://microgridprojects.com/contact",
+        about: { "@id": "https://microgridprojects.com/#dataset" },
+      },
+      breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Contact", path: "/contact" },
+      ]),
+    ],
+  };
 
   return (
     <main id="main-content" className="site-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <section className="page-hero">
         <div className="container">
           <p className="breadcrumb"><Link href="/">Home</Link> / Contact</p>

@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SisterProjectCta } from "../../components/SisterProjectCta";
 import { microgridTypes } from "../../data/content";
+import { breadcrumbJsonLd, pageMetadata } from "../../data/seo";
 import { siteContact } from "../../data/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Types of Microgrids: Definitions & Comparison",
   description: "Compare campus, community, island, remote, military, industrial, DC, and utility microgrids by boundary, purpose, and grid relationship.",
-  alternates: { canonical: "/guides/types-of-microgrids" },
-};
+  path: "/guides/types-of-microgrids",
+});
 
 const questions = [
   {
@@ -61,6 +62,8 @@ export default function TypesGuidePage() {
       author: { "@type": "Organization", name: siteContact.organization, url: siteContact.website },
       publisher: { "@type": "Organization", name: siteContact.organization, url: siteContact.website },
       mainEntityOfPage: "https://microgridprojects.com/guides/types-of-microgrids",
+      dateModified: "2026-07-19",
+      inLanguage: "en-US",
     },
     {
       "@context": "https://schema.org",
@@ -71,6 +74,10 @@ export default function TypesGuidePage() {
         acceptedAnswer: { "@type": "Answer", text: item.a },
       })),
     },
+    breadcrumbJsonLd([
+      { name: "Home", path: "/" },
+      { name: "Types of microgrids", path: "/guides/types-of-microgrids" },
+    ]),
   ];
 
   return (

@@ -3,13 +3,14 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import { siteContact } from "./data/site";
+import { SITE_URL, socialImage } from "./data/seo";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://microgridprojects.com"),
+  metadataBase: new URL(SITE_URL),
   title: { default: "Microgrid Projects | Global Project Directory", template: "%s | Microgrid Projects" },
   description: "Explore 197 microgrid projects around the world. Compare locations, sectors, reported capacity, market drivers, and major microgrid types.",
   applicationName: "Microgrid Projects",
@@ -21,17 +22,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://microgridprojects.com",
+    url: SITE_URL,
     siteName: "Microgrid Projects",
     title: "The world’s microgrids, mapped.",
     description: "A global research directory of 197 microgrid projects, market signals, and practical guides.",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "Microgrid Projects global research directory" }],
+    images: [socialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "The world’s microgrids, mapped.",
     description: "Explore a global research directory of microgrid projects and markets.",
-    images: ["/og.png"],
+    images: [socialImage.url],
   },
   alternates: { canonical: "/" },
 };

@@ -2,17 +2,36 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SisterProjectCta } from "../components/SisterProjectCta";
 import { marketProfiles } from "../data/content";
+import { breadcrumbJsonLd, pageMetadata } from "../data/seo";
 import { siteContact } from "../data/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Microgrid Markets",
   description: "Explore the regional, policy, resilience, energy-access, and island-market forces shaping microgrid deployment worldwide.",
-  alternates: { canonical: "/markets" },
-};
+  path: "/markets",
+});
 
 export default function MarketsPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: "Microgrid Markets",
+        url: "https://microgridprojects.com/markets",
+        description: "Regional and market forces shaping microgrid deployment worldwide.",
+        about: marketProfiles.map((market) => market.title),
+      },
+      breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Markets", path: "/markets" },
+      ]),
+    ],
+  };
+
   return (
     <main id="main-content" className="site-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <section className="page-hero">
         <div className="container">
           <p className="breadcrumb"><Link href="/">Home</Link> / Markets</p>

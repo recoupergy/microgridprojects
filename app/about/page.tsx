@@ -3,17 +3,36 @@ import Link from "next/link";
 import { SisterProjectCta } from "../components/SisterProjectCta";
 import { projectCount } from "../data/projects";
 import { researchStats } from "../data/research";
+import { breadcrumbJsonLd, pageMetadata } from "../data/seo";
 import { siteContact } from "../data/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About the Directory",
   description: "Learn how the Microgrid Projects archive was migrated, structured, and presented for transparent research use.",
-  alternates: { canonical: "/about" },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        name: "About Microgrid Projects",
+        url: "https://microgridprojects.com/about",
+        description: "How the Microgrid Projects archive was migrated, researched, sourced, and maintained.",
+        mainEntity: { "@id": "https://microgridprojects.com/#dataset" },
+      },
+      breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+      ]),
+    ],
+  };
+
   return (
     <main id="main-content" className="site-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <section className="page-hero">
         <div className="container">
           <p className="breadcrumb"><Link href="/">Home</Link> / About</p>

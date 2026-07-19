@@ -1,0 +1,18 @@
+# Microgrid Projects
+
+> A global research directory of 197 geocoded microgrid projects, with sourced organizations, reported system specifications, equipment, operating context, and citations.
+
+Microgrid Projects is maintained by MicrogridModeler, Inc. Historical records require independent verification. Project pages distinguish sourced claims from unknown or undisclosed details.
+
+## Core resources
+
+- [Project directory](https://microgridprojects.com/projects): Browse and filter all 197 project records.
+- [Microgrid markets](https://microgridprojects.com/markets): Regional and deployment context.
+- [Types of microgrids](https://microgridprojects.com/guides/types-of-microgrids): Definitions and a side-by-side comparison.
+- [Research methodology](https://microgridprojects.com/about#methodology): How the archive was recovered, enriched, and cited.
+- [XML sitemap](https://microgridprojects.com/sitemap.xml): Complete canonical URL inventory.
+- [Submit or correct a record](https://microgridprojects.com/contact#submit): Contact the research team.
+
+## Citation guidance
+
+Use the canonical URL shown on each project page. Follow the numbered source links for claim-level provenance, and independently verify historical facts before using them for engineering, procurement, investment, or policy decisions.

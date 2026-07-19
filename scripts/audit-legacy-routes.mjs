@@ -113,3 +113,57 @@ if (uncovered.length || brokenDestinations.length) {
     `Legacy route audit passed: ${archivedPaths.length} archived HTML paths and ${externallyReferencedPaths.length} externally cited variants resolve to maintained content.`,
   );
 }
+
+const runtimeBaseUrl = process.env.LEGACY_AUDIT_BASE_URL?.replace(/\/$/, "");
+
+if (runtimeBaseUrl && !process.exitCode) {
+  const runtimeFailures = [];
+  let cursor = 0;
+
+  async function worker() {
+    while (cursor < auditedPaths.length) {
+      const pathname = auditedPaths[cursor];
+      cursor += 1;
+      const response = await fetch(`${runtimeBaseUrl}${pathname}`, { redirect: "manual" });
+
+      if (isModernPath(pathname)) {
+        if (response.status !== 200) runtimeFailures.push(`${pathname} returned ${response.status}, expected 200`);
+        continue;
+      }
+
+      const redirect = resolveRedirect(pathname, redirects);
+      if (response.status !== 308) {
+        runtimeFailures.push(`${pathname} returned ${response.status}, expected permanent redirect`);
+        continue;
+      }
+
+      const location = response.headers.get("location");
+      if (!location) {
+        runtimeFailures.push(`${pathname} did not return a Location header`);
+        continue;
+      }
+
+      const actual = new URL(location, runtimeBaseUrl);
+      const expected = new URL(redirect.destination, runtimeBaseUrl);
+      if (`${actual.pathname}${actual.search}${actual.hash}` !== `${expected.pathname}${expected.search}${expected.hash}`) {
+        runtimeFailures.push(`${pathname} redirected to ${location}, expected ${redirect.destination}`);
+        continue;
+      }
+
+      actual.hash = "";
+      const destinationResponse = await fetch(actual, { redirect: "manual" });
+      if (destinationResponse.status !== 200) {
+        runtimeFailures.push(`${pathname} -> ${location} returned ${destinationResponse.status}`);
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: 12 }, worker));
+
+  if (runtimeFailures.length) {
+    console.error(`Legacy runtime audit failed:\n${runtimeFailures.join("\n")}`);
+    process.exitCode = 1;
+  } else {
+    console.log(`Legacy runtime audit passed: all ${auditedPaths.length} historical paths resolve in one hop to a 200 response.`);
+  }
+}

@@ -9,6 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "audit:legacy": "node scripts/audit-legacy-routes.mjs",
+    "audit:seo": "node scripts/audit-seo.mjs",
     "start": "next start",
     "lint": "eslint ."
   },

@@ -5,6 +5,7 @@ import { SisterProjectCta } from "../../components/SisterProjectCta";
 import { WorldMap } from "../../components/WorldMap";
 import { getProject, projects } from "../../data/projects";
 import { getProjectResearch, type ProjectResearch } from "../../data/research";
+import { breadcrumbJsonLd, pageMetadata, projectDescription } from "../../data/seo";
 import { siteContact } from "../../data/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -39,18 +40,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return { title: "Project not found" };
-  const research = getProjectResearch(slug);
   const hasDuplicateName = projects.some((item) => item.slug !== project.slug && item.name === project.name);
   const title = hasDuplicateName && project.capacity ? `${project.name} (${project.capacity})` : project.name;
-  const description = research
-    ? `${project.name}: sourced microgrid research covering ${research.organizations.length} publicly identified organizations, ${research.specifications.length} reported specifications, equipment, controls, status, and citations.`
-    : `${project.name} is a ${project.sector.toLowerCase()} microgrid record in ${project.region}.`;
-  return {
+  const description = projectDescription({ name: title, region: project.region });
+  return pageMetadata({
     title,
     description,
-    alternates: { canonical: `/projects/${project.slug}` },
-    openGraph: { title: `${title} | Microgrid Projects`, description, url: `/projects/${project.slug}` },
-  };
+    path: `/projects/${project.slug}`,
+  });
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -81,6 +78,9 @@ export default async function ProjectPage({ params }: Props) {
         description,
         url: `https://microgridprojects.com/projects/${project.slug}`,
         dateModified: research.researchedAt,
+        inLanguage: "en-US",
+        isAccessibleForFree: true,
+        license: "https://microgridprojects.com/about#data-use",
         creator: { "@type": "Organization", name: siteContact.organization, url: siteContact.website },
         spatialCoverage: { "@id": `https://microgridprojects.com/projects/${project.slug}#project` },
         citation: research.sources.map((source) => source.url),
@@ -91,6 +91,11 @@ export default async function ProjectPage({ params }: Props) {
           ...research.specifications.map((item) => ({ "@type": "PropertyValue", name: item.label, value: item.value })),
         ],
       },
+      breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Project directory", path: "/projects" },
+        { name: project.name, path: `/projects/${project.slug}` },
+      ]),
     ],
   };
 
