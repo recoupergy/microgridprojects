@@ -1,6 +1,6 @@
 export const siteContact = {
   organization: "MicrogridModeler, Inc.",
-  email: "contact@microgridmodeler.com",
+  email: "hello@microgridmodeler.com",
   website: "https://www.microgridmodeler.com",
   modeler: "https://www.microgridmodeler.com/modeler",
   calculators: "https://www.microgridmodeler.com/calculators",
