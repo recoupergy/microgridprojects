@@ -29,7 +29,7 @@ export default function MarketsPage() {
           </div>
           <div className="market-list content-section">
             {marketProfiles.map((market, index) => (
-              <article className="market-profile" key={market.slug}>
+              <article className="market-profile" id={market.slug} key={market.slug}>
                 <span className="mono">{String(index + 1).padStart(2, "0")}</span>
                 <h2>{market.title}</h2>
                 <p>{market.short}</p>

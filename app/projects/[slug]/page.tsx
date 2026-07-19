@@ -14,8 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return { title: "Project not found" };
+  const hasDuplicateName = projects.some((item) => item.slug !== project.slug && item.name === project.name);
+  const title = hasDuplicateName && project.capacity ? `${project.name} (${project.capacity})` : project.name;
   const description = `${project.name} is a ${project.sector.toLowerCase()} microgrid record in ${project.region}${project.capacity ? ` with ${project.capacity} reported capacity` : ""}. View coordinates and related projects.`;
-  return { title: project.name, description, alternates: { canonical: `/projects/${project.slug}` }, openGraph: { title: `${project.name} | Microgrid Projects`, description, url: `/projects/${project.slug}` } };
+  return { title, description, alternates: { canonical: `/projects/${project.slug}` }, openGraph: { title: `${title} | Microgrid Projects`, description, url: `/projects/${project.slug}` } };
 }
 
 export default async function ProjectPage({ params }: Props) {
