@@ -16729,18 +16729,75 @@
     },
     "tuntutuliak-kongiginak-kwigillingok-microgrids": {
       "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "coverage": "detailed",
+      "summary": "The Chaninik Wind Group deployed related but electrically separate wind-diesel-heat smart grids in Kongiganak, Kwigillingok, and Tuntutuliak. DOE's final report and project pages document five Windmatic turbines per completed village, heat-recovery boilers, 21–30 residential thermal-storage installations per village, advanced metering, and a communications chain linking meters, plant supervisory control, and heater controllers.",
+      "status": "Three-village program completed by 2013; this grouped record does not imply the communities are electrically interconnected",
       "classification": "Community",
       "historicalLocation": "Kwigillingok, AK, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
-          "name": "Frontier Power Systems",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "name": "Chaninik Wind Group",
+          "role": "Multi-village project organization and DOE award recipient",
           "sourceIds": [
+            "doe-chaninik-project",
+            "chaninik-final"
+          ]
+        },
+        {
+          "name": "Frontier Power Systems",
+          "role": "Control-system, SCADA, and integration provider for the village systems",
+          "sourceIds": [
+            "frontier-chaninik",
             "archive"
+          ]
+        },
+        {
+          "name": "Intelligent Energy Systems",
+          "role": "Wind-diesel integration and project technical contributor",
+          "sourceIds": [
+            "frontier-chaninik",
+            "doe-chaninik-winning"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy Tribal Energy Program",
+          "role": "Project funder and technical-program sponsor",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story",
+            "chaninik-final"
+          ]
+        },
+        {
+          "name": "United Tribal Government of Kipnuk",
+          "role": "Program member; the 2013 DOE account says its power-plant construction remained pending",
+          "sourceIds": [
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "name": "United Tribal Government of Kongiganak",
+          "role": "Participating tribal government",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "name": "United Tribal Government of Kwigillingok",
+          "role": "Participating tribal government",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "name": "United Tribal Government of Tuntutuliak",
+          "role": "Participating tribal government",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story"
           ]
         }
       ],
@@ -16751,9 +16808,103 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Wind generation per completed village",
+          "value": "Five approximately 95 kW Windmatic turbines (about 475 kW per village)",
+          "sourceIds": [
+            "doe-chaninik-winning",
+            "doe-chaninik-project"
+          ]
+        },
+        {
+          "label": "Completed project scope",
+          "value": "Kongiganak, Kwigillingok, and Tuntutuliak completed by 2013; Kipnuk remained pending in the cited account",
+          "sourceIds": [
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "label": "Wind penetration",
+          "value": "Installed wind capacity exceeded 200% of peak load in each completed village",
+          "sourceIds": [
+            "doe-chaninik-story",
+            "doe-chaninik-winning"
+          ]
+        },
+        {
+          "label": "Smart meters",
+          "value": "Program plan covered approximately 500 homes",
+          "sourceIds": [
+            "doe-chaninik-project"
+          ]
+        },
+        {
+          "label": "Thermal-storage rollout",
+          "value": "Program plan covered 90 homes; individual systems were designed for roughly 21–30 homes",
+          "sourceIds": [
+            "doe-chaninik-project"
+          ]
+        },
+        {
+          "label": "DOE investment",
+          "value": "$750,000, with $1.25 million from the participating tribal governments in the DOE success-story accounting",
+          "sourceIds": [
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "label": "Program fuel-displacement goal",
+          "value": "200,000 gallons of diesel across electricity and heating uses",
+          "sourceIds": [
+            "doe-chaninik-story"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Wind turbines",
+          "manufacturer": "Windmatic",
+          "model": "17-S",
+          "detail": "Five roughly 95 kW machines in each of the three completed village systems; DOE's early project page rounded the unit rating to 90 kW.",
+          "sourceIds": [
+            "doe-chaninik-winning",
+            "doe-chaninik-project"
+          ]
+        },
+        {
+          "category": "Microgrid controls",
+          "manufacturer": "Frontier Power Systems",
+          "detail": "Wind-diesel supervisory control, SCADA, load regulation, and integration services; the grouped sources span multiple installation years, so one controller hardware revision is not assigned to all villages.",
+          "sourceIds": [
+            "frontier-chaninik",
+            "archive"
+          ]
+        },
+        {
+          "category": "Smart metering",
+          "detail": "Advanced meters distinguish discounted surplus-wind energy from diesel-generated electricity and communicate availability to residential controls.",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "chaninik-final"
+          ]
+        },
+        {
+          "category": "Electric thermal storage",
+          "detail": "Networked residential stoves capture surplus wind as heat; unit counts vary by community and report date, and commercial heater models are not disclosed.",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "category": "Heat-recovery boilers",
+          "detail": "Community heating assets also help balance the high-penetration systems; boiler manufacturers and ratings are not stated in the reviewed DOE page.",
+          "sourceIds": [
+            "doe-chaninik-winning"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
@@ -16782,6 +16933,43 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Network boundary",
+          "detail": "The communities are not connected by road or electrical intertie; each village operates its own diesel microgrid under a shared program design.",
+          "sourceIds": [
+            "doe-chaninik-winning"
+          ]
+        },
+        {
+          "category": "Control communications",
+          "detail": "Advanced meters, the power-plant supervisory controller, and thermal-stove controllers exchange surplus-wind availability and customer-use data.",
+          "sourceIds": [
+            "doe-chaninik-project"
+          ]
+        },
+        {
+          "category": "Energy pricing",
+          "detail": "The smart-meter architecture enabled surplus wind sold as residential heat at approximately half the cost of diesel heating in the DOE project design.",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "category": "Reported outcome",
+          "detail": "DOE reported about 30% power-plant fuel reduction and at least 30% heating-fuel reduction for participating ETS homes across the operating systems; these are program-level figures.",
+          "sourceIds": [
+            "doe-chaninik-story"
+          ]
+        },
+        {
+          "category": "Specification reconciliation",
+          "detail": "DOE's planning page states 90 kW per turbine, while later completion reporting identifies 95 kW units; the page labels the time basis rather than blending the ratings.",
+          "sourceIds": [
+            "doe-chaninik-project",
+            "doe-chaninik-winning"
+          ]
         }
       ],
       "sources": [
@@ -16800,6 +16988,41 @@
           "publisher": "bullfrogpower.com",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "doe-chaninik-project",
+          "title": "Chaninik Wind Group — 2010 Project",
+          "url": "https://www.energy.gov/indianenergy/chaninik-wind-group-2010-project",
+          "publisher": "U.S. Department of Energy Office of Indian Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "doe-chaninik-story",
+          "title": "Enhanced Efficiency of Wind-Diesel Power Generation in Tribal Villages",
+          "url": "https://www.energy.gov/cmei/success-stories/articles/eere-success-story-enhanced-efficiency-wind-diesel-power-generation",
+          "publisher": "U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "doe-chaninik-winning",
+          "title": "Chaninik Wind Group Pursues Innovative Solutions to Native Alaska Energy Challenges",
+          "url": "https://www.energy.gov/indianenergy/articles/winning-future-chaninik-wind-group-pursues-innovative-solutions-native-alaska",
+          "publisher": "U.S. Department of Energy Office of Indian Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "chaninik-final",
+          "title": "Chaninik Wind Group Wind Heat Smart Grids Final Report",
+          "url": "https://www.osti.gov/biblio/1086573",
+          "publisher": "Chaninik Wind Group / U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "frontier-chaninik",
+          "title": "Alaska wind-diesel-heat projects",
+          "url": "https://frontierpowersystems.ca/alaska/",
+          "publisher": "Frontier Power Systems",
+          "kind": "primary"
         }
       ]
     },
