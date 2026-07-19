@@ -1,0 +1,1078 @@
+{
+  "blue-lake-rancheria-microgrid": {
+    "summary": "Blue Lake Rancheria's community-scale microgrid entered service in 2017 and combines solar, battery storage, legacy backup generation, building controls, and islanding capability.",
+    "status": "Operational; community-scale system commissioned in 2017",
+    "organizations": [
+      { "name": "Blue Lake Rancheria", "role": "Owner, operator, and co-funder", "sourceIds": ["doe-blue-lake-partners", "doe-blue-lake"] },
+      { "name": "Schatz Energy Research Center", "role": "Integration engineering lead", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "California Energy Commission", "role": "Regulator and EPIC grant funder", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "California Public Utilities Commission", "role": "Regulatory participant", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "Idaho National Laboratory", "role": "Research, testing, and commissioning participant", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "Lawrence Berkeley National Laboratory", "role": "Research participant", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "National Renewable Energy Laboratory", "role": "Research participant", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "Siemens", "role": "Microgrid controls supplier", "sourceIds": ["siemens-blue-lake", "doe-blue-lake-partners"] },
+      { "name": "Tesla", "role": "Battery-system vendor", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "REC Solar", "role": "Solar vendor", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "SunPower", "role": "Solar vendor", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "Pacific Gas and Electric Company", "role": "Utility and project vendor/partner", "sourceIds": ["doe-blue-lake-partners"] },
+      { "name": "Dark Sky (Apple)", "role": "Project vendor listed by the owner team", "sourceIds": ["doe-blue-lake-partners"] }
+    ],
+    "specifications": [
+      { "label": "Verified solar array", "value": "420 kW PV", "sourceIds": ["doe-blue-lake"] },
+      { "label": "Verified battery system", "value": "500 kW / 950 kWh", "sourceIds": ["doe-blue-lake"] },
+      { "label": "Backup generation", "value": "1 MW generator", "sourceIds": ["siemens-blue-lake"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controller", "manufacturer": "Siemens", "model": "Spectrum Power 7 MGMS", "detail": "Coordinates the solar, storage, generator, loads, and islanded operation.", "sourceIds": ["siemens-blue-lake"] },
+      { "category": "Battery energy storage", "manufacturer": "Tesla", "detail": "500 kW / 950 kWh battery energy storage system.", "sourceIds": ["doe-blue-lake", "doe-blue-lake-partners"] },
+      { "category": "Solar PV", "manufacturer": "SunPower / REC Solar", "detail": "420 kW community-scale array; the owner team lists SunPower and REC Solar among project vendors.", "sourceIds": ["doe-blue-lake", "doe-blue-lake-partners"] }
+    ],
+    "sources": [
+      { "id": "doe-blue-lake", "title": "Tribal Microgrids Support Tenuous Lifelines During Grid Shutdowns", "url": "https://www.energy.gov/indianenergy/articles/tribal-microgrids-support-tenuous-lifelines-during-grid-shutdowns", "publisher": "U.S. Department of Energy", "kind": "primary" },
+      { "id": "doe-blue-lake-partners", "title": "Illustrative Microgrid Partnerships: Blue Lake Rancheria", "url": "https://www.energy.gov/documents/1ganion-blue-lakepdf", "publisher": "U.S. Department of Energy / Blue Lake Rancheria", "kind": "primary" },
+      { "id": "siemens-blue-lake", "title": "Microgrids: The innovation we need for a livable future", "url": "https://blog.siemens.com/2021/04/microgrids-the-innovation-we-need-for-a-livable-future/", "publisher": "Siemens", "kind": "primary" }
+    ]
+  },
+  "kings-contrivance-village-center": {
+    "summary": "BGE proposed a public-purpose microgrid for the Kings Contrivance area, but the Maryland Public Service Commission denied the proposal as filed. This is a proposal record, not an operating-project claim.",
+    "status": "Proposal denied as filed, without prejudice, in 2016",
+    "organizations": [
+      { "name": "Baltimore Gas and Electric Company (BGE)", "role": "Proposed developer, owner, and operator", "sourceIds": ["mdpsc-kings"] },
+      { "name": "Maryland Public Service Commission", "role": "Regulator and decision authority", "sourceIds": ["mdpsc-kings"] }
+    ],
+    "specifications": [
+      { "label": "Proposed generation", "value": "2–3 MW small-scale generation at each proposed site", "sourceIds": ["mdpsc-kings"] },
+      { "label": "Proposed primary fuel", "value": "Natural gas; diesel alternative where gas infrastructure was unavailable", "sourceIds": ["mdpsc-kings"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "mdpsc-kings", "title": "Order No. 87669, Case No. 9416 — BGE Microgrid Order", "url": "https://www.psc.state.md.us/wp-content/uploads/Order-No.-87669-Case-No.-9416-BGE-Microgrid-Order-.pdf", "publisher": "Maryland Public Service Commission", "kind": "primary" }
+    ]
+  },
+  "marble-bar": {
+    "summary": "Horizon Power's isolated Marble Bar power system combines diesel generation, tracked solar PV, and ABB flywheel stabilization under ABB's Microgrid Plus controls.",
+    "status": "Operational; integrated system commissioned in 2010",
+    "organizations": [
+      { "name": "Horizon Power", "role": "Customer, system manager, and flywheel owner", "sourceIds": ["abb-marble-bar", "arena-marble-bar"] },
+      { "name": "Government of Western Australia", "role": "Government project participant", "sourceIds": ["abb-marble-bar"] },
+      { "name": "ABB", "role": "Microgrid controls and flywheel technology supplier", "sourceIds": ["abb-marble-bar"] },
+      { "name": "Australian Government Remote Renewable Power Generation Program", "role": "Capital grant program", "sourceIds": ["arena-marble-bar"] }
+    ],
+    "specifications": [
+      { "label": "Diesel generation", "value": "4 × 320 kW (1.28 MW total)", "sourceIds": ["abb-marble-bar", "arena-marble-bar"] },
+      { "label": "Solar PV", "value": "300–302 kW tracked array", "sourceIds": ["abb-marble-bar", "arena-marble-bar"] },
+      { "label": "Flywheel", "value": "500 kW ABB PowerStore", "sourceIds": ["abb-marble-bar", "arena-marble-bar"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid control system", "manufacturer": "ABB", "model": "Microgrid Plus", "detail": "Coordinates the PV, diesel generators, and grid-stabilizing flywheel.", "sourceIds": ["abb-marble-bar"] },
+      { "category": "Flywheel grid stabilization", "manufacturer": "ABB", "model": "PowerStore", "detail": "500 kW flywheel used for power quality and system stability.", "sourceIds": ["abb-marble-bar", "arena-marble-bar"] }
+    ],
+    "sources": [
+      { "id": "abb-marble-bar", "title": "Renewable microgrids — reduced LCOE and secure power supply", "url": "https://new.abb.com/docs/librariesprovider77/default-document-library/renewable-microgrids---reduced-lcoe-and-secure-power-supply---2016-08-25th---keabb-technology-day---light-version.pdf?sfvrsn=2", "publisher": "ABB", "kind": "primary" },
+      { "id": "arena-marble-bar", "title": "Renewable Energy in the Australian Mining Sector — case study appendix", "url": "https://arena.gov.au/assets/2014/12/ARENA_RAR-report-20141201.pdf", "publisher": "Australian Renewable Energy Agency", "kind": "primary" }
+    ]
+  },
+  "stone-edge-farm-winery-microgrid": {
+    "summary": "Stone Edge Farm has operated as a multi-technology microgrid test site. Public supplier material documents successive storage systems and a DC Systems controller communicating over Modbus.",
+    "status": "Operational test and demonstration site in the cited project period",
+    "organizations": [
+      { "name": "Stone Edge Farm", "role": "Project owner and host", "sourceIds": ["ess-stone-edge"] },
+      { "name": "Wooster Engineering Specialties", "role": "Microgrid developer and general engineering contractor", "sourceIds": ["archive"] },
+      { "name": "ESS Inc.", "role": "Iron-flow battery supplier", "sourceIds": ["ess-stone-edge"] },
+      { "name": "DC Systems, Inc.", "role": "Microgrid controls supplier", "sourceIds": ["ess-stone-edge"] },
+      { "name": "Aquion Energy", "role": "Saltwater battery supplier for an earlier storage installation", "sourceIds": ["archive"] },
+      { "name": "Ideal Power", "role": "Power-conversion equipment supplier", "sourceIds": ["archive"] }
+    ],
+    "specifications": [
+      { "label": "ESS iron-flow battery", "value": "10 kW / 60 kWh, 480 VAC, three-phase", "sourceIds": ["ess-stone-edge"] },
+      { "label": "Earlier Aquion battery bank", "value": "14 × 25 kWh modules; approximately 350 kWh", "sourceIds": ["archive"] },
+      { "label": "Earlier solar array", "value": "32 kW PV", "sourceIds": ["archive"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controller", "manufacturer": "DC Systems, Inc.", "detail": "Communicates with the ESS iron-flow battery over Modbus and dispatches it for site operating needs.", "sourceIds": ["ess-stone-edge"] },
+      { "category": "Iron-flow battery", "manufacturer": "ESS Inc.", "model": "Iron Flow Battery", "detail": "10 kW / 60 kWh unit with a 480 VAC three-phase interface.", "sourceIds": ["ess-stone-edge"] },
+      { "category": "Power conversion", "manufacturer": "Ideal Power", "detail": "30 kW multi-port power-conversion system coupling the earlier solar and Aquion storage installation.", "sourceIds": ["archive"] }
+    ],
+    "sources": [
+      { "id": "ess-stone-edge", "title": "ESS all-iron flow battery operational at Stone Edge Farm microgrid", "url": "https://essinc.com/ess-all-iron-flow-battery-operational-at-stone-edge-farms-microgrid/", "publisher": "ESS Inc.", "kind": "primary" }
+    ]
+  },
+  "ucsd-microgrid-2": {
+    "summary": "UC San Diego operates a campus microgrid and the DERConnect grid research testbed. Current university documentation identifies the controls, inverter models, storage chemistries, and switchgear ratings used in the testbed.",
+    "status": "Operational campus microgrid and active DER research testbed",
+    "organizations": [
+      { "name": "University of California San Diego", "role": "Owner, operator, and research lead", "sourceIds": ["ucsd-derconnect", "ucsd-storage"] },
+      { "name": "Schweitzer Engineering Laboratories (SEL)", "role": "Microgrid controller and protection supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "KORE Power", "role": "Battery supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Great Power", "role": "Battery supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Kronus Engineering", "role": "Battery-rack and ultracapacitor integration supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Skeleton Technologies", "role": "Ultracapacitor supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Dynapower", "role": "Bidirectional inverter supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Oztek", "role": "Inverter supplier", "sourceIds": ["ucsd-derconnect"] },
+      { "name": "Eagle Eye Power Solutions", "role": "Programmable load-bank supplier", "sourceIds": ["ucsd-derconnect"] }
+    ],
+    "specifications": [
+      { "label": "Campus cogeneration", "value": "30 MW natural-gas cogeneration", "sourceIds": ["ucsd-storage"] },
+      { "label": "Campus peak load", "value": "Approximately 55 MW", "sourceIds": ["ucsd-storage"] },
+      { "label": "DERConnect laboratory storage", "value": "Five lithium-ion batteries totaling 0.5 MW / 1 MWh, plus ultracapacitor", "sourceIds": ["ucsd-derconnect"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controller", "manufacturer": "SEL", "model": "PowerMAX", "detail": "Supports islanding, black start, resynchronization, remote switching, and phasor/waveform collection.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Battery energy storage #2", "manufacturer": "KORE Power", "model": "Dynapower MPS-125 inverter", "detail": "125 kW / 221 kWh at 480 VAC; NMC/graphite lithium-ion chemistry; grid-forming and black-start capable.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Battery energy storage #3", "manufacturer": "Great Power", "model": "Dynapower MPS-125 EHV inverter", "detail": "125 kW / 376 kWh at 480 VAC; lithium iron phosphate chemistry.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Battery energy storage #4 and #5", "manufacturer": "Kronus Engineering", "model": "Oztek inverters", "detail": "Two independent 40 kW / 72.5 kWh, 480 VAC NMC/graphite racks sharing controls and an enclosure.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Ultracapacitor", "manufacturer": "Kronus Engineering / Skeleton Technologies", "model": "Dynapower MPS-125 EHV inverter", "detail": "125 kW / 28 kWh at 480 VAC with a 60-second charge/discharge rating.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Programmable RLC load bank", "manufacturer": "Eagle Eye Power Solutions", "detail": "500 kVA apparent power; 400 kW resistive and 300 kvar each inductive/capacitive maximum.", "sourceIds": ["ucsd-derconnect"] },
+      { "category": "Switchgear", "detail": "480 V and 208 V buses rated 1,200 A; the 208 V bus connects through a 500 kVA transformer.", "sourceIds": ["ucsd-derconnect"] }
+    ],
+    "sources": [
+      { "id": "ucsd-derconnect", "title": "DERConnect Virtual Tour", "url": "https://derconnect.ucsd.edu/testers/virtual-tour", "publisher": "University of California San Diego", "kind": "primary" },
+      { "id": "ucsd-storage", "title": "Energy Storage and Microgrid Laboratories", "url": "https://www.energystorage.ucsd.edu/labs", "publisher": "University of California San Diego", "kind": "primary" }
+    ]
+  },
+  "vavau-tonga-microgrid": {
+    "summary": "Vava'u's 2013 PV-diesel hybrid plant was funded by the United Arab Emirates, managed by Masdar, executed by Ingenero, and integrated into Tonga Power's diesel network with SMA controls and inverters.",
+    "status": "Operational; original hybrid plant commissioned in November 2013",
+    "organizations": [
+      { "name": "Tonga Power Limited", "role": "System operator", "sourceIds": ["sma-vavau"] },
+      { "name": "Government of the United Arab Emirates", "role": "Grant funder", "sourceIds": ["sma-vavau"] },
+      { "name": "Masdar", "role": "Grant and project manager", "sourceIds": ["sma-vavau"] },
+      { "name": "Ingenero", "role": "Executing contractor / EPC", "sourceIds": ["sma-vavau"] },
+      { "name": "SMA Solar Technology", "role": "PV inverter, battery inverter, and hybrid controller supplier", "sourceIds": ["sma-vavau"] }
+    ],
+    "specifications": [
+      { "label": "Installed PV", "value": "500 kW; 1,680 PV modules", "sourceIds": ["sma-vavau"] },
+      { "label": "Diesel generation", "value": "2 × 600 kW, 2 × 186 kW, and 1 × 300 kW", "sourceIds": ["sma-vavau"] },
+      { "label": "Battery bank", "value": "120 × 1,000 Ah batteries", "sourceIds": ["sma-vavau"] },
+      { "label": "Reported annual yield", "value": "695 MWh", "sourceIds": ["sma-vavau"] },
+      { "label": "Reported diesel savings", "value": "225,000 liters per year", "sourceIds": ["sma-vavau"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid / hybrid controller", "manufacturer": "SMA", "model": "Fuel Save Controller", "detail": "Coordinates demand-based PV feed-in with the operating diesel network.", "sourceIds": ["sma-vavau"] },
+      { "category": "PV inverter", "manufacturer": "SMA", "model": "Sunny Tripower 20000TL Economic Excellence", "detail": "21 units.", "sourceIds": ["sma-vavau"] },
+      { "category": "Battery inverter", "manufacturer": "SMA", "model": "Sunny Backup SBU 5000", "detail": "15 units.", "sourceIds": ["sma-vavau"] }
+    ],
+    "sources": [
+      { "id": "sma-vavau", "title": "Vava'u, Kingdom of Tonga — PV diesel hybrid application", "url": "https://www.sma-america.com/references/vavau-kingdom-of-tonga", "publisher": "SMA Solar Technology", "kind": "primary" }
+    ]
+  },
+  "camp-smith-microgrid": {
+    "summary": "Camp H.M. Smith was the third phase of the federal SPIDERS demonstration and became a base-wide, cyber-secure microgrid combining new and existing generation, storage, solar, and distributed controls.",
+    "status": "Operational; SPIDERS Phase III completed in fiscal year 2015",
+    "organizations": [
+      { "name": "U.S. Department of Defense", "role": "SPIDERS program sponsor and installation owner", "sourceIds": ["doe-spiders-report", "doe-spiders-award"] },
+      { "name": "U.S. Department of Energy", "role": "SPIDERS program partner", "sourceIds": ["doe-spiders-award"] },
+      { "name": "U.S. Department of Homeland Security", "role": "SPIDERS program partner", "sourceIds": ["doe-spiders-award"] },
+      { "name": "Naval Facilities Engineering Systems Command", "role": "Transition manager and engineering participant", "sourceIds": ["navfac-spiders"] },
+      { "name": "Hawaiian Electric Company", "role": "Local utility and grid-services partner", "sourceIds": ["doe-spiders-report"] },
+      { "name": "IPERC", "role": "Cyber-secure distributed microgrid control supplier", "sourceIds": ["doe-spiders-report", "doe-camp-smith-controls"] },
+      { "name": "Go Electric, Inc.", "role": "Integrated storage and inverter module supplier", "sourceIds": ["doe-spiders-report"] }
+    ],
+    "specifications": [
+      { "label": "Microgrid scale", "value": "Base-wide, 5.3 MW-class system", "sourceIds": ["doe-spiders-report"] },
+      { "label": "Distribution infrastructure", "value": "New utility-grade generation plus existing generators, solar, stationary storage, and SCADA/PLC assets", "sourceIds": ["doe-spiders-report"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controller", "manufacturer": "IPERC", "model": "GridMaster", "detail": "Peer-to-peer controller nodes sit with microgrid equipment and automatically reconfigure when components change or fail.", "sourceIds": ["doe-camp-smith-controls"] },
+      { "category": "Integrated storage and inverter module", "manufacturer": "Go Electric, Inc.", "detail": "High-speed transfer switches and controls transfer load to batteries in less than one electrical cycle before synchronizing generation.", "sourceIds": ["doe-spiders-report"] }
+    ],
+    "sources": [
+      { "id": "doe-spiders-report", "title": "SPIDERS Phase 2 Fort Carson Technology Transition Consolidated Report", "url": "https://www.energy.gov/sites/prod/files/2016/03/f30/spiders_final_report.pdf", "publisher": "U.S. Department of Energy / Department of Defense", "kind": "primary" },
+      { "id": "doe-camp-smith-controls", "title": "Camp Smith Microgrid and Cyber Security", "url": "https://www.energy.gov/sites/prod/files/2015/09/f26/spiders_lee_keeting_%20massie.pdf", "publisher": "U.S. Department of Energy / SPIDERS", "kind": "primary" },
+      { "id": "doe-spiders-award", "title": "2016 Federal Energy and Water Management Award — SPIDERS", "url": "https://www.energy.gov/node/1937941", "publisher": "U.S. Department of Energy", "kind": "primary" },
+      { "id": "navfac-spiders", "title": "Utilities and Energy Management — SPIDERS", "url": "https://exwc.navfac.navy.mil/Products-and-Services/Shore-Technical-Department/Utilities-and-Energy-Managment/", "publisher": "Naval Facilities Engineering Systems Command", "kind": "primary" }
+    ]
+  },
+  "flacq": {
+    "summary": "The Flacq Coeur de Ville / Super U system is a behind-the-meter PV-diesel-grid hybrid built by DHYBRID for a shopping center and supermarket, with thermal storage and unified control.",
+    "status": "Operational commercial hybrid system",
+    "organizations": [
+      { "name": "Super U", "role": "Customer and host supermarket", "sourceIds": ["dhybrid-flacq"] },
+      { "name": "DHYBRID Power Systems", "role": "Turnkey EPC, system integrator, and controls supplier", "sourceIds": ["dhybrid-flacq"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "1.2 MWp; approximately 4,700 modules", "sourceIds": ["dhybrid-flacq"] },
+      { "label": "Diesel generation", "value": "2,000 kVA total", "sourceIds": ["dhybrid-flacq"] },
+      { "label": "PV inverters", "value": "70 units", "sourceIds": ["dhybrid-flacq"] },
+      { "label": "Reported annual generation", "value": "1,800 MWh", "sourceIds": ["dhybrid-flacq"] },
+      { "label": "Reported diesel savings", "value": "486,000 liters per year", "sourceIds": ["dhybrid-flacq"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid control platform", "manufacturer": "DHYBRID", "model": "Universal Power Platform (UPP)", "detail": "Coordinates PV, grid, diesel backup, electrical storage, and the site's chilled thermal storage.", "sourceIds": ["dhybrid-flacq"] }
+    ],
+    "sources": [
+      { "id": "dhybrid-flacq", "title": "Mauritius — Flacq project reference", "url": "https://www.dhybrid.de/de/projekt/mauritius-flacq", "publisher": "DHYBRID Power Systems", "kind": "primary" }
+    ]
+  },
+  "indian-head-nwc": {
+    "summary": "The historical planning record aligns with Naval Support Facility Indian Head's decentralized energy modernization: a gas-fired cogeneration plant, nodal steam plants, and upgraded electric distribution. Public sources do not identify a dedicated microgrid-controller model.",
+    "status": "Decentralized energy system operational; historical microgrid classification not independently confirmed",
+    "organizations": [
+      { "name": "U.S. Department of the Navy", "role": "Installation and energy-system owner", "sourceIds": ["navy-indian-head"] },
+      { "name": "NAVFAC Washington", "role": "Client and facilities delivery authority", "sourceIds": ["wiley-indian-head", "navfac-indian-head"] },
+      { "name": "Wiley|Wilson", "role": "Steam and electrical distribution design services", "sourceIds": ["wiley-indian-head"] },
+      { "name": "Defense Logistics Agency Energy", "role": "Electric utility privatization contracting partner", "sourceIds": ["navfac-indian-head"] },
+      { "name": "Southern Maryland Electric Cooperative (SMECO)", "role": "Electric utility-system owner under a 50-year privatization contract awarded in 2023", "sourceIds": ["navfac-indian-head"] }
+    ],
+    "specifications": [
+      { "label": "Gas cogeneration", "value": "4.6 MW Strauss Plant", "sourceIds": ["wiley-indian-head"] },
+      { "label": "Nodal steam plants", "value": "Seven natural-gas plants ranging from 200 hp to 750 hp", "sourceIds": ["wiley-indian-head"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "navy-indian-head", "title": "NSF Indian Head's New Steam Distribution System Showing Efficiencies", "url": "https://www.navy.mil/Press-Office/News-Stories/Article/2261013/nsf-indian-heads-new-steam-distribution-system-showing-efficiencies/", "publisher": "United States Navy", "kind": "primary" },
+      { "id": "wiley-indian-head", "title": "Naval Support Facility P-222 Decentralized Steam Systems Upgrade", "url": "https://www.wileywilson.com/project/naval-support-facility/", "publisher": "Wiley|Wilson", "kind": "primary" },
+      { "id": "navfac-indian-head", "title": "NAVFAC Washington awards utilities contract for NSF Indian Head", "url": "https://www.navfac.navy.mil/Home/News-Detail/Article/3634746/navfac-washington-awards-cost-saving-utilities-contract-for-naval-support-facil/", "publisher": "Naval Facilities Engineering Systems Command", "kind": "primary" }
+    ]
+  },
+  "la-palma": {
+    "summary": "The record corresponds to Endesa's STORE demonstration at the Los Guinchos power station, where a high-power ultracapacitor injects energy rapidly to stabilize La Palma's island grid.",
+    "status": "Operational storage installation in the cited project period",
+    "organizations": [
+      { "name": "Endesa", "role": "STORE project lead, owner, and operator", "sourceIds": ["endesa-la-palma", "enel-la-palma"] },
+      { "name": "Enel Group", "role": "Parent company reporting the STORE project", "sourceIds": ["enel-la-palma"] }
+    ],
+    "specifications": [
+      { "label": "Ultracapacitor power", "value": "4 MW", "sourceIds": ["enel-la-palma"] },
+      { "label": "Ultracapacitor energy", "value": "20 MW·s (approximately 5.6 kWh)", "sourceIds": ["enel-la-palma"] },
+      { "label": "Connection point", "value": "Los Guinchos power station on La Palma's island system", "sourceIds": ["endesa-la-palma"] }
+    ],
+    "equipment": [
+      { "category": "Grid-stabilizing storage", "manufacturer": "Not publicly identified in the reviewed primary sources", "detail": "A 4 MW / 20 MW·s ultracapacitor provides fast energy injection following a generator disturbance.", "sourceIds": ["endesa-la-palma", "enel-la-palma"] }
+    ],
+    "sources": [
+      { "id": "endesa-la-palma", "title": "Energy storage for a sustainable future", "url": "https://www.endesa.com/en/projects/all-projects/energy-transition/electric-mobility/energy-storage-future-energy", "publisher": "Endesa", "kind": "primary" },
+      { "id": "enel-la-palma", "title": "The energy transition of islands", "url": "https://www.enel.com/media/explore/search-news/news/2017/03/energy-transition-islands", "publisher": "Enel Group", "kind": "primary" }
+    ]
+  },
+  "lac-des-mille-lacs-first-nation": {
+    "summary": "Lac des Mille Lacs First Nation commissioned a community PV-battery microgrid in 2017. A detailed university case study identifies the installer, charge-controller model, inverter count, battery bank, diversion load, and remote monitoring arrangement.",
+    "status": "Operational; commissioned July 28, 2017",
+    "organizations": [
+      { "name": "Lac des Mille Lacs First Nation", "role": "Owner and community project lead", "sourceIds": ["lakehead-ldml"] },
+      { "name": "JAZZ Solar Solutions Inc.", "role": "System installer, maintainer, and remote monitoring provider", "sourceIds": ["lakehead-ldml"] },
+      { "name": "Government of Canada", "role": "Capital funder", "sourceIds": ["lakehead-ldml"] },
+      { "name": "Government of Ontario", "role": "Capital funder", "sourceIds": ["lakehead-ldml"] }
+    ],
+    "specifications": [
+      { "label": "Inverter capacity", "value": "9 × 8 kW (72 kW total)", "sourceIds": ["lakehead-ldml"] },
+      { "label": "Battery bank", "value": "6,000 Ah; reported mass 7,801 kg", "sourceIds": ["lakehead-ldml"] },
+      { "label": "Hot-water diversion load", "value": "22 kW", "sourceIds": ["lakehead-ldml"] }
+    ],
+    "equipment": [
+      { "category": "Solar charge controller", "manufacturer": "MidNite Solar", "model": "Classic 200", "detail": "Charge controllers used with the community PV and large battery bank.", "sourceIds": ["lakehead-ldml"] },
+      { "category": "Inverters", "detail": "Nine 8 kW inverters; the reviewed source does not identify the inverter model.", "sourceIds": ["lakehead-ldml"] },
+      { "category": "Remote monitoring", "manufacturer": "JAZZ Solar Solutions Inc.", "detail": "Online control and monitoring from the integrator's Ottawa office.", "sourceIds": ["lakehead-ldml"] }
+    ],
+    "sources": [
+      { "id": "lakehead-ldml", "title": "Building Green Energy Initiatives in Northern Ontario Indigenous Communities", "url": "https://knowledgecommons.lakeheadu.ca/bitstreams/5473f66e-2d69-460b-95c7-153372dee71a/download", "publisher": "Lakehead University", "kind": "secondary" }
+    ]
+  },
+  "otis-air-national-guard-base": {
+    "summary": "Otis became the U.S. Department of Defense's first operational wind-powered microgrid in 2018, supporting the full installation and participating in ISO New England frequency regulation.",
+    "status": "Operational; unveiled August 29, 2018",
+    "organizations": [
+      { "name": "102nd Intelligence Wing / Massachusetts Air National Guard", "role": "Owner, operator, and installation project lead", "sourceIds": ["afcec-otis"] },
+      { "name": "Raytheon", "role": "Principal investigator and microgrid control-system developer", "sourceIds": ["serdp-otis"] },
+      { "name": "Strategic Environmental Research and Development Program", "role": "DoD research program sponsor", "sourceIds": ["serdp-otis"] },
+      { "name": "Environmental Security Technology Certification Program", "role": "DoD demonstration and validation program", "sourceIds": ["serdp-otis"] },
+      { "name": "East Penn Manufacturing / Ecoult", "role": "Battery energy-storage technology supplier", "sourceIds": ["cbi-otis"] },
+      { "name": "Commonwealth of Massachusetts", "role": "Public project partner", "sourceIds": ["afcec-otis"] },
+      { "name": "U.S. Army Corps of Engineers 249th Engineer Battalion", "role": "Construction participant", "sourceIds": ["afcec-otis"] }
+    ],
+    "specifications": [
+      { "label": "Distribution work", "value": "More than 3 miles of three-phase cable, 165 utility poles, and more than 4 miles of fiber", "sourceIds": ["afcec-otis"] },
+      { "label": "Operating market", "value": "ISO New England frequency regulation", "sourceIds": ["serdp-otis"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid control system", "manufacturer": "Raytheon", "detail": "Cyber-secure controller developed for the high-wind-penetration, storage-centered installation.", "sourceIds": ["serdp-otis"] },
+      { "category": "Battery energy storage", "manufacturer": "East Penn Manufacturing / Ecoult", "detail": "Energy-storage system supplied to Raytheon; model and ratings were not stated in the reviewed public source.", "sourceIds": ["cbi-otis"] }
+    ],
+    "sources": [
+      { "id": "afcec-otis", "title": "Otis Microgrid ribbon-cutting marks a new era in energy resiliency and grid security", "url": "https://www.afcec.af.mil/Portals/17/documents/Energy/Energy%20Express/Energy%20Express%20Aug%202018_Final.pdf", "publisher": "U.S. Air Force Civil Engineer Center", "kind": "primary" },
+      { "id": "serdp-otis", "title": "Advancing Microgrid Solutions — Otis ANGB", "url": "https://serdp-estcp.mil/resources/details/ad540d55-6b02-4689-97af-360acb0a0d5f/advancing-microgrid-solutions", "publisher": "SERDP / ESTCP", "kind": "primary" },
+      { "id": "cbi-otis", "title": "Energy Storage for Otis Air National Guard Base", "url": "https://batteryinnovation.org/otis-air-national-guard-base/", "publisher": "Consortium for Battery Innovation", "kind": "primary" }
+    ]
+  },
+  "robben-island-green-microgrid": {
+    "summary": "Robben Island's solar-battery-diesel microgrid was funded by South Africa's Department of Tourism, delivered by SOLA Future Energy, and integrated with ABB storage, controls, inverters, and wireless communications.",
+    "status": "Operational; commissioned in 2017",
+    "organizations": [
+      { "name": "Robben Island Museum", "role": "Project host and island operator", "sourceIds": ["abb-robben"] },
+      { "name": "South African Department of Tourism", "role": "Project funder", "sourceIds": ["abb-robben"] },
+      { "name": "SOLA Future Energy", "role": "Engineering, procurement, and construction contractor", "sourceIds": ["abb-robben", "sola-robben"] },
+      { "name": "ABB", "role": "Storage, microgrid controls, solar inverters, and wireless network supplier", "sourceIds": ["abb-robben"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "666.4–667 kWp; 1,960 monocrystalline modules", "sourceIds": ["abb-robben", "sola-robben"] },
+      { "label": "Battery energy storage", "value": "500 kW / 837 kWh; 2,420 lithium-ion cells", "sourceIds": ["sola-robben"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controller", "manufacturer": "ABB", "model": "Microgrid Plus", "detail": "Balances solar, PowerStore storage, changing demand, and diesel backup with cloud-enabled remote operation.", "sourceIds": ["abb-robben"] },
+      { "category": "Battery energy storage", "manufacturer": "ABB", "model": "Ability PowerStore", "detail": "Containerized modular storage system rated by the EPC at 500 kW / 837 kWh.", "sourceIds": ["abb-robben", "sola-robben"] },
+      { "category": "Communications", "manufacturer": "ABB", "model": "ABB Ability wireless network", "detail": "Connects the solar plant to the microgrid and Cape Town operations center.", "sourceIds": ["abb-robben"] },
+      { "category": "Solar inverters", "manufacturer": "ABB", "detail": "Model not stated in the reviewed project release.", "sourceIds": ["abb-robben"] }
+    ],
+    "sources": [
+      { "id": "abb-robben", "title": "ABB microgrid technology to power Robben Island", "url": "https://resources.news.e.abb.com/attachments/published/45853/en-US/7A0B85BB72E8/ABB-microgrid-technology-to-power-Robben-Island.pdf", "publisher": "ABB", "kind": "primary" },
+      { "id": "sola-robben", "title": "Robben Island project reference", "url": "https://solagroup.co.za/battery-storage-projects/robben-island/", "publisher": "SOLA Group", "kind": "primary" }
+    ]
+  },
+  "taykwa-tagamou-nation": {
+    "summary": "The historical planning record is now supplemented by a current federal capacity-building program for community distributed-energy and grid-modernization planning. Public sources reviewed do not disclose a specific controller or equipment package for this record.",
+    "status": "Capacity building and electrical distribution planning",
+    "organizations": [
+      { "name": "Taykwa Tagamou Nation", "role": "Project recipient and community lead", "sourceIds": ["canada-ttn-grant", "ttn-rfp"] },
+      { "name": "Natural Resources Canada", "role": "Program administrator and contribution funder", "sourceIds": ["canada-ttn-grant"] },
+      { "name": "Hydro One", "role": "Utility coordination counterparty for current distribution planning", "sourceIds": ["ttn-rfp"] }
+    ],
+    "specifications": [
+      { "label": "Federal contribution", "value": "C$1,127,600 capacity-building agreement, 2022–2027", "sourceIds": ["canada-ttn-grant"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "canada-ttn-grant", "title": "Capacity building to develop community distributed energy resources", "url": "https://search.open.canada.ca/grants/record/nrcan-rncan%2C115-2022-2023-Q1-12266%2Ccurrent", "publisher": "Government of Canada", "kind": "primary" },
+      { "id": "ttn-rfp", "title": "Planning-level electrical load assessment and distribution capacity review", "url": "https://taykwatagamou.com/rfp/", "publisher": "Taykwa Tagamou Nation", "kind": "primary" }
+    ]
+  },
+  "tetrino-kola-pennisula": {
+    "summary": "Tetrino was one of three remote Murmansk-region villages included in a wind-solar-diesel modernization program. Public reporting identifies the municipal contracting authority and contractor, but does not provide a complete Tetrino-specific bill of materials.",
+    "status": "Commissioned in 2015; later public reporting documented wind-equipment reliability problems",
+    "organizations": [
+      { "name": "Varzuga rural settlement administration", "role": "Municipal contracting authority", "sourceIds": ["hibiny-tetrino"] },
+      { "name": "President-Neva Energy Center", "role": "Design and equipment contractor for Tetrino, Chavanga, and Chapoma", "sourceIds": ["hibiny-tetrino"] },
+      { "name": "Murmansk regional government", "role": "Regional program sponsor and funder", "sourceIds": ["unfccc-tetrino"] }
+    ],
+    "specifications": [
+      { "label": "Three-village program demand", "value": "515 kW across Tetrino, Chavanga, and Chapoma", "sourceIds": ["unfccc-tetrino"] },
+      { "label": "Three-village renewable allocation", "value": "175 kW wind and solar; approximately 34% of program demand", "sourceIds": ["unfccc-tetrino"] },
+      { "label": "Generation architecture", "value": "Wind, solar PV, and diesel generation", "sourceIds": ["unfccc-tetrino", "hibiny-tetrino"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "unfccc-tetrino", "title": "Renewables to Power Up Remote Russian Villages", "url": "https://unfccc.int/ru/node/63013", "publisher": "UN Climate Change", "kind": "secondary" },
+      { "id": "hibiny-tetrino", "title": "Solar, wind, and diesel stations for three Murmansk villages", "url": "https://www.hibiny.ru/murmanskaya-oblast/news/item-v-treh-otdalennyh-selah-murmanskoy-oblasti-ustanovyat-solnechnye-batarei-vetrogeneratory-i-dizelnye-stancii-67089/", "publisher": "Hibiny.ru", "kind": "secondary" }
+    ]
+  },
+  "wikwemikong-unceded-indian-reserve": {
+    "summary": "Wiikwemkoong's historical microgrid record was a community energy plan combining solar, building-efficiency upgrades, and microgrid software. Public planning documents give differing 250–300 kW capacity figures, so both are retained with their source context.",
+    "status": "Historical planning / construction record; present operating status not confirmed",
+    "organizations": [
+      { "name": "Wiikwemkoong Unceded Territory", "role": "Community owner and project sponsor", "sourceIds": ["ontario-wiky", "wdc-wiky"] },
+      { "name": "Wikwemikong Development Commission", "role": "Community economic-development and renewable-energy delivery organization", "sourceIds": ["wdc-wiky"] },
+      { "name": "Government of Canada", "role": "Small Communities Fund co-funder", "sourceIds": ["ontario-wiky"] },
+      { "name": "Government of Ontario", "role": "Small Communities Fund co-funder", "sourceIds": ["ontario-wiky"] }
+    ],
+    "specifications": [
+      { "label": "Published planning capacity", "value": "300 kW solar microgrid in Ontario's 2017 plan", "sourceIds": ["ontario-wiky"] },
+      { "label": "Published development capacity", "value": "250 kW microgrid in the Development Commission profile", "sourceIds": ["wdc-wiky"] },
+      { "label": "Planned building scope", "value": "Five community buildings plus efficiency, HVAC, insulation, and microgrid-software work", "sourceIds": ["ontario-wiky"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "ontario-wiky", "title": "2017 Long-Term Energy Plan — Wikwemikong First Nation", "url": "https://files.ontario.ca/books/ltep2017_0.pdf", "publisher": "Government of Ontario", "kind": "primary" },
+      { "id": "wdc-wiky", "title": "Wikwemikong Development Commission company profile", "url": "https://wikydevcom.ca/wp-content/uploads/2024/09/WDC-Company-Profile-2023.pdf", "publisher": "Wikwemikong Development Commission", "kind": "primary" }
+    ]
+  },
+  "ascension-island-microgrid": {
+    "summary": "Ascension Auxiliary Airfield's wind system is a U.S. military energy-resilience asset. A 2021 Air Force contract replaced six failed turbines with a 900 kW turbine, battery storage, and upgraded supervisory controls; the earlier directory's 1.65 MW wind figure is retained as historical data.",
+    "status": "Modernization contract awarded in 2021; current commissioning status not independently confirmed",
+    "organizations": [
+      { "name": "U.S. Department of the Air Force", "role": "Installation and energy-system owner", "sourceIds": ["usaf-ascension"] },
+      { "name": "U.S. Space Force Space Launch Delta 45", "role": "Ascension Auxiliary Airfield operating organization", "sourceIds": ["usaf-ascension"] },
+      { "name": "Air Force Civil Engineer Center", "role": "Energy Resilience and Conservation Investment Program delivery authority", "sourceIds": ["usaf-ascension"] },
+      { "name": "Jade Creek Construction, LLC", "role": "Design-build contractor under the reported $11.3 million award", "sourceIds": ["usaf-ascension"] }
+    ],
+    "specifications": [
+      { "label": "Modernized wind generation", "value": "One 900 kW wind turbine replacing six failed units", "sourceIds": ["usaf-ascension"] },
+      { "label": "Controls scope", "value": "Battery energy storage and SCADA upgrade; capacities and models not stated", "sourceIds": ["usaf-ascension"] }
+    ],
+    "equipment": [
+      { "category": "Supervisory controls", "detail": "The contract includes a SCADA upgrade, but the reviewed Air Force release does not name the controller or SCADA vendor.", "sourceIds": ["usaf-ascension"] }
+    ],
+    "sources": [
+      { "id": "usaf-ascension", "title": "Air Force awards ERCIP contract for Ascension Island", "url": "https://www.afmc.af.mil/News/Article-Display/Article/2743507/air-force-awards-ercip-contract-for-ascension-island/", "publisher": "U.S. Air Force Materiel Command", "kind": "primary" }
+    ]
+  },
+  "baron-techno-park": {
+    "summary": "Baron Techno Park is an Indonesian government renewable-energy research and training site. Published plant studies document a PV-wind-biodiesel-diesel-battery hybrid system and a 25 kVA hybrid controller, but do not identify the controller manufacturer.",
+    "status": "Government research and demonstration site; present operating configuration not independently confirmed",
+    "organizations": [
+      { "name": "Agency for the Assessment and Application of Technology (BPPT; now BRIN)", "role": "Developer and research-site operator", "sourceIds": ["baron-study", "brin-baron"] },
+      { "name": "Government of the Special Region of Yogyakarta", "role": "Regional project collaborator", "sourceIds": ["baron-study"] },
+      { "name": "Government of Norway", "role": "NORAD grant funder reported for the 2009 hybrid-system development", "sourceIds": ["baron-study"] }
+    ],
+    "specifications": [
+      { "label": "Published installed PV", "value": "36 kW", "sourceIds": ["baron-study"] },
+      { "label": "Published wind generation", "value": "10 kW plus 5 kW turbines", "sourceIds": ["baron-study"] },
+      { "label": "Published firm generation", "value": "25 kW biodiesel generator plus 25 kW backup diesel generator", "sourceIds": ["baron-study"] },
+      { "label": "Published battery bank", "value": "288 kVAh, 1,200 Ah; 120 cells", "sourceIds": ["baron-study"] }
+    ],
+    "equipment": [
+      { "category": "Hybrid power controller", "detail": "Published rating is 25 kVA; manufacturer and model were not disclosed in the reviewed sources.", "sourceIds": ["baron-study"] }
+    ],
+    "sources": [
+      { "id": "baron-study", "title": "Effect of Load Growth on PLTH Baron Techno Park Performance", "url": "https://download.garuda.kemdikbud.go.id/article.php?article=1300928&title=Effect+of+Load+Growth+on+PLTH+Baron+Techno+Park+Performance&val=17524", "publisher": "Indonesian Ministry of Education Garuda repository", "kind": "primary" },
+      { "id": "brin-baron", "title": "Renewable Energy: Policy and Strategy — Baron Technopark demonstrations", "url": "https://penerbit.brin.go.id/press/catalog/download/900/798/19076?inline=1", "publisher": "National Research and Innovation Agency (BRIN)", "kind": "primary" }
+    ]
+  },
+  "bornholm-island": {
+    "summary": "Bornholm served as the EcoGrid EU living laboratory for real-time, price-responsive demand and renewable integration. The demonstration ran from 2011 to 2015 across the island distribution system and involved a 17-member utility, research, and technology consortium.",
+    "status": "EcoGrid EU demonstration completed in 2015; Bornholm remains an active energy test island",
+    "organizations": [
+      { "name": "Bornholms Energi & Forsyning (BEOF)", "role": "Host distribution utility and demonstration operator", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Technical University of Denmark (DTU)", "role": "Research and project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "SINTEF Energy Research", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Energinet.dk", "role": "Transmission-system and project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Siemens", "role": "Technology partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "IBM", "role": "Technology partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "EnCT", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Elia", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Tecnalia", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Austrian Institute of Technology (AIT)", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Energy Research Centre of the Netherlands (ECN)", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Eandis", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Tallinn University of Technology", "role": "Research partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "EDP Distribuição", "role": "Project partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "Landis+Gyr", "role": "Metering and technology partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "TNO", "role": "Research partner", "sourceIds": ["beof-ecogrid"] },
+      { "name": "European Commission", "role": "Seventh Framework Programme funder", "sourceIds": ["beof-ecogrid"] }
+    ],
+    "specifications": [
+      { "label": "Archived island peak load", "value": "63 MW", "sourceIds": ["archive"] },
+      { "label": "Archived generating fleet", "value": "14 diesel generators (34 MW), two steam units (25 MW and 37 MW), 35 wind turbines (29 MW), and two biogas turbines (2 MW)", "sourceIds": ["archive"] },
+      { "label": "EcoGrid project period", "value": "March 2011 to February 2015; EU project 268199", "sourceIds": ["beof-ecogrid"] }
+    ],
+    "equipment": [
+      { "category": "Demand-response control", "detail": "EcoGrid used real-time electricity pricing and flexible-load control across participating customers; the public consortium page does not identify one island-wide controller model.", "sourceIds": ["beof-ecogrid"] }
+    ],
+    "sources": [
+      { "id": "beof-ecogrid", "title": "EcoGrid EU", "url": "https://www.beof.dk/testisland-bornholm/tidligere-projekter/elnettet/ecogrid-eu", "publisher": "Bornholms Energi & Forsyning", "kind": "primary" }
+    ]
+  },
+  "chavanga-kola-pennisula": {
+    "summary": "Chavanga was one of three remote Murmansk-region villages in a wind-solar-diesel modernization program. Public reporting identifies the municipal authority and design contractor, while project-specific equipment models remain unavailable.",
+    "status": "Commissioned under the 2015 three-village program; present operating status not confirmed",
+    "organizations": [
+      { "name": "Varzuga rural settlement administration", "role": "Municipal contracting authority", "sourceIds": ["hibiny-chavanga"] },
+      { "name": "President-Neva Energy Center", "role": "Design and equipment contractor for Chavanga, Tetrino, and Chapoma", "sourceIds": ["hibiny-chavanga"] },
+      { "name": "Murmansk regional government", "role": "Regional program sponsor and funder", "sourceIds": ["unfccc-chavanga"] }
+    ],
+    "specifications": [
+      { "label": "Archived Chavanga solar", "value": "75 kW", "sourceIds": ["archive"] },
+      { "label": "Archived Chavanga wind", "value": "120 kW", "sourceIds": ["archive"] },
+      { "label": "Three-village program", "value": "515 kW demand and 175 kW wind/solar across Chavanga, Tetrino, and Chapoma", "sourceIds": ["unfccc-chavanga"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "unfccc-chavanga", "title": "Renewables to Power Up Remote Russian Villages", "url": "https://unfccc.int/ru/node/63013", "publisher": "UN Climate Change", "kind": "secondary" },
+      { "id": "hibiny-chavanga", "title": "Solar, wind, and diesel stations for three Murmansk villages", "url": "https://www.hibiny.ru/murmanskaya-oblast/news/item-v-treh-otdalennyh-selah-murmanskoy-oblasti-ustanovyat-solnechnye-batarei-vetrogeneratory-i-dizelnye-stancii-67089/", "publisher": "Hibiny.ru", "kind": "secondary" }
+    ]
+  },
+  "coober-pedy": {
+    "summary": "Coober Pedy's isolated power system combines wind, solar, diesel generation, battery storage, and dedicated integration technology. EDL built, owns, and operates the renewable hybrid station under the South Australian off-grid system.",
+    "status": "Operational isolated hybrid power system",
+    "organizations": [
+      { "name": "EDL", "role": "Developer, owner, and operator of the hybrid renewable power station", "sourceIds": ["sa-offgrid"] },
+      { "name": "Government of South Australia", "role": "Off-grid electricity system authority and technical regulator", "sourceIds": ["sa-offgrid", "sa-regulator"] }
+    ],
+    "specifications": [
+      { "label": "Wind generation", "value": "Approximately 4 MW (two 2.05 MW turbines in the regulator's equipment schedule)", "sourceIds": ["sa-offgrid", "sa-regulator"] },
+      { "label": "Solar PV", "value": "1 MW", "sourceIds": ["sa-offgrid", "sa-regulator"] },
+      { "label": "Battery storage", "value": "1 MW / 500 kWh project rating; regulator later reported 600 kWh", "sourceIds": ["sa-offgrid", "sa-regulator"] },
+      { "label": "Diesel generation", "value": "Eight 500 kW units", "sourceIds": ["sa-regulator"] }
+    ],
+    "equipment": [
+      { "category": "Hybrid integration system", "manufacturer": "EDL", "detail": "EDL reports proprietary integration technology; the reviewed government pages do not identify a controller model.", "sourceIds": ["sa-offgrid"] }
+    ],
+    "sources": [
+      { "id": "sa-offgrid", "title": "Off-grid energy projects — Coober Pedy Renewable Hybrid Project", "url": "https://energymining.sa.gov.au/industry/hydrogen-and-renewable-energy/off-grid-energy/off-grid-projects", "publisher": "Government of South Australia", "kind": "primary" },
+      { "id": "sa-regulator", "title": "Technical Regulator Annual Report 2021–22", "url": "https://www.energymining.sa.gov.au/about/open-government/annual-reports/otr-annual-reports/technical-regulator-annual-report-2021-22", "publisher": "Government of South Australia", "kind": "primary" }
+    ]
+  },
+  "diavik-mine-wind-diesel-microgrid": {
+    "summary": "Diavik's mine power system integrates four direct-drive Enercon wind turbines with the site's Caterpillar diesel plant. Rio Tinto reports the four-turbine wind farm was commissioned in 2012; model-level details are preserved only where the archived technical record disclosed them.",
+    "status": "Mine ceased diamond production in 2026; wind-diesel assets documented for the operating-mine period",
+    "organizations": [
+      { "name": "Rio Tinto", "role": "Mine owner and operator", "sourceIds": ["rio-diavik"] },
+      { "name": "Diavik Diamond Mines Inc.", "role": "Historical mine operating entity", "sourceIds": ["rio-diavik"] },
+      { "name": "Enercon", "role": "Wind-turbine supplier", "sourceIds": ["archive"] },
+      { "name": "Caterpillar", "role": "Diesel-generator supplier identified by the archived project record", "sourceIds": ["archive"] }
+    ],
+    "specifications": [
+      { "label": "Wind farm", "value": "Four 2.3 MW direct-drive turbines; 9.2 MW total", "sourceIds": ["archive", "rio-diavik"] },
+      { "label": "Archived diesel plant", "value": "48 MW Caterpillar generation", "sourceIds": ["archive"] },
+      { "label": "Wind-turbine features", "value": "Gearless generators and blade de-icing", "sourceIds": ["archive"] }
+    ],
+    "equipment": [
+      { "category": "Wind turbines", "manufacturer": "Enercon", "detail": "Four 2.3 MW, direct-drive units with blade de-icing; the exact Enercon model was not stated in the recovered source text.", "sourceIds": ["archive"] },
+      { "category": "Diesel generation", "manufacturer": "Caterpillar", "detail": "Archived aggregate rating: 48 MW; engine and generator models not stated.", "sourceIds": ["archive"] }
+    ],
+    "sources": [
+      { "id": "rio-diavik", "title": "Rio Tinto history — Diavik wind farm", "url": "https://www.riotinto.com/about/history", "publisher": "Rio Tinto", "kind": "primary" }
+    ]
+  },
+  "f-grid-project-toyota-plant-tohoku-area-japan": {
+    "summary": "Toyota's F-Grid linked industrial and municipal loads in Miyagi through private power lines, a community energy management system, city-gas generation, solar, plug-in vehicles, and reused Prius batteries. Toyota's launch release names all eleven participating organizations and their roles.",
+    "status": "Demonstration launched in 2013; present operating status not independently confirmed",
+    "organizations": [
+      { "name": "Toyota Motor Corporation", "role": "Project supervision and 26.4% participant share", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Toyota Motor East Japan, Inc.", "role": "Administration, operation, and energy-system management; 61.2% share", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Toyota Tsusho Corporation", "role": "Administration, operation, and efficiency verification; 10.6% share", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Tohoku Electric Power Co., Inc.", "role": "Electricity provider and 1.1% participant", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Toyota Boshoku Tohoku Corporation", "role": "Participating industrial load", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Skylark Co., Ltd.", "role": "Participating business", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Toyota Transportation Corporation", "role": "Participating business", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Central Motor Wheel Tohoku Co., Ltd.", "role": "Participating industrial load", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Vuteq Corporation", "role": "Participating industrial load", "sourceIds": ["toyota-fgrid"] },
+      { "name": "VEGi-Dream Kurihara Corporation", "role": "Participating agricultural load", "sourceIds": ["toyota-fgrid"] },
+      { "name": "Sendai City Gas Bureau", "role": "City-gas supplier", "sourceIds": ["toyota-fgrid"] }
+    ],
+    "specifications": [
+      { "label": "Archived solar PV", "value": "700 kW", "sourceIds": ["archive"] },
+      { "label": "Archived gas/diesel generation", "value": "7.8 MW", "sourceIds": ["archive"] },
+      { "label": "Reused Prius storage", "value": "30 kW and 20 kW battery charging systems", "sourceIds": ["toyota-fgrid"] },
+      { "label": "Vehicle power", "value": "Eight plug-in hybrid vehicles, each capable of 100 V / 1,500 W output", "sourceIds": ["toyota-fgrid"] },
+      { "label": "Emergency export", "value": "Up to 1,500 kW of unused generation available to the surrounding area", "sourceIds": ["toyota-fgrid"] }
+    ],
+    "equipment": [
+      { "category": "Community controls", "model": "Community Energy Management System (CEMS)", "detail": "Balances private generation, participating facilities, storage, vehicles, and external-grid exchange; Toyota did not disclose a separate controller vendor/model.", "sourceIds": ["toyota-fgrid"] },
+      { "category": "Stationary storage", "manufacturer": "Toyota", "detail": "Two charging/storage systems using reused Prius nickel-metal-hydride batteries, rated 30 kW and 20 kW.", "sourceIds": ["toyota-fgrid"] }
+    ],
+    "sources": [
+      { "id": "toyota-fgrid", "title": "F-Grid system begins operation in Miyagi Prefecture", "url": "https://global.toyota/en/detail/10001641/", "publisher": "Toyota Motor Corporation", "kind": "primary" }
+    ]
+  },
+  "falkland-islands-microgrid": {
+    "summary": "The Falkland Islands Government's Stanley power system combines Sand Bay wind generation, flywheel stabilization, and multiple generations of diesel plant. The Public Works Department publishes turbine, engine, and commissioning details.",
+    "status": "Operational island power system",
+    "organizations": [
+      { "name": "Falkland Islands Government Public Works Department", "role": "Owner and operator of Stanley's power and wind systems", "sourceIds": ["fig-power"] },
+      { "name": "Enercon", "role": "Sand Bay wind-turbine supplier", "sourceIds": ["fig-power"] },
+      { "name": "W. H. Allen", "role": "Legacy Stanley B Power Station diesel-engine supplier", "sourceIds": ["fig-power"] },
+      { "name": "Cummins", "role": "Supplier of three interim 2 MW diesel generators installed in 2020", "sourceIds": ["fig-power"] }
+    ],
+    "specifications": [
+      { "label": "Sand Bay wind farm", "value": "Six Enercon E-33 turbines at 330 kW each; 1.98 MW total", "sourceIds": ["fig-power"] },
+      { "label": "Flywheel storage", "value": "Three flywheels added with the second wind phase in 2010", "sourceIds": ["fig-power"] },
+      { "label": "Legacy Stanley B diesels", "value": "Eight W. H. Allen engines ranging from 320 kW to 1.5 MW", "sourceIds": ["fig-power"] },
+      { "label": "Interim diesel capacity", "value": "Three 2 MW Cummins units installed in 2020", "sourceIds": ["fig-power"] }
+    ],
+    "equipment": [
+      { "category": "Wind turbines", "manufacturer": "Enercon", "model": "E-33", "detail": "Six 330 kW machines installed in two three-turbine phases.", "sourceIds": ["fig-power"] },
+      { "category": "Diesel generators", "manufacturer": "Cummins", "detail": "Three 2 MW interim units commissioned in 2020; model not stated.", "sourceIds": ["fig-power"] }
+    ],
+    "sources": [
+      { "id": "fig-power", "title": "Power and Electrical Services", "url": "https://falklands.gov.fk/publicworks/services/power-and-electrical", "publisher": "Falkland Islands Government", "kind": "primary" }
+    ]
+  },
+  "fort-belvoir-dc-microgrid": {
+    "summary": "The recovered record identifies a 16 kW solar DC-microgrid activity at Fort Belvoir, but it does not contain enough detail to tie that figure to a specific base facility or vendor. The verified public record establishes Fort Belvoir's Army power-research team, not a complete site bill of materials.",
+    "status": "Historical research/demonstration record; exact facility and present status not verified",
+    "organizations": [
+      { "name": "U.S. Army Research, Development and Engineering Command", "role": "Army research organization associated with Fort Belvoir microgrid development", "sourceIds": ["army-belvoir"] },
+      { "name": "Communications-Electronics Research, Development and Engineering Center (CERDEC)", "role": "Fort Belvoir-based tactical microgrid research team", "sourceIds": ["army-belvoir"] }
+    ],
+    "specifications": [
+      { "label": "Archived solar rating", "value": "16 kW; facility attribution and equipment details not stated", "sourceIds": ["archive"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "army-belvoir", "title": "Army engineers spur development of tactical microgrids", "url": "https://www.army.mil/article/81123/army_engineers_spur_development_of_tactical_microgrids", "publisher": "United States Army", "kind": "primary" }
+    ]
+  },
+  "fort-severn": {
+    "summary": "Fort Severn First Nation's remote-community solar project was delivered with Hedgehog Technologies and designed to reduce diesel dependence. Federal reporting identifies community ownership, project management, scale, completion year, and expected fuel savings.",
+    "status": "Operational; completed in 2021",
+    "organizations": [
+      { "name": "Fort Severn First Nation", "role": "Project owner and community operator", "sourceIds": ["cer-fort-severn", "ontario-fort-severn"] },
+      { "name": "Hedgehog Technologies", "role": "Project manager", "sourceIds": ["cer-fort-severn"] },
+      { "name": "Government of Canada", "role": "Clean-energy funder and reporting authority", "sourceIds": ["cer-fort-severn"] },
+      { "name": "Government of Ontario", "role": "Remote First Nation renewable-energy funder", "sourceIds": ["ontario-fort-severn"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "300 kW", "sourceIds": ["cer-fort-severn"] },
+      { "label": "Estimated diesel displacement", "value": "Approximately 20%, or 400,000 litres per year", "sourceIds": ["cer-fort-severn"] },
+      { "label": "Archived storage rating", "value": "300 kW as published; energy capacity and supplier were not stated", "sourceIds": ["archive"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "cer-fort-severn", "title": "Clean energy projects in remote Indigenous and northern communities", "url": "https://neb-one.gc.ca/en/data-analysis/energy-markets/market-snapshots/2023/market-snapshot-clean-energy-projects-remote-indigenous-northern-communities.html?=undefined&wbdisable=true", "publisher": "Canada Energy Regulator", "kind": "primary" },
+      { "id": "ontario-fort-severn", "title": "Ontario investing in First Nation renewable energy project", "url": "https://news.ontario.ca/mndmf/en/2015/08/ontario-investing-25-million-in-first-nation-renewable-energy-project.html", "publisher": "Government of Ontario", "kind": "primary" }
+    ]
+  },
+  "hachinohe-microgrid": {
+    "summary": "Hachinohe's NEDO demonstration connected municipal buildings, schools, and a sewage plant over a private 6 kV feeder, coordinating PV, small wind, lead-acid storage, and sewage-gas engines. The public demonstration ended in 2008 after its funded operating period.",
+    "status": "Demonstration operated from October 2005 through March 2008; no longer operating as the cited project",
+    "organizations": [
+      { "name": "Hachinohe City", "role": "Host municipality and participating load owner", "sourceIds": ["hachinohe-symposium"] },
+      { "name": "New Energy and Industrial Technology Development Organization (NEDO)", "role": "Program sponsor and funder", "sourceIds": ["hachinohe-symposium", "iea-hachinohe"] },
+      { "name": "Mitsubishi Research Institute", "role": "Research and project collaborator", "sourceIds": ["hachinohe-symposium"] },
+      { "name": "Mitsubishi Electric", "role": "Engineering and controls collaborator", "sourceIds": ["hachinohe-symposium"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "130 kW total: two 50 kW arrays and three 10 kW arrays", "sourceIds": ["hachinohe-symposium"] },
+      { "label": "Biogas engines", "value": "Three 170 kW units; 510 kW total, fueled with sewage and waste gas", "sourceIds": ["hachinohe-symposium"] },
+      { "label": "Wind generation", "value": "20 kW", "sourceIds": ["hachinohe-symposium"] },
+      { "label": "Battery", "value": "100 kW lead-acid system", "sourceIds": ["hachinohe-symposium"] },
+      { "label": "Private feeder", "value": "5.4 km, 6 kV, carrying power and communications", "sourceIds": ["hachinohe-symposium"] },
+      { "label": "Control target", "value": "Supply-demand error within 3% on a six-minute moving-average basis", "sourceIds": ["archive"] }
+    ],
+    "equipment": [
+      { "category": "Energy management and controls", "manufacturer": "Mitsubishi Electric", "detail": "Project collaborator for coordinated generation and storage control; the reviewed public materials do not name a commercial controller model.", "sourceIds": ["hachinohe-symposium"] }
+    ],
+    "sources": [
+      { "id": "hachinohe-symposium", "title": "Hachinohe Microgrid", "url": "https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/hachinohe-microgrid/", "publisher": "Microgrid Symposium", "kind": "secondary" },
+      { "id": "iea-hachinohe", "title": "Urban PV systems — Hachinohe demonstration", "url": "https://iea-pvps.org/wp-content/uploads/2020/01/rep11_06.pdf", "publisher": "IEA Photovoltaic Power Systems Programme", "kind": "primary" }
+    ]
+  },
+  "hempstead-port-washington-microgrid-feasibility-study": {
+    "summary": "The Port Washington Community Microgrid was a NY Prize Stage 1 feasibility design, not an operating plant. The official report names the entire project team and specifies a 926 kW design with CHP, solar, storage, and existing emergency generation across five critical-facility nodes.",
+    "status": "Stage 1 feasibility study completed in April 2016; construction and operation not verified",
+    "organizations": [
+      { "name": "Town of North Hempstead", "role": "Awardee and community project lead", "sourceIds": ["nyserda-port"] },
+      { "name": "Hitachi Microgrids", "role": "Technical lead and microgrid design contractor", "sourceIds": ["nyserda-port"] },
+      { "name": "Johnson Controls, Inc.", "role": "Additional technical consultant", "sourceIds": ["nyserda-port"] },
+      { "name": "National Renewable Energy Laboratory", "role": "Renewable-energy and microgrid consultant", "sourceIds": ["nyserda-port"] },
+      { "name": "Pace University Law School", "role": "Legal and regulatory consultant", "sourceIds": ["nyserda-port"] },
+      { "name": "New York State Energy Research and Development Authority (NYSERDA)", "role": "NY Prize program funder and study publisher", "sourceIds": ["nyserda-port"] },
+      { "name": "PSEG Long Island / Long Island Power Authority", "role": "Electric utility", "sourceIds": ["nyserda-port"] },
+      { "name": "National Grid", "role": "Natural-gas utility", "sourceIds": ["nyserda-port"] },
+      { "name": "Residents for a More Beautiful Port Washington", "role": "Community project participant", "sourceIds": ["nyserda-port"] },
+      { "name": "Port Washington Union Free School District", "role": "Critical-facility and load participant", "sourceIds": ["nyserda-port"] },
+      { "name": "Port Washington Public Library", "role": "Critical-facility and load participant", "sourceIds": ["nyserda-port"] },
+      { "name": "Port Washington Fire Department", "role": "Emergency-services participant", "sourceIds": ["nyserda-port"] },
+      { "name": "Port Washington Water District", "role": "Critical-infrastructure participant", "sourceIds": ["nyserda-port"] },
+      { "name": "Landmark on Main Street", "role": "Senior-housing and critical-load participant", "sourceIds": ["nyserda-port"] }
+    ],
+    "specifications": [
+      { "label": "Feasibility design size", "value": "926 kW serving approximately 4.96 GWh/year", "sourceIds": ["nyserda-port"] },
+      { "label": "Proposed CHP", "value": "11 units totaling 616 kW", "sourceIds": ["nyserda-port"] },
+      { "label": "Proposed solar PV", "value": "Six new systems totaling 310 kW, plus one existing 40 kW system", "sourceIds": ["nyserda-port"] },
+      { "label": "Proposed storage", "value": "Ten systems totaling 150 kWh", "sourceIds": ["nyserda-port"] },
+      { "label": "Existing emergency generation", "value": "Seven units totaling 1,712 kW", "sourceIds": ["nyserda-port"] },
+      { "label": "Modeled installed cost", "value": "$4.347 million before investment-tax-credit assumptions", "sourceIds": ["nyserda-port"] }
+    ],
+    "equipment": [
+      { "category": "Community microgrid controller", "manufacturer": "Hitachi Microgrids", "detail": "Conceptual controller architecture for the five-node design; the feasibility report does not specify a commercial model number.", "sourceIds": ["nyserda-port"] },
+      { "category": "Design optimization software", "manufacturer": "UL Solutions", "model": "HOMER Pro", "detail": "Used to model and optimize the five nodes; this is a planning tool, not the field controller.", "sourceIds": ["nyserda-port"] }
+    ],
+    "sources": [
+      { "id": "nyserda-port", "title": "Port Washington Community Microgrid — NY Prize Stage 1 Feasibility Assessment", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/10-Town-North-Hempstead-Port-Washington.pdf", "publisher": "NYSERDA", "kind": "primary" }
+    ]
+  },
+  "ilse-of-eigg-microgrid": {
+    "summary": "Eigg Electric is a community-owned, managed, and maintained island utility integrating hydro, wind, solar, batteries, and automatic diesel backup. The owner publishes the design-build team, subcontractors, funders, and current generation mix.",
+    "status": "Operational community-owned island microgrid",
+    "organizations": [
+      { "name": "Eigg Electric Ltd.", "role": "Community owner, operator, and maintenance organization", "sourceIds": ["eigg-official"] },
+      { "name": "Isle of Eigg Heritage Trust", "role": "Community project sponsor and funder", "sourceIds": ["eigg-official"] },
+      { "name": "Scottish Hydro Contracting Ltd.", "role": "Main design-build contractor", "sourceIds": ["eigg-official"] },
+      { "name": "Synergie Scotland Ltd.", "role": "Project manager", "sourceIds": ["eigg-official"] },
+      { "name": "E-Connect Ventures Ltd.", "role": "Subcontractor", "sourceIds": ["eigg-official"] },
+      { "name": "Wind and Sun Ltd.", "role": "Subcontractor", "sourceIds": ["eigg-official"] },
+      { "name": "Energy Renewed Ltd.", "role": "Subcontractor", "sourceIds": ["eigg-official"] },
+      { "name": "G.G. MacKenzie Contractors Ltd.", "role": "Subcontractor", "sourceIds": ["eigg-official"] },
+      { "name": "European Regional Development Fund", "role": "Project funder", "sourceIds": ["eigg-official"] },
+      { "name": "Big Lottery Fund", "role": "Project funder", "sourceIds": ["eigg-official"] },
+      { "name": "Highlands and Islands Enterprise / HIE Lochaber", "role": "Project funder", "sourceIds": ["eigg-official"] },
+      { "name": "Energy Saving Trust", "role": "Project funder", "sourceIds": ["eigg-official"] },
+      { "name": "The Highland Council", "role": "Project funder", "sourceIds": ["eigg-official"] }
+    ],
+    "specifications": [
+      { "label": "Hydroelectric generation", "value": "Three generators totaling approximately 110 kW", "sourceIds": ["eigg-official", "archive"] },
+      { "label": "Wind generation", "value": "Four turbines totaling 24 kW", "sourceIds": ["eigg-official", "archive"] },
+      { "label": "Solar PV", "value": "170 kW currently reported; archived record documented a 32 kW 2010 configuration", "sourceIds": ["eigg-official", "archive"] },
+      { "label": "Diesel backup", "value": "Two automatic 64 kW generators", "sourceIds": ["eigg-official", "archive"] },
+      { "label": "Archived battery bank", "value": "212 kWh Rolls Surrette flooded lead-acid", "sourceIds": ["archive"] },
+      { "label": "Distribution grid", "value": "Approximately 11 km of buried high-voltage network", "sourceIds": ["eigg-official"] }
+    ],
+    "equipment": [
+      { "category": "Wind turbines", "manufacturer": "Proven Energy", "detail": "Four turbines totaling 24 kW.", "sourceIds": ["archive"] },
+      { "category": "Wind inverters", "manufacturer": "SMA", "model": "Windy Boy 6000A", "detail": "Used with the four Proven wind turbines.", "sourceIds": ["archive"] },
+      { "category": "PV inverters", "manufacturer": "SMA", "model": "Sunny Boy 3000", "detail": "Three units documented for the earlier PV configuration.", "sourceIds": ["archive"] },
+      { "category": "Battery bank", "manufacturer": "Rolls Surrette", "detail": "Archived capacity: 212 kWh flooded lead-acid.", "sourceIds": ["archive"] }
+    ],
+    "sources": [
+      { "id": "eigg-official", "title": "Eigg Electric", "url": "https://isleofeigg.org/eigg-electric/", "publisher": "Isle of Eigg", "kind": "primary" }
+    ]
+  },
+  "kpcl-mandya": {
+    "summary": "The recovered directory labels this a 100 kW KPCL microgrid in Mandya, but the exact installation could not be matched to a public technical file. Official records separately verify KPCL's larger Belakavadi solar project and BHEL's EPC role; those figures are shown as context, not silently merged with the archived 100 kW record.",
+    "status": "Historical record with unresolved facility identity",
+    "organizations": [
+      { "name": "Karnataka Power Corporation Limited (KPCL)", "role": "Owner named by the recovered project title; owner of the separately verified Belakavadi solar plant", "sourceIds": ["archive", "unfccc-kpcl"] },
+      { "name": "Bharat Heavy Electricals Limited (BHEL)", "role": "Turnkey EPC for KPCL's separately verified Belakavadi plant; relationship to the archived 100 kW record is unconfirmed", "sourceIds": ["bhel-kpcl"] }
+    ],
+    "specifications": [
+      { "label": "Archived microgrid solar rating", "value": "100 kW; exact site and equipment not disclosed", "sourceIds": ["archive"] },
+      { "label": "Separately verified KPCL Belakavadi plant", "value": "5 MW crystalline-silicon PV; not assumed to be the same asset", "sourceIds": ["unfccc-kpcl", "bhel-kpcl"] }
+    ],
+    "equipment": [],
+    "sources": [
+      { "id": "unfccc-kpcl", "title": "Grid-connected 5 MWp solar PV plant in Belakavadi village, Mandya", "url": "https://cdm.unfccc.int/Projects/DB/BVQI1425101454.3/view", "publisher": "UNFCCC Clean Development Mechanism", "kind": "primary" },
+      { "id": "bhel-kpcl", "title": "BHEL secures turnkey contract for KPCL solar power plant", "url": "https://www.bhel.com/bhel-secures-major-turnkey-contract-grid-connected-eco-friendly-solar-power-plant-kpcl", "publisher": "Bharat Heavy Electricals Limited", "kind": "primary" }
+    ]
+  },
+  "kithnos": {
+    "summary": "Kythnos hosted successive island-grid and remote-bay demonstrations that helped establish AC-coupled hybrid microgrids. SMA's technical case study identifies the utility and research partners, the automatic controls, turbine and diesel models, storage ratings, and Sunny Island grid-forming architecture.",
+    "status": "Historical operating demonstrations; present configuration not independently confirmed",
+    "organizations": [
+      { "name": "Public Power Corporation of Greece (PPC)", "role": "Island utility and wind-project partner", "sourceIds": ["sma-kythnos"] },
+      { "name": "SMA Solar Technology", "role": "Automatic control system, PV inverter, and battery-inverter supplier", "sourceIds": ["sma-kythnos"] },
+      { "name": "MAN", "role": "Early wind-project partner", "sourceIds": ["sma-kythnos"] },
+      { "name": "University of Kassel", "role": "Research and technology-development partner", "sourceIds": ["sma-kythnos"] },
+      { "name": "ISET e.V.", "role": "Sunny Island development partner", "sourceIds": ["sma-kythnos"] },
+      { "name": "Vestas", "role": "500 kW wind-turbine supplier", "sourceIds": ["sma-kythnos"] },
+      { "name": "MWM", "role": "Diesel-engine supplier", "sourceIds": ["sma-kythnos"] },
+      { "name": "German Federal Ministry of Education and Research", "role": "Project funder", "sourceIds": ["sma-kythnos"] },
+      { "name": "German Federal Ministry of Economics and Technology", "role": "Project funder", "sourceIds": ["sma-kythnos"] },
+      { "name": "European Commission", "role": "PV-Mode and MORE project funder", "sourceIds": ["sma-kythnos"] }
+    ],
+    "specifications": [
+      { "label": "Whole-island PV", "value": "100 kWp", "sourceIds": ["sma-kythnos"] },
+      { "label": "Whole-island wind", "value": "500 kW Vestas V39/500", "sourceIds": ["sma-kythnos"] },
+      { "label": "Whole-island battery", "value": "Approximately 400 kWh; 500 kW for 10 minutes", "sourceIds": ["sma-kythnos"] },
+      { "label": "Whole-island diesel", "value": "Five 400 kW MWM 12-cylinder turbo-diesel sets", "sourceIds": ["sma-kythnos"] },
+      { "label": "Remote-bay microgrid", "value": "10 kW PV, nominal 53 kWh battery, and 5 kW diesel generator", "sourceIds": ["archive"] }
+    ],
+    "equipment": [
+      { "category": "Whole-island control system", "manufacturer": "SMA", "detail": "Fully automatic 1998 control system coordinating diesel starts/stops, wind, PV, battery conversion, phase shifting, and fast load control.", "sourceIds": ["sma-kythnos"] },
+      { "category": "Grid-forming battery inverter", "manufacturer": "SMA", "model": "Sunny Island", "detail": "Central grid master for the 2001 modular AC-coupled PV-battery and PV-battery-diesel systems.", "sourceIds": ["sma-kythnos"] },
+      { "category": "Wind turbine", "manufacturer": "Vestas", "model": "V39/500", "detail": "500 kW turbine installed in 1998.", "sourceIds": ["sma-kythnos"] },
+      { "category": "Diesel engines", "manufacturer": "MWM", "detail": "Five 12-cylinder turbo-diesel sets rated 400 kW each.", "sourceIds": ["sma-kythnos"] }
+    ],
+    "sources": [
+      { "id": "sma-kythnos", "title": "Kythnos Island — modular hybrid power supply based on AC coupling", "url": "https://files.sma.de/downloads/Kythnos.pdf", "publisher": "SMA Solar Technology", "kind": "primary" }
+    ]
+  },
+  "mara-island": {
+    "summary": "Mara Island's Korean stand-alone microgrid combines PV, diesel generation, battery storage, and a power-management system. Public project and research records identify KEPCO, KIER, GE Energy, AstroKorea, and Kwangdong, while also documenting multiple system generations with differing storage ratings.",
+    "status": "Historical operating island microgrid; present configuration not independently confirmed",
+    "organizations": [
+      { "name": "Korea Electric Power Corporation (KEPCO)", "role": "Utility and long-term island-PV project collaborator", "sourceIds": ["mara-islands", "mara-ems"] },
+      { "name": "Korea Institute of Energy Research (KIER)", "role": "Research and system-development partner", "sourceIds": ["mara-islands"] },
+      { "name": "KEPCO Research Institute (KEPRI)", "role": "Microgrid EMS research and demonstration organization", "sourceIds": ["mara-ems"] },
+      { "name": "GE Energy", "role": "Supplier of modules for the 150 kW PV expansion", "sourceIds": ["mara-ge"] },
+      { "name": "AstroKorea", "role": "General contractor for the 150 kW PV installation", "sourceIds": ["mara-ge"] },
+      { "name": "Kwangdong Electronic Co., Ltd.", "role": "Local solar installer", "sourceIds": ["mara-ge"] },
+      { "name": "Nam Jeju-gun County", "role": "Local-government customer for the 150 kW PV project", "sourceIds": ["mara-ge"] }
+    ],
+    "specifications": [
+      { "label": "PV array", "value": "150 kW; 2,010 GE GEPV-75W modules in the 2005 expansion", "sourceIds": ["mara-ge"] },
+      { "label": "Published diesel configuration", "value": "Research model: 250 kW; later project material lists 120, 200, and 300 kW sets", "sourceIds": ["mara-paper", "mara-ems"] },
+      { "label": "Published storage configuration", "value": "Research model: 50 kW / 600 kWh; later project material reports 1.2 MWh", "sourceIds": ["mara-paper", "mara-ems"] },
+      { "label": "Published load", "value": "40 kW minimum, 80 kW average, 120 kW peak", "sourceIds": ["mara-paper"] }
+    ],
+    "equipment": [
+      { "category": "PV modules", "manufacturer": "GE Energy", "model": "GEPV-75W", "detail": "2,010 modules totaling approximately 150 kW.", "sourceIds": ["mara-ge"] },
+      { "category": "Power management system", "detail": "Coordinates diesel minimum loading and battery dispatch using droop control; commercial EMS model not disclosed in the reviewed material.", "sourceIds": ["mara-paper", "mara-ems"] }
+    ],
+    "sources": [
+      { "id": "mara-islands", "title": "Renewable Energy on Small Islands — Mara Island", "url": "https://geni.org/globalenergy/library/technical-articles/generation/small-island-nations/renewable-energy-on-small-islands-thomas-jensen/renewable_energy_on_small_islands.pdf", "publisher": "Forum for Energy and Development", "kind": "secondary" },
+      { "id": "mara-ge", "title": "GE solar modules used in large Korean solar project", "url": "https://www.renewableenergyworld.com/solar/ge-solar-modules-used-in-large-korean-solar-project-44420/", "publisher": "Renewable Energy World", "kind": "secondary" },
+      { "id": "mara-paper", "title": "A novel three-phase four-leg inverter based load unbalance compensator for stand-alone microgrid", "url": "https://www.researchgate.net/publication/266799734_A_novel_three-phase_four-leg_inverter_based_load_unbalance_compensator_for_stand-alone_microgrid", "publisher": "International Journal of Electrical Power & Energy Systems", "kind": "primary" },
+      { "id": "mara-ems", "title": "Microgrid EMS solution in Korea — Mara Island", "url": "https://microgrid-symposiums.org/wp-content/uploads/2014/12/evora_poster_shin.pdf", "publisher": "KEPCO Research Institute / Microgrid Symposium", "kind": "primary" }
+    ]
+  },
+  "marisol-village": {
+    "summary": "Marisol is a rural hybrid-electrification project in Peru combining a river turbine, solar PV, batteries, and generator backup under SMART Hydro Power's energy-management system. The supplier identifies the government, community committee, and development-agency partners.",
+    "status": "Operational in the supplier's published project record; current field status not independently confirmed",
+    "organizations": [
+      { "name": "SMART Hydro Power", "role": "Hybrid-system and energy-management technology supplier", "sourceIds": ["smart-marisol"] },
+      { "name": "Regional Government of San Martín", "role": "Local-government project partner", "sourceIds": ["smart-marisol"] },
+      { "name": "Comité de Electrificación Marisol", "role": "Community electrification partner", "sourceIds": ["smart-marisol"] },
+      { "name": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) Peru", "role": "Development partner", "sourceIds": ["smart-marisol"] }
+    ],
+    "specifications": [
+      { "label": "Supplier-reported solar PV", "value": "Greater than 1.2 kWp", "sourceIds": ["smart-marisol"] },
+      { "label": "Battery bank", "value": "24 two-volt batteries connected as a 48 V bank", "sourceIds": ["smart-marisol"] },
+      { "label": "Archived system ratings", "value": "2 kW solar, 5 kW hydro, and 20 kWh storage", "sourceIds": ["archive"] },
+      { "label": "Reported levelized cost", "value": "Approximately US$0.30/kWh", "sourceIds": ["smart-marisol"] }
+    ],
+    "equipment": [
+      { "category": "Energy-management system", "manufacturer": "SMART Hydro Power", "model": "SMART Energy Management System", "detail": "Coordinates the river turbine, PV, battery bank, and backup generator.", "sourceIds": ["smart-marisol"] },
+      { "category": "Hydrokinetic generation", "manufacturer": "SMART Hydro Power", "detail": "River-turbine system; model and verified field rating not stated on the reviewed project page.", "sourceIds": ["smart-marisol"] }
+    ],
+    "sources": [
+      { "id": "smart-marisol", "title": "SMART Village Hybrid Electrification in Marisol, Peru", "url": "https://www.smart-hydro.de/decentralized-rural-electrification-projects-worldwide/peru-rural-electrification/", "publisher": "SMART Hydro Power", "kind": "primary" }
+    ]
+  },
+  "nusa-penida": {
+    "summary": "Nusa Penida's power system has evolved beyond the legacy wind-diesel record. PLN now reports a 3.5 MWp solar-diesel-battery hybrid commissioned for the 2022 G20 period; published PLN and ministry pages give differing 1.84 MWh and 3.3 MWh storage figures, so both are retained with dates and sources.",
+    "status": "Operational PLN solar-diesel-battery hybrid since 2022",
+    "organizations": [
+      { "name": "PT PLN (Persero)", "role": "Utility owner and system operator", "sourceIds": ["pln-nusa", "esdm-nusa"] },
+      { "name": "PLN Indonesia Power", "role": "Generation-development entity for planned expansion", "sourceIds": ["pln-nusa"] },
+      { "name": "Center for Community Based Renewable Energy, Udayana University", "role": "Independent local research and impact participant quoted by PLN", "sourceIds": ["pln-nusa"] }
+    ],
+    "specifications": [
+      { "label": "Current solar PV", "value": "3.5 MWp across approximately 4.5 hectares", "sourceIds": ["pln-nusa", "esdm-nusa"] },
+      { "label": "Published battery capacity", "value": "PLN's April 2023 release states 1.84 MWh; the energy ministry later states 3.3 MWh", "sourceIds": ["pln-nusa", "esdm-nusa"] },
+      { "label": "Archived earlier wind", "value": "720 kW", "sourceIds": ["archive"] },
+      { "label": "Archived earlier diesel", "value": "2.55 MW", "sourceIds": ["archive"] },
+      { "label": "Reported annual emissions reduction", "value": "Approximately 4,190 tCO2e", "sourceIds": ["pln-nusa"] }
+    ],
+    "equipment": [
+      { "category": "Battery energy storage", "detail": "PLN and ministry sources identify BESS capacity but do not disclose the cell, inverter, EMS, or controller manufacturers/models.", "sourceIds": ["pln-nusa", "esdm-nusa"] }
+    ],
+    "sources": [
+      { "id": "pln-nusa", "title": "PLTS Nusa Penida consistently supplies clean electricity to Bali", "url": "https://web.pln.co.id/cms/media/siaran-pers/2023/04/plts-nusa-penida-terus-konsisten-pasok-listrik-bersih-di-sistem-kelistrikan-di-bali/", "publisher": "PT PLN (Persero)", "kind": "primary" },
+      { "id": "esdm-nusa", "title": "Nusa Penida hybrid solar plant as a strategic clean-power project", "url": "https://gatrik.esdm.go.id/berita/?slug=plts-hybrid-nusa-penida-langkah-strategis-penyediaan-listrik-bersih", "publisher": "Indonesian Ministry of Energy and Mineral Resources", "kind": "primary" }
+    ]
+  },
+  "nushima-island-dc-microgrid": {
+    "summary": "The Nushima project was a 2012–2014 Japanese government-funded DC microgrid demonstration led by Kobe University. A 360 V DC bus integrated PV, wind, stationary and mobile batteries, direct-DC appliances, converter-fed AC loads, ship-to-grid capability, and demand-response experiments.",
+    "status": "Research demonstration completed after the 2012–2014 funded period",
+    "organizations": [
+      { "name": "Kobe University", "role": "Lead research institution", "sourceIds": ["hyogo-nushima", "nushima-paper"] },
+      { "name": "Ritsumeikan University", "role": "Research partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Osaka City University", "role": "Research partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Sanyo Electric Co., Ltd.", "role": "Industry and equipment-development partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Keitsushin Technology Industry Co., Ltd.", "role": "Industry partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Sansha Electric Manufacturing Co., Ltd.", "role": "Power-electronics partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Nakanishi Metal Works Co., Ltd.", "role": "Industry partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Fuji Electric Co., Ltd.", "role": "Power and controls industry partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Hyogo Prefectural Institute of Technology", "role": "Applied research partner", "sourceIds": ["hyogo-nushima"] },
+      { "name": "Ministry of the Environment, Japan", "role": "Technology-development and demonstration funder", "sourceIds": ["hyogo-nushima"] }
+    ],
+    "specifications": [
+      { "label": "DC bus", "value": "360 VDC", "sourceIds": ["nushima-paper"] },
+      { "label": "Solar PV", "value": "8 kW in the published demonstration description", "sourceIds": ["nushima-review"] },
+      { "label": "Wind generation", "value": "1 kW", "sourceIds": ["nushima-review"] },
+      { "label": "Battery storage", "value": "46 kWh in the published demonstration description", "sourceIds": ["nushima-review"] },
+      { "label": "Reported outcome", "value": "Approximately 30% reduction in electricity consumption using DC conversion and demand-response measures", "sourceIds": ["hyogo-nushima"] }
+    ],
+    "equipment": [
+      { "category": "DC energy-management controls", "detail": "Controls battery charge/discharge from total power balance and state of charge across a 360 VDC bus; no commercial controller model is identified.", "sourceIds": ["nushima-paper"] },
+      { "category": "Power conversion", "detail": "High-frequency-link DC/DC converters, sinusoidal PWM DC/AC inverter, AC/DC grid interface, and converters for stationary/mobile batteries and ship charging.", "sourceIds": ["nushima-paper", "hyogo-nushima"] }
+    ],
+    "sources": [
+      { "id": "hyogo-nushima", "title": "Nushima stand-alone distributed energy demonstration using DC technology", "url": "https://www.hyogo-kg.jp/jirei/vol10-10", "publisher": "Hyogo Prefectural Institute of Technology", "kind": "primary" },
+      { "id": "nushima-paper", "title": "A Verification of High-efficiency DC Micro-grid Power Systems", "url": "https://doi.org/10.1016/j.protcy.2014.11.011", "publisher": "Procedia Technology", "kind": "primary" },
+      { "id": "nushima-review", "title": "Common DC bus integration — Nushima Island case", "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/stg2.12154", "publisher": "IET Smart Grid", "kind": "secondary" }
+    ]
+  },
+  "oneida-nation-of-the-thames": {
+    "summary": "Oneida Nation of the Thames received matching federal and Ontario funding for a community-housing solar microgrid and later completed a 1 MW community solar and 38 kWh storage project with JAZZ Solar Solutions. Current federal reporting frames the next phase as community DER and storage capacity building.",
+    "status": "Community solar and storage completed; ongoing DER and grid-modernization capacity building",
+    "organizations": [
+      { "name": "Oneida Nation of the Thames", "role": "Community owner, recipient, and energy-sovereignty lead", "sourceIds": ["canada-oneida-2016", "canada-oneida-2023", "oneida-environment"] },
+      { "name": "JAZZ Solar Solutions", "role": "Solar, storage, and community-capacity partner", "sourceIds": ["canada-oneida-2023"] },
+      { "name": "Government of Canada", "role": "Matching infrastructure funder and current capacity-building funder", "sourceIds": ["canada-oneida-2016", "canada-oneida-2023"] },
+      { "name": "Government of Ontario", "role": "Matching infrastructure funder", "sourceIds": ["canada-oneida-2016"] }
+    ],
+    "specifications": [
+      { "label": "Completed community solar", "value": "1 MW", "sourceIds": ["canada-oneida-2023"] },
+      { "label": "Completed storage", "value": "38 kWh", "sourceIds": ["canada-oneida-2023"] },
+      { "label": "2016 infrastructure awards", "value": "C$814,568 each from Canada and Ontario", "sourceIds": ["canada-oneida-2016"] }
+    ],
+    "equipment": [
+      { "category": "Solar and battery systems", "manufacturer": "JAZZ Solar Solutions", "detail": "Federal reporting identifies the delivery partner and aggregate capacities but not module, inverter, battery, or controller models.", "sourceIds": ["canada-oneida-2023"] }
+    ],
+    "sources": [
+      { "id": "canada-oneida-2016", "title": "Canada and Ontario joint funding for infrastructure projects", "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2016/03/backgrounder-governments-of-canada-and-ontario-announce-joint-funding-for-13-infrastructure-projects.html", "publisher": "Government of Canada", "kind": "primary" },
+      { "id": "canada-oneida-2023", "title": "Federal Government Supports Clean Energy Training for Taykwa Tagamou and Oneida Nations", "url": "https://www.canada.ca/en/natural-resources-canada/news/2023/03/federal-government-supports-clean-energy-training-for-taykwa-tagamou-nation-and-oneida-nation-of-the-thames.html", "publisher": "Natural Resources Canada", "kind": "primary" },
+      { "id": "oneida-environment", "title": "Environment at Oneida — solar energy projects", "url": "https://oneida.on.ca/environment-at-oneida/", "publisher": "Oneida Nation of the Thames", "kind": "primary" }
+    ]
+  },
+  "pearl-harbour": {
+    "summary": "The Joint Base Pearl Harbor-Hickam SPIDERS Phase I microgrid was a federal cyber-secure controls demonstration integrating diesel generation, solar, uninterruptible loads, black-start capability, and grid-tied export. Federal sources report 150 kW solar and 2.4 MW diesel; the older directory's wind and storage figures are retained separately as unverified historical claims.",
+    "status": "SPIDERS Phase I demonstration completed and operated in the cited period",
+    "organizations": [
+      { "name": "U.S. Department of Defense", "role": "Installation owner and SPIDERS program sponsor", "sourceIds": ["doe-pearl-spiders", "doe-pearl-overview"] },
+      { "name": "U.S. Department of Energy", "role": "SPIDERS program and technical partner", "sourceIds": ["doe-pearl-spiders", "doe-pearl-overview"] },
+      { "name": "U.S. Department of Homeland Security", "role": "SPIDERS cyber-security program partner", "sourceIds": ["doe-pearl-overview"] },
+      { "name": "Joint Base Pearl Harbor-Hickam", "role": "Host installation and microgrid operator", "sourceIds": ["doe-pearl-spiders"] },
+      { "name": "U.S. Army Engineer Research and Development Center — Construction Engineering Research Laboratory", "role": "SPIDERS engineering and technical lead", "sourceIds": ["doe-pearl-spiders"] },
+      { "name": "Hawaiian Electric Company", "role": "Local utility and grid-interconnection participant", "sourceIds": ["doe-pearl-overview"] }
+    ],
+    "specifications": [
+      { "label": "SPIDERS solar PV", "value": "150 kW", "sourceIds": ["doe-pearl-spiders"] },
+      { "label": "SPIDERS diesel generation", "value": "2.4 MW", "sourceIds": ["doe-pearl-spiders"] },
+      { "label": "Demonstrated renewable penetration", "value": "Solar penetration reached 90% in testing", "sourceIds": ["doe-pearl-spiders"] },
+      { "label": "Grid-tied export", "value": "Approximately 1 MW demonstrated", "sourceIds": ["doe-pearl-spiders"] },
+      { "label": "Archived alternate configuration", "value": "146 kW solar, 50 kW wind, and 1,250 kW storage; equipment identities not stated", "sourceIds": ["archive"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid controls", "detail": "Remote HMI, black-start sequencing, solar integration, and secure generation control were demonstrated; the reviewed federal overview does not name the controller model.", "sourceIds": ["doe-pearl-spiders"] },
+      { "category": "Uninterruptible power supply", "detail": "UPS supported designated uninterruptible loads; manufacturer and energy capacity not stated.", "sourceIds": ["doe-pearl-spiders"] }
+    ],
+    "sources": [
+      { "id": "doe-pearl-spiders", "title": "JCTD SPIDERS Technical Overview — Phases 1–3", "url": "https://www.energy.gov/sites/prod/files/2015/11/f27/fupwg_fall2015_johnson.pdf", "publisher": "U.S. Department of Energy / ERDC-CERL", "kind": "primary" },
+      { "id": "doe-pearl-overview", "title": "Energy Surety Microgrids — SPIDERS technical approach", "url": "https://www.energy.gov/sites/default/files/3_Energy_Surety_Microgrids.pdf", "publisher": "U.S. Department of Energy / Sandia National Laboratories", "kind": "primary" }
+    ]
+  },
+  "pulau-ubin-microgrid": {
+    "summary": "Pulau Ubin's biodiesel-solar microgrid was commissioned as an Energy Market Authority test bed and built by a two-company Singapore consortium. EMA states that the consortium designed, built, owned, and operated the system for participating residents and businesses.",
+    "status": "Supply launched in 2013; continued operation reported in 2014, with present status not independently confirmed",
+    "organizations": [
+      { "name": "Energy Market Authority of Singapore", "role": "Program owner, test-bed authority, and procurement agency", "sourceIds": ["ema-ubin-launch", "ema-ubin-award"] },
+      { "name": "Daily Life Renewable Energy Pte Ltd. (DLRE)", "role": "Consortium member and system integrator", "sourceIds": ["ema-ubin-launch", "ema-ubin-2017"] },
+      { "name": "OKH Holdings Pte Ltd.", "role": "Consortium member; design-build-own-operate participant", "sourceIds": ["ema-ubin-launch", "ema-ubin-award"] },
+      { "name": "OKH Global Ltd.", "role": "Parent company of OKH Holdings", "sourceIds": ["ema-ubin-launch"] }
+    ],
+    "specifications": [
+      { "label": "Generation architecture", "value": "Solar PV plus biodiesel generators using fuel derived from recycled cooking oil", "sourceIds": ["ema-ubin-launch"] },
+      { "label": "Initial connected customers", "value": "Approximately 30 residents and businesses", "sourceIds": ["ema-ubin-launch"] },
+      { "label": "Distribution", "value": "Underground transmission and distribution cables serving the jetty area", "sourceIds": ["ema-ubin-facts"] }
+    ],
+    "equipment": [
+      { "category": "Microgrid control centre", "manufacturer": "Daily Life Renewable Energy", "detail": "Integrates and coordinates supply and demand and houses energy storage; EMA does not disclose the controller, battery, inverter, generator, or PV module models.", "sourceIds": ["ema-ubin-facts", "ema-ubin-2017"] }
+    ],
+    "sources": [
+      { "id": "ema-ubin-launch", "title": "Users to Benefit from Electricity Micro-Grid on Pulau Ubin", "url": "https://www.ema.gov.sg/news-events/news/media-releases/2014/users-to-benefit-from-electricity-micro-grid-on-pulau-ubin", "publisher": "Energy Market Authority of Singapore", "kind": "primary" },
+      { "id": "ema-ubin-award", "title": "Pulau Ubin microgrid programme awarded to Singapore consortium", "url": "https://www.ema.gov.sg/news-events/news/media-releases/2011/4th-siew-opens-with-call-for-comprehensive-energy-security-in-asia", "publisher": "Energy Market Authority of Singapore", "kind": "primary" },
+      { "id": "ema-ubin-facts", "title": "Pulau Ubin Micro-Grid Test-Bed factsheet", "url": "https://www.ema.gov.sg/content/dam/corporate/news/media-releases/2014/52564fd5c257110102013_-_Press_Release_for_Ubin_Inauguration_FINAL.pdf.coredownload.pdf", "publisher": "Energy Market Authority of Singapore", "kind": "primary" },
+      { "id": "ema-ubin-2017", "title": "DLRE as Pulau Ubin system integrator", "url": "https://www.ema.gov.sg/news-events/news/speeches/2017/speech-by-mr-bernard-nee-deputy-chief-executive-energy-planning-development-division-at-the-mnd-urban-sustainability-rd-congress-2017", "publisher": "Energy Market Authority of Singapore", "kind": "primary" }
+    ]
+  },
+  "rio-cauca": {
+    "summary": "The recovered directory contains only the name Rio Cauca, approximate coordinates, and aggregate hydro, solar, and diesel ratings. A broad search did not locate a primary project record that uniquely matches those values, so no owner, contractor, equipment vendor, or controller has been attributed.",
+    "status": "Legacy directory record; project identity and operating status not independently verified",
+    "organizations": [],
+    "specifications": [
+      { "label": "Archived solar rating", "value": "88 kW", "sourceIds": ["archive"] },
+      { "label": "Archived hydro rating", "value": "500 kW", "sourceIds": ["archive"] },
+      { "label": "Archived diesel rating", "value": "500 kW", "sourceIds": ["archive"] }
+    ],
+    "equipment": []
+  },
+  "samso-island": {
+    "summary": "Samsø's renewable-energy-island program is a community transition rather than a single controller-centered microgrid. Local institutions coordinated onshore and offshore wind, district heating, solar thermal, and community ownership; public sources describe the asset fleet but do not name one central microgrid controller.",
+    "status": "Operational island energy system and continuing transition program",
+    "organizations": [
+      { "name": "Samsø Municipality", "role": "Original renewable-energy-island decision authority and offshore-wind owner", "sourceIds": ["unfccc-samso", "nordregio-samso"] },
+      { "name": "Samsø Energy Academy", "role": "Technical coordination, education, and transition organization", "sourceIds": ["samso-academy", "nordregio-samso"] },
+      { "name": "Samsø Environment and Energy Office", "role": "Community participation and implementation organization", "sourceIds": ["nordregio-samso"] },
+      { "name": "Danish Energy Agency", "role": "National renewable-energy-island programme authority", "sourceIds": ["unfccc-samso"] },
+      { "name": "Danish Ministry of the Environment", "role": "Offshore-wind project funder", "sourceIds": ["nordregio-samso"] },
+      { "name": "Local Samsø farmers, cooperatives, and residents", "role": "Majority asset investors and turbine owners", "sourceIds": ["samso-academy", "nordregio-samso"] }
+    ],
+    "specifications": [
+      { "label": "Onshore wind", "value": "Eleven 1 MW turbines; enough annual generation to cover island electricity use", "sourceIds": ["samso-academy", "nordregio-samso"] },
+      { "label": "Offshore wind", "value": "Ten 2.3 MW turbines", "sourceIds": ["samso-academy", "nordregio-samso"] },
+      { "label": "Renewable heat", "value": "Approximately 70% of island heat supplied from renewable sources", "sourceIds": ["samso-academy"] },
+      { "label": "Local investment", "value": "Approximately 70% of €58 million total renewable investment provided by 3,700 island residents", "sourceIds": ["samso-academy"] }
+    ],
+    "equipment": [
+      { "category": "System controls", "detail": "Reviewed community sources describe grid-connected generation and district-heating systems, not a single island-wide controller or EMS model.", "sourceIds": ["samso-academy", "nordregio-samso"] }
+    ],
+    "sources": [
+      { "id": "samso-academy", "title": "Samsø renewable energy island", "url": "https://www.visitsamsoe.dk/en/inspiration/energy-academy/", "publisher": "VisitSamsø / Samsø Energy Academy", "kind": "primary" },
+      { "id": "nordregio-samso", "title": "Samsø Island — 100% wind", "url": "https://archive.nordregio.org/Metameny/About-Nordregio/Journal-of-Nordregio/Journal-of-Nordregio-no-1-2011/Samso-Island-100-wind/index.html", "publisher": "Nordregio", "kind": "secondary" },
+      { "id": "unfccc-samso", "title": "Green Island — Samsø", "url": "https://unfccc.int/news/green-island", "publisher": "UN Climate Change", "kind": "secondary" }
+    ]
+  },
+  "sumba-smart-microgrid": {
+    "summary": "Sumba's 500 kWp smart microgrid demonstration was a BPPT–Kyudenko technology-cooperation project. Public reports identify the partners and Smart Energy Management System, but do not disclose the PV-module, inverter, battery, or controller model numbers.",
+    "status": "Demonstration commissioned in 2017; present operating status not independently confirmed",
+    "organizations": [
+      { "name": "Agency for the Assessment and Application of Technology (BPPT; now BRIN)", "role": "Indonesian project lead and research organization", "sourceIds": ["antara-sumba"] },
+      { "name": "Kyudenko Corporation", "role": "Japanese technology and project partner", "sourceIds": ["antara-sumba"] },
+      { "name": "PT PLN (Persero)", "role": "Host electricity network and meter-data source described in the technical literature", "sourceIds": ["sumba-paper"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "500 kWp", "sourceIds": ["antara-sumba", "sumba-paper"] },
+      { "label": "Control architecture", "value": "Smart Energy Management System integrating PV, battery, load, and PLN network data", "sourceIds": ["antara-sumba", "sumba-paper"] }
+    ],
+    "equipment": [
+      { "category": "Energy-management system", "model": "Smart Energy Management System (SEMS)", "detail": "Developed and commissioned through the BPPT–Kyudenko cooperation; commercial hardware and software model numbers were not stated.", "sourceIds": ["antara-sumba"] }
+    ],
+    "sources": [
+      { "id": "antara-sumba", "title": "BPPT inaugurates SEMS operation in Southwest Sumba", "url": "https://kupang.antaranews.com/berita/5269/kepala-bppt-resmikan-beroperasinya-sems-di-sbd", "publisher": "ANTARA News", "kind": "secondary" },
+      { "id": "sumba-paper", "title": "Load sharing control for the Sumba smart microgrid", "url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/48/e3sconf_icesti2020_00005.pdf", "publisher": "E3S Web of Conferences", "kind": "primary" }
+    ]
+  },
+  "thabazimbi-chromium-mine": {
+    "summary": "The Thabazimbi chrome-mine hybrid plant combines a 1 MW PV array with off-grid diesel generation. SMA identifies its Sunny Tripower inverters and Fuel Save Controller; project reporting identifies Cronimet as mine operator/developer and Solea Renewables as turnkey EPC.",
+    "status": "Operational from November 2012 in the cited project period; current mine status not independently confirmed",
+    "organizations": [
+      { "name": "Cronimet Chrome Mining SA (Pty) Ltd.", "role": "Mine operator and power-system customer", "sourceIds": ["sma-thabazimbi", "eng-thabazimbi"] },
+      { "name": "Cronimet Mining Power Solutions", "role": "Hybrid-power developer and energy-solutions provider", "sourceIds": ["eng-thabazimbi"] },
+      { "name": "Cronimet Energy SA", "role": "Project financier and renewable-energy project entity", "sourceIds": ["eng-thabazimbi"] },
+      { "name": "Solea Renewables", "role": "Turnkey solar EPC contractor", "sourceIds": ["eng-thabazimbi"] },
+      { "name": "SMA Solar Technology", "role": "PV inverter and hybrid-controller supplier", "sourceIds": ["sma-thabazimbi"] }
+    ],
+    "specifications": [
+      { "label": "Solar PV", "value": "1 MW", "sourceIds": ["sma-thabazimbi", "eng-thabazimbi"] },
+      { "label": "Reported solar generation", "value": "Up to 1.8 GWh per year", "sourceIds": ["sma-thabazimbi"] },
+      { "label": "Reported diesel savings", "value": "Approximately 450,000 litres per year", "sourceIds": ["eng-thabazimbi"] },
+      { "label": "PV penetration capability", "value": "Up to 60% under SMA Fuel Save Controller operation", "sourceIds": ["sma-thabazimbi-release"] }
+    ],
+    "equipment": [
+      { "category": "Hybrid controller", "manufacturer": "SMA", "model": "Fuel Save Controller", "detail": "Controls PV feed-in against mine load and diesel operating conditions to maintain stability.", "sourceIds": ["sma-thabazimbi"] },
+      { "category": "PV inverters", "manufacturer": "SMA", "model": "Sunny Tripower", "detail": "Model variant and unit count were not stated on the reviewed reference page.", "sourceIds": ["sma-thabazimbi"] }
+    ],
+    "sources": [
+      { "id": "sma-thabazimbi", "title": "Thabazimbi, South Africa — PV diesel hybrid application", "url": "https://www.sma.de/en/references/thabazimbi-south-africa", "publisher": "SMA Solar Technology", "kind": "primary" },
+      { "id": "sma-thabazimbi-release", "title": "Solar diesel hybrid system at Thabazimbi", "url": "https://www.sma.de/fileadmin/content/global/Press/Documents/News/121214/20121214_PR-Solar_Diesel_Hybrid_South_Africa.pdf", "publisher": "SMA Solar Technology", "kind": "primary" },
+      { "id": "eng-thabazimbi", "title": "Hybrid power plant reduces mine operational costs", "url": "https://www.engineeringnews.co.za/article/hybrid-power-plant-reduces-mines-operational-costs-2015-10-23", "publisher": "Engineering News", "kind": "secondary" }
+    ]
+  },
+  "tokyo-metropolitan-microgrid-high-reliability": {
+    "summary": "The recovered directory preserves only a generic Tokyo title and no facility identifier, organizations, equipment, capacity, or source document. Searches across Japanese public and industry records did not produce a unique match, so this page deliberately avoids merging it with an unrelated Tokyo smart-energy project.",
+    "status": "Unresolved legacy record; project identity and operating status not verified",
+    "organizations": [],
+    "specifications": [],
+    "equipment": []
+  },
+  "uc-irvine-microgrid": {
+    "summary": "UC Irvine operates a campus microgrid and research test bed served from Southern California Edison's 66 kV network. University documentation identifies the central plant, thermal storage, enterprise energy management, detailed metering, ETAP model, EV charging, fuel cell, and generic-controller research partners.",
+    "status": "Operational campus microgrid and active research platform",
+    "organizations": [
+      { "name": "University of California, Irvine", "role": "Campus microgrid owner", "sourceIds": ["uci-microgrid"] },
+      { "name": "UCI Advanced Power and Energy Program (APEP)", "role": "Research, modeling, and controller-development lead", "sourceIds": ["uci-microgrid", "uci-report"] },
+      { "name": "UCI Facilities Management", "role": "Campus utility and operating organization", "sourceIds": ["uci-microgrid"] },
+      { "name": "Southern California Edison", "role": "Serving utility and generic-controller research partner", "sourceIds": ["uci-microgrid", "uci-report"] },
+      { "name": "MelRoK, LLC", "role": "Enterprise energy-management, metering, and demand-response supplier", "sourceIds": ["uci-microgrid"] },
+      { "name": "ETAP", "role": "Electrical-network modeling software and controller-research partner", "sourceIds": ["uci-microgrid", "uci-report"] },
+      { "name": "U.S. Department of Energy", "role": "Generic Microgrid Controller research funder", "sourceIds": ["uci-microgrid", "uci-report"] },
+      { "name": "California Independent System Operator", "role": "Demand-response and grid-services market interface", "sourceIds": ["uci-microgrid"] },
+      { "name": "Coulomb Technologies", "role": "Level 2 electric-vehicle charger supplier", "sourceIds": ["uci-microgrid"] },
+      { "name": "FuelCell Energy", "role": "300 kW molten-carbonate fuel-cell supplier", "sourceIds": ["uci-microgrid"] },
+      { "name": "Yazaki", "role": "Absorption-chiller supplier for the fuel-cell CCHP system", "sourceIds": ["uci-microgrid"] },
+      { "name": "EnerNOC", "role": "Demand-response service provider", "sourceIds": ["uci-microgrid"] }
+    ],
+    "specifications": [
+      { "label": "Electric service", "value": "66 kV stepped to 12 kV by two 15 MVA transformers across ten 12 kV circuits", "sourceIds": ["uci-microgrid"] },
+      { "label": "Combined-cycle plant", "value": "13 MW gas turbine plus 6 MW steam turbine", "sourceIds": ["uci-microgrid"] },
+      { "label": "Solar PV", "value": "More than 4 MW in current university description; archived record documented 893 kW", "sourceIds": ["uci-microgrid", "archive"] },
+      { "label": "Thermal storage", "value": "4.5 million gallons / 60,000 ton-hours", "sourceIds": ["uci-microgrid"] },
+      { "label": "Controller-test battery", "value": "2 MW / 500 kWh deployed for islanding and reconnection research", "sourceIds": ["uci-report"] },
+      { "label": "Advanced metering", "value": "More than 100 high-resolution meters", "sourceIds": ["uci-microgrid"] }
+    ],
+    "equipment": [
+      { "category": "Enterprise energy management", "manufacturer": "MelRoK, LLC", "model": "EnergiStream", "detail": "Collects meter data, supports Auto-Demand Response, and feeds real-time information to the campus microgrid model.", "sourceIds": ["uci-microgrid"] },
+      { "category": "Microgrid simulation", "manufacturer": "ETAP", "model": "Electrical Transient Analyzer Program", "detail": "Calibrated campus electrical model used for steady-state, dynamic, and control studies; not itself the field controller.", "sourceIds": ["uci-microgrid"] },
+      { "category": "Generic Microgrid Controller", "detail": "APEP, SCE, ETAP, and MelRoK developed and tested a controller against the UCI model and OPAL-RT platform; a commercial model name is not stated.", "sourceIds": ["uci-report"] },
+      { "category": "EV charging", "manufacturer": "Coulomb Technologies", "detail": "University page reports 28 public Level 2 chargers in one section; older table values are retained only in source context.", "sourceIds": ["uci-microgrid"] },
+      { "category": "Fuel-cell CCHP", "manufacturer": "FuelCell Energy / Yazaki", "detail": "300 kW molten-carbonate fuel cell integrated with a 40-ton Yazaki absorption chiller.", "sourceIds": ["uci-microgrid"] }
+    ],
+    "sources": [
+      { "id": "uci-microgrid", "title": "UC Irvine Microgrid", "url": "https://www.apep.uci.edu/UCI_Micro_Grid.html", "publisher": "University of California, Irvine Advanced Power and Energy Program", "kind": "primary" },
+      { "id": "uci-report", "title": "UCI Microgrid research overview", "url": "https://apep.uci.edu/PDF/Microgrid_Research_UCI_Microgrid_UCIMG_090921.pdf", "publisher": "University of California, Irvine", "kind": "primary" }
+    ]
+  },
+  "wesleyan-university-microgrid": {
+    "summary": "Wesleyan University's central campus microgrid distributes electricity from the Vine Street substation and integrates campus cogeneration, solar generation, and central thermal systems. The university's current energy page supplies updated ratings that differ from the older directory snapshot.",
+    "status": "Operational campus microgrid; long-term renewable conversion planning underway",
+    "organizations": [
+      { "name": "Wesleyan University", "role": "Owner and operator of the campus microgrid and energy assets", "sourceIds": ["wesleyan-energy", "wesleyan-plan"] },
+      { "name": "Hale Hill Biofuels", "role": "B20 biofuel supplier for campus buildings since 2013", "sourceIds": ["wesleyan-energy"] }
+    ],
+    "specifications": [
+      { "label": "Current central cogeneration", "value": "2.4 MW natural-gas system installed in 2009", "sourceIds": ["wesleyan-energy"] },
+      { "label": "Named solar installations", "value": "750 kW Long Lane, 200 kW Freeman Athletic Center, 7.2 kW at 19 Fountain Avenue, and 3 kW at Admissions", "sourceIds": ["wesleyan-energy"] },
+      { "label": "Archived aggregate generation", "value": "950 kW solar and 3.8 MW gas/diesel in the earlier directory snapshot", "sourceIds": ["archive"] },
+      { "label": "Microgrid service scope", "value": "Electricity distributed to approximately 1.8 million square feet of central campus", "sourceIds": ["wesleyan-plan"] }
+    ],
+    "equipment": [
+      { "category": "Campus controls", "detail": "The reviewed Wesleyan sources describe the microgrid and generation assets but do not identify a commercial microgrid controller, EMS, inverter, or genset model.", "sourceIds": ["wesleyan-energy", "wesleyan-plan"] }
+    ],
+    "sources": [
+      { "id": "wesleyan-energy", "title": "Energy Initiatives", "url": "https://www.wesleyan.edu/sustainability/commitments/energy.html", "publisher": "Wesleyan University", "kind": "primary" },
+      { "id": "wesleyan-plan", "title": "The Future of Energy at Wesleyan", "url": "https://www.wesleyan.edu/sustainability/files/utilitiescarbonplan.pdf", "publisher": "Wesleyan University", "kind": "primary" }
+    ]
+  }
+}
