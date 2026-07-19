@@ -53,9 +53,18 @@ const nextConfig: NextConfig = {
       { source: "/property-location/karnataka", destination: "/markets#asia", permanent: true },
       { source: "/property-location/japan", destination: "/markets#asia", permanent: true },
       { source: "/property-location/united-states", destination: "/markets#north-america", permanent: true },
+      // WordPress also indexed paginated taxonomy archives. Match those before
+      // the one-segment fallbacks so every historical result reaches a useful
+      // maintained directory or guide.
+      { source: "/property-location/:location/page/:page", destination: "/projects", permanent: true },
+      { source: "/property-type/:type/page/:page", destination: "/guides/types-of-microgrids", permanent: true },
+      { source: "/property-status/:status/page/:page", destination: "/projects", permanent: true },
+      { source: "/property-features/:feature/page/:page", destination: "/projects", permanent: true },
       // Catch remaining legacy taxonomy archives without creating soft 404s.
       { source: "/property-location/:location", destination: "/projects", permanent: true },
       { source: "/property-type/:type", destination: "/guides/types-of-microgrids", permanent: true },
+      { source: "/property-status/:status", destination: "/projects", permanent: true },
+      { source: "/property-features/:feature", destination: "/projects", permanent: true },
     ];
   },
 };
