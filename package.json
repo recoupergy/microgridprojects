@@ -2,7 +2,7 @@
   "name": "microgrid-projects",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": ">=22.13.0" },
+  "engines": { "node": ">=22.13.0 <23" },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
