@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SisterProjectCta } from "../components/SisterProjectCta";
 import { projectCount } from "../data/projects";
 import { siteContact } from "../data/site";
 
@@ -46,6 +47,16 @@ export default function AboutPage() {
               <div><dt>Access</dt><dd>Open</dd></div>
             </dl>
           </aside>
+        </div>
+        <div className="container sister-project-block">
+          <SisterProjectCta
+            title="Two sister projects, one clearer path from evidence to analysis."
+            copy="Microgrid Projects is the discovery and research layer. MicrogridModeler is the modeling layer for reproducible off-grid PV, battery, and diesel feasibility studies."
+            href={siteContact.website}
+            linkLabel="Explore MicrogridModeler"
+            secondaryHref={siteContact.methodology}
+            secondaryLabel="Read its methodology"
+          />
         </div>
       </section>
     </main>

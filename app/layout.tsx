@@ -73,7 +73,7 @@ function SiteFooter() {
         </div>
         <div><h2>Explore</h2><Link href="/projects">Project directory</Link><Link href="/markets">Market profiles</Link><Link href="/guides/types-of-microgrids">Types of microgrids</Link></div>
         <div><h2>Research</h2><Link href="/about">About the archive</Link><Link href="/about#methodology">Methodology</Link><Link href="/contact#submit">Submit or correct a record</Link></div>
-        <div><h2>Contact</h2><a href={`mailto:${siteContact.email}`}>{siteContact.email}</a><a href={siteContact.website}>MicrogridModeler</a></div>
+        <div><h2>Sister project</h2><a href={siteContact.website}>MicrogridModeler</a><a href={siteContact.modeler}>Launch the modeler</a><a href={`mailto:${siteContact.email}`}>Contact the team</a></div>
       </div>
       <div className="container footer-bottom"><span>© 2026 Microgrid Projects · Maintained by {siteContact.organization}</span><span>Historical records are provided for research and require independent verification.</span></div>
     </footer>

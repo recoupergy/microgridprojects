@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SisterProjectCta } from "./components/SisterProjectCta";
 import { WorldMap } from "./components/WorldMap";
 import { marketProfiles, microgridTypes } from "./data/content";
 import { projectCount, projects } from "./data/projects";
@@ -38,6 +39,7 @@ const structuredData = [
     url: "https://microgridprojects.com/",
     name: "Microgrid Projects",
     description: "A global research directory of microgrid projects and markets.",
+    publisher: { "@type": "Organization", name: siteContact.organization, url: siteContact.website },
     potentialAction: {
       "@type": "SearchAction",
       target: "https://microgridprojects.com/projects?q={search_term_string}",
@@ -162,6 +164,19 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="sister-project-section">
+          <div className="container">
+            <SisterProjectCta
+              title="Discover the precedent. Model the next project."
+              copy="Microgrid Projects documents what has been built. MicrogridModeler turns your own load, resource, reliability, and cost assumptions into a reproducible PV, battery, and diesel feasibility case."
+              href={siteContact.modeler}
+              linkLabel="Launch MicrogridModeler"
+              secondaryHref={siteContact.methodology}
+              secondaryLabel="Review the modeling methodology"
+            />
           </div>
         </section>
 
