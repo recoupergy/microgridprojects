@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import { siteContact } from "./data/site";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
   description: "Explore 197 microgrid projects around the world. Compare locations, sectors, reported capacity, market drivers, and major microgrid types.",
   applicationName: "Microgrid Projects",
   keywords: ["microgrid projects", "microgrid map", "microgrid directory", "distributed energy", "energy resilience", "island microgrids", "community microgrids"],
-  authors: [{ name: "Microgrid Media" }],
-  creator: "Microgrid Media",
-  publisher: "Microgrid Media",
+  authors: [{ name: siteContact.organization, url: siteContact.website }],
+  creator: siteContact.organization,
+  publisher: siteContact.organization,
   formatDetection: { email: false, address: false, telephone: false },
   openGraph: {
     type: "website",
@@ -72,9 +73,9 @@ function SiteFooter() {
         </div>
         <div><h2>Explore</h2><Link href="/projects">Project directory</Link><Link href="/markets">Market profiles</Link><Link href="/guides/types-of-microgrids">Types of microgrids</Link></div>
         <div><h2>Research</h2><Link href="/about">About the archive</Link><Link href="/about#methodology">Methodology</Link><Link href="/contact#submit">Submit or correct a record</Link></div>
-        <div><h2>Contact</h2><a href="mailto:editors@microgridmedia.com">Editorial</a><a href="mailto:sales@microgridmedia.com">Partnerships</a><a href="tel:+16125642767">+1 612 564 2767</a></div>
+        <div><h2>Contact</h2><a href={`mailto:${siteContact.email}`}>{siteContact.email}</a><a href={siteContact.website}>MicrogridModeler</a></div>
       </div>
-      <div className="container footer-bottom"><span>© 2026 Microgrid Projects / Microgrid Media</span><span>Historical records are provided for research and require independent verification.</span></div>
+      <div className="container footer-bottom"><span>© 2026 Microgrid Projects · Maintained by {siteContact.organization}</span><span>Historical records are provided for research and require independent verification.</span></div>
     </footer>
   );
 }

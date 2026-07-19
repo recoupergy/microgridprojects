@@ -2,6 +2,7 @@ import Link from "next/link";
 import { WorldMap } from "./components/WorldMap";
 import { marketProfiles, microgridTypes } from "./data/content";
 import { projectCount, projects } from "./data/projects";
+import { siteContact } from "./data/site";
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -50,7 +51,7 @@ const structuredData = [
     name: "Microgrid Projects Global Directory",
     description: `A geocoded research archive of ${projectCount} microgrid projects around the world.`,
     url: "https://microgridprojects.com/projects",
-    creator: { "@type": "Organization", name: "Microgrid Media" },
+    publisher: { "@type": "Organization", name: siteContact.organization, url: siteContact.website },
     spatialCoverage: "Worldwide",
     isAccessibleForFree: true,
     license: "https://microgridprojects.com/about#data-use",
