@@ -1,0 +1,1389 @@
+{
+  "nullagine": {
+    "researchedAt": "2026-07-20",
+    "summary": "Nullagine is the smaller, electrically separate town system in Horizon Power's two-town Marble Bar and Nullagine solar-diesel program; it is about 88 km from Marble Bar and is not connected to it. The original Nullagine plant combined 203 kW of tracked photovoltaic generation, three 320 kW diesel units, a 500 kW/16.5 MW-s flywheel and ABB Microgrid Plus controls. It was integrated in October 2010. Contemporary reporting put solar at roughly 30-40% of annual energy, while daylight or instantaneous shares were much higher. The legacy catalog's 300 kW solar and 1.28 MW diesel values are Marble Bar's ratings, not Nullagine's, and the catalog's 18,000 kW flywheel value is a unit/transcription error.",
+    "status": "Nullagine remains an active Horizon Power service area, but the utility's 2024-25 annual report lists it among non-performing systems affected by generation outages and network issues; town-specific SAIDI/SAIFI is not published there. No current source found establishes whether the 2010 flywheel is still available or gives a recent solar share. A separate long-duration storage trial began in 2023. ARENA initially announced a Redflow 100 kW/400 kWh zinc-bromine battery for Nullagine, but Horizon Power later selected and procured EnerVenue nickel-hydrogen technology. The trial runs to 2028; neither commissioning nor the replacement battery's power/energy rating was publicly confirmed through July 2026. Treat the Redflow rating as a superseded plan, not installed equipment.",
+    "organizations": [
+      {
+        "name": "Horizon Power",
+        "role": "Owner/operator of the isolated Nullagine electricity system and lead utility for both the original solar-diesel project and current long-duration storage trial.",
+        "sourceIds": ["nul-arena-case", "nul-horizon-renewable", "nul-horizon-annual-2025"]
+      },
+      {
+        "name": "SunPower Australia",
+        "role": "Solar supplier/contractor and initial operator of the tracked photovoltaic facility under the original project.",
+        "sourceIds": ["nul-arena-case"]
+      },
+      {
+        "name": "Powercorp / ABB",
+        "role": "Supplied the original flywheel-based PowerStore storage and Microgrid Plus control system; Powercorp was acquired by ABB.",
+        "sourceIds": ["nul-abb-presentation", "nul-arena-case"]
+      },
+      {
+        "name": "Australian Renewable Energy Agency (ARENA)",
+        "role": "Published the original case study and is funding the current remote-microgrid long-duration storage trial.",
+        "sourceIds": ["nul-arena-case", "nul-arena-ldes", "nul-arena-2024"]
+      },
+      {
+        "name": "EnerVenue",
+        "role": "Replacement technology partner selected for the Nullagine long-duration nickel-hydrogen battery trial after the originally announced Redflow scope changed.",
+        "sourceIds": ["nul-horizon-annual-2025", "nul-arena-ldes"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original photovoltaic capacity",
+        "value": "203 kW from 900 tracked panels. This is Nullagine's rating; the 300-302 kW figure belongs to Marble Bar.",
+        "sourceIds": ["nul-arena-case", "nul-horizon-renewable"]
+      },
+      {
+        "label": "Original diesel generation",
+        "value": "960 kW total, arranged as 3 x 320 kW generators. The 1.28 MW total belongs to Marble Bar.",
+        "sourceIds": ["nul-arena-case", "nul-abb-presentation"]
+      },
+      {
+        "label": "Original flywheel storage",
+        "value": "500 kW and 16.5 MW-s, equivalent to about 4.58 kWh of stored energy if the source's MW-s unit is converted. The published source reports power and MW-s, not an 18 MW device.",
+        "sourceIds": ["nul-abb-presentation"]
+      },
+      {
+        "label": "Town demand at original study date",
+        "value": "Approximately 0.4 MW peak load.",
+        "sourceIds": ["nul-arena-case"]
+      },
+      {
+        "label": "Original renewable contribution",
+        "value": "The ARENA case study reports solar providing about 30-40% of annual energy. Horizon Power's later educational page says the Marble Bar and Nullagine stations can supply 87% of daytime electricity; these are different denominators and should not be merged.",
+        "sourceIds": ["nul-arena-case", "nul-horizon-renewable"]
+      },
+      {
+        "label": "Superseded LDES scope",
+        "value": "100 kW/400 kWh Redflow zinc-bromine battery announced in 2024 for Nullagine. Horizon subsequently changed technology partner; this rating is not evidence of an installed asset.",
+        "sourceIds": ["nul-arena-2024", "nul-horizon-annual-2025"]
+      },
+      {
+        "label": "Current LDES scope",
+        "value": "EnerVenue nickel-hydrogen battery selected and procured; public sources reviewed do not give the replacement power or energy rating. The broader ARENA project targets long-duration storage greater than eight hours and is scheduled through April 2028.",
+        "sourceIds": ["nul-horizon-annual-2025", "nul-arena-ldes"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic array",
+        "manufacturer": "SunPower",
+        "detail": "900 single-axis tracked panels totaling 203 kW in the original 2010 installation.",
+        "sourceIds": ["nul-arena-case", "nul-horizon-renewable"]
+      },
+      {
+        "category": "Flywheel energy storage",
+        "manufacturer": "ABB / Powercorp",
+        "model": "PowerStore",
+        "detail": "500 kW, 16.5 MW-s flywheel used for fast balancing so solar could displace diesel at high instantaneous penetration. Current availability was not established.",
+        "sourceIds": ["nul-abb-presentation"]
+      },
+      {
+        "category": "Microgrid control system",
+        "manufacturer": "ABB / Powercorp",
+        "model": "Microgrid Plus",
+        "detail": "Coordinated tracked solar, diesel units and PowerStore flywheel in the original system.",
+        "sourceIds": ["nul-abb-presentation"]
+      },
+      {
+        "category": "Long-duration battery",
+        "manufacturer": "EnerVenue",
+        "detail": "Nickel-hydrogen technology selected and procured for the current trial. Model, power, energy, inverter and commissioning date were not disclosed in the sources reviewed.",
+        "sourceIds": ["nul-horizon-annual-2025", "nul-arena-ldes"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity and topology",
+        "detail": "Nullagine and Marble Bar were delivered as one program but are separate isolated town power systems approximately 88 km apart. Capacities must be assigned by town rather than treated as one connected microgrid.",
+        "sourceIds": ["nul-arena-case"]
+      },
+      {
+        "category": "Timeline and cost",
+        "detail": "Nullagine's renewable system was integrated in October 2010. The two-town Marble Bar/Nullagine program cost about A$14 million and received a shared A$4.9 million Australian Government grant; those portfolio values cannot be allocated wholly to Nullagine.",
+        "sourceIds": ["nul-arena-case"]
+      },
+      {
+        "category": "Performance",
+        "detail": "The original case study reports average interruption duration improving from 110 minutes in 2009-10 to zero in 2010-11. ABB's presentation estimates roughly 400,000 litres of annual diesel displacement and 1,100 tonnes of CO2 reduction, and describes about 60% daytime renewable penetration. These are historical vendor/case-study figures, not current audited results.",
+        "sourceIds": ["nul-arena-case", "nul-abb-presentation"]
+      },
+      {
+        "category": "Storage evolution",
+        "detail": "The 2010 flywheel was short-duration balancing equipment. The later ARENA/Horizon project is a distinct long-duration trial intended to test storage exceeding eight hours and DERMS coordination. A 2024 Redflow plan was replaced by EnerVenue nickel-hydrogen technology, so neither project phase should be conflated with the other.",
+        "sourceIds": ["nul-abb-presentation", "nul-arena-2024", "nul-horizon-annual-2025", "nul-arena-ldes"]
+      },
+      {
+        "category": "Current reliability",
+        "detail": "Horizon Power's 2024-25 annual report includes Nullagine among its non-performing systems and says generation outages and network problems—including weather and wildlife impacts across the listed systems—affected reliability. It does not isolate a Nullagine-specific cause or publish town-level metrics in that passage.",
+        "sourceIds": ["nul-horizon-annual-2025"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No public source found through July 2026 gives current Nullagine generation by fuel, present diesel fleet condition, flywheel availability, solar output, or commissioning/performance results for the EnerVenue battery.",
+        "sourceIds": ["nul-horizon-annual-2025", "nul-arena-ldes"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nul-arena-case",
+        "title": "Renewable Energy in the Australian Mining Sector - Case Study Appendix",
+        "url": "https://arena.gov.au/assets/2014/12/ARENA_RAR-report-20141201.pdf",
+        "publisher": "Australian Renewable Energy Agency / AECOM",
+        "kind": "primary"
+      },
+      {
+        "id": "nul-horizon-renewable",
+        "title": "Renewable energy",
+        "url": "https://hdz.horizonpower.com.au/generating-electricity/renewable.html",
+        "publisher": "Horizon Power",
+        "kind": "primary"
+      },
+      {
+        "id": "nul-abb-presentation",
+        "title": "Renewables Automation Solutions, Battery Energy Storage and Microgrids",
+        "url": "https://slideplayer.com/slide/17588700/",
+        "publisher": "ABB presentation mirror",
+        "kind": "archive"
+      },
+      {
+        "id": "nul-arena-2024",
+        "title": "New battery technologies tested at regional WA microgrids",
+        "url": "https://arena.gov.au/news/new-battery-technologies-tested-at-regional-wa-microgrids/",
+        "publisher": "Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "nul-horizon-annual-2025",
+        "title": "Horizon Power Annual Report 2024-25",
+        "url": "https://www.horizonpower.com.au/globalassets/media/documents/annual-reports/20242025/2024-25-annual-report_horizon-power.pdf",
+        "publisher": "Horizon Power",
+        "kind": "primary"
+      },
+      {
+        "id": "nul-arena-ldes",
+        "title": "Long Duration Energy Storage Trials in Remote Microgrids",
+        "url": "https://arena.gov.au/projects/long-duration-energy-storage-trials-in-remote-microgrids/",
+        "publisher": "Australian Renewable Energy Agency",
+        "kind": "primary"
+      }
+    ]
+  },
+  "nusa-penida": {
+    "researchedAt": "2026-07-20",
+    "summary": "Nusa Penida is PLN's isolated 'Three Nusa' electricity system serving Nusa Penida, Nusa Lembongan and Nusa Ceningan, Bali. Its present renewable core is the Suana hybrid plant: 4.2 MWp DC/3.5 MW AC of solar and a 3 MW battery integrated with diesel generation. Battery energy is reported inconsistently: PLN, the energy ministry and Hitachi's service description give 1.8-1.84 MWh through 2025, while a Hitachi equipment table and a May 2026 PLN Indonesia Power field account say 3 MWh. The plant entered service for the 2022 G20 period, and PLN formally inaugurated an automated Smart Microgrid in November 2025. This is distinct from an older, poorly performing wind-solar-diesel demonstration begun in 2006-09.",
+    "status": "The Suana solar-battery-diesel system is operational, and PLN reports the Smart Microgrid operating since November 2025 with automatic real-time dispatch across the three islands. Diesel remains dominant: a May 2026 field account puts installed diesel capacity at about 21 MW against a 16 MW peak load. Through August 2024 the solar plant had generated 3.7 GWh, 6.57% of system generation, at an 18% realized capacity factor. PLN's 2025-34 plan identifies an additional 4.5 MW solar-plus-storage project for 2026-27 and 10 MW wind-plus-storage for 2027-28; these are plans, not commissioned capacity.",
+    "organizations": [
+      {
+        "name": "PT PLN (Persero)",
+        "role": "Utility owner/operator of the Three Nusa power system and developer/operator of the Suana hybrid plant and Smart Microgrid.",
+        "sourceIds": ["nup-pln-2023", "nup-pln-smartgrid-2025"]
+      },
+      {
+        "name": "PLN Indonesia Power",
+        "role": "PLN generation subsidiary involved in operation of the Nusa Penida generation system and in technical field engagement described in 2026.",
+        "sourceIds": ["nup-itpln-2026"]
+      },
+      {
+        "name": "PT Surya Energi Indotama / KSO SEI-Hitachi",
+        "role": "Consortium/joint-operation partner and installer for the Nusa Penida solar and battery system, working with Hitachi Energy.",
+        "sourceIds": ["nup-hitachi-service", "nup-hitachi-bess"]
+      },
+      {
+        "name": "Hitachi Energy",
+        "role": "Battery-energy-storage technology and service provider; documented the installed system and a two-year maintenance/knowledge-transfer program.",
+        "sourceIds": ["nup-hitachi-service", "nup-hitachi-bess"]
+      },
+      {
+        "name": "Indonesian Ministry of Energy and Mineral Resources, Directorate General of Electricity",
+        "role": "Government source for plant production, share and capacity-factor performance through August 2024.",
+        "sourceIds": ["nup-esdm-2024"]
+      },
+      {
+        "name": "PLN UID Bali, PLN Icon Plus and USAID SINAR",
+        "role": "PLN's 2025 release credits UID Bali with regional management, Icon Plus with system integration, PLN Indonesia Power with generation operation, and USAID Sustainable Energy for Indonesia's Advancing Resilience with early-stage project support.",
+        "sourceIds": ["nup-pln-smartgrid-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current Suana photovoltaic capacity",
+        "value": "4.2 MWp DC and 3.5 MW AC. PLN commonly reports the plant as 3.5 MWp, while Hitachi's engineering material distinguishes 4.2 MW peak array capacity from 3.5 MW AC output; preserve both rating bases.",
+        "sourceIds": ["nup-pln-2023", "nup-hitachi-service"]
+      },
+      {
+        "label": "Current battery storage",
+        "value": "3 MW power. Energy is 1.84 MWh in Hitachi's service agreement and narrative project description, using nine battery racks and three battery inverters; PLN and the ministry similarly report 1.8-1.84 MWh. A Hitachi equipment table and May 2026 PLN Indonesia Power field account instead say 3 MWh. The public record does not explain whether this is nameplate-versus-usable energy, an upgrade or a reporting error; no reviewed source supports the recovered catalog's 3.3 MWh figure.",
+        "sourceIds": ["nup-pln-2023", "nup-esdm-2024", "nup-hitachi-service", "nup-hitachi-bess", "nup-itpln-2026"]
+      },
+      {
+        "label": "Current diesel capacity",
+        "value": "Approximately 21 MW at the PLTD supplying the Three Nusa system according to a May 2026 PLN Indonesia Power field account. An older Hitachi schematic labels 10 MW of diesel and should not be treated as the current system total.",
+        "sourceIds": ["nup-itpln-2026", "nup-hitachi-bess"]
+      },
+      {
+        "label": "Current peak load",
+        "value": "Approximately 16 MW across the isolated Three Nusa system in the May 2026 field account.",
+        "sourceIds": ["nup-itpln-2026"]
+      },
+      {
+        "label": "Solar production and share",
+        "value": "3.7 GWh generated through August 2024, equivalent to 6.57% of total Nusa Penida system production; realized solar capacity factor reported as 18%.",
+        "sourceIds": ["nup-esdm-2024"]
+      },
+      {
+        "label": "Current customer and system scale",
+        "value": "PLN reported more than 23,000 customers, 60.91 MVA of installed customer capacity and 59.82 GWh of energy transactions through August 2025 across the Three Nusa system. These are system/service metrics, not generation capacity or renewable output.",
+        "sourceIds": ["nup-pln-smartgrid-2025"]
+      },
+      {
+        "label": "Historical wind fleet",
+        "value": "A 2014 study describes nine turbines totaling 735 kW; the recovered catalog reports 720 kW. The dated conflict is retained, and neither value is counted as current because the 2025 Smart Microgrid description omits wind.",
+        "sourceIds": ["nup-historical-study", "nup-pln-smartgrid-2025"]
+      },
+      {
+        "label": "Proposed expansion",
+        "value": "RUPTL 2025-34 planning cited in May 2026 identifies 4.5 MW of additional solar plus BESS for 2026-27 and 10 MW of wind plus BESS for 2027-28. Storage ratings and procurement/commissioning were not established.",
+        "sourceIds": ["nup-itpln-2026"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage system",
+        "manufacturer": "Hitachi Energy",
+        "model": "PowerStore with e-mesh controls",
+        "detail": "Hitachi identifies a modular CATL lithium-iron-phosphate battery. Its service agreement and narrative rate the installed system 3 MW/1.84 MWh with nine racks and three battery inverters; another Hitachi table and a May 2026 field account say 3 MWh, retained as an unresolved source inconsistency.",
+        "sourceIds": ["nup-hitachi-service", "nup-hitachi-bess", "nup-itpln-2026"]
+      },
+      {
+        "category": "Photovoltaic plant",
+        "detail": "Suana ground-mounted array rated 4.2 MWp DC/3.5 MW AC on roughly 4.5 hectares. Module and inverter manufacturers were not established by the reviewed primary sources.",
+        "sourceIds": ["nup-pln-2023", "nup-hitachi-service"]
+      },
+      {
+        "category": "Smart microgrid controls",
+        "manufacturer": "Hitachi Energy",
+        "model": "e-mesh Control and e-mesh EMS",
+        "detail": "Hitachi's control layer monitors system anomalies and dispatches the battery, while PLN's later smart-microgrid layer automatically balances solar, storage and diesel across the Three Nusa network.",
+        "sourceIds": ["nup-hitachi-bess", "nup-pln-smartgrid-2025"]
+      },
+      {
+        "category": "Historical renewable equipment",
+        "detail": "Nine small wind turbines and two small PV plants were part of the 2006-09 demonstration. That older configuration had no battery and is not evidence of current wind availability.",
+        "sourceIds": ["nup-historical-study"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "System boundary",
+        "detail": "The Smart Microgrid is not limited to one plant or one island: it coordinates the isolated electricity system serving Nusa Penida, Nusa Lembongan and Nusa Ceningan. Suana is the principal solar/BESS site and diesel generation remains the firm supply.",
+        "sourceIds": ["nup-pln-smartgrid-2025", "nup-itpln-2026"]
+      },
+      {
+        "category": "Timeline",
+        "detail": "Small wind and solar resources were added from 2006 through 2009. The modern Suana plant was commissioned ahead of the November 2022 G20 summit; Hitachi documented a two-year service program, and PLN formally inaugurated the automated Smart Microgrid on 13 November 2025.",
+        "sourceIds": ["nup-historical-study", "nup-pln-2023", "nup-hitachi-service", "nup-pln-smartgrid-2025"]
+      },
+      {
+        "category": "Historical performance",
+        "detail": "The 2014 evaluation found the older wind-solar-diesel system contributed only about 3.23% of generation versus 6.28% expected, citing harsh climate and operating difficulties. These findings apply to the pre-BESS demonstration, not the 2022 Suana plant.",
+        "sourceIds": ["nup-historical-study"]
+      },
+      {
+        "category": "Current architecture",
+        "detail": "The 3 MW battery provides PV smoothing and dispatch support while the smart controls continuously coordinate solar, stored energy and diesel output. Whether its energy rating is 1.84 or 3 MWh, the cited values describe roughly 0.6-1 hour at full power, so it is a short-duration balancing resource rather than long-duration storage.",
+        "sourceIds": ["nup-hitachi-service", "nup-hitachi-bess", "nup-pln-smartgrid-2025", "nup-itpln-2026"]
+      },
+      {
+        "category": "Service and operations",
+        "detail": "Hitachi's documented service agreement included inspections and testing every six months, remote troubleshooting and knowledge transfer to operations personnel over two years.",
+        "sourceIds": ["nup-hitachi-service"]
+      },
+      {
+        "category": "Emissions estimate",
+        "detail": "PLN projected the Suana solar plant would avoid about 4,190 tonnes CO2e per year. This is a utility estimate, while the ministry's later 3.7 GWh/6.57% figures are observed production through August 2024.",
+        "sourceIds": ["nup-pln-2023", "nup-esdm-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nup-pln-2023",
+        "title": "PLTS Nusa Penida Terus Konsisten Pasok Listrik Bersih di Sistem Kelistrikan di Bali",
+        "url": "https://web.pln.co.id/cms/media/siaran-pers/2023/04/plts-nusa-penida-terus-konsisten-pasok-listrik-bersih-di-sistem-kelistrikan-di-bali/",
+        "publisher": "PT PLN (Persero)",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-pln-smartgrid-2025",
+        "title": "PLN Operasikan Smart Microgrid Berbasis Energi Hijau di Nusa Penida Bali",
+        "url": "https://web.pln.co.id/media/siaran-pers/2025/11/pln-operasikan-smart-microgrid-berbasis-energi-hijau-di-nusa-penida-bali",
+        "publisher": "PT PLN (Persero)",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-esdm-2024",
+        "title": "PLTS Hybrid Nusa Penida, Langkah Strategis Penyediaan Listrik Bersih",
+        "url": "https://gatrik.esdm.go.id/berita/?category=&slug=plts-hybrid-nusa-penida-langkah-strategis-penyediaan-listrik-bersih",
+        "publisher": "Directorate General of Electricity, Indonesian Ministry of Energy and Mineral Resources",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-hitachi-service",
+        "title": "Encompass Your Service Partnership: Service Level Agreement for PLTS Nusa Penida",
+        "url": "https://www.hitachienergy.com/content/dam/pg/countries/indonesia/docs/2-4-edw-id-20241030-encompass-your-service-partnership_fachri.pdf",
+        "publisher": "Hitachi Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-hitachi-bess",
+        "title": "BESS as Key to Provide Resilience for Future Grid",
+        "url": "https://www.hitachienergy.com/content/dam/pg/countries/indonesia/docs/2-3-1-edw-id20241030-bess-as-key-to-provide-resilience-for-future-grid_v0-rev-1_jj.pdf",
+        "publisher": "Hitachi Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-itpln-2026",
+        "title": "ITPLN Gali Rahasia Listrik Hijau yang Stabil di Nusa Penida",
+        "url": "https://itpln.ac.id/itpln-gali-rahasia-listrik-hijau-yang-stabil-di-nusa-penida.html/",
+        "publisher": "Institut Teknologi PLN",
+        "kind": "primary"
+      },
+      {
+        "id": "nup-historical-study",
+        "title": "Evaluation of Hybrid System Solar-Wind-Diesel in Nusa Penida, Bali-Indonesia",
+        "url": "https://www.researchgate.net/publication/275974022_Evaluation_of_Hybrid_System_Solar-Wind-Diesel_In_Nusa_Penida_Bali-Indonesia",
+        "publisher": "International Journal of Renewable Energy Research",
+        "kind": "primary"
+      }
+    ]
+  },
+  "nushima-island-dc-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This was a fiscal-2012-to-2014 Japanese Ministry of the Environment demonstration on Nushima Island in Minamiawaji, Hyogo Prefecture. It is not Naoshima in Kagawa, as the recovered catalog's historical location says, and it is unrelated to the Niijima smart-grid project. The experiment linked three small 360 V DC microgrids, 8 kW of photovoltaic generation, 1 kW of wind and a 46 kWh stationary lithium-ion battery, supplemented by the island's AC utility supply. It also tested mobile batteries, ship-to-grid power from a plug-in hybrid boat, direct-DC appliances, visualized dynamic pricing and demand response.",
+    "status": "The funded technology demonstration concluded after fiscal 2014. The reviewed sources document the prototype, conversion performance and behavioral trials, but do not establish that it became an island-wide production microgrid or remained in service after the project. No authoritative operating, replacement or decommissioning update through July 2026 was found. The historic system was grid-assisted and experimental, not a self-sufficient renewable power system for all of Nushima.",
+    "organizations": [
+      {
+        "name": "Japanese Ministry of the Environment",
+        "role": "Funded the regional distributed-energy technology demonstration during fiscal years 2012-2014.",
+        "sourceIds": ["nus-hyogo-case"]
+      },
+      {
+        "name": "Kobe University",
+        "role": "Lead research organization for the Nushima DC microgrid demonstration.",
+        "sourceIds": ["nus-hyogo-case", "nus-procedia-paper"]
+      },
+      {
+        "name": "Ritsumeikan University and Osaka City University",
+        "role": "Academic collaborators in the multi-institution demonstration program.",
+        "sourceIds": ["nus-hyogo-case"]
+      },
+      {
+        "name": "Sanyo Electric, Keitsushin, Sansha Electric Manufacturing, Nakanishi Metal Works and Fuji Electric",
+        "role": "Industrial collaborators listed by the Hyogo Prefectural Institute for the project; the source does not assign every item of equipment to a specific company.",
+        "sourceIds": ["nus-hyogo-case"]
+      },
+      {
+        "name": "Hyogo Prefectural Institute of Technology",
+        "role": "Project participant and current public source describing the demonstration and its reported conservation result.",
+        "sourceIds": ["nus-hyogo-case"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Photovoltaic capacity",
+        "value": "8 kW in the published prototype configuration.",
+        "sourceIds": ["nus-procedia-paper", "nus-iet-review"]
+      },
+      {
+        "label": "Wind capacity",
+        "value": "1 kW in the published prototype configuration.",
+        "sourceIds": ["nus-procedia-paper", "nus-iet-review"]
+      },
+      {
+        "label": "Stationary battery",
+        "value": "46 kWh lithium-ion battery. A continuous power rating was not established in the reviewed sources.",
+        "sourceIds": ["nus-procedia-paper", "nus-iet-review"]
+      },
+      {
+        "label": "DC bus",
+        "value": "360 V DC trunk, with conversion to 19/24 V DC and 100 V rms AC for conventional loads; selected appliances operated directly at 360 V DC.",
+        "sourceIds": ["nus-procedia-paper"]
+      },
+      {
+        "label": "Utility assist",
+        "value": "The demonstration could draw from the local 220 V, three-phase, 60 Hz AC utility network through a bidirectional converter; it was not an exclusively renewable islanded system.",
+        "sourceIds": ["nus-procedia-paper"]
+      },
+      {
+        "label": "Demand-response trial population",
+        "value": "The project presentation describes price/usage displays and demand-response engagement across 76 households, while one system diagram labels a 51-household dynamic-pricing area. These dated presentation values are preserved rather than silently reconciled.",
+        "sourceIds": ["nus-symposium-2015"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Stationary battery",
+        "detail": "46 kWh lithium-ion storage connected to the 360 V DC architecture. Manufacturer, cell chemistry subtype and model were not identified in the reviewed publications.",
+        "sourceIds": ["nus-procedia-paper"]
+      },
+      {
+        "category": "Power conversion",
+        "detail": "High-frequency DC/DC converters supplied low-voltage DC loads, while a DC/AC inverter supported conventional 100 V rms loads and a bidirectional converter interfaced with the utility network.",
+        "sourceIds": ["nus-procedia-paper"]
+      },
+      {
+        "category": "Mobile energy storage",
+        "detail": "Two forms of transportable battery and a 96 V mobile architecture were tested to move stored energy among the separated DC microgrid sites.",
+        "sourceIds": ["nus-symposium-2015"]
+      },
+      {
+        "category": "Ship-to-grid resource",
+        "detail": "A plug-in hybrid boat was used as a mobile energy resource in the S2G experiment. The project source does not establish a commercial vessel or battery model.",
+        "sourceIds": ["nus-hyogo-case", "nus-symposium-2015"]
+      },
+      {
+        "category": "Direct-DC appliances",
+        "detail": "Prototype loads included equipment designed to accept the 360 V DC bus directly, avoiding an additional conversion stage.",
+        "sourceIds": ["nus-procedia-paper", "nus-symposium-2015"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Location correction",
+        "detail": "The site is Nushima Island (沼島), administered by Minamiawaji in Hyogo Prefecture. Naoshima in Kagawa is a different island; the recovered catalog's Naoshima location is erroneous.",
+        "sourceIds": ["nus-hyogo-case", "nus-symposium-2015"]
+      },
+      {
+        "category": "Architecture",
+        "detail": "Three separated DC microgrid sites combined local renewables, stationary and mobile storage, an AC-grid interface, direct-DC and conventional AC loads, plus supervisory information exchange. Energy could be moved physically by battery or boat rather than through a continuous island-wide DC cable.",
+        "sourceIds": ["nus-procedia-paper", "nus-symposium-2015"]
+      },
+      {
+        "category": "Conversion performance",
+        "detail": "Laboratory/field measurements reported more than 90% conversion efficiency when charging the stationary battery and whole-system conversion efficiency around 80%, with some configurations above 70%. These are component/prototype measurements, not an annual microgrid efficiency or renewable share.",
+        "sourceIds": ["nus-procedia-paper"]
+      },
+      {
+        "category": "Behavior and conservation",
+        "detail": "The Hyogo project account reports that combining visualized variable pricing with the distributed-energy trials reduced electricity consumption by about 30%. The source does not provide a long-term normalized baseline or claim that generation alone caused the reduction.",
+        "sourceIds": ["nus-hyogo-case"]
+      },
+      {
+        "category": "Timeline",
+        "detail": "The Ministry of the Environment demonstration ran during fiscal years 2012-2014. A 2015 symposium presentation documented the concluded experiment and its mobile-battery, ship-to-grid and dynamic-pricing elements.",
+        "sourceIds": ["nus-hyogo-case", "nus-symposium-2015"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No current operator page, later commercial deployment, annual generation record, permanent islanding test or post-demonstration asset disposition was found through July 2026.",
+        "sourceIds": ["nus-hyogo-case"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nus-hyogo-case",
+        "title": "Regional Distributed Energy Technology Demonstration Project on Nushima Island",
+        "url": "https://www.hyogo-kg.jp/jirei/vol10-10",
+        "publisher": "Hyogo Prefectural Institute of Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "nus-procedia-paper",
+        "title": "Development of a DC Micro-grid System for Residential Houses",
+        "url": "https://doi.org/10.1016/j.protcy.2014.11.011",
+        "publisher": "Procedia Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "nus-symposium-2015",
+        "title": "DC Microgrid Project in Nushima Island",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2015/09/a-Tamaki_20150819.pdf",
+        "publisher": "Kobe University / Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "nus-iet-review",
+        "title": "Review of DC Microgrid Technology and International Standards",
+        "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/stg2.12154",
+        "publisher": "IET Smart Grid",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "nyu-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The NYU Microgrid is New York University's Washington Square campus combined-heat-and-power system, not NYU Langone Health's separate 11 MW Energy Building or NYU Tandon research microgrids. The plant entered full operation in January 2011 with two dual-fuel Solar Taurus 60 gas turbines, heat-recovery steam generators and a 2.4 MW steam turbine, for 13.4 MW peak electrical output. It distributes electricity to 26 university buildings and thermal service to 44. The recovered catalog's 5.5 MW capacity is one gas turbine's nominal rating, not the whole CHP plant.",
+    "status": "NYU's own 2021 campus account describes the cogeneration plant as serving its Washington Square network, and no authoritative source found through July 2026 reports retirement. It remains best classified as an operational grid-connected CHP microgrid capable of separating from Con Edison, with natural gas as its normal fuel and liquid-fuel capability for backup. NYU has pursued campus decarbonization/net-zero planning, but no reviewed source establishes replacement of the plant, addition of BESS/PV to this microgrid, or a current annual availability/emissions result.",
+    "organizations": [
+      {
+        "name": "New York University",
+        "role": "Owner/operator and campus thermal/electrical customer for the Washington Square cogeneration microgrid.",
+        "sourceIds": ["nyu-owner-2021", "nyu-nyserda-report"]
+      },
+      {
+        "name": "Solar Turbines",
+        "role": "Manufacturer of the two Taurus 60S dual-fuel combustion-turbine generator sets.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011"]
+      },
+      {
+        "name": "Thermo Systems",
+        "role": "Automation general contractor for the cogeneration project, including controls, instrumentation, panels and SCADA integration.",
+        "sourceIds": ["nyu-thermo-controls"]
+      },
+      {
+        "name": "Skanska",
+        "role": "Construction manager identified by the automation contractor for the plant project.",
+        "sourceIds": ["nyu-thermo-controls"]
+      },
+      {
+        "name": "Consolidated Edison",
+        "role": "Host utility; the campus operates grid-connected under normal conditions and can separate to sustain its internal network.",
+        "sourceIds": ["nyu-power-2011", "nyu-ny2100"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Total electrical capacity",
+        "value": "13.4 MW peak: two nominal 5.5 MW Solar Taurus 60S gas turbines plus a 2.4 MW steam turbine. Some project reporting rounds each gas turbine to 5.6 MW.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011", "nyu-ny2100"]
+      },
+      {
+        "label": "Gas turbine generation",
+        "value": "2 x 5.5 MW nominal dual-fuel combustion turbines, reported as 2 x 5.6 MW in POWER's commissioning account.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011"]
+      },
+      {
+        "label": "Steam turbine generation",
+        "value": "2.4 MW backpressure/steam-turbine generator using recovered thermal energy.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011"]
+      },
+      {
+        "label": "Heat recovery",
+        "value": "Two heat-recovery steam generators, each producing about 20,000 lb/hour unfired and up to 60,000 lb/hour with duct firing; each has a 70 MMBtu/hour duct burner in the NYSERDA configuration.",
+        "sourceIds": ["nyu-thermo-controls", "nyu-nyserda-report"]
+      },
+      {
+        "label": "Cooling",
+        "value": "Steam-driven/absorption chilling of roughly 2,400-2,500 tons, with reporting varying by equipment description and operating configuration.",
+        "sourceIds": ["nyu-thermo-controls", "nyu-nyserda-report"]
+      },
+      {
+        "label": "Campus service footprint",
+        "value": "Electricity supplied to 26 buildings and heating/cooling service to 44 buildings in NYU's 2021 description.",
+        "sourceIds": ["nyu-owner-2021"]
+      },
+      {
+        "label": "Plant cost",
+        "value": "Approximately US$125 million for the 2011 CHP replacement project.",
+        "sourceIds": ["nyu-power-2011", "nyu-ny2100"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Combustion-turbine generators",
+        "manufacturer": "Solar Turbines",
+        "model": "Taurus 60S",
+        "detail": "Two nominal 5.5 MW dual-fuel turbine-generator packages; natural gas is the normal CHP fuel and liquid-fuel capability provides resilience.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011"]
+      },
+      {
+        "category": "Heat-recovery steam generators",
+        "manufacturer": "Cleaver-Brooks Nebraska Boiler",
+        "detail": "Two HRSGs recover combustion-turbine exhaust heat and include duct firing to increase steam output.",
+        "sourceIds": ["nyu-power-2011", "nyu-nyserda-report"]
+      },
+      {
+        "category": "Plant controls",
+        "manufacturer": "Rockwell Automation / Allen-Bradley",
+        "model": "ControlLogix and FactoryTalk",
+        "detail": "Redundant ControlLogix PLC architecture with FactoryTalk supervisory software, control panels, instrumentation and SCADA integration delivered by Thermo Systems.",
+        "sourceIds": ["nyu-thermo-controls"]
+      },
+      {
+        "category": "Steam turbine generator",
+        "detail": "2.4 MW turbine-generator powered by recovered steam; manufacturer/model was not established in the reviewed sources.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-power-2011"]
+      },
+      {
+        "category": "Absorption/steam-driven chiller",
+        "detail": "Approximately 2,400-2,500 tons of cooling capacity integrated with the campus thermal network; manufacturer/model was not established.",
+        "sourceIds": ["nyu-thermo-controls", "nyu-nyserda-report"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity boundary",
+        "detail": "This record covers NYU's Washington Square campus CHP/microgrid. NYU Langone Health operates a separate hospital energy facility, and NYU Tandon conducts separate microgrid research; their capacities and equipment must not be added here.",
+        "sourceIds": ["nyu-owner-2021", "nyu-nyserda-report"]
+      },
+      {
+        "category": "Architecture",
+        "detail": "The plant uses two combustion turbines with separate HRSGs, a common recovered-steam system, a 2.4 MW steam turbine, district thermal distribution, automated controls and a utility intertie with protective relaying. It can operate as a grid-connected CHP plant or electrically isolate the campus network.",
+        "sourceIds": ["nyu-nyserda-report", "nyu-thermo-controls", "nyu-power-2011"]
+      },
+      {
+        "category": "Hurricane Sandy performance",
+        "detail": "During the October 2012 regional blackout, the system separated from the grid and maintained electricity to the connected campus core, including essential services. This is demonstrated islanding performance, not merely a design claim.",
+        "sourceIds": ["nyu-ny2100", "nyu-owner-2021"]
+      },
+      {
+        "category": "Efficiency and emissions",
+        "detail": "The commissioning account reports approximately 80% overall CHP efficiency. NYU/New York sources estimated about 23% lower carbon emissions than the prior oil-fired plant; the NYSERDA report also records NYU's estimate of 57,500 tons/year and 38% reduction under its study assumptions. These dated estimates use different baselines and should not be presented as one current audited result.",
+        "sourceIds": ["nyu-power-2011", "nyu-ny2100", "nyu-nyserda-report"]
+      },
+      {
+        "category": "Economics",
+        "detail": "The New York State 2100 Commission estimated annual utility-cost savings of roughly US$5-8 million. This is a post-Sandy policy-report estimate rather than a current NYU financial disclosure.",
+        "sourceIds": ["nyu-ny2100"]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "No authoritative post-2021 source found through July 2026 gives present heat/electric output, fuel consumption, islanding-test frequency, emissions, outage statistics or major equipment replacement. A state-supported net-zero study shows decarbonization planning but does not establish retirement or conversion of this plant.",
+        "sourceIds": ["nyu-owner-2021", "nyu-netzero-study"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nyu-owner-2021",
+        "title": "Green Campus Tour",
+        "url": "https://wp.nyu.edu/sustainability-nyusustainablog/2021/04/13/green-campus-tour/",
+        "publisher": "New York University",
+        "kind": "primary"
+      },
+      {
+        "id": "nyu-nyserda-report",
+        "title": "Microgrids: An Assessment of the Value, Opportunities and Barriers to Deployment in New York State",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/Research/Electic-Power-Delivery/microgrids-value-opportunities-barriers.pdf",
+        "publisher": "New York State Energy Research and Development Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "nyu-thermo-controls",
+        "title": "Thermo Systems Begins Campus Cogeneration Automation Project for NYU",
+        "url": "https://thermosystems.com/thermo-systems-begins-campus-cogeneration-automation-project-for-nyu/",
+        "publisher": "Thermo Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "nyu-power-2011",
+        "title": "New York University Cogeneration Plant, New York City",
+        "url": "https://www.powermag.com/new-york-university-cogeneration-plant-new-york-city/",
+        "publisher": "POWER Magazine",
+        "kind": "secondary"
+      },
+      {
+        "id": "nyu-ny2100",
+        "title": "Recommendations to Improve the Strength and Resilience of the Empire State's Infrastructure",
+        "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B39D4921B-2D38-48FE-BB35-076FBED42769%7D",
+        "publisher": "New York State 2100 Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "nyu-netzero-study",
+        "title": "NYU Net Zero Campus Study",
+        "url": "https://regionalcouncils.ny.gov/cfa/project/329796",
+        "publisher": "New York State Regional Economic Development Councils",
+        "kind": "primary"
+      }
+    ]
+  },
+  "oneida-nation-of-the-thames": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record covers the solar-and-storage work of Oneida Nation of the Thames in Ontario, Canada. It is not the Oneida Indian Nation in New York and has no connection to the 250 MW/1,000 MWh Oneida Energy Storage project in Haldimand County. Federal and Ontario governments funded a community-housing solar microgrid in 2016. The clearest project-specific later account is JAZZ Solar's 2021 installation of a 650 kW net-metered solar system with battery storage spanning the Oneida Nation School, Community Centre, Health and Education Centre and Seniors Citizens Home. Oneida subsequently formed Onyota’a:ka Kahsatst^sla’ Ltd., also branded Solar Energy: OK Ltd., to own and operate community solar assets and train an Oneida energy team.",
+    "status": "Oneida's current environment page describes existing solar systems under monitoring, safety and troubleshooting training, supporting continued community operation, while JAZZ documents the 2021 650 kW campus project. JAZZ catalogs a Family Healing Lodge solar job under 2024, but Oneida's owner page says the program is working on its installation; completion and capacity are therefore unverified. Public sources do not disclose the Oneida battery's power, energy, chemistry, manufacturer, commissioning tests or recent performance. A 2023 federal release describes Taykwa Tagamou Nation and Oneida collectively as having built 'Community Solar (1 MW) and Storage (38 kWh) projects'; those ratings cannot safely be assigned to Oneida alone.",
+    "organizations": [
+      {
+        "name": "Oneida Nation of the Thames",
+        "role": "Community owner, beneficiary and program operator for the solar/microgrid work and associated local energy-team training.",
+        "sourceIds": ["one-canada-2016", "one-owner-environment"]
+      },
+      {
+        "name": "Onyota’a:ka Kahsatst^sla’ Ltd. / Solar Energy: OK Ltd.",
+        "role": "Oneida-owned subsidiary formed to own and operate the community solar microgrid and manage community solar work.",
+        "sourceIds": ["one-audited-2020", "one-owner-environment"]
+      },
+      {
+        "name": "JAZZ Solar Solutions",
+        "role": "Project developer/contractor documenting the 2021 650 kW net-metered solar-and-battery installation and the Family Healing Lodge solar project cataloged under 2024; also supports community energy training.",
+        "sourceIds": ["one-jazz-projects", "one-canada-2023"]
+      },
+      {
+        "name": "Government of Canada and Province of Ontario",
+        "role": "Each committed C$814,568 toward the originally announced community-housing solar microgrid in 2016.",
+        "sourceIds": ["one-canada-2016"]
+      },
+      {
+        "name": "Natural Resources Canada",
+        "role": "Provided 2023 clean-energy training support shared between Oneida and Taykwa Tagamou Nation, including distributed-energy and grid-modernization skills.",
+        "sourceIds": ["one-canada-2023"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "2021 Oneida project solar capacity",
+        "value": "650 kW net-metered photovoltaic system integrated across four community facilities and paired with battery storage.",
+        "sourceIds": ["one-jazz-projects"]
+      },
+      {
+        "label": "Oneida battery capacity",
+        "value": "Battery storage is explicitly included in the 2021 project description, but no Oneida-specific power or energy rating was found.",
+        "sourceIds": ["one-jazz-projects"]
+      },
+      {
+        "label": "Ambiguous combined-project rating",
+        "value": "A 2023 federal release quotes a contractor saying Taykwa Tagamou Nation and Oneida had built Community Solar (1 MW) and Storage (38 kWh) projects. The grammar combines projects at two Nations, so 1 MW/38 kWh is retained as an unallocated portfolio statement and not reported as Oneida's system rating.",
+        "sourceIds": ["one-canada-2023", "one-jazz-projects"]
+      },
+      {
+        "label": "Original public funding",
+        "value": "C$814,568 federal plus C$814,568 provincial funding announced in 2016 for a new solar electric microgrid serving local community housing; the announcement did not publish capacity.",
+        "sourceIds": ["one-canada-2016"]
+      },
+      {
+        "label": "2024 Family Healing Lodge project",
+        "value": "JAZZ catalogs the Family Healing Lodge solar project under 2024, while Oneida's page says its Indigenous Energy Program is working on the rooftop installation. Public sources reviewed do not give its kW rating, completion date or any shared connection to the 2021 battery/control system.",
+        "sourceIds": ["one-owner-environment", "one-jazz-projects"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic system",
+        "detail": "650 kW net-metered array distributed among the Nation School, Community Centre, Health and Education Centre and Seniors Citizens Home. Module, inverter and mounting-system manufacturers were not identified.",
+        "sourceIds": ["one-jazz-projects"]
+      },
+      {
+        "category": "Battery energy storage",
+        "detail": "Battery storage is part of the 2021 campus project, but chemistry, manufacturer, model, power, energy and usable duration were not publicly established.",
+        "sourceIds": ["one-jazz-projects"]
+      },
+      {
+        "category": "Monitoring and operations tools",
+        "detail": "Oneida's Energy Team is being trained in system monitoring, performance analysis, safety and troubleshooting. The owner page does not name a commercial EMS, SCADA or monitoring-platform product.",
+        "sourceIds": ["one-owner-environment"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity exclusions",
+        "detail": "The community is Oneida Nation of the Thames in Ontario. Do not combine this project with Oneida Indian Nation projects in New York or the unrelated Oneida Energy Storage utility-scale battery in Haldimand County, Ontario.",
+        "sourceIds": ["one-canada-2016", "one-owner-environment"]
+      },
+      {
+        "category": "Project evolution",
+        "detail": "Public funding in 2016 described a housing solar microgrid without a rating. By 2020 Oneida had established a dedicated operating subsidiary, and the vendor's 2021 project account describes a 650 kW net-metered solar-plus-battery system across major community facilities. The sources do not explicitly prove whether this is the exact final configuration of the 2016 housing scope or an evolved/additional phase.",
+        "sourceIds": ["one-canada-2016", "one-audited-2020", "one-jazz-projects"]
+      },
+      {
+        "category": "Architecture",
+        "detail": "The documented 2021 asset is a multi-building, net-metered photovoltaic system paired with battery storage. Public evidence does not establish islanding capability, critical-load transfer, black start, feeder topology or the battery-control strategy, so 'microgrid' should not be expanded into unsupported technical claims.",
+        "sourceIds": ["one-jazz-projects"]
+      },
+      {
+        "category": "Capacity-building update",
+        "detail": "Natural Resources Canada announced more than C$1 million collectively for Taykwa Tagamou Nation and Oneida training, aimed at distributed-energy skills, grid modernization and preparation to consider community energy storage. The funding total is shared and cannot be allocated wholly to Oneida.",
+        "sourceIds": ["one-canada-2023"]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "No current generation history, renewable share, avoided fuel/emissions, storage dispatch data, outage performance, interconnection agreement, battery health or independent commissioning record was found through July 2026.",
+        "sourceIds": ["one-owner-environment", "one-jazz-projects"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "one-canada-2016",
+        "title": "Governments of Canada and Ontario Announce Joint Funding for 13 Infrastructure Projects",
+        "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2016/03/backgrounder-governments-of-canada-and-ontario-announce-joint-funding-for-13-infrastructure-projects.html",
+        "publisher": "Government of Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "one-owner-environment",
+        "title": "Environment at Oneida",
+        "url": "https://oneida.on.ca/environment-at-oneida/",
+        "publisher": "Oneida Nation of the Thames",
+        "kind": "primary"
+      },
+      {
+        "id": "one-audited-2020",
+        "title": "Oneida Nation of the Thames Audited Consolidated Financial Statements, March 31, 2020",
+        "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=169&DOC=Audited+consolidated+financial+statements&FY=2019-2020&lang=eng",
+        "publisher": "Oneida Nation of the Thames / Indigenous Services Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "one-jazz-projects",
+        "title": "JAZZ Solar Solutions - Projects",
+        "url": "https://www.jazzsolar.com/",
+        "publisher": "JAZZ Solar Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "one-canada-2023",
+        "title": "Federal Government Supports Clean Energy Training for Taykwa Tagamou Nation and Oneida Nation of the Thames",
+        "url": "https://www.canada.ca/en/natural-resources-canada/news/2023/03/federal-government-supports-clean-energy-training-for-taykwa-tagamou-nation-and-oneida-nation-of-the-thames.html",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      }
+    ]
+  },
+  "otis-air-national-guard-base": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Otis project at the 102nd Intelligence Wing on Joint Base Cape Cod, Massachusetts, was designed to combine a 1.5 MW wind turbine, a 1.6 MW diesel generator and a 1.6 MW/1.2 MWh lead-acid UltraBattery under Raytheon's Intelligent Power and Energy Management controller. It was unveiled in August 2018 and widely described as the first U.S. Department of Defense wind-powered microgrid. The December 2020 ESTCP final report materially qualifies that claim: the battery successfully entered ISO New England frequency-regulation service, but the final wind-turbine feeder connection was not completed, the existing diesel could not be used for extended islanding without a policy waiver, and the full hybrid microgrid's five-day islanding objective was not demonstrated.",
+    "status": "The last authoritative project-closeout evidence classifies the BESS as operational in grid-tied ISO New England regulation, with successful testing, while the complete wind-diesel-battery islanding configuration remained incomplete. The final report says the wind feeder and fiber were built but the last transformer/turbine connection was outstanding; the diesel was unavailable to the demonstration and was being replaced/right-sized. No later primary source found through July 2026 confirms those integration gaps were closed. Therefore this should not be labeled an operating full hybrid microgrid solely from the 2018 ribbon-cutting coverage.",
+    "organizations": [
+      {
+        "name": "102nd Intelligence Wing / Massachusetts Air National Guard",
+        "role": "Host installation and intended owner/operator of the resilient microgrid at Otis/JB Cape Cod.",
+        "sourceIds": ["oti-estcp-final", "oti-afcec-2018"]
+      },
+      {
+        "name": "Environmental Security Technology Certification Program (ESTCP)",
+        "role": "U.S. Department of Defense demonstration sponsor and publisher of the final performance report.",
+        "sourceIds": ["oti-estcp-final", "oti-serdp-lessons"]
+      },
+      {
+        "name": "Raytheon",
+        "role": "Lead system integrator and supplier/developer of the second-generation IPEM microgrid controller.",
+        "sourceIds": ["oti-estcp-final", "oti-afcec-2018"]
+      },
+      {
+        "name": "East Penn Manufacturing / Ecoult",
+        "role": "Supplied the UltraBattery energy-storage system and associated battery management technology.",
+        "sourceIds": ["oti-estcp-final", "oti-cbi-case"]
+      },
+      {
+        "name": "Dynapower",
+        "role": "Supplied the grid-forming power-conversion system for the BESS.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "name": "Customized Energy Solutions and CPower",
+        "role": "Supported market qualification/participation for the storage asset; the final report identifies full ISO-NE frequency-regulation operation as the successful transition path.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "name": "ISO New England and Eversource",
+        "role": "Regional market operator and interconnecting utility for the grid-tied storage/frequency-regulation operation.",
+        "sourceIds": ["oti-isone-2018", "oti-estcp-final"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Battery energy storage",
+        "value": "1.6 MW active power, 2 MVA inverter rating and 1.2 MWh nominal energy, installed in two battery enclosures.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "label": "Wind generation",
+        "value": "1.5 MW Fuhrländer FL1500 turbine at 690 V with doubly fed asynchronous generator. The turbine predated the project; final connection to the microgrid feeder was not completed by closeout.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "1.6 MW Kohler 1600REOZM Tier 2 generator. Its automatic-transfer-switch path was limited to about 1.25 MW at 0.98 power factor, and testing reached 910 kW before a surge/trip. Policy/access constraints prevented use in the full demonstration.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "label": "Protected load",
+        "value": "34 buildings, with approximately 0.9 MW average maximum demand and about 1.2 MW peak in the final report.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "label": "Intended island duration",
+        "value": "120 hours/five days was the demonstration objective. It was not achieved or tested as a complete hybrid system.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "label": "Frequency-regulation operation",
+        "value": "The BESS qualified for 1 MW of regulation service; the final report records 335 hours of round-trip-efficiency testing and an average regulation performance score of 97.4%.",
+        "sourceIds": ["oti-estcp-final"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "East Penn Manufacturing / Ecoult",
+        "model": "UltraBattery",
+        "detail": "Advanced lead-acid hybrid storage rated 1.6 MW/1.2 MWh, packaged in two enclosures for grid services and intended microgrid support.",
+        "sourceIds": ["oti-estcp-final", "oti-cbi-case"]
+      },
+      {
+        "category": "Power-conversion system",
+        "manufacturer": "Dynapower",
+        "model": "CPS2000 ESS",
+        "detail": "2 MVA, grid-forming PCS for battery charging/discharging and intended island voltage/frequency formation.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Wind turbine",
+        "manufacturer": "Fuhrländer",
+        "model": "FL1500",
+        "detail": "1.5 MW turbine with 690 V doubly fed asynchronous generator; AMSC wtSCADA supported monitoring and curtailment at up to 200 kW/s.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Diesel generator",
+        "manufacturer": "Kohler",
+        "model": "1600REOZM",
+        "detail": "1.6 MW Tier 2 genset with Woodward ProAct II actuator, Marathon DVR2000E+ voltage regulator and ASCO 7000 automatic transfer switch.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "Raytheon",
+        "model": "Second-generation Intelligent Power and Energy Management (IPEM)",
+        "detail": "Cyber-secure controller on an air-gapped fiber network, designed to coordinate storage, wind, diesel, switchgear and loads.",
+        "sourceIds": ["oti-estcp-final"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "The intended architecture placed grid-forming battery storage at the center of an islandable feeder with wind, standby diesel, automated switching, fiber communications and Raytheon controls. About three miles of electric cable, 165 utility poles and four miles of fiber were installed, but physical infrastructure completion did not equal a completed system-level islanding demonstration.",
+        "sourceIds": ["oti-estcp-final", "oti-afcec-2018"]
+      },
+      {
+        "category": "Demonstrated performance",
+        "detail": "The storage system successfully completed grid-tied characterization and participated in ISO New England frequency regulation. The final report estimates gross regulation revenue around US$24.80/hour, roughly US$217,000/year for continuous availability, and a projected net value of about US$178,000 per MW-year; these are modeled/period-specific economics, not a current revenue disclosure.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Unmet islanding objective",
+        "detail": "The project did not conduct the planned 120-hour islanding test. High-wind operation was tested only in hardware-in-the-loop simulations, the diesel could not be made available under the applicable Air Force instruction without a waiver, and the wind turbine was not finally tied to the new feeder.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Reliability issue",
+        "detail": "One inverter module failed near final reporting and was scheduled for warranty replacement in January 2021. No later source reviewed confirms that replacement or reports current battery state of health.",
+        "sourceIds": ["oti-estcp-final"]
+      },
+      {
+        "category": "Public-status discrepancy",
+        "detail": "The August 2018 unveiling and contemporaneous ISO New England account described an operational microgrid and market opportunity. The later final report is controlling evidence for outcome: only the BESS/grid-services path was fully demonstrated, while wind/diesel islanding integration remained unfinished.",
+        "sourceIds": ["oti-isone-2018", "oti-afcec-2018", "oti-estcp-final"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "oti-estcp-final",
+        "title": "Demonstration of a Secure, Military Microgrid with Integration of Renewable Energy Resources: Final Report",
+        "url": "https://s3.us-gov-west-1.amazonaws.com/sepub-demo-0001-124733793621-us-gov-west-1/s3fs-public/project_documents%2FEW-201606%2BFinal%2BReport.pdf",
+        "publisher": "Environmental Security Technology Certification Program",
+        "kind": "primary"
+      },
+      {
+        "id": "oti-serdp-lessons",
+        "title": "Advancing Microgrid Solutions",
+        "url": "https://serdp-estcp.mil/resources/details/ad540d55-6b02-4689-97af-360acb0a0d5f/advancing-microgrid-solutions",
+        "publisher": "SERDP-ESTCP",
+        "kind": "primary"
+      },
+      {
+        "id": "oti-isone-2018",
+        "title": "Microgrids Are Key Part of New Energy Landscape; ISO-NE Helps Pave Way for Market Integration",
+        "url": "https://isonewswire.com/2018/09/26/microgrids-are-key-part-of-new-energy-landscape-iso-ne-helps-pave-way-for-market-integration/",
+        "publisher": "ISO New England",
+        "kind": "primary"
+      },
+      {
+        "id": "oti-cbi-case",
+        "title": "Otis Air National Guard Base",
+        "url": "https://batteryinnovation.org/otis-air-national-guard-base/",
+        "publisher": "Consortium for Battery Innovation",
+        "kind": "primary"
+      },
+      {
+        "id": "oti-afcec-2018",
+        "title": "Energy Express, August 2018",
+        "url": "https://www.afcec.af.mil/Portals/17/documents/Energy/Energy%20Express/Energy%20Express%20Aug%202018_Final.pdf",
+        "publisher": "Air Force Civil Engineer Center",
+        "kind": "primary"
+      }
+    ]
+  },
+  "over-yonder-cay-minigrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Over Yonder Cay is a private-island resort microgrid in the Exumas, Bahamas. The currently described system combines 720 kW DC of photovoltaics, three Northern Power Systems NPS 100-21 wind turbines totaling 300 kW, a 6 MWh battery bank, two parallel 300 kVA bidirectional multiport inverters and three 250 kW Caterpillar diesel generators. The resort reports 96% renewable energy, using predictive controls to dispatch generation, storage and flexible loads such as desalination and thermal uses. The plant evolved materially from its initial 2010-13 configuration, so the recovered catalog's 375 kW solar capacity describes an earlier phase, not the current owner-listed array.",
+    "status": "The resort and its renewable system remain actively presented by the owner, which reports 96% renewable supply and rare diesel operation. Initial commissioning occurred in April 2010, the first two wind turbines followed in October 2010, and a third was added in 2011; the solar and storage plant was later expanded to 720 kW DC and 6 MWh. Current performance is owner-reported rather than independently audited, and no public annual generation, fuel-use, battery-health or outage dataset through July 2026 was found. Battery chemistry, manufacturer and replacement history remain undisclosed.",
+    "organizations": [
+      {
+        "name": "Over Yonder Cay",
+        "role": "Private-island resort owner/operator and current source for the installed renewable, battery, diesel and control architecture.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-owner-sustainability", "oyc-owner-controls"]
+      },
+      {
+        "name": "Optimal Power Solutions",
+        "role": "Designed, supplied and commissioned the original hybrid power system, including Hybrid Power Conditioner inverters and supervisory controls.",
+        "sourceIds": ["oyc-ops-case"]
+      },
+      {
+        "name": "Northern Power Systems",
+        "role": "Manufacturer of the three NPS 100-21 wind turbines and source for the wind deployment timeline and early system configuration.",
+        "sourceIds": ["oyc-northern-case", "oyc-owner-renewables"]
+      },
+      {
+        "name": "Caterpillar",
+        "role": "Manufacturer of the three 3306 diesel generator sets identified in the owner's current equipment listing.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "name": "Scientific Research and Development / Ed Bosarge",
+        "role": "Owner-side technical organization/lead associated with developing the predictive optimization and renewable-island concept.",
+        "sourceIds": ["oyc-owner-controls"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current photovoltaic capacity",
+        "value": "720 kW DC at standard test conditions, described elsewhere by the owner as 720 kWp and about 2,300 panels. DC output passes through a 750 kW maximum-power-point-tracking stage to the battery system.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-owner-sustainability"]
+      },
+      {
+        "label": "Wind capacity",
+        "value": "300 kW total from 3 x 100 kW Northern Power Systems NPS 100-21 turbines.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-northern-case"]
+      },
+      {
+        "label": "Battery energy storage",
+        "value": "6 MWh, described by the owner as approximately two days of autonomy. A battery power rating, chemistry and usable-energy basis were not disclosed.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-northern-case"]
+      },
+      {
+        "label": "Bidirectional inverter capacity",
+        "value": "2 x 300 kVA parallel multiport inverters, totaling 600 kVA apparent power.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "label": "Current diesel backup",
+        "value": "3 x 250 kW Caterpillar 3306 generators, totaling 750 kW. Northern Power's older case study cited 400 kW of backup generation; the values reflect different project phases and are not additive.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-northern-case"]
+      },
+      {
+        "label": "Current renewable share",
+        "value": "96% of energy according to the resort owner, with diesel used only rarely. No independent audited time series was found.",
+        "sourceIds": ["oyc-owner-sustainability"]
+      },
+      {
+        "label": "Earlier configurations",
+        "value": "Optimal Power Solutions describes an early 2.16 MWh battery, while Northern Power's 2013 case describes 375 kW PV and 6 MWh battery. These document staged expansion to the owner's current 720 kW PV/6 MWh configuration.",
+        "sourceIds": ["oyc-ops-case", "oyc-northern-case", "oyc-owner-renewables"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Northern Power Systems",
+        "model": "NPS 100-21",
+        "detail": "Three 100 kW direct-drive, variable-speed, stall-controlled turbines with full power converters.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-northern-case"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "manufacturer": "Caterpillar",
+        "model": "3306",
+        "detail": "Three 250 kW backup generators in the current owner listing.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "category": "Hybrid power conditioners",
+        "manufacturer": "Optimal Power Solutions",
+        "model": "Hybrid Power Conditioner",
+        "detail": "Bidirectional conversion/control equipment supplied in the original system; the current owner lists two 300 kVA parallel multiport inverters but does not explicitly identify their current manufacturer or model.",
+        "sourceIds": ["oyc-ops-case", "oyc-owner-renewables"]
+      },
+      {
+        "category": "Battery bank",
+        "detail": "6 MWh storage providing roughly two days of owner-stated autonomy. Manufacturer, model, chemistry, nominal DC voltage, replacement date and state of health were not found.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "category": "Weather station",
+        "manufacturer": "Davis Instruments",
+        "model": "Vantage Pro2 Plus",
+        "detail": "Provides on-island weather measurements for operating awareness and predictive control.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "category": "Supervisory controller",
+        "detail": "A compact rack-mounted intelligent controller and SCADA system forecast weather, demand and battery state, dispatch generators/flexible loads, archive data and support simulation. No current commercial product name was disclosed.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-owner-controls"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "Solar DC power is coupled through a 750 kW MPPT stage toward the central battery/inverter system; wind and diesel feed the island electrical network, while two bidirectional multiport inverters regulate power exchange with storage. Automated controls coordinate firm, variable and deferrable resources.",
+        "sourceIds": ["oyc-owner-renewables", "oyc-owner-controls"]
+      },
+      {
+        "category": "Flexible loads",
+        "detail": "When renewable production exceeds immediate electrical needs, controls route energy to desalination/water production, pool or water heating and other schedulable loads, reducing curtailment and diesel starts.",
+        "sourceIds": ["oyc-owner-sustainability", "oyc-owner-controls"]
+      },
+      {
+        "category": "Distribution-unit ambiguity",
+        "detail": "The owner's technical page literally calls the island network a '13.2 kVA distribution loop' connected through 480 VAC transformers. Because kVA is not a voltage rating and no corroborating one-line diagram was found, the likely intended 13.2 kV interpretation is not silently substituted.",
+        "sourceIds": ["oyc-owner-renewables"]
+      },
+      {
+        "category": "Timeline",
+        "detail": "Optimal Power Solutions commissioned the initial system in April 2010. The first two wind turbines were installed in October 2010, a third was added in 2011, and the wind fleet passed 1 million kWh of cumulative generation by mid-2013. Solar and storage ratings in later owner material show subsequent expansion.",
+        "sourceIds": ["oyc-ops-case", "oyc-northern-case", "oyc-owner-renewables"]
+      },
+      {
+        "category": "Resilience",
+        "detail": "Northern Power reports that the turbines survived Hurricane Irene in 2011. The owner's six-megawatt-hour battery is described as roughly two days of autonomy, but public sources do not give the load basis, critical-load fraction or tested black-start sequence behind that claim.",
+        "sourceIds": ["oyc-northern-case", "oyc-owner-renewables"]
+      },
+      {
+        "category": "Economics and evidence gap",
+        "detail": "The original vendor described an approximately US$6 million project with a projected five-to-six-year payback. No public source reviewed provides realized payback, current operating cost, annual fuel savings, battery degradation or independently verified 96% renewable performance.",
+        "sourceIds": ["oyc-ops-case", "oyc-owner-sustainability"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "oyc-owner-renewables",
+        "title": "Over Yonder Cay's Renewable Energy System Overview",
+        "url": "https://overyondercay.com/sustainability/renewables/",
+        "publisher": "Over Yonder Cay",
+        "kind": "primary"
+      },
+      {
+        "id": "oyc-owner-sustainability",
+        "title": "Sustainability",
+        "url": "https://overyondercay.com/sustainability/",
+        "publisher": "Over Yonder Cay",
+        "kind": "primary"
+      },
+      {
+        "id": "oyc-owner-controls",
+        "title": "Sustainability Background",
+        "url": "https://overyondercay.com/sustainability/background/",
+        "publisher": "Over Yonder Cay",
+        "kind": "primary"
+      },
+      {
+        "id": "oyc-ops-case",
+        "title": "OPS Microgrid Featured by Bahamas Minister Phenton Neymour",
+        "url": "https://optimal-power-solutions.com/ops-microgrid-featured-by-bahamas-minister-phenton-neymour/",
+        "publisher": "Optimal Power Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "oyc-northern-case",
+        "title": "Innovative Renewable Energy Island Resort",
+        "url": "https://northernpower.com/projects/innovative-renewable-energy-island-resort/",
+        "publisher": "Northern Power Systems",
+        "kind": "primary"
+      }
+    ]
+  },
+  "pearl-harbour": {
+    "researchedAt": "2026-07-20",
+    "summary": "This slug originated as SPIDERS Phase I at Joint Base Pearl Harbor-Hickam (JBPHH), Hawaii: a 2011-13 Department of Defense/Department of Energy cyber-secure microgrid demonstration integrating about 150 kW of solar, up to 2.4 MW of diesel generation, an uninterruptible-power system and automated controls. It must not be conflated with later projects on the same joint base. SPIDERS demonstrated black start, high instantaneous PV penetration and diesel savings, but a 2018 Navy-microgrid retrospective reported that the system had become idle after operator turnover and an expired password. Separately, the Hawaii Air National Guard's PEARL microgrid completed testing in March 2024 with a 1 MW/600 kWh battery and 1 MW diesel generator, and further expansion was contracted in 2025. Ameresco's 99 MW Puʻuloa microgrid and 6 MW Puʻuloa Solar-plus-storage project are additional development-stage projects, not SPIDERS upgrades or commissioned capacity.",
+    "status": "SPIDERS Phase I was a completed demonstration, but its current operability is unverified; the last substantive outcome source found says it was idle in 2018. PEARL is the current demonstrated microgrid at the 154th Wing: HTDC reports successful testing in March 2024 and awarded Burns & McDonnell a US$1.67 million 2025 contract for continued development and added renewables. Puʻuloa remains separate and in development. The 99 MW front-of-meter microgrid received a 2024 DOE GRIP selection, while Hawaii's current project listing describes the 6 MW solar/30 MWh storage project as under Public Utilities Commission review with 2027 commercial operation. Capacities from these phases must not be summed as one Pearl Harbor system.",
+    "organizations": [
+      {
+        "name": "U.S. Department of Defense, Department of Energy and Department of Homeland Security",
+        "role": "Federal sponsors/participants in the SPIDERS program; the Phase I demonstration was hosted at JBPHH.",
+        "sourceIds": ["peh-doe-spiders", "peh-sandia-spiders"]
+      },
+      {
+        "name": "U.S. Navy / Naval Facilities Engineering Systems Command",
+        "role": "Installation owner/host for SPIDERS and current JBPHH energy-resilience development, including land/utility coordination for Puʻuloa projects.",
+        "sourceIds": ["peh-burns-spiders", "peh-navy-puuloa-ea", "peh-ameresco-puuloa"]
+      },
+      {
+        "name": "Burns & McDonnell",
+        "role": "SPIDERS Phase I design-build contractor and, under a separate 2025 award, contractor for continued PEARL microgrid development.",
+        "sourceIds": ["peh-burns-spiders", "peh-htdc-expand"]
+      },
+      {
+        "name": "IPERC, Parsons and IPKeys Technologies",
+        "role": "SPIDERS Phase I project partners identified by the design-build contractor, supporting controls, integration and cyber/security work.",
+        "sourceIds": ["peh-burns-spiders"]
+      },
+      {
+        "name": "Hawaii Technology Development Corporation / Hawaii Center for Advanced Transportation Technologies",
+        "role": "Program owner/developer and current public source for the distinct PEARL microgrid at the Hawaii Air National Guard 154th Wing.",
+        "sourceIds": ["peh-htdc-pearl", "peh-htdc-expand"]
+      },
+      {
+        "name": "Hawaii Air National Guard 154th Wing and Air Force Research Laboratory",
+        "role": "Host/operator community and federal research partner for PEARL and its continuing resilience/renewable-development program.",
+        "sourceIds": ["peh-htdc-pearl", "peh-htdc-expand"]
+      },
+      {
+        "name": "Ameresco, Hawaiian Electric and U.S. Navy",
+        "role": "Development team for the separate Puʻuloa front-of-meter microgrid and associated grid-resilience work.",
+        "sourceIds": ["peh-ameresco-puuloa"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "SPIDERS Phase I solar",
+        "value": "Approximately 150 kW photovoltaic generation in the completed demonstration. Early plans cited 146 kW and contemplated up to 50 kW wind, but the reviewed completion/performance source does not count wind in the final operating configuration.",
+        "sourceIds": ["peh-doe-spiders", "peh-burns-spiders"]
+      },
+      {
+        "label": "SPIDERS Phase I diesel",
+        "value": "Up to 2.4 MW of existing diesel generation coordinated in the demonstration.",
+        "sourceIds": ["peh-doe-spiders"]
+      },
+      {
+        "label": "SPIDERS storage/UPS",
+        "value": "An uninterruptible-power system supported an uninterruptible load during transfer and black start, but the reviewed federal completion source does not establish the recovered catalog's 1,250 kW storage rating or an energy capacity. Do not repeat that figure as verified installed BESS.",
+        "sourceIds": ["peh-doe-spiders"]
+      },
+      {
+        "label": "PEARL battery storage",
+        "value": "1 MW/600 kWh in HTDC's current project description. Earlier design material reported 500 kWh, so 600 kWh is treated as the completed/tested configuration rather than combined with the older value.",
+        "sourceIds": ["peh-htdc-pearl"]
+      },
+      {
+        "label": "PEARL diesel and load",
+        "value": "1 MW Tier 2 diesel generator serving an anticipated peak microgrid load of about 1 MW, including critical and non-critical facilities.",
+        "sourceIds": ["peh-htdc-pearl"]
+      },
+      {
+        "label": "Puʻuloa front-of-meter microgrid proposal",
+        "value": "99 MW planned microgrid/energy asset with firm and flexible generation, controllers and electrical infrastructure. The 2024 DOE selection is development support, not evidence of commissioning.",
+        "sourceIds": ["peh-ameresco-puuloa"]
+      },
+      {
+        "label": "Puʻuloa Solar proposal",
+        "value": "6 MW photovoltaic generation with a 6 MW/30 MWh BESS in the current Hawaii project listing. The Navy's 2024 environmental assessment analyzed 6 MW/24 MWh, approximately 10,950 modules and 39 BESS blocks; the difference reflects scope evolution and is retained explicitly.",
+        "sourceIds": ["peh-hseo-current", "peh-navy-puuloa-ea"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "SPIDERS microgrid controls",
+        "detail": "Cyber-secure controller, automated switchgear/protection and human-machine interface integrated existing solar, diesel, utility supply and uninterruptible loads. Burns & McDonnell, IPERC, Parsons and IPKeys were project partners, but the reviewed sources do not assign a definitive commercial controller model.",
+        "sourceIds": ["peh-doe-spiders", "peh-burns-spiders"]
+      },
+      {
+        "category": "SPIDERS uninterruptible power system",
+        "detail": "UPS bridged the critical uninterruptible load during transitions/black start. Manufacturer, model, energy capacity and verified 1,250 kW rating were not established by the reviewed federal performance material.",
+        "sourceIds": ["peh-doe-spiders"]
+      },
+      {
+        "category": "PEARL battery energy storage",
+        "detail": "1 MW/600 kWh system used for excess-solar capture, generator-start support and seamless grid/island transitions. Public HTDC material reviewed does not name its battery manufacturer, chemistry or model.",
+        "sourceIds": ["peh-htdc-pearl"]
+      },
+      {
+        "category": "PEARL diesel generator",
+        "detail": "1 MW Tier 2 generator paired with battery storage, automated switchgear and microgrid controls; manufacturer/model was not disclosed in the reviewed owner page.",
+        "sourceIds": ["peh-htdc-pearl"]
+      },
+      {
+        "category": "Puʻuloa Solar BESS",
+        "detail": "Proposed 6 MW storage power with 30 MWh current planned energy; Navy environmental analysis described 39 BESS blocks at a then-current 24 MWh scope. Equipment vendors are not established in the reviewed sources.",
+        "sourceIds": ["peh-hseo-current", "peh-navy-puuloa-ea"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Project separation",
+        "detail": "SPIDERS Phase I, PEARL, the 99 MW Puʻuloa microgrid and Puʻuloa Solar are separate projects at or associated with JBPHH, with different hosts, dates, architectures and status. Their generation and storage ratings are not one aggregate installation.",
+        "sourceIds": ["peh-doe-spiders", "peh-htdc-pearl", "peh-ameresco-puuloa", "peh-hseo-current"]
+      },
+      {
+        "category": "SPIDERS demonstrated operation",
+        "detail": "Federal closeout material reports successful grid disconnection, black start and reconnection; photovoltaic penetration reached about 90% at times, the microgrid exported roughly 1 MW to the grid in testing, and coordinated dispatch reduced diesel use by nearly 30% in the test conditions. These are demonstration results, not annual current performance.",
+        "sourceIds": ["peh-doe-spiders"]
+      },
+      {
+        "category": "SPIDERS later outcome",
+        "detail": "A 2018 industry retrospective on Navy microgrids reported that operator turnover and an expired password left the roughly US$4 million SPIDERS asset sitting idle. No later primary source found through July 2026 confirms recommissioning, so its present status remains unverified rather than assumed operating.",
+        "sourceIds": ["peh-trellis-outcome"]
+      },
+      {
+        "category": "PEARL architecture and milestone",
+        "detail": "PEARL uses battery storage, a diesel generator, automated switchgear and controls to serve critical and non-critical 154th Wing loads, support black start and transition between utility-connected and island modes. HTDC reports completed construction and successful testing in March 2024.",
+        "sourceIds": ["peh-htdc-pearl"]
+      },
+      {
+        "category": "PEARL continuation",
+        "detail": "In April 2025 HTDC awarded Burns & McDonnell a US$1.67 million contract for continued microgrid development, expansion and additional renewable integration. This supports ongoing enhancement, not a second 1 MW system to add to the first.",
+        "sourceIds": ["peh-htdc-expand"]
+      },
+      {
+        "category": "Puʻuloa development status",
+        "detail": "Ameresco announced DOE GRIP selection in October 2024 for a 99 MW front-of-meter microgrid with smart-grid technologies, controllers and electrical infrastructure. Separately, the current Hawaii energy project listing shows the 6 MW solar/30 MWh storage project under PUC review with 2027 commercial operation. Neither is counted as operating through July 2026.",
+        "sourceIds": ["peh-ameresco-puuloa", "peh-hseo-current"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "peh-doe-spiders",
+        "title": "SPIDERS: Smart Power Infrastructure Demonstration for Energy Reliability and Security",
+        "url": "https://www.energy.gov/sites/prod/files/2015/11/f27/fupwg_fall2015_johnson.pdf",
+        "publisher": "U.S. Department of Energy / U.S. Department of Defense",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-sandia-spiders",
+        "title": "Smart Power Infrastructure Demonstration for Energy Reliability and Security (SPIDERS)",
+        "url": "https://www.osti.gov/servlets/purl/1660666",
+        "publisher": "Sandia National Laboratories / U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-burns-spiders",
+        "title": "Burns & McDonnell Completes Design of Innovative Microgrid Project for U.S. Military",
+        "url": "https://www.globenewswire.com/en/news-release/2012/06/22/908744/0/en/Burns-McDonnell-Completes-Design-of-Innovative-Microgrid-Project-for-U-S-Military.html",
+        "publisher": "Burns & McDonnell",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-trellis-outcome",
+        "title": "Lessons Learned from U.S. Navy Microgrids in Hawaii",
+        "url": "https://trellis.net/article/lessons-learned-us-navy-microgrids-hawaii/",
+        "publisher": "Trellis / GreenBiz",
+        "kind": "secondary"
+      },
+      {
+        "id": "peh-htdc-pearl",
+        "title": "HCATT PEARL Microgrid",
+        "url": "https://www.htdc.org/programs/hcatt/hcatt-pearl-microgrid/",
+        "publisher": "Hawaii Technology Development Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-htdc-expand",
+        "title": "HTDC Awards $1.67 Million Contract for Continued Development of Microgrid Project at Joint Base Pearl Harbor-Hickam",
+        "url": "https://www.htdc.org/htdc-awards-1-67-million-contract-for-continued-development-of-microgrid-project-at-joint-base-pearl-harbor-hickam/",
+        "publisher": "Hawaii Technology Development Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-ameresco-puuloa",
+        "title": "U.S. Department of Energy Selects Ameresco's Puʻuloa Microgrid Energy Asset for Grid Resilience and Innovation Partnerships Program",
+        "url": "https://www.businesswire.com/news/home/20241018683144/en/The-U.S.-Department-of-Energy-Selected-Amerescos-Puuloa-Microgrid-Energy-Asset-for-the-Grid-Resilience-and-Innovation-Partnerships-Program",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-navy-puuloa-ea",
+        "title": "Final Environmental Assessment for Proposed Lease for Energy and Security Resilience Project at Joint Base Pearl Harbor-Hickam",
+        "url": "https://pacific.navfac.navy.mil/Portals/72/NAVFAC_PACIFIC/Documents/JBPHH%20Proposed%20Lease%20for%20Energy%20Final%20EA_October%202024.pdf?ver=BGMCh2I_m5DzADtS1E8kQA%3D%3D",
+        "publisher": "Naval Facilities Engineering Systems Command Pacific",
+        "kind": "primary"
+      },
+      {
+        "id": "peh-hseo-current",
+        "title": "Renewable Energy Projects Under Review: Puʻuloa Solar",
+        "url": "https://energy.hawaii.gov/credit-task-force/",
+        "publisher": "Hawaii State Energy Office",
+        "kind": "primary"
+      }
+    ]
+  }
+}

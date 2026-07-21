@@ -1,0 +1,1482 @@
+{
+  "penetanguishene-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Penetanguishene project is a utility distribution-feeder microgrid built beside the former PowerStream Robert Street Municipal Substation, not a town-wide renewable mini-grid. Its physical DER is a 750 kW/500 kWh Samsung lithium-ion battery—only about 40 minutes at rated output—plus five automatic circuit switches, a step-voltage regulator, communications, and KEPCO's MiDAS controller. The project can island one feeder serving roughly 400–440 customers, but no public source establishes installed on-site solar, wind, or fuel-fired generation inside this microgrid boundary.",
+    "status": "PowerStream and KEPCO commissioned the system on June 29, 2016. Canada's Smart Renewables and Electrification Pathways registry still labels it operational, with a February 2021 project update and a page modification in June 2023. PowerStream became part of Alectra Utilities in 2017. No asset-specific 2024–2026 operating report, retirement notice, battery augmentation, or replacement has been found, so the best supportable current status is operational as last publicly confirmed—not independently verified continuously operating in 2026.",
+    "organizations": [
+      {
+        "name": "PowerStream Inc.",
+        "role": "Original Ontario distribution-utility host, co-developer, owner/operator, and operator of the system from its Vaughan System Control Centre.",
+        "sourceIds": ["penet-powerstream-2016", "penet-epri"]
+      },
+      {
+        "name": "Alectra Utilities",
+        "role": "Corporate/utility successor after PowerStream merged with Enersource and Horizon Utilities in 2017; current asset-level reporting was not located.",
+        "sourceIds": ["penet-alectra-merger"]
+      },
+      {
+        "name": "Korea Electric Power Corporation (KEPCO)",
+        "role": "Technology partner, MiDAS control-system developer, project funder, and remote-monitoring participant.",
+        "sourceIds": ["penet-powerstream-2016", "penet-iere"]
+      },
+      {
+        "name": "Samsung SDI",
+        "role": "Lithium-ion battery supplier identified by EPRI and a regional sustainability report.",
+        "sourceIds": ["penet-epri", "penet-sss-report"]
+      },
+      {
+        "name": "Town of Penetanguishene",
+        "role": "Municipal host/community partner; the project is adjacent to the Robert Street substation and serves customers on a local feeder.",
+        "sourceIds": ["penet-powerstream-2016", "penet-nrc"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Battery power and energy",
+        "value": "750 kW/500 kWh lithium-ion, equivalent to 0.67 hours (40 minutes) at full rated discharge. Older descriptions calling it a '1 MW' system are not supported by the commissioned nameplate.",
+        "sourceIds": ["penet-powerstream-2016", "penet-nrc"]
+      },
+      {
+        "label": "Served boundary",
+        "value": "A single distribution feeder serving about 400 customers in PowerStream's launch release and about 440 households in KEPCO reporting. A separate 7.2 MW figure describes the feeder/system scale, not installed DER capacity.",
+        "sourceIds": ["penet-powerstream-2016", "penet-kepco-article"]
+      },
+      {
+        "label": "Backup-duration claim",
+        "value": "PowerStream said the system could supply several hours of backup to approximately 400 customers. Because 500 kWh cannot sustain 750 kW for several hours, that statement necessarily assumes load shedding and/or a substantially lower critical-load level; the public release does not quantify it.",
+        "sourceIds": ["penet-powerstream-2016"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Normally Ontario grid electricity; while islanded, energy previously stored from that grid. The controls were designed to accommodate future distributed generation, but no validated source shows commissioned PV, wind, CHP, or diesel generation within the project.",
+        "sourceIds": ["penet-powerstream-2016", "penet-nrc"]
+      },
+      {
+        "label": "Reported funding split",
+        "value": "A 2017 technical presentation reports KEPCO contributing C$2.7 million and PowerStream C$1.8 million. These are partner-reported contributions, not a verified final all-in capital cost.",
+        "sourceIds": ["penet-iere"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Samsung SDI",
+        "detail": "500 kWh stationary lithium-ion battery coupled to a 750 kW power-conversion system; exact cell, rack, and inverter model numbers were not disclosed.",
+        "sourceIds": ["penet-epri", "penet-sss-report", "penet-nrc"]
+      },
+      {
+        "category": "Microgrid control",
+        "manufacturer": "KEPCO",
+        "model": "MiDAS (Microgrid Distributed Energy Resource Automation System)",
+        "detail": "Coordinates automatic grid/island transitions, battery dispatch, protection/switching, voltage management, and remote operation.",
+        "sourceIds": ["penet-powerstream-2016", "penet-kepco-article"]
+      },
+      {
+        "category": "Distribution automation",
+        "detail": "Five automatic circuit switches, a step-voltage regulator, automation, communications, and SCADA/control-centre interfaces.",
+        "sourceIds": ["penet-gsef", "penet-kepco-article"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating modes",
+        "detail": "MiDAS was demonstrated in grid-connected and autonomous island modes and is intended to optimize operation without continuous operator intervention while retaining control-centre and KEPCO remote visibility.",
+        "sourceIds": ["penet-powerstream-2016", "penet-gsef"]
+      },
+      {
+        "category": "Purpose",
+        "detail": "The installation tested feeder-level resilience, voltage support, peak/energy management, distribution automation, and a commercializable Korean-Canadian microgrid control package—not primarily renewable-energy production.",
+        "sourceIds": ["penet-powerstream-2016", "penet-epri"]
+      },
+      {
+        "category": "Performance evidence",
+        "detail": "A later industry case study says the served area experienced no power interruptions after implementation, but it does not provide the observation window, event count, or independent utility reliability indices. It should be treated as a case-study claim rather than audited SAIDI/SAIFI evidence.",
+        "sourceIds": ["penet-gsef"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "The federal registry is the latest asset-specific public status found. Alectra's current innovation pages do not provide battery condition, availability, dispatch, replacement, or outage-performance data for Penetanguishene; absence from a marketing list is not evidence of retirement.",
+        "sourceIds": ["penet-nrc", "penet-alectra-projects"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "penet-powerstream-2016",
+        "title": "PowerStream's Utility-Scaled Microgrid Becomes Operational",
+        "url": "https://www.globenewswire.com/press-release/powerstreams-utility-scaled-microgrid-becomes-operational-2138711.htm",
+        "publisher": "PowerStream Inc. via GlobeNewswire",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-nrc",
+        "title": "Penetanguishene Microgrid",
+        "url": "https://csres-cnrse.nrc-cnrc.gc.ca/en/node/570",
+        "publisher": "Government of Canada / Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-alectra-merger",
+        "title": "Alectra Inc. Reaches Five-Year Milestone, Celebrates Successful Merger, Growth, and Community Support Strategies",
+        "url": "https://www.alectra.com/news/alectra-inc-reaches-five-year-milestone-celebrates-successful-merger-growth-and-community",
+        "publisher": "Alectra Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-alectra-projects",
+        "title": "Projects & New Investments",
+        "url": "https://www.alectra.com/projects-new-investments",
+        "publisher": "Alectra Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-epri",
+        "title": "Penetanguishene Microgrid Demonstration",
+        "url": "https://techportal.epri.com/demonstrations/demo/ig/pMscygQMApkOBY7GHBejPMxXDf57btoUV2cbHb6gMuNLNlfzr7yTzV8ydCveJLuJ",
+        "publisher": "Electric Power Research Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-sss-report",
+        "title": "2016 Sustainability Report Card",
+        "url": "https://www.sustainablesevernsound.ca/wp-content/uploads/2019/06/2016-Sustainability_ReportCard.pdf",
+        "publisher": "Sustainable Severn Sound",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-iere",
+        "title": "KEPCO-PowerStream Microgrid Demonstration Project",
+        "url": "https://www.iere.jp/events/forum/2017-canada/Presen/S3-6.pdf",
+        "publisher": "International Electric Research Exchange / KEPCO",
+        "kind": "primary"
+      },
+      {
+        "id": "penet-kepco-article",
+        "title": "KEPCO Microgrid Demonstration in Penetanguishene",
+        "url": "https://elec4.co.kr/contents/article_detail?article_idx=14704",
+        "publisher": "elec4 / KEPCO project reporting",
+        "kind": "secondary"
+      },
+      {
+        "id": "penet-gsef",
+        "title": "PowerStream and KEPCO Utility-Scale Microgrid Case Study",
+        "url": "https://globalsmartenergy.org/dashboard/uploads/pM0kN1513319124.pdf",
+        "publisher": "Global Smart Energy Federation",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "philadelphia-navy-yard-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Philadelphia Navy Yard microgrid is PIDC's privately managed, unregulated campus distribution system on the redeveloped civilian Navy Yard—not a U.S. Navy base microgrid. The current public portfolio includes an 8 MW four-engine natural-gas peaking plant, a 6.4 MW/14.8 MWh Citizens Energy lithium-ion battery, roughly 400 kW of community solar (more than 1,200 panels producing about 930 MWh/year), and a tenant-owned 600 kW Bloom fuel-cell installation, alongside grid imports. Building 7R/GridSTAR is a distinct nested research microgrid and should not be silently added to every campus-wide total.",
+    "status": "The campus grid is operating and currently advertised at 44 MW. Dominion Energy began a 10-year utility operations-and-maintenance contract in November 2021. The final 6.4 MW/14.8 MWh BESS was dedicated in August 2021 and participates in peak management and PJM frequency regulation. PIDC reported a US$31 million grid expansion/upgrade program in its 2024 annual review. Public sources do not provide a recent islanding test, outage-coverage duration, annual fuel/energy mix, or availability factor, so resilience capability should not be overstated as demonstrated indefinite island operation.",
+    "organizations": [
+      {
+        "name": "Philadelphia Industrial Development Corporation (PIDC)",
+        "role": "Master developer, owner/manager of the private electric grid, and microgrid program sponsor.",
+        "sourceIds": ["pny-current", "pny-dominion"]
+      },
+      {
+        "name": "Dominion Energy",
+        "role": "Electric-utility operations and maintenance contractor under a 10-year agreement effective November 1, 2021.",
+        "sourceIds": ["pny-dominion"]
+      },
+      {
+        "name": "Citizens Energy Corporation",
+        "role": "Owner and operator of the 6.4 MW/14.8 MWh battery system.",
+        "sourceIds": ["pny-citizens-dedication", "pny-citizens-current"]
+      },
+      {
+        "name": "Ameresco",
+        "role": "Developer/operator of the 8 MW natural-gas peaking plant.",
+        "sourceIds": ["pny-ameresco", "pny-tm"]
+      },
+      {
+        "name": "T&M Associates",
+        "role": "Engineer of record for the four-generator peaking plant and its 13.2 kV connection to Substation 602.",
+        "sourceIds": ["pny-tm"]
+      },
+      {
+        "name": "Burns Engineering",
+        "role": "Program manager and owner's engineer for PIDC's battery installation.",
+        "sourceIds": ["pny-burns"]
+      },
+      {
+        "name": "Urban Outfitters",
+        "role": "Navy Yard tenant and owner/host of the separate 600 kW Bloom Energy fuel-cell installation.",
+        "sourceIds": ["pny-protogen"]
+      },
+      {
+        "name": "Penn State / GridSTAR Center",
+        "role": "Research lead for the Building 7R CHP-enabled renewable microgrid-within-a-microgrid; not the operator of the whole campus grid.",
+        "sourceIds": ["pny-pa-dep"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Campus grid rating",
+        "value": "Current Navy Yard materials state 44 MW. A 2021 engineering page calls it 52 MW, likely reflecting a different configuration/rating date; both are preserved rather than presented as simultaneous generation capacity.",
+        "sourceIds": ["pny-current", "pny-burns"]
+      },
+      {
+        "label": "Campus demand and service scale",
+        "value": "In 2021 the grid served 105 accounts in about 120 facilities with a 33 MW peak and an expected future load near 50 MW.",
+        "sourceIds": ["pny-dominion"]
+      },
+      {
+        "label": "Battery",
+        "value": "6.4 MW/14.8 MWh lithium-ion, about 2.31 hours at full output, comprising 2,240 batteries in three 53-foot containers. Earlier project material used 6.2 MW; 6.4 MW is the final dedicated rating.",
+        "sourceIds": ["pny-citizens-dedication", "pny-citizens-current", "pny-protogen"]
+      },
+      {
+        "label": "Natural-gas generation",
+        "value": "8 MW total from four natural-gas reciprocating generator sets, connected at 13.2 kV to Substation 602 and used for peak management/PJM market participation.",
+        "sourceIds": ["pny-ameresco", "pny-tm", "pny-protogen"]
+      },
+      {
+        "label": "Solar",
+        "value": "The original community-solar array is reported as 400 kW; the current Navy Yard page reports more than 1,200 panels and approximately 930,000 kWh/year. Occasional rounded '1 MW solar' program slides should not replace the specific array rating without a source documenting an expansion.",
+        "sourceIds": ["pny-current", "pny-protogen"]
+      },
+      {
+        "label": "Fuel cell",
+        "value": "600 kW Bloom Energy fuel-cell installation owned/hosted by Urban Outfitters and net-metered through the private grid; fuel consumption and annual output are not public.",
+        "sourceIds": ["pny-protogen"]
+      },
+      {
+        "label": "Energy mix gap",
+        "value": "The normal mix includes PECO/PJM imports, natural-gas peaking generation, solar, the tenant fuel cell, and battery charging/discharging. No current public source allocates annual MWh or emissions by source, and the BESS is not net generation.",
+        "sourceIds": ["pny-current", "pny-ameresco", "pny-citizens-dedication"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "detail": "6.4 MW/14.8 MWh lithium-ion system in three 53-foot containers with 2,240 battery units. Citizens Energy is owner/operator; public final sources do not establish a cell or PCS model.",
+        "sourceIds": ["pny-citizens-dedication", "pny-citizens-current"]
+      },
+      {
+        "category": "Natural-gas generator plant",
+        "detail": "Four continuous-duty reciprocating engine-generator sets, 8 MW aggregate, on a 13.2 kV interconnection. Exact engine models were not found in public owner/EPC pages.",
+        "sourceIds": ["pny-tm", "pny-protogen"]
+      },
+      {
+        "category": "Fuel cell",
+        "manufacturer": "Bloom Energy",
+        "model": "Energy Server (exact generation/model not disclosed)",
+        "detail": "600 kW tenant-owned installation at Urban Outfitters.",
+        "sourceIds": ["pny-protogen"]
+      },
+      {
+        "category": "Community solar",
+        "detail": "Approximately 400 kW rooftop array under a power-purchase arrangement; more than 1,200 modules and approximately 930 MWh/year on the current site page.",
+        "sourceIds": ["pny-current", "pny-protogen"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Battery services",
+        "detail": "Peak shaving/demand management for the private grid and frequency-regulation participation in PJM; Citizens Energy owns and dispatches the asset under its project arrangement.",
+        "sourceIds": ["pny-citizens-dedication", "pny-burns"]
+      },
+      {
+        "category": "Grid architecture",
+        "detail": "PIDC operates an unregulated/private campus network rather than a conventional regulated utility franchise. The gas plant connects at 13.2 kV and the project evolved incrementally, which is why it has been described as an 'unintentional microgrid.'",
+        "sourceIds": ["pny-current", "pny-tm", "pny-protogen"]
+      },
+      {
+        "category": "Research boundary",
+        "detail": "Penn State's Building 7R/GridSTAR demonstrator is a CHP-enabled renewable submicrogrid inside the Navy Yard. GE/Alstom controller and micro-PMU projects were R&D/test activities; their goals should not be read as proof that every advertised control function is deployed across today's entire 44 MW network.",
+        "sourceIds": ["pny-pa-dep", "pny-controller-report", "pny-micropmu"]
+      },
+      {
+        "category": "Current investment",
+        "detail": "PIDC's 2024 annual review reports a US$31 million expansion and upgrade of the energy grid to accommodate campus growth, confirming active infrastructure investment but not adding a new disclosed DER nameplate.",
+        "sourceIds": ["pny-2024-review"]
+      },
+      {
+        "category": "Performance gap",
+        "detail": "No recent public source reports a full-campus black-start/islanding test, critical-load MW, island duration, fuel inventory, battery round-trip efficiency, annual savings, or outage reliability indices.",
+        "sourceIds": ["pny-current", "pny-dominion"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "pny-current",
+        "title": "Sustainability & Resiliency at the Navy Yard",
+        "url": "https://navyyard.org/about/sustainability-resiliency/",
+        "publisher": "Philadelphia Navy Yard / PIDC",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-2024-review",
+        "title": "Job Growth, Progress & Partnerships at the Navy Yard: PIDC's 2024 Annual Review",
+        "url": "https://navyyard.org/blog/job-growth-progress-partnerships-at-the-navy-yard-pidcs-2024-annual-review/",
+        "publisher": "Philadelphia Navy Yard / PIDC",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-dominion",
+        "title": "PIDC Awards Dominion Energy the Electric Utility Operations & Maintenance Contract for the Philadelphia Navy Yard",
+        "url": "https://www.powermag.com/press-releases/pidc-awards-dominion-energy-the-electric-utility-operations-maintenance-contract-for-the-philadelphia-navy-yard/",
+        "publisher": "PIDC and Dominion Energy via POWER",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-citizens-dedication",
+        "title": "Michael Kennedy Dedicates Battery Storage Project at the Philadelphia Navy Yard",
+        "url": "https://citizensenergy.com/pressrelease/michael-kennedy-dedicates-battery-storage-project-at-the-philadelphia-navy-yard/",
+        "publisher": "Citizens Energy Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-citizens-current",
+        "title": "Citizens Storage & Microgrids",
+        "url": "https://citizensenergy.com/businesses/citizens-storage-microgrids/",
+        "publisher": "Citizens Energy Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-burns",
+        "title": "Philadelphia Navy Yard Campus Adds Battery Energy Storage System",
+        "url": "https://www.burns-group.com/news-and-events-item/philadelphia-navy-yard-campus-adds-battery-energy-storage-system/",
+        "publisher": "Burns Engineering",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-ameresco",
+        "title": "Philadelphia Navy Yard",
+        "url": "https://www.ameresco.com/portfolio-item/philadelphia-navy-yard/",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-tm",
+        "title": "Philadelphia Navy Yard Microgrid",
+        "url": "https://www.tandmassociates.com/projects/philadelphia-navy-yard-microgrid/",
+        "publisher": "T&M Associates",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-protogen",
+        "title": "The Philadelphia Navy Yard Story: The Remarkable Emergence of an Unintentional Microgrid",
+        "url": "https://www.protogen.com/newsroom/media-coverage/the-philadelphia-navy-yard-story-the-remarkable-emergence-of-an-unintentional-microgrid/",
+        "publisher": "ProtoGen",
+        "kind": "secondary"
+      },
+      {
+        "id": "pny-pa-dep",
+        "title": "CHP and Micro-Grid Technology",
+        "url": "https://www.pa.gov/agencies/dep/programs-and-services/energy-programs-office/state-energy-program/chp-and-micro-grid-technology",
+        "publisher": "Pennsylvania Department of Environmental Protection",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-controller-report",
+        "title": "GE/Alstom Grid's Microgrid RD&D and Testing for PIDC and PWD",
+        "url": "https://www.osti.gov/servlets/purl/1813343",
+        "publisher": "U.S. Department of Energy Office of Scientific and Technical Information",
+        "kind": "primary"
+      },
+      {
+        "id": "pny-micropmu",
+        "title": "U.S. Department of Energy Selects the Navy Yard as a Location for Testing Micro-PMU Technology",
+        "url": "https://navyyard.org/blog/u-s-department-of-energy-selects-the-navy-yard-as-a-location-for-testing-micro-pmu-technology/",
+        "publisher": "Philadelphia Navy Yard / PIDC",
+        "kind": "primary"
+      }
+    ]
+  },
+  "port-jefferson-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "Port Jefferson was a 2015–2016 NY Prize Stage 1 feasibility concept for a large village resilience network, not a built microgrid. The design would have combined 3.2 MW of existing hospital/water/wastewater standby diesel, 5.2 MW of new natural-gas CCHP/reciprocating generation, 298 kW total solar, 550 kW/2.2 MWh of four-hour batteries, hospital absorption chillers/thermal storage, and four isolation switches over PSEG Long Island distribution infrastructure. It is distinct from National Grid's Port Jefferson power station and later power-station repowering/storage discussions.",
+    "status": "The Stage 1 feasibility report was completed August 31, 2016. The project does not appear among NYSERDA's awarded Stage 2 detailed-design projects, and no procurement, construction, commissioning, or operating evidence was found through July 2026. The Village's current Power Plant Working Group continues to explore future uses for the separate National Grid generation site; that does not establish that the NY Prize microgrid was built. Status should therefore remain feasibility completed / not advanced to documented implementation.",
+    "organizations": [
+      {
+        "name": "Village of Port Jefferson",
+        "role": "NY Prize applicant, municipal sponsor, and intended community/MESCO participant.",
+        "sourceIds": ["pj-stage1", "pj-stage1-winners"]
+      },
+      {
+        "name": "D&B Engineers and Architects",
+        "role": "Lead feasibility-study engineer and report preparer.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "name": "Global Common LLC",
+        "role": "Commercial/financial and microgrid business-model consultant on the Stage 1 team.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "name": "GE Energy Consulting",
+        "role": "Power-system and NY Prize technical consultant; GE's current case-study page calls the client the 'Town of Port Jefferson,' although the applicant/report identify the Village.",
+        "sourceIds": ["pj-stage1", "pj-ge"]
+      },
+      {
+        "name": "Burns Engineering",
+        "role": "Electrical/microgrid technical participant on the feasibility team.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "name": "NYSERDA",
+        "role": "NY Prize Stage 1 funder and program administrator.",
+        "sourceIds": ["pj-stage1-winners", "pj-stage2-awards"]
+      },
+      {
+        "name": "PSEG Long Island",
+        "role": "Serving distribution utility whose existing circuits, poles, wires, and substations were assumed for the concept; no build agreement is documented.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "name": "Mather Hospital and St. Charles Hospital",
+        "role": "Largest proposed critical-load anchors and hosts of most existing diesel and proposed CCHP generation.",
+        "sourceIds": ["pj-stage1"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Proposed served load",
+        "value": "44,206 MWh/year; 8,916 kW noncoincident peak and 7,788 kW modeled coincident July peak. The boundary included roughly 1,300 residences, 250 small businesses, two hospitals, water/wastewater, schools, Village facilities, fire/DPW, ferry, and downtown loads.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Existing standby diesel in concept",
+        "value": "3.2 MW total: Mather Hospital 2 x 500 kW; St. Charles Hospital 900 + 300 + 250 + 250 + 100 kW; Suffolk County Water Authority 100 kW; wastewater plant 250 kW. These were existing emergency units, not a new central plant.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Proposed new firm generation",
+        "value": "5.2 MW natural gas: 1.6 MW CCHP at Mather, 1.6 MW CCHP at St. Charles, and a 2 MW gas reciprocating generator at St. Charles.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Proposed solar",
+        "value": "298 kW total: existing 50 kW at Mather and 48 kW at the Spear property, plus a proposed 200 kW array at the middle/high-school campus.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Proposed electrochemical storage",
+        "value": "550 kW/2.2 MWh total: 250 kW/1 MWh at the wastewater plant and 300 kW/1.2 MWh at the water authority, both four-hour concepts. No vendor, chemistry, or procurement was selected in Stage 1.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Thermal systems",
+        "value": "Two proposed 313 kW absorption chillers at the hospitals. The report's tables cite Mather thermal storage at 469 kW/4.69 MWh, while narrative material references 1.16 MW of cooling storage; this internal scope/rating inconsistency was never resolved by a final design.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "label": "Stage 1 economics",
+        "value": "Estimated capital cost US$19.405 million. With assumed US$7 million NY Prize and US$4.5 million PSEG-LI CHP support, the report modeled normal-operation NPV US$8.72 million, benefit-cost ratio 1.1, and IRR 9.8%; private financing was judged difficult without incentives. These are study assumptions, not realized costs/returns.",
+        "sourceIds": ["pj-stage1"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Existing diesel generators",
+        "detail": "Multiple hospital, water, and wastewater standby units totaling 3.2 MW; manufacturer/model and emissions-upgrade condition were not inventoried in the public Stage 1 report.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Proposed CCHP and gas generation",
+        "detail": "Two 1.6 MW hospital CCHP plants and one 2 MW reciprocating gas generator; technology class was defined but vendors/models were not selected.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Proposed batteries",
+        "detail": "Two four-hour systems totaling 550 kW/2.2 MWh; no chemistry or supplier was committed.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Proposed switching",
+        "detail": "Four new isolation switches using existing PSEG-LI distribution topology to create the island boundary.",
+        "sourceIds": ["pj-stage1"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Modeling and dispatch",
+        "detail": "DER-CAM was used for normal-operation economic dispatch and sizing, with separate outage/islanding engineering. Results depend on assumed tariffs, gas availability, incentives, load profiles, and equipment costs from the 2015–2016 study period.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Business model",
+        "detail": "The report proposed a microgrid energy-services company (MESCO) with long-term microgrid energy-service agreements among municipal, institutional, utility, and generation parties; none is documented as executed.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Fuel dependency",
+        "detail": "The concept assumed firm natural-gas service/reinforcement by November 2019 and retained diesel. Resilience benefits therefore depended on gas-system availability and fuel arrangements that were assumptions, not completed infrastructure.",
+        "sourceIds": ["pj-stage1"]
+      },
+      {
+        "category": "Outcome evidence",
+        "detail": "Port Jefferson is absent from the official NY Prize Stage 2 award list. That, combined with the lack of later construction records, is strong evidence the Stage 1 concept did not progress under NY Prize, though it is not a formal cancellation notice.",
+        "sourceIds": ["pj-stage2-awards", "pj-power-plant-group"]
+      },
+      {
+        "category": "Identity warning",
+        "detail": "Do not merge this village critical-load concept with National Grid's Port Jefferson power station, its repowering proposals, or any separate battery proposals at that generation site. GE's 'Town of Port Jefferson' wording is an alias/mislabel for the Village-sponsored study.",
+        "sourceIds": ["pj-stage1", "pj-ge", "pj-power-plant-group"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "pj-stage1",
+        "title": "Port Jefferson Microgrid NY Prize Stage 1 Report",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/5-Village-of-Port-Jefferson.pdf",
+        "publisher": "Village of Port Jefferson / NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "pj-stage1-winners",
+        "title": "NY Prize Stage 1 Award Winners",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf",
+        "publisher": "NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "pj-stage2-awards",
+        "title": "NY Prize Stage 2 Awarded Projects",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf",
+        "publisher": "NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "pj-ge",
+        "title": "NYSERDA Microgrids Case Study",
+        "url": "https://www.gevernova.com/consulting/resources/case-studies/nyserda-microgrids",
+        "publisher": "GE Vernova",
+        "kind": "primary"
+      },
+      {
+        "id": "pj-power-plant-group",
+        "title": "Power Plant Working Group",
+        "url": "https://www.portjeff.com/282/Power-Plant-Working-Group",
+        "publisher": "Village of Port Jefferson",
+        "kind": "primary"
+      }
+    ]
+  },
+  "portsmouth-naval-base-microgrid-testing": {
+    "researchedAt": "2026-07-20",
+    "summary": "This project is at Portsmouth Naval Shipyard in Kittery, Maine—not Norfolk Naval Shipyard in Portsmouth, Virginia. Its documented architecture has two generations: an ESTCP-era microgrid that integrated an existing 10.4 MW natural-gas CHP plant, emergency diesel generation, GE controls/Fast Load Shed, and a 500 kW/580 kWh Saft battery; and a US$58 million 2020 energy-savings expansion that added a 7.5 MW CHP plant, expanded controls/distribution redundancy, and announced a larger battery configuration. Public sources conflict on whether the expanded battery is 1 MW/2 MWh or a 1.5 MW/2.5 MWh engineering scope, so only the original 500/580 installation is treated as unambiguously commissioned at exact rating.",
+    "status": "The original microgrid completed two live base-wide outage simulations and successfully maintained critical loads. Ameresco's current portfolio page continues to list shipyard CHP, emergency generation, microgrid controls, Fast Load Shed, and a 1 MW/2 MWh BESS. A February 2026 Town of Kittery climate-planning packet also describes the shipyard's natural-gas cogeneration, microgrid Fast Load Shed, and power-plant BESS as available capabilities. The broader expansion is therefore operational/currently referenced, although a public commissioning report reconciling all battery and generation nameplates has not been found.",
+    "organizations": [
+      {
+        "name": "United States Navy / Portsmouth Naval Shipyard",
+        "role": "Federal installation owner, host, mission-load operator, and energy-savings customer.",
+        "sourceIds": ["ports-ameresco-current", "ports-estcp"]
+      },
+      {
+        "name": "Ameresco",
+        "role": "ESPC developer, system integrator, CHP/BESS/microgrid contractor, and long-term operations-and-maintenance provider.",
+        "sourceIds": ["ports-ameresco-current", "ports-ameresco-test", "ports-ameresco-pdf"]
+      },
+      {
+        "name": "U.S. Department of Defense Environmental Security Technology Certification Program (ESTCP)",
+        "role": "Funder/validation sponsor of the original microgrid controls and battery demonstration.",
+        "sourceIds": ["ports-estcp", "ports-estcp-transition"]
+      },
+      {
+        "name": "GE Grid Solutions",
+        "role": "Supplier/integrator of the original microgrid supervisory controls and Fast Load Shed logic.",
+        "sourceIds": ["ports-ameresco-test", "ports-ameresco-whitepaper"]
+      },
+      {
+        "name": "Saft",
+        "role": "Supplier of the original 500 kW/580 kWh lithium-ion battery.",
+        "sourceIds": ["ports-ameresco-whitepaper"]
+      },
+      {
+        "name": "Waldron Engineering & Construction",
+        "role": "Engineering participant on the later CHP/BESS expansion; its project page provides a larger battery design figure that conflicts with Ameresco's current rating.",
+        "sourceIds": ["ports-waldron"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original CHP plant",
+        "value": "10.4 MW from two 5.2 MW Solar Taurus 60 natural-gas turbines, with two 70,000 lb/hour heat-recovery steam generators and two 70,000 lb/hour package boilers; some summaries round the plant to 10 MW.",
+        "sourceIds": ["ports-ameresco-pdf", "ports-ameresco-whitepaper"]
+      },
+      {
+        "label": "Emergency diesel",
+        "value": "Ameresco's detailed project sheet identifies 2 x 2 MW emergency diesel generators (4 MW total). The ESTCP page describes 2 x 1.5 MW, likely an earlier boundary/design figure; the discrepancy is preserved.",
+        "sourceIds": ["ports-ameresco-pdf", "ports-estcp"]
+      },
+      {
+        "label": "Original battery",
+        "value": "500 kW/580 kWh Saft lithium-ion, about 1.16 hours at rated power, providing immediate bridge/ramp support while CHP or emergency units respond.",
+        "sourceIds": ["ports-ameresco-test", "ports-ameresco-whitepaper", "ports-ameresco-pdf"]
+      },
+      {
+        "label": "Expansion CHP",
+        "value": "The 2020 ESPC announced a new 7.5 MW CHP plant in addition to existing generation. Public announcements sometimes call the pre-existing site CHP fleet '14 MW,' which does not reconcile cleanly with the detailed 10.4 MW two-turbine plant and may use a broader site boundary.",
+        "sourceIds": ["ports-2020-award", "ports-ameresco-current"]
+      },
+      {
+        "label": "Expanded battery conflict",
+        "value": "The 2020 award and Ameresco's current page use 1 MW/2 MWh; Waldron describes 1.5 MW/2.5 MWh. These may be design versus final scope, but no public as-built acceptance document was found. They must not be summed with each other; whether the 500/580 unit was replaced or incorporated is also not public.",
+        "sourceIds": ["ports-2020-award", "ports-ameresco-current", "ports-waldron"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Normal supply is utility electricity plus natural-gas CHP and recovered heat/steam; diesel is emergency generation and the battery is storage, not a fuel source. No installed renewable generator or current annual MWh/fuel split is documented in the cited sources.",
+        "sourceIds": ["ports-ameresco-current", "ports-ameresco-pdf"]
+      },
+      {
+        "label": "Expansion economics",
+        "value": "US$58 million ESPC award, with approximately US$175 million in guaranteed/expected savings over a 22-year performance period. These are contract projections rather than independently audited realized savings to date.",
+        "sourceIds": ["ports-2020-award"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "CHP gas turbines",
+        "manufacturer": "Solar Turbines",
+        "model": "Taurus 60",
+        "detail": "Two 5.2 MW units in the original 10.4 MW CHP plant, each paired with heat recovery.",
+        "sourceIds": ["ports-ameresco-pdf", "ports-ameresco-whitepaper"]
+      },
+      {
+        "category": "Original battery energy storage",
+        "manufacturer": "Saft",
+        "detail": "500 kW/580 kWh lithium-ion system; exact Saft product model is not identified in the cited public project material.",
+        "sourceIds": ["ports-ameresco-whitepaper"]
+      },
+      {
+        "category": "Microgrid controls",
+        "manufacturer": "GE Grid Solutions",
+        "detail": "Supervisory microgrid controller integrated with Ameresco's Fast Load Shed system for islanding, critical-load prioritization, generation dispatch, and reconnection.",
+        "sourceIds": ["ports-ameresco-test", "ports-ameresco-whitepaper"]
+      },
+      {
+        "category": "Steam production",
+        "detail": "Two 70,000 lb/hour heat-recovery steam generators plus two 70,000 lb/hour package boilers in the documented original plant.",
+        "sourceIds": ["ports-ameresco-pdf"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Validated islanding",
+        "detail": "Two live tests simulated a base-wide utility outage. The controls shed nonessential loads and maintained mission-critical loads with on-site generation and storage, validating transition and island operation rather than merely a desktop study.",
+        "sourceIds": ["ports-ameresco-test", "ports-estcp"]
+      },
+      {
+        "category": "Fast Load Shed",
+        "detail": "Automated load prioritization balances the island when grid supply is lost or generation changes, avoiding the need to keep all emergency diesel units preemptively running and enabling smoother CHP-supported islanding.",
+        "sourceIds": ["ports-ameresco-whitepaper", "ports-estcp-transition"]
+      },
+      {
+        "category": "Battery role",
+        "detail": "The battery supplies instantaneous transition/bridging power and frequency/ramp support while slower combustion units start or adjust; ESTCP also evaluated grid-connected ancillary-service value.",
+        "sourceIds": ["ports-estcp", "ports-ameresco-whitepaper"]
+      },
+      {
+        "category": "Current evidence",
+        "detail": "A 2026 Kittery municipal climate packet refers to the shipyard's cogeneration, Microgrid Fast Load Shed, and power-plant BESS as current resilience capabilities. It is corroborative public evidence, not a Navy performance test or detailed asset register.",
+        "sourceIds": ["ports-kittery-2026"]
+      },
+      {
+        "category": "Identity and phase warning",
+        "detail": "All figures here concern Portsmouth Naval Shipyard in Kittery, Maine. The original ESTCP demonstration and 2020 ESPC expansion are related but distinct phases, and public battery ratings should not be added without an as-built single-line diagram.",
+        "sourceIds": ["ports-estcp", "ports-2020-award"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "ports-ameresco-current",
+        "title": "Portsmouth Naval Shipyard",
+        "url": "https://www.ameresco.com/portfolio-item/portsmouth-naval-shipyard/",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-ameresco-test",
+        "title": "U.S. Navy Employs Microgrid Solution to Eliminate Downtime at Portsmouth Naval Shipyard",
+        "url": "https://ir.ameresco.com/news-events/press-releases/detail/216/u-s-navy-employs-microgrid-solution-to-eliminate-downtime",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-estcp",
+        "title": "Microgrid Controls and Energy Storage Demonstration at Portsmouth Naval Shipyard",
+        "url": "https://serdp-estcp.mil/projects/details/46863445-be59-49b0-9a7e-0aa30f31f5b8/ew-201350-project-overview",
+        "publisher": "U.S. Department of Defense SERDP-ESTCP",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-estcp-transition",
+        "title": "Successful Technology Transition: Portsmouth Naval Shipyard Microgrid",
+        "url": "https://serdp-estcp.mil/newsitems/details/32f61f6d-cfd7-47b5-9cee-de9129bd32d5/successful-technology-transition",
+        "publisher": "U.S. Department of Defense SERDP-ESTCP",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-ameresco-whitepaper",
+        "title": "Energy Resilience: A Guide to Building More Resilient Facilities and Communities",
+        "url": "https://www.ameresco.com/wp-content/uploads/2022/07/energy-resilence-white-paper-2022.pdf",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-ameresco-pdf",
+        "title": "Portsmouth Naval Shipyard, Kittery, Maine Project Profile",
+        "url": "https://www.ameresco.com/wp-content/uploads/2020/04/portsmouth-naval-shipyard-me.pdf",
+        "publisher": "Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-2020-award",
+        "title": "U.S. Navy Awards Ameresco $58M and Invests in Infrastructure Redundancy for Mission-Critical Loads",
+        "url": "https://nta.org/2020/02/18/us-navy-awards-ameresco-58m-invests-in-infrastructure-redundancy-for-mission-critical-loads/",
+        "publisher": "National Technology Alliance / Ameresco release",
+        "kind": "secondary"
+      },
+      {
+        "id": "ports-waldron",
+        "title": "Portsmouth Naval Shipyard",
+        "url": "https://www.waldron.com/client/portsmouth-naval-shipyard",
+        "publisher": "Waldron Engineering & Construction",
+        "kind": "primary"
+      },
+      {
+        "id": "ports-kittery-2026",
+        "title": "Town of Kittery Agenda Packet, February 12, 2026",
+        "url": "https://kitteryme.gov/AgendaCenter/ViewFile/Agenda/_02122026-398?packet=true",
+        "publisher": "Town of Kittery, Maine",
+        "kind": "primary"
+      }
+    ]
+  },
+  "princeton-university-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Princeton's campus microgrid is a long-running district-energy and electric system anchored by a 15 MW GE LM1600 natural-gas CHP turbine, a 2.6-million-gallon chilled-water thermal store, boilers/chillers, and campus distribution. Its solar fleet expanded from 5.3 MW in the Hurricane Sandy era to 16.5 MW AC across ten arrays in 2022. Princeton is now layering geo-exchange, electric heat pumps, hot/cold thermal storage, the TIGER plant, and the West Plant onto—not yet publicly documented as fully replacing—the legacy CHP architecture.",
+    "status": "Operational and undergoing a multi-year energy transition. The microgrid famously islanded for roughly 1.5 days during Hurricane Sandy after an approximately 20-minute interruption/restart. Current university reporting says the 16.5 MW AC solar portfolio is connected to the microgrid, produced about 20,800 MWh in FY2025, and supplies about 19% of current campus electricity. TIGER and the West Plant are operating in parallel as of 2025. Public sources do not say that the 15 MW CHP has been retired, nor do they publish a current all-source MWh mix, newer islanding test, or battery BESS—thermal storage remains the major disclosed storage technology.",
+    "organizations": [
+      {
+        "name": "Princeton University Facilities / Energy Plant",
+        "role": "Owner, operator, campus utility, and modernization program lead.",
+        "sourceIds": ["princeton-plant", "princeton-solar", "princeton-tiger"]
+      },
+      {
+        "name": "GE",
+        "role": "Manufacturer of the legacy 15 MW LM1600 combustion-turbine generator.",
+        "sourceIds": ["princeton-plant"]
+      },
+      {
+        "name": "EDF Renewables",
+        "role": "Designer, builder, owner, operator, and maintainer of Princeton's expanded solar portfolio under a 15-year arrangement.",
+        "sourceIds": ["princeton-solar"]
+      },
+      {
+        "name": "Princeton Energy Resources International (PERI)",
+        "role": "Developer of the legacy real-time economic-dispatch/optimization software described in the university's Sandy-era account.",
+        "sourceIds": ["princeton-sandy"]
+      },
+      {
+        "name": "Salas O'Brien",
+        "role": "Engineering participant providing detailed public design information for geo-exchange heat pumps and thermal storage.",
+        "sourceIds": ["princeton-salas"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Legacy CHP",
+        "value": "15 MW GE LM1600 natural-gas combustion turbine in combined heat and power service. Princeton's plant page says CHP can achieve roughly 80% overall fuel utilization compared with separate heat and power production.",
+        "sourceIds": ["princeton-plant"]
+      },
+      {
+        "label": "Legacy chilled-water storage",
+        "value": "2.6 million gallons, charged when electricity/cooling costs are lower and discharged during peaks to reduce chiller and electric demand.",
+        "sourceIds": ["princeton-plant", "princeton-sandy"]
+      },
+      {
+        "label": "Solar fleet",
+        "value": "16.5 MW AC across ten arrays following the 2022 expansion, compared with 5.3 MW and 16,500 panels in 2014. Current university materials say it supplies about 19% of electricity use.",
+        "sourceIds": ["princeton-solar", "princeton-geo-2025", "princeton-sandy"]
+      },
+      {
+        "label": "Measured solar output",
+        "value": "University reporting shows 7,162 MWh in FY2021 and approximately 20,800 MWh in FY2025 after the expansion.",
+        "sourceIds": ["princeton-geo-2025"]
+      },
+      {
+        "label": "Historical campus electrical load",
+        "value": "2014 university reporting cited roughly 16 MW average, 10 MW at night, and 27 MW on a hot day. These are useful operating-context figures but are not current 2025/2026 peaks after campus expansion/electrification.",
+        "sourceIds": ["princeton-sandy"]
+      },
+      {
+        "label": "New thermal storage",
+        "value": "TIGER includes separate hot- and chilled-water tanks. Engineering reporting describes approximately 2.25 million gallons each; a campus newspaper reports 2.2 million gallons each. University project pages do not publish definitive tank nameplates.",
+        "sourceIds": ["princeton-tiger", "princeton-salas", "princeton-prince"]
+      },
+      {
+        "label": "Energy mix gap",
+        "value": "Solar is currently reported at about 19% of electricity; the remainder is a changing combination of CHP, grid purchases, and growing electrified geo-exchange/heat-pump loads. The older claim that CHP met 75–85% of demand is Sandy-era and should not be reused as today's mix.",
+        "sourceIds": ["princeton-solar", "princeton-sandy", "princeton-west-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "CHP gas turbine",
+        "manufacturer": "GE",
+        "model": "LM1600",
+        "detail": "15 MW natural-gas turbine-generator with heat recovery serving the campus steam/district-energy plant.",
+        "sourceIds": ["princeton-plant"]
+      },
+      {
+        "category": "Legacy thermal energy storage",
+        "detail": "2.6-million-gallon chilled-water tank; energy-equivalent MWh depends on operating temperature differential and is not published on the current plant page.",
+        "sourceIds": ["princeton-plant"]
+      },
+      {
+        "category": "Solar PV",
+        "detail": "Ten arrays totaling 16.5 MW AC, connected to the campus microgrid; module/inverter models and DC nameplate were not found on the public project page.",
+        "sourceIds": ["princeton-solar", "princeton-geo-2025"]
+      },
+      {
+        "category": "TIGER energy plant",
+        "detail": "Electric heat pumps/chillers, hot- and chilled-water thermal storage, two transformers, controls, and a natural-gas backup generator. University pages do not disclose the backup generator's MW or model.",
+        "sourceIds": ["princeton-tiger"]
+      },
+      {
+        "category": "Geo-exchange field and heat pumps",
+        "detail": "Engineering reporting cites 583 bores approximately 850 feet deep and a buildout to four 1,750-ton heat-pump chillers (about 7,000 tons total), with 19,680 ton-hours of cooling storage; treat these as design/engineering figures rather than a university as-built asset register.",
+        "sourceIds": ["princeton-salas"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Hurricane Sandy operation",
+        "detail": "After the regional grid failed, the campus experienced about a 20-minute interruption while the plant restarted, then served about 13 MW in island mode for roughly 1.5 days before reconnecting before midnight October 31, 2012. This was a successful island operation, not seamless UPS service.",
+        "sourceIds": ["princeton-sandy"]
+      },
+      {
+        "category": "Economic dispatch",
+        "detail": "The legacy controller optimizes CHP, grid purchases, chillers, boilers, and chilled-water storage against hourly electricity/fuel costs and plant constraints; resilience/islanding is layered on a normally economic campus utility operation.",
+        "sourceIds": ["princeton-sandy", "princeton-plant"]
+      },
+      {
+        "category": "Transition architecture",
+        "detail": "Princeton is converting building heating from steam to lower-temperature hot water and using electric heat pumps, geo-exchange bores, and large hot/cold stores. TIGER and the West Plant operating in parallel provide geographic and equipment redundancy while construction continues.",
+        "sourceIds": ["princeton-netzero", "princeton-tiger", "princeton-west-2025"]
+      },
+      {
+        "category": "Storage boundary",
+        "detail": "No current source cited here documents a campus electrochemical BESS. The 2.6-million-gallon legacy tank and new TIGER tanks store thermal energy and should not be reported as battery MW/MWh.",
+        "sourceIds": ["princeton-plant", "princeton-tiger"]
+      },
+      {
+        "category": "Current performance gap",
+        "detail": "Princeton publishes solar output and decarbonization progress but not a current CHP capacity factor, total campus MWh by source, islanding test history after Sandy, outage reliability indices, or an exact retirement date for the LM1600.",
+        "sourceIds": ["princeton-geo-2025", "princeton-west-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "princeton-plant",
+        "title": "The Princeton Energy Plant",
+        "url": "https://facilities.princeton.edu/news/the-princeton-energy-plant",
+        "publisher": "Princeton University Facilities",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-sandy",
+        "title": "Two Years After Hurricane Sandy, Recognition for Princeton's Microgrid Still Surges",
+        "url": "https://www.princeton.edu/news/2014/10/23/two-years-after-hurricane-sandy-recognition-princetons-microgrid-still-surges",
+        "publisher": "Princeton University",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-solar",
+        "title": "Path to Net-Zero: Solar Expansion Project",
+        "url": "https://facilities.princeton.edu/projects/path-net-zero-solar-expansion-project",
+        "publisher": "Princeton University Facilities",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-geo-2025",
+        "title": "Geo-Exchange at Princeton University, June 2025",
+        "url": "https://facilities.princeton.edu/document/2082",
+        "publisher": "Princeton University Facilities",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-tiger",
+        "title": "Thermally Integrated Geo-Exchange Resource (TIGER)",
+        "url": "https://facilities.princeton.edu/projects/tiger",
+        "publisher": "Princeton University Facilities",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-netzero",
+        "title": "Going Deep: Princeton Lays the Foundation for a Net-Zero Campus",
+        "url": "https://www.princeton.edu/news/2021/11/09/going-deep-princeton-lays-foundation-net-zero-campus",
+        "publisher": "Princeton University",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-west-2025",
+        "title": "West Plant Heat Pump Circulating Geo-Exchange Water Through Poe Field",
+        "url": "https://insidefacilities.princeton.edu/news/2025/west-plant-heat-pump-circulating-geo-exchange-water-through-poe-field",
+        "publisher": "Princeton University Facilities",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-salas",
+        "title": "Princeton University Central Energy Plants",
+        "url": "https://salasobrien.com/projects/central-energy-plants/",
+        "publisher": "Salas O'Brien",
+        "kind": "primary"
+      },
+      {
+        "id": "princeton-prince",
+        "title": "Inside TIGER: Princeton's New Geo-Exchange Facility",
+        "url": "https://www.dailyprincetonian.com/article/2024/02/princeton-features-tiger-new-geoexchange-climate",
+        "publisher": "The Daily Princetonian",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "pulau-ubin-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Pulau Ubin's microgrid is a small Singapore island system serving more than 30 homes and businesses, originally launched with rooftop solar, battery storage, and recycled-cooking-oil biodiesel generation. Its modern EDPR phase installed 328 kWp solar and a 1 MWh experimental vanadium redox-flow battery in 2023. Crucially, Singapore's Ministry of Trade and Industry disclosed in March 2026 that the actual 2025 electricity mix was only about 10% solar and 90% diesel—not the up-to-90% solar ambition publicized for the enhancement.",
+    "status": "Operating but experiencing reliability and storage-performance problems. MTI reported approximately 300 MWh annual consumption and 13 supply trips in 2025. EDPR is upgrading the system, with an upgraded battery expected to be commissioned later in 2026; as of the research cutoff that upgrade was not yet complete. The system therefore remains diesel-dominant and the existing flow battery should be described as experimental, not proof of a near-renewable autonomous grid.",
+    "organizations": [
+      {
+        "name": "Energy Market Authority of Singapore (EMA)",
+        "role": "Government program sponsor, procurement authority, regulator, and publisher of the original and enhancement project facts.",
+        "sourceIds": ["ubin-ema-2011", "ubin-ema-2014", "ubin-ema-2022"]
+      },
+      {
+        "name": "EDP Renewables APAC / Sunseap",
+        "role": "Current microgrid operator and developer of the 2023 solar/vanadium-flow-battery enhancement; working on the 2026 upgrade.",
+        "sourceIds": ["ubin-ema-2022", "ubin-edp-current", "ubin-mti-2026"]
+      },
+      {
+        "name": "Daily Life Renewable Energy and OKH Holdings consortium",
+        "role": "Original design-build-own-operate consortium selected in the 2011 phase; current operating responsibility later shifted to EDPR Sunseap.",
+        "sourceIds": ["ubin-ema-2011", "ubin-ema-2014"]
+      },
+      {
+        "name": "National Parks Board (NParks)",
+        "role": "Island land/community partner; the enhancement included extending supply toward 13 additional households in Kampong Sungei Durian.",
+        "sourceIds": ["ubin-ema-2022"]
+      },
+      {
+        "name": "Singapore Ministry of Trade and Industry (MTI)",
+        "role": "Publisher of the latest parliamentary operating, mix, reliability, and upgrade disclosures.",
+        "sourceIds": ["ubin-mti-2026", "ubin-mti-resilience-2026"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Served customers and annual load",
+        "value": "More than 30 residential and business consumers and approximately 300 MWh/year, according to the March 2026 parliamentary reply.",
+        "sourceIds": ["ubin-mti-2026"]
+      },
+      {
+        "label": "Current solar nameplate",
+        "value": "328 kWp installed in 2023. The 2022 award factsheet described a planned 285 kWp green-roof array; 328 kWp is the later as-installed figure.",
+        "sourceIds": ["ubin-edb", "ubin-edp-current", "ubin-ema-2022"]
+      },
+      {
+        "label": "Flow-battery energy capacity",
+        "value": "1 MWh vanadium redox-flow battery installed in 2023. Public sources do not disclose its rated MW, vendor/model, usable energy, or measured round-trip efficiency.",
+        "sourceIds": ["ubin-edb", "ubin-edp-current"]
+      },
+      {
+        "label": "Actual 2025 energy mix",
+        "value": "Approximately 10% solar and 90% diesel. This official operating result supersedes expectations that the enhanced system might reach up to 90% solar penetration.",
+        "sourceIds": ["ubin-mti-2026", "ubin-ema-2022"]
+      },
+      {
+        "label": "Reliability",
+        "value": "13 electricity-supply trips in calendar 2025, with compensation provided to affected users under the operator's arrangements.",
+        "sourceIds": ["ubin-mti-2026"]
+      },
+      {
+        "label": "Projected environmental benefit",
+        "value": "EDB/EDPR materials projected approximately 100,000 litres of diesel and 268,000 kg CO2 avoided annually by the enhanced system. The 2025 diesel-dominant mix means these should remain project claims/projections unless actual verified savings are published.",
+        "sourceIds": ["ubin-edb", "ubin-edp-current", "ubin-mti-2026"]
+      },
+      {
+        "label": "Original consumer economics",
+        "value": "EMA's launch program capped microgrid electricity at S$0.80/kWh, versus self-generation costs stated as more than S$1/kWh for individual diesel sets. Current tariff and subsidy terms were not found.",
+        "sourceIds": ["ubin-ema-2011"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar PV",
+        "detail": "328 kWp installed in 2023, including a solar green-roof concept intended to lower module temperature; exact module/inverter makers and DC/AC ratio are not public.",
+        "sourceIds": ["ubin-edb", "ubin-ema-2022"]
+      },
+      {
+        "category": "Battery energy storage",
+        "detail": "1 MWh vanadium redox-flow battery with a smart-pump concept; vendor, model, power rating, electrolyte volume, and current usable capacity are not disclosed.",
+        "sourceIds": ["ubin-ema-2022", "ubin-edp-current"]
+      },
+      {
+        "category": "Diesel generation",
+        "detail": "Current backup/firm generation supplies about 90% of annual energy. Original 2013 material described generators running on biodiesel recycled from cooking oil, but the 2026 government reply says diesel and does not verify continued biodiesel use or generator model/capacity.",
+        "sourceIds": ["ubin-ema-2014", "ubin-mti-2026"]
+      },
+      {
+        "category": "Distribution and control",
+        "detail": "Underground customer cables, a central control system, storage, and remote/automated management; current controller vendor and detailed protection architecture are not public.",
+        "sourceIds": ["ubin-ema-2014", "ubin-ema-2022"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Green-roof design",
+        "detail": "The 2022 design expected vegetation to reduce solar-module temperatures by 3–8°C and improve efficiency by 1.5–4%. These are design expectations; measured site results were not published in the sources reviewed.",
+        "sourceIds": ["ubin-ema-2022"]
+      },
+      {
+        "category": "Flow-battery innovation",
+        "detail": "The vanadium system uses an actively controlled smart pump, projected to improve battery-system efficiency by up to 3%. MTI now describes the battery as experimental and says an upgrade is needed, so the projected gain should not be treated as demonstrated.",
+        "sourceIds": ["ubin-ema-2022", "ubin-mti-2026"]
+      },
+      {
+        "category": "Phase boundary",
+        "detail": "The 2013 original DLRE/OKH solar-biodiesel system and the 2023 EDPR Sunseap 328 kWp/1 MWh enhancement are successive phases. The 285 kWp figure was planned; 328 kWp was installed. The later 2026 battery upgrade is future as of the cutoff.",
+        "sourceIds": ["ubin-ema-2014", "ubin-ema-2022", "ubin-edb", "ubin-mti-2026"]
+      },
+      {
+        "category": "Outcome versus target",
+        "detail": "The most consequential update is the gap between the enhancement's up-to-90% solar aspiration and the government's measured 2025 mix of 10% solar. Reliability trips and the pending battery upgrade indicate the project remains an active demonstration/operational learning system.",
+        "sourceIds": ["ubin-ema-2022", "ubin-mti-2026"]
+      },
+      {
+        "category": "Current upgrade",
+        "detail": "EDPR was working to commission an upgraded energy-storage system later in 2026. No final capacity, chemistry change, commissioning date, or post-upgrade performance was available by July 20, 2026.",
+        "sourceIds": ["ubin-mti-2026", "ubin-mti-resilience-2026"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "ubin-ema-2011",
+        "title": "EMA Awards Pulau Ubin Micro-Grid Test-Bed Project",
+        "url": "https://www.ema.gov.sg/content/dam/corporate/news/media-releases/2011/4eae2701662cfEMA_s_Ubin_Press_Release_for_SIEW_Final_Internet.pdf.coredownload.pdf",
+        "publisher": "Energy Market Authority of Singapore",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-ema-2014",
+        "title": "Pulau Ubin Micro-Grid Test-Bed Inauguration",
+        "url": "https://www.ema.gov.sg/content/dam/corporate/news/media-releases/2014/52564fd5c257110102013_-_Press_Release_for_Ubin_Inauguration_FINAL.pdf.coredownload.pdf",
+        "publisher": "Energy Market Authority of Singapore",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-ema-2022",
+        "title": "More Users to Benefit from Enhanced Pulau Ubin Micro-Grid",
+        "url": "https://www.ema.gov.sg/content/dam/corporate/news/media-releases/2022/250622-Media-Factsheet-More-Users-to-Benefit-from-Enhanced-Pulau-Ubin-Micro-Grid.pdf.coredownload.pdf",
+        "publisher": "Energy Market Authority of Singapore",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-edb",
+        "title": "How Singapore's Robust Ecosystem Supported EDPR's Regional Venture into Solar Innovations",
+        "url": "https://www.edb.gov.sg/en/business-insights/insights/how-singapores-robust-ecosystem-supported-edprs-regional-venture-into-solar-innovations.html",
+        "publisher": "Singapore Economic Development Board",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-edp-current",
+        "title": "Pulau Ubin Green Microgrid",
+        "url": "https://edp.com/en/innovation/innovation-projects/pulau-ubin-green-microgrid",
+        "publisher": "EDP",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-mti-2026",
+        "title": "Written Reply to Parliamentary Question on Reliability and Extent of Use of Pulau Ubin's Electricity Microgrid",
+        "url": "https://www.mti.gov.sg/newsroom/written-reply-to-pq-on-reliability-and-extent-of-use-of-pulau-ubin-s-electricity-microgrid/",
+        "publisher": "Singapore Ministry of Trade and Industry",
+        "kind": "primary"
+      },
+      {
+        "id": "ubin-mti-resilience-2026",
+        "title": "Response on Singapore Energy Resilience Strategy and Off-Grid/Microgrid Power",
+        "url": "https://www.mti.gov.sg/newsroom/response-by-minister-of-state-for-trade-and-industry-gan-siow-huang-on-motion-for-adjournment-on--singapore-energy-resilience-strategy--an-off-grid-and-micro-grid-power-using-smart-energy-management-solutions-to-be-deployed-islandwide-/",
+        "publisher": "Singapore Ministry of Trade and Industry",
+        "kind": "primary"
+      }
+    ]
+  },
+  "qinous-microgrid-demonstrator": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Qinous demonstrator was a containerized Berlin Schöneweide mini-grid test rig built in 2013–2014, not a renewable-powered customer site. It used a 150 kVA diesel generator, a 100 kW/112 kWh lithium-ion storage system, an added Aquion aqueous/saltwater battery, two 150 kVA converter-based load/PV simulators, and a Bachmann M1 controller. The often-listed '100 kW solar' and '100 kW wind' are adjustable simulated profiles, not installed PV panels or wind turbines; a later project directory's 130 kW combined-storage figure does not reconcile directly with the primary 100 kW/112 kWh baseline plus added Aquion unit.",
+    "status": "The documented RLI control-development project ended December 31, 2014. Qinous later became a commercial storage/microgrid integrator; Rolls-Royce bought an initial stake in 2018, acquired a 73.1% majority in January 2020, and renamed the company Rolls-Royce Solutions Berlin GmbH in June 2020 as its Microgrid Competence Center. Rolls-Royce separately commissioned a newer Microgrid Validation Center in Friedrichshafen in 2019. No current primary source confirms that the original Schöneweide container test rig, its Samsung battery, or its Aquion battery remains in service in 2026, so the asset status is historical demonstration / present physical disposition unknown.",
+    "organizations": [
+      {
+        "name": "Qinous GmbH",
+        "role": "Original test-rig owner/developer, energy-storage integrator, battery-management and microgrid-control developer.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "name": "Rolls-Royce Power Systems / Rolls-Royce Solutions Berlin GmbH",
+        "role": "Corporate successor and majority owner; Qinous was renamed and expanded into the Berlin Microgrid Competence Center in 2020.",
+        "sourceIds": ["qinous-rr-2018", "qinous-rr-2020"]
+      },
+      {
+        "name": "Reiner Lemoine Institut (RLI)",
+        "role": "Developer of the test rig's main control-system structure, automation/test sequences, and visualization during the 2013–2014 project.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "name": "Bachmann electronic",
+        "role": "Supplier of the M1 industrial controller used to interconnect and control the test rig.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "name": "Aquion Energy",
+        "role": "Supplier/manufacturer of the added aqueous hybrid-ion/saltwater battery technology.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "name": "Samsung SDI",
+        "role": "Lithium-ion battery manufacturer identified in the legacy project directory; the primary RLI page confirms lithium storage but not the cell maker.",
+        "sourceIds": ["qinous-legacy"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Test-rig scale",
+        "value": "RLI describes a 100 kW/112 kWh lithium energy-storage system, 150 kVA diesel generator, and two 150 kVA inverter/converter simulators. The facility emulated a roughly 100 kW class off-grid mini-grid.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "label": "Storage-rating conflict",
+        "value": "The primary RLI project page gives 100 kW/112 kWh for the lithium system and says an Aquion saltwater battery was added without rating it. The legacy directory says '130 kW Aquion and Samsung storage' in aggregate. Because the boundaries differ and Aquion energy is missing, 130 kW should not be paired with 112 kWh as though it were one verified system.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "label": "Simulated renewable/load channels",
+        "value": "Two isolated frequency-converter/inverter channels create adjustable consumer-load and renewable-generation profiles. Directory labels of 100 kW solar and 100 kW wind represent emulation capability, not physical renewable nameplate.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "150 kVA conventional diesel generator used for diesel-parallel, diesel-off, start/stop, and transition testing; manufacturer/model and fuel-consumption performance are not public.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Not meaningful as an annual production mix: this was a lab/test installation whose load and renewable feed were synthesized. Diesel consumed real fuel during applicable tests and batteries exchanged energy, but no annual kWh or renewable fraction is reported.",
+        "sourceIds": ["qinous-rli"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Lithium-ion battery energy storage",
+        "manufacturer": "Samsung SDI (legacy-directory attribution)",
+        "detail": "Primary project rating 100 kW/112 kWh; exact Qinous enclosure, cell, rack, and inverter model not established by the sources reviewed.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "category": "Aqueous/saltwater battery",
+        "manufacturer": "Aquion Energy",
+        "detail": "Added as a second chemistry for single and parallel battery-operation tests; separate kW/kWh and product model are not published in the primary RLI project page.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "category": "Industrial controller",
+        "manufacturer": "Bachmann electronic",
+        "model": "M1",
+        "detail": "Connects and controls the overall rig; Matlab/Simulink and M-PLC coordinate communications and automated tests, with a webMI graphical interface.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "category": "Diesel generator",
+        "detail": "150 kVA set used to reproduce conventional off-grid operation and diesel/battery transitions; make/model not disclosed.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "category": "Grid/load emulation",
+        "detail": "Load and PV/renewable simulators implemented with 150 kVA inverters/converters, allowing real or synthetic profiles, disturbances, grid faults, and short-circuit behavior to be tested.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Test scenarios",
+        "detail": "RLI developed automated sequences for diesel-only load service, renewable-plus-battery integration, and complete diesel-off operation, using representative remote-region or synthetic load/generation curves.",
+        "sourceIds": ["qinous-rli"]
+      },
+      {
+        "category": "Control objective",
+        "detail": "The battery/control system was intended to displace diesel operation while maintaining frequency stability, and to test battery-inverter behavior during parallel operation, transitions, faults, and short circuits.",
+        "sourceIds": ["qinous-rli", "qinous-legacy"]
+      },
+      {
+        "category": "Corporate timeline",
+        "detail": "Rolls-Royce took a strategic stake in 2018, announced a 73.1% majority in January 2020, and renamed Qinous to Rolls-Royce Solutions Berlin in June 2020. The successor business reported more than 50 storage/microgrid projects worldwide, but that portfolio count is not the operating history of this one rig.",
+        "sourceIds": ["qinous-rr-2018", "qinous-rr-2020"]
+      },
+      {
+        "category": "Separate validation facility",
+        "detail": "Rolls-Royce's 2019 Friedrichshafen Microgrid Validation Center—with a separate plant microgrid, 500 kWp PV, gas and diesel generators, and an MTU battery—is not the Qinous Berlin demonstrator and must not be merged into its nameplate.",
+        "sourceIds": ["qinous-rr-validation"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No current owner source states whether the Schöneweide rig was relocated, dismantled, upgraded, or retained after the corporate integration. Aquion's later corporate history alone is not proof that its installed test battery was removed.",
+        "sourceIds": ["qinous-rli", "qinous-rr-2020"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "qinous-rli",
+        "title": "Development of Control System for a Mini-Grid Test Rig",
+        "url": "https://reiner-lemoine-institut.de/en/project/development-of-control-system-for-a-mini-grid-test-rig/",
+        "publisher": "Reiner Lemoine Institut",
+        "kind": "primary"
+      },
+      {
+        "id": "qinous-legacy",
+        "title": "Qinous Microgrid Demonstration Project",
+        "url": "https://microgridprojects.com/microgrid/qinous-microgrid-demonstrator/",
+        "publisher": "MicrogridProjects.com",
+        "kind": "secondary"
+      },
+      {
+        "id": "qinous-rr-2018",
+        "title": "Rolls-Royce Expands Its Position in the Microgrid Market and Invests in Start-Up Qinous",
+        "url": "https://www.rolls-royce.com/media/press-releases/2018/01-10-2018-rr-expands-its-position-in-the-microgrid-market-and-invests-in-start-up-qinous.aspx",
+        "publisher": "Rolls-Royce",
+        "kind": "primary"
+      },
+      {
+        "id": "qinous-rr-2020",
+        "title": "Rolls-Royce Expands Berlin Start-Up Qinous into Microgrid Competence Center",
+        "url": "https://www.rolls-royce.com/media/press-releases/2020/18-06-2020-rr-expands-berlin-start-up-qinous-into-microgrid-competence-center.aspx",
+        "publisher": "Rolls-Royce",
+        "kind": "primary"
+      },
+      {
+        "id": "qinous-rr-validation",
+        "title": "Rolls-Royce Validation Center for MTU Microgrids Goes into Service",
+        "url": "https://www.rolls-royce.com/media/press-releases/2019/10-10-19-rr-validation-center-for-mtu-microgrids-goes-into-service.aspx",
+        "publisher": "Rolls-Royce",
+        "kind": "primary"
+      }
+    ]
+  },
+  "raglan-mine": {
+    "researchedAt": "2026-07-20",
+    "summary": "Glencore's off-grid Raglan Mine in Nunavik operates a diesel-wind-storage smartgrid developed with TUGLIQ. Raglan I (2014) added one 3 MW Enercon E-82 E4 turbine and a three-tier store: 200 kW/1.5 kWh KTSI flywheel, 200 kW/250 kWh Electrovaya lithium battery, and a Hydrogenics loop with a 315 kW electrolyzer, 198–200 kW PEM fuel cell, and roughly 1–4 MWh hydrogen-storage figures depending accounting. Raglan II (2018) added a second 3 MW wind turbine and a 3 MW/1.64 MWh Saft Intensium Max+ 20M G2 battery (TUGLIQ rounds it to 1 MWh). Diesel remains the backbone of the isolated mine grid.",
+    "status": "The two turbines and storage systems are operating. Glencore's 2024 engagement report says they supplied around 10% of total mine energy and saved more than 4.7 million litres of diesel and 13,000 tonnes CO2e in 2024—better than 2023. A proposed wind farm is not yet installed: Glencore was assessing up to 12 near-term turbines subject to impact review and financial approval, while the environmental filing describes a possible phased maximum of 30 additional 3 MW turbines plus new 10 MW/10 MWh storage for the first 12. As of the latest public review page, that expansion remained in environmental procedure and must not be counted as operating capacity.",
+    "organizations": [
+      {
+        "name": "Glencore Canada / Raglan Mine",
+        "role": "Mine owner/operator, isolated-grid and diesel-plant operator, host/offtaker, and proponent of the proposed wind-farm expansion.",
+        "sourceIds": ["raglan-glencore-2024", "raglan-keqc"]
+      },
+      {
+        "name": "TUGLIQ Energy Corp.",
+        "role": "Developer, owner, and operator of Raglan I/II wind and storage assets under a 20-year PPA with Glencore; lead proponent for the federally supported Raglan 2.0 phase.",
+        "sourceIds": ["raglan-tugliq-i", "raglan-tugliq-ii", "raglan-nrcan-2"]
+      },
+      {
+        "name": "Hatch",
+        "role": "Engineering partner and co-developer of the wind-diesel-storage microgrid controller/integration design.",
+        "sourceIds": ["raglan-saft", "raglan-hatch"]
+      },
+      {
+        "name": "Natural Resources Canada",
+        "role": "Federal ecoENERGY Innovation Initiative and Energy Innovation Program funder/publisher for Raglan I and Raglan 2.0.",
+        "sourceIds": ["raglan-completion", "raglan-nrcan-2"]
+      },
+      {
+        "name": "Enercon",
+        "role": "Manufacturer of both operating 3 MW E-82 E4 Arctic wind turbines and named turbine supplier in the proposed expansion filing.",
+        "sourceIds": ["raglan-completion", "raglan-keqc"]
+      },
+      {
+        "name": "Saft",
+        "role": "Supplier of the Raglan II 3 MW/1.64 MWh cold-climate lithium-ion BESS.",
+        "sourceIds": ["raglan-saft"]
+      },
+      {
+        "name": "Electrovaya, KTSI, and Hydrogenics",
+        "role": "Suppliers respectively of the Raglan I lithium battery, flywheel, and electrolyzer/fuel-cell hydrogen loop.",
+        "sourceIds": ["raglan-completion"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Operating wind",
+        "value": "6 MW total from two 3 MW Enercon E-82 E4 Arctic-rated turbines, commissioned in 2014 and 2018.",
+        "sourceIds": ["raglan-completion", "raglan-tugliq-ii", "raglan-glencore-2024"]
+      },
+      {
+        "label": "Raglan I storage",
+        "value": "200 kW/1.5 kWh KTSI flywheel; 200 kW/250 kWh Electrovaya lithium-ion battery; Hydrogenics HySTAT 60 315 kW electrolyzer and HyPM-XR 198 kW PEM fuel cell. Saft's later overview calls the small battery 250 kW, while the detailed completion report and TUGLIQ page use 200 kW. The completion report calls the hydrogen system 200 kW/1 MWh while TUGLIQ's current page labels the hydrogen cylinder 200 kW/4 MWh, likely different power and stored-chemical/usable-energy boundaries.",
+        "sourceIds": ["raglan-completion", "raglan-tugliq-i", "raglan-saft"]
+      },
+      {
+        "label": "Raglan II battery",
+        "value": "Saft Intensium Max+ 20M G2 at 3 MW/1.64 MWh in Saft's detailed case study (about 33 minutes at rated output). TUGLIQ rounds it to 3 MW/1 MWh. These are conflicting/rounded descriptions of the same installation, not two batteries.",
+        "sourceIds": ["raglan-saft", "raglan-tugliq-ii"]
+      },
+      {
+        "label": "Mine demand and diesel fleet",
+        "value": "Saft reports 14–18 MW round-the-clock electrical demand. NRCan says the upgraded operating philosophy coordinates more than 11 diesel engines. Public current sources do not provide each engine's make, MW, fuel curve, or total firm nameplate.",
+        "sourceIds": ["raglan-saft", "raglan-nrcan-2"]
+      },
+      {
+        "label": "Actual 2024 performance",
+        "value": "More than 4.7 million litres of diesel and 13,000 tonnes CO2e avoided by the two turbines, up from more than 3.8 million litres and 10,700 tonnes in 2023. Glencore says wind provided around 10% of total mine energy.",
+        "sourceIds": ["raglan-glencore-2024"]
+      },
+      {
+        "label": "Renewable-penetration definitions",
+        "value": "TUGLIQ/Saft cite close to 40% wind penetration in relevant electrical operating intervals, while Glencore reports about 10% of total mine energy annually. These are not contradictory if one is instantaneous/electric penetration and the other includes annual electricity, heat, and/or broader fuel energy.",
+        "sourceIds": ["raglan-tugliq-ii", "raglan-saft", "raglan-glencore-2024"]
+      },
+      {
+        "label": "Proposed expansion—not installed",
+        "value": "Environmental filing: up to 30 additional 3 MW Enercon E-82 turbines (90 MW), phased; first 12 accompanied by 10 MW/10 MWh lithium storage and a new 35 kV production network. Glencore's 2024 public-facing plan discusses up to 12 turbines, 42% renewable electricity, 154 GWh/year, 16.4 million litres/year diesel savings, and 45,000 tCO2e/year by 2029, all conditional projections.",
+        "sourceIds": ["raglan-keqc", "raglan-glencore-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E-82 E4",
+        "detail": "Two operating 3 MW Arctic-rated turbines on permafrost pile foundations, 6 MW total.",
+        "sourceIds": ["raglan-completion", "raglan-tugliq-i"]
+      },
+      {
+        "category": "Fast-transient storage",
+        "manufacturer": "KTSI",
+        "model": "GTR-200",
+        "detail": "200 kW/1.5 kWh flywheel for subsecond/short-duration wind smoothing.",
+        "sourceIds": ["raglan-completion"]
+      },
+      {
+        "category": "Raglan I battery",
+        "manufacturer": "Electrovaya",
+        "model": "SuperPolymer 2.0",
+        "detail": "200 kW/250 kWh lithium-ion transition/bridging storage used to support diesel/fuel-cell starts and spinning-reserve reduction.",
+        "sourceIds": ["raglan-completion"]
+      },
+      {
+        "category": "Hydrogen electrolyzer",
+        "manufacturer": "Hydrogenics",
+        "model": "HySTAT 60",
+        "detail": "315 kW electrolyzer converting surplus wind electricity into hydrogen for longer-duration storage.",
+        "sourceIds": ["raglan-completion"]
+      },
+      {
+        "category": "Hydrogen fuel cell",
+        "manufacturer": "Hydrogenics",
+        "model": "HyPM-XR",
+        "detail": "198 kW PEM fuel cell, commonly rounded to 200 kW in project summaries.",
+        "sourceIds": ["raglan-completion"]
+      },
+      {
+        "category": "Raglan II battery",
+        "manufacturer": "Saft",
+        "model": "Intensium Max+ 20M G2",
+        "detail": "Cold-climate containerized lithium-ion BESS, 3 MW/1.64 MWh in Saft's detailed rating.",
+        "sourceIds": ["raglan-saft"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Three-tier storage control",
+        "detail": "The flywheel absorbs fastest transients, the small lithium battery bridges short wind losses and allows generator/fuel-cell starts, and the hydrogen loop captures longer surplus periods. The controller coordinates them with diesel spinning reserve.",
+        "sourceIds": ["raglan-completion", "raglan-hatch"]
+      },
+      {
+        "category": "Measured smoothing",
+        "detail": "The Raglan I completion report shows a five-minute event where storage reduced a wind-output drop rate from about 130 kW/s to 11 kW/s, demonstrating ride-through and reduced stress on diesel assets.",
+        "sourceIds": ["raglan-completion"]
+      },
+      {
+        "category": "Availability evidence",
+        "detail": "The initial Raglan I reporting period achieved 97.3% wind-turbine availability and cumulative displacement of 3.4 million litres of diesel/9,110 tonnes GHG at the report date; current 2024 annual results provide the stronger recent performance benchmark.",
+        "sourceIds": ["raglan-completion", "raglan-glencore-2024"]
+      },
+      {
+        "category": "Raglan II function",
+        "detail": "The larger Saft BESS provides ramp-rate control, bridging, frequency support, and grid stability for sudden 3–6 MW wind losses. Saft estimates that without storage about 25% of wind output—roughly 2 GWh/year—would need curtailment.",
+        "sourceIds": ["raglan-saft"]
+      },
+      {
+        "category": "Future-grid constraint",
+        "detail": "The existing 25 kV network cannot support the proposed wind/storage expansion. The filing therefore proposes a new 35 kV production network while retaining 25 kV distribution to mines and surface facilities.",
+        "sourceIds": ["raglan-keqc"]
+      },
+      {
+        "category": "Phase boundary",
+        "detail": "Operating nameplate is two turbines (6 MW) plus Raglan I and II stores. The possible 30-turbine/90 MW maximum, first-12 10 MW/10 MWh BESS, 35 kV network, and 2029 savings are proposal-stage and excluded from operating totals.",
+        "sourceIds": ["raglan-glencore-2024", "raglan-keqc"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "raglan-tugliq-i",
+        "title": "Raglan I – Hybrid Wind, Diesel and Storage Energy Generation in Arctic Canada",
+        "url": "https://tugliq.com/en/realisation/raglan-i/",
+        "publisher": "TUGLIQ Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-completion",
+        "title": "Glencore RAGLAN Mine Renewable Electricity Smart-Grid Pilot Demonstration: Project Completion Report",
+        "url": "https://tugliq.com/wp-content/uploads/2019/09/2016-11-11-tugliq-raglan-public-report-en.pdf",
+        "publisher": "TUGLIQ Energy / Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-tugliq-ii",
+        "title": "Raglan II – Hybrid Wind, Diesel and Storage Energy Generation in Arctic Canada",
+        "url": "https://tugliq.com/en/realisation/raglan-ii/",
+        "publisher": "TUGLIQ Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-saft",
+        "title": "Energy Storage Optimizes Wind Power for Remote Arctic Mine",
+        "url": "https://saft.com/en/case-studies/energy-storage-optimizes-wind-power-remote-arctic-mine",
+        "publisher": "Saft",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-nrcan-2",
+        "title": "Nunavik Mining: RAGLAN 2.0 Large Scale Renewable Energy Smart Grid",
+        "url": "https://natural-resources.canada.ca/funding-partnerships/nunavik-mining-raglan-20-large-scale-renewable-energy-smart-grid",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-hatch",
+        "title": "Raglan Mine Integrated Wind-Storage-Diesel Energy Project",
+        "url": "https://www.hatch.com/Projects/Energy/Raglan-Mine-Integrated-Wind-Storage-Diesel-Energy-Project",
+        "publisher": "Hatch",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-glencore-2024",
+        "title": "Raglan Mine 2024 Engagement Report",
+        "url": "https://www.glencore.ca/.rest/api/v1/documents/621a0aee28f66e94d90f3259c73bba30/Raglan_RapportEngagement2024_EN_fin_Web.pdf",
+        "publisher": "Glencore Raglan Mine",
+        "kind": "primary"
+      },
+      {
+        "id": "raglan-keqc",
+        "title": "Deployment of a Wind Farm with Battery Storage System at Raglan Mine",
+        "url": "https://www.keqc-cqek.ca/en/projets/deployment-of-a-wind-farm-with-battery-storage-system-at-raglan-mine/",
+        "publisher": "Kativik Environmental Quality Commission",
+        "kind": "primary"
+      }
+    ]
+  }
+}

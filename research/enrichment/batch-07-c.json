@@ -1,0 +1,1612 @@
+{
+  "ramea-newfoundland-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Ramea is not one single 110 kW wind project. Public records describe three distinct stages on the same isolated Newfoundland grid: Frontier Power Systems' six-turbine 390 kW wind-diesel project operating since 2004; Newfoundland and Labrador Hydro's separate 300 kW wind-hydrogen-diesel research project commissioned in 2012 and subsequently abandoned; and Puffin Wind Inc.'s later wind-and-battery redevelopment, which received federal support and filed for interconnection in January 2025. The archived 110 kW figure does not match any verified installed stage and should be retired.",
+    "status": "Frontier says its original 390 kW wind farm continues to operate. The NL Hydro hydrogen equipment had been idle since 2014 and was decommissioned in 2024; its three 100 kW turbines stopped in the first quarter of 2019 and were sold to Puffin Wind in December 2024 for C$420,000. A January 2025 Puffin interconnection application concerned a wind/battery project, but no public source located through July 2026 establishes its final turbine and battery ratings or confirms commercial commissioning. The supportable current picture is therefore an operating original Frontier wind-diesel system, a decommissioned NL Hydro hydrogen phase, and a separate Puffin redevelopment whose commissioning remains unverified.",
+    "organizations": [
+      {
+        "name": "Frontier Power Systems Inc.",
+        "role": "Designed, financed, built, and says it continues to operate the original six-turbine wind-diesel project commissioned in 2004; it also supplied the energy-management role for the later demonstration.",
+        "sourceIds": ["b07c-ramea-frontier", "b07c-ramea-frontier-projects", "b07c-ramea-system-design"]
+      },
+      {
+        "name": "Newfoundland and Labrador Hydro",
+        "role": "Owner/operator of the island diesel plant and proponent of the separate wind-hydrogen-diesel demonstration; stopped further investment in 2018 and decommissioned the hydrogen equipment in 2024.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-ea"]
+      },
+      {
+        "name": "Puffin Wind Inc.",
+        "role": "Recipient of a C$4 million federal contribution for Ramea Wind Diesel Project II, purchaser of NL Hydro's three inactive wind turbines, and applicant for a new wind/battery interconnection and integration project.",
+        "sourceIds": ["b07c-ramea-grant", "b07c-ramea-decision-note", "b07c-ramea-pub-2025"]
+      },
+      {
+        "name": "Natural Resources Canada",
+        "role": "Federal funder of Puffin's demonstration under the Clean Energy for Rural and Remote Communities program; earlier federal pages about the hydrogen project are stale and should not be used as current status evidence.",
+        "sourceIds": ["b07c-ramea-grant", "b07c-ramea-nrc-stale"]
+      },
+      {
+        "name": "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+        "role": "Regulator that approved abandonment of the hydrogen system in 2023, approved the turbine sale in December 2024, and referenced Puffin's January 2025 interconnection application.",
+        "sourceIds": ["b07c-ramea-pub-order-2023", "b07c-ramea-decision-note", "b07c-ramea-pub-2025"]
+      },
+      {
+        "name": "Town of Ramea",
+        "role": "Host community on an isolated island distribution system; no public source located assigns the town ownership of the generation assets.",
+        "sourceIds": ["b07c-ramea-frontier", "b07c-ramea-ea"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original wind stage",
+        "value": "390 kW from six 65 kW Windmatic turbines. Frontier reports about 500,000 kWh/year, approximately 15% of Ramea's electricity, and an estimated 375 tonnes/year of avoided emissions; these are operator/developer claims rather than independently audited 2026 data.",
+        "sourceIds": ["b07c-ramea-frontier", "b07c-ramea-pumped-hydro-study"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "Three Caterpillar D3512 sets rated 925 kW each (2.775 MW total), 4.16 kV, 1,200 rpm, power factor about 0.85. Academic project material says one or two units normally served the load and a master controller coordinated parallel operation and cycling.",
+        "sourceIds": ["b07c-ramea-pumped-hydro-study", "b07c-ramea-peer-review"]
+      },
+      {
+        "label": "NL Hydro wind-hydrogen stage",
+        "value": "As commissioned: three 100 kW wind turbines, an electrolyzer, three hydrogen storage tanks and piping, a hydrogen generator set, and an energy-management system. A pre-construction design overview showed a 162 kW electrolyzer/compressor package, approximately 2,000 Nm3 of hydrogen storage, and a nominal 250 kW hydrogen generator arrangement; those ratings are design values, not verified final as-built test output.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-system-design"]
+      },
+      {
+        "label": "Community load",
+        "value": "Published studies report an approximately 188 kW minimum, 350-610 kW typical range, and roughly 1.09-1.10 MW annual/winter peak. These are historical engineering-study values, not a current 2026 load profile.",
+        "sourceIds": ["b07c-ramea-peer-review", "b07c-ramea-project-paper"]
+      },
+      {
+        "label": "Puffin wind/battery stage",
+        "value": "The PUB confirms a wind/battery project and a January 28, 2025 interconnection application, while the federal contribution was C$4 million. Public material found does not disclose a reliable final wind rating, battery MW/MWh, duration, controller model, or commissioning date.",
+        "sourceIds": ["b07c-ramea-pub-2025", "b07c-ramea-grant"]
+      },
+      {
+        "label": "Archived 110 kW figure",
+        "value": "Unsupported. Verified stages are 390 kW for Frontier's 2004 wind farm and 300 kW for NL Hydro's later three-turbine demonstration. The legacy value is not retained as installed capacity.",
+        "sourceIds": ["b07c-ramea-archive", "b07c-ramea-frontier", "b07c-ramea-decision-note"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Original wind turbines",
+        "manufacturer": "Windmatic",
+        "model": "WM15S",
+        "detail": "Six 65 kW two-speed, upwind induction-generator turbines. Engineering material identifies a 65 kW and a 13 kW induction generator in each machine, a 30 kVAr capacitor bank per turbine, and a 200 kW controllable dump load for the wind system.",
+        "sourceIds": ["b07c-ramea-pumped-hydro-study"]
+      },
+      {
+        "category": "NL Hydro wind turbines",
+        "manufacturer": "Northern Power Systems",
+        "model": "Northern Power 100",
+        "detail": "Three 100 kW turbines. The 2025 provincial note confirms the quantity and rating; a 2025 peer-reviewed case table identifies the model family.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-energy-justice"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "manufacturer": "Caterpillar",
+        "model": "D3512 / CAT 3512",
+        "detail": "Three approximately 925 kW generator sets with automatic voltage regulation and speed-droop/isochronous governor modes.",
+        "sourceIds": ["b07c-ramea-pumped-hydro-study"]
+      },
+      {
+        "category": "Hydrogen conversion and storage",
+        "detail": "Electrolyzer, compressor, three storage tanks and piping, and hydrogen internal-combustion generator set. Public decommissioning records do not identify final equipment makers or preserve verified as-built nameplates.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-system-design"]
+      },
+      {
+        "category": "Control",
+        "manufacturer": "Frontier Power Systems",
+        "detail": "Original wind-diesel controls and the later demonstration's energy-management role. No supportable public model number for the EMS or Puffin battery controller was found.",
+        "sourceIds": ["b07c-ramea-frontier-projects", "b07c-ramea-system-design"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating architecture",
+        "detail": "The original wind farm injects variable wind into an isolated diesel grid, with capacitors and a dump load supporting induction-turbine operation. The later demonstration attempted to turn otherwise curtailed wind into hydrogen, then burn that hydrogen during low-wind periods.",
+        "sourceIds": ["b07c-ramea-pumped-hydro-study", "b07c-ramea-ea"]
+      },
+      {
+        "category": "Hydrogen outcome",
+        "detail": "The hydrogen system was idle from 2014. NL Hydro stopped investing in 2018; the three 100 kW turbines ceased operation in the first quarter of 2019 because of maintenance issues. PUB-approved removal covered the electrolyzer, storage, generator and EMS, and hydrogen decommissioning was completed in 2024.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-pub-order-2023"]
+      },
+      {
+        "category": "Costs and disposition",
+        "detail": "The provincial note gives C$11.82 million as the commissioned cost of the NL Hydro research project. The PUB-approved decommissioning estimate was C$399,800, and the inactive turbines were sold to Puffin for C$420,000 in December 2024.",
+        "sourceIds": ["b07c-ramea-decision-note", "b07c-ramea-pub-order-2023"]
+      },
+      {
+        "category": "Performance caveat",
+        "detail": "A study finding that hydrogen would contribute less than 1% and that a proposed 150 kW pumped-hydro alternative could perform better was modeling, not operating evidence; no pumped-hydro plant was built as part of this record.",
+        "sourceIds": ["b07c-ramea-peer-review"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No current public source gives annual island diesel burn, a verified 2025/26 renewable percentage, availability of individual Windmatic turbines, or as-built Puffin battery specifications. Frontier's current generation and emissions figures are therefore retained as supplier claims.",
+        "sourceIds": ["b07c-ramea-frontier", "b07c-ramea-pub-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-ramea-frontier",
+        "title": "Ramea Wind-Diesel Project",
+        "url": "https://frontierpowersystems.ca/ramea/",
+        "publisher": "Frontier Power Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-frontier-projects",
+        "title": "Projects",
+        "url": "https://frontierpowersystems.ca/projects/",
+        "publisher": "Frontier Power Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-decision-note",
+        "title": "NL Hydro Ramea Wind Energy Assets - Decision/Direction Note R-IET-005-2025",
+        "url": "https://mattbarter.ca/wp-content/uploads/2025/03/R-IET-005-2025.pdf",
+        "publisher": "Newfoundland and Labrador Department of Industry, Energy and Technology (released under access-to-information law)",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-ea",
+        "title": "Ramea Wind-Hydrogen-Diesel Energy Solution, Project 1357",
+        "url": "https://www.gov.nl.ca/eccc/projects/project-1357/",
+        "publisher": "Government of Newfoundland and Labrador",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-system-design",
+        "title": "Ramea Wind-Hydrogen-Diesel Energy Solution System Overview",
+        "url": "https://www.gov.nl.ca/ecc/files/env-assessment-projects-y2008-1357-appendix-a-ramea-whd-energy-solution-system-overview.pdf",
+        "publisher": "Newfoundland and Labrador Hydro / Government of Newfoundland and Labrador",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-pub-order-2023",
+        "title": "Order No. P.U. 10(2023), Ramea Wind-Hydrogen-Diesel Generation Project Abandonment",
+        "url": "https://canadacommons.ca/artifacts/42275625/order-no/43174684/",
+        "publisher": "Newfoundland and Labrador Board of Commissioners of Public Utilities (archived copy via Canada Commons)",
+        "kind": "archive"
+      },
+      {
+        "id": "b07c-ramea-pub-2025",
+        "title": "Order No. P.U. 12(2025)",
+        "url": "https://www.pub.nl.ca/PU/orders/2025/P.U.%2012%282025%29.PDF",
+        "publisher": "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-grant",
+        "title": "Ramea Wind Diesel Project II - Grant CERRC-MU-166",
+        "url": "https://search.open.canada.ca/grants/record/nrcan-rncan%2C115-2021-2022-Q4-11690%2Ccurrent",
+        "publisher": "Government of Canada / Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-pumped-hydro-study",
+        "title": "Feasibility Study of Pumped Hydro Energy Storage for Ramea",
+        "url": "https://www.mun.ca/harriscentre/media/production/memorial/administrative/the-harris-centre/media-library/reports/arf/2009/ARF_Iqbal_RameaHybrid.pdf",
+        "publisher": "Memorial University of Newfoundland / Harris Centre",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ramea-peer-review",
+        "title": "Assessment of a Hybrid Wind-Diesel-Hydrogen Energy System for Ramea",
+        "url": "https://link.springer.com/article/10.1186/2251-6832-3-9",
+        "publisher": "International Journal of Energy and Environmental Engineering",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ramea-project-paper",
+        "title": "Ramea Wind-Hydrogen-Diesel Project: System Description and Component Sizing",
+        "url": "https://www.researchgate.net/publication/347440029_Ramea_Wind_Hydrogen_Diesel_Project_System_Description_and_Component_Sizing",
+        "publisher": "IEEE NECEC conference paper",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ramea-energy-justice",
+        "title": "The Legacy of the Cod Fishery Collapse: Understanding Wind Energy Acceptance in Newfoundland",
+        "url": "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/32710/Hogan-2025-The-legacy-of-cod-fishery-collapse-ERSS-127-104274-CCBY.pdf?sequence=1",
+        "publisher": "Energy Research & Social Science / University of St Andrews repository",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ramea-nrc-stale",
+        "title": "Ramea Island",
+        "url": "https://natural-resources.canada.ca/energy-sources/renewable-energy/ramea-island",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ramea-archive",
+        "title": "Ramea Newfoundland Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420122155id_/http://microgridprojects.com/microgrid/ramea-newfoundland-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "rampura": {
+    "researchedAt": "2026-07-20",
+    "summary": "Rampura was an 8.7 kWp community-managed solar mini-grid commissioned on January 26, 2009 in a previously unelectrified village about 17 km from Jhansi, Uttar Pradesh. It used 60 photovoltaic modules, a 48 V battery bank, and roughly 0.75-1 km of local distribution for basic household and street lighting. Contemporary sources strongly support the project's early operation and social effects, but recent repetitions are retrospective; no credible source located confirms the plant's physical condition, battery replacement history, village-grid interconnection, tariff collection, or continuing service in 2026.",
+    "status": "Contemporary 2009-2011 accounts describe the system as commissioned, community-managed, and operating without a day of outage over the reporting interval. A 2020 academic study still uses Rampura as a community-energy governance case, but does not establish current plant availability. The Microgrid Projects page still labels it operational, yet supplies no dated operating evidence. Current status should therefore be recorded as historically operational, present operation unverified—not confidently operational in 2026.",
+    "organizations": [
+      {
+        "name": "Scatec Solar",
+        "role": "Conceived, financed, and managed the pilot through its Indian affiliate; contemporary reporting gives an approximate Rs 5 million project cost.",
+        "sourceIds": ["b07c-rampura-da", "b07c-rampura-toi"]
+      },
+      {
+        "name": "Development Alternatives",
+        "role": "Selected and mobilized the beneficiary community, supported the local governance model, and documented the project and its outcomes.",
+        "sourceIds": ["b07c-rampura-da", "b07c-rampura-vasudha", "b07c-rampura-compendium"]
+      },
+      {
+        "name": "Village Energy Committee / Rampura community",
+        "role": "Community operator and manager, including local rules, connections, street-light switching, and user participation. Current legal or operating status was not found.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-toi"]
+      },
+      {
+        "name": "DD Solar23 India Pvt. Ltd. / Bergen Group India",
+        "role": "Technical-knowledge and installation support identified in case-study sources; the precise division between DD Solar23, Bergen Group, and Unitron is inconsistently reported.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-indian-express"]
+      },
+      {
+        "name": "Unitron Energy Systems",
+        "role": "Named as installer by Business Today, creating a role conflict with sources that identify DD Solar23/Bergen Group; no contract record was located to resolve it.",
+        "sourceIds": ["b07c-rampura-business-today"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar capacity",
+        "value": "8.7 kWp from 60 modules rated 145 W each; Development Alternatives describes the plant as polycrystalline.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-compendium"]
+      },
+      {
+        "label": "Battery",
+        "value": "24 cells at 2 V each, giving a nominal 48 V bank. A case-study source says it could support four to five cloudy/rainy days, but no amp-hour or kWh rating, chemistry, maker, usable depth of discharge, or measured autonomy is published.",
+        "sourceIds": ["b07c-rampura-vasudha"]
+      },
+      {
+        "label": "Distribution",
+        "value": "Approximately 0.75-1 km village mini-grid. Contemporary sources describe compact fluorescent lamps in homes and street lights operated on a separate dusk-to-approximately-4 a.m. circuit.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-toi"]
+      },
+      {
+        "label": "Connections and population",
+        "value": "The best-resolved contemporary accounts describe about 69-70 households, a population near 350, and 44 initially connected families. A Business Today report says 'some 400 homes,' which conflicts with the village population and is retained only as an unresolved reporting error or scope ambiguity.",
+        "sourceIds": ["b07c-rampura-toi", "b07c-rampura-indian-express", "b07c-rampura-business-today", "b07c-rampura-vasudha"]
+      },
+      {
+        "label": "Service level",
+        "value": "Business Today reported roughly five hours/day of service. Other early accounts emphasize lighting, television/radio and education benefits, not full household electrification or productive-load capacity.",
+        "sourceIds": ["b07c-rampura-business-today", "b07c-rampura-da"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Solar PV plus electrochemical storage. No verified diesel backup, utility intertie, biogas unit, or other generator was identified for the Rampura plant itself.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-archive"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic modules",
+        "detail": "60 polycrystalline modules at 145 W each. Manufacturer and model were not found in reliable public documentation.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-compendium"]
+      },
+      {
+        "category": "Battery bank",
+        "detail": "24 series cells at 2 V each. Chemistry, maker, model, Ah/kWh capacity, replacement dates, and present condition are undisclosed.",
+        "sourceIds": ["b07c-rampura-vasudha"]
+      },
+      {
+        "category": "Power electronics and controls",
+        "detail": "A local powerhouse, inverter/charge-control equipment, separate street-light switch, and household distribution are implied by the operating description, but no manufacturer, model, inverter rating, protection scheme, meter type, or remote-control system is documented.",
+        "sourceIds": ["b07c-rampura-vasudha"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Commissioning",
+        "detail": "Commissioned January 26, 2009. The launch was framed as India's first community-based/community-managed solar power plant.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-business-today", "b07c-rampura-da"]
+      },
+      {
+        "category": "Governance",
+        "detail": "The project emphasized a Village Energy Committee and local management rather than a conventional utility operator. Contemporary sources do not publish audited tariff collection, maintenance reserves, battery-replacement funding, or long-term governance performance.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-academic"]
+      },
+      {
+        "category": "Early outcome",
+        "detail": "A 2011 report said the plant had not experienced a day without power over its observation period and documented changes in evening study, communications and village activity. The observation window and technical logs were not published, so this is a case-study claim rather than an independently audited reliability metric.",
+        "sourceIds": ["b07c-rampura-vasudha", "b07c-rampura-da"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No source located reports post-2011 battery replacement, module degradation, inverter failure, grid arrival/interconnection, current customers, hours of supply, collections, or 2026 operator. Later academic treatment is retrospective and cannot establish continued operation.",
+        "sourceIds": ["b07c-rampura-academic", "b07c-rampura-current-page"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-rampura-da",
+        "title": "Plant Installed in Uttar Pradesh - Rampura Community Solar Power Plant",
+        "url": "https://devalt.org/newsletter/jul09/of_9.htm",
+        "publisher": "Development Alternatives",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rampura-vasudha",
+        "title": "Access to Energy for the Poor: The Clean Energy Option",
+        "url": "https://www.vasudha-foundation.org/wp-content/uploads/8-Access-to-Energy-for-the-Poor-June-2011-1-1.pdf",
+        "publisher": "Vasudha Foundation / Oil Change International",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-compendium",
+        "title": "Knowledge Base Compendium - Case Study of Village Rampura",
+        "url": "https://devalt.org/images/L2_ProjectPdfs/CompendiumKnowledgebase.pdf",
+        "publisher": "Development Alternatives",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rampura-toi",
+        "title": "The Sun Shines on the Future",
+        "url": "https://timesofindia.indiatimes.com/home/environment/developmental-issues/the-sun-shines-on-the-future/articleshow/5378834.cms",
+        "publisher": "The Times of India",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-indian-express",
+        "title": "Switching to a Different Life",
+        "url": "https://indianexpress.com/article/news-archive/print/switching-to-a-different-life/",
+        "publisher": "The Indian Express",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-business-today",
+        "title": "Electric Goes Local",
+        "url": "https://www.businesstoday.in/magazine/features/story/electric-goes-local-17433-2010-03-02",
+        "publisher": "Business Today",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-academic",
+        "title": "Scope, Relevance and Sustainability of Decentralized Renewable Energy Systems in Developing Economies",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378778819316196",
+        "publisher": "Electric Power Systems Research",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-current-page",
+        "title": "Rampura Village Microgrid",
+        "url": "https://microgridprojects.com/microgrid/rampura/",
+        "publisher": "Microgrid Projects",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rampura-archive",
+        "title": "Rampura - archived legacy record",
+        "url": "https://web.archive.org/web/20210420184624id_/http://microgridprojects.com/microgrid/rampura/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "rio-cauca": {
+    "researchedAt": "2026-07-20",
+    "summary": "The archived 'Río Cauca' entry cannot be validated as an operating microgrid. Its exact 88 kW solar + 500 kW gas/diesel + 500 kW hydro figures reappear in a 2017 Colombian thesis only as 'MR Cali,' sourced back to Microgrid Media, with no owner, coordinates, equipment, commissioning date, or primary project documentation. An actual later EMCALI project named Solar Río Cauca exists at the utility's drinking-water plant, but it is a roughly 998 kWp grid-connected PV installation and is technically and chronologically different. The two should not be merged.",
+    "status": "Unverified / identity unresolved. No primary evidence located through July 2026 establishes that the archived 88/500/500 kW microgrid was built or operated. The separate EMCALI Solar Río Cauca project was in execution in 2022 and appears in EMCALI's 2024 management reporting, but that does not validate or update the legacy microgrid. The archived record should remain flagged for manual identity resolution rather than marked operational.",
+    "organizations": [
+      {
+        "name": "Unknown legacy owner/operator",
+        "role": "No accountable owner, operator, developer, utility, host facility, or equipment vendor can be tied to the archived 88/500/500 kW entry.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-thesis"]
+      },
+      {
+        "name": "Microgrid Media / Microgrid Projects",
+        "role": "Apparent origin of the legacy inventory figures. The 2017 thesis cites Microgrid Media for 'MR Cali,' and the later archive labels the same capacity bundle Río Cauca.",
+        "sourceIds": ["b07c-rio-thesis", "b07c-rio-archive"]
+      },
+      {
+        "name": "EMCALI EICE ESP",
+        "role": "Municipal utility responsible for the separate Solar Río Cauca PV project at its drinking-water treatment plant; no source connects that installation to the legacy hydro/gas/diesel entry.",
+        "sourceIds": ["b07c-rio-emcali-2022", "b07c-rio-emcali-2024"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Legacy inventory capacities",
+        "value": "88 kW solar, 500 kW gas/diesel, and 500 kW hydro. These are unverified database figures, not independently confirmed nameplates.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-thesis"]
+      },
+      {
+        "label": "Legacy location",
+        "value": "The archive says 'Río Cauca, Cali - Valle del Cauca'; the thesis calls the same capacity combination only 'MR Cali.' Neither provides coordinates, host site, waterway, plant name, or grid boundary.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-thesis"]
+      },
+      {
+        "label": "Separate EMCALI Solar Río Cauca asset",
+        "value": "998 kWp DC at EMCALI's Planta de Tratamiento de Agua Potable Río Cauca. It was reported as contracted/in execution in 2022. It does not contain the archived 500 kW hydro and 500 kW gas/diesel components.",
+        "sourceIds": ["b07c-rio-emcali-2022", "b07c-rio-emcali-2024"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Unknown for any real legacy facility. The listed solar/gas-diesel/hydro combination cannot be treated as installed without a primary project record; the later EMCALI plant is solar PV serving a water facility.",
+        "sourceIds": ["b07c-rio-thesis", "b07c-rio-emcali-2022"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Legacy generation and controls",
+        "detail": "No manufacturers, models, fuel engine type, hydro turbine type/head/flow, PV module/inverter, storage, controller, protection system, or interconnection equipment can be validated.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-thesis"]
+      },
+      {
+        "category": "Separate Solar Río Cauca equipment",
+        "detail": "EMCALI reporting establishes project capacity and site but the sources reviewed do not disclose module, inverter, transformer, controls, or storage models. This equipment must not be assigned to the legacy record.",
+        "sourceIds": ["b07c-rio-emcali-2022"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Provenance problem",
+        "detail": "The sole matching technical source is a thesis table that cites Microgrid Media rather than a utility, owner, regulator, EPC, environmental permit, or commissioning record. That is circular reproduction, not independent corroboration.",
+        "sourceIds": ["b07c-rio-thesis"]
+      },
+      {
+        "category": "Potential name conflation",
+        "detail": "The archived name may have been attached to a generic Cali inventory entry. EMCALI's later use of the name Solar Río Cauca creates a tempting but unsupported connection; its 998 kWp rating and water-treatment context materially disagree with the legacy capacities.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-emcali-2022"]
+      },
+      {
+        "category": "Separate asset progress",
+        "detail": "EMCALI's March 2022 report listed the 998 kWp Solar Río Cauca system as under execution. The 2024 institutional report includes Planta Río Cauca among its solar work, providing evidence for that separate project—not for the archived microgrid.",
+        "sourceIds": ["b07c-rio-emcali-2022", "b07c-rio-emcali-2024"]
+      },
+      {
+        "category": "Evidence required to resolve",
+        "detail": "A defensible identity would require at least an owner/operator, coordinates or host facility, commissioning or permit record, and equipment or interconnection documentation. None was found after targeted Spanish- and English-language searches.",
+        "sourceIds": ["b07c-rio-archive", "b07c-rio-thesis"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-rio-thesis",
+        "title": "Análisis de Microredes en Colombia",
+        "url": "https://repositorio.itm.edu.co/server/api/core/bitstreams/64a028a3-8c6e-474a-8bac-7447e8c6a524/content",
+        "publisher": "Instituto Tecnológico Metropolitano repository",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rio-emcali-2022",
+        "title": "Informe EMCALI: Cumplimiento del Acuerdo 0489 de 2020 - Marzo de 2022",
+        "url": "https://www.emcali.com.co/documents/guest/Gobierno%20Corporativo/Documentos/Informe%20EMCALI%20Cumplimiento%20del%20Acuerdo%200489%20de%202020%20-%20Marzo%202022%20Ampliacion%20de%20Objeto%20Social%20de%20EMCALI",
+        "publisher": "EMCALI EICE ESP",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rio-emcali-2024",
+        "title": "Informe de Gestión Institucional 2024",
+        "url": "https://www.emcali.com.co/documents/guest/Transparencia%20y%20Acceso%20a%20la%20Informacion%20Publica/4.%20Planeaci%C3%B3n%20Presupuestos%20e%20Informes/4.7%20Informes%20de%20gesti%C3%B3n%2C%20evaluaci%C3%B3n%20y%20auditor%C3%ADa/4.7.1%20Informe%20de%20Gesti%C3%B3n/Infome%20Gestion%202024",
+        "publisher": "EMCALI EICE ESP",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rio-archive",
+        "title": "Río Cauca - archived legacy record",
+        "url": "https://web.archive.org/web/20210420193842id_/http://microgridprojects.com/microgrid/rio-cauca/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "robben-island-green-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Robben Island's actual green microgrid is a commissioned 2017 solar-plus-storage retrofit to the island's existing diesel grid, not a planning-only concept. It combines 666.4 kWp of monocrystalline PV, an ABB PowerStore lithium-ion battery rated 500 kW/837 kWh (government launch material rounds energy to 828 kWh), ABB Microgrid Plus controls and secure wireless remote operation, with diesel backup. SOLA Future Energy designed and built the R25 million system for South Africa's Department of Tourism.",
+    "status": "Commissioned and publicly described as operating. SOLA's current project page still presents the island system and early measured results. A 2023 public-sector energy workshop visited the operating solar plant, while 2024/25 procurement records show continued diesel purchases and generator repairs, confirming that diesel remains an active part of island resilience. No current audited 2024-2026 PV output, battery state of health, availability, annual diesel displacement, or controller-upgrade record was found.",
+    "organizations": [
+      {
+        "name": "South African Department of Tourism",
+        "role": "Project sponsor, funder and customer under the Tourism Incentive Programme; launched the system in October 2017.",
+        "sourceIds": ["b07c-robben-gov-launch", "b07c-robben-tender"]
+      },
+      {
+        "name": "Robben Island Museum",
+        "role": "Island management authority and operational host/user of the electric system; current procurement records show it continues to maintain diesel-dependent island infrastructure.",
+        "sourceIds": ["b07c-robben-tender", "b07c-robben-2025-procurement"]
+      },
+      {
+        "name": "SOLA Future Energy / SOLA Group",
+        "role": "Turnkey EPC contractor and system designer; publishes the current project page and first-two-month performance figures.",
+        "sourceIds": ["b07c-robben-sola", "b07c-robben-engineering-news"]
+      },
+      {
+        "name": "ABB (now Hitachi Energy for the former Power Grids portfolio)",
+        "role": "Supplier/integrator of PowerStore storage, Microgrid Plus control, PV inverters, communications and remote-operating capability.",
+        "sourceIds": ["b07c-robben-abb", "b07c-robben-hitachi"]
+      },
+      {
+        "name": "WSP | Parsons Brinckerhoff",
+        "role": "Technical advisor to the Department of Tourism in the procurement documents.",
+        "sourceIds": ["b07c-robben-tender"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar PV",
+        "value": "666.4 kWp from 1,960 monocrystalline modules on the southeast side of the island; 12 ABB solar inverters convert DC to AC.",
+        "sourceIds": ["b07c-robben-sola", "b07c-robben-hitachi", "b07c-robben-engineering-news"]
+      },
+      {
+        "label": "Battery",
+        "value": "500 kW/837 kWh lithium-ion (approximately 1.67 hours at rated power) from 2,420 cells. The official launch says 828 kWh; 837 kWh is consistently reported by the EPC and equipment/project sources and is treated as the final nameplate while preserving the government rounding conflict.",
+        "sourceIds": ["b07c-robben-sola", "b07c-robben-gov-launch", "b07c-robben-engineering-news"]
+      },
+      {
+        "label": "Existing diesel fleet",
+        "value": "The 2015 procurement described four 300 kVA plus two 1,000 kVA units (3.2 MVA installed), with only two 300 kVA and one 1,000 kVA unit then operational. A later ABB case slide simplifies the integrated operating system as one 500 kW diesel unit; that should not be mistaken for the entire island's installed diesel inventory.",
+        "sourceIds": ["b07c-robben-tender", "b07c-robben-abb-case"]
+      },
+      {
+        "label": "Historical island load",
+        "value": "Approximately 450 kW average in the 2015 tender. This is a design-era load and not a current measured peak or energy total.",
+        "sourceIds": ["b07c-robben-tender"]
+      },
+      {
+        "label": "Expected renewable contribution",
+        "value": "Launch reporting said the solar-and-battery portion would supply almost half of annual electricity, with ABB forecasting solar operation for at least nine months/year and about seven hours of battery supply after sunset. Those are design/marketing expectations, not a guarantee of nine diesel-free continuous months.",
+        "sourceIds": ["b07c-robben-engineering-news", "b07c-robben-hitachi"]
+      },
+      {
+        "label": "Cost",
+        "value": "R25 million project cost at launch.",
+        "sourceIds": ["b07c-robben-gov-launch", "b07c-robben-engineering-news"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "ABB",
+        "model": "ABB Ability PowerStore",
+        "detail": "Containerized lithium-ion storage rated 500 kW/837 kWh. Cell maker and chemistry subtype were not publicly identified.",
+        "sourceIds": ["b07c-robben-abb", "b07c-robben-engineering-news"]
+      },
+      {
+        "category": "Microgrid control",
+        "manufacturer": "ABB",
+        "model": "Microgrid Plus",
+        "detail": "Balances PV, storage, load and diesel backup; cloud-connected remote operation and set-point management are available from a Cape Town operations center.",
+        "sourceIds": ["b07c-robben-abb", "b07c-robben-engineering-news"]
+      },
+      {
+        "category": "PV inverters",
+        "manufacturer": "ABB",
+        "detail": "Twelve inverters. Public project sources do not identify the exact model or individual rating.",
+        "sourceIds": ["b07c-robben-hitachi", "b07c-robben-engineering-news"]
+      },
+      {
+        "category": "Communications",
+        "manufacturer": "ABB",
+        "detail": "ABB Ability secure wireless network joining the solar plant to the island microgrid and mainland control center, avoiding new cable trenches at the heritage site.",
+        "sourceIds": ["b07c-robben-abb", "b07c-robben-hitachi"]
+      },
+      {
+        "category": "PV modules",
+        "detail": "1,960 monocrystalline modules. Maker and model were not disclosed in the reliable public sources reviewed.",
+        "sourceIds": ["b07c-robben-sola"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating sequence",
+        "detail": "PV is prioritized for the island's daytime load; the battery absorbs surplus and supports cloudy periods and nighttime demand; diesel starts or carries load when PV and usable battery energy are insufficient. Distributed local intelligence handles source coordination, with centralized data collection/SCADA-like supervision.",
+        "sourceIds": ["b07c-robben-sola", "b07c-robben-abb"]
+      },
+      {
+        "category": "Early performance",
+        "detail": "SOLA reports 187,000 kWh of solar electricity in the first two months, 53,685 litres of diesel saved, and 495 tonnes of CO2 equivalent avoided. These figures are developer-reported and are not a full-year audited performance record.",
+        "sourceIds": ["b07c-robben-sola"]
+      },
+      {
+        "category": "Pre-project baseline and targets",
+        "detail": "ABB said the island had used roughly 600,000 litres/year of diesel and forecast a 75% reduction in fuel cost and carbon emissions. Government reporting projected at least 820 tonnes/year of avoided emissions and an approximately 25-year operating life; actual long-term realized savings are not publicly quantified.",
+        "sourceIds": ["b07c-robben-hitachi", "b07c-robben-engineering-news"]
+      },
+      {
+        "category": "Grid topology",
+        "detail": "The original system generated at 400 V and stepped up to an 11 kV island reticulation network. The tender required off-grid-capable inverters, an 11 kV mini-substation/ring-main interface, protection, metering and communications.",
+        "sourceIds": ["b07c-robben-tender"]
+      },
+      {
+        "category": "Current operational caveat",
+        "detail": "Robben Island Museum's 2024/25 records include diesel supply and a generator repair. This supports the documented hybrid architecture and continuing backup role; it is not evidence that the solar or battery is failed. No current component-level condition report was found.",
+        "sourceIds": ["b07c-robben-2025-procurement", "b07c-robben-sola"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-robben-gov-launch",
+        "title": "Robben Island Powered by Solar Mini-grid",
+        "url": "https://www.sanews.gov.za/south-africa/robben-island-powered-solar-mini-grid",
+        "publisher": "South African Government News Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-tender",
+        "title": "Turnkey Solar Photovoltaic Energy Solution for Robben Island - General Specifications and Scope",
+        "url": "https://www.tourism.gov.za/Tenders/Documents/NDT00010-15%20-%20Part%202%20-%20Turnkey%20Solar%20Photovolaic%20Energy%20Solution.pdf",
+        "publisher": "South African Department of Tourism",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-sola",
+        "title": "Robben Island - 666 kWp Solar PV; 837 kWh Battery",
+        "url": "https://solagroup.co.za/battery-storage-projects/robben-island/",
+        "publisher": "SOLA Group",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-abb",
+        "title": "ABB Microgrid Technology to Power Robben Island",
+        "url": "https://resources.news.e.abb.com/attachments/published/45853/en-US/7A0B85BB72E8/ABB-microgrid-technology-to-power-Robben-Island.pdf",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-hitachi",
+        "title": "The Energy Example of Robben Island, Mandela's Prison",
+        "url": "https://www.hitachienergy.com/news-and-events/press-releases/2017/10/the-energy-example-of-robben-island-mandela-s-prison",
+        "publisher": "Hitachi Energy / former ABB Power Grids",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-abb-case",
+        "title": "Improving the Integration of Renewables with Energy Storage in Islands",
+        "url": "https://hybridpowersystems.org/wp-content/uploads/sites/13/2019/06/3C_4_HYB19_089_presentation_Schelling_Gian.pdf",
+        "publisher": "ABB / International Hybrid Power Systems Workshop",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-robben-engineering-news",
+        "title": "Robben Island Inaugurates Solar PV Microgrid",
+        "url": "https://www.engineeringnews.co.za/article/robben-island-inaugurates-solar-pv-microgrid-2017-11-22",
+        "publisher": "Engineering News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-robben-2025-procurement",
+        "title": "Public Procurement Deviations, Quarter 4 2024/25",
+        "url": "https://ocpo.treasury.gov.za/Suppliers_Area/Deviations%20and%20Exspansions/Deviations%20Quarter%204%202024-25.pdf",
+        "publisher": "South African National Treasury / Office of the Chief Procurement Officer",
+        "kind": "primary"
+      }
+    ]
+  },
+  "rodrigues-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy Rodrigues record refers most directly to CEB's 1.1 MW Grenade Wind Farm—four 275 kW Vergnet turbines commissioned in 2010—but the current island microgrid is much broader. The isolated 22 kV system now combines Grenade and Trèfles wind, utility and distributed solar, a 1.5 MW/1.5 MWh battery at Pointe Monnier, and predominantly fuel-oil generation at Pointe Monnier and Port Mathurin. CEB's latest complete generation table (July 2023-June 2024) shows only 6.88% renewable generation and 93.12% fuel-oil generation, despite the long-operating wind assets.",
+    "status": "Operational isolated island grid. For FY2023/24, CEB reported 50.54 GWh generated, 8.52 MW maximum demand, and 17,014 customers. Grenade produced 1.428 GWh (2.82% of island generation) and Trèfles 0.135 GWh (0.26%). A 1.5 MW/1.5 MWh BESS is already operating at Pointe Monnier for peak shaving and frequency regulation. In August 2025 CEB tendered two additional 1 MW/2 MWh systems (2 MW/4 MWh total) for Rodrigues, with a later public target of end-2026; commissioning was not confirmed by the research date.",
+    "organizations": [
+      {
+        "name": "Central Electricity Board (CEB)",
+        "role": "Government-owned utility, owner/operator of the island grid, wind farms, thermal stations, utility solar facilities and existing battery; procuring additional storage.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts", "b07c-rodrigues-ceb-pointe", "b07c-rodrigues-bess-tender"]
+      },
+      {
+        "name": "Vergnet",
+        "role": "Wind-turbine supplier for the Grenade farm and the earlier Trèfles pilot.",
+        "sourceIds": ["b07c-rodrigues-parliament-2015", "b07c-rodrigues-vergnet", "b07c-rodrigues-wind-study"]
+      },
+      {
+        "name": "Rodrigues Regional Assembly",
+        "role": "Island government and landowner/lessor at the Grenade site; policy and community-program partner rather than electric utility operator.",
+        "sourceIds": ["b07c-rodrigues-eia", "b07c-rodrigues-rra-2021"]
+      },
+      {
+        "name": "Burmeister & Wain Scandinavian Contractor / PAD & Co.",
+        "role": "Turnkey contractors associated with Pointe Monnier's thermal-generation phases; not wind-farm operators.",
+        "sourceIds": ["b07c-rodrigues-pointe-secondary"]
+      },
+      {
+        "name": "MAN Energy Solutions / MAN B&W and Wärtsilä",
+        "role": "Engine manufacturers for the operating Pointe Monnier fuel-oil station.",
+        "sourceIds": ["b07c-rodrigues-ceb-pointe", "b07c-rodrigues-wartsila"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Grenade Wind Farm",
+        "value": "1.1 MW installed/effective from four 275 kW turbines; 1,427,800 kWh and 2.82% of island generation in FY2023/24.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts", "b07c-rodrigues-parliament-2015"]
+      },
+      {
+        "label": "Trèfles Wind Farm",
+        "value": "CEB's FY2023/24 table reports 120 kW installed/effective, 135,000 kWh and 0.26% of generation. It began as three 60 kW turbines (180 kW) in December 2003; a 2021 assembly statement reported only one 60 kW unit contributing, so the current 120 kW rating indicates two effective units, not the original full nameplate.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts", "b07c-rodrigues-parliament-2015", "b07c-rodrigues-rra-2021"]
+      },
+      {
+        "label": "Solar generation",
+        "value": "FY2023/24: Grenade Solar PV 1 MW and 1,029,630 kWh (2.04%); CEB solar at Port Mathurin/Pointe Monnier 85 kW combined and 99,122 kWh (0.20%); medium-scale distributed generation 100 kW and 146,019 kWh (0.29%); small-scale distributed generation 596 kW and 643,395 kWh (1.27%).",
+        "sourceIds": ["b07c-rodrigues-ceb-facts"]
+      },
+      {
+        "label": "Fuel-oil generation",
+        "value": "FY2023/24: Port Mathurin 6.0 MW installed/5.1 MW effective and 8,928,602 kWh (17.67%); Pointe Monnier 6.3 MW installed/effective and 38,130,470 kWh (75.45%). Combined fuel-oil share was 93.12%.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts"]
+      },
+      {
+        "label": "Existing battery",
+        "value": "1.5 MW/1.5 MWh at Pointe Monnier (one-hour duration), used for peak shaving and frequency regulation. Manufacturer, chemistry and commissioning date were not identified in the reviewed primary source.",
+        "sourceIds": ["b07c-rodrigues-network-tender"]
+      },
+      {
+        "label": "Additional battery procurement",
+        "value": "Two separate 1 MW/2 MWh systems, 2 MW/4 MWh total. The 2025 invitation was for design, manufacture, supply, installation, testing and commissioning; procurement is not proof of completed operation.",
+        "sourceIds": ["b07c-rodrigues-bess-tender", "b07c-rodrigues-procurement-plan"]
+      },
+      {
+        "label": "Island scale",
+        "value": "50,540,038 kWh generated in FY2023/24; maximum demand 8.52 MW on December 30, 2023; 17,014 customers and 43,701,874 kWh of sales at June 30, 2024.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Grenade wind turbines",
+        "manufacturer": "Vergnet",
+        "model": "GEV MP 275/32",
+        "detail": "Four 275 kW turbines with approximately 32 m rotor diameter. Public turbine material gives 3.5 m/s cut-in, 12 m/s rated, and 25 m/s cut-out for the model; those are model specifications, not site performance measurements.",
+        "sourceIds": ["b07c-rodrigues-wind-study", "b07c-rodrigues-vergnet"]
+      },
+      {
+        "category": "Trèfles wind turbines",
+        "manufacturer": "Vergnet",
+        "detail": "Originally three 60 kW turbines. The exact model was not found; current effective capacity is 120 kW.",
+        "sourceIds": ["b07c-rodrigues-parliament-2015", "b07c-rodrigues-ceb-facts"]
+      },
+      {
+        "category": "Pointe Monnier engines",
+        "manufacturer": "MAN B&W / Wärtsilä",
+        "detail": "Two MAN B&W 9L28/32H units at 1.9 MW each (commissioned 2004) and one Wärtsilä W6L32 at 2.5 MW (commissioned 2012), plus a 0.1 MW standby set on CEB's current station page.",
+        "sourceIds": ["b07c-rodrigues-ceb-pointe"]
+      },
+      {
+        "category": "Wärtsilä turbocharger retrofit",
+        "manufacturer": "Napier / Wärtsilä",
+        "model": "Napier 307L turbocharger on Wärtsilä 6L32",
+        "detail": "Delivered in 2016 with speed-sensor software upgrade; Wärtsilä reports an 8 g/kWh fuel-oil-consumption reduction for the 2.5 MW baseload set.",
+        "sourceIds": ["b07c-rodrigues-wartsila"]
+      },
+      {
+        "category": "Battery systems",
+        "detail": "Existing 1.5 MW/1.5 MWh BESS and two tendered 1 MW/2 MWh BESS. Public sources reviewed do not name cell, inverter, EMS or turnkey suppliers.",
+        "sourceIds": ["b07c-rodrigues-network-tender", "b07c-rodrigues-bess-tender"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Network",
+        "detail": "Rodrigues is a non-interconnected 50 Hz island grid. A 2025 tender describes 159 km of 22 kV primary distribution, 362 km of 0.415 kV secondary distribution, and 168 distribution transformers.",
+        "sourceIds": ["b07c-rodrigues-network-tender"]
+      },
+      {
+        "category": "Frequency control",
+        "detail": "Engineering documentation describes diesel governors operating in frequency-control mode with approximately 3.5% droop. The existing BESS supplements that architecture with fast frequency regulation and peak shaving.",
+        "sourceIds": ["b07c-rodrigues-grid-study", "b07c-rodrigues-network-tender"]
+      },
+      {
+        "category": "Wind history",
+        "detail": "Trèfles was commissioned in December 2003 as a 3 x 60 kW pilot; Grenade followed in 2010 as 4 x 275 kW. A 2015 parliamentary answer reported wind then supplying about 10% of island energy, versus only 3.08% in CEB's FY2023/24 generation table.",
+        "sourceIds": ["b07c-rodrigues-parliament-2015", "b07c-rodrigues-ceb-facts"]
+      },
+      {
+        "category": "Current performance",
+        "detail": "The FY2023/24 renewable total is 3,480,966 kWh, 6.88% of all island generation. Wind provided 3.08%, solar categories 3.80%, and fuel oil 93.12%. These shares are calculated directly from CEB's published category totals.",
+        "sourceIds": ["b07c-rodrigues-ceb-facts"]
+      },
+      {
+        "category": "Forward plan",
+        "detail": "CEB tendered two additional batteries in 2025 and earmarked up to 2 MW of hybrid agrivoltaics for Rodrigues in its 2026 scheme. Neither is added to installed capacity absent commissioning evidence.",
+        "sourceIds": ["b07c-rodrigues-bess-tender", "b07c-rodrigues-agrivoltaics"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-rodrigues-ceb-facts",
+        "title": "Rodrigues - Facts & Figures, Energy Generated July 2023 to June 2024",
+        "url": "https://ceb.mu/rodrigues/facts-and-figures",
+        "publisher": "Central Electricity Board Mauritius",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-ceb-pointe",
+        "title": "Pointe Monnier Power Station Rodrigues",
+        "url": "https://ceb.mu/our-activities/power-stations/pointe-monnier-power-station-rodrigues",
+        "publisher": "Central Electricity Board Mauritius",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-bess-tender",
+        "title": "Invitation for Bids: Two 1 MW/2 MWh Battery Energy Storage Systems for Rodrigues Island",
+        "url": "https://ceb.mu/files/files/tenders/Press%20Notice%20CPB-22-2025%20%28IFB%209690%29.pdf",
+        "publisher": "Central Electricity Board Mauritius",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-procurement-plan",
+        "title": "CEB Indicative Procurement Plan FY2025/26",
+        "url": "https://ceb.mu/files/files/procurements/CEB_Form_B_Indicative_Procurement_Plan_for_Financial_Year%20July%202025%20to%20June%202026.pdf",
+        "publisher": "Central Electricity Board Mauritius",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-network-tender",
+        "title": "CEB Telecommunications and Network Tender - Rodrigues Power System Description",
+        "url": "https://www.tcil.net.in/tender/pdf/25h221_2.pdf",
+        "publisher": "Central Electricity Board Mauritius / Telecommunications Consultants India",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-parliament-2015",
+        "title": "National Assembly Debates No. 24 of 2015 - Rodrigues Wind Farm",
+        "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/wp-admin/admin-ajax.php?action=wpfd&juwpfisadmin=false&preview=1&task=file.download&token=&wpfd_category_id=100&wpfd_file_id=8209",
+        "publisher": "National Assembly of Mauritius",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-rra-2021",
+        "title": "Rodrigues Regional Assembly Debate No. 12 of 2021",
+        "url": "https://assembly-rra.govmu.org/Documents/Hansard/RRAHansards/Year2021/DebateNo12.pdf",
+        "publisher": "Rodrigues Regional Assembly",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-eia",
+        "title": "Environment Impact Assessment - 1 MWac Solar Photovoltaic Farm at Grenade, Rodrigues",
+        "url": "https://www.scribd.com/document/856159118/Annex-14-EIA-Report-1MWac-PV-Farm",
+        "publisher": "Project environmental filing (mirror via Scribd)",
+        "kind": "archive"
+      },
+      {
+        "id": "b07c-rodrigues-wind-study",
+        "title": "Evaluation of a Wind Farm Project for a Smart City in the South-East Coastal Zone of Mauritius",
+        "url": "https://www.researchgate.net/publication/299456498_Evaluation_of_a_wind_farm_project_for_a_smart_city_in_the_South-East_Coastal_Zone_of_Mauritius",
+        "publisher": "Academic conference paper",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rodrigues-vergnet",
+        "title": "Wind Turbines - GEV MP",
+        "url": "https://www.vergnet.com/en/wind-turbines/",
+        "publisher": "Vergnet",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-wartsila",
+        "title": "Retrofitted Turbocharger Reduces Operating Costs for Pointe Monnier Power Plant",
+        "url": "https://www.wartsila.com/energy/learn-more/references/utilities/pointe-monnier-mauritius",
+        "publisher": "Wärtsilä",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-rodrigues-grid-study",
+        "title": "Meeting the Challenges for Renewable Energy Integration in Rodrigues",
+        "url": "https://www.diva-portal.org/smash/get/diva2%3A744233/FULLTEXT01.pdf",
+        "publisher": "DiVA academic repository",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rodrigues-pointe-secondary",
+        "title": "Énergie électrique à Rodrigues: un générateur de 2,5 MW installé à Pointe Monnier",
+        "url": "https://www.lemauricien.com/actualites/societe/energie-electrique-rodrigues-un-generateur-25-mw-installe-pointe-monnier/92333/",
+        "publisher": "Le Mauricien",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-rodrigues-agrivoltaics",
+        "title": "CEB Agrivoltaics II Scheme - Hybrid PV Projects",
+        "url": "https://ceb.mu/files/files/application%20schemes/08.06.2026_Amended%20CAV%20II%20Scheme%20Information%20Leaflet%20%28002%29%20%282%29.pdf",
+        "publisher": "Central Electricity Board Mauritius",
+        "kind": "primary"
+      }
+    ]
+  },
+  "ross-island-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Ross Island is the joint New Zealand-United States Antarctic microgrid linking Scott Base's 50 Hz system and McMurdo Station's 60 Hz system. Commissioned in 2010, it integrates three 330 kW Enercon E-33 turbines (990 kW total), diesel generation, an ABB 500 kW PowerStore flywheel, Microgrid Plus controls, and a frequency converter. The PowerStore is now inoperable, reducing usable wind penetration. A replacement program will install three 1 MW EWT DW54X extreme-cold-climate turbines and a new BESS, but transport damage and EWT's 2025 bankruptcy delayed field work; the next installation phase is now scheduled for late 2026.",
+    "status": "The three original turbines remain the current wind plant and the official redevelopment site describes them as supplying both bases, although the failed flywheel has lowered renewable penetration. One replacement foundation was completed in the 2024/25 Antarctic season. Two replacement blade sets were damaged in sea transport and EWT entered administration/bankruptcy in March 2025. In February 2026 the replacement contractor reported that decommissioning the old turbines and installing/commissioning the first new turbine would begin at the end of 2026. The repower and BESS were therefore not commissioned as of July 2026.",
+    "organizations": [
+      {
+        "name": "Antarctica New Zealand / New Zealand Antarctic Institute",
+        "role": "New Zealand program owner, project authority, current redevelopment lead, and Scott Base operator.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-procurement", "b07c-ross-official-eia"]
+      },
+      {
+        "name": "United States Antarctic Program / National Science Foundation",
+        "role": "McMurdo Station partner and co-user of the linked Ross Island grid and wind generation.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-abb-case"]
+      },
+      {
+        "name": "Meridian Energy",
+        "role": "Original wind-farm developer, builder and operating/technical partner with Antarctica New Zealand.",
+        "sourceIds": ["b07c-ross-original-mou", "b07c-ross-power-technology"]
+      },
+      {
+        "name": "ABB / Powercorp",
+        "role": "Original hybrid-system integrator and supplier of PowerStore flywheel support, Microgrid Plus controls and 50/60 Hz interconnection equipment.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-procurement"]
+      },
+      {
+        "name": "Enercon",
+        "role": "Manufacturer of the three original E-33 turbines.",
+        "sourceIds": ["b07c-ross-official-release", "b07c-ross-power-technology"]
+      },
+      {
+        "name": "Emergya Wind Technologies (EWT)",
+        "role": "Contracted supplier of the three replacement DW54X-1MW turbines; entered administration and ceased trading in 2025, contributing to delivery risk.",
+        "sourceIds": ["b07c-ross-ewt", "b07c-ross-rnz-2025"]
+      },
+      {
+        "name": "Business in Wind",
+        "role": "Replacement contractor preparing decommissioning and installation work after the EWT disruption; reported the next field phase for late 2026.",
+        "sourceIds": ["b07c-ross-biw-2026"]
+      },
+      {
+        "name": "Entura",
+        "role": "Feasibility, options and preliminary-design consultant for modernizing SCADA, balance of plant, grid support and storage.",
+        "sourceIds": ["b07c-ross-entura"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original wind farm",
+        "value": "Three 330 kW Enercon E-33 turbines, 990 kW total, on Crater Hill between Scott Base and McMurdo. Some ABB materials round the turbines to 3 x 330 kW and the project to 1 MW.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-official-release", "b07c-ross-power-technology"]
+      },
+      {
+        "label": "Original grid support",
+        "value": "ABB PowerStore flywheel rated 500 kW, Microgrid Plus control and a frequency converter linking the 50 Hz and 60 Hz station networks. The flywheel has failed and is no longer operational.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-official-eia"]
+      },
+      {
+        "label": "Diesel integration reference",
+        "value": "ABB's project case describes nine 125 kW diesel units (1.125 MW) in the integrated system. This is an ABB reference configuration and should not be treated as a complete, timeless inventory of all generator assets at both large stations.",
+        "sourceIds": ["b07c-ross-abb-case"]
+      },
+      {
+        "label": "Original impact",
+        "value": "Design/launch estimates were approximately 11% of combined station power, 463,000 litres/year of diesel avoided, and 1,242-1,243 tonnes/year of CO2 avoided. A later official environmental document uses approximately 433,000 litres/year when working, so the fuel-saving figure varies by source and period.",
+        "sourceIds": ["b07c-ross-original-mou", "b07c-ross-official-eia", "b07c-ross-official-release"]
+      },
+      {
+        "label": "Replacement wind farm",
+        "value": "Three EWT DW54X extreme-cold-climate turbines rated 1 MW each at 40 m hub height, 3 MW total. Antarctica New Zealand says one new turbine can generate nearly as much energy as all three current turbines combined.",
+        "sourceIds": ["b07c-ross-ewt", "b07c-ross-current", "b07c-ross-biw-2026"]
+      },
+      {
+        "label": "Replacement battery",
+        "value": "A new BESS will replace the flywheel and store excess wind energy. Options work considered systems up to 10 MWh and wind options around 3-4 MW, but no final public MW/MWh as-built battery rating was found; 10 MWh must not be reported as contracted capacity.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-entura"]
+      },
+      {
+        "label": "Penetration",
+        "value": "ABB reported up to 70% instantaneous wind penetration for the original design. The failed PowerStore later lowered renewable penetration; a 33% curtailment level has been quoted from a 2023 COMNAP presentation, but the official environmental filing reviewed only confirms lower penetration without quantifying it.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-official-eia"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Original wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E-33",
+        "detail": "Three cold-climate-modified, three-bladed, pitch-controlled 330 kW turbines with approximately 33 m rotor diameter.",
+        "sourceIds": ["b07c-ross-official-release", "b07c-ross-techlink"]
+      },
+      {
+        "category": "Flywheel grid support",
+        "manufacturer": "ABB / Powercorp",
+        "model": "PowerStore",
+        "detail": "500 kW flywheel-based grid stabilizer; now failed because of an unsupported/non-replaceable component and slated for replacement by BESS.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-procurement", "b07c-ross-official-eia"]
+      },
+      {
+        "category": "Microgrid control and interconnection",
+        "manufacturer": "ABB / Powercorp",
+        "model": "Microgrid Plus",
+        "detail": "Coordinates wind and diesel, PowerStore and the 50/60 Hz intertie/frequency converter. A 2019 procurement said the installation was at end of functional life and no longer supportable.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-procurement"]
+      },
+      {
+        "category": "Replacement wind turbines",
+        "manufacturer": "Emergya Wind Technologies",
+        "model": "DW54X-1MW Extreme Cold Climate",
+        "detail": "Three 1 MW turbines with 40 m hub height. EWT's bankruptcy required new contracting arrangements, but the February 2026 replacement report still identifies this turbine model for installation.",
+        "sourceIds": ["b07c-ross-ewt", "b07c-ross-biw-2026"]
+      },
+      {
+        "category": "Replacement battery",
+        "detail": "Battery energy storage system planned to replace PowerStore. Final supplier, chemistry, PCS/controller models, MW, MWh and duration were not found in public sources reviewed.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-entura"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Dual-frequency architecture",
+        "detail": "The project dynamically operates Scott Base and McMurdo as one Ross Island microgrid despite their 50 Hz and 60 Hz systems, using a frequency converter and coordinated wind/diesel control.",
+        "sourceIds": ["b07c-ross-abb-case", "b07c-ross-official-business-case"]
+      },
+      {
+        "category": "Commissioning and design life",
+        "detail": "Construction began in 2008, first power arrived in December 2009, and the farm officially opened in January 2010. The original turbines reach the end of their design life around 2030, while supporting balance-of-plant required replacement earlier.",
+        "sourceIds": ["b07c-ross-power-technology", "b07c-ross-official-business-case"]
+      },
+      {
+        "category": "Current constraint",
+        "detail": "The failed flywheel reduces how much variable wind the small diesel grid can accept. The official 2023-2027 environmental filing explicitly says lower wind penetration has resulted in recent years.",
+        "sourceIds": ["b07c-ross-official-eia"]
+      },
+      {
+        "category": "Repower delay",
+        "detail": "During the 2024/25 season the first new foundation was completed. Two blade sets were damaged at sea in January 2025—one beyond economical repair and the other moderately/minor damaged—and EWT failed in March. By February 2026, preparatory field work had occurred and the first removal/installation phase was scheduled for late 2026.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-rnz-2025", "b07c-ross-biw-2026"]
+      },
+      {
+        "category": "Future-load purpose",
+        "detail": "The repower supports Scott Base redevelopment, including electrified heating, and aims at minimum to preserve renewable-energy supply arrangements with McMurdo. Public environmental documents show future demand materially above the old base load but do not justify claiming a finalized renewable fraction before commissioning.",
+        "sourceIds": ["b07c-ross-current", "b07c-ross-official-eia"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-ross-current",
+        "title": "Ross Island Wind Energy System",
+        "url": "https://www.scottbaseredevelopment.govt.nz/ross-island-wind-energy-system",
+        "publisher": "Antarctica New Zealand / Scott Base Redevelopment",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-procurement",
+        "title": "Ross Island Wind Energy SCADA and Balance of Plant Modernisation RFP",
+        "url": "https://www.gets.govt.nz/NZAI/ExternalTenderDetails.htm?id=21779329",
+        "publisher": "New Zealand Government Electronic Tenders Service / Antarctica New Zealand",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-official-eia",
+        "title": "Antarctica New Zealand Initial Environmental Evaluation 2023-2027",
+        "url": "https://documents.ats.aq/EIES/EIA/02526en2023-2027%20Antarctica%20New%20Zealand%20IEE-FINAL.pdf",
+        "publisher": "Antarctica New Zealand / Antarctic Treaty Secretariat",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-official-business-case",
+        "title": "Scott Base Development Combined Proactive Release",
+        "url": "https://www.mfat.govt.nz/assets/OIA/PR-2021-0256-Scott-Base-Development-Combined_Redacted.pdf",
+        "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-original-mou",
+        "title": "Antarctic Ross Island Wind Farm on Track - MOU Media Material",
+        "url": "https://img.scoop.co.nz/media/pdfs/0903/11Ross_Island_pics_MOU.pdf",
+        "publisher": "Antarctica New Zealand / Meridian Energy (archived media material)",
+        "kind": "archive"
+      },
+      {
+        "id": "b07c-ross-official-release",
+        "title": "Ross Island Wind Energy Project Fact Sheet",
+        "url": "https://img.scoop.co.nz/media/pdfs/0804/Antarctica_fact_sheet_final.pdf",
+        "publisher": "Antarctica New Zealand / Meridian Energy (archived media material)",
+        "kind": "archive"
+      },
+      {
+        "id": "b07c-ross-abb-case",
+        "title": "Renewable Microgrids - Ross Island Wind/Diesel Reference",
+        "url": "https://new.abb.com/docs/librariesprovider77/default-document-library/renewable-microgrids---reduced-lcoe-and-secure-power-supply---2016-08-25th---keabb-technology-day---light-version.pdf?sfvrsn=2",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-ewt",
+        "title": "EWT to Supply and Install Three DW54X-1MW Turbines at Ross Island",
+        "url": "https://ewtdirectwind.com/news/ewt-to-supply-and-install-3-dw54x-1mw-turbines-at-ross-island-antarctica/",
+        "publisher": "Emergya Wind Technologies",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-entura",
+        "title": "Ross Island Wind Energy Network Hybrid System Options and Preliminary Design",
+        "url": "https://entura.com.au/projects/9376/",
+        "publisher": "Entura",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ross-rnz-2025",
+        "title": "Building a Wind Farm at -73 Degrees: Ross Island Plans Move Forward",
+        "url": "https://www.rnz.co.nz/news/top/572717/building-a-wind-farm-at-73-degrees-ross-island-plans-move-forward",
+        "publisher": "Radio New Zealand",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ross-biw-2026",
+        "title": "Business in Wind Prepares Turbine Replacement at Scott Base, Antarctica",
+        "url": "https://windtech-international.com/projects-and-contracts/business-in-wind-prepares-turbine-replacement-at-scott-base-antarctica",
+        "publisher": "Windtech International / Business in Wind",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ross-power-technology",
+        "title": "The Ross Island Wind Farm Project, Antarctica",
+        "url": "https://www.power-technology.com/projects/rossislandwindfarm/",
+        "publisher": "Power Technology",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-ross-techlink",
+        "title": "The Coolest Wind Farm in the World",
+        "url": "https://www.techlink.org.nz/Case-studies/Technological-practice/Materials/Print-PDFs/techlink-tp-coolest-windfarm.pdf",
+        "publisher": "Technology Education New Zealand / Techlink",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "ryerson-university": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy Ryerson record conflates at least three related but distinct research assets. The 150 kW battery was an Electrovaya lithium-ion SuperPolymer demonstration (reported as 600 or 625 kWh) connected to Toronto Hydro's 13.8 kV grid at the downtown campus; it was not a Schneider battery. Schneider Electric's separate Smart Grid Laboratory opened in 2015 and can emulate feeders/microgrids with SCADA, ADMS, protection, storage and renewable inputs. A June-October 2015 PowerStream project used that lab to replicate a 27.6 kV feeder with battery, solar and loads. The university was renamed Toronto Metropolitan University (TMU), and both the current Smart Grid Lab and outdoor megawatt-scale grid-testing facility remain advertised, while the original Electrovaya project is marked completed.",
+    "status": "Research/demo, not a building microgrid in planning. The Electrovaya large-scale battery project ran to June/December 2016 and is listed by both TMU and Natural Resources Canada as completed. TMU currently advertises an outdoor 13.8 kV grid-connected facility capable of testing MW-scale units, but does not state that the original 150 kW Electrovaya battery remains installed or operational. The Schneider Electric Smart Grid Lab remains active and is used for current research, including controller-in-a-box work reported in 2024/2026 materials.",
+    "organizations": [
+      {
+        "name": "Toronto Metropolitan University (formerly Ryerson University) / Centre for Urban Energy",
+        "role": "Campus host, research integrator and operator of the current grid-testing and smart-grid laboratory facilities.",
+        "sourceIds": ["b07c-ryerson-current-battery", "b07c-ryerson-current-lab", "b07c-ryerson-2015-report"]
+      },
+      {
+        "name": "Electrovaya",
+        "role": "Developer/manufacturer of the 150 kW lithium-ion SuperPolymer battery system and lead recipient for the federal storage demonstration.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-nrc"]
+      },
+      {
+        "name": "Toronto Hydro",
+        "role": "Utility partner and 13.8 kV grid interconnection counterpart for the downtown battery testing facility.",
+        "sourceIds": ["b07c-ryerson-current-battery", "b07c-ryerson-case", "b07c-ryerson-nrc"]
+      },
+      {
+        "name": "Schneider Electric",
+        "role": "Founding technology/funding partner for the separate Smart Grid Laboratory; not the maker of the 150 kW Electrovaya battery.",
+        "sourceIds": ["b07c-ryerson-current-lab", "b07c-ryerson-history", "b07c-ryerson-2015-report"]
+      },
+      {
+        "name": "Ontario Centres of Excellence (OCE)",
+        "role": "Partner/funder for the large-scale battery demonstration.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-2015-report"]
+      },
+      {
+        "name": "Natural Resources Canada",
+        "role": "Federal Clean Energy Fund project funder/reporting agency; current investment registry marks the project completed.",
+        "sourceIds": ["b07c-ryerson-nrc", "b07c-ryerson-nrc-registry"]
+      },
+      {
+        "name": "PowerStream Inc.",
+        "role": "Sponsor/user of a separate 2015 laboratory prototype that replicated the Greenwood Transformer Station feeder and demonstrated islanded and grid-connected operation.",
+        "sourceIds": ["b07c-ryerson-2015-report"]
+      },
+      {
+        "name": "Manitoba HVDC Research Centre / Manitoba Hydro International",
+        "role": "Built and tested the Phase II second-life automotive battery prototype microgrid in Manitoba; that 18 kW diesel/battery/load-bank setup was not located at Ryerson's Toronto campus.",
+        "sourceIds": ["b07c-ryerson-nrc"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Toronto battery power and energy",
+        "value": "150 kW. TMU's updated one-page case study gives 625 kWh (4.17 hours at rated output), while the 2015 annual report gives 600 kWh (4 hours). The discrepancy likely reflects project-version reporting and is preserved rather than averaged.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-2015-report"]
+      },
+      {
+        "label": "Battery container",
+        "value": "Approximately 5,000 lithium-ion cells in a custom 4 x 3 x 14 m container with battery, control, electrical and HVAC compartments, plus DC breaker, switchgear, transformer and thermal/battery-management systems.",
+        "sourceIds": ["b07c-ryerson-nrc"]
+      },
+      {
+        "label": "Campus interconnection",
+        "value": "Outdoor facility connected to Toronto Hydro's 13.8 kV grid, monitored and controlled by utility-grade SCADA over fibre, and capable of testing MW-scale units. This is the current facility envelope, not the old battery's nameplate.",
+        "sourceIds": ["b07c-ryerson-current-battery"]
+      },
+      {
+        "label": "PowerStream laboratory microgrid",
+        "value": "Physical replica of PowerStream Greenwood Transformer Station feeder M21 at 27.6 kV, with three feeders, battery, solar, AC/DC loads, and four tests in grid-connected and islanded modes. Component power/energy ratings were not published in the case study.",
+        "sourceIds": ["b07c-ryerson-2015-report"]
+      },
+      {
+        "label": "Separate Manitoba prototype",
+        "value": "Five second-life automotive batteries independently coupled through DC-DC converters to a common DC bus and 600 VAC voltage-source converter, then operated in parallel with an 18 kW diesel generator and programmable load bank. Its capacity is not the 150 kW/625 kWh Toronto battery rating.",
+        "sourceIds": ["b07c-ryerson-nrc"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "The Toronto battery is grid-charged storage used for off-peak charging, peak support and power-quality research. No installed PV, wind or fuel-fired generator is documented as part of that campus battery. Solar and battery inputs in the Schneider lab were emulated/plug-in test assets; the 18 kW diesel was at Manitoba HVDC Research Centre.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-2015-report", "b07c-ryerson-nrc"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Toronto battery",
+        "manufacturer": "Electrovaya",
+        "model": "Li-ion SuperPolymer 2.0",
+        "detail": "150 kW containerized stationary storage, reported at 600-625 kWh. Cell/module model and PCS model were not disclosed in the reviewed sources.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-nrc"]
+      },
+      {
+        "category": "Battery safety and balance of plant",
+        "detail": "Upgraded battery-management and thermal-management/cooling systems, DC breaker, switchgear, transformer, control and electrical compartments designed for dense urban deployment.",
+        "sourceIds": ["b07c-ryerson-nrc"]
+      },
+      {
+        "category": "Smart Grid Laboratory",
+        "manufacturer": "Schneider Electric and partner ecosystem",
+        "detail": "Protection schemes, breakers, transformers, SCADA, ADMS and AMI capable of representing a utility substation/feeder or microgrid and accepting renewable, load and storage hardware. Exact device models are not listed on the current public page.",
+        "sourceIds": ["b07c-ryerson-current-lab", "b07c-ryerson-brochure"]
+      },
+      {
+        "category": "Manitoba Phase II power electronics",
+        "detail": "Five battery-specific DC-DC converters, common DC bus, 600 VAC voltage-source converter and master controller. Manufacturers/models were not disclosed on the federal page.",
+        "sourceIds": ["b07c-ryerson-nrc"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Project boundaries",
+        "detail": "The downtown Electrovaya grid battery, the Schneider Smart Grid Lab, the PowerStream feeder-replica microgrid, and the Manitoba second-life battery/diesel prototype are related research efforts but physically and contractually distinct. Their equipment and capacities must not be summed.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-current-lab", "b07c-ryerson-nrc", "b07c-ryerson-2015-report"]
+      },
+      {
+        "category": "Battery objectives",
+        "detail": "Charge off-peak and discharge at peak, reduce local capacity stress, study power-quality and protection/control issues, compensate renewable intermittency, and establish safe urban grid-storage practice.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-nrc"]
+      },
+      {
+        "category": "Timeline conflict",
+        "detail": "TMU's updated case study lists July 2012-June 2016; its 2015 annual report lists January 2011-December 2016. NRCan's registry begins January 2011 and marks the project completed. The broader federal program and campus operating phase therefore had different date conventions.",
+        "sourceIds": ["b07c-ryerson-case", "b07c-ryerson-2015-report", "b07c-ryerson-nrc-registry"]
+      },
+      {
+        "category": "Current research status",
+        "detail": "TMU's 2026 project inventory reports 81 completed and 12 in-progress applied projects. Its 2024 annual report describes a microgrid-controller-in-a-box validated in the Schneider lab with commercial off-the-shelf equipment, showing the lab remains active beyond the original 2015 demonstration.",
+        "sourceIds": ["b07c-ryerson-projects-2026", "b07c-ryerson-report-2024"]
+      },
+      {
+        "category": "Current equipment gap",
+        "detail": "TMU still advertises the outdoor 13.8 kV test facility but does not state the original Electrovaya battery's current presence, state of health, cycle count, availability, augmentation or retirement. A current facility page is not proof the 2012-era battery remains operational.",
+        "sourceIds": ["b07c-ryerson-current-battery", "b07c-ryerson-case"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-ryerson-current-battery",
+        "title": "Grid-connected Utility-scale Battery Facility",
+        "url": "https://www.torontomu.ca/cue/testing/grid-scale-battery/",
+        "publisher": "Toronto Metropolitan University Centre for Urban Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-current-lab",
+        "title": "Schneider Electric Smart Grid Laboratory",
+        "url": "https://www.torontomu.ca/cue/testing/schneider-electric-smart-grid-lab/",
+        "publisher": "Toronto Metropolitan University Centre for Urban Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-case",
+        "title": "Research Case Study: Large-scale Battery",
+        "url": "https://www.torontomu.ca/content/dam/cue/research/projects/large-scale-battery.pdf",
+        "publisher": "Toronto Metropolitan University Centre for Urban Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-nrc",
+        "title": "Utility Scale Electricity Storage Demonstration Using New and Re-purposed Lithium Ion Automotive Batteries",
+        "url": "https://prod-natural-resources.azure.cloud.nrcan-rncan.gc.ca/funding-partnerships/utility-scale-electricity-storage-demonstration-new-purposed-lithium-ion-automotive-batteries?wbdisable=true",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-nrc-registry",
+        "title": "Current Investments - Utility Scale Electricity Storage Demonstration",
+        "url": "https://natural-resources.canada.ca/funding-partnerships/current-investments",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-2015-report",
+        "title": "Centre for Urban Energy 2015 Annual Report",
+        "url": "https://www.torontomu.ca/content/dam/cue/about/annual-report/cue-2015-annual-report.pdf",
+        "publisher": "Ryerson University Centre for Urban Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-history",
+        "title": "Centre for Urban Energy History",
+        "url": "https://www.torontomu.ca/cue/about/history/",
+        "publisher": "Toronto Metropolitan University",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-brochure",
+        "title": "Schneider Electric Smart Grid Lab Brochure",
+        "url": "https://www.torontomu.ca/content/dam/cue/testing/schneider-electric-smart-grid-lab-brochure-web.pdf",
+        "publisher": "Ryerson University / Schneider Electric",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-projects-2026",
+        "title": "Applied Research Projects",
+        "url": "https://www.torontomu.ca/cue/research/projects/",
+        "publisher": "Toronto Metropolitan University Centre for Urban Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-ryerson-report-2024",
+        "title": "Electric Horizon - Centre for Urban Energy 2024 Annual Report",
+        "url": "https://www.torontomu.ca/content/dam/cue/about/annual-report/cue-2024-annual-report-AODA.pdf",
+        "publisher": "Toronto Metropolitan University Centre for Urban Energy",
+        "kind": "primary"
+      }
+    ]
+  },
+  "sal-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Sal's island grid has evolved well beyond the legacy solar-wind-diesel snapshot. The two cornerstone projects are the 2.5 MWp fixed-tilt Martifer solar plant commissioned in October 2010 and Cabeólica's 7.65 MW wind farm—nine Vestas V52-850 kW turbines commercially operating since 2012. Cabeólica added a 6 MW/6 MWh BESS at its Sal wind-farm interconnection and inaugurated it on February 11, 2026. A separate 6 MWp Santa Maria solar plant also began operation in 2024. Thermal generation and the exact island-wide annual mix remain incompletely disclosed in current public data, so these capacities should not be converted into an unsupported renewable percentage.",
+    "status": "Operational and expanded. Cabeólica's 2024 audited/annual reporting recorded 18,649 MWh from the Sal wind farm, 95.17% availability, and an estimated 23% island penetration. Vestas' maintenance agreement was extended eight years in 2024, although Sal substation repairs were required. The new 6 MW/6 MWh BESS was inaugurated in February 2026 with WinPower as EPC. Current public material expects wind, the new battery and the 2024 solar addition to push Sal above 40% renewable penetration, but no complete 2025/26 island generation table was found to verify that forecast.",
+    "organizations": [
+      {
+        "name": "ELECTRA SARL / Electra S.A.",
+        "role": "Island utility, grid/system operator, original partner/offtaker for Cabeólica, and operator/beneficiary of the Sal generation system.",
+        "sourceIds": ["b07c-sal-cabeolica-history", "b07c-sal-cabeolica-2024"]
+      },
+      {
+        "name": "Cabeólica S.A.",
+        "role": "Independent power producer, owner/operator of Sal's 7.65 MW wind farm and 6 MW/6 MWh BESS under Cabo Verde's renewable-energy PPP structure.",
+        "sourceIds": ["b07c-sal-cabeolica-island", "b07c-sal-cabeolica-2024", "b07c-sal-bess-2026"]
+      },
+      {
+        "name": "Government of Cabo Verde",
+        "role": "Original project counterparty/PPP shareholder and policy partner for wind, solar and storage development.",
+        "sourceIds": ["b07c-sal-cabeolica-history", "b07c-sal-ecowas", "b07c-sal-bess-2026"]
+      },
+      {
+        "name": "InfraCo Africa / Africa Finance Corporation / Finnfund",
+        "role": "Development and shareholder/finance participants in Cabeólica across successive ownership periods; AFC also provided bridge financing for Phase II.",
+        "sourceIds": ["b07c-sal-cabeolica-history", "b07c-sal-afdb-2025", "b07c-sal-bess-2026"]
+      },
+      {
+        "name": "Vestas",
+        "role": "Wind-turbine supplier and long-term maintenance provider; service agreement extended by eight years in 2024.",
+        "sourceIds": ["b07c-sal-cabeolica-2024", "b07c-sal-sustainability-2017"]
+      },
+      {
+        "name": "Martifer Solar",
+        "role": "Turnkey developer and equipment supplier for the original 2.5 MWp Sal solar PV plant.",
+        "sourceIds": ["b07c-sal-ecreee", "b07c-sal-martifer-secondary"]
+      },
+      {
+        "name": "WinPower S.A.",
+        "role": "Turnkey EPC contractor for Sal's 6 MW/6 MWh BESS, including engineering, procurement, construction, auxiliaries and local EMS integration.",
+        "sourceIds": ["b07c-sal-winpower", "b07c-sal-winpower-epc"]
+      },
+      {
+        "name": "African Development Bank / Sustainable Energy Fund for Africa / European Investment Bank",
+        "role": "Long-term lenders/financiers for Cabeólica and its Phase II wind-and-storage expansion.",
+        "sourceIds": ["b07c-sal-afdb-2025", "b07c-sal-sustainability-2017", "b07c-sal-bess-2026"]
+      },
+      {
+        "name": "Águas de Ponta Preta / Impulso Energía",
+        "role": "Developer/operator of the separate 6 MWp Santa Maria PV plant commissioned on Sal in 2024; not owner of the older Martifer plant or Cabeólica wind farm.",
+        "sourceIds": ["b07c-sal-santa-maria"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original Sal solar plant",
+        "value": "2.5 MWp fixed-tilt PV on approximately 9.75-10 hectares, commissioned October 1, 2010, with 11,016 modules and an original expected annual output of about 3,960 MWh. A planned option to expand to 5 MWp by 2014 was not substantiated as built.",
+        "sourceIds": ["b07c-sal-ecreee", "b07c-sal-martifer-secondary", "b07c-sal-pv-study"]
+      },
+      {
+        "label": "Cabeólica Sal wind farm",
+        "value": "7.65 MW from nine 850 kW turbines, occupying about 32 hectares at Lajedo de Ribeira de Tarrafe. Test injection began before end-2011 and the takeover certificate was signed February 17, 2012.",
+        "sourceIds": ["b07c-sal-cabeolica-island", "b07c-sal-cabeolica-history", "b07c-sal-cabeolica-2024"]
+      },
+      {
+        "label": "2024 wind performance",
+        "value": "18,649 MWh generated, 95.17% availability and estimated 23% penetration on Sal. Wind speed was below average and unscheduled intervention included repairs at the Sal substation.",
+        "sourceIds": ["b07c-sal-cabeolica-2024"]
+      },
+      {
+        "label": "Sal battery",
+        "value": "6 MW/6 MWh guaranteed capacity (one-hour duration), connected near the wind farm to the 20 kV busbar and equipped with a local EMS. Earlier environmental material used approximately 8 MW/8 MWh, but final finance, EPC and commissioning sources converge on 6 MW/6 MWh.",
+        "sourceIds": ["b07c-sal-afdb-project", "b07c-sal-winpower-epc", "b07c-sal-bess-2026"]
+      },
+      {
+        "label": "Santa Maria solar addition",
+        "value": "6 MWp PV inaugurated in September 2024 by Águas de Ponta Preta/Impulso Energía. Some later summaries call it 5 MW; the inauguration reporting gives 6 MWp and is retained as the plant nameplate.",
+        "sourceIds": ["b07c-sal-santa-maria", "b07c-sal-renewables-2026"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Wind, solar PV, battery storage and fuel-fired thermal generation on a non-interconnected island grid. Cabeólica's wind alone supplied an estimated 23% in 2024. A current complete island fuel/solar/wind/storage generation table was not located, so the post-BESS renewable share above 40% remains a forecast.",
+        "sourceIds": ["b07c-sal-cabeolica-2024", "b07c-sal-renewables-2026"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Vestas",
+        "model": "V52-850 kW",
+        "detail": "Nine turbines, 7.65 MW total. Vestas remains the maintenance provider under an agreement extended eight years in 2024.",
+        "sourceIds": ["b07c-sal-cabeolica-2024", "b07c-sal-sustainability-2017"]
+      },
+      {
+        "category": "Original PV modules",
+        "manufacturer": "Martifer Solar",
+        "detail": "11,016 modules manufactured at Martifer's Oliveira de Frades factory and installed on fixed structures. A later academic source calls them polycrystalline; exact model and inverter manufacturer were not found.",
+        "sourceIds": ["b07c-sal-martifer-secondary", "b07c-sal-pv-study"]
+      },
+      {
+        "category": "Battery energy storage",
+        "detail": "6 MW/6 MWh system delivered as a turnkey installation. Public commissioning sources do not identify cell manufacturer, chemistry, PCS model, container count or degradation warranty.",
+        "sourceIds": ["b07c-sal-bess-2026", "b07c-sal-winpower"]
+      },
+      {
+        "category": "BESS EPC and control",
+        "manufacturer": "WinPower S.A.",
+        "detail": "Engineering, procurement, construction, auxiliary systems and a local Energy Management System, injecting at the wind farm's 20 kV busbar.",
+        "sourceIds": ["b07c-sal-winpower-epc", "b07c-sal-winpower"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Wind project structure",
+        "detail": "Sal is one of four separately located Cabeólica wind farms developed and financed together under a PPP/IPP structure, with ELECTRA as system counterpart/offtaker. The Sal farm is a distinct 7.65 MW asset, not the entire 25.5 MW national portfolio.",
+        "sourceIds": ["b07c-sal-cabeolica-history", "b07c-sal-ecowas"]
+      },
+      {
+        "category": "Battery grid services",
+        "detail": "The 6 MW/6 MWh BESS is intended for frequency response/regulation, energy-imbalance management, automatic generation control, spinning/replacement reserve, reactive power and voltage support, while reducing renewable curtailment.",
+        "sourceIds": ["b07c-sal-afdb-project", "b07c-sal-afdb-summary"]
+      },
+      {
+        "category": "Performance history",
+        "detail": "Cabeólica's 2017 sustainability report gave Sal 28% wind penetration and 99% turbine availability; its 2024 report gives 23% penetration and 95.17% availability. The different years show why early headline percentages should not be treated as fixed current mix.",
+        "sourceIds": ["b07c-sal-sustainability-2017", "b07c-sal-cabeolica-2024"]
+      },
+      {
+        "category": "Phase II status",
+        "detail": "AfDB approved a €19.6 million financing package in June 2025 for the wider 13.5 MW wind/26 MWh storage program. Sal's 6 MW/6 MWh BESS was inaugurated February 11, 2026, and WinPower subsequently confirmed delivery as EPC contractor.",
+        "sourceIds": ["b07c-sal-afdb-2025", "b07c-sal-bess-2026", "b07c-sal-winpower"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No public 2025/26 island balance was found for thermal plant capacity/output, total demand, solar output by plant, BESS dispatch, curtailed wind recovered, fuel savings or realized renewable share after commissioning. Forecasts above 40% should remain labeled projections.",
+        "sourceIds": ["b07c-sal-renewables-2026", "b07c-sal-cabeolica-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b07c-sal-cabeolica-island",
+        "title": "Ilha do Sal Wind Farm",
+        "url": "https://cabeolica.com/ilha-do-sal/",
+        "publisher": "Cabeólica",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-cabeolica-history",
+        "title": "Our History",
+        "url": "https://cabeolica.com/en/a-nossa-historia/",
+        "publisher": "Cabeólica",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-cabeolica-2024",
+        "title": "Cabeólica Annual Report 2024",
+        "url": "https://cabeolica.com/wp-content/uploads/2025/09/RC_2024_EN.pdf",
+        "publisher": "Cabeólica",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-sustainability-2017",
+        "title": "Cabeólica Sustainability Report 2017",
+        "url": "https://cabeolica.com/wp-content/uploads/2023/PDF2/Cabeolica%20Sustainability%20Report_2017.pdf",
+        "publisher": "Cabeólica",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-ecreee",
+        "title": "Cabo Verde Solar Photovoltaic Plants - Sal and Praia",
+        "url": "https://www.ecreee.org/maior-solar-fotovoltaica-de-africa-inaugurada-na-praia/?lang=pt-pt",
+        "publisher": "ECOWAS Centre for Renewable Energy and Energy Efficiency",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-martifer-secondary",
+        "title": "Martifer Completes a 2.5 MW Photovoltaic Park on Sal",
+        "url": "https://energelia.com/energias/martifer-concluye-un-parque-fotovoltaico-de-25-mw.html",
+        "publisher": "Energelia (reporting Martifer project release)",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-sal-pv-study",
+        "title": "Sistemas Autónomos de Iluminação Pública com Energias Renováveis em Cabo Verde",
+        "url": "https://sapientia.ualg.pt/bitstreams/2bc6a6ea-d3b3-49f1-af7e-84c5652bd7c4/download",
+        "publisher": "University of Algarve repository",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-sal-afdb-2025",
+        "title": "AfDB Approves €19.6 Million for Cabo Verde Wind and Battery Expansion",
+        "url": "https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-approves-eu196-million-financing-scale-cabo-verdes-pioneer-wind-and-battery-storage-capacity-84569",
+        "publisher": "African Development Bank",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-afdb-project",
+        "title": "Cabeólica Phase II Expansion - Project Summary",
+        "url": "https://mapafrica.afdb.org/en/projects/46002-P-CV-F00-002",
+        "publisher": "African Development Bank",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-afdb-summary",
+        "title": "Cabeólica Phase II Expansion Project Summary Note",
+        "url": "https://www.afdb.org/sites/default/files/documents/projects-and-operations/p-cv-f00-002-en-cabeolica_phase_ii_expansion_project_-_project_summary_note.pdf",
+        "publisher": "African Development Bank",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-bess-2026",
+        "title": "Cabeólica Inaugurates Battery Energy Storage System on Sal Island",
+        "url": "https://opais.cv/cabeolica-inaugura-sistema-de-armazenamento-de-energia-em-baterias-na-ilha-do-sal/11/02/2026/",
+        "publisher": "OPAÍS.cv reporting Cabeólica and Government inauguration",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-sal-winpower",
+        "title": "Sal Island Inaugurates New 6 MW/6 MWh BESS with WinPower as EPC Contractor",
+        "url": "https://winpowersa.com/sal-island-inaugurates-new-6-mw-6-mwh-bess-with-winpower-as-epc-contractor/",
+        "publisher": "WinPower S.A.",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-winpower-epc",
+        "title": "Cabeólica BESS EPC",
+        "url": "https://winpowersa.com/our-projects/bess-epc/",
+        "publisher": "WinPower S.A.",
+        "kind": "primary"
+      },
+      {
+        "id": "b07c-sal-santa-maria",
+        "title": "Cabo Verde Inaugurates 6 MWp Santa Maria Solar Plant",
+        "url": "https://www.pv-magazine.es/2024/09/16/inauguran-en-cabo-verde-la-central-solar-santa-maria-de-6-mwp-la-mayor-del-pais/",
+        "publisher": "pv magazine España",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-sal-renewables-2026",
+        "title": "Cabo Verde Strengthens Its Energy System and Reduces Electricity Tariffs",
+        "url": "https://www.aler-energia.org/en/communication/news/cabo-verde-accelerates-investment-in-renewable-energy-and-reduces-electricity-tariffs-by-7/",
+        "publisher": "Lusophone Renewable Energy Association",
+        "kind": "secondary"
+      },
+      {
+        "id": "b07c-sal-ecowas",
+        "title": "Case Study: Cabeólica Wind Project Cabo Verde",
+        "url": "https://ppp.finance.go.ug/report/Cabeolica%20Wind%20Farm%20Case%20Study%20Details.pdf",
+        "publisher": "ECOWAS renewable energy flagship project case study",
+        "kind": "secondary"
+      }
+    ]
+  }
+}

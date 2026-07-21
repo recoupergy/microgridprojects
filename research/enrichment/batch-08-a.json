@@ -1,0 +1,856 @@
+{
+  "salem-smart-power-center": {
+    "researchedAt": "2026-07-20",
+    "summary": "Portland General Electric's Salem Smart Power Center (SSPC) is a utility research and distribution-resilience installation built around a 5 MW/1.25 MWh lithium-ion battery, automated feeder equipment, customer demand response, a small customer rooftop-PV system, and dispatchable standby generation. It is not a 5 MW solar project: the often-repeated 5 MW figure is battery power and its 1.25 MWh energy rating gives only 15 minutes at full output. SSPC has also become the anchor for a newer City of Salem/PGE community-microgrid expansion, whose additional battery capacity and final commissioning status were not publicly documented by the research cutoff.",
+    "status": "PGE placed the original SSPC in service in May 2013 and Oregon sources continued to describe it as operating in 2022. PNNL subsequently implemented and tested controls capable of stacking multiple grid services. In 2025 DOE issued a NEPA categorical exclusion for an expansion using an additional BESS and smart reclosers on PGE's Oxford-Rural distribution system, while the City still described the community-microgrid work as a grant-funded project. The original asset is therefore operational as last publicly confirmed; the expansion is in development/implementation, with neither a public as-built capacity nor clear commissioning announcement found through July 2026.",
+    "organizations": [
+      {
+        "name": "Portland General Electric (PGE)",
+        "role": "Owner and operator of the original center, battery and feeder assets; utility partner for the community-microgrid expansion.",
+        "sourceIds": ["salem-pnnl-assessment", "salem-oregon-2019", "salem-city-expansion"]
+      },
+      {
+        "name": "Pacific Northwest National Laboratory (PNNL) / U.S. Department of Energy",
+        "role": "Federal research, funding and controls-development partners; PNNL assessed battery economics and tested enhanced multi-service control.",
+        "sourceIds": ["salem-pnnl-assessment", "salem-pnnl-control"]
+      },
+      {
+        "name": "EnerDel",
+        "role": "Supplier of the original lithium-ion battery system identified in PNNL's technical assessment.",
+        "sourceIds": ["salem-pnnl-report"]
+      },
+      {
+        "name": "Eaton",
+        "role": "Supplier/integrator of the bidirectional inverter package and associated controls.",
+        "sourceIds": ["salem-eaton"]
+      },
+      {
+        "name": "City of Salem / Salem Public Works",
+        "role": "Community partner and host of non-colocated municipal solar/load assets in the newer expansion.",
+        "sourceIds": ["salem-city-expansion", "salem-doe-nepa"]
+      },
+      {
+        "name": "Oregon Department of Energy",
+        "role": "State energy-agency reporter for the original project and provider of a US$1 million grant for the newer community-microgrid work.",
+        "sourceIds": ["salem-oregon-2019", "salem-city-expansion"]
+      },
+      {
+        "name": "Kettle Brand / Kettle Foods",
+        "role": "Commercial customer associated with the feeder, rooftop solar and demand-response demonstration; the public record does not establish a 5 MW PV array at this site.",
+        "sourceIds": ["salem-pnnl-report", "salem-oregon-2019"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original battery",
+        "value": "5 MW/1.25 MWh EnerDel lithium-ion, equivalent to 0.25 hour (15 minutes) at full rated output. The legacy 5 MWh value and descriptions of 5 MW of solar conflate different quantities and are not supported by the as-built assessment.",
+        "sourceIds": ["salem-pnnl-assessment", "salem-pnnl-report"]
+      },
+      {
+        "label": "Feeder and load scale",
+        "value": "The demonstration feeder served about 500 customers and typically carried roughly 2.5 MW. This is a distribution-feeder research site, not all of Salem.",
+        "sourceIds": ["salem-pnnl-report"]
+      },
+      {
+        "label": "Other original resources",
+        "value": "A 616-panel customer rooftop-PV source, customer demand response, and approximately 5.7 MW of PGE dispatchable standby diesel generation participated in demonstrations. No authoritative source found gives the rooftop array's commissioned kW rating, so it should not be inferred from panel count.",
+        "sourceIds": ["salem-pnnl-report", "salem-oregon-2019"]
+      },
+      {
+        "label": "Expansion service boundary",
+        "value": "The newer project is intended to link Public Works solar and the PGE battery system and support a Public Works building, six apartment buildings (96 units), 34 homes, four government buildings and one business. The City says storage capacity will increase but does not publish the added MW/MWh.",
+        "sourceIds": ["salem-city-expansion", "salem-doe-nepa"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Normally PGE grid electricity, with short-duration stored grid/renewable energy, customer solar and demand response; standby diesel was available for island demonstrations. Neither annual renewable production nor a project-level percentage mix has been published.",
+        "sourceIds": ["salem-pnnl-report", "salem-oregon-2019"]
+      },
+      {
+        "label": "Economics",
+        "value": "PNNL reported a US$20.4 million original project cost and estimated that a comparable then-current battery installation might cost US$5.4 million. Its optimized modeling found about US$2.3 million in additional 20-year value over the then-current dispatch, including about US$2.1 million from Energy Imbalance Market participation; these are scenarios, not realized revenue.",
+        "sourceIds": ["salem-pnnl-assessment"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "EnerDel",
+        "detail": "5 MW/1.25 MWh lithium-ion system. Public sources reviewed do not provide a current state-of-health or replacement history.",
+        "sourceIds": ["salem-pnnl-report"]
+      },
+      {
+        "category": "Power conversion",
+        "manufacturer": "Eaton",
+        "model": "Power Xpert",
+        "detail": "Twenty 250 kW bidirectional inverter modules, with custom controls for real- and reactive-power commands.",
+        "sourceIds": ["salem-eaton", "salem-pnnl-report"]
+      },
+      {
+        "category": "Distribution automation",
+        "detail": "Smart feeder controls and switching support simulated/actual islanding and remote autonomous operation; the 2025 expansion also specifies smart distribution reclosers.",
+        "sourceIds": ["salem-oregon-2019", "salem-doe-nepa"]
+      },
+      {
+        "category": "Expansion BESS",
+        "detail": "DOE's 2025 review identifies an additional battery energy storage system but does not disclose vendor, chemistry, MW, MWh or final in-service date.",
+        "sourceIds": ["salem-doe-nepa"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Controls and services",
+        "detail": "SSPC was designed for islanding, frequency regulation/primary frequency response, voltage/reactive support, demand response and renewables integration. PNNL later demonstrated a controller able to coordinate multiple services rather than limiting dispatch to one use case.",
+        "sourceIds": ["salem-pnnl-control", "salem-eaton"]
+      },
+      {
+        "category": "Observed utilization",
+        "detail": "PNNL found that during its 2017 study period the battery was used only for primary frequency response and was economically underutilized. Its short duration made energy-intensive applications comparatively unattractive even though additional stacked-service value was modeled.",
+        "sourceIds": ["salem-pnnl-assessment"]
+      },
+      {
+        "category": "Safety and staffing",
+        "detail": "An Oregon filing states the original facility operated remotely without permanent on-site staff and recorded no fires or regulatory citations during its first five operating years. This is historical evidence, not a current safety audit.",
+        "sourceIds": ["salem-oregon-filing"]
+      },
+      {
+        "category": "Phase boundary",
+        "detail": "The 2013 research center and the post-2024 community-microgrid expansion share assets and location references but are not the same as-built scope. Added-capacity claims should remain provisional until PGE or the City publishes commissioning documentation.",
+        "sourceIds": ["salem-city-expansion", "salem-doe-nepa"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "salem-pnnl-assessment",
+        "title": "The Salem Smart Power Center: An Assessment of Battery Performance and Economic Potential",
+        "url": "https://www.pnnl.gov/publications/salem-smart-power-center-assessment-battery-performance-and-economic-potential",
+        "publisher": "Pacific Northwest National Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-pnnl-report",
+        "title": "The Salem Smart Power Center: An Assessment of Battery Performance and Economic Potential (PNNL-26858)",
+        "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-26858.pdf",
+        "publisher": "Pacific Northwest National Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-pnnl-control",
+        "title": "Energy Storage Control Capability Expansion: Achieving Better Technoeconomic Benefits",
+        "url": "https://www.pnnl.gov/publications/energy-storage-control-capability-expansion-achieving-better-technoeconomic-benefits",
+        "publisher": "Pacific Northwest National Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-oregon-2019",
+        "title": "March 2019 Newsletter: Salem Smart Power Center",
+        "url": "https://energyinfo.oregon.gov/blog/2019/3/29/march-2019-newsletter",
+        "publisher": "Oregon Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-eaton",
+        "title": "Portland General Electric Smart Power Center success story",
+        "url": "https://eaton.bg/lv/lv-lv/markets/success-stories/Portland-General-Electric.html",
+        "publisher": "Eaton",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-city-expansion",
+        "title": "Renewable Energy Grant",
+        "url": "https://www.cityofsalem.net/community/natural-environment-climate/climate-action-plan-for-salem/renewable-energy-grant",
+        "publisher": "City of Salem",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-doe-nepa",
+        "title": "CX-034042: Salem Smart Power Center Microgrid Expansion",
+        "url": "https://www.energy.gov/nepa/articles/cx-034042-salem-smart-power-center-microgrid-expansion",
+        "publisher": "U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "salem-oregon-filing",
+        "title": "Salem Smart Power Center Request for Amendment filing",
+        "url": "https://www.oregon.gov/energy/facilities-safety/facilities/Facilities%20library/2019-04-23-PWG-pRFA11-Part1.pdf",
+        "publisher": "Oregon Department of Energy / Portland General Electric",
+        "kind": "primary"
+      }
+    ]
+  },
+  "sao-vicente-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "São Vicente is an isolated Cabo Verde island grid, not a single controller-bounded microgrid. Its modern renewable portfolio includes Cabeólica's 5.95 MW wind farm, the 6 MWp/5 MWac Norte de Baía solar plant inaugurated in November 2025, and an 8 MW/8 MWh lithium-ion battery at Lazareto inaugurated in January 2026. These newer assets supersede the old database's 27 kW solar figure as a representation of island-scale PV, while thermal generation still supplies the balance.",
+    "status": "The original wind farm remains operational; the solar plant entered service November 22, 2025 and the Lazareto BESS January 29, 2026. The Government says the combined system raises renewable penetration to about 40%, but no post-commissioning annual generation or independent reliability report was available by July 2026. Current status is operational/early operations, with performance claims still largely projections or official launch metrics.",
+    "organizations": [
+      {"name": "Cabeólica S.A.", "role": "Owner/operator of the wind farm and Phase II BESS program.", "sourceIds": ["sv-cabeolica-2023", "sv-esia"]},
+      {"name": "Electra / EDEC and ONSEC", "role": "Island utility/grid and system-operation organizations; the BESS is adjacent to Electra's Lazareto plant.", "sourceIds": ["sv-esia", "sv-government-bess"]},
+      {"name": "Águas de Ponta Preta (APP) / Impulso Solar", "role": "Developer/owner partnership for the Norte de Baía solar plant.", "sourceIds": ["sv-aler", "sv-government-solar"]},
+      {"name": "WinPower", "role": "EPC/supplier that delivered the 8 MW/8 MWh BESS.", "sourceIds": ["sv-winpower"]},
+      {"name": "Vestas", "role": "Supplier and service provider for the original V52 wind turbines.", "sourceIds": ["sv-cabeolica-2023"]}
+    ],
+    "specifications": [
+      {"label": "Wind", "value": "5.95 MW from seven Vestas V52 850 kW turbines. In 2023 it produced 19,313 MWh at 97.9% availability and supplied 23% of island electricity.", "sourceIds": ["sv-cabeolica-2023"]},
+      {"label": "Solar", "value": "6 MWp DC/5 MW AC at Norte de Baía/Salamansa, expected to produce 10,847 MWh/year and cover more than 15% of island demand. The production/share figures are design expectations, not a full-year operating result.", "sourceIds": ["sv-government-solar", "sv-aler"]},
+      {"label": "Battery", "value": "8 MW/8 MWh lithium-ion at Lazareto, one hour at rated output and Cabo Verde's largest BESS at commissioning.", "sourceIds": ["sv-government-bess", "sv-winpower", "sv-esia"]},
+      {"label": "Renewable share", "value": "23% wind in 2023 before the new solar/BESS; approximately 40% aggregate renewable penetration claimed by government at the January 2026 BESS opening. The latter is not yet backed by a complete annual generation dataset.", "sourceIds": ["sv-cabeolica-2023", "sv-government-bess"]},
+      {"label": "Expected impacts", "value": "Government projects the solar plant will displace about 2,000 tonnes of fuel and 9,194 tonnes of CO2 per year. These remain forecasts.", "sourceIds": ["sv-government-solar"]}
+    ],
+    "equipment": [
+      {"category": "Wind turbines", "manufacturer": "Vestas", "model": "V52-850 kW", "detail": "Seven units, 5.95 MW total.", "sourceIds": ["sv-cabeolica-2023"]},
+      {"category": "Solar PV", "detail": "6 MWp/5 MWac ground-mounted plant on roughly seven hectares; module/inverter models were not published in reviewed official material.", "sourceIds": ["sv-government-solar"]},
+      {"category": "BESS", "manufacturer": "WinPower (EPC/supplier)", "detail": "8 MW/8 MWh lithium-ion grid-support system at Lazareto; cell/OEM model not publicly established.", "sourceIds": ["sv-winpower", "sv-esia"]}
+    ],
+    "technicalDetails": [
+      {"category": "Grid support", "detail": "The BESS is intended for short-term frequency/voltage stability and renewable smoothing on the isolated grid, located about 3.7 km from the wind farm near the thermal plant; it is not multi-hour replacement for thermal generation.", "sourceIds": ["sv-esia", "sv-government-bess"]},
+      {"category": "System boundary", "detail": "Wind, solar, battery and thermal plants are distributed across an island utility network. No public source establishes one island-wide microgrid controller, black-start sequence or fully renewable islanding mode.", "sourceIds": ["sv-esia"]},
+      {"category": "Performance boundary", "detail": "2023 wind figures are measured historical results; solar output, fuel/CO2 displacement and roughly 40% renewables are commissioning-stage expectations/claims following assets added in late 2025 and early 2026.", "sourceIds": ["sv-cabeolica-2023", "sv-government-solar", "sv-government-bess"]}
+    ],
+    "sources": [
+      {"id": "sv-cabeolica-2023", "title": "Cabeólica Annual Report 2023", "url": "https://cabeolica.com/wp-content/uploads/2024/PDF/RC-2023-EN.pdf", "publisher": "Cabeólica", "kind": "primary"},
+      {"id": "sv-government-solar", "title": "Inauguration of the 5 MW São Vicente solar plant", "url": "https://www.governo.cv/ministro-alexandre-monteiro-preside-ato-de-inauguracao-da-central-solar-fotovoltaica-de-5-mw-em-sao-vicente/", "publisher": "Government of Cabo Verde", "kind": "primary"},
+      {"id": "sv-aler", "title": "Cape Verde strengthens its commitment to renewable energy", "url": "https://www.aler-energia.org/en/communication/news/cape-verde-strengthens-its-commitment-to-renewable-energy/", "publisher": "ALER", "kind": "secondary"},
+      {"id": "sv-government-bess", "title": "Prime Minister inaugurates battery energy storage system in São Vicente", "url": "https://www.governo.cv/primeiro-ministro-inaugura-sistema-de-armazenamento-de-energia-em-baterias-em-s-vicente/", "publisher": "Government of Cabo Verde", "kind": "primary"},
+      {"id": "sv-winpower", "title": "WinPower delivers Cabo Verde's largest BESS in São Vicente", "url": "https://winpowersa.com/winpower-delivers-cabo-verdes-largest-bess-system-in-sao-vicente/", "publisher": "WinPower", "kind": "primary"},
+      {"id": "sv-esia", "title": "Simplified ESIA: São Vicente BESS", "url": "https://cabeolica.com/wp-content/uploads/2025/03/Simplified_ESIA_BESS_Sao_Vicente_Appendix_A_ESMP.pdf", "publisher": "Cabeólica", "kind": "primary"}
+    ]
+  },
+  "sapsi-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Sapsi Island is Sapsi-do in Boryeong, Chungcheongnam-do, South Korea. It was selected in 2015 for the private-sector Energy Independent Island (EII) program with Woojin Industrial Systems' consortium, but the best later academic assessment says the islands failed to secure power-purchase agreements and remained diesel dependent. The proposed Sapsi concept was a 1.6 MW solar-led hybrid targeting 83% renewables alongside an existing 900 kW internal-combustion plant; no credible evidence of construction or commissioning was found through July 2026.",
+    "status": "Selected/planned in July 2015, but not demonstrated as built. A 2022 peer-reviewed program review reports that only the Ulleung consortium reached a PPA and that the EII island projects, including Sapsi, achieved little and still relied on diesel. No later PPA, EPC award, interconnection, commissioning, operating data or formal cancellation notice was located. The defensible status is stalled/not implemented as last authoritatively assessed—not operational and not necessarily formally cancelled.",
+    "organizations": [
+      {"name": "Woojin Industrial Systems consortium", "role": "Private operator/developer selected for Sapsi under the 2015 EII competition; selection did not mature into evidenced construction.", "sourceIds": ["sapsi-motie", "sapsi-apjjf"]},
+      {"name": "Ministry of Trade, Industry and Energy (MOTIE)", "role": "National sponsor of the Energy Independent Island program and selection process.", "sourceIds": ["sapsi-motie"]},
+      {"name": "Korea Electric Power Corporation (KEPCO)", "role": "Serving utility/prospective power purchaser in the EII model; later research says Sapsi did not achieve a PPA.", "sourceIds": ["sapsi-economics-review"]},
+      {"name": "Boryeong City / Sapsi-do community", "role": "Host jurisdiction/community; a current island profile reports 230 households and 373 residents, but does not document a renewable power project.", "sourceIds": ["sapsi-biennale"]}
+    ],
+    "specifications": [
+      {"label": "Proposed solar", "value": "1.6 MW PV in the later program review; this is a proposal, not installed capacity.", "sourceIds": ["sapsi-economics-review"]},
+      {"label": "Existing generation", "value": "900 kW internal-combustion/diesel plant reported for the island during program design. Its exact 2026 configuration and condition are unknown.", "sourceIds": ["sapsi-economics-review"]},
+      {"label": "Renewable target", "value": "83% renewable share proposed for the EII project. No achieved generation mix exists because construction/operation was not substantiated.", "sourceIds": ["sapsi-economics-review"]},
+      {"label": "Storage and wind", "value": "Storage/control integration was implicit in the EII hybrid concept, but no authoritative public source found supplies an ESS MW/MWh rating, battery vendor, wind capacity or as-built bill of materials for Sapsi.", "sourceIds": ["sapsi-motie", "sapsi-economics-review"]},
+      {"label": "Community scale", "value": "A current cultural-program profile lists 230 households and 373 people; the 2022 technical review used a population below 500. Neither is an electrical customer or peak-load measurement.", "sourceIds": ["sapsi-biennale", "sapsi-economics-review"]}
+    ],
+    "equipment": [
+      {"category": "Proposed PV", "detail": "1.6 MW; manufacturer, EPC design and interconnection were never evidenced as finalized.", "sourceIds": ["sapsi-economics-review"]},
+      {"category": "Existing diesel/internal combustion", "detail": "900 kW reported at planning stage; unit count, maker/model, fuel consumption and present status are unknown.", "sourceIds": ["sapsi-economics-review"]},
+      {"category": "Proposed ESS/EMS", "detail": "No verified capacity, chemistry, controller or vendor data found; no equipment should be recorded as installed.", "sourceIds": ["sapsi-motie", "sapsi-economics-review"]}
+    ],
+    "technicalDetails": [
+      {"category": "Commercial blocker", "detail": "The EII business model required private developers to sell electricity under a PPA. The later review found no agreement for Sapsi, preventing the selected concept from advancing to a bankable operating project.", "sourceIds": ["sapsi-economics-review"]},
+      {"category": "Program outcome", "detail": "The five-island announcement was a developer selection, not a commissioning statement. Later evidence says the program delivered little and participating islands remained dependent on diesel.", "sourceIds": ["sapsi-motie", "sapsi-economics-review"]},
+      {"category": "Current-data gap", "detail": "No project-specific post-2022 source confirms revival, cancellation or new renewable assets. The current island profile is useful for identity/demographics only and cannot establish energy status.", "sourceIds": ["sapsi-biennale", "sapsi-economics-review"]}
+    ],
+    "sources": [
+      {"id": "sapsi-motie", "title": "Private operators selected for five energy-independent islands", "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148797749", "publisher": "Republic of Korea / MOTIE", "kind": "primary"},
+      {"id": "sapsi-apjjf", "title": "South Korea's energy-independent island program", "url": "https://apjjf.org/2016/24/kim", "publisher": "The Asia-Pacific Journal", "kind": "secondary"},
+      {"id": "sapsi-economics-review", "title": "Review of Korea's Energy Independent Island projects", "url": "https://www.ijsgce.com/uploadfile/2021/1208/20211208111324806.pdf", "publisher": "International Journal of Smart Grid and Clean Energy", "kind": "primary"},
+      {"id": "sapsi-biennale", "title": "Sapsi-do island profile", "url": "https://www.islandbiennale.or.kr/eng", "publisher": "Boryeong Island Biennale", "kind": "primary"},
+      {"id": "sapsi-archive", "title": "Sapsi Island microgrid project record", "url": "https://microgridprojects.com/microgrid/sapsi-island/", "publisher": "Microgrid Projects", "kind": "secondary"}
+    ]
+  },
+  "santa-rita-jail-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Alameda County's Santa Rita Jail microgrid is a 12 kV campus resilience system around a roughly 3 MW secure load. Its layered portfolio includes solar PV (1.2 MW in the 2012 as-built record; FuelCell Energy reported 2 MW by 2020), five small wind turbines totaling 11.2 kW, a current 1.4 MW fuel-cell CHP plant, 2 MW/4 MWh lithium-ion storage and about 2.4 MW of existing diesel backup. The present 1.4 MW fuel cell replaced the original 1 MW unit, so both ratings must not be counted simultaneously.",
+    "status": "The expanded CERTS microgrid was completed in March 2012. FuelCell Energy reported successful islanded operation during California's 2020 public-safety power shutoffs, and a 2024 Alameda County document still describes Santa Rita's system as an operating county microgrid. The current 1.4 MW fuel cell is under a 20-year PPA announced in 2015. No 2025–2026 asset-level report discloses battery state of health, renewable output, availability or recent outage tests, so current operation is supported but detailed performance is not.",
+    "organizations": [
+      {"name": "Alameda County General Services Agency", "role": "Owner/host and county energy-program manager.", "sourceIds": ["srj-county", "srj-county-2024"]},
+      {"name": "Chevron Energy Solutions", "role": "Prime developer/integrator for the 2012 CERTS expansion.", "sourceIds": ["srj-completion", "srj-doe"]},
+      {"name": "Lawrence Berkeley National Laboratory / U.S. DOE", "role": "CERTS controls research, demonstration support and technical assessment.", "sourceIds": ["srj-lbnl", "srj-osti", "srj-doe"]},
+      {"name": "S&C Electric Company", "role": "Supplier/integrator of the PureWave storage-management system and fast switching/control package.", "sourceIds": ["srj-sc"]},
+      {"name": "FuelCell Energy", "role": "Owner/supplier/operator of the replacement 1.4 MW SureSource fuel-cell CHP under a 20-year PPA.", "sourceIds": ["srj-fce-ppa", "srj-fce-performance"]},
+      {"name": "PowerLight / SunPower", "role": "Developer lineage associated with the original rooftop/carport PV installation.", "sourceIds": ["srj-county"]}
+    ],
+    "specifications": [
+      {"label": "Battery", "value": "2 MW continuous/4 MWh lithium-ion, two hours at full output. Legacy 3 MW/2 MWh values likely mix peak power with energy and are not the LBNL/S&C as-built rating.", "sourceIds": ["srj-lbnl", "srj-sc", "srj-osti"]},
+      {"label": "Solar PV", "value": "1.2 MW in 2012 project records; FuelCell Energy reported 2 MW in its 2020 operating portfolio, suggesting later expansion or a broader accounting boundary. No source found reconciles the change.", "sourceIds": ["srj-lbnl", "srj-fce-performance"]},
+      {"label": "Fuel cell", "value": "Current 1.4 MW SureSource 1500 CHP at 12 kV, replacing the original 1 MW plant; recovered heat is used at the jail.", "sourceIds": ["srj-fce-ppa", "srj-ohr"]},
+      {"label": "Other generation", "value": "Five wind turbines totaling 11.2 kW and about 2.4 MW of pre-existing diesel backup. Manufacturer/model and current operability of the small wind fleet are not documented.", "sourceIds": ["srj-county", "srj-lbnl"]},
+      {"label": "Load and duration", "value": "Approximately 3 MW continuous secure load. Project reporting says storage plus DER can carry the jail for up to eight hours before diesel starts or utility service returns; this is not eight hours at the battery's 2 MW nameplate alone.", "sourceIds": ["srj-completion", "srj-sc"]},
+      {"label": "Energy mix", "value": "Grid power in normal operation, PV, natural-gas fuel-cell CHP, battery and emergency diesel, with negligible wind contribution. A current annual generation split was not found.", "sourceIds": ["srj-fce-performance", "srj-lbnl"]}
+    ],
+    "equipment": [
+      {"category": "BESS/controls", "manufacturer": "S&C Electric", "model": "PureWave Storage Management System", "detail": "2 MW/4 MWh lithium-ion storage, static disconnect and CERTS-compatible controls; cell maker/model not reliably disclosed.", "sourceIds": ["srj-sc", "srj-lbnl"]},
+      {"category": "Fuel-cell CHP", "manufacturer": "FuelCell Energy", "model": "SureSource 1500", "detail": "1.4 MW replacement plant with Cain Industries heat recovery, connected at 12 kV.", "sourceIds": ["srj-ohr", "srj-fce-ppa"]},
+      {"category": "Solar and wind", "detail": "Rooftop/carport PV plus five small wind turbines; detailed current bill of materials is unavailable.", "sourceIds": ["srj-county", "srj-lbnl"]}
+    ],
+    "technicalDetails": [
+      {"category": "Control architecture", "detail": "The battery inverter acts as the island voltage/frequency reference using CERTS droop control, coordinated through a fast static switch and distributed generator controls for automatic separation/resynchronization.", "sourceIds": ["srj-osti", "srj-sc"]},
+      {"category": "Demonstrated resilience", "detail": "FuelCell Energy says the microgrid operated through 2020 PSPS outages. The source provides no event-by-event load, duration or fuel-use dataset, so it is operational evidence rather than an audited reliability study.", "sourceIds": ["srj-fce-performance"]},
+      {"category": "Chemistry conflict", "detail": "DOE's project page calls the storage sodium-sulfur, while detailed LBNL, OSTI and S&C as-built records call it lithium-ion. The latter consensus is used here and the DOE discrepancy preserved.", "sourceIds": ["srj-doe", "srj-lbnl", "srj-sc"]},
+      {"category": "Economics", "detail": "S&C projected about US$100,000 in annual savings from peak management and grid services; no current audited realized-savings series was located.", "sourceIds": ["srj-sc"]}
+    ],
+    "sources": [
+      {"id": "srj-county", "title": "Santa Rita Jail Smart Grid Project", "url": "https://www.acgov.org/pdf/GSASmartGRIDProject.pdf", "publisher": "Alameda County", "kind": "primary"},
+      {"id": "srj-county-2024", "title": "Alameda County Board agenda: county microgrid services", "url": "https://www.alamedacountyca.gov/board/bos_calendar/documents/DocsAgendaReg_06_04_24/GENERAL%20ADMINISTRATION/Regular%20Calendar/GSA_368999.pdf", "publisher": "Alameda County", "kind": "primary"},
+      {"id": "srj-lbnl", "title": "A Green Prison: Santa Rita Jail campus microgrid", "url": "https://smartersmallbuildings.lbl.gov/publications/green-prison-santa-rita-jail-campus", "publisher": "Lawrence Berkeley National Laboratory", "kind": "primary"},
+      {"id": "srj-osti", "title": "CERTS Microgrid Demonstration with Large-Scale Energy Storage", "url": "https://www.osti.gov/biblio/1062100", "publisher": "U.S. Department of Energy OSTI", "kind": "primary"},
+      {"id": "srj-doe", "title": "ARRA SGDP Chevron Energy Solutions CERTS Microgrid Demonstration", "url": "https://www.energy.gov/oe/articles/arra-sgdp-chevron-energy-solutions-lp-certs-microgrid-demonstration-large-scale-energy", "publisher": "U.S. Department of Energy", "kind": "primary"},
+      {"id": "srj-sc", "title": "S&C energy storage system supports microgrid at California jail", "url": "https://www.pv-magazine.com/press-releases/sc-energy-storage-system-supports-microgrid-at-california-jail_10006614/", "publisher": "S&C Electric via pv magazine", "kind": "primary"},
+      {"id": "srj-completion", "title": "First-of-its-kind smart grid at Santa Rita Jail completed", "url": "https://www.prnewswire.com/news-releases/first-of-its-kind-smart-grid-at-santa-rita-jail-completed-by-alameda-county-and-chevron-energy-solutions-143801206.html", "publisher": "Alameda County and Chevron Energy Solutions", "kind": "primary"},
+      {"id": "srj-fce-performance", "title": "FuelCell Energy details microgrid performance successes", "url": "https://investor.fce.com/press-releases/press-release-details/2020/FuelCell-Energy-Details-Microgrid-Performance-Successes/default.aspx", "publisher": "FuelCell Energy", "kind": "primary"},
+      {"id": "srj-fce-ppa", "title": "FuelCell Energy and Alameda County announce 20-year PPA", "url": "https://investor.fce.com/press-releases/press-release-details/2015/FuelCell-Energy-and-County-of-Alameda-Announce-20-Year-Power-Purchase-Agreement-for-a-Multi-megawatt-Fuel-Cell-Power-Plant-at-Santa-Rita-Jail/default.aspx", "publisher": "FuelCell Energy", "kind": "primary"},
+      {"id": "srj-ohr", "title": "Santa Rita Jail fuel cell project", "url": "https://ohrenergy.com/projects/fuel-cell-projects/", "publisher": "OHR Energy", "kind": "primary"}
+    ]
+  },
+  "santiago-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Santiago is Cabo Verde's largest isolated island power system, not one facility-level microgrid. Its documented renewable portfolio includes the 5 MWp Palmarejo Grande solar plant commissioned in 2010, Cabeólica's original 9.35 MW wind farm (11 Vestas V52 turbines), and a December 2025 expansion adding 13.5 MW of wind plus a 6 MW/6 MWh battery. Thermal generation and the island grid remain essential; no current island-wide renewable percentage or full generation mix was found.",
+    "status": "The solar plant and original wind farm are operational. Cabeólica inaugurated the expanded Santiago wind farm and battery in December 2025, taking site wind capacity to approximately 22.85 MW (marketed as 23 MW). AfDB still labels the broader financing project ongoing with a 2027 completion horizon, apparently reflecting the multi-island/refinancing program rather than contradicting physical inauguration. No 2026 production or battery-throughput report was available.",
+    "organizations": [
+      {"name": "Cabeólica S.A.", "role": "Owner/operator of the wind farm and associated Phase II storage/expansion.", "sourceIds": ["santiago-cabeolica-history", "santiago-afc"]},
+      {"name": "Electra / EDEC", "role": "Island utility, grid operator/offtaker and thermal-generation operator.", "sourceIds": ["santiago-cabeolica-2023", "santiago-afdb"]},
+      {"name": "Martifer Solar", "role": "EPC/developer of the 5 MWp Palmarejo Grande solar plant.", "sourceIds": ["santiago-government-solar", "santiago-rtp"]},
+      {"name": "Vestas", "role": "Supplier of the original V52 turbines and long-term fleet service provider.", "sourceIds": ["santiago-cabeolica-history", "santiago-cabeolica-2024"]},
+      {"name": "Africa Finance Corporation / African Development Bank and partners", "role": "Financing partners for Cabeólica Phase II and its multi-island battery portfolio.", "sourceIds": ["santiago-afc", "santiago-afdb"]}
+    ],
+    "specifications": [
+      {"label": "Solar PV", "value": "5 MWp Palmarejo Grande plant, inaugurated November 2, 2010; detailed current annual output, module replacement and availability were not found.", "sourceIds": ["santiago-government-solar", "santiago-rtp"]},
+      {"label": "Original wind", "value": "9.35 MW from eleven Vestas V52 850 kW turbines. In 2023 it generated 28,086 MWh at 96.1% availability and supplied 11% of island electricity.", "sourceIds": ["santiago-cabeolica-history", "santiago-cabeolica-2023"]},
+      {"label": "2025 expansion", "value": "Three 4.5 MW turbines, 13.5 MW added, bringing total wind to 22.85 MW (rounded 23 MW). New turbine manufacturer/model was not confirmed in authoritative public material reviewed.", "sourceIds": ["santiago-inauguration", "santiago-afc"]},
+      {"label": "Battery", "value": "6 MW/6 MWh, one hour at rated output, commissioned with Phase II. Vendor, chemistry and model were not publicly established.", "sourceIds": ["santiago-inauguration", "santiago-afdb"]},
+      {"label": "Energy mix", "value": "Wind and solar reduce fuel use, but diesel/thermal generation remains the balancing and firm supply. The 11% figure is original-wind penetration in 2023, not total renewable share after the 2025 expansion.", "sourceIds": ["santiago-cabeolica-2023", "santiago-afc"]}
+    ],
+    "equipment": [
+      {"category": "Original wind turbines", "manufacturer": "Vestas", "model": "V52-850 kW", "detail": "Eleven units, 9.35 MW total; Vestas service was extended for eight years across the Cabeólica fleet.", "sourceIds": ["santiago-cabeolica-history", "santiago-cabeolica-2024"]},
+      {"category": "New wind turbines", "detail": "Three 4.5 MW units; exact manufacturer/model not verified.", "sourceIds": ["santiago-inauguration"]},
+      {"category": "BESS", "detail": "6 MW/6 MWh grid-support battery; supplier and chemistry undisclosed.", "sourceIds": ["santiago-afdb", "santiago-inauguration"]},
+      {"category": "Solar PV", "manufacturer": "Martifer Solar (EPC)", "detail": "5 MWp grid-connected plant at Palmarejo Grande.", "sourceIds": ["santiago-government-solar"]}
+    ],
+    "technicalDetails": [
+      {"category": "System boundary", "detail": "Santiago's assets are connected across an island utility grid. The battery supports variable-renewable integration, but public sources do not establish black start or island-wide autonomous microgrid control beyond the grid already being geographically isolated.", "sourceIds": ["santiago-afdb", "santiago-afc"]},
+      {"category": "2023 performance baseline", "detail": "The 28,086 MWh, 96.1% availability and 11% penetration metrics apply only to the original 9.35 MW wind farm before Phase II.", "sourceIds": ["santiago-cabeolica-2023"]},
+      {"category": "Program-status nuance", "detail": "Physical Phase II inauguration occurred in December 2025, while development-bank reporting keeps the wider financing program open through 2027. Asset status and financing-program status should not be conflated.", "sourceIds": ["santiago-inauguration", "santiago-afdb"]}
+    ],
+    "sources": [
+      {"id": "santiago-government-solar", "title": "Government launches/records Santiago and Sal solar plants", "url": "https://www.governo.cv/sal-e-praia-governo-lanca-primeira-pedra-para-a-construcao-de-duas-centrais-solares/", "publisher": "Government of Cabo Verde", "kind": "primary"},
+      {"id": "santiago-rtp", "title": "Martifer photovoltaic park inaugurated in Praia", "url": "https://www.rtp.pt/noticias/economia/segundo-parque-fotovoltaico-da-martifer-inaugurado-hoje-na-cidade-da-praia_n388284", "publisher": "RTP", "kind": "secondary"},
+      {"id": "santiago-cabeolica-history", "title": "Our history", "url": "https://cabeolica.com/en/a-nossa-historia/", "publisher": "Cabeólica", "kind": "primary"},
+      {"id": "santiago-cabeolica-2023", "title": "Cabeólica Annual Report 2023", "url": "https://cabeolica.com/wp-content/uploads/2024/PDF/RC-2023-EN.pdf", "publisher": "Cabeólica", "kind": "primary"},
+      {"id": "santiago-cabeolica-2024", "title": "Cabeólica Annual Report 2024", "url": "https://cabeolica.com/wp-content/uploads/2025/09/RC_2024_EN.pdf", "publisher": "Cabeólica", "kind": "primary"},
+      {"id": "santiago-inauguration", "title": "Santiago wind park expansion inaugurated", "url": "https://expressodasilhas.cv/pais/2025/12/06/parque-eolico-de-santiago-ganha-nova-vida-e-impulsiona-metas-renovaveis-do-pais/100283", "publisher": "Expresso das Ilhas", "kind": "secondary"},
+      {"id": "santiago-afc", "title": "Cabo Verde inaugurates major Cabeólica wind and battery expansion", "url": "https://www.africafc.org/news-and-insights/news/cabo-verde-inaugurates-major-expansion-of-cabeolica-wind-farm-and-battery-storage-enabled-by-afcs-catalytic-financing", "publisher": "Africa Finance Corporation", "kind": "primary"},
+      {"id": "santiago-afdb", "title": "Cabeólica Phase II", "url": "https://mapafrica.afdb.org/en/projects/46002-P-CV-F00-002", "publisher": "African Development Bank", "kind": "primary"}
+    ]
+  },
+  "samma-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Samma Island is Samma-do (also rendered Sammado or Three Ma Islands), a three-islet community—Sangma, Jungma and Hama—in Haenam County, Jeollanam-do, South Korea. Its 2014 hybrid project combined solar, wind, lithium-ion storage and existing diesel generation for 92 households/about 250 residents. Contemporary sources conflict between design/as-built stages: 120 kW PV, 30 kW wind and about 1.2 MWh storage appear in research documentation, while the commissioning announcement reports 140 kW PV and 60 kW wind. Later vendor material lists still another enlarged configuration, so these figures are retained with dates rather than merged.",
+    "status": "Renewable supply began September 18, 2014 and academic reporting describes regular operation from November 2014. A national audit later found that the analog diesel plant could not coordinate with the renewables/ESS, forcing continuous diesel operation and curtailing 32.2% of potential renewable output. A KEPCO KDN-led EMS retrofit subsequently reported renewable utilization rising from 26% to 72.4%. The latest asset-specific equipment/configuration material found indicates an operating hybrid system after the retrofit, but no 2022–2026 production, availability, battery-health or retirement record was found; current continuous operation therefore remains unverified.",
+    "organizations": [
+      {
+        "name": "Haenam County / Jeollanam-do",
+        "role": "Public community/project host for the Samma-do island energy installation.",
+        "sourceIds": ["samma-yonhap", "samma-audit"]
+      },
+      {
+        "name": "Wonkwang Electric Power Corporation",
+        "role": "Company identified in the commissioning report as the project builder/participating contractor.",
+        "sourceIds": ["samma-yonhap"]
+      },
+      {
+        "name": "KEPCO KDN",
+        "role": "Lead of the later EMS-improvement consortium that addressed renewable curtailment and diesel coordination; it should not be confused with proof that KEPCO built or owned the original system.",
+        "sourceIds": ["samma-kdn-report"]
+      },
+      {
+        "name": "TIS Co., Ltd.",
+        "role": "Controls/EMS vendor whose project reference lists a later Samma Island equipment configuration.",
+        "sourceIds": ["samma-tis"]
+      },
+      {
+        "name": "InCell",
+        "role": "ESS supplier identified in a Korean battery-industry project reference.",
+        "sourceIds": ["samma-incell"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "2014 research/as-designed configuration",
+        "value": "120 kW solar PV, 30 kW wind, 150 kW ESS power-conversion capacity and approximately 1,200–1,231 kWh of storage, serving an average load reported at 49 kW. The pre-existing internal-combustion fleet was reported at 720 kW in one technical table.",
+        "sourceIds": ["samma-auric", "samma-korean-report"]
+      },
+      {
+        "label": "2014 commissioning report",
+        "value": "140 kW solar plus 60 kW wind, for up to 200 kW of renewable supply, with three existing diesel units retained as backup. This likely reflects final or expanded scope but the source does not reconcile it to the 120/30 kW research configuration.",
+        "sourceIds": ["samma-yonhap"]
+      },
+      {
+        "label": "Later vendor-listed configuration",
+        "value": "TIS lists 205 kW PV, 40 kW wind, 200 kW PCS, a 1.2 MWh lithium battery and two diesel generators. The page does not date or explain the modifications, so this is treated as a later reference configuration rather than retroactively replacing the 2014 ratings.",
+        "sourceIds": ["samma-tis"]
+      },
+      {
+        "label": "Community scale",
+        "value": "92 households and about 250 residents at commissioning; the project covers three associated islets, not an island with a similarly romanized name elsewhere in Korea.",
+        "sourceIds": ["samma-yonhap", "samma-korean-report"]
+      },
+      {
+        "label": "Cost",
+        "value": "A contemporary design report gives KRW 3.34 billion; a later article discussing the audit cites KRW 5.3 billion, apparently for a broader/final scope. No final audited reconciliation was found.",
+        "sourceIds": ["samma-channel-a", "samma-audit"]
+      },
+      {
+        "label": "Post-retrofit energy mix",
+        "value": "KEPCO KDN's sustainability case reports solar 24%, wind 2% and diesel 74%, with renewable utilization increasing from 26% to 72.4%. These are retrofit case-study values, not a 2026 annual generation audit.",
+        "sourceIds": ["samma-kdn-report"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar PV",
+        "detail": "120 kW in design/academic documentation, 140 kW in the commissioning report and 205 kW in a later EMS-vendor reference; module and inverter models were not found.",
+        "sourceIds": ["samma-auric", "samma-yonhap", "samma-tis"]
+      },
+      {
+        "category": "Wind generation",
+        "detail": "30 kW in design documentation, 60 kW at commissioning and 40 kW in a later reference. Turbine manufacturer/model and the reason for the changing totals remain undisclosed.",
+        "sourceIds": ["samma-auric", "samma-yonhap", "samma-tis"]
+      },
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "InCell",
+        "detail": "Approximately 1.2 MWh lithium-ion storage; initial PCS was reported at 150 kW and a later EMS reference at 200 kW. Exact cell chemistry/model and replacement history were not found.",
+        "sourceIds": ["samma-incell", "samma-korean-report", "samma-tis"]
+      },
+      {
+        "category": "Diesel generation",
+        "detail": "Existing analog internal-combustion generation, reported as three units/720 kW in early documentation and two generators in the later vendor configuration.",
+        "sourceIds": ["samma-yonhap", "samma-korean-report", "samma-tis"]
+      },
+      {
+        "category": "Energy management system",
+        "manufacturer": "KEPCO KDN consortium / TIS",
+        "detail": "A later digital EMS/PCS-control retrofit coordinated diesel, storage and variable renewables; public materials do not establish one definitive commercial product name.",
+        "sourceIds": ["samma-kdn-report", "samma-tis"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Original control failure",
+        "detail": "The Korean audit found the older analog diesel equipment could not communicate with the ESS and renewable controls. Diesel therefore ran continuously and 32.2% of available renewable production was lost, meaning the project did not initially achieve its intended diesel-displacement performance.",
+        "sourceIds": ["samma-audit", "samma-korean-report"]
+      },
+      {
+        "category": "Retrofit outcome",
+        "detail": "KEPCO KDN later claimed the improved EMS increased renewable utilization from 26% to 72.4%, reduced diesel use by 41,532 litres per year and avoided about 140 tonnes of carbon annually. These figures are provider-reported and no independent measurement protocol was published in the source.",
+        "sourceIds": ["samma-kdn-report"]
+      },
+      {
+        "category": "Annual demand estimate",
+        "detail": "A contemporary report estimated annual electricity use at about 388,000 kWh. No recent load growth or customer-count data were located.",
+        "sourceIds": ["samma-channel-a"]
+      },
+      {
+        "category": "Identity/current-data gap",
+        "detail": "This record concerns Samma-do in Haenam, not KEPCO's better-documented Gasa Island demonstration. Public searches found no recent island-specific operator report, making 2026 status, renewable share and equipment condition uncertain.",
+        "sourceIds": ["samma-yonhap", "samma-kdn-report"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "samma-yonhap",
+        "title": "Haenam Samma-do begins renewable-energy electricity supply",
+        "url": "https://www.yna.co.kr/view/AKR20140917084900054",
+        "publisher": "Yonhap News Agency",
+        "kind": "secondary"
+      },
+      {
+        "id": "samma-channel-a",
+        "title": "Samma-do energy-independent island project",
+        "url": "https://ichannela.com/news/detail/66156428-2.do",
+        "publisher": "Channel A",
+        "kind": "secondary"
+      },
+      {
+        "id": "samma-auric",
+        "title": "Field study of the Samma-do convergence energy system",
+        "url": "https://auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=337942&returnVal=RD_R",
+        "publisher": "AURIC academic database",
+        "kind": "primary"
+      },
+      {
+        "id": "samma-audit",
+        "title": "Samma-do energy-independent island project fails to meet purpose",
+        "url": "https://www.hnews.co.kr/news/articleView.html?idxno=42750",
+        "publisher": "Haenam Newspaper",
+        "kind": "secondary"
+      },
+      {
+        "id": "samma-kdn-report",
+        "title": "KEPCO KDN Sustainability Report 2020",
+        "url": "https://ungc-production.s3.us-west-2.amazonaws.com/attachments/cop_2020/487249/original/KEP_KDN_Sustainability_Report%28KOREAN%29.pdf?1593750503=",
+        "publisher": "KEPCO KDN",
+        "kind": "primary"
+      },
+      {
+        "id": "samma-tis",
+        "title": "Samma Island EMS project reference",
+        "url": "https://www.tisys.co.kr/sub3_3.html",
+        "publisher": "TIS Co., Ltd.",
+        "kind": "primary"
+      },
+      {
+        "id": "samma-korean-report",
+        "title": "Korean island microgrid development report",
+        "url": "https://hanzhong.ii.re.kr/storage/report/BB0000005834.pdf",
+        "publisher": "Incheon Institute report repository",
+        "kind": "primary"
+      },
+      {
+        "id": "samma-incell",
+        "title": "InCell ESS project reference: Samma-do",
+        "url": "https://newenergyinfo.kr/17/?bmode=view&idx=1676093",
+        "publisher": "New Energy Information / InCell",
+        "kind": "primary"
+      }
+    ]
+  },
+  "samso-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Samsø is Denmark's community-led Renewable Energy Island transition, not a single islandable microgrid. It remains electrically connected to the Danish mainland, imports and exports through that interconnection, and has no published central microgrid controller or utility-scale battery. Its landmark portfolio is 11 MW of onshore wind (11 turbines), 23 MW of offshore wind (10 turbines) and four biomass/solar-assisted district-heating networks, with household solar, heat pumps and other distributed resources. Claims of '100% renewable' refer principally to annual accounting/net energy and should not be read as fossil-free supply every hour or across transport.",
+    "status": "The first transition reached its annual renewable-energy balance goal over roughly 1997–2007. The assets and community energy institutions remain active. In June 2025 the Danish Energy Agency extended the 23 MW offshore wind farm's production authorization from 2027 through 2037; Wind Estate is now the farm owner. Samsø's current climate plan targets a 70% greenhouse-gas reduction by 2030 versus 1990 and climate neutrality by 2050, while the Energy Academy's Island 2.0 work targets remaining fossil fuels, transport and equipment replacement. No evidence supports classifying the island as electrically islandable or continuously 100% renewable in 2026.",
+    "organizations": [
+      {
+        "name": "Samsø Municipality",
+        "role": "Local-government climate planner and sponsor of the island's continuing climate-neutrality program.",
+        "sourceIds": ["samso-municipality", "samso-climate-plan"]
+      },
+      {
+        "name": "Samsø Energy Academy",
+        "role": "Community knowledge center, facilitator and international dissemination organization for the transition and Island 2.0 program.",
+        "sourceIds": ["samso-academy-transition", "samso-island20"]
+      },
+      {
+        "name": "Samsø residents, cooperatives and municipal entities",
+        "role": "Owners/investors in much of the onshore wind and district-heating portfolio; historical reporting says islanders supplied about 70% of the approximately EUR 58 million transition investment.",
+        "sourceIds": ["samso-visitsamso", "samso-nordregio"]
+      },
+      {
+        "name": "Wind Estate A/S",
+        "role": "Current owner of the 10-turbine Samsø offshore wind farm and applicant for its life extension.",
+        "sourceIds": ["samso-dea-extension"]
+      },
+      {
+        "name": "Danish Energy Agency",
+        "role": "National regulator that authorized continued offshore-wind production through 2037.",
+        "sourceIds": ["samso-dea-extension"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Onshore wind",
+        "value": "11 turbines rated 1 MW each, 11 MW total. The original community transition involved mixed local ownership; a comprehensive current turbine-by-turbine ownership/model register was not located.",
+        "sourceIds": ["samso-visitsamso", "samso-nordregio"]
+      },
+      {
+        "label": "Offshore wind",
+        "value": "10 turbines rated 2.3 MW each, 23 MW total. The 2025 life-extension decision says the farm can supply annual electricity equivalent to roughly 20,000–25,000 households and may operate through 2037.",
+        "sourceIds": ["samso-dea-extension", "samso-visitsamso"]
+      },
+      {
+        "label": "Total landmark wind portfolio",
+        "value": "34 MW (11 MW onshore plus 23 MW offshore), not the legacy 21 MW figure. This is installed wind capacity, not island peak demand or guaranteed islanded supply.",
+        "sourceIds": ["samso-visitsamso", "samso-dea-extension"]
+      },
+      {
+        "label": "District heat",
+        "value": "Four local networks use straw and wood-chip boilers, with solar thermal at one network, and historically supplied about 70% of island heating demand from renewable sources. Remaining buildings use individual systems including heat pumps, pellet boilers and solar.",
+        "sourceIds": ["samso-municipality", "samso-visitsamso"]
+      },
+      {
+        "label": "Electric energy balance",
+        "value": "The municipality says Samsø produces more electricity than residents and visitors consume. This is an annual/net statement: mainland interconnection balances time-varying production and demand, and no annual 2026 generation-by-source table was found.",
+        "sourceIds": ["samso-municipality", "samso-academy-transition"]
+      },
+      {
+        "label": "Climate targets",
+        "value": "70% greenhouse-gas reduction by 2030 compared with 1990 and climate neutrality by 2050 under the municipal plan; the Academy also frames fossil-fuel phaseout by 2030 as the next transition objective.",
+        "sourceIds": ["samso-municipality", "samso-island20"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Onshore wind turbines",
+        "detail": "Eleven 1 MW-class machines. Public overview sources do not provide one reliable current model list, repowering status or fleet availability figure.",
+        "sourceIds": ["samso-visitsamso"]
+      },
+      {
+        "category": "Offshore wind turbines",
+        "manufacturer": "Bonus/Siemens predecessor fleet",
+        "detail": "Ten 2.3 MW turbines, 23 MW total. The regulator's life-extension decision governs continued production through 2037; no repowering was announced.",
+        "sourceIds": ["samso-dea-extension", "samso-offshore-extension"]
+      },
+      {
+        "category": "District-heating plants",
+        "detail": "Four community systems centered on locally sourced straw/wood-chip heat, with solar thermal in the northern network; equipment model and thermal-storage inventories are not published in current overview material.",
+        "sourceIds": ["samso-municipality", "samso-visitsamso"]
+      },
+      {
+        "category": "Distributed energy",
+        "detail": "Household/building PV, solar thermal, heat pumps and pellet systems supplement the large shared assets. No utility-scale battery was identified.",
+        "sourceIds": ["samso-municipality", "samso-island20"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Grid architecture",
+        "detail": "Samsø is connected to Denmark's power system and uses that grid to export surpluses and import during deficits. There is no evidence of black-start controls, an island-wide static switch, autonomous frequency control or critical-load islanding.",
+        "sourceIds": ["samso-municipality", "samso-academy-transition"]
+      },
+      {
+        "category": "Ownership model",
+        "detail": "Local ownership and cooperatives were central: residents and municipal/community entities invested directly in turbines and district heat rather than relying on one utility microgrid developer. Historical reporting attributes about 70% of the roughly EUR 58 million investment to 3,700 residents.",
+        "sourceIds": ["samso-visitsamso", "samso-nordregio"]
+      },
+      {
+        "category": "Carbon accounting",
+        "detail": "The Energy Academy reports annual renewable overproduction sufficient to offset remaining fossil use and describes a net carbon balance around negative 3.5 tonnes per resident. It is an accounting claim, not evidence that transport, heating and electricity are physically fossil-free at every moment.",
+        "sourceIds": ["samso-academy-transition"]
+      },
+      {
+        "category": "Next phase",
+        "detail": "Island 2.0 focuses on transport, biogas, heat pumps, replacing aging turbines/oil heating and continuing citizen participation. Specific commissioned capacities and completion dates for those future measures remain project-dependent.",
+        "sourceIds": ["samso-island20", "samso-climate-plan"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "samso-municipality",
+        "title": "Samsø as a climate-neutral island",
+        "url": "https://www.samsoe.dk/om-kommunen/samsoe-som-klimaneutral-oe/samsoe-som-klimaneutral-oe",
+        "publisher": "Samsø Municipality",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-academy-transition",
+        "title": "The Samsø transition",
+        "url": "https://energiakademiet.dk/transition/",
+        "publisher": "Samsø Energy Academy",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-island20",
+        "title": "Island 2.0",
+        "url": "https://energiakademiet.dk/island-2-0/",
+        "publisher": "Samsø Energy Academy",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-dea-extension",
+        "title": "Extended lifetime for offshore wind at Samsø: Danish Energy Agency grants production permit",
+        "url": "https://ens.dk/presse/forlaenget-levetid-havvind-paa-samsoe-energistyrelsen-giver-tilladelse-til-producere-stroem",
+        "publisher": "Danish Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-climate-plan",
+        "title": "Samsø Climate Action Plan 2020",
+        "url": "https://www.samsoe.dk/p/Kommunens%20strategier%20og%20planer/Samsoe-Klimahandlingsplan-2020_godkendt_26maj2020-C40-_wt.pdf",
+        "publisher": "Samsø Municipality",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-visitsamso",
+        "title": "Energy Academy",
+        "url": "https://www.visitsamsoe.dk/en/inspiration/energy-academy/",
+        "publisher": "VisitSamsø / Samsø Energy Academy",
+        "kind": "primary"
+      },
+      {
+        "id": "samso-nordregio",
+        "title": "Samsø Island: 100% wind powered and more",
+        "url": "https://archive.nordregio.org/Metameny/About-Nordregio/Journal-of-Nordregio/Journal-of-Nordregio-no-1-2011/Samso-Island-100-wind/index.html",
+        "publisher": "Nordregio",
+        "kind": "secondary"
+      },
+      {
+        "id": "samso-offshore-extension",
+        "title": "10-year lifetime extension for Samsø offshore wind farm",
+        "url": "https://ocean-energyresources.com/2025/06/05/10-year-lifetime-extension-for-samso/",
+        "publisher": "Ocean Energy Resources",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "santa-fe-community-college-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Santa Fe Community College (SFCC) has two nested, date-separated projects. A small educational greenhouse nanogrid was commissioned in 2021 with 12–12.5 kW of tracking PV and a 100 kW/85 kWh lithium battery. The full campus microgrid, launched June 2, 2026 after more than a decade of planning, integrates the college's existing 1.5 MW solar array, a 1 MW/770 kWh campus battery, a 1 MW natural-gas generator, controls and the earlier educational system. Older feasibility descriptions and the greenhouse battery's 170 kWh expansion ceiling should not be mistaken for final campus as-built ratings.",
+    "status": "The greenhouse educational microgrid was commissioned in July 2021. SFCC formally celebrated launch of the campus-wide microgrid on June 2, 2026 after receiving utility permission to operate. A 2026 procurement seeks Siemens microgrid-control support plus remote monitoring and operations/maintenance, consistent with a newly operational system entering its service phase. No post-launch islanding event, uptime, fuel use, battery throughput or realized savings report was available by July 20, 2026.",
+    "organizations": [
+      {
+        "name": "Santa Fe Community College",
+        "role": "Campus owner, host, educational operator and project sponsor.",
+        "sourceIds": ["sfcc-launch", "sfcc-solar"]
+      },
+      {
+        "name": "Siemens",
+        "role": "Lead microgrid/control partner for the campus project; SFCC's 2026 procurement names Siemens microgrid control support.",
+        "sourceIds": ["sfcc-launch", "sfcc-procurement", "sfcc-innovation"]
+      },
+      {
+        "name": "Microgrid Systems Laboratory (MSL)",
+        "role": "Developer/integrator for the greenhouse educational microgrid and early campus planning partner.",
+        "sourceIds": ["sfcc-msl", "sfcc-launch"]
+      },
+      {
+        "name": "Burns Engineering",
+        "role": "Engineering consultant for the campus electrical/microgrid design and published source for final major-asset ratings.",
+        "sourceIds": ["sfcc-burns"]
+      },
+      {
+        "name": "National Renewable Energy Laboratory and Sandia National Laboratories",
+        "role": "Federal technical and research partners supporting design, testing and educational use.",
+        "sourceIds": ["sfcc-launch", "sfcc-sandia"]
+      },
+      {
+        "name": "Public Service Company of New Mexico (PNM)",
+        "role": "Interconnecting utility that issued permission to operate before the 2026 launch.",
+        "sourceIds": ["sfcc-capital-report"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Campus solar PV",
+        "value": "1.5 MW from 4,620 fixed SunPower 327 W modules. SFCC originally projected the array would supply about 43% of campus electricity and save roughly US$200,000 annually; no recent measured share or savings audit was found.",
+        "sourceIds": ["sfcc-solar", "sfcc-burns"]
+      },
+      {
+        "label": "Campus battery",
+        "value": "1 MW/770 kWh, equivalent to about 0.77 hour at full rated output. Battery maker, cell chemistry and model are not disclosed in the current public project pages.",
+        "sourceIds": ["sfcc-burns"]
+      },
+      {
+        "label": "Campus firm generation",
+        "value": "1 MW natural-gas generator. Public sources do not identify the engine manufacturer/model, on-site fuel-storage arrangement or emissions/runtime limits.",
+        "sourceIds": ["sfcc-burns", "sfcc-procurement"]
+      },
+      {
+        "label": "Educational greenhouse nanogrid",
+        "value": "Approximately 12–12.5 kW of tracking PV and a 100 kW/85 kWh NEC lithium-ion battery serving an 11,000–12,000-square-foot greenhouse/classroom facility. The battery could be expanded to 170 kWh, but 170 kWh was not the commissioned capacity.",
+        "sourceIds": ["sfcc-msl", "sfcc-sandia"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Normally grid electricity plus campus solar, with battery shifting/support and natural gas for firm islanded operation. The launch material does not quantify current annual solar, gas or grid shares.",
+        "sourceIds": ["sfcc-launch", "sfcc-burns"]
+      },
+      {
+        "label": "Duration language",
+        "value": "Burns states that the PV, battery and gas generator can enable indefinite island operation. That is an engineering capability claim contingent on natural-gas availability and operating conditions, not a published endurance test.",
+        "sourceIds": ["sfcc-burns"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Campus solar PV",
+        "manufacturer": "SunPower",
+        "detail": "4,620 fixed 327 W modules, approximately 1.5 MW total, plus a separate 36-panel/11.8–12.5 kW educational tracking array.",
+        "sourceIds": ["sfcc-solar", "sfcc-msl"]
+      },
+      {
+        "category": "Campus battery energy storage",
+        "detail": "1 MW/770 kWh BESS; public project pages reviewed do not disclose manufacturer, model or chemistry.",
+        "sourceIds": ["sfcc-burns"]
+      },
+      {
+        "category": "Educational battery",
+        "manufacturer": "NEC Energy Solutions",
+        "detail": "100 kW/85 kWh lithium-ion BESS, designed with an expansion path to 170 kWh.",
+        "sourceIds": ["sfcc-msl", "sfcc-sandia"]
+      },
+      {
+        "category": "Microgrid control",
+        "manufacturer": "Siemens",
+        "detail": "Campus controller, monitoring and related control support. Earlier planning materials name Siemens Spectrum Power MGMS, but current procurement does not establish that every 2026 control component retained the exact early-design product/version.",
+        "sourceIds": ["sfcc-innovation", "sfcc-procurement"]
+      },
+      {
+        "category": "Backup generation",
+        "detail": "1 MW natural-gas generator; manufacturer and model not publicly identified.",
+        "sourceIds": ["sfcc-burns"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating modes",
+        "detail": "The campus system is designed to disconnect from the utility and sustain college loads using PV, storage and the gas generator, then resynchronize. The smaller greenhouse system initially used manual islanding/resynchronization and functions as a hands-on teaching platform.",
+        "sourceIds": ["sfcc-msl", "sfcc-burns"]
+      },
+      {
+        "category": "Controls evolution",
+        "detail": "The greenhouse installation provided a real-world development/test bed while the broader campus design matured. It is now described as integrated with the campus system, but its 100 kW inverter rating should not be added to the 1 MW campus battery as though both were one homogeneous storage unit.",
+        "sourceIds": ["sfcc-launch", "sfcc-msl"]
+      },
+      {
+        "category": "Interconnection milestone",
+        "detail": "A New Mexico capital-outlay report states PNM permission to operate had been received before the June 2026 launch, distinguishing actual operation from the many earlier feasibility and funding announcements.",
+        "sourceIds": ["sfcc-capital-report", "sfcc-launch"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "Because campus launch occurred only weeks before the research cutoff, there is no meaningful public operating history yet. Current status is commissioned/early operations, not proven long-duration resilience performance.",
+        "sourceIds": ["sfcc-launch", "sfcc-procurement"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sfcc-launch",
+        "title": "SFCC celebrates launch of campus microgrid after more than a decade of planning and partnership",
+        "url": "https://www.sfcc.edu/press/sfcc-celebrates-launch-of-campus-microgrid-after-more-than-a-decade-of-planning-and-partnership/",
+        "publisher": "Santa Fe Community College",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-burns",
+        "title": "Santa Fe Community College campus microgrid",
+        "url": "https://www.burns-group.com/project/santa-fe-community-college-sfcc-campus-microgrid/",
+        "publisher": "Burns Engineering",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-msl",
+        "title": "SFCC educational microgrid commissioned",
+        "url": "https://microgridsystemslab.com/2021/11/01/sfcc-educational-microgrid-commissioned/",
+        "publisher": "Microgrid Systems Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-sandia",
+        "title": "Santa Fe Community College microgrid project report",
+        "url": "https://www.sandia.gov/app/uploads/sites/163/2022/04/PR19_00_Imre.pdf",
+        "publisher": "Sandia National Laboratories",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-procurement",
+        "title": "SFCC RFP P09-26: Siemens Microgrid Control support and O&M",
+        "url": "https://www.governmentcontracts.us/government-contracts/opportunity-details/49822410495618864.htm?cts=68612",
+        "publisher": "Santa Fe Community College procurement listing",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-capital-report",
+        "title": "New Mexico Capital Outlay Quarterly Report, FY26 Q3",
+        "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Capital_Outlay_Quarterly_Reports/2026/May/0%20-%20FINAL_%241M%20or%20Greater%20Quarterly%20Report%20FY26%20Q3.pdf",
+        "publisher": "New Mexico Legislative Finance Committee",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-solar",
+        "title": "SFCC solar array",
+        "url": "https://www.sfcc.edu/resources/community-resources/sustainability-at-sfcc/solar-array/",
+        "publisher": "Santa Fe Community College",
+        "kind": "primary"
+      },
+      {
+        "id": "sfcc-innovation",
+        "title": "EDA grant awarded to SFCC microgrid partnership",
+        "url": "https://santafeinnovate.org/2017/07/26/eda-grant-awarded-to-sfips-microgrid-partnership/",
+        "publisher": "Santa Fe Innovates",
+        "kind": "primary"
+      }
+    ]
+  }
+}
