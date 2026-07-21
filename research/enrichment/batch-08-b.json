@@ -1,0 +1,1399 @@
+{
+  "sault-ste-marie": {
+    "researchedAt": "2026-07-20",
+    "summary": "The record combines three distinct ideas that should not be treated as one commissioned microgrid: Sault Ste. Marie's broad 2011 Smart Energy Strategy, a later proposed Utility Distribution Microgrid, and the narrower Sault Smart Grid (SSG) that PUC actually built. The 2011 strategy was not implemented as conceived, and PUC de-scoped the later microgrid business case to SSG. Launched in 2023, SSG is an operational, community-wide distribution-automation and voltage-optimization system serving roughly 33,600 customers; it is not an islandable microgrid and includes no project-owned generation or storage. Its value is measurable grid efficiency, outage mitigation, and a platform for future DER integration. In 2025 it saved an estimated 14.0 GWh, reduced peak demand by 2.732 MW, and prevented 906,201 customer-minutes of interruption, although its annual net benefit was still negative after operating costs. NRCan continued to label its funding file Active, but PUC's later reports establish that the physical system is fully operational.",
+    "status": "Operational since 2023 as the Sault Smart Grid, a citywide distribution-modernization project rather than an islandable microgrid. The earlier Smart Energy Strategy and Utility Distribution Microgrid concepts were not built in their original forms.",
+    "organizations": [
+      {
+        "name": "PUC Distribution Inc.",
+        "role": "Owner, regulated local electricity distributor, and operator of the Sault Smart Grid",
+        "sourceIds": ["sau-puc", "sau-final", "sau-annual"]
+      },
+      {
+        "name": "PUC Services Inc.",
+        "role": "Project manager for implementation",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "name": "Black & Veatch",
+        "role": "Engineering, procurement, construction, system-integration, testing, and commissioning partner",
+        "sourceIds": ["sau-final", "sau-bv"]
+      },
+      {
+        "name": "Survalent",
+        "role": "Supplier of the SurvalentONE advanced distribution management system and SmartVU interface",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "name": "PowerTel Utilities Contractors",
+        "role": "Field construction contractor",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "name": "Natural Resources Canada",
+        "role": "Federal Smart Grid Program funder",
+        "sourceIds": ["sau-nrcan", "sau-final"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Service territory",
+        "value": "Approximately 33,600 customers across 342 km²; the system includes two 115 kV-to-34.5 kV transformers, 14 distribution substations, and 12.5 kV and 4.2 kV circuits",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "label": "Implemented scope",
+        "value": "Advanced distribution management, distribution automation/FLISR, volt/VAR optimization and dynamic voltage reduction, outage management, communications, and integration of legacy AMI, GIS, and customer systems; no generation or energy storage was installed by SSG",
+        "sourceIds": ["sau-final", "sau-puc"]
+      },
+      {
+        "label": "Voltage-optimization coverage",
+        "value": "All twelve 12.5 kV substations were equipped for VVO/DVR; distribution-automation feeder coverage was reduced from the original concept during value engineering and budget control",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "label": "Implementation timeline",
+        "value": "Planning ran from 2018 to April 2021, EPC mobilization from May 2021 to January 2022, engineering/construction from February 2022 to March 2023, commissioning from October 2022 to March 2023, and optimization through September 2023",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "label": "2025 efficiency result",
+        "value": "Estimated 2.34% electricity saving, equal to 14,035,715 kWh and C$1,708,422 of avoided purchased power; PUC describes technical potential of up to 2.7%",
+        "sourceIds": ["sau-annual", "sau-puc"]
+      },
+      {
+        "label": "2025 resilience result",
+        "value": "Fourteen FLISR events and 906,201 avoided customer-minutes of interruption, compared with about 638,000 in 2024; PUC also reports more than 10,000 customers spared outages",
+        "sourceIds": ["sau-annual", "sau-puc"]
+      },
+      {
+        "label": "2025 peak and emissions result",
+        "value": "2,732 kW peak-demand reduction from a 117 MW peak and 517.35 tCO2e of annual GHG reduction, below the project's revised 785 tCO2e target",
+        "sourceIds": ["sau-annual"]
+      },
+      {
+        "label": "Cost and funding",
+        "value": "NRCan lists a C$42.806 million total project and C$10.6265 million federal contribution commitment. PUC's March 31, 2023 completion report recorded C$31,359,457.62 spent and C$7,658,222 of federal contribution received to that date; these figures describe different reporting dates/scopes rather than a single final cost",
+        "sourceIds": ["sau-nrcan", "sau-final"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Advanced distribution management system",
+        "manufacturer": "Survalent",
+        "model": "SurvalentONE / SmartVU",
+        "detail": "Common platform for SCADA, FLISR, VVO/DVR, and outage-management functions",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "category": "Voltage-regulator control",
+        "manufacturer": "Eaton Cooper Power",
+        "model": "CL-7",
+        "detail": "Field regulator controls integrated into the voltage-optimization scheme",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "category": "Transformer tap-changer control",
+        "manufacturer": "Beckwith Electric",
+        "model": "M-2001D",
+        "detail": "Substation transformer control used by the VVO/DVR implementation",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "category": "Substation monitoring and feeder automation",
+        "manufacturer": "Schweitzer Engineering Laboratories",
+        "model": "SEL-2414 and SEL-651R",
+        "detail": "Transformer monitor and recloser control hardware used in the field automation deployment",
+        "sourceIds": ["sau-final"]
+      },
+      {
+        "category": "Communications",
+        "detail": "Fiber and cellular communications link field devices and substations to the control platform",
+        "sourceIds": ["sau-final"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "SSG changes voltage setpoints, detects and isolates faults, restores healthy feeder sections, and consolidates outage and asset data. It cannot intentionally island the city and has no dedicated generation or storage, so describing it as a commissioned microgrid overstates the delivered scope.",
+        "sourceIds": ["sau-final", "sau-puc"]
+      },
+      {
+        "category": "Project evolution",
+        "detail": "The 2011 Smart Energy Strategy lacked a durable implementation/accountability structure. A 2016 Navigant business-case review then examined a Utility Distribution Microgrid, but subsequent PUC reviews de-scoped that proposal into the more economical SSG distribution-modernization program.",
+        "sourceIds": ["sau-history", "sau-oeb", "sau-city"]
+      },
+      {
+        "category": "DER readiness",
+        "detail": "The control and communications platform is intended to support future distributed-energy-resource adoption. That enabling capability should not be confused with DER assets already owned or installed by this project.",
+        "sourceIds": ["sau-final", "sau-nrcan"]
+      },
+      {
+        "category": "Economics",
+        "detail": "The 2025 annual report shows C$1.708 million of purchased-power savings but an annual net benefit of negative C$278,015 after operating costs; cumulative net benefit remained slightly positive at C$70,770. The result shows technical savings do not automatically translate to a positive result in every year.",
+        "sourceIds": ["sau-annual"]
+      },
+      {
+        "category": "Delivery risk",
+        "detail": "Pandemic disruption, supply-chain constraints, regulatory timing, and scope adjustments delayed delivery. The March 2023 public report described the project as roughly 85% complete at its reporting cutoff; later owner material confirms full operation.",
+        "sourceIds": ["sau-final", "sau-puc", "sau-annual"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sau-puc",
+        "title": "Sault Smart Grid",
+        "url": "https://www.puc.ca/about-puc/sault-smart-grid/",
+        "publisher": "PUC Services Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-final",
+        "title": "Sault Smart Grid Project Completion Public Report",
+        "url": "https://www.puc.ca/media/ztbd3pak/ssg-project-completion-public-report.pdf",
+        "publisher": "PUC Distribution Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-annual",
+        "title": "Sault Smart Grid Project Annual Report 2025",
+        "url": "https://www.puc.ca/media/30uncsnc/website-ssg-project-annual-report-2025-20260430.pdf",
+        "publisher": "PUC Distribution Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-nrcan",
+        "title": "Sault Smart Grid",
+        "url": "https://natural-resources.canada.ca/funding-partnerships/sault-smart-grid",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-bv",
+        "title": "Canada's First Citywide Smart Grid Boosts Energy Efficiency and Grid Resilience",
+        "url": "https://www.bv.com/projects/canadas-first-citywide-smart-grid-boosts-energy-efficiency-and-grid-resilience",
+        "publisher": "Black & Veatch",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-history",
+        "title": "Person, Place, Policy: Lessons from Sault Ste. Marie's Smart Energy Strategy",
+        "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/misc/person_place_policy_-_sault_ste._marie.pdf",
+        "publisher": "Wilson Center / Great Lakes Policy Research Network",
+        "kind": "secondary"
+      },
+      {
+        "id": "sau-oeb",
+        "title": "PUC Distribution Rate Application Supporting Evidence",
+        "url": "https://www.rds.oeb.ca/CMWebDrawer/Record/691697/File/document",
+        "publisher": "Ontario Energy Board filing by PUC Distribution Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "sau-city",
+        "title": "Sault Ste. Marie City Council Agenda, November 20, 2017",
+        "url": "https://saultstemarie.ca/Cityweb/media/City-Clerk/Council-Agendas/2017/2017_11_20_MERGED_AGENDA.pdf?ext=.pdf",
+        "publisher": "City of Sault Ste. Marie",
+        "kind": "primary"
+      }
+    ]
+  },
+  "sendai-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Sendai Microgrid was NEDO's 2004–2008 Microgrid Power Quality Supply System demonstration at Tohoku Fukushi University, designed and built by NTT Facilities. It is often misidentified as a Tohoku University project. The system combined two 350 kW city-gas engines, 50 kWp of PV, a 200 kW molten-carbonate fuel cell in the original configuration, and a fast power-quality supply backed by a 600 Ah VRLA battery. NTT Facilities continued managing it after the NEDO demonstration. During the March 11, 2011 earthquake, the external grid failure and voltage collapse initially stopped the engines; the battery/PV-backed highest-quality circuits continued until protective shutdown early the next morning. Operators then improvised provisional wiring, restarted the gas engines, and restored selected hospital and care-facility loads before the utility grid returned on March 14. This was a major resilience success, but not uninterrupted service to every load. Fuji Electric donated a 100 kW PAFC after the disaster, explaining why later descriptions differ from the original fuel-cell inventory. No authoritative asset-specific operating update after the early 2010s was located, so current operation and equipment condition are unverified.",
+    "status": "Historically operational and proven during the 2011 disaster; NTT Facilities continued operation after the 2008 demonstration, but present-day operating status and retained equipment could not be verified from an authoritative post-2013 source.",
+    "organizations": [
+      {
+        "name": "New Energy and Industrial Technology Development Organization (NEDO)",
+        "role": "Sponsor of the 2004–2008 Microgrid Power Quality Supply System demonstration",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "name": "NTT Facilities",
+        "role": "System designer, builder, demonstration participant, and post-demonstration manager",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "name": "Tohoku Fukushi University",
+        "role": "Host campus; its hospital and elderly-care facilities were critical loads",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "name": "Sendai City Gas Bureau",
+        "role": "Supplier of city gas through a medium-pressure pipeline that remained available after the earthquake",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "name": "Tohoku Electric Power",
+        "role": "External grid utility",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "name": "Fuji Electric",
+        "role": "Donor and manufacturer of the post-earthquake 100 kW phosphoric-acid fuel cell",
+        "sourceIds": ["sen-fuji"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Dispatchable generation",
+        "value": "Two 350 kW city-gas engine generators, 700 kW total",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "label": "Solar generation",
+        "value": "50 kWp photovoltaic array",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "label": "Fuel-cell chronology",
+        "value": "The original demonstration used a 200 kW molten-carbonate fuel cell. Fuji Electric supplied a 100 kW FP-100i phosphoric-acid fuel cell in July 2011 after the earthquake; sources that simply list a 200 kW PAFC conflate different phases",
+        "sourceIds": ["sen-nedo", "sen-fuji"]
+      },
+      {
+        "label": "Power-quality storage",
+        "value": "600 Ah valve-regulated lead-acid battery behind a 200 kVA Integrated Power Supply, with a 420 V DC bus",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "label": "Distribution architecture",
+        "value": "6.6 kV AC microgrid bus plus A-class 400 V three-phase, B1-class 200 V three-phase, and 300 V two-wire DC services; DC converters were rated 10 kW per unit in a two-active-plus-one-spare arrangement",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "label": "Illustrated normal load",
+        "value": "Approximately 700 kW total in the NEDO schematic, including about 180 kW A-class, 20 kW B1-class, 18 kW DC, and 130 kW B3-class load; the remainder included conventional C-class service",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "label": "Designed transfer performance",
+        "value": "No interruption for DC and A-class service and less than 15 ms for B1/B3/C-class transfers under designed conditions",
+        "sourceIds": ["sen-nedo"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Gas reciprocating generation",
+        "detail": "Two 350 kW gas engine generators connected to the 6.6 kV microgrid bus; manufacturer/model not disclosed in the cited NEDO report",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Photovoltaics",
+        "detail": "50 kWp array coupled to the system through the high-quality power architecture; module and inverter models not disclosed",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Original fuel cell",
+        "detail": "200 kW molten-carbonate fuel cell used in the demonstration-era configuration",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Replacement/donated fuel cell",
+        "manufacturer": "Fuji Electric",
+        "model": "FP-100i",
+        "detail": "100 kW phosphoric-acid fuel-cell package supplied in July 2011 for electricity and heat at the elderly-care facility",
+        "sourceIds": ["sen-fuji"]
+      },
+      {
+        "category": "Fast power-quality supply",
+        "detail": "200 kVA IPS with a 600 Ah VRLA battery feeding the 420 V DC link and high-priority circuits",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Thermal recovery",
+        "detail": "Post-demonstration CHP modifications recovered engine heat for space heating, hot water, and chilled water through absorption chillers",
+        "sourceIds": ["sen-nedo"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Site identity",
+        "detail": "The host was Tohoku Fukushi University in Sendai. Tohoku University is a different institution and should not be attached to this asset record.",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Earthquake sequence",
+        "detail": "On March 11, 2011, loss of the Tohoku grid and a voltage collapse stopped the gas engines and ordinary B3/C supply. The IPS battery plus PV supported DC/A/B1 loads until protective shutdown at about 02:06 on March 12. Operators installed provisional cabling and restarted the engines around noon, restoring selected A/B1/C loads; ventilators on B3 were bypass-fed that afternoon. Grid service returned at 08:16 on March 14.",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Fuel resilience",
+        "detail": "Sendai's medium-pressure city-gas network remained available because it was supplied by both LNG and a pipeline from Niigata. The distribution route mattered as much as the nominal generator fuel.",
+        "sourceIds": ["sen-nedo"]
+      },
+      {
+        "category": "Resilience interpretation",
+        "detail": "The event demonstrated prolonged local supply to life-safety functions, but it also exposed control-power and restart dependencies. Claims that the whole campus ran without interruption omit the overnight battery depletion and manual reconfiguration.",
+        "sourceIds": ["sen-nedo", "sen-ieee"]
+      },
+      {
+        "category": "Data gap",
+        "detail": "The latest authoritative asset-specific material located describes the early post-disaster period. It does not establish that the original engines, batteries, fuel cells, or multi-quality circuits remain in service in 2026.",
+        "sourceIds": ["sen-nedo", "sen-fuji"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sen-nedo",
+        "title": "The Sendai Microgrid Operational Experience in the Aftermath of the Tohoku Earthquake",
+        "url": "https://www.nedo.go.jp/content/100516763.pdf",
+        "publisher": "NEDO",
+        "kind": "primary"
+      },
+      {
+        "id": "sen-fuji",
+        "title": "Fuji Electric Donates Fuel Cell to Tohoku Fukushi University",
+        "url": "https://www.fujielectric.com/about/news/detail/11071901.html",
+        "publisher": "Fuji Electric",
+        "kind": "primary"
+      },
+      {
+        "id": "sen-ieee",
+        "title": "A Microgrid That Wouldn't Quit",
+        "url": "https://spectrum.ieee.org/a-microgrid-that-wouldnt-quit",
+        "publisher": "IEEE Spectrum",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "sino-danish-microgrid-collaboration-the-red-project-in-shanghai-china": {
+    "researchedAt": "2026-07-20",
+    "summary": "This entry refers to a research platform at Plant B of HT-Shanghai Solar Energy Science & Technology's photovoltaic manufacturing facility, not a generic Shenzhou commercial building. The hardware was installed from September to December 2013 under the Danish RED/HyMG collaboration and then used in the Sino-Danish MeTER_Demo research project from April 2014 through March 2017. A later government case study reports 206 kW total capacity: 136 kW rooftop PV, 20 kW of wind, and a 50 kW energy-storage system, with EMS and advanced metering/communications. An earlier AAU presentation labels the PV array 130 kVA; this likely reflects a design or reporting-basis difference and should be preserved rather than silently normalized. The platform investigated hierarchical control, distributed generation, interoperability, and component/system testing, and it produced a documented research program. MeTER_Demo is formally finished. The case study said the installation was operating and selling electricity to the grid during the project, but no authoritative post-2017 operating update was found, so current asset condition is unknown.",
+    "status": "Research and demonstration program completed in March 2017. The installation operated and exported electricity during the project, but continued operation after project close has not been verified.",
+    "organizations": [
+      {
+        "name": "Aalborg University",
+        "role": "Danish research lead and coordinator for hierarchical microgrid controls and project publications",
+        "sourceIds": ["red-aau", "red-program", "red-deck"]
+      },
+      {
+        "name": "Tsinghua University",
+        "role": "Chinese university research partner",
+        "sourceIds": ["red-aau"]
+      },
+      {
+        "name": "HT-Shanghai Solar Energy Science & Technology Co., Ltd.",
+        "role": "Plant B host, industrial partner, PV supplier, and private co-funder",
+        "sourceIds": ["red-aau", "red-case"]
+      },
+      {
+        "name": "Kamstrup",
+        "role": "Advanced-metering and communications partner",
+        "sourceIds": ["red-aau"]
+      },
+      {
+        "name": "State Grid Corporation of China",
+        "role": "Grid utility identified in the case study",
+        "sourceIds": ["red-case"]
+      },
+      {
+        "name": "Danish Energy Technology Development and Demonstration Program (EUDP)",
+        "role": "Public funding program for the Sino-Danish demonstration",
+        "sourceIds": ["red-program", "red-case"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Reported total capacity",
+        "value": "206 kW in the California Energy Commission/Navigant case study",
+        "sourceIds": ["red-case"]
+      },
+      {
+        "label": "Photovoltaics",
+        "value": "136 kW rooftop PV in the later case study; an earlier AAU project presentation labels an east-west, fixed-angle rooftop system 130 kVA",
+        "sourceIds": ["red-case", "red-deck"]
+      },
+      {
+        "label": "Wind generation",
+        "value": "20 kW total from two 10 kW turbines",
+        "sourceIds": ["red-case", "red-deck"]
+      },
+      {
+        "label": "Energy storage",
+        "value": "50 kW power rating; usable energy, chemistry, manufacturer, and model were not disclosed in the located sources",
+        "sourceIds": ["red-case", "red-deck"]
+      },
+      {
+        "label": "Installation and research period",
+        "value": "Hardware installed September–December 2013; testing and commissioning continued through the 2014–2017 MeTER_Demo project, formally dated April 1, 2014 to March 31, 2017",
+        "sourceIds": ["red-case", "red-aau"]
+      },
+      {
+        "label": "Project cost",
+        "value": "DKK 2.3 million, comprising DKK 1.0 million of RED/EUDP public funding and DKK 1.3 million from HT-Shanghai Solar",
+        "sourceIds": ["red-case"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Rooftop photovoltaics",
+        "detail": "East-west, fixed-angle array on the Plant B roof; reported as 130 kVA in an AAU presentation and 136 kW in the later case study",
+        "sourceIds": ["red-deck", "red-case"]
+      },
+      {
+        "category": "Small wind",
+        "detail": "Two 10 kW wind turbines, 20 kW total; manufacturer and model were not identified",
+        "sourceIds": ["red-deck", "red-case"]
+      },
+      {
+        "category": "Energy storage",
+        "detail": "50 kW storage system integrated into the EMS; duration and chemistry were not published in the located material",
+        "sourceIds": ["red-case"]
+      },
+      {
+        "category": "Controls and metering",
+        "detail": "Energy-management system, advanced metering infrastructure, and standardized smart-grid communications supported hierarchical control and component testing",
+        "sourceIds": ["red-aau", "red-case", "red-deck"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Project lineage",
+        "detail": "HyMG was the 2013 RED predecessor under which the physical platform was installed. MeTER_Demo was the 2014–2017 Sino-Danish research phase. Treating the two names as unrelated assets or using only one date loses the installation-versus-testing chronology.",
+        "sourceIds": ["red-program", "red-aau", "red-case"]
+      },
+      {
+        "category": "Research scope",
+        "detail": "The program studied distributed generation, hierarchical and multilevel control, advanced metering, standardized communications, interoperability, and both component-level and full-system testing.",
+        "sourceIds": ["red-aau", "red-deck"]
+      },
+      {
+        "category": "Commercial interaction",
+        "detail": "The case study described the microgrid as operational during the project and generating revenue by selling electricity to the utility. It did not publish annual generation, export volume, availability, or post-project revenue.",
+        "sourceIds": ["red-case"]
+      },
+      {
+        "category": "Site correction",
+        "detail": "The documented host was Plant B of an operating Shanghai Solar/HT-Shanghai Solar manufacturing facility. The label 'Shenzhou Commercial Building' is not supported by the primary project record.",
+        "sourceIds": ["red-case", "red-deck"]
+      },
+      {
+        "category": "Current-status gap",
+        "detail": "Aalborg University marks MeTER_Demo finished and lists its research outputs, but no source located confirms whether the hardware was retained, repowered, dismantled, or still interconnected after 2017.",
+        "sourceIds": ["red-aau", "red-program"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "red-aau",
+        "title": "Microgrid Technology Research and Demonstration (MeTER_Demo)",
+        "url": "https://vbn.aau.dk/en/projects/microgrid-technology-research-and-demonstration/",
+        "publisher": "Aalborg University",
+        "kind": "primary"
+      },
+      {
+        "id": "red-program",
+        "title": "CROM Research and Projects",
+        "url": "https://www.energy.aau.dk/research/research-groups/crom/research-and-projects",
+        "publisher": "Aalborg University",
+        "kind": "primary"
+      },
+      {
+        "id": "red-deck",
+        "title": "Research Challenges in Microgrid Control, Protection, and Demonstration",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2015/09/02-Guerrero-Research-Challenges-20150818.pdf",
+        "publisher": "Aalborg University / Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "red-case",
+        "title": "Microgrid Analysis and Case Studies Report",
+        "url": "https://www.energy.ca.gov/sites/default/files/2021-06/CEC-500-2018-022.pdf",
+        "publisher": "California Energy Commission and Navigant Consulting",
+        "kind": "primary"
+      }
+    ]
+  },
+  "solar-desalination-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This Baja California Sur record is best described as Yan (Jan) Kunczynski's evolving photovoltaic seawater reverse-osmosis research and commercialization lineage, associated with Sisyan and the La Paz area, rather than a conventional electricity microgrid. The published prototype scale is 1,000–5,000 US gallons per day (about 3.8–18.9 m³/day) of water. No reliable source supports the existing database's 100 kW power rating; it appears to confuse water-production or portfolio figures with electrical capacity. Contemporary reporting describes a progression from battery smoothing to direct solar-only operation, using multiple RO modules that could be dispatched as irradiance changed. Later Baja California Sur research describes a related multimodule PV-RO system with battery-state-of-charge dispatch, showing that configurations differed or continued to evolve. Regional systems attributed to Kunczynski reportedly reached up to 19 m³/day, product TDS below 250 mg/L, specific energy as low as 2.6 kWh/m³, and more than 70,000 solar-powered operating hours, but those portfolio metrics cannot all be assigned to one La Paz unit. Sisyan remains commercially active, while the exact original demonstrator's current location, equipment, and operating status are unverified.",
+    "status": "Historic research/prototype lineage with later regional deployments and an active commercial successor. The exact original La Paz installation's present operation is unverified; it should not be labeled a confirmed 100 kW operational microgrid.",
+    "organizations": [
+      {
+        "name": "Sisyan LLC",
+        "role": "Commercial developer of the photovoltaic reverse-osmosis approach",
+        "sourceIds": ["sd1-sisyan", "sd1-gtm"]
+      },
+      {
+        "name": "Yan (Jan) Kunczynski",
+        "role": "Inventor/researcher and Sisyan founder associated with the Baja California Sur systems",
+        "sourceIds": ["sd1-sisyan", "sd1-gtm", "sd1-paper"]
+      },
+      {
+        "name": "Universidad Autónoma de Baja California Sur",
+        "role": "Research partner on later multimodule PV-RO operation and control",
+        "sourceIds": ["sd1-paper"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Published water-production range",
+        "value": "1,000–5,000 US gallons per day, approximately 3.8–18.9 m³/day, in Kunczynski's original development paper",
+        "sourceIds": ["sd1-review"]
+      },
+      {
+        "label": "Electrical rating",
+        "value": "Not reliably published for the identified demonstrator. The database's 100 kW figure is unsupported by the located technical and historical sources",
+        "sourceIds": ["sd1-review", "sd1-gtm", "sd1-paper"]
+      },
+      {
+        "label": "Reported regional performance",
+        "value": "Related Baja California Sur systems were reported at up to 19 m³/day, product-water TDS below 250 mg/L, and specific energy as low as 2.6 kWh/m³; these are portfolio/field-system results, not a verified single-site specification",
+        "sourceIds": ["sd1-thesis"]
+      },
+      {
+        "label": "Reported endurance",
+        "value": "More than 70,000 entirely solar-powered operating hours over roughly eight years was reported for the regional technology deployment; attribution to the exact La Paz prototype is uncertain",
+        "sourceIds": ["sd1-thesis"]
+      },
+      {
+        "label": "Operating chronology",
+        "value": "Reporting in 2014 said the La Paz-area system had run for more than 12 years and evolved from battery smoothing to solar-only operation; 2019 proceedings describe a related Baja California Sur multimodule installation whose dispatch used battery state of charge",
+        "sourceIds": ["sd1-gtm", "sd1-paper"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar generation",
+        "detail": "Photovoltaic array sized to drive seawater reverse-osmosis modules; array capacity, module maker, and exact installation date were not reliably disclosed",
+        "sourceIds": ["sd1-review", "sd1-gtm"]
+      },
+      {
+        "category": "Reverse-osmosis trains",
+        "detail": "Multiple relatively small seawater RO modules could be started or stopped to follow available solar power",
+        "sourceIds": ["sd1-gtm", "sd1-paper"]
+      },
+      {
+        "category": "Motor drives",
+        "detail": "Sisyan's commercial architecture uses variable-frequency drives accepting DC photovoltaic input and avoids a conventional PV inverter stage; this is a company technology description and not proof of every original prototype component",
+        "sourceIds": ["sd1-sisyan"]
+      },
+      {
+        "category": "Energy recovery",
+        "detail": "Sisyan describes recovering pressure from the RO brine and applying it mechanically to the high-pressure pump shaft",
+        "sourceIds": ["sd1-sisyan", "sd1-paper"]
+      },
+      {
+        "category": "Electrical storage",
+        "detail": "Configuration varied by phase/site: the early system reportedly began with batteries and later ran solar-only, while a 2019 related system used a battery bank and state-of-charge-based module control",
+        "sourceIds": ["sd1-gtm", "sd1-paper"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "System classification",
+        "detail": "The plant couples PV directly to a flexible desalination process and uses product-water storage and modular load control. It is a renewable desalination plant or nanogrid-scale process system, not evidence of a community electricity microgrid with islanded distribution.",
+        "sourceIds": ["sd1-gtm", "sd1-sisyan"]
+      },
+      {
+        "category": "Solar-following control",
+        "detail": "Instead of forcing one large RO train to run continuously, the system dispatches smaller RO modules as irradiance and available electrical power change. Water production becomes the controllable load.",
+        "sourceIds": ["sd1-gtm", "sd1-paper"]
+      },
+      {
+        "category": "Storage strategy",
+        "detail": "The architecture can shift storage from electricity to elevated or tanked fresh water, reducing battery dependence. Located sources also show that some implementations retained batteries, so 'batteryless' should be tied to a specific phase rather than generalized.",
+        "sourceIds": ["sd1-gtm", "sd1-paper"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "Published results mix the original La Paz experiment, later remote-village plants, and Sisyan's commercial design. Ratings and performance are therefore labeled by source scope rather than combined into one synthetic installation.",
+        "sourceIds": ["sd1-sisyan", "sd1-gtm", "sd1-thesis"]
+      },
+      {
+        "category": "Current-status gap",
+        "detail": "Sisyan's current website confirms an active technology vendor, not that the original early-2000s plant remains installed or operating. No recent site-specific production or maintenance record was located.",
+        "sourceIds": ["sd1-sisyan"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sd1-sisyan",
+        "title": "Renewable Desalination",
+        "url": "https://renewabledesalination.com/",
+        "publisher": "Sisyan LLC",
+        "kind": "primary"
+      },
+      {
+        "id": "sd1-gtm",
+        "title": "Can Modular Desalination Provide Cheap, Clean Water and Demand Response Too?",
+        "url": "https://www.greentechmedia.com/articles/read/can-modular-desalination-provide-cheap-clean-water-and-demand-response-too",
+        "publisher": "Greentech Media",
+        "kind": "archive"
+      },
+      {
+        "id": "sd1-review",
+        "title": "Renewable Energy Powered Membrane Technology: A Review of the Reliability of Developed Systems",
+        "url": "https://www.deswater.com/readfulltextopenaccess.php?id=RFdUX2FydGljbGVzL1REV1RfSV8wN18wMS0wM190ZmphL1REV1RfQV8xMDUxMzE0MC9URFdUX0FfMTA1MTMxNDBfTy5wZGY%3D",
+        "publisher": "Desalination and Water Treatment",
+        "kind": "secondary"
+      },
+      {
+        "id": "sd1-thesis",
+        "title": "Sustainable Options for Desalination: A Look into Renewable Energies and Brine Disposal",
+        "url": "https://wedc-knowledge.lboro.ac.uk/resources/pubs/MIZUTANI-Douglas-Sustainable_Options_for_Desalination_-_A_look_into_Renewable_Energies_and_Brine_Disposal.pdf",
+        "publisher": "Loughborough University",
+        "kind": "secondary"
+      },
+      {
+        "id": "sd1-paper",
+        "title": "ANES Conference Proceedings: Photovoltaic Seawater Reverse-Osmosis Multimodule System in Baja California Sur",
+        "url": "https://anes.org.mx/wp-content/uploads/2019/11/MEMORIAS-COMPLETO.pdf",
+        "publisher": "Asociación Nacional de Energía Solar",
+        "kind": "primary"
+      }
+    ]
+  },
+  "solar-desalination-microgrid-2": {
+    "researchedAt": "2026-07-20",
+    "summary": "Elemental Water Makers commissioned this solar-driven seawater reverse-osmosis plant on Great Camanoe in the British Virgin Islands in July 2015 for a private retreat. Unlike the other solar-desalination record, this is a distinct, site-specific installation. A 12 kWp PV array supports roughly 12,500 L/day (about 3,300 US gal/day) of potable-water production. The system avoids electrochemical batteries by pumping seawater to an elevated buffer tank when solar power is available; gravity then maintains feed pressure, while a mechanical pressure intensifier recovers pressure from the brine to achieve the roughly 50 bar required by RO. The owner describes remote monitoring and a hurricane-rated solar structure. A current vendor case-study page continues to showcase the plant, but its embedded numeric widgets render as zeros and should not be treated as operating data. No recent site-specific availability, production, water-quality, or maintenance report was found, so operation after the dated case material remains unverified.",
+    "status": "Commissioned and operating in July 2015; retained as an Elemental Water Makers case study, but current operation and cumulative production have not been independently or recently verified.",
+    "organizations": [
+      {
+        "name": "Elemental Water Makers",
+        "role": "Developer, system integrator, commissioning party, and remote-monitoring provider",
+        "sourceIds": ["sd2-owner", "sd2-dws", "sd2-brochure"]
+      },
+      {
+        "name": "Private retreat owner, Great Camanoe",
+        "role": "Host and water off-taker; customer identity was not disclosed",
+        "sourceIds": ["sd2-owner", "sd2-delta"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Location",
+        "value": "Great Camanoe, British Virgin Islands, north of Tortola",
+        "sourceIds": ["sd2-delta", "sd2-owner"]
+      },
+      {
+        "label": "Commissioning",
+        "value": "Reported up and running on July 18, 2015",
+        "sourceIds": ["sd2-dws"]
+      },
+      {
+        "label": "Solar capacity",
+        "value": "12 kWp photovoltaic array",
+        "sourceIds": ["sd2-delta"]
+      },
+      {
+        "label": "Water production",
+        "value": "Approximately 12,500 L/day, or more than 3,300 US gallons/day",
+        "sourceIds": ["sd2-owner", "sd2-dws", "sd2-delta"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "None; solar energy is effectively time-shifted by pumping seawater to an elevated buffer and by storing product water",
+        "sourceIds": ["sd2-dws", "sd2-delta"]
+      },
+      {
+        "label": "RO operating pressure",
+        "value": "Approximately 50 bar; pressure recovery reduced the required terrain elevation from roughly 500 m without recovery to about 90 m in the site's design analysis",
+        "sourceIds": ["sd2-delta"]
+      },
+      {
+        "label": "Reported economics",
+        "value": "TU Delft's project account cited estimated production cost of €1–3/m³ versus local water cost of €6–7/m³; this is an early project estimate, not a current audited tariff",
+        "sourceIds": ["sd2-delta"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaics",
+        "detail": "12 kWp solar array on a hurricane-rated mounting structure; module and inverter models were not disclosed",
+        "sourceIds": ["sd2-owner", "sd2-delta"]
+      },
+      {
+        "category": "Seawater intake",
+        "detail": "Solar-powered intake pump lifts seawater to an elevated buffer tank; the owner says it is the only electrically driven pump required by the gravity configuration",
+        "sourceIds": ["sd2-owner", "sd2-dws"]
+      },
+      {
+        "category": "Elevated feed storage",
+        "detail": "Saltwater buffer supplies steady hydrostatic pressure, allowing desalination to continue beyond instantaneous solar production without batteries",
+        "sourceIds": ["sd2-dws", "sd2-delta"]
+      },
+      {
+        "category": "Energy-recovery device",
+        "detail": "Piston-based mechanical pressure intensifier transfers pressure from concentrated brine to incoming seawater; manufacturer/model not disclosed",
+        "sourceIds": ["sd2-dws", "sd2-delta"]
+      },
+      {
+        "category": "Reverse osmosis",
+        "detail": "Seawater RO train producing about 12.5 m³/day; membrane and pressure-vessel models were not published",
+        "sourceIds": ["sd2-owner", "sd2-dws"]
+      },
+      {
+        "category": "Monitoring",
+        "detail": "Remote monitoring was included for the isolated private-retreat installation",
+        "sourceIds": ["sd2-owner", "sd2-dws"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Energy architecture",
+        "detail": "PV power is used when available to lift seawater. Gravity and recovered brine pressure then perform much of the RO pressurization, substituting hydraulic and water storage for a battery bank.",
+        "sourceIds": ["sd2-dws", "sd2-delta"]
+      },
+      {
+        "category": "System classification",
+        "detail": "This is a standalone renewable water-production system rather than a general-purpose electric microgrid serving a community load. Its resilience metric is potable-water availability, not electrical islanding capacity.",
+        "sourceIds": ["sd2-owner", "sd2-brochure"]
+      },
+      {
+        "category": "Brine handling",
+        "detail": "The vendor describes energy recovery and mixing/dilution strategies that reduce discharge salinity, but site-specific discharge monitoring results were not published.",
+        "sourceIds": ["sd2-brochure"]
+      },
+      {
+        "category": "Data-quality caution",
+        "detail": "The current project webpage's live-performance fields display zero values, apparently because an embedded widget is inactive. The independently stated 12,500 L/day design capacity is the defensible figure; zeros are not evidence that the plant has shut down.",
+        "sourceIds": ["sd2-owner", "sd2-dws"]
+      },
+      {
+        "category": "Current-status gap",
+        "detail": "The commissioning and owner case study establish that the plant existed and operated, but no dated post-2021 site report confirms membrane replacements, hurricane damage, uptime, or current output.",
+        "sourceIds": ["sd2-owner", "sd2-dws"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sd2-owner",
+        "title": "Solar Desalination in the British Virgin Islands",
+        "url": "https://www.elementalwatermakers.com/projects/desalination-bvi-1/",
+        "publisher": "Elemental Water Makers",
+        "kind": "primary"
+      },
+      {
+        "id": "sd2-dws",
+        "title": "First Solar Driven Desalination Plant by Elemental Water Makers Up and Running on Virgin Island",
+        "url": "https://www.dutchwatersector.com/news/first-solar-driven-desalination-plant-by-elemental-water-makers-up-and-running-on-virgin",
+        "publisher": "Dutch Water Sector",
+        "kind": "primary"
+      },
+      {
+        "id": "sd2-delta",
+        "title": "Sun Plus Sea Equals Drinking Water",
+        "url": "https://delta.tudelft.nl/en/article/sun-plus-sea-equals-drinking-water",
+        "publisher": "TU Delft Delta",
+        "kind": "secondary"
+      },
+      {
+        "id": "sd2-brochure",
+        "title": "Sustainable Desalination Brochure",
+        "url": "https://www.elementalwatermakers.com/wp-content/uploads/2020/03/Brochure-Sustainable-Desalination-Elemental-Water-Makers-2020.pdf",
+        "publisher": "Elemental Water Makers",
+        "kind": "primary"
+      }
+    ]
+  },
+  "southampton-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "Southampton's NY Prize work ended as a Stage 1 feasibility study; the proposed community microgrid was not built. The August 2016 study modeled a Village of Southampton system serving Southampton Hospital and other municipal, school, water, business, and residential loads. The concept combined existing emergency generators and small PV arrays with a new 1.5 MW hospital CCHP plant, a 2 MW natural-gas reciprocating engine at the Department of Public Works, 300 kW of new PV, and a 200 kW/800 kWh battery. It assumed a third-party microgrid energy-services company would finance and operate new DER while PSEG Long Island retained the distribution system. The base economic case projected a 1.1 benefit-cost ratio; a much stronger case depended on crediting an avoided transmission upgrade. The capital plan also assumed a hypothetical $7 million of NYSERDA support. Southampton was not among the 11 projects selected for NY Prize Stage 2 in 2017, and no evidence of procurement, permitting, financing, or construction was found through July 2026. The town's current webpage merely hosts the old report and is not evidence of an active project.",
+    "status": "Feasibility-only; Stage 1 report completed in 2016, not selected for NY Prize Stage 2, and no build was identified.",
+    "organizations": [
+      {
+        "name": "Town of Southampton",
+        "role": "NY Prize applicant and study sponsor",
+        "sourceIds": ["sou-study", "sou-town"]
+      },
+      {
+        "name": "Global Common LLC",
+        "role": "Lead feasibility-study consultant and proposed project developer",
+        "sourceIds": ["sou-study", "sou-developer"]
+      },
+      {
+        "name": "GE Energy Consulting",
+        "role": "Electrical-system, dispatch, and economic modeling consultant",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "name": "D&B Engineers and Architects",
+        "role": "Engineering consultant",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "name": "Burns Engineering",
+        "role": "Engineering consultant",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "name": "PSEG Long Island",
+        "role": "Distribution utility that would have retained ownership and operation of the electrical distribution system",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "name": "National Grid",
+        "role": "Natural-gas utility assumed to supply proposed dispatchable generators",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "name": "New York State Energy Research and Development Authority",
+        "role": "NY Prize Stage 1 funder and selection authority",
+        "sourceIds": ["sou-study", "sou-stage2"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Modeled service area",
+        "value": "Southampton Hospital and other critical facilities plus approximately 150 small businesses and 800 residences in the Village of Southampton",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Modeled load",
+        "value": "5.332 MW coincident peak, 5.980 MW non-coincident peak, and 23.437 GWh annual consumption; the hospital represented about 1.515 MW and 6.784 GWh",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Proposed DER capacity",
+        "value": "Approximately 6.25 MW of existing and new generation/storage power capacity, plus demand curtailment",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Proposed new thermal generation",
+        "value": "1.5 MW natural-gas CCHP at the hospital and 2.0 MW natural-gas reciprocating generation at the Department of Public Works",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Existing backup generation modeled",
+        "value": "Two 800 kW dual-fuel hospital generators, 200 kW high-school natural-gas generator, and 343 kW police natural-gas generator; another 78 kW of small backup units was noted but not assumed interconnected",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Solar and storage concept",
+        "value": "Existing 100 kW and 10 kW PV, proposed 300 kW elementary-school PV, and proposed 200 kW/800 kWh battery at the Suffolk County Water Authority site",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Demand and thermal measures",
+        "value": "126 kW of dispatchable load curtailment and a hospital absorption chiller estimated to reduce electrical peak by about 289 kW",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Modeled capital structure",
+        "value": "$11.989 million project capital, including a hypothetical $7 million of NYSERDA grant support; this was a feasibility assumption, not money awarded or spent on construction",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "label": "Modeled economics",
+        "value": "Without an avoided transmission upgrade: $3.87 million NPV, 1.1 benefit-cost ratio, and 9.3% IRR. With the avoided-upgrade benefit: $24.2 million NPV, 1.6 benefit-cost ratio, and 28.1% IRR",
+        "sourceIds": ["sou-study"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Proposed CCHP",
+        "detail": "1.5 MW natural-gas hospital plant with heat recovery and absorption chilling; vendor and model were deferred to a later project stage that did not occur",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Proposed reciprocating generation",
+        "detail": "2.0 MW natural-gas unit at the Department of Public Works; manufacturer/model not selected",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Proposed battery",
+        "detail": "200 kW/800 kWh, four-hour storage system at the water-authority site; chemistry and supplier not selected",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Proposed solar",
+        "detail": "300 kW array at Southampton Elementary School in addition to 110 kW of existing PV identified by the study",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Proposed controls and switchgear",
+        "detail": "Microgrid controller, protective relaying, sectionalizing, and utility coordination were conceptual; vendors and final interconnection design were left for Stage 2",
+        "sourceIds": ["sou-study"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Ownership model",
+        "detail": "The study proposed a third-party microgrid energy-services company to finance, own, and operate new DER. PSEG Long Island would continue owning and operating distribution infrastructure, requiring contractual and operational coordination.",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Modeling method",
+        "detail": "DER-CAM and engineering/economic studies sized and dispatched a conceptual portfolio. Modeled results are not as-built performance, equipment orders, or interconnection approvals.",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Economic dependency",
+        "detail": "The strongest benefit case depended on avoiding a transmission investment and on substantial grant funding. Removing the avoided-upgrade credit reduced the benefit-cost ratio to only 1.1.",
+        "sourceIds": ["sou-study"]
+      },
+      {
+        "category": "Program outcome",
+        "detail": "NYSERDA selected 11 Stage 2 projects in March 2017. The Long Island selections included Huntington, Rockville Centre, and Freeport, but not Southampton.",
+        "sourceIds": ["sou-stage2"]
+      },
+      {
+        "category": "Current-status interpretation",
+        "detail": "The town and developer still make the feasibility report available, but no primary evidence was found for later awards, contracts, construction, commissioning, or operations. It should remain a feasibility-study record.",
+        "sourceIds": ["sou-town", "sou-developer", "sou-stage2"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sou-study",
+        "title": "Southampton Community Microgrid NY Prize Stage 1 Feasibility Study",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/7-Town-of-Southampton.pdf",
+        "publisher": "Town of Southampton / NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "sou-town",
+        "title": "Southampton Community Microgrid",
+        "url": "https://www.southamptontownny.gov/2353/Southampton-Community-Microgrid",
+        "publisher": "Town of Southampton",
+        "kind": "primary"
+      },
+      {
+        "id": "sou-stage2",
+        "title": "NY Prize Announces Stage 2 Microgrid Winners",
+        "url": "https://www.microgridknowledge.com/google-news-feed/article/11431561/ny-prize-announces-stage-2-microgrid-winners-sweetens-the-pot-by-50m-per-finalist",
+        "publisher": "Microgrid Knowledge",
+        "kind": "secondary"
+      },
+      {
+        "id": "sou-developer",
+        "title": "Southampton Reliable Energy Project",
+        "url": "https://globalcommon.com/southampton-reliable-energy-project/",
+        "publisher": "Global Common LLC",
+        "kind": "primary"
+      }
+    ]
+  },
+  "st-helena-island-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "St Helena's island power system remains an operational diesel-wind-solar hybrid operated by Connect Saint Helena, but recent evidence is a deterioration story rather than a completed renewable transition. The installed renewable fleet historically comprised twelve 80 kW WES wind turbines (960 kW) and five named solar installations totaling about 678 kW nominal. The principal active diesel fleet is four Caterpillar sets totaling 5.6 MW, with two older 1 MW RK215 sets also listed historically. A 2020 PASH contract announced 568 kWp of solar, 2.7 MW of wind, and a 3.2 MWh/3.5 MW battery, but COVID-era cost escalation and supply constraints led to termination in November 2021; talks with a reserve bidder also failed in 2022, and nothing was installed. Audit St Helena reports renewable share falling from about 21% in FY2021/22 to 19% in FY2022/23 and 13% in FY2023/24; the regulator reported only 11% in FY2024/25. Wind output fell sharply as the 12 aging turbines—now roughly 12–26 years old—became less available. The island remains diesel-dominant and has suffered generator failures, load shedding, subsidy pressure, and a nine-hour outage in January 2023. Government's revised target is 80% renewable electricity by FY2027/28, but the 2026 audit found planning and delivery weak and did not identify a commissioned replacement project.",
+    "status": "Operational island grid, currently diesel-dominant with aging wind assets and declining renewable share. The 2020 PASH renewable-plus-storage expansion was cancelled in 2021 and never installed; an 80% renewable target for FY2027/28 remains a plan.",
+    "organizations": [
+      {
+        "name": "Connect Saint Helena Ltd.",
+        "role": "State-owned electricity utility and operator of diesel, wind, and solar generation and the island network",
+        "sourceIds": ["sth-audit", "sth-plan", "sth-pash"]
+      },
+      {
+        "name": "St Helena Government",
+        "role": "Utility owner, policymaker, subsidy provider, and sponsor of renewable procurement",
+        "sourceIds": ["sth-audit", "sth-pash"]
+      },
+      {
+        "name": "Wind Energy Solutions / Ecoways",
+        "role": "Supplier lineage for the twelve WES80 wind turbines",
+        "sourceIds": ["sth-plan", "sth-wes"]
+      },
+      {
+        "name": "PASH Global",
+        "role": "Selected developer under the 2020 power-purchase agreement that was terminated in 2021 before construction",
+        "sourceIds": ["sth-audit", "sth-pash"]
+      },
+      {
+        "name": "Audit St Helena",
+        "role": "Independent public auditor of Energy Strategy implementation",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "name": "St Helena Utility Regulatory Authority",
+        "role": "Utility regulator; its FY2024/25 assessment is cited by the 2026 audit",
+        "sourceIds": ["sth-audit"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Installed wind fleet",
+        "value": "Twelve WES18/80 turbines rated 80 kW each, 960 kW nominal total; installed in three cohorts beginning in 1999, around 2008/09, and 2013/14",
+        "sourceIds": ["sth-plan", "sth-planning", "sth-wes"]
+      },
+      {
+        "label": "Installed solar fleet",
+        "value": "Five facilities totaling approximately 678 kW nominal: Seales 25 kW, PS 41 41 kW, Carnarvon 20 kW, CCC 92 kW, and Rifle Range 500 kW",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "label": "Principal diesel fleet",
+        "value": "Three 1.6 MW Caterpillar 3516B sets plus one 800 kW Caterpillar 3508B, 5.6 MW total, installed in 2012; two older 1 MW RK215 sets were also listed historically but were not shown generating in the 2018/19 operational data",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "label": "FY2022/23 energy mix",
+        "value": "Approximately 8.312 GWh diesel, 0.979 GWh wind, and 0.927 GWh solar—about 81% diesel and 19% renewable",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "label": "Renewable-share trend",
+        "value": "About 21% in FY2021/22, 19% in FY2022/23, 13% in FY2023/24, and 11% in FY2024/25 according to the regulator cited by Audit St Helena",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "label": "Wind-output deterioration",
+        "value": "Annual wind generation fell from 2.453 GWh in FY2015/16 to 0.979 GWh in FY2022/23 as turbines aged and fewer remained operational",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "label": "Cancelled PASH announced scope",
+        "value": "May 2020 announcement: 568 kWp/500 kW solar, 2.7 MW from three wind turbines, and a 3.2 MWh/3.5 MW battery, expected to supply 9.133 GWh/year. Audit documentation describes an earlier/contract scope of 500 kWp solar, 1.8 MW wind, and 2.7 MWh battery; neither version was built",
+        "sourceIds": ["sth-pash", "sth-audit"]
+      },
+      {
+        "label": "Renewable target",
+        "value": "80% renewable electricity by FY2027/28 under the 2023 Renewable Energy Policy and Connect's August 2024 Energy Delivery Plan; this is a policy target, not installed capacity",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "label": "Historic baseline",
+        "value": "In 2012/13 the island generated 9.666 GWh, with 9.13% from renewables and roughly 2.2 million litres of diesel consumed for electricity",
+        "sourceIds": ["sth-baseline"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Wind Energy Solutions",
+        "model": "WES18/80 (also marketed as WES80)",
+        "detail": "Twelve 80 kW two-bladed turbines, roughly 18 m tower height and 8 m blades, installed in cohorts over 1999–2014",
+        "sourceIds": ["sth-plan", "sth-planning", "sth-wes"]
+      },
+      {
+        "category": "Diesel generation",
+        "manufacturer": "Caterpillar",
+        "model": "3516B",
+        "detail": "Three 1.6 MW units installed in 2012",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "category": "Diesel generation",
+        "manufacturer": "Caterpillar",
+        "model": "3508B",
+        "detail": "One 800 kW unit installed in 2012",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "category": "Legacy diesel generation",
+        "model": "RK215",
+        "detail": "Two 1 MW units installed in 2001 and retained in historic inventory; the 2018/19 table did not show them operating",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "category": "Solar photovoltaics",
+        "detail": "Five named solar facilities totaling 678 kW nominal by 2019; manufacturer and inverter models were not listed in the infrastructure plan",
+        "sourceIds": ["sth-plan"]
+      },
+      {
+        "category": "Cancelled battery",
+        "detail": "PASH's planned lithium-ion or other chemistry was not identified in the public announcement; the 3.2 MWh/3.5 MW announced system was never installed",
+        "sourceIds": ["sth-pash", "sth-audit"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "PASH chronology",
+        "detail": "Connect signed the renewable PPA in May 2020. COVID-related inflation, material costs, and long lead times undermined the agreed economics, and the agreement was terminated November 15, 2021. Talks with the reserve bidder from February to July 2022 failed because its 2018 offer was no longer viable; procurement then ended.",
+        "sourceIds": ["sth-audit", "sth-pash"]
+      },
+      {
+        "category": "Reliability",
+        "detail": "Generator failures and inadequate available reserve contributed to early-2023 load shedding; a generator failure on January 2, 2023 caused a roughly nine-hour outage. The evidence shows an island grid under asset-health pressure, not simply a renewable percentage shortfall.",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "category": "Asset condition",
+        "detail": "By the 2026 audit, the wind fleet was roughly 12–26 years old and fewer of the twelve machines were operable. Diesel units were also about 12 years old. Published nameplate capacity therefore overstates dependable capacity.",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "category": "Economics",
+        "detail": "Diesel dependence exposed the utility and government to fuel-price pressure. Government support and diesel-related rebates totaled about £2.7 million in FY2023/24, according to the audit.",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "category": "Delivery outlook",
+        "detail": "The current 80% target replaced the unrealized 100% ambition. Audit St Helena found that planning had advanced more than implementation and that no completed replacement build closed the capacity gap by early 2026.",
+        "sourceIds": ["sth-audit"]
+      },
+      {
+        "category": "Energy-mix interpretation",
+        "detail": "The island is a real hybrid microgrid because diesel, wind, and solar are dispatched within one isolated network. It is not a high-renewables microgrid at present: FY2024/25 renewable contribution was reported at only 11%.",
+        "sourceIds": ["sth-audit"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sth-audit",
+        "title": "Performance Audit: Implementation of St Helena's Energy Strategy",
+        "url": "https://www.sainthelena.gov.sh/app/uploads/2026/05/Sessional-Paper-13-Audit-SH-Performance-Audit-Implementation-of-St-Helenas-Energy-Strategy.pdf",
+        "publisher": "Audit St Helena",
+        "kind": "primary"
+      },
+      {
+        "id": "sth-pash",
+        "title": "Connect Saint Helena Ltd Signs Contract with PASH to Meet 100% Renewable Energy Target",
+        "url": "https://www.sainthelena.gov.sh/connect-saint-helena-ltd-signs-contract-with-pash-to-meet-100-renewable-energy-target-2/",
+        "publisher": "St Helena Government",
+        "kind": "primary"
+      },
+      {
+        "id": "sth-planning",
+        "title": "Executive Council Memorandum: Wind Turbine Planning Application",
+        "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2020/02/ExCo-Memo-Wind-Turbine-15-2020.pdf",
+        "publisher": "St Helena Government",
+        "kind": "primary"
+      },
+      {
+        "id": "sth-plan",
+        "title": "St Helena 2030 Vision and Infrastructure Plan",
+        "url": "https://www.sainthelena.gov.sh/documents/St-Helena-2030-Vision-and-Infrastructure-Plan-.pdf",
+        "publisher": "St Helena Government",
+        "kind": "primary"
+      },
+      {
+        "id": "sth-baseline",
+        "title": "State of the Environment Report 2012–2013",
+        "url": "https://www.sainthelena.gov.sh/wp-content/uploads/2012/08/State-of-the-Environment-Report-2012-2013-FINAL-v2.pdf",
+        "publisher": "St Helena Government",
+        "kind": "primary"
+      },
+      {
+        "id": "sth-wes",
+        "title": "St Helena Hybrid Wind-Diesel System",
+        "url": "https://ecoways.com/en/customers/st-helena",
+        "publisher": "Ecoways / Wind Energy Solutions",
+        "kind": "primary"
+      }
+    ]
+  },
+  "stone-edge-farm-winery-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Stone Edge Farm's customer-owned Sonoma microgrid is an operational, long-running demonstration and working farm/winery system that has evolved repeatedly since 2013. Current owner material describes a 16-acre property with 25 buildings, seven service entrances, a 480 V three-phase bidirectional loop, a lower-voltage Critical Grid, distributed solar, several battery chemistries, a 65 kW gas microturbine with heat recovery, 28 kW of hydrogen fuel cells, electrolysis and hydrogen storage, pumps, and HVAC under decentralized Heila controls. The detailed owner tour's configuration snapshot lists 160 kW of PV and more than 600 kW of total capability, while a 2018 California Energy Commission case study reports a broader 1.185 MW cumulative installation including 368 kW PV, 324 kW of battery power, and a 400 kW electrolyzer. These are different dates and accounting boundaries, not necessarily an error; individual assets have been added, retired, or repurposed. During the October 2017 wildfire the site islanded for ten days, and by 2018 the owner reported independent normal operation. The current winery site still describes the microgrid as active and evolving. However, no recent audited energy mix, uptime, state-of-health, export, or carbon balance was found, and portions of the technical tour still use future tense. It is solar-led but not 100% renewable because natural gas generation and grid exchange remain part of the architecture.",
+    "status": "Operational and still promoted by the owner as an evolving microgrid. Exact 2026 component inventory and state of health are not fully verified because available technical sources represent different build phases.",
+    "organizations": [
+      {
+        "name": "Stone Edge Farm Estate Vineyards & Winery",
+        "role": "Host, owner, operator, and demonstration sponsor",
+        "sourceIds": ["sef-owner", "sef-tour", "sef-cec", "sef-island"]
+      },
+      {
+        "name": "Wooster Energy Engineering",
+        "role": "General contractor and microgrid systems integrator during the documented buildout",
+        "sourceIds": ["sef-cec"]
+      },
+      {
+        "name": "Heila Technologies",
+        "role": "Supplier of decentralized Heila IQ asset controllers and coordination software in the current owner architecture",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "name": "Pacific Gas and Electric Company",
+        "role": "Interconnecting utility at the single point of common coupling",
+        "sourceIds": ["sef-tour", "sef-island"]
+      },
+      {
+        "name": "Capstone Turbine Corporation",
+        "role": "Supplier of the 65 kW natural-gas/hydrogen-capable microturbine",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "name": "Plug Power / ReliOn",
+        "role": "Supplier lineage for the three PEM fuel-cell hives",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "name": "SimpliPhi Power, Tesla, Aquion Energy, ESS Inc., Sony, LG Chem, and Redflow",
+        "role": "Battery suppliers represented across different documented build phases",
+        "sourceIds": ["sef-tour", "sef-cec", "sef-ess"]
+      },
+      {
+        "name": "California Energy Commission",
+        "role": "Public case-study and resilience-program reporting body",
+        "sourceIds": ["sef-cec", "sef-island"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Site and electrical topology",
+        "value": "16 acres, 25 buildings, seven service entrances, and a 480 V three-phase bidirectional copper loop with a single point of common coupling on Wyatt Road; a lower-voltage Critical Grid supports high-priority loads",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "Current-tour generation snapshot",
+        "value": "Twelve arrays, 553 panels, and about 160 kW of PV; 65 kW microturbine; and three fuel-cell hives totaling about 28 kW. The tour describes more than 600 kW of total microgrid capability",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "2018 case-study capacity",
+        "value": "1.185 MW cumulative project capacity, including 368 kW PV, 65 kW microturbine, 28 kW fuel cells, 324 kW of battery power, and a 400 kW electrolyzer; this dated accounting scope differs from the current owner tour",
+        "sourceIds": ["sef-cec"]
+      },
+      {
+        "label": "Largest documented battery",
+        "value": "Tesla Powerpack rated 250 kW/475 kWh with a 250 kW Dynapower bidirectional inverter, capable of grid-forming operation",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "Other owner-tour storage",
+        "value": "SimpliPhi 23.8 kW/45 kWh; Aquion 16 kW/100 kWh; Sony 2.4 kW/9.6 kWh; SimpliPhi AccESS 5.7 kW/10.5 kWh; and LG Chem RESU 10 kWh, plus a 120 kW/26 kWh high-voltage SimpliPhi system described as being installed",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "Hydrogen system",
+        "value": "Three ReliOn hives with four 2.33 kW modules each, about 28 kW total; on-site electrolyzer reported as 400 kW and up to 12 kg H2/day in the 2018 case study; compressed storage includes 48 one-kilogram cylinders plus about 200 kg bulk capacity in the owner tour",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "label": "Thermal utilization",
+        "value": "65 kW microturbine CHP with two 500-gallon thermal tanks and a 10-ton lithium-bromide absorption chiller; owner reports up to roughly 90% overall efficiency when recovered heat is used",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "Load range",
+        "value": "Owner tour cites roughly 15 kW base nighttime demand and maximum demand around 100 kW",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "label": "Demonstrated islanding",
+        "value": "Ten days of islanded operation during the October 2017 wildfire; a later CEC report says the site could conduct normal operations independently in 2018",
+        "sourceIds": ["sef-island"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Point-of-common-coupling switchgear",
+        "manufacturer": "Emerson ASCO",
+        "model": "7000 Series ATS / ASCO MAC switch",
+        "detail": "Automatic transfer and microgrid switchgear separate the property from PG&E and coordinate islanding; Schweitzer protective relaying is also identified",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "category": "Microturbine CHP",
+        "manufacturer": "Capstone",
+        "detail": "65 kW natural-gas/hydrogen-capable turbine with heat recovery, two 500-gallon thermal-storage tanks, and a 10-ton Yazaki lithium-bromide absorption chiller",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Lithium-ion battery",
+        "manufacturer": "Tesla / Dynapower",
+        "model": "Powerpack",
+        "detail": "250 kW/475 kWh battery with 250 kW grid-forming bidirectional power conversion",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "category": "Lithium-ferro-phosphate batteries",
+        "manufacturer": "SimpliPhi Power",
+        "detail": "23.8 kW/45 kWh system with SMA Sunny Island; 5.7 kW/10.5 kWh AccESS with Schneider power electronics; and a 120 kW/26 kWh high-voltage system described in the tour as being installed",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "category": "Aqueous sodium-ion battery",
+        "manufacturer": "Aquion Energy / Ideal Power",
+        "detail": "Eight 48 V M-Line units, 16 kW/100 kWh, with a 30 kW Ideal Power converter in the current-tour snapshot. Earlier descriptions of about 350 kWh reflect a larger prior configuration",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Iron-flow battery",
+        "manufacturer": "ESS Inc.",
+        "detail": "10 kW/60 kWh Energy Warehouse reported in service since early 2016",
+        "sourceIds": ["sef-ess", "sef-cec"]
+      },
+      {
+        "category": "Additional distributed batteries",
+        "detail": "Sony 2.4 kW/9.6 kWh with 6 kW OutBack inverter; LG Chem RESU 10 kWh with 9.8 kW SolarEdge inverter; CEC's dated inventory also included Redflow equipment",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Hydrogen production and storage",
+        "manufacturer": "Areva H2Gen / Giner; Millennium Reign reporting lineage",
+        "detail": "Three-stack PEM electrolyzer; the CEC case labels the electrolyzer 400 kW with output up to 12 kg/day. The owner tour lists compressed cylinder and bulk storage but does not repeat the 400 kW rating",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Hydrogen fuel cells",
+        "manufacturer": "Plug Power / ReliOn",
+        "detail": "Three hives, each with four 2.33 kW PEM modules, coupled through Siemens Sinamics DC/DC conversion and a 30 kW Ideal Power inverter",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Controls",
+        "manufacturer": "Heila Technologies",
+        "model": "Heila IQ",
+        "detail": "Edge controllers at assets communicate with a central coordinator; a prior project phase used DC Systems controls",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Control architecture",
+        "detail": "Heila IQ nodes sample local assets at up to 10 Hz and coordinate through supply-and-demand bids that can weight response time, state of charge, carbon impact, and cost. The architecture covers portions of six solar arrays, eleven battery/inverter combinations, four pumps, fuel cells, the microturbine, electrolyzer, and HVAC.",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "category": "Islanding",
+        "detail": "Automatic transfer equipment opens the utility point of common coupling, and grid-forming storage establishes local voltage/frequency. The lower-voltage Critical Grid/UPS tier preserves the most sensitive loads through transitions.",
+        "sourceIds": ["sef-tour", "sef-island"]
+      },
+      {
+        "category": "Hydrogen pathway",
+        "detail": "Surplus electricity can produce compressed hydrogen for later use in PEM fuel cells, while the microturbine is described as hydrogen-capable. This is long-duration/fuel storage experimentation; no recent round-trip-efficiency or annual hydrogen-throughput dataset was located.",
+        "sourceIds": ["sef-tour", "sef-cec"]
+      },
+      {
+        "category": "Thermal integration",
+        "detail": "Microturbine exhaust heat charges hot-water storage and drives absorption cooling, so simple electrical-efficiency comparisons understate the intended CHP value when vineyard/winery thermal loads can use it.",
+        "sourceIds": ["sef-tour"]
+      },
+      {
+        "category": "Capacity chronology",
+        "detail": "The 2018 CEC report aggregates progressive installations from July 2013 through June 2018 and reports 1.185 MW. The owner's current technical tour uses a smaller PV snapshot and notes some devices as 'being installed.' Asset ratings must retain their date/scope instead of being summed into a false current total.",
+        "sourceIds": ["sef-cec", "sef-tour"]
+      },
+      {
+        "category": "Renewable-content caution",
+        "detail": "Solar and stored solar are central, but the farm also imports/exports through PG&E and operates a natural-gas microturbine. Owner statements that the farm's carbon footprint is below zero were not accompanied by a recent independently audited energy or emissions balance.",
+        "sourceIds": ["sef-owner", "sef-tour"]
+      },
+      {
+        "category": "Current-status evidence",
+        "detail": "The winery currently presents the microgrid as active and evolving, and the technical-tour site carries a 2026 copyright. That establishes continuing program presence, but not the in-service state or remaining capacity of every battery chemistry and experimental hydrogen component.",
+        "sourceIds": ["sef-owner", "sef-tour"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "sef-owner",
+        "title": "Microgrid",
+        "url": "https://stoneedgefarm.com/microgrid/",
+        "publisher": "Stone Edge Farm Estate Vineyards & Winery",
+        "kind": "primary"
+      },
+      {
+        "id": "sef-tour",
+        "title": "Stone Edge Farm Microgrid Technical Tour",
+        "url": "https://sefmicrogrid.com/overview/tour/",
+        "publisher": "Stone Edge Farm Microgrid",
+        "kind": "primary"
+      },
+      {
+        "id": "sef-cec",
+        "title": "Microgrid Analysis and Case Studies Report",
+        "url": "https://www.energy.ca.gov/sites/default/files/2021-06/CEC-500-2018-022.pdf",
+        "publisher": "California Energy Commission and Navigant Consulting",
+        "kind": "primary"
+      },
+      {
+        "id": "sef-island",
+        "title": "Microgrid Resilience and Planned Islanding Case Study",
+        "url": "https://efiling.energy.ca.gov/getdocument.aspx?tn=237456",
+        "publisher": "California Energy Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "sef-ess",
+        "title": "Stone Edge Farm's Microgrid Tour Draws 100 Attendees",
+        "url": "https://essinc.com/stone-edge-farms-microgrid-tour-draws-100-attendees/",
+        "publisher": "ESS Inc.",
+        "kind": "primary"
+      }
+    ]
+  }
+}

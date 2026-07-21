@@ -1,0 +1,1568 @@
+{
+  "sumba-smart-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The archived entry collapses two materially different Bila Cenge systems. Indonesia's BPPT first commissioned a 500 kWp thin-film PV smart-grid demonstration in 2012 with two 240 kWh vanadium-redox-flow batteries, two 135 kVA smart generators, and supervisory control on PLN's 20 kV Southwest Sumba network. After the flow battery failed and PV output degraded, an Indonesia-Japan revitalization replaced or reconfigured the plant around 2017 as a 400 kWp mixed-PV, 1,152 kWh lead-acid, 300 kW inverter system designed to inject roughly 200 kW steadily for several hours. The supportable current asset description is the 400 kWp revitalized phase, while the legacy 500 kW value belongs to the earlier configuration.",
+    "status": "The original 2012 system demonstrably suffered major degradation: a BPPT-authored assessment reported the vanadium-redox battery out of service by about 2016, array degradation of roughly 20-30%, and output capped at 150 kW. A 2020 BPPT paper reports the revitalized 400 kWp/1,152 kWh system operating with energy management and later supporting a controlled EV-charging demonstration. A 2024 BRIN journal article still describes that PV-grid-battery installation, but is a techno-economic study rather than a live availability report. No public post-2024 production, outage, battery-health, or PLN dispatch series was located, so installation is well supported but continuous operation in July 2026 is not independently verified.",
+    "organizations": [
+      {
+        "name": "Agency for the Assessment and Application of Technology (BPPT; functions now within BRIN)",
+        "role": "Designed and led the original smart-microgrid demonstration, evaluated its degradation, and led the later revitalization and energy-management research.",
+        "sourceIds": ["b08c-sumba-launch", "b08c-sumba-ijitee", "b08c-sumba-2020", "b08c-sumba-brin2024"]
+      },
+      {
+        "name": "PT PLN (Persero)",
+        "role": "Utility network owner and operating counterpart; the plant was connected to PLN's 20 kV Sumba system and coordinated with existing diesel and micro-hydro generation.",
+        "sourceIds": ["b08c-sumba-launch", "b08c-sumba-nrel", "b08c-sumba-pln2016"]
+      },
+      {
+        "name": "PT Surya Energi Indotama / PT LEN Industri",
+        "role": "Industrial implementation partners identified for construction of the original BPPT smart-grid system.",
+        "sourceIds": ["b08c-sumba-launch"]
+      },
+      {
+        "name": "Kyudenko Corporation / Kyushu Electrical Engineering Consultants",
+        "role": "Japanese field and engineering partners in the revitalized PV-battery system reported in BPPT's 2020 proceedings.",
+        "sourceIds": ["b08c-sumba-2020"]
+      },
+      {
+        "name": "Ministry of the Environment, Japan / Japan International Cooperation Agency",
+        "role": "Japanese governmental cooperation and support identified for the revitalization phase; the exact funding split was not found in an accessible primary contract.",
+        "sourceIds": ["b08c-sumba-2020"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original 2012 photovoltaic array",
+        "value": "500 kWp of thin-film amorphous/microcrystalline-silicon PV, interfaced through five 100 kW grid-tie inverters. Contemporary reporting described 20 approximately 25 kW combiner groups. This is a historical configuration, not the best current rating.",
+        "sourceIds": ["b08c-sumba-ijitee", "b08c-sumba-antara", "b08c-sumba-nrel"]
+      },
+      {
+        "label": "Original storage",
+        "value": "Two 240 kWh vanadium-redox-flow battery units, 480 kWh nominal total. BPPT later reported the storage damaged and out of service, so it must not be added to the replacement lead-acid bank as current capacity.",
+        "sourceIds": ["b08c-sumba-ijitee", "b08c-sumba-nrel"]
+      },
+      {
+        "label": "Original dispatchable generation",
+        "value": "Two 135 kVA smart generator sets within the demonstration. The controller also communicated with the wider PLN system, including the Waikabubak and Waitabula diesel plants and Lokomboro micro-hydro plant; those external stations are not Bila Cenge project capacity.",
+        "sourceIds": ["b08c-sumba-ijitee", "b08c-sumba-launch"]
+      },
+      {
+        "label": "Revitalized photovoltaic array",
+        "value": "400 kWp using a combination of polycrystalline and thin-film modules, with sixteen 25 kW PV converters.",
+        "sourceIds": ["b08c-sumba-2020", "b08c-sumba-brin2024"]
+      },
+      {
+        "label": "Revitalized storage and inverter",
+        "value": "1,152 kWh lead-acid battery capacity and six 50 kW DC/AC inverters (300 kW total). The paper describes two battery blocks, but does not provide a public cell maker, model, usable-energy rating, cycle count, or 2026 state of health.",
+        "sourceIds": ["b08c-sumba-2020", "b08c-sumba-brin2024"]
+      },
+      {
+        "label": "Controlled power delivery",
+        "value": "The revitalized system was designed to hold approximately 200 kW grid injection for about 7-8 hours in the dry season and about 6 hours in the rainy season. These are reported operating/design durations, not a guaranteed current dispatch profile.",
+        "sourceIds": ["b08c-sumba-2020"]
+      },
+      {
+        "label": "Network context",
+        "value": "The original plant was tied to PLN's 20 kV network. BPPT reported daytime base load around 1.5 MW and an initial solar contribution approaching 30%; these are historical local-system values.",
+        "sourceIds": ["b08c-sumba-ijitee", "b08c-sumba-launch"]
+      },
+      {
+        "label": "2024 economics result",
+        "value": "A BRIN techno-economic analysis calculated a 34-year simple payback and benefit-cost ratio of 0.60 under its assumptions, concluding the installation was not financially attractive on that basis. This is a modeled economic result, not an operating-loss statement.",
+        "sourceIds": ["b08c-sumba-brin2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Original PV modules",
+        "detail": "Thin-film amorphous/microcrystalline-silicon modules totaling 500 kWp. Accessible sources do not establish a reliable module maker or model.",
+        "sourceIds": ["b08c-sumba-ijitee"]
+      },
+      {
+        "category": "Original battery storage",
+        "detail": "Two vanadium-redox-flow batteries of 240 kWh each. Public evidence establishes chemistry, count, and nominal energy but not a trustworthy manufacturer/model; the units were later reported damaged.",
+        "sourceIds": ["b08c-sumba-ijitee", "b08c-sumba-nrel"]
+      },
+      {
+        "category": "Revitalized PV and power conversion",
+        "detail": "Mixed polycrystalline/thin-film array, sixteen 25 kW PV converters, and six 50 kW bidirectional DC/AC inverters. Maker and model numbers were not disclosed in the accessible proceedings.",
+        "sourceIds": ["b08c-sumba-2020"]
+      },
+      {
+        "category": "Revitalized battery storage",
+        "detail": "Two blocks of lead-acid batteries totaling 1,152 kWh nominal. No accessible source identifies the cell manufacturer, model, usable depth of discharge, or replacement history.",
+        "sourceIds": ["b08c-sumba-2020", "b08c-sumba-brin2024"]
+      },
+      {
+        "category": "Control and communications",
+        "detail": "Energy-management system, battery control unit, smart-meter control, GSM/SCADA communications, and power-management logic for constant grid output and EV-charging coordination.",
+        "sourceIds": ["b08c-sumba-2020"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Phase correction",
+        "detail": "The 500 kWp/480 kWh flow-battery plant and the 400 kWp/1,152 kWh lead-acid plant are successive configurations, not additive assets. A total of 900 kWp and 1,632 kWh would therefore be misleading.",
+        "sourceIds": ["b08c-sumba-archive", "b08c-sumba-ijitee", "b08c-sumba-2020"]
+      },
+      {
+        "category": "Original-system degradation",
+        "detail": "BPPT reported the flow battery unavailable, array performance down roughly 20-30%, and PV output limited to 30% of nameplate (150 kW) to avoid destabilizing the grid after storage failure.",
+        "sourceIds": ["b08c-sumba-ijitee"]
+      },
+      {
+        "category": "Grid-support architecture",
+        "detail": "The revitalized plant buffers variable PV through the battery and EMS so the feeder receives a flatter power block. Smart meters and communications provide the controller with grid and plant state rather than treating the array as an uncontrolled generator.",
+        "sourceIds": ["b08c-sumba-2020", "b08c-sumba-nrel"]
+      },
+      {
+        "category": "EV-charging demonstration",
+        "detail": "BPPT later linked an EV charging point at PLN Tambolaka to Bila Cenge by point-to-point/radio communications; the EMS temporarily raised plant injection during charging without a reported interruption. This was a demonstration, not proof of a broad public charging network.",
+        "sourceIds": ["b08c-sumba-2020"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No current public dashboard or audited report was found for annual PV yield, curtailment, battery availability, PLN purchases, outages, or operating emissions after 2024. The current status cannot be upgraded from installed/reported to continuously verified operational.",
+        "sourceIds": ["b08c-sumba-brin2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-sumba-ijitee",
+        "title": "Performance Evaluation of Smart Microgrid System in Sumba Island",
+        "url": "https://journal.ugm.ac.id/ijitee/article/view/25143",
+        "publisher": "IJITEE, Universitas Gadjah Mada / BPPT authors",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sumba-2020",
+        "title": "Kinerja Sistem PLTS Terhubung Jala-jala Dilengkapi Energy Management System di Pulau Sumba",
+        "url": "https://id.scribd.com/document/496766124/Prosiding-SEMNAS-2020",
+        "publisher": "Seminar Nasional Teknologi Bahan dan Barang Teknik 2020 / BPPT (archived proceedings copy)",
+        "kind": "archive"
+      },
+      {
+        "id": "b08c-sumba-brin2024",
+        "title": "Techno-Economic Analysis of the Bila Cenge Photovoltaic Microgrid System in Sumba Island",
+        "url": "https://mev.brin.go.id/mev/article/view/991",
+        "publisher": "Majalah Ilmiah Pengkajian Industri, BRIN",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sumba-nrel",
+        "title": "Distributed Renewable Energy Options for Sumba Island",
+        "url": "https://www.nrel.gov/docs/fy17osti/66548.pdf",
+        "publisher": "National Renewable Energy Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sumba-launch",
+        "title": "Merintis Jaringan Cerdas",
+        "url": "https://umri.ac.id/artikel/baca/2012-06-15-1669175441-merintis-jaringan-cerdas",
+        "publisher": "Universitas Muhammadiyah Riau (republication of contemporary Kompas reporting)",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sumba-pln2016",
+        "title": "Maksimalkan EBT di Sumba, PLN Lakukan Penghematan Hingga Rp 10 M",
+        "url": "https://web.pln.co.id/cms/media/siaran-pers/2016/04/maksimalkan-ebt-di-sumba-pln-lakukan-penghematan-hingga-rp-10-m/",
+        "publisher": "PT PLN (Persero)",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sumba-antara",
+        "title": "PLTS Tercanggih di Pulau Terpencil",
+        "url": "https://lampung.antaranews.com/berita/263138/plts-tercanggih-di-pulau-terpencil",
+        "publisher": "ANTARA News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sumba-archive",
+        "title": "Sumba Smart Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420200709id_/http://microgridprojects.com/microgrid/sumba-smart-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "sunderbans": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy 120 kW 'Sunderbans' record combines at least two independent West Bengal projects and should not be treated as one Tata Power Solar plant. One was WBREDA's 110 kWp Indrapur/G-Plot mini-grid, implemented by Tata BP Solar and commissioned in 2004. The other was WWF-India/Bushlight's approximately 9.65 kWp Rajatjubili-Annpur system on Satjelia, commissioned around 2011 with a 10 kW hybrid power conditioner and demand-managed distribution. Later WWF work added several separate microgrids elsewhere on Satjelia and Kumirmari. These capacities, operators, communities, and operating histories must remain distinct.",
+    "status": "The Indrapur 110 kWp system had serious battery problems by 2015 and was reported defunct by 2022 after mainland-grid electricity reached the village in 2018. Rajatjubili had a more resilient community-management design, and one of two systems examined in 2022 was still operating while the other had failed after grid arrival; the reporting does not support assigning that outcome confidently to every legacy asset. WWF's broader Satjelia portfolio was restored quickly after Cyclone Amphan in 2020, but no post-2022 plant-by-plant operating report was found. WBSEDCL reports continuing mainland-grid electrification in Gosaba and Patharpratima through March 2026. The grouped record is therefore historical/mixed status, not a currently verified 120 kW operating microgrid.",
+    "organizations": [
+      {
+        "name": "West Bengal Renewable Energy Development Agency (WBREDA)",
+        "role": "State renewable-energy agency and sponsor/owner-side organization for the Indrapur/G-Plot 110 kWp solar plant, officially listed as installed in April 2004.",
+        "sourceIds": ["b08c-sunderbans-wbreda", "b08c-sunderbans-aims2015"]
+      },
+      {
+        "name": "Tata BP Solar India Ltd. / Tata Power Solar",
+        "role": "Designed and implemented the 110 kWp Indrapur/G-Plot system. No evidence found ties Tata to the separate Rajatjubili Bushlight installation.",
+        "sourceIds": ["b08c-sunderbans-aims2015", "b08c-sunderbans-mongabay"]
+      },
+      {
+        "name": "WWF-India",
+        "role": "Implemented the Rajatjubili/Satjelia community microgrid and subsequently developed a wider portfolio of AC and DC village grids, street lights, and Village Energy Committees.",
+        "sourceIds": ["b08c-sunderbans-bushlight", "b08c-sunderbans-wwf2020", "b08c-sunderbans-amphan"]
+      },
+      {
+        "name": "CAT Projects / Bushlight India",
+        "role": "Provided participatory load assessment, technical design, demand management, commissioning, and training for the Rajatjubili project.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "name": "Optimal Power Synergy India Pvt. Ltd.",
+        "role": "Supplied the 10 kW hybrid power conditioner and programmable control used at Rajatjubili.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "name": "Village Energy Committees",
+        "role": "Community governance and fee-collection bodies for WWF-supported systems; reporting links sustained operation to local participation and management rather than equipment alone.",
+        "sourceIds": ["b08c-sunderbans-wwf2020", "b08c-sunderbans-mongabay"]
+      },
+      {
+        "name": "West Bengal State Electricity Distribution Company Limited (WBSEDCL)",
+        "role": "Mainland-grid distribution utility whose electrification program now serves Gosaba and Patharpratima areas, materially changing the role and economics of the earlier standalone systems.",
+        "sourceIds": ["b08c-sunderbans-grid2026", "b08c-sunderbans-mongabay"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Indrapur/G-Plot photovoltaic array",
+        "value": "110 kWp. WBREDA lists installation in April 2004; later reporting sometimes gives 2003, an unresolved one-year commissioning-date discrepancy.",
+        "sourceIds": ["b08c-sunderbans-wbreda", "b08c-sunderbans-mongabay"]
+      },
+      {
+        "label": "Indrapur power conversion",
+        "value": "Three 30 kVA inverters (90 kVA aggregate). The accessible field study does not provide dependable manufacturer or model information.",
+        "sourceIds": ["b08c-sunderbans-aims2015"]
+      },
+      {
+        "label": "Indrapur battery",
+        "value": "A 240 V, 800 Ah tubular lead-acid bank, equivalent to approximately 192 kWh nominal by voltage-times-capacity. It was designed around two days of storage including one day of autonomy, but usable energy and depth of discharge were not stated.",
+        "sourceIds": ["b08c-sunderbans-aims2015"]
+      },
+      {
+        "label": "Indrapur customers and distribution",
+        "value": "About 2 km of local lines serving roughly 120 households and 180 market shops. Early operation delivered an average of about 27 kW for five evening hours; after Cyclone Aila in 2009, service was reduced to about three hours.",
+        "sourceIds": ["b08c-sunderbans-aims2015"]
+      },
+      {
+        "label": "Rajatjubili photovoltaic array",
+        "value": "9.65 kWp, often rounded to 10 kW. This is a distinct project and should not be arithmetically combined with Indrapur as though both formed a single 120 kW plant.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "label": "Rajatjubili storage and controller",
+        "value": "Sixty 2 V flooded-cell batteries, model/type 1200H at C120, controlled through a 10 kW Hybrid Power Conditioner. The case study does not expose enough series/parallel detail to state a reliable nominal kWh total.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "label": "Rajatjubili service",
+        "value": "Designed for a maximum of about 23 kWh/day and 230 V AC service to 48 houses, seven commercial users, three community buildings, four street lights, and four separately monitored outgoing distribution lines.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "label": "Later WWF portfolio",
+        "value": "WWF's 2019-20 report gives 84.12 kW combined across six DC grids, one AC grid, and 80 solar street lights on Satjelia and Kumirmari, serving about 700 households/3,000 people. This is a portfolio total, not the rating of Rajatjubili alone.",
+        "sourceIds": ["b08c-sunderbans-wwf2020"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Indrapur solar-battery system",
+        "manufacturer": "Tata BP Solar India Ltd.",
+        "detail": "Custom 110 kWp PV plant with three 30 kVA inverters and a 240 V/800 Ah tubular lead-acid battery bank. Public field reporting does not identify exact module, inverter, or battery models.",
+        "sourceIds": ["b08c-sunderbans-aims2015"]
+      },
+      {
+        "category": "Rajatjubili hybrid power conditioner",
+        "manufacturer": "Optimal Power Synergy India Pvt. Ltd.",
+        "detail": "10 kW power-conditioning and PLC-based control package coordinating the PV array, battery, feeder monitoring, and staged load shedding.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "category": "Rajatjubili batteries",
+        "model": "1200H C120",
+        "detail": "Sixty 2 V flooded lead-acid cells. The accessible case study names the type/rating but not a manufacturer.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "category": "Rajatjubili customer metering",
+        "model": "Urja Bandhu",
+        "detail": "Programmable household energy-budget and demand-management devices used with a participatory energy-planning process; precise manufacturer attribution is not stated in the case study.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Record identity",
+        "detail": "The archived page's 120 kW total appears to add 110 kWp at Indrapur to a rounded 10 kW at Rajatjubili, despite different islands/communities, sponsors, equipment, and commissioning dates. The two projects should be represented as related regional cases, not a single system.",
+        "sourceIds": ["b08c-sunderbans-archive", "b08c-sunderbans-aims2015", "b08c-sunderbans-bushlight"]
+      },
+      {
+        "category": "Indrapur failure path",
+        "detail": "At the February-March 2015 field visit, PV modules were still producing but battery problems had left the system non-operational. Reporting in 2022 described the plant as defunct after grid electricity arrived in 2018.",
+        "sourceIds": ["b08c-sunderbans-aims2015", "b08c-sunderbans-mongabay"]
+      },
+      {
+        "category": "Rajatjubili control strategy",
+        "detail": "The system allocated daily energy budgets, monitored four feeders, and shed lower-priority circuits in stages as battery state required. The architecture aimed to provide managed 24/7 availability without allowing a few users to exhaust the shared battery.",
+        "sourceIds": ["b08c-sunderbans-bushlight"]
+      },
+      {
+        "category": "Climate resilience",
+        "detail": "After Cyclone Amphan in May 2020, WWF reported its six approximately 10 kW Satjelia microgrids restored within days while conventional service remained damaged. This is portfolio-level resilience evidence, not proof that every earlier Sundarbans asset survived.",
+        "sourceIds": ["b08c-sunderbans-amphan"]
+      },
+      {
+        "category": "Grid-arrival transition",
+        "detail": "Mainland-grid expansion changed customer willingness to pay and maintenance incentives. The 2022 investigation found one community-managed solar system still useful and another abandoned, while WBSEDCL's current program confirms extensive rural-grid energization across the relevant blocks.",
+        "sourceIds": ["b08c-sunderbans-mongabay", "b08c-sunderbans-grid2026"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No public 2025/26 battery inventory, energy delivered, tariff collection, outage log, or site-by-site status for Indrapur, Rajatjubili, and the later WWF portfolio was located. A single 'operational' flag would overstate the evidence.",
+        "sourceIds": ["b08c-sunderbans-grid2026", "b08c-sunderbans-mongabay"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-sunderbans-wbreda",
+        "title": "Solar Energy Programme",
+        "url": "https://www.wbreda.org/solar-energy-programme/",
+        "publisher": "West Bengal Renewable Energy Development Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sunderbans-aims2015",
+        "title": "Socio-technical assessment of solar photovoltaic systems implemented for rural electrification in selected villages of Sundarbans region of India",
+        "url": "https://www.researchgate.net/publication/283043145_Socio-technical_assessment_of_solar_photovoltaic_systems_implemented_for_rural_electrification_in_selected_villages_of_Sundarbans_region_of_India",
+        "publisher": "AIMS Energy",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sunderbans-bushlight",
+        "title": "Case Study 7: Rajatjubili Community Solar Power System",
+        "url": "https://static1.squarespace.com/static/53bcdf41e4b0dcd494de635e/t/54d0433de4b07d95e60d2937/1422934845919/Case%2Bstudy%2B7%2BRajatjubili.pdf",
+        "publisher": "CAT Projects / Bushlight India",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sunderbans-wwf2020",
+        "title": "Annual Report 2019-20",
+        "url": "https://join.wwfindia.org/annual-report2020/asset/Annual-Report-2019-20.pdf",
+        "publisher": "WWF-India",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sunderbans-amphan",
+        "title": "Solar power lights up Sundarbans island",
+        "url": "https://www.downtoearth.org.in/news/energy/solar-power-lights-up-sundarbans-island-71585",
+        "publisher": "Down To Earth",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sunderbans-mongabay",
+        "title": "Why some solar mini-grids in the Sundarbans survived while others failed",
+        "url": "https://scroll.in/article/1025917/scroll_in",
+        "publisher": "Mongabay-India via Scroll.in",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-sunderbans-grid2026",
+        "title": "Rural Electrification",
+        "url": "https://www.wbsedcl.in/irj/go/km/docs/internet/new_website/Rural_Electrification.html",
+        "publisher": "West Bengal State Electricity Distribution Company Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-sunderbans-archive",
+        "title": "Sunderbans - archived legacy record",
+        "url": "https://web.archive.org/web/20210420190509id_/http://microgridprojects.com/microgrid/sunderbans/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "tau-solarcity-tesla-microgrid-american-samoa": {
+    "researchedAt": "2026-07-20",
+    "summary": "Ta'u's 2016 project is a 1.4 MW solar photovoltaic array paired with 6 MWh of Tesla Powerpack storage on the American Samoa Power Authority's isolated Manu'a grid. SolarCity delivered the solar/EPC scope before its acquisition by Tesla, Tesla supplied 60 Powerpacks, and ASPA owns and operates the utility system. Federal and territorial sources continue to describe the solar-battery plant as supplying all or essentially all of Ta'u's electricity and displacing more than 100,000 gallons of diesel per year, but newer ASPA records also establish that the site remains a solar-diesel hybrid and added three 500 kW Cummins generator sets. '100% solar' should therefore describe the reported normal annual-energy outcome, not the absence of installed diesel backup.",
+    "status": "The solar-battery system was commissioned in November 2016, and NREL's 2024 baseline plus EIA's current territory profile continue to cite it as supplying 100% of Ta'u electricity. ASPA's fiscal-2024 audit reports three new 500 kW Cummins generators installed and commissioned at the Falesa'o Ta'u Power Plant, while its fiscal-2025 audit calls the leased-site installation a solar-and-diesel hybrid. This does not disprove high renewable-energy operation, but it materially qualifies the original marketing. No public Ta'u-specific 2025/26 hourly generation, fuel burn, battery capacity test, availability, or curtailment dataset was located.",
+    "organizations": [
+      {
+        "name": "American Samoa Power Authority (ASPA)",
+        "role": "Territorial utility, project owner/operator, and operator of the Ta'u hybrid power plant and distribution system; later installed three 500 kW diesel generator sets.",
+        "sourceIds": ["b08c-tau-commissioning", "b08c-tau-pvtech", "b08c-tau-aspa2024", "b08c-tau-aspa2025"]
+      },
+      {
+        "name": "SolarCity Corporation",
+        "role": "Solar developer/EPC that built the array and integrated the project before/around its 2016 acquisition by Tesla.",
+        "sourceIds": ["b08c-tau-pvtech", "b08c-tau-local"]
+      },
+      {
+        "name": "Tesla, Inc.",
+        "role": "Supplier/integrator of 60 Powerpack battery units and associated storage controls; later published performance and avoided-fuel claims.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-pvtech"]
+      },
+      {
+        "name": "American Samoa Economic Development Authority",
+        "role": "Project funding participant identified in commissioning coverage.",
+        "sourceIds": ["b08c-tau-pvtech"]
+      },
+      {
+        "name": "U.S. Environmental Protection Agency / U.S. Department of the Interior",
+        "role": "Federal funding participants identified for the solar-storage project.",
+        "sourceIds": ["b08c-tau-pvtech"]
+      },
+      {
+        "name": "Cummins",
+        "role": "Manufacturer of the three 500 kW diesel generator sets ASPA reports commissioning in fiscal 2024.",
+        "sourceIds": ["b08c-tau-aspa2024"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar photovoltaic capacity",
+        "value": "1.4 MW from 5,328 modules. Public sources do not provide a dependable module manufacturer/model, DC/AC ratio, degradation result, or current inverter-limited AC rating.",
+        "sourceIds": ["b08c-tau-archive", "b08c-tau-tesla", "b08c-tau-nrel2024", "b08c-tau-commissioning"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "6 MWh from 60 Tesla Powerpacks, implying 100 kWh nominal per unit in the commissioned configuration. No public 2026 capacity-retention or usable-energy test was found.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-nrel2024", "b08c-tau-pvtech"]
+      },
+      {
+        "label": "Autonomy and recharge claim",
+        "value": "Commissioning material said the battery could sustain the island for about three days without sunlight and recharge fully in roughly seven hours. These are vendor/project claims, not a current guaranteed autonomy rating.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-local"]
+      },
+      {
+        "label": "Diesel backup",
+        "value": "Three Cummins generator sets rated 500 kW each (1.5 MW aggregate) were installed and commissioned at Falesa'o in fiscal 2024. ASPA's audit does not disclose the exact set model, fuel-consumption curve, or runtime.",
+        "sourceIds": ["b08c-tau-aspa2024"]
+      },
+      {
+        "label": "Avoided diesel",
+        "value": "Tesla, NREL, and EIA use approximately 100,000 to 109,500 gallons per year as the displacement figure. It is a recurring project/agency estimate; no current island fuel ledger was located to audit it.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-nrel2024", "b08c-tau-eia2026"]
+      },
+      {
+        "label": "Renewable-energy share",
+        "value": "NREL and EIA describe the system as supplying 100% of Ta'u electricity. Because ASPA simultaneously maintains diesel capacity and describes a hybrid system, this should be read as normal or annual-energy supply rather than a claim that diesel equipment is absent or never runs.",
+        "sourceIds": ["b08c-tau-nrel2024", "b08c-tau-eia2026", "b08c-tau-aspa2025"]
+      },
+      {
+        "label": "Host community",
+        "value": "Contemporary accounts variously cite roughly 600 residents and about 900 people served. The sources use different population/service denominators, so neither value should be treated as an exact current customer count.",
+        "sourceIds": ["b08c-tau-local", "b08c-tau-commissioning"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Tesla",
+        "model": "Powerpack",
+        "detail": "Sixty units totaling 6 MWh, plus Tesla power-conversion/control equipment. Public commissioning sources do not identify a more precise Powerpack hardware revision.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-pvtech"]
+      },
+      {
+        "category": "Photovoltaic array",
+        "detail": "5,328 solar modules totaling 1.4 MW, delivered by SolarCity. Accessible sources do not support a panel or inverter manufacturer/model attribution.",
+        "sourceIds": ["b08c-tau-commissioning", "b08c-tau-local"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "manufacturer": "Cummins",
+        "detail": "Three 500 kW units commissioned by ASPA in fiscal 2024. Model, voltage, and emissions tier were not specified in the audit.",
+        "sourceIds": ["b08c-tau-aspa2024"]
+      },
+      {
+        "category": "Microgrid control",
+        "detail": "Solar-storage dispatch and island-grid controls integrate the PV array, Powerpacks, ASPA distribution, and diesel backup. No supportable public controller model or current software version was found.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-aspa2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating architecture",
+        "detail": "PV serves load and charges Powerpacks during solar hours; storage shifts energy into evening and cloudy periods and stabilizes the isolated grid. Diesel generators provide firm backup and resilience, even though published summaries characterize normal energy supply as fully solar.",
+        "sourceIds": ["b08c-tau-tesla", "b08c-tau-nrel2024", "b08c-tau-aspa2024"]
+      },
+      {
+        "category": "Fuel-logistics benefit",
+        "detail": "The installation reduced dependence on seaborne diesel deliveries and the outages or rationing that could follow delayed shipments. This remote-island logistics benefit is separate from the exact, unaudited gallons-per-year claim.",
+        "sourceIds": ["b08c-tau-local", "b08c-tau-eia2026"]
+      },
+      {
+        "category": "Diesel qualification",
+        "detail": "ASPA's 2024 generator procurement and its 2025 description of a 'solar and diesel hybrid system' are authoritative evidence that Ta'u is not physically solar-only. The newer generators may be backup/contingency assets; the audits do not report their annual runtime.",
+        "sourceIds": ["b08c-tau-aspa2024", "b08c-tau-aspa2025"]
+      },
+      {
+        "category": "Site tenure",
+        "detail": "ASPA's fiscal-2025 audit identifies three land leases dating from October 2015 for the solar-and-diesel hybrid system, with terms running through September 30, 2045.",
+        "sourceIds": ["b08c-tau-aspa2025"]
+      },
+      {
+        "category": "Local implementation",
+        "detail": "Contemporary local reporting says SolarCity employed and trained approximately 15 local workers to help construct the array, an important implementation detail but not a continuing staffing count.",
+        "sourceIds": ["b08c-tau-local-labor"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No public Ta'u-specific series was found for hourly renewable share, annual diesel runtime and fuel, battery state of health, forced outages, replacement modules, or 2025/26 energy served. Current agency summaries substantiate continued relevance, but not component-level performance.",
+        "sourceIds": ["b08c-tau-nrel2024", "b08c-tau-eia2026", "b08c-tau-aspa2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-tau-tesla",
+        "title": "2018 Tesla Impact Report",
+        "url": "https://www.tesla.com/ns_videos/2018-tesla-impact-report.pdf",
+        "publisher": "Tesla, Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tau-nrel2024",
+        "title": "American Samoa 2023 Energy Baseline Report",
+        "url": "https://www.nrel.gov/docs/fy24osti/88856.pdf",
+        "publisher": "National Renewable Energy Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tau-eia2026",
+        "title": "American Samoa Territory Energy Profile",
+        "url": "https://www.eia.gov/states/AQ/analysis",
+        "publisher": "U.S. Energy Information Administration",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tau-aspa2024",
+        "title": "ASPA 2024 Final Audit Reports (Financial Statements and Single Audit)",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/Reports/ASPA%202024%20Final%20Audit%20Reports%20%28FS%20%26%20SA%29.pdf",
+        "publisher": "American Samoa Power Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tau-aspa2025",
+        "title": "ASPA 2025 Final Audit Reports (Financial Statements and Single Audit)",
+        "url": "https://www.aspower.com/aspaweb/PublicNotice/Reports/ASPA%202025%20Final%20Audit%20Reports%20%28FS%20%26%20SA%29.pdf",
+        "publisher": "American Samoa Power Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tau-pvtech",
+        "title": "SolarCity, Tesla completes solar-plus-storage project with 60 Powerpacks in American Samoa",
+        "url": "https://www.pv-tech.org/solarcity-tesla-completes-solar-plus-storage-project-with-60-powerpacks-in/",
+        "publisher": "PV Tech",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tau-commissioning",
+        "title": "100% renewable energy through solar panels a reality for Ta'u Island",
+        "url": "https://www.samoanews.com/local-news/100-renewable-energy-through-solar-panels-reality-ta%E2%80%99u-island",
+        "publisher": "Samoa News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tau-local",
+        "title": "New Tesla powering entire island with solar energy",
+        "url": "https://www.samoanews.com/local-news/new-tesla-powering-entire-island-solar-energy",
+        "publisher": "Samoa News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tau-local-labor",
+        "title": "Ta'u solar array built by local guys, says Solar City",
+        "url": "https://www.samoanews.com/local-news/ta%E2%80%99u-solar-array-built-local-guys-says-solar-city",
+        "publisher": "Samoa News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tau-archive",
+        "title": "Ta'u SolarCity/Tesla Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420132418id_/http://microgridprojects.com/microgrid/tau-solarcity-tesla-microgrid-american-samoa/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "tanjung-batu-laut": {
+    "researchedAt": "2026-07-20",
+    "summary": "The best-supported project is the paired Kampung Tanjung Batu Darat and Tanjung Batu Laut solar-battery-diesel system near Sandakan/Kinabatangan, Sabah—not confidently the same-named Tawau locality in the archived record. It was delivered under Malaysia's rural electrification program around 2010 for approximately 127-128 households. A later engineering table reports 200 kWp PV, approximately 675 kWh of batteries, and two diesel sets rated 270 and 350 kW, while Optimal Power Solutions' announcement gives only aggregate power-conversion figures across three separate Sabah sites. The record must avoid assigning those portfolio totals to Tanjung Batu Laut alone.",
+    "status": "Contemporary 2011-2012 reporting describes the system operating successfully and converting the two villages from six-to-eight-hour household diesel service to continuous electricity. A 2015 risk-management study still treated it as an operating utility PV-battery-diesel case. Current Malaysian records confirm a Kampung Tanjung Batu Laut in Sandakan, but no credible post-2015 site-specific output, maintenance, battery replacement, or outage report was found. Current operation in July 2026 is therefore unverified, and the archived Tawau location should be marked as disputed rather than silently retained.",
+    "organizations": [
+      {
+        "name": "Sabah Electricity Sdn. Bhd. (SESB)",
+        "role": "Utility/end user associated with the rural hybrid project and responsible for Sabah electricity service; contemporary sources describe the solar hybrid as supplying the paired villages.",
+        "sourceIds": ["b08c-batulaut-ops", "b08c-batulaut-star", "b08c-batulaut-1ae"]
+      },
+      {
+        "name": "Ministry of Rural and Regional Development Malaysia (KKLW)",
+        "role": "Government sponsor/procuring authority under the Bekalan Elektrik Luar Bandar rural electrification program.",
+        "sourceIds": ["b08c-batulaut-ops", "b08c-batulaut-risk2015"]
+      },
+      {
+        "name": "Optimal Power Solutions Pty Ltd.",
+        "role": "Power-conditioning, control, system-integration, and remote-monitoring supplier across the Sabah project package that included Batu Darat/Laut.",
+        "sourceIds": ["b08c-batulaut-ops"]
+      },
+      {
+        "name": "One Alternate Energy Sdn. Bhd.",
+        "role": "Lists completion of solar-hybrid system management work for four Kinabatangan villages in September 2010 with SESB as end user; the public milestone does not itemize its exact Batu Laut equipment scope.",
+        "sourceIds": ["b08c-batulaut-1ae"]
+      },
+      {
+        "name": "Kampung Tanjung Batu Darat and Kampung Tanjung Batu Laut communities",
+        "role": "Beneficiary villages, reported as approximately 127-128 connected houses in contemporary/project-study sources.",
+        "sourceIds": ["b08c-batulaut-star", "b08c-batulaut-risk2015"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Photovoltaic capacity",
+        "value": "A 2015 engineering table reports 200 kWp for the combined Kampung Tanjung Batu Darat and Laut project. This is the strongest located site-specific rating.",
+        "sourceIds": ["b08c-batulaut-risk2015"]
+      },
+      {
+        "label": "Battery capacity",
+        "value": "Approximately 675 kWh in the 2015 project table. Contemporary reporting identifies large lead-acid storage but does not provide maker, model, usable capacity, or replacement history.",
+        "sourceIds": ["b08c-batulaut-risk2015", "b08c-batulaut-apec"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "The 2015 table reports one 270 kW and one 350 kW generator (620 kW aggregate). Generator manufacturer/model and whether both ratings are prime or standby were not found.",
+        "sourceIds": ["b08c-batulaut-risk2015"]
+      },
+      {
+        "label": "Connections",
+        "value": "Approximately 127-128 houses across the paired villages. An APEC case narrative gives roughly 200 people; the differing household/person figures may reflect partial or approximate counts and should not be forced into a household-size calculation.",
+        "sourceIds": ["b08c-batulaut-star", "b08c-batulaut-risk2015", "b08c-batulaut-apec"]
+      },
+      {
+        "label": "Service improvement",
+        "value": "Continuous/24-hour supply replaced individual diesel generators that had generally run about six to eight hours per day.",
+        "sourceIds": ["b08c-batulaut-star", "b08c-batulaut-apec", "b08c-batulaut-st"]
+      },
+      {
+        "label": "Portfolio-level OPS package",
+        "value": "Across three Sabah locations—not Batu Laut alone—OPS announced 430 kW of PV, at least 50% expected fuel reduction, and 710 kW of proprietary inverter capacity: two 250 kVA hybrid power conditioners, two 30 kVA hybrid power conditioners, and four 100 kVA grid-export conditioners.",
+        "sourceIds": ["b08c-batulaut-ops"]
+      },
+      {
+        "label": "Location",
+        "value": "Official 2024 spatial records list Kampung Tanjung Batu Laut in Sandakan, matching the engineering literature's Sandakan/Kinabatangan project. Malaysia's geographic gazette also lists a separate same-named locality in Tawau, explaining but not validating the archived location.",
+        "sourceIds": ["b08c-batulaut-padu", "b08c-batulaut-gazette", "b08c-batulaut-risk2015"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Hybrid power conditioning",
+        "manufacturer": "Optimal Power Solutions",
+        "detail": "OPS proprietary hybrid power conditioners and grid-export conditioners were supplied across the three-site Sabah package. The public announcement does not map a particular inverter count/model to Batu Darat/Laut, so the 710 kW portfolio rating is not assigned to this plant.",
+        "sourceIds": ["b08c-batulaut-ops"]
+      },
+      {
+        "category": "Photovoltaic array",
+        "detail": "Approximately 200 kWp site-specific array. No reliable module manufacturer/model was found.",
+        "sourceIds": ["b08c-batulaut-risk2015"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Large lead-acid battery bank reported at approximately 675 kWh. Chemistry is described in the APEC case narrative, while exact cell and inverter specifications remain undisclosed.",
+        "sourceIds": ["b08c-batulaut-apec", "b08c-batulaut-risk2015"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "detail": "One approximately 270 kW and one approximately 350 kW unit in the engineering table. No supportable maker/model attribution was located.",
+        "sourceIds": ["b08c-batulaut-risk2015"]
+      },
+      {
+        "category": "Monitoring and control",
+        "manufacturer": "Optimal Power Solutions",
+        "detail": "Computerized solar/battery/diesel dispatch and remote monitoring supplied as part of the integration package.",
+        "sourceIds": ["b08c-batulaut-ops", "b08c-batulaut-apec"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Dispatch architecture",
+        "detail": "PV supplies daytime load and charges the battery; computerized controls start diesel generation when solar and stored energy are insufficient, enabling continuous power without running village diesel sets continuously.",
+        "sourceIds": ["b08c-batulaut-apec", "b08c-batulaut-st"]
+      },
+      {
+        "category": "Location correction",
+        "detail": "Contemporaneous and engineering sources place the paired Batu Darat/Laut project in Sandakan/Kinabatangan. Because a distinct Kampung Tanjung Batu Laut also exists in Tawau, the legacy 'Tawau' label is ambiguous and should not be treated as confirmed project geolocation.",
+        "sourceIds": ["b08c-batulaut-archive", "b08c-batulaut-risk2015", "b08c-batulaut-padu", "b08c-batulaut-gazette"]
+      },
+      {
+        "category": "Portfolio-allocation warning",
+        "detail": "OPS's 430 kW solar and 710 kW inverter figures cover Batu Darat/Laut, Kuamut, and Kuamut Seberang collectively. Allocating the full package to this record would materially overstate its equipment.",
+        "sourceIds": ["b08c-batulaut-ops"]
+      },
+      {
+        "category": "Early outcomes",
+        "detail": "Reporting after commissioning described 24-hour household electricity, better lighting and refrigeration, and reduced reliance on individual gensets. These are qualitative early outcomes rather than audited lifetime performance.",
+        "sourceIds": ["b08c-batulaut-star", "b08c-batulaut-st"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No credible source located after the 2015 engineering study reports site-specific energy production, diesel savings, battery replacement, outages, customer count, or whether the original controls remain in service. Present operation is therefore unresolved.",
+        "sourceIds": ["b08c-batulaut-risk2015"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-batulaut-ops",
+        "title": "OPS brings solar hybrid power supply for remote communities in Sabah",
+        "url": "https://optimal-power-solutions.com/ops-brings-solar-hybrid-power-supply-for-remote-communities-in-sabah/",
+        "publisher": "Optimal Power Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-risk2015",
+        "title": "Improving Risk Management for Utility PV-Battery-Diesel Mini-grid Projects in Sabah, Malaysia",
+        "url": "https://www.researchgate.net/publication/284009558_Improving_Risk_Management_for_Utility_PV-Battery-Diesel_Mini-grid_Projects_in_Sabah_Malaysia",
+        "publisher": "Hazelton, Bruce and MacGill / engineering conference paper",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-batulaut-star",
+        "title": "Solar hybrid system lights up two villages in Sabah",
+        "url": "https://www.eco-business.com/news/solar-hybrid-system-lights-up-two-villages-in-sabah/",
+        "publisher": "The Star via Eco-Business",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-batulaut-apec",
+        "title": "Microgrids for Local Energy Supply to Remote Areas and Islands in APEC Region",
+        "url": "https://www.apec.org/docs/default-source/Publications/2012/12/Microgrids-for-Local-Energy-Supply-to-Remote-Areas-and-Islands-in-APEC-Region/2012_ewg_microgrids-Formatted.pdf",
+        "publisher": "Asia-Pacific Economic Cooperation",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-st",
+        "title": "Solar hybrid system for rural Sabah",
+        "url": "https://www.st.gov.my/eng/general/add_counter/465/download/read_count",
+        "publisher": "Energy Commission of Malaysia",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-1ae",
+        "title": "Our Milestones",
+        "url": "https://www.1aesb.com/ourmilestones.html",
+        "publisher": "One Alternate Energy Sdn. Bhd.",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-padu",
+        "title": "PADU implementation coverage by state, Sabah spatial distribution (31 March 2024)",
+        "url": "https://ekonomi.gov.my/sites/default/files/2024-03/Lampiran_Melengkap_Liputan_Pelaksanaan_PADU_31Mac2024_Taburan_Spatial_Mengikut_Negeri.pdf",
+        "publisher": "Ministry of Economy Malaysia",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-gazette",
+        "title": "Sabah Geographical Names Gazetteer",
+        "url": "https://mygeoname.mygeoportal.gov.my/exportpdffasa3.jsp?kodnegeri=12",
+        "publisher": "MyGeoName / Government of Malaysia",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-batulaut-archive",
+        "title": "Tanjung Batu Laut - archived legacy record",
+        "url": "https://web.archive.org/web/20210420204351id_/http://microgridprojects.com/microgrid/tanjung-batu-laut/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "tanjung-labian": {
+    "researchedAt": "2026-07-20",
+    "summary": "Tanjung Labian is a multi-phase rural solar-battery-diesel system in Sabah's Lahad Datu/Tungku area, not merely the rounded 1.2 MW solar/1.2 MW diesel entry in the archive. The best detailed phase-1 vendor source reports 1,212 kWp PV, 4,320 kWh of batteries, 1,650 kW of combined inverter capacity, and 1,250 kW of diesel. A separate engineering table reports the diesel arrangement as two 500 kW plus one 360 kW set (1.36 MW), an unresolved source conflict. Later extensions added villages and capacity, so phase-1 ratings should not be assumed to describe the entire present service area.",
+    "status": "The initial phase was commissioned around November 2012 and the rural-electrification contractor lists completion in April 2013, with three additional villages completed in June 2014. A 2015 field study found strong renewable penetration but also maintenance and remote-monitoring weaknesses. Sabah's current Energy Roadmap lists Labian among the state's solar-hybrid stations, while TNB/SESB says its portfolio of 35 solar-hybrid stations operates 24/7 and illustrates Tanjung Labian. These sources support continued inclusion in the operating portfolio, but no plant-specific 2025/26 generation, diesel burn, battery health, or availability series was located.",
+    "organizations": [
+      {
+        "name": "Sabah Electricity Sdn. Bhd. (SESB)",
+        "role": "Utility/end user and operating organization for the Tanjung Labian solar-hybrid station and its village distribution service.",
+        "sourceIds": ["b08c-labian-1ae", "b08c-labian-risk2015", "b08c-labian-tnb"]
+      },
+      {
+        "name": "Ministry of Rural and Regional Development Malaysia (KKLW)",
+        "role": "Government sponsor/procuring authority under the Bekalan Elektrik Luar Bandar rural electrification program.",
+        "sourceIds": ["b08c-labian-risk2015", "b08c-labian-1ae"]
+      },
+      {
+        "name": "Leonics Co., Ltd.",
+        "role": "Supplier of inverter, power-conversion, and microgrid-control technology; its technical materials provide the most detailed phase-1 ratings.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-leonics-commissioning"]
+      },
+      {
+        "name": "One Alternate Energy Sdn. Bhd.",
+        "role": "Lists completion of the Tanjung Labian BELB solar-hybrid project in April 2013 and an extension to three more villages in June 2014.",
+        "sourceIds": ["b08c-labian-1ae"]
+      },
+      {
+        "name": "Energy Commission of Sabah (ECoS)",
+        "role": "Current state energy regulator/planning body whose Sabah Energy Roadmap lists Labian among off-grid solar-hybrid stations.",
+        "sourceIds": ["b08c-labian-roadmap"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Phase-1 photovoltaic array",
+        "value": "1,212 kWp. Leonics gives this exact rating; the legacy 1,200 kW is a reasonable rounded value but should not replace the documented number.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-risk2015"]
+      },
+      {
+        "label": "Phase-1 battery storage",
+        "value": "4,320 kWh nominal. Neither the accessible vendor deck nor the field study provides a dependable battery-cell manufacturer/model, usable energy, depth of discharge, or current state of health.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-risk2015"]
+      },
+      {
+        "label": "Phase-1 inverter capacity",
+        "value": "1,650 kW combined inverter capacity. A commissioning presentation further divides this into approximately 900 kW of bidirectional battery inverters and 750 kW of grid-connected PV inverters.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-leonics-commissioning"]
+      },
+      {
+        "label": "Phase-1 diesel capacity",
+        "value": "Conflicting published values: Leonics reports 1,250 kW total, while a 2015 engineering table identifies two 500 kW plus one 360 kW set, totaling 1,360 kW. The archive's 1,200 kW is rounded and does not resolve the discrepancy.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-risk2015", "b08c-labian-archive"]
+      },
+      {
+        "label": "Phase-1 customers",
+        "value": "The engineering table reports 681 connected households. Leonics marketing describes approximately 700 families across seven villages plus a school, clinic, and government facilities; those denominators are close but not identical.",
+        "sourceIds": ["b08c-labian-risk2015", "b08c-labian-leonics-commissioning"]
+      },
+      {
+        "label": "Distribution network",
+        "value": "Leonics commissioning material describes approximately 14 km of local distribution serving multiple villages and community facilities.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      },
+      {
+        "label": "Reported solar generation",
+        "value": "Leonics projected or reported approximately 1.82 GWh/year from the PV plant. The source is a supplier presentation, and no current meter series was found to independently validate the figure.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      },
+      {
+        "label": "Extension phases",
+        "value": "Public project records show a later three-village extension completed in June 2014. The 2015 study separately tabulates a phase 2 and a Sungai Merah/Tanjung Labian installation, but source-table formatting and overlapping place names make a single safe present-day aggregate impossible.",
+        "sourceIds": ["b08c-labian-1ae", "b08c-labian-risk2015"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery inverters",
+        "manufacturer": "Leonics",
+        "detail": "Approximately 900 kW of bidirectional battery-inverter capacity in the vendor's phase-1 architecture; accessible material does not provide a model number.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      },
+      {
+        "category": "PV inverters",
+        "manufacturer": "Leonics",
+        "detail": "Approximately 750 kW of grid-connected inverter capacity, supplemented by MPPT conversion for part of the array in an AC/DC-coupled architecture.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      },
+      {
+        "category": "Photovoltaic array",
+        "detail": "Phase-1 array totaling 1,212 kWp. Module manufacturer, model, string layout, and current degraded capacity were not found.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-risk2015"]
+      },
+      {
+        "category": "Battery bank",
+        "detail": "Phase-1 bank totaling 4,320 kWh nominal. No reliable public cell chemistry, manufacturer, model, or replacement record was located.",
+        "sourceIds": ["b08c-labian-leonics"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "detail": "Published phase-1 totals conflict between 1.25 MW and an itemized 1.36 MW (2 x 500 kW plus 1 x 360 kW). No supportable maker/model attribution was found.",
+        "sourceIds": ["b08c-labian-leonics", "b08c-labian-risk2015"]
+      },
+      {
+        "category": "Microgrid control",
+        "manufacturer": "Leonics",
+        "detail": "Supervisory controls coordinate AC-coupled PV, DC/MPPT-coupled PV, bidirectional battery inverters, village load, and diesel backup.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Hybrid architecture",
+        "detail": "The vendor architecture combines AC-coupled PV inverters with battery bidirectional inverters and additional DC/MPPT-coupled PV, allowing storage and diesel generation to form and balance the isolated village grid.",
+        "sourceIds": ["b08c-labian-leonics-commissioning"]
+      },
+      {
+        "category": "Renewable penetration",
+        "detail": "The 2015 study calculated 85.4% renewable penetration over an 11-month period for phase 1, above a 70% design target. The authors caution that conflict-related displacement depressed local load, so the result should not be generalized as normal long-run performance.",
+        "sourceIds": ["b08c-labian-risk2015"]
+      },
+      {
+        "category": "Reliability and user response",
+        "detail": "Across the Sabah study sites, approximately 85% of users reported satisfaction and significant outages were generally less frequent than once per week. These are multi-site survey results, not a Tanjung Labian-only audited service-level metric.",
+        "sourceIds": ["b08c-labian-risk2015"]
+      },
+      {
+        "category": "Maintenance weakness",
+        "detail": "The field study found no permanently based technical staff at Tanjung Labian; technicians traveled from Lahad Datu, increasing response time. Satellite/web monitoring was unavailable at visited sites and operating-data gaps limited performance management.",
+        "sourceIds": ["b08c-labian-risk2015"]
+      },
+      {
+        "category": "Current portfolio evidence",
+        "detail": "ECoS lists Labian as an off-grid solar-hybrid station, and TNB/SESB states that 35 solar-hybrid stations provide 24/7 service while illustrating Tanjung Labian. This is persuasive portfolio-level continuity evidence but not a plant availability report.",
+        "sourceIds": ["b08c-labian-roadmap", "b08c-labian-tnb"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No public plant-specific 2025/26 records were found for annual PV output, diesel fuel, battery capacity, inverter availability, outages, customer growth, or replacement capital. Phase ratings should not be represented as a verified current aggregate.",
+        "sourceIds": ["b08c-labian-roadmap", "b08c-labian-tnb"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-labian-leonics",
+        "title": "Inverter Technologies in Isolated Microgrid",
+        "url": "https://asiacleanenergyforum.adb.org/wp-content/uploads/2015/06/Wuthipong-Suponthana_-Inverter-Technologies-in-Isolated-Microgrid-Microgrid.pdf",
+        "publisher": "Leonics / Asia Clean Energy Forum",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-labian-leonics-commissioning",
+        "title": "Leonics 2 MW Stand-Alone PV-Diesel Generator Project Presentation",
+        "url": "https://www.scribd.com/document/127289572/Leonics-2-MW-stand-alone-PV-Diesel-Generator001",
+        "publisher": "Leonics (archived presentation copy)",
+        "kind": "archive"
+      },
+      {
+        "id": "b08c-labian-risk2015",
+        "title": "Improving Risk Management for Utility PV-Battery-Diesel Mini-grid Projects in Sabah, Malaysia",
+        "url": "https://www.researchgate.net/publication/284009558_Improving_Risk_Management_for_Utility_PV-Battery-Diesel_Mini-grid_Projects_in_Sabah_Malaysia",
+        "publisher": "Hazelton, Bruce and MacGill / engineering conference paper",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-labian-1ae",
+        "title": "Our Milestones",
+        "url": "https://www.1aesb.com/ourmilestones.html",
+        "publisher": "One Alternate Energy Sdn. Bhd.",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-labian-tnb",
+        "title": "TNB & SESB: Lighting the Islands",
+        "url": "https://www.tnb.com.my/sustainability/esg-stories-tnb-sesb-lighting-the-islands",
+        "publisher": "Tenaga Nasional Berhad / Sabah Electricity",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-labian-roadmap",
+        "title": "Sabah Energy Roadmap and Master Plan 2040",
+        "url": "https://ecos.gov.my/sites/default/files/uploads/downloads/2023-09/SABAH%20ENERGY%20ROADMAP%20AND%20MASTER%20PLAN%202040%20%28SE-RAMP%202040%29.pdf",
+        "publisher": "Energy Commission of Sabah",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-labian-archive",
+        "title": "Tanjung Labian - archived legacy record",
+        "url": "https://web.archive.org/web/20210420200307id_/http://microgridprojects.com/microgrid/tanjung-labian/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "taykwa-tagamou-nation": {
+    "researchedAt": "2026-07-20",
+    "summary": "Taykwa Tagamou Nation's project progressed beyond the archived planning status into a community-wide rollout of grid-connected distributed solar, initially on public buildings and then on residences. The clearest exact pilot is a 50 kW ground-mounted array plus 50 kWh battery at the Community Complex. Developer JAZZ Solar describes a broader 2021 installation as 250 kW solar plus storage and markets the Nation as '100% solarized,' while 2024 community reporting says each participating home has roughly 8-9 kW. Those claims do not form a reconciled as-built inventory and do not mean the community is off-grid or meets 100% of annual load from solar.",
+    "status": "Phase 1 on community buildings was reported complete and residential phase 2 underway in 2021; by 2024 community reporting described solar on every home and substantial bill savings. Taykwa Tagamou's own current corporations page describes community-wide solar microgrids managed through its energy enterprise. A February 2026 RFP for load, distribution, and Hydro One connection studies confirms continued grid-connected energy planning and expansion. No consolidated 2025/26 meter, storage, outage, or installed-capacity inventory was found, so the correct status is installed and operating as distributed grid-connected systems, with aggregate performance not independently verified.",
+    "organizations": [
+      {
+        "name": "Taykwa Tagamou Nation",
+        "role": "Project owner/host and beneficiary; led community energy planning, public-building and residential deployment, and current grid-capacity planning.",
+        "sourceIds": ["b08c-ttn-official", "b08c-ttn-ieso", "b08c-ttn-rfp2026"]
+      },
+      {
+        "name": "JAZZ Solar Solutions Inc.",
+        "role": "Developer/EPC and long-term community-energy partner for the solar-and-storage rollout; publishes the 250 kW portfolio claim.",
+        "sourceIds": ["b08c-ttn-jazz", "b08c-ttn-energymix", "b08c-ttn-nrcan2023"]
+      },
+      {
+        "name": "Takwata Spring Energy Limited Partnership",
+        "role": "Taykwa Tagamou-owned community micro-utility/energy enterprise associated with the Nation's solar, efficiency, and broader clean-energy work.",
+        "sourceIds": ["b08c-ttn-official"]
+      },
+      {
+        "name": "Independent Electricity System Operator (IESO)",
+        "role": "Funded the 50 kW/50 kWh Community Complex pilot and later training, virtual-power-plant feasibility, EV-charging, and energy-as-a-service work through Indigenous energy programs.",
+        "sourceIds": ["b08c-ttn-ieso"]
+      },
+      {
+        "name": "Government of Canada",
+        "role": "Provided C$1.36 million through the Small Communities Fund for the rollout and later more than C$1 million shared with Oneida Nation for distributed-energy training and capacity building.",
+        "sourceIds": ["b08c-ttn-energymix", "b08c-ttn-nrcan2023"]
+      },
+      {
+        "name": "Ontario Energy Board",
+        "role": "Provided approximately C$351,000 through its Innovation Sandbox/Indigenous energy-support work for energy-system research and development.",
+        "sourceIds": ["b08c-ttn-oeb"]
+      },
+      {
+        "name": "Hydro One Networks Inc.",
+        "role": "Grid/distribution connection counterpart referenced in the Nation's 2026 engineering RFP; it is not identified as owner of the behind-the-meter solar assets.",
+        "sourceIds": ["b08c-ttn-rfp2026"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Community Complex pilot",
+        "value": "50 kW ground-mounted solar plus 50 kWh battery storage. This IESO record is the strongest exact project-component rating.",
+        "sourceIds": ["b08c-ttn-ieso"]
+      },
+      {
+        "label": "Developer portfolio claim",
+        "value": "JAZZ Solar lists a 2021 Taykwa Tagamou installation at 250 kW solar plus battery. Its website does not disclose battery kW/kWh, site breakdown, commissioning test, or whether 250 kW includes the 50 kW IESO pilot.",
+        "sourceIds": ["b08c-ttn-jazz"]
+      },
+      {
+        "label": "Residential systems",
+        "value": "Community reporting in 2024 says every home received approximately 8-9 kW of rooftop solar. An earlier report described nearly three dozen households in phase 2; no final as-built home count and nameplate rollup was located.",
+        "sourceIds": ["b08c-ttn-wawatay2024", "b08c-ttn-energymix"]
+      },
+      {
+        "label": "Phase-1 sites",
+        "value": "Reported sites included the public-works garage, Community Complex, water-treatment plant, Lands and Resources building, and Healthy Babies building, with solar and storage included in the community-building phase.",
+        "sourceIds": ["b08c-ttn-timmins2021", "b08c-ttn-energymix"]
+      },
+      {
+        "label": "Project cost and grants",
+        "value": "Contemporary reporting gives an approximately C$2.04 million rollout, including C$1.36 million federal Small Communities Fund support and C$200,000 from IESO. Later capacity-building awards are separate and should not be added as construction cost without project accounting.",
+        "sourceIds": ["b08c-ttn-timmins2021", "b08c-ttn-energymix"]
+      },
+      {
+        "label": "Lifetime savings forecast",
+        "value": "The project team forecast 16.5 GWh of generation and approximately C$4 million in electricity-bill savings over 30 years. These are projections, not realized lifetime results.",
+        "sourceIds": ["b08c-ttn-energymix"]
+      },
+      {
+        "label": "Reported household savings",
+        "value": "A 2024 community article reported roughly 40-50% bill reductions and as much as 70% in summer for homes. This is self-reported outcome evidence, not a utility-billing audit.",
+        "sourceIds": ["b08c-ttn-wawatay2024"]
+      },
+      {
+        "label": "NRCan 1 MW / 38 kWh statement",
+        "value": "A 2023 federal release quotes JAZZ describing 'solar (1 MW) and storage (38 kWh)' deployed through pandemic-era community projects. The wording covers Taykwa Tagamou and Oneida work collectively and conflicts with site-specific figures, so 1 MW is not assigned to Taykwa Tagamou alone.",
+        "sourceIds": ["b08c-ttn-nrcan2023"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Community Complex solar array",
+        "detail": "50 kW ground-mounted PV system. Public funding records do not identify module or inverter manufacturers/models.",
+        "sourceIds": ["b08c-ttn-ieso"]
+      },
+      {
+        "category": "Community Complex battery",
+        "detail": "50 kWh battery system. Chemistry, inverter power, manufacturer, model, usable capacity, and present state of health were not located.",
+        "sourceIds": ["b08c-ttn-ieso"]
+      },
+      {
+        "category": "Residential photovoltaic systems",
+        "detail": "Approximately 8-9 kW per participating home in 2024 community reporting. No verified module/inverter bill of materials or consolidated system count was found.",
+        "sourceIds": ["b08c-ttn-wawatay2024"]
+      },
+      {
+        "category": "Public-building solar and storage",
+        "manufacturer": "JAZZ Solar Solutions Inc. (developer/integrator)",
+        "detail": "Distributed arrays and batteries on several Nation facilities. JAZZ is identified as the delivery partner, but accessible sources do not support attributing the underlying hardware manufacturer or model to JAZZ.",
+        "sourceIds": ["b08c-ttn-jazz", "b08c-ttn-timmins2021"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture correction",
+        "detail": "Evidence supports multiple behind-the-meter/grid-connected DER systems spread across buildings and homes. No source establishes an islandable community feeder, black-start capability, or a single central controller; 'microgrid' here is a program label, not proof of whole-community islanding.",
+        "sourceIds": ["b08c-ttn-archive", "b08c-ttn-ieso", "b08c-ttn-official", "b08c-ttn-rfp2026"]
+      },
+      {
+        "category": "100% claim qualification",
+        "detail": "JAZZ's '100% solarized community' language means the rollout reached infrastructure buildings and homes. It does not establish 100% annual renewable-energy share, off-grid operation, or zero Hydro One purchases.",
+        "sourceIds": ["b08c-ttn-jazz", "b08c-ttn-rfp2026"]
+      },
+      {
+        "category": "Virtual-power-plant pathway",
+        "detail": "IESO funded feasibility, training, and business-model work for residential solar aggregation, EV chargers, and an energy-as-a-service/virtual-power-plant approach. These activities are development work, not proof that a fully dispatchable VPP is commercially operating.",
+        "sourceIds": ["b08c-ttn-ieso"]
+      },
+      {
+        "category": "Community economics",
+        "detail": "The rollout was structured to reduce household and Nation electricity bills and build Indigenous ownership and technical capacity. Reported household savings are substantial, but a consolidated audited savings dataset was not found.",
+        "sourceIds": ["b08c-ttn-wawatay2024", "b08c-ttn-nrcan2023"]
+      },
+      {
+        "category": "2026 grid study",
+        "detail": "The Nation's February 2026 RFP seeks load assessment, distribution-capacity review, and Hydro One connection analysis. It is evidence of active expansion/planning, not evidence that existing assets failed.",
+        "sourceIds": ["b08c-ttn-rfp2026"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No authoritative consolidated as-built inventory, battery kW/MWh total, annual production, outage/islanding record, curtailment series, or 2025/26 savings audit was located. Exact pilot values and clearly labeled developer/community claims should remain separate.",
+        "sourceIds": ["b08c-ttn-ieso", "b08c-ttn-jazz", "b08c-ttn-wawatay2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-ttn-ieso",
+        "title": "Indigenous Energy Support Program Funding Recipients",
+        "url": "https://ieso.ca/Get-Involved/Indigenous-Relations/Indigenous-Energy-Support-Program/Funding-Recipients",
+        "publisher": "Independent Electricity System Operator",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-ttn-jazz",
+        "title": "Taykwa Tagamou Nation - 250 kW Solar + Battery project",
+        "url": "https://www.jazzsolar.com/",
+        "publisher": "JAZZ Solar Solutions Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-ttn-official",
+        "title": "Taykwa Tagamou Nation Corporations",
+        "url": "https://taykwatagamou.com/about/corporations/",
+        "publisher": "Taykwa Tagamou Nation",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-ttn-rfp2026",
+        "title": "Request for Proposals",
+        "url": "https://taykwatagamou.com/rfp/",
+        "publisher": "Taykwa Tagamou Nation",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-ttn-nrcan2023",
+        "title": "Federal Government Supports Clean Energy Training for Taykwa Tagamou Nation and Oneida Nation of the Thames",
+        "url": "https://www.canada.ca/en/natural-resources-canada/news/2023/03/federal-government-supports-clean-energy-training-for-taykwa-tagamou-nation-and-oneida-nation-of-the-thames.html",
+        "publisher": "Natural Resources Canada",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-ttn-energymix",
+        "title": "Community Solar Microgrid to Save $4 Million for Northern Ontario First Nation",
+        "url": "https://www.theenergymix.com/community-solar-microgrid-to-save-4-million-for-northern-ontario-first-nation/",
+        "publisher": "The Energy Mix",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-ttn-timmins2021",
+        "title": "Solar power project saving people hundreds in hydro costs",
+        "url": "https://ibftoday.ca/solar-power-project-saving-people-hundreds-in-hydro-costs-timmins-today/",
+        "publisher": "TimminsToday via Indigenous Business & Finance Today",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-ttn-wawatay2024",
+        "title": "October 2024 issue",
+        "url": "https://www.wawataynews.ca/sites/default/files/PDFissues/October%202024%20Wawatay.pdf",
+        "publisher": "Wawatay News",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-ttn-oeb",
+        "title": "Taykwa Tagamou Nation gets energy research funding",
+        "url": "https://www.timminstoday.com/local-news/taykwa-tagamou-nation-gets-energy-research-funding-7923029",
+        "publisher": "TimminsToday",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-ttn-archive",
+        "title": "Taykwa Tagamou Nation - archived legacy record",
+        "url": "https://web.archive.org/web/20210226183220id_/http://microgridprojects.com/microgrid/taykwa-tagamou-nation/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "tecnalia-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "TECNALIA's microgrid is an active research and test laboratory, not a community power project with a fixed generation mix. The current Smart Grids and Distributed Generation Laboratory is in Derio, Bizkaia, and can be reconfigured around grid emulators, PV and wind generation, grid-forming/following converters, batteries, ultracapacitors, a 250 kW flywheel, controllable loads, and power-hardware-in-the-loop simulation. The archived Azpeitia location refers to TECNALIA's separate thermal laboratory and earlier linked research assets. Likewise, the legacy '160 kW diesel' appears to combine two historical 55 kW diesel generators with a separate 50 kW microturbine and should be retired.",
+    "status": "TECNALIA's official 2026 infrastructure page presents the Derio laboratory as current and available for testing. The 2020 ERIGrid campaign documents grid-forming controls and load-shedding tests, and the 2020-2022 ENERISLA program connected the Derio electrical laboratory with TECNALIA's Azpeitia thermal laboratory and CIRCE facilities for remote multi-energy testing. Because the laboratory is deliberately reconfigurable, a single operational capacity or energy mix is not meaningful. No source indicates closure; current status is active R&D infrastructure.",
+    "organizations": [
+      {
+        "name": "TECNALIA Research & Innovation",
+        "role": "Owner/operator of the Smart Grids and Distributed Generation Laboratory, developer of its microgrid-management system, and research lead for distributed-energy and multi-energy demonstrations.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-enerisla", "b08c-tecnalia-erigrid"]
+      },
+      {
+        "name": "DERlab",
+        "role": "European distributed-energy laboratory network that publishes TECNALIA facility capabilities and historical equipment inventory.",
+        "sourceIds": ["b08c-tecnalia-derlab"]
+      },
+      {
+        "name": "ERIGrid",
+        "role": "European research-infrastructure program under which external researchers carried out the documented microgrid-control and low-voltage testing campaign.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "name": "CIRCE - Research Centre for Energy Resources and Consumption",
+        "role": "Partner laboratory remotely coupled with TECNALIA's electrical and thermal microgrids in the ENERISLA project.",
+        "sourceIds": ["b08c-tecnalia-enerisla"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Grid emulation",
+        "value": "Three 50 kW grid emulators, 150 kW aggregate, support programmable grid conditions. A line emulator and flexible 150 kW RLC load allow topology and disturbance testing.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "label": "DC sources",
+        "value": "Programmable DC-source capability at 100 kW and 280 kW for emulating PV arrays, batteries, and other DC resources.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "label": "Physical renewable generators",
+        "value": "A 6 kW wind turbine, a 0.6 kW single-phase PV system, and a 3.6 kW three-phase PV system are listed in the current laboratory inventory. These are test assets, not a fixed annual energy mix.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "label": "Flexible power converters",
+        "value": "Two 40 kW converters capable of grid-forming and grid-following operation, used for inverter-dominated microgrid controls and islanding tests.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-erigrid"]
+      },
+      {
+        "label": "Electrical storage inventory",
+        "value": "Current listings include a 5 kW ultracapacitor bank; 1,120 Ah at 24 V with a single-phase inverter; 1,925 Ah at 48 V with a three-phase inverter; and a 250 kW flywheel. Ah ratings cannot be safely converted to usable kWh without configuration and discharge data.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "label": "Power-hardware-in-the-loop",
+        "value": "Real-time digital simulation is coupled to two 50 kW power amplifiers, enabling power-hardware-in-the-loop validation of controllers and devices under simulated network conditions.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "label": "Historical combustion generation",
+        "value": "Older facility descriptions list two 55 kW diesel generator sets (110 kW total) plus a distinct 50 kW microturbine. The archived 160 kW 'diesel' figure evidently combines unlike technologies and is not retained as diesel capacity.",
+        "sourceIds": ["b08c-tecnalia-history", "b08c-tecnalia-derlab", "b08c-tecnalia-archive"]
+      },
+      {
+        "label": "Historical fuel cell",
+        "value": "A Ballard Nexa PEM fuel-cell unit is listed at approximately 1.2 kW nominal (often rounded to 1 kW in legacy summaries). Its presence in an older inventory does not establish routine current operation.",
+        "sourceIds": ["b08c-tecnalia-derlab", "b08c-tecnalia-history"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Flexible grid converters",
+        "detail": "Two 40 kW programmable grid-forming/grid-following converters used behind transformers for droop, synchronization, power-sharing, and island-grid research. The official page does not name a current commercial model.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Grid simulator and load",
+        "manufacturer": "Regatron",
+        "model": "ACS series",
+        "detail": "Used as programmable grid simulator in the ERIGrid test configuration, alongside a 40 kW three-phase load bank and synchronization/breaker hardware.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Measurement system",
+        "manufacturer": "Dewesoft",
+        "model": "SIRIUS",
+        "detail": "High-speed measurement and data-acquisition hardware used in the documented low-voltage microgrid testing.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Fuel cell",
+        "manufacturer": "Ballard Power Systems",
+        "model": "Nexa",
+        "detail": "Historical PEM fuel-cell test unit rated approximately 1.2 kW nominal.",
+        "sourceIds": ["b08c-tecnalia-derlab"]
+      },
+      {
+        "category": "Historical diesel generator sets",
+        "manufacturer": "John Deere",
+        "detail": "Two 55 kW diesel engines coupled to 400 V, 50 Hz, approximately 63 kVA synchronous generators in the older laboratory inventory.",
+        "sourceIds": ["b08c-tecnalia-derlab"]
+      },
+      {
+        "category": "Flywheel UPS/storage",
+        "manufacturer": "Caterpillar",
+        "detail": "Historical/current sources describe flywheel storage; the current laboratory page gives 250 kW while older material identifies Caterpillar equipment. Exact continuity and model are not established.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-derlab"]
+      },
+      {
+        "category": "Microgrid management system",
+        "manufacturer": "TECNALIA",
+        "detail": "MGMS/SCADA environment for topology switching, grid-connected and island control, scheduling, economic dispatch, visualization, state estimation, and protection/load-shedding research.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-enerisla", "b08c-tecnalia-erigrid"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Laboratory topology",
+        "detail": "The facility can be rearranged rather than having one permanent one-line diagram. Grid emulators, physical DER, programmable converters, storage, controllable loads, and real-time simulation can be connected for grid-tied, islanded, and transition tests.",
+        "sourceIds": ["b08c-tecnalia-current"]
+      },
+      {
+        "category": "Control hierarchy",
+        "detail": "Documented tests used primary active-power/frequency and reactive-power/voltage droop, with a secondary EMS for frequency restoration, power-exchange scheduling, economic dispatch, visualization, and load shedding.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Load-shedding result",
+        "detail": "In one ERIGrid step test, load shedding occurred about 6.3 seconds after the disturbance and point-of-connection power returned within the stated seven-second tolerance. This is one experiment, not a utility reliability statistic.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Test limitation",
+        "detail": "The ERIGrid report notes that some planned tests could not be completed because storage was unavailable during that campaign. This does not mean all laboratory storage was permanently retired.",
+        "sourceIds": ["b08c-tecnalia-erigrid"]
+      },
+      {
+        "category": "Multi-energy integration",
+        "detail": "ENERISLA remotely coupled the Derio electrical microgrid, TECNALIA's Azpeitia thermal laboratory, and CIRCE infrastructure while testing a new SCADA architecture, state estimation, battery SOC/SOH/RUL methods, PHIL, and building-integrated PV.",
+        "sourceIds": ["b08c-tecnalia-enerisla"]
+      },
+      {
+        "category": "Digital twin",
+        "detail": "A 2022 peer-reviewed publication describes a virtual/digital-twin environment for testing microgrid-management algorithms before deployment against physical laboratory equipment.",
+        "sourceIds": ["b08c-tecnalia-virtual"]
+      },
+      {
+        "category": "Location correction",
+        "detail": "The current electrical Smart Grids and Distributed Generation Laboratory is in Derio. Azpeitia remains relevant as TECNALIA's thermal laboratory in linked multi-energy experiments, not as the sole location of the current electrical microgrid.",
+        "sourceIds": ["b08c-tecnalia-current", "b08c-tecnalia-enerisla"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-tecnalia-current",
+        "title": "Smart Grids and Distributed Generation Laboratory",
+        "url": "https://www.tecnalia.com/infraestructuras/laboratorio-de-redes-electricas-inteligentes-y-generacion-distribuida",
+        "publisher": "TECNALIA Research & Innovation",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tecnalia-enerisla",
+        "title": "Working towards decarbonisation: renewable isolated microgrids",
+        "url": "https://www.tecnalia.com/en/news/working-towards-decarbonisation-renewable-isolated-microgrids",
+        "publisher": "TECNALIA Research & Innovation",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tecnalia-derlab",
+        "title": "TECNALIA Research & Innovation infrastructure",
+        "url": "https://infrastructure.der-lab.net/tecnalia-research-innovation/",
+        "publisher": "DERlab",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tecnalia-erigrid",
+        "title": "ERIGrid Transnational Access Technical Report: Microgrid Control Strategies in a Low-Voltage Test Facility",
+        "url": "https://erigrid.eu/wp-content/uploads/2020/08/ERIGrid_TA_MGCS-LTV_Technical-Report_v01.pdf",
+        "publisher": "ERIGrid / TECNALIA",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tecnalia-history",
+        "title": "TECNALIA Microgrid Laboratory",
+        "url": "https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/tecnalia-microgrid-laboratory/",
+        "publisher": "Microgrid Symposiums",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tecnalia-virtual",
+        "title": "Virtual laboratory for microgrid management systems testing",
+        "url": "https://dsp.tecnalia.com/items/a49b96a6-5dd3-4265-83d2-6ec53125927f/full",
+        "publisher": "TECNALIA Digital Science Platform / peer-reviewed publication record",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tecnalia-archive",
+        "title": "TECNALIA Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420133741id_/http://microgridprojects.com/microgrid/tecnalia-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "tetrino-kola-pennisula": {
+    "researchedAt": "2026-07-20",
+    "summary": "Tetrino on Russia's Kola Peninsula received an autonomous wind-solar-diesel system in 2015 as part of a Murmansk regional program for roadless White Sea coast villages. The strongest site-specific technical table gives 71.4 kW total: 20 kW wind, 16.2 kW solar PV, and 35.2 kW diesel. Broader project announcements often combine Tetrino with Chavanga, Chapoma, and Pyalitsa and must not be used as Tetrino-only capacity. The project changed local service from roughly eight-to-ten-hour diesel schedules to 24-hour electricity.",
+    "status": "Tetrino's system was commissioned in mid-2015 and contemporary reporting described successful 24-hour operation; a 2017 report said the four-village installations were working well. A 2022 academic review still listed Tetrino among operating autonomous hybrid complexes, but gave generic ratings that conflict with the earlier site-specific table and did not publish Tetrino production or availability. No credible post-2022 Tetrino-specific operating, fuel, outage, or equipment-replacement report was located. Status is historically commissioned and reported operating, with July 2026 performance unverified.",
+    "organizations": [
+      {
+        "name": "Government of Murmansk Region",
+        "role": "Regional program sponsor and major public funding participant for autonomous renewable-diesel systems on the Tersky coast.",
+        "sourceIds": ["b08c-tetrino-ksc", "b08c-tetrino-bellona", "b08c-tetrino-barents"]
+      },
+      {
+        "name": "Tersky District / Varzuga municipal authorities",
+        "role": "Local-government host and beneficiary side for village-power modernization; precise long-term ownership and operating assignments were not found in accessible current records.",
+        "sourceIds": ["b08c-tetrino-ksc", "b08c-tetrino-bellona"]
+      },
+      {
+        "name": "Kola Science Centre of the Russian Academy of Sciences",
+        "role": "Research institution documenting site-specific capacities, regional energy conditions, and program targets.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "name": "Russian federal, regional, and local budget authorities",
+        "role": "Combined public funding sources; the Kola Science Centre paper reports 22% federal, 38% regional, and 3% local funding, with 37% from extra-budgetary sources.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Site-specific total capacity",
+        "value": "71.4 kW in the Kola Science Centre table, comprising 20 kW wind, 16.2 kW solar, and 35.2 kW diesel.",
+        "sourceIds": ["b08c-tetrino-archive", "b08c-tetrino-ksc"]
+      },
+      {
+        "label": "Wind capacity",
+        "value": "20 kW site-specific. Public sources do not give a reliable turbine count, manufacturer, model, hub height, or power curve for Tetrino alone.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "label": "Solar capacity",
+        "value": "16.2 kW site-specific PV. Module and inverter makers/models and current degraded capacity were not located.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "label": "Diesel capacity",
+        "value": "35.2 kW site-specific in the strongest table. A 2022 review describes these village complexes generically as 60 kW diesel, 20 kW wind, and 15 kW solar; because that appears to be a template rather than Tetrino's as-built schedule, the 35.2 kW site value is preferred and the conflict retained.",
+        "sourceIds": ["b08c-tetrino-ksc", "b08c-tetrino-arctic2035"]
+      },
+      {
+        "label": "Service hours",
+        "value": "Commissioning changed service from approximately eight-to-ten hours per day from diesel generation to round-the-clock power.",
+        "sourceIds": ["b08c-tetrino-bellona", "b08c-tetrino-barents"]
+      },
+      {
+        "label": "Program targets",
+        "value": "The regional program targeted roughly 50% reductions in imported fuel/oil and generation cost and a 25% extension of diesel-generator life. These are program targets, not verified Tetrino operating outcomes.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "label": "Three-village expansion totals",
+        "value": "Project-era reporting described, across multiple villages, ten 10 kW plus four 5 kW wind turbines, about 300 PV modules totaling 75 kW, and multiple diesel sets. These are portfolio totals and are intentionally not assigned to Tetrino.",
+        "sourceIds": ["b08c-tetrino-bellona", "b08c-tetrino-barents"]
+      },
+      {
+        "label": "Broader program cost",
+        "value": "Contemporary coverage reported approximately EUR 1.5 million for the broader remote-village renewable program, not Tetrino alone.",
+        "sourceIds": ["b08c-tetrino-bellona"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind generation",
+        "detail": "Wind equipment totaling 20 kW at Tetrino. Accessible sources do not support a manufacturer, model, turbine count, or per-unit rating.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "category": "Photovoltaic array",
+        "detail": "PV equipment totaling 16.2 kW at Tetrino. No dependable module or inverter maker/model was found.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "category": "Diesel generation",
+        "detail": "Diesel capacity totaling 35.2 kW in the site-specific table. Generator count, manufacturer, model, voltage, and prime/standby rating were not found.",
+        "sourceIds": ["b08c-tetrino-ksc"]
+      },
+      {
+        "category": "Control and storage",
+        "detail": "The hybrid complex necessarily includes power conversion and automated dispatch, and regional descriptions refer to renewable-diesel autonomous complexes. No credible Tetrino-specific battery chemistry/capacity, controller maker/model, or one-line diagram was located, so none is invented here.",
+        "sourceIds": ["b08c-tetrino-arctic2035", "b08c-tetrino-unfccc"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating architecture",
+        "detail": "Wind and PV reduce runtime and fuel use of the isolated diesel plant while diesel supplies firm capacity during low-resource periods. The village remains outside the unified power grid and depends on local generation.",
+        "sourceIds": ["b08c-tetrino-unfccc", "b08c-tetrino-bellona"]
+      },
+      {
+        "category": "Portfolio-allocation warning",
+        "detail": "Most news releases aggregate equipment and savings across Tetrino, Chavanga, Chapoma, and sometimes Pyalitsa. Only the Kola Science Centre's site row is used for Tetrino capacity; broader figures remain contextual.",
+        "sourceIds": ["b08c-tetrino-ksc", "b08c-tetrino-bellona", "b08c-tetrino-barents"]
+      },
+      {
+        "category": "Reported regional fuel outcome",
+        "detail": "A 2016 industry report says fuel deliveries across the broader village program fell from more than 290 tonnes per year to 143 tonnes in the preceding year. It is not a Tetrino-only measurement and cannot validate the site's 50% target by itself.",
+        "sourceIds": ["b08c-tetrino-eprussia"]
+      },
+      {
+        "category": "Early operational evidence",
+        "detail": "Commissioning reports document 24-hour service in 2015, and TASS reported in 2017 that the four autonomous village plants were working well and that one plant could save more than RUB 3 million annually. The savings statement is not identified as Tetrino-specific.",
+        "sourceIds": ["b08c-tetrino-bellona", "b08c-tetrino-tass"]
+      },
+      {
+        "category": "Capacity discrepancy",
+        "detail": "The 2022 generic 60 kW diesel/20 kW wind/15 kW PV description totals 95 kW and conflicts with the earlier Tetrino-specific 71.4 kW table. It may describe a standardized configuration or another village; it is not substituted for the site-specific record.",
+        "sourceIds": ["b08c-tetrino-ksc", "b08c-tetrino-arctic2035"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No credible post-2022 source was found for Tetrino-specific generation, diesel consumption, outages, renewable share, maintenance, equipment replacement, or present service hours. The installed system is historically well documented, but 2026 operation is unverified.",
+        "sourceIds": ["b08c-tetrino-arctic2035"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b08c-tetrino-ksc",
+        "title": "Development of hybrid wind-solar-diesel complexes in isolated settlements of the Murmansk Region",
+        "url": "https://rio.ksc.ru/data/documents/45_kuznetsov_20.pdf",
+        "publisher": "Kola Science Centre, Russian Academy of Sciences",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-bellona",
+        "title": "Villages in Russia's Arctic make coveted progress with renewable energy",
+        "url": "https://bellona.org/news/renewable-energy/2015-08-villages-in-russias-arctic-make-coveted-progress-with-renewables-energy",
+        "publisher": "Bellona",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-barents",
+        "title": "Green power for Kola villages",
+        "url": "https://www.thebarentsobserver.com/energy/green-power-for-kola-villages/237353",
+        "publisher": "The Barents Observer",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-arctic2035",
+        "title": "Renewable energy in decentralized energy-supply zones of the Russian Arctic",
+        "url": "https://arctic2035.ru/n11-p41",
+        "publisher": "Arctic 2035",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-eprussia",
+        "title": "Renewable energy reached the remote villages of the Kola Peninsula",
+        "url": "https://www.eprussia.ru/epr/305/9621545.htm",
+        "publisher": "Energy and Industry of Russia",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-unfccc",
+        "title": "Renewables to power up remote Russian villages",
+        "url": "https://unfccc.int/news/renewables-to-power-up-remote-russian-villages",
+        "publisher": "United Nations Framework Convention on Climate Change",
+        "kind": "primary"
+      },
+      {
+        "id": "b08c-tetrino-tass",
+        "title": "Renewable energy to provide round-the-clock power for remote Arctic villages",
+        "url": "https://tass.com/economy/958177",
+        "publisher": "TASS",
+        "kind": "secondary"
+      },
+      {
+        "id": "b08c-tetrino-archive",
+        "title": "Tetrino Kola Pennisula - archived legacy record",
+        "url": "https://web.archive.org/web/20200706003146id_/http://microgridprojects.com/microgrid/tetrino-kola-pennisula/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  }
+}

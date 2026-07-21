@@ -1,0 +1,323 @@
+{
+  "thabazimbi-chromium-mine": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is the Cronimet Chrome/Thaba open-pit chromium mine near Thabazimbi, Limpopo, and duplicates the legacy page titled 'Thabazimbi Chrome Mine Microgrid.' The plant commissioned in November 2012 as a 1 MWp PV system integrated with two 800 kVA diesel generators through SMA's Fuel Save Controller. A 500 kVA utility connection was added in 2014, changing the operating boundary from fully off-grid to a solar-diesel-grid hybrid. There is no battery storage in the documented installation.",
+    "status": "SMA still presents the project as a current reference and states operation since November 2012, but the latest project-specific performance account found is from 2015. No 2022–2026 mine-owner report confirms PV condition, mine production status, realized generation, or retirement. The plant is therefore operational as last publicly reported/currently marketed, not independently verified continuously operating in 2026; nearby modern mines and solar projects are unrelated and excluded.",
+    "organizations": [
+      {"name":"Cronimet Chrome Mining SA (Pty) Ltd. / Cronimet Mining S.A.","role":"Mine operator and hybrid-power customer/operator named by SMA.","sourceIds":["thab-sma-current","thab-engineering"]},
+      {"name":"Cronimet Mining Power Solutions / Cronimet Energy SA","role":"Hybrid-project developer/energy company and financier under the original PPA structure.","sourceIds":["thab-engineering","thab-mining-study"]},
+      {"name":"Solea Renewables / Solea AG","role":"Turnkey PV planning and EPC contractor.","sourceIds":["thab-sma-sheet","thab-engineering"]},
+      {"name":"SMA Solar Technology","role":"PV inverter and Fuel Save Controller supplier/integrator.","sourceIds":["thab-sma-current","thab-sma-sheet"]}
+    ],
+    "specifications": [
+      {"label":"Solar PV","value":"1 MWp from approximately 4,200 modules. Module manufacturer/model is not disclosed in authoritative project material.","sourceIds":["thab-sma-current","thab-solarserver"]},
+      {"label":"PV inverter fleet","value":"63 SMA Sunny Tripower 17000TL units, 1,071 kVA aggregate nominal inverter capacity.","sourceIds":["thab-sma-sheet","thab-sma-current"]},
+      {"label":"Diesel generation","value":"Two 800 kVA generator sets (1.6 MVA aggregate); engine manufacturer/model and kW power factor are not published.","sourceIds":["thab-sma-current","thab-sma-blog"]},
+      {"label":"Grid addition","value":"A 500 kVA grid connection was added in 2014, so later operation was no longer strictly off-grid.","sourceIds":["thab-engineering"]},
+      {"label":"Expected/early performance","value":"Up to 1.8 GWh/year solar, approximately 450,000 litres/year diesel reduction from a historical 1.9 million-litre burn, and up to 60% PV penetration. These are early project expectations/case-study results, not 2026 measurements.","sourceIds":["thab-sma-current","thab-engineering","thab-scielo"]},
+      {"label":"Energy mix","value":"Solar during daylight, diesel for firm power, plus limited grid imports after 2014. No current annual percentage split is available.","sourceIds":["thab-sma-current","thab-engineering"]}
+    ],
+    "equipment": [
+      {"category":"PV inverters","manufacturer":"SMA Solar Technology","model":"Sunny Tripower 17000TL","detail":"63 three-phase units, 1,071 kVA aggregate.","sourceIds":["thab-sma-sheet"]},
+      {"category":"Hybrid controller","manufacturer":"SMA Solar Technology","model":"Fuel Save Controller","detail":"One controller regulates PV feed-in against load, diesel minimum loading and operating reserve.","sourceIds":["thab-sma-current","thab-sma-sheet"]},
+      {"category":"Diesel generators","detail":"Two 800 kVA units; maker/model undisclosed.","sourceIds":["thab-sma-current"]},
+      {"category":"Energy storage","detail":"None documented; the controller curtails/dispatches PV against rotating generation rather than relying on a battery.","sourceIds":["thab-sma-sheet","thab-sma-current"]}
+    ],
+    "technicalDetails": [
+      {"category":"Control architecture","detail":"The Fuel Save Controller monitors mine load and genset conditions and commands the PV inverters to maximize solar while retaining adequate diesel reserve and stable isolated-grid operation.","sourceIds":["thab-sma-current","thab-sma-blog"]},
+      {"category":"Commercial model","detail":"Project reporting describes a PPA/financed arrangement that avoided mine-owner upfront PV investment; contract term and current ownership were not found.","sourceIds":["thab-mining-study"]},
+      {"category":"Duplicate/identity warning","detail":"The two Thabazimbi/Thaba legacy slugs describe the same Cronimet installation. Northam's 80 MW Zondereinde solar project and the newer Thaba JV are separate projects and are not additions to this microgrid.","sourceIds":["thab-sma-current"]},
+      {"category":"Current-data gap","detail":"SMA's live reference supports continuing recognition of the installation but does not give recent availability, solar yield, diesel use, grid share, or decommissioning status.","sourceIds":["thab-sma-current"]}
+    ],
+    "sources": [
+      {"id":"thab-sma-current","title":"Thabazimbi, South Africa — PV diesel hybrid application","url":"https://www.sma.de/en/references/thabazimbi-south-africa","publisher":"SMA Solar Technology","kind":"primary"},
+      {"id":"thab-sma-sheet","title":"Thabazimbi, South Africa: PV Diesel Hybrid System","url":"https://www.sma-america.com/fileadmin/content/www.sma-america.com/references/large-scale/Africa/Thabazimbi__South_Africa/REFTHABAZIMBI-AEN131110.pdf?v=1654594335","publisher":"SMA Solar Technology","kind":"primary"},
+      {"id":"thab-sma-blog","title":"First PV Diesel Hybrid System in the Megawatts Goes into Operation","url":"https://www.sma-sunny.com/en/first-pv-diesel-hybrid-system-in-the-megawatts-goes-into-operation/","publisher":"SMA Solar Technology","kind":"primary"},
+      {"id":"thab-engineering","title":"Hybrid power plant reduces mine operational costs","url":"https://www.engineeringnews.co.za/article/hybrid-power-plant-reduces-mines-operational-costs-2015-10-23","publisher":"Engineering News","kind":"secondary"},
+      {"id":"thab-scielo","title":"Potential of renewable electricity sources for South African mining operations","url":"https://scielo.org.za/scielo.php?pid=S1021-447X2016000200001&script=sci_arttext","publisher":"Journal of Energy in Southern Africa","kind":"primary"},
+      {"id":"thab-solarserver","title":"First megawatt photovoltaic-diesel hybrid plant in South Africa","url":"https://www.solarserver.de/2012/12/17/erstes-photovoltaik-diesel-hybridkraftwerk-der-megawattklasse-in-suedafrika-in-betrieb-wechselrichter-und-intelligente-systemsteuerung-von-sma/","publisher":"Solarserver","kind":"secondary"},
+      {"id":"thab-mining-study","title":"Renewable Power and Mining report","url":"https://minsus.net/mineria-sustentable/wp-content/uploads/2020/05/PDF-3418-CCSI-RE-and-mining-report-09-lr-reduced-optmized-07-no-links.pdf","publisher":"Columbia Center on Sustainable Investment","kind":"secondary"}
+    ]
+  },
+  "twentynine-palms-microgrid-california-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"This record is the main-site microgrid at Marine Corps Air Ground Combat Center (MCAGCC) Twentynine Palms, not the separate small tank-range Go Electric/Saft microgrid. The historical system integrated 16.4 MW of natural-gas CHP (7.2 MW commissioned in 2003 plus 9.2 MW in 2013), roughly 4.8–6 MW of distributed PV, a 576 kWh demonstration battery and GE controls, with Southern California Edison as grid supply. Newer projects are expanding the control boundary and proposing 10 MW of modular BESS; the new battery was not confirmed commissioned by July 2026.",
+    "status":"The main microgrid and CHP/PV portfolio are operational as last confirmed, able to island roughly one-third of installation load. A 2017 expansion extended controls across the base. A FY2024-authorized P-1238 project sought 10 MW of BESS tied to a newer P-1232 microgrid, but a Q2 FY2025 federal report still listed it unawarded and 2025 NAVFAC projections still showed procurement/construction timing. Treat 10 MW storage as development, not installed capacity; no 2026 award/commissioning evidence was found.",
+    "organizations":[
+      {"name":"U.S. Marine Corps / MCAGCC Twentynine Palms","role":"Installation owner, host and operator.","sourceIds":["29p-usmc-strategy","29p-usmc-plant"]},
+      {"name":"Naval Facilities Engineering Systems Command Southwest","role":"Design/construction and procurement authority for microgrid and BESS expansions.","sourceIds":["29p-bess-solicitation","29p-navfac-2025"]},
+      {"name":"GE Digital Energy","role":"Original U90+ microgrid controller and supervisory software supplier/integrator.","sourceIds":["29p-usmc-strategy","29p-legacy"]},
+      {"name":"Johnson Controls","role":"Energy-services/CHP and building-automation partner.","sourceIds":["29p-usmc-plant","29p-legacy"]},
+      {"name":"Southern California Edison","role":"Serving electric utility and normal grid source.","sourceIds":["29p-usmc-plant"]}
+    ],
+    "specifications":[
+      {"label":"CHP","value":"7.2 MW natural-gas cogeneration commissioned 2003 plus 9.2 MW commissioned/installed around 2013, 16.4 MW aggregate. Both recover heat for domestic hot water, heating and absorption/chilled-water systems; detailed prime-mover models are not public.","sourceIds":["29p-usmc-plant","29p-usmc-strategy","29p-legacy"]},
+      {"label":"Solar PV","value":"Marine strategy reports 4.8 MW including a 1.2 MW array; a 2015 environmental assessment says over 5 MW and later legacy material rounds to 6 MW. These are dated boundary/growth differences, not one precise simultaneous rating.","sourceIds":["29p-usmc-strategy","29p-ea"]},
+      {"label":"Original storage","value":"576 kWh advanced battery in legacy project material; power rating, chemistry, vendor and current condition were not verified.","sourceIds":["29p-legacy"]},
+      {"label":"Proposed new storage","value":"P-1238: 10 MW described as a 6.5 MW base plus option items (solicitation text inconsistently says 4 MW of options, totaling 10.5 MW), about 30 modular BESS units at two locations. No MWh/duration was published.","sourceIds":["29p-bess-solicitation","29p-budget"]},
+      {"label":"Islanded scope","value":"Roughly one-third of total base load/mission-essential operations, with controlled shedding across more than 240 buildings; not whole-base indefinite autonomy.","sourceIds":["29p-usmc-strategy"]},
+      {"label":"Energy mix","value":"Natural-gas CHP, distributed PV, SCE imports and storage; emergency/other generation exists but no current annual source split is public.","sourceIds":["29p-usmc-strategy","29p-ea"]}
+    ],
+    "equipment":[
+      {"category":"Microgrid controller","manufacturer":"GE","model":"U90+","detail":"Original controller integrated Proficy HMI/SCADA CIMPLICITY and interfaces to plant/building systems; later expansion product revisions are not public.","sourceIds":["29p-legacy"]},
+      {"category":"Building controls","manufacturer":"Johnson Controls / Rockwell Automation","detail":"Metasys and FactoryTalk interfaces supported building automation, telemetry and load shedding.","sourceIds":["29p-legacy"]},
+      {"category":"CHP","detail":"Two natural-gas cogeneration phases totaling 16.4 MW with heat recovery/chilled-water integration; turbine/generator models undisclosed.","sourceIds":["29p-usmc-plant","29p-ea"]},
+      {"category":"P-1238 BESS","detail":"Proposed high-energy-density batteries, bidirectional inverters and cyber-accredited controls; OEM, chemistry and MWh not selected/disclosed in reviewed procurement material.","sourceIds":["29p-bess-solicitation"]}
+    ],
+    "technicalDetails":[
+      {"category":"Operating architecture","detail":"Grid-connected economic dispatch normally; automatic/controlled islanding, black start and load shedding use CHP, PV and storage to sustain prioritized loads.","sourceIds":["29p-usmc-strategy","29p-bess-solicitation"]},
+      {"category":"CHP performance","detail":"A Marine account said the original 7.2 MW plant plus 1.2 MW PV supplied nearly 60% of base energy at that time and saved over US$7 million in the preceding year. This predates the full current portfolio.","sourceIds":["29p-usmc-plant"]},
+      {"category":"Cybersecurity","detail":"Original controls were described as meeting DoD cybersecurity criteria; P-1238 similarly requires accredited BESS controls.","sourceIds":["29p-usmc-strategy","29p-bess-solicitation"]},
+      {"category":"Phase boundary","detail":"P-1238 BESS and P-1232/new microgrid work are expansions still in procurement/development. The separate 100 kW-generator tank-range microgrid is outside the main-site totals.","sourceIds":["29p-bess-solicitation","29p-navfac-2025"]}
+    ],
+    "sources":[
+      {"id":"29p-usmc-strategy","title":"United States Marine Corps Installations Energy Strategy","url":"https://www.mcicom.marines.mil/Portals/57/Docs/GF%20Energy/Energy%20Strategy.pdf","publisher":"U.S. Marine Corps","kind":"primary"},
+      {"id":"29p-usmc-plant","title":"Plant provides green energy, cost savings","url":"https://www.29palms.marines.mil/Articles/Article/499037/plant-provides-green-energy-cost-savings/","publisher":"MCAGCC Twentynine Palms","kind":"primary"},
+      {"id":"29p-ea","title":"Final Environmental Assessment for Solar PV System","url":"https://www.29palms.marines.mil/Portals/56/Docs/Environmental%20Affairs/Final-EA-and-FONSI-for-Solar-PV-System-2015.pdf","publisher":"U.S. Navy / MCAGCC","kind":"primary"},
+      {"id":"29p-bess-solicitation","title":"P-1238 Construction of Grid Stability and Resiliency 10 MW BESS","url":"https://usfcr.com/search/opportunities/?oppId=c73479f50ec34bd496d2b6538070363d","publisher":"NAVFAC solicitation mirror","kind":"primary"},
+      {"id":"29p-budget","title":"FY2021 Energy Resilience and Conservation Investment Program","url":"https://comptroller.defense.gov/Portals/45/Documents/defbudget/fy2021/budget_justification/pdfs/07_Military_Construction/15-Energy_Resilience_and_Conservation_Investment_Program.pdf","publisher":"U.S. Department of Defense Comptroller","kind":"primary"},
+      {"id":"29p-navfac-2025","title":"NAVFAC Southwest Workload Projections, January 2025","url":"https://pacific.navfac.navy.mil/Portals/72/Southwest/Documents/NFSW%20Workload%20Projections%20Jan2025_final%20%281%29.pdf?ver=G_s3EOgkTLXcN8OtWt-5sg%3D%3D","publisher":"NAVFAC Southwest","kind":"primary"},
+      {"id":"29p-legacy","title":"Recovered Twentynine Palms project equipment record","url":"https://web.archive.org/web/20210120004209id_/http://microgridprojects.com/microgrid/twentynine-palms-microgrid-california-microgrid/","publisher":"Internet Archive / Microgrid Projects","kind":"archive"}
+    ]
+  },
+  "uc-irvine-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"UC Irvine operates an islandable campus microgrid and research test bed serving more than 30,000 people. The current university description centers on a 19 MW natural-gas combined-cycle plant (13 MW gas turbine plus 6 MW steam turbine), more than 4 MW PV, a 2 MW/500 kWh lithium-ion battery, a 1.5 MVA black-start diesel generator, a 4.5-million-gallon/60,000 ton-hour chilled-water store, ten 12 kV circuits and extensive metering/control. The old 893 kW solar and 13.5 MW gas figures are obsolete snapshots, not current totals.",
+    "status":"UCI Facilities currently states that Central Plant can island the campus and operate normally through an SCE outage, confirming operational status. DOE's Generic Microgrid Controller project completed controller/HIL and field-oriented islanding/reconnection work; current research extends into self-healing and electric-bus support. Public pages do not provide a recent actual outage duration, annual generation mix, battery health or full-island endurance test, so capability should not be confused with demonstrated indefinite autonomy.",
+    "organizations":[
+      {"name":"University of California, Irvine / Facilities Management","role":"Owner/operator of campus utility, central plant and distribution microgrid.","sourceIds":["uci-current","uci-outages"]},
+      {"name":"UCI Advanced Power and Energy Program (APEP)","role":"Microgrid modeling, controller, DER and transportation research lead.","sourceIds":["uci-current","uci-gmc"]},
+      {"name":"Southern California Edison","role":"66 kV serving utility, owner/partner for the controller-test battery and GMC research.","sourceIds":["uci-current","uci-gmc"]},
+      {"name":"U.S. Department of Energy","role":"Generic Microgrid Controller research funder.","sourceIds":["uci-gmc"]},
+      {"name":"ETAP and MelRok","role":"Network-model/controller and EnergiStream metering/enterprise energy-management partners.","sourceIds":["uci-current","uci-gmc"]},
+      {"name":"FuelCell Energy / Yazaki","role":"Suppliers for a separate 300 kW fuel-cell/40-ton absorption-chiller CCHP research asset.","sourceIds":["uci-current"]}
+    ],
+    "specifications":[
+      {"label":"Electric network","value":"SCE 66 kV service stepped to 12 kV by two 15 MVA transformers; ten-plus 12 kV circuits, redundant switch banks and underground distribution.","sourceIds":["uci-current","uci-bus-paper"]},
+      {"label":"Combined cycle","value":"19 MW total: 13 MW natural-gas turbine plus 6 MW steam turbine.","sourceIds":["uci-current","uci-bus-paper"]},
+      {"label":"Solar PV","value":"More than 4 MW across roofs/parking and tracking research arrays; legacy 893 kW reflects an earlier build stage.","sourceIds":["uci-current"]},
+      {"label":"Battery","value":"2 MW/500 kWh lithium-ion at the UCI substation, only 15 minutes at full output; deployed for transition/islanding support and import minimization, not multi-hour campus backup.","sourceIds":["uci-research-overview","uci-gmc"]},
+      {"label":"Thermal storage","value":"4.5 million gallons/60,000 ton-hours chilled water; eight electric chillers provide 14,500 tons plus a 2,000-ton steam-driven chiller.","sourceIds":["uci-current"]},
+      {"label":"Other resources","value":"1.5 MVA black-start diesel, 300 kW molten-carbonate fuel cell with 40-ton absorption chiller, 60 kW electrolyzer, EV/bus charging and more than 100 high-resolution meters.","sourceIds":["uci-current","uci-research-overview","uci-bus-paper"]},
+      {"label":"Energy mix","value":"Natural-gas CHP supplies most campus electricity, with PV, minimal bounded SCE imports and storage/load management. Research literature says DERs exceed 90% of electricity, but no current audited annual split is public.","sourceIds":["uci-bus-paper","uci-self-healing"]}
+    ],
+    "equipment":[
+      {"category":"Enterprise energy management","manufacturer":"MelRok","model":"EnergiStream","detail":"Aggregates high-resolution meter data and supports Auto-Demand Response/model integration.","sourceIds":["uci-current"]},
+      {"category":"Network model/controller platform","manufacturer":"ETAP / UCI APEP","detail":"Calibrated ETAP model, OPAL-RT HIL and Generic Microgrid Controller for dispatch, islanding, shedding, self-healing and reconnection; ETAP model is not itself the plant controller.","sourceIds":["uci-gmc","uci-current"]},
+      {"category":"BESS","detail":"2 MW/500 kWh lithium-ion system associated with SCE; battery/inverter OEM and current condition are not identified.","sourceIds":["uci-research-overview"]},
+      {"category":"Fuel-cell CCHP","manufacturer":"FuelCell Energy / Yazaki","detail":"300 kW molten-carbonate fuel cell with 40-ton absorption chiller; research asset distinct from the 19 MW central plant.","sourceIds":["uci-current"]}
+    ],
+    "technicalDetails":[
+      {"category":"Islanding","detail":"Central Plant can separate from SCE, shift the turbine to isochronous control, shed noncritical load as needed, use short-duration battery support and later resynchronize; simulations established allowable pre-island import/generation bounds.","sourceIds":["uci-outages","uci-gmc"]},
+      {"category":"Near-zero import","detail":"Interconnection rules maintain a bounded few-hundred-kW import to avoid inadvertent export while campus DERs meet nearly all load under typical grid-connected operation.","sourceIds":["uci-bus-paper"]},
+      {"category":"Research evolution","detail":"Later work uses the validated microgrid/GMC model for fault self-healing and evaluates twenty battery-electric buses as mobile resilience resources; modeling results are not installed stationary capacity.","sourceIds":["uci-self-healing","uci-bus-paper"]},
+      {"category":"Current-data gap","detail":"Current UCI confirmation establishes operational islanding capability but not a recent event duration, load served, fuel endurance, PV yield, BESS state of health or verified black-start sequence.","sourceIds":["uci-outages"]}
+    ],
+    "sources":[
+      {"id":"uci-current","title":"UC Irvine Microgrid","url":"https://www.apep.uci.edu/UCI_Micro_Grid.html","publisher":"UC Irvine Advanced Power and Energy Program","kind":"primary"},
+      {"id":"uci-outages","title":"UCI Campus Unplanned Power Outages","url":"https://www.fm.uci.edu/programs/unplanned-outages.php","publisher":"UC Irvine Facilities Management","kind":"primary"},
+      {"id":"uci-research-overview","title":"UCI Microgrid Research Overview","url":"https://apep.uci.edu/PDF/Microgrid_Research_UCI_Microgrid_UCIMG_090921.pdf","publisher":"UC Irvine APEP","kind":"primary"},
+      {"id":"uci-gmc","title":"A Generic Microgrid Controller — final report","url":"https://www.osti.gov/servlets/purl/1501818","publisher":"U.S. DOE OSTI / UC Irvine","kind":"primary"},
+      {"id":"uci-bus-paper","title":"Utilization of Battery Electric Buses for the Resiliency of Islanded Microgrids","url":"https://www.sciencedirect.com/science/article/am/pii/S0306261923006591","publisher":"Applied Energy","kind":"primary"},
+      {"id":"uci-self-healing","title":"Generic microgrid controller with self-healing capabilities","url":"https://www.sciencedirect.com/science/article/pii/S0306261921015609","publisher":"Applied Energy","kind":"primary"}
+    ]
+  },
+  "tokyo-metropolitan-microgrid-high-reliability": {
+    "researchedAt":"2026-07-20",
+    "summary":"The legacy title refers to Tokyo Electric Power Company's high-voltage Tokyo Metropolitan Power System islanding-protection scheme, not a neighborhood DER microgrid or Tokyo Metropolitan University laboratory. Installed around 2001, it protects politically/economically critical central-city loads by intentionally separating a selected area and rapidly balancing generation, load and reactive power after loss of the 275 kV ties to TEPCO's 500 kV bulk grid. No solar, wind or battery belongs to the documented scheme.",
+    "status":"A 2001 IEE conference paper documents installed protection and actual operating experience, and a 2013 Japanese microgrid overview still presented the system as Tokyo's reliability example. No recent TEPCO source identifies its current relay/controller generation, protected boundary or retirement, so historical operation is verified but 2026 status is unresolved. The legacy page's 'NA storage' should not be converted into a zero-kWh battery claim; storage simply was not part of the source record.",
+    "organizations":[
+      {"name":"Tokyo Electric Power Company (TEPCO)","role":"Owner/operator and developer of the metropolitan transmission/subtransmission islanding protection scheme.","sourceIds":["tokyo-iee-paper","tokyo-2013-overview"]},
+      {"name":"S. Agematsu, S. Imai, R. Tsukui and H. Watanabe","role":"TEPCO-affiliated authors documenting design and actual operating experience.","sourceIds":["tokyo-iee-paper"]}
+    ],
+    "specifications":[
+      {"label":"System scale","value":"Historical overview diagram labels a 1,515 MW metropolitan subsystem, approximately 410 MW of local generation and a 78 MW most-important load area. These are transmission-system operating quantities, not installed microgrid DER nameplates.","sourceIds":["tokyo-2013-overview"]},
+      {"label":"Network voltages","value":"Fed from the 500 kV mesh through parallel 275 kV overhead lines and three colocated 275 kV underground cable circuits; the protected metropolitan network uses 275, 154 and 66 kV underground cables.","sourceIds":["tokyo-iee-paper"]},
+      {"label":"Generation and energy mix","value":"Historical diagrams show large local thermal generating units plus bulk-grid imports. The cited sources provide no plant names/fuels, annual mix, renewable assets or storage.","sourceIds":["tokyo-iee-paper","tokyo-2013-overview"]},
+      {"label":"Protected load","value":"The control sheds/islands down to the most important area when the separated metropolitan subsystem cannot balance its full load; exact current customers and facilities are intentionally/not publicly identified.","sourceIds":["tokyo-iee-paper","tokyo-2013-overview"]}
+    ],
+    "equipment":[
+      {"category":"Islanding protection system","detail":"TEPCO protection/automation performing separation detection, active-power balance through staged load shedding and reactive-power/voltage balance. Commercial relay/controller models were not disclosed.","sourceIds":["tokyo-iee-paper"]},
+      {"category":"Transmission switching","detail":"High-voltage breakers and underground-cable network form the intentional island; exact substations and breaker models are not public in the sources.","sourceIds":["tokyo-iee-paper"]},
+      {"category":"Energy storage/DER","detail":"No battery, PV or wind equipment is documented; do not merge the unrelated Miyako NAS-battery demonstration shown elsewhere in the 2013 presentation.","sourceIds":["tokyo-2013-overview"]}
+    ],
+    "technicalDetails":[
+      {"category":"Failure scenario","detail":"A common-route failure of the 275 kV ties can leave the metropolitan subsystem severely generation-deficient and capacitive. The scheme separates it, sheds load to active-power balance and controls reactive balance to preserve the priority island.","sourceIds":["tokyo-iee-paper"]},
+      {"category":"Why radial","detail":"Metropolitan sub-power systems could not simply be interconnected because short-circuit fault-current limits constrained network topology.","sourceIds":["tokyo-iee-paper"]},
+      {"category":"Classification warning","detail":"This is controlled islanding of a transmission/subtransmission area—microgrid-like in emergency behavior but far larger and architecturally different from a campus/community microgrid.","sourceIds":["tokyo-iee-paper","tokyo-2013-overview"]},
+      {"category":"Current-data gap","detail":"No authoritative public update through 2026 confirms modernization, retirement or operational events; present tense should be avoided beyond the historical sources.","sourceIds":["tokyo-iee-paper"]}
+    ],
+    "sources":[
+      {"id":"tokyo-iee-paper","title":"Islanding protection system with active and reactive power balancing control for Tokyo Metropolitan Power System and actual operational experiences","url":"https://www.researchgate.net/publication/3900007_Islanding_protection_system_with_active_and_reactive_power_balancing_control_for_Tokyo_Metropolitan_Power_System_and_actual_operational_experiences","publisher":"IEE Conference on Developments in Power System Protection","kind":"primary"},
+      {"id":"tokyo-2013-overview","title":"Status of Microgrids in Japan — Korea Smart Grid Week 2013","url":"https://de.scribd.com/document/440052583/1-5-Microgrid-of-Japan-KSGW-pdf","publisher":"Reiichiro Fujimori presentation (third-party document host)","kind":"secondary"},
+      {"id":"tokyo-legacy-index","title":"Japan project index: Tokyo Metropolitan Microgrid for High Reliability","url":"https://microgridprojects.com/property-location/japan/","publisher":"Microgrid Projects","kind":"secondary"}
+    ]
+  },
+  "tuntutuliak-kongiginak-kwigillingok-microgrids": {
+    "researchedAt":"2026-07-20",
+    "summary":"This grouped record covers three electrically separate southwest-Alaska village systems—Kongiganak (often misspelled Kongiginak), Kwigillingok and Tuntutuliak—developed through the Chaninik Wind Group. Each completed system combined five roughly 95 kW Windmatic 17-S turbines (about 475 kW/village), diesel generation, supervisory control, smart meters and dispatchable electric-thermal-storage heaters. Kongiganak later added a 250 kW lithium-ion battery/ABB inverter and demonstrated multi-day diesel-off operation; that battery must not be assigned to all three villages.",
+    "status":"DOE reported the three systems complete by 2013; its program metrics were about 30% power-plant fuel reduction and at least 30% heating-fuel reduction in participating homes. Alaska Energy Authority's October 2024 portfolio still labels Tuntutuliak's 475 kW project operational, while separate Kongiganak/Kwigillingok turbine upgrades remained in development and a 2025 advocacy list sought US$4.8 million for upgrades across all three. Thus the original systems are operating as last confirmed, with upgrade projects not yet evidenced as commissioned.",
+    "organizations":[
+      {"name":"Chaninik Wind Group","role":"Nonprofit multi-village project organization and DOE award recipient.","sourceIds":["cw-doe-project","cw-final"]},
+      {"name":"United Tribal Governments/utilities of Kongiganak, Kwigillingok and Tuntutuliak","role":"Owners/hosts of separate village utilities and co-investors; Kipnuk is a fourth group member but outside this record's completed three-village title.","sourceIds":["cw-doe-story","cw-doe-winning"]},
+      {"name":"Frontier Power Systems","role":"Wind-diesel SCADA, controls and integration provider.","sourceIds":["cw-frontier","cw-final"]},
+      {"name":"Intelligent Energy Systems (IES)","role":"Technical integrator and developer of Kongiganak's advanced battery/diesel-off controls.","sourceIds":["cw-ies-kong","cw-doe-winning"]},
+      {"name":"U.S. Department of Energy Tribal Energy Program","role":"US$750,000 funder/technical sponsor; tribal governments contributed US$1.25 million in DOE accounting.","sourceIds":["cw-doe-story","cw-final"]},
+      {"name":"Alaska Energy Authority","role":"State Renewable Energy Fund administrator and current status/upgrade reporter.","sourceIds":["cw-aea-2016","cw-aea-2024"]}
+    ],
+    "specifications":[
+      {"label":"Wind per original completed village","value":"Five Windmatic 17-S turbines, about 95 kW each/475 kW total. Early DOE plans rounded each to 90 kW.","sourceIds":["cw-doe-project","cw-doe-winning"]},
+      {"label":"Penetration","value":"Installed wind exceeded 200% of village peak load. This is a nameplate-to-peak ratio, not annual renewable share.","sourceIds":["cw-doe-winning"]},
+      {"label":"Kongiganak-only storage","value":"250 kW lithium-ion battery coupled to an ABB PCS100 inverter; public reporting does not state energy capacity (kWh), so duration cannot be calculated.","sourceIds":["cw-kong-performance"]},
+      {"label":"Thermal storage","value":"Program plan targeted 90 homes/roughly 21–30 heaters per village plus about 500 smart meters. Exact installed counts vary by village and report date.","sourceIds":["cw-doe-project","cw-final"]},
+      {"label":"Measured/reported performance","value":"Program-level about 30% diesel reduction; Kongiganak separately reported up to 50% annual/36,000 gallons fuel displacement and 65.3% electric-generation diesel displacement in January 2019, including seven consecutive diesel-off days.","sourceIds":["cw-doe-story","cw-ies-kong","cw-kong-performance"]},
+      {"label":"Energy mix","value":"Wind, diesel and surplus-wind electric heat; Kongiganak adds short-duration battery support. No synchronized current annual mix for all three villages is published.","sourceIds":["cw-doe-story","cw-kong-performance"]}
+    ],
+    "equipment":[
+      {"category":"Wind turbines","manufacturer":"Windmatic","model":"17-S","detail":"Five approximately 95 kW machines per village in the original three systems.","sourceIds":["cw-doe-winning","cw-aea-2016"]},
+      {"category":"Microgrid control","manufacturer":"Frontier Power Systems / IES","detail":"Village-specific SCADA, load regulator, supervisory wind-diesel control and radio/meter communications; controller revisions differ by site.","sourceIds":["cw-frontier","cw-final"]},
+      {"category":"Smart meters and ETS","detail":"Meters signal surplus-wind pricing/availability to networked ceramic electric thermal-storage heaters; commercial heater models are not disclosed.","sourceIds":["cw-doe-project","cw-final"]},
+      {"category":"Kongiganak battery inverter","manufacturer":"ABB","model":"PCS100","detail":"250 kW lithium-ion battery power system; cell maker and energy rating not reported.","sourceIds":["cw-kong-performance"]}
+    ],
+    "technicalDetails":[
+      {"category":"Network boundary","detail":"No roads or electrical interties connect the villages; shared program design and maintenance capacity do not make them one network.","sourceIds":["cw-doe-winning"]},
+      {"category":"Surplus-wind control","detail":"Powerhouse controller, smart meters and heater controls exchange availability/data so wind above electric load becomes discounted residential heat instead of curtailment.","sourceIds":["cw-doe-project","cw-final"]},
+      {"category":"Diesel-off evolution","detail":"Kongiganak's later battery and controls permit diesel shutdown during strong wind; no equivalent storage/diesel-off evidence was found for Kwigillingok or Tuntutuliak.","sourceIds":["cw-kong-performance"]},
+      {"category":"Upgrade boundary","detail":"AEA lists Tuntutuliak original wind operational but Kongiganak and Kwigillingok airfoil/turbine upgrades in development in 2024; the three-village US$4.8 million upgrade package remained shovel-ready in 2025.","sourceIds":["cw-aea-2024","cw-upgrades-2025"]}
+    ],
+    "sources":[
+      {"id":"cw-doe-project","title":"Chaninik Wind Group — 2010 Project","url":"https://www.energy.gov/indianenergy/chaninik-wind-group-2010-project","publisher":"U.S. DOE Office of Indian Energy","kind":"primary"},
+      {"id":"cw-doe-story","title":"Enhanced Efficiency of Wind-Diesel Power Generation in Tribal Villages","url":"https://www.energy.gov/eere/success-stories/articles/eere-success-story-enhanced-efficiency-wind-diesel-power-generation","publisher":"U.S. Department of Energy","kind":"primary"},
+      {"id":"cw-doe-winning","title":"Chaninik Wind Group Pursues Innovative Solutions to Native Alaska Energy Challenges","url":"https://www.energy.gov/indianenergy/articles/winning-future-chaninik-wind-group-pursues-innovative-solutions-native-alaska","publisher":"U.S. DOE Office of Indian Energy","kind":"primary"},
+      {"id":"cw-final","title":"Chaninik Wind Group Wind Heat Smart Grids Final Report","url":"https://www.osti.gov/biblio/1086573","publisher":"Chaninik Wind Group / U.S. DOE","kind":"primary"},
+      {"id":"cw-frontier","title":"Alaska wind-diesel-heat projects","url":"https://frontierpowersystems.ca/alaska/","publisher":"Frontier Power Systems","kind":"primary"},
+      {"id":"cw-aea-2016","title":"Kwigillingok Wind-Diesel Smart Grid","url":"https://akenergyauthority.org/Portals/0/What%20We%20Do/Renewable%20Energy%20and%20Energy%20Efficiency/Wind/Case%20Studies/KwigillingokWindDieselSmartGrid2016.pdf?ver=2019-06-19-133904-757","publisher":"Alaska Energy Authority","kind":"primary"},
+      {"id":"cw-aea-2024","title":"Renewable Energy Fund project status response, October 2024","url":"https://www.akenergyauthority.org/Portals/0/About/Board%20Meetings/Documents/2024/2024.10.22/9A.%20Response%20to%20Board%20question.pdf?ver=_i6ELA0pVfzRf1WX-3HfZw%3D%3D","publisher":"Alaska Energy Authority","kind":"primary"},
+      {"id":"cw-ies-kong","title":"Kongiganak","url":"https://www.iesconnect.net/kongiganak","publisher":"Intelligent Energy Systems","kind":"primary"},
+      {"id":"cw-kong-performance","title":"What Is a Microgrid Today? — Kongiganak case","url":"https://www.energytech.com/distributed-energy/article/21173450/what-is-a-microgrid-today","publisher":"EnergyTech","kind":"secondary"},
+      {"id":"cw-upgrades-2025","title":"Shovel-Ready Energy Infrastructure Projects in Alaska","url":"https://alaskarenewableenergy.org/wp-content/uploads/2025/01/HB-247-AEA-Shovel-Ready-Projects.pdf","publisher":"Renewable Energy Alaska Project","kind":"secondary"}
+    ]
+  },
+  "thoman-haiti-hospital-microgrid-project-georgia-tech-2016": {
+    "researchedAt":"2026-07-20",
+    "summary":"Georgia Tech's Thoman project is an off-grid solar-battery-diesel system installed in May 2016 for a rural health center/mission compound near Fond Parisien, Haiti. Design documentation specifies about 7.35 kW PV, a 6.8 kW inverter and a 48 V/1,500 Ah lead-acid bank (about 72 kWh nominal, with materially lower usable energy). It is distinct from Georgia Tech's later 2018 Haiti RELAY program, which distributed 25 small household solar/USB kits in the same village.",
+    "status":"Georgia Tech reported the health-center microgrid commissioned in May 2016 and supplying 24/7 power in place of routine diesel operation. A 2018 retrospective still described solar arrays at the clinic and church, and 2019 mission reporting documents further solar work in Thoman, but no recent source provides battery replacement, uptime, storm/security damage, ownership, or operating status through 2026. Operational after commissioning is supported; continuous current operation is unverified.",
+    "organizations":[
+      {"name":"Georgia Institute of Technology IEEE Power & Energy Society Student Chapter / ECE","role":"Designer, installer and student project lead.","sourceIds":["thoman-project","thoman-gt-launch"]},
+      {"name":"Georgia Tech Research Institute (GTRI)","role":"Donated 28 PV modules and supported the project.","sourceIds":["thoman-project"]},
+      {"name":"Schneider Electric","role":"Donated Conext inverter, charge controllers, monitoring/communications and automatic generator-start equipment.","sourceIds":["thoman-project"]},
+      {"name":"Trojan Battery Company","role":"Donated sixteen IND17-6V flooded lead-acid batteries.","sourceIds":["thoman-project"]},
+      {"name":"But God Ministries / Thoman health center","role":"Mission/community host and beneficiary serving more than 4,000 patients in the surrounding area.","sourceIds":["thoman-gt-launch","thoman-gt-2018"]}
+    ],
+    "specifications":[
+      {"label":"Solar PV","value":"7.35 kW design from 28 donated modules; contemporary summaries round this to 7 or 7.2 kW.","sourceIds":["thoman-project","thoman-gt-launch","thoman-relay-paper"]},
+      {"label":"Battery","value":"48 V, 1,500 Ah lead-acid design, approximately 72 kWh nominal before depth-of-discharge and efficiency limits; sixteen Trojan IND17-6V batteries. Public sources do not state final usable kWh.","sourceIds":["thoman-project"]},
+      {"label":"Inverter","value":"6.8 kW Schneider Electric Conext-line inverter in the design simulation; exact commercial model suffix not disclosed.","sourceIds":["thoman-project"]},
+      {"label":"Design load","value":"24.0 kWh/day low-load profile with a 2.4 kW maximum, covering clinic lighting, appliances and pumps.","sourceIds":["thoman-project"]},
+      {"label":"Energy mix","value":"Solar and stored solar for normal 24/7 service, with the pre-existing diesel generator retained for backup/automatic start. No measured annual solar fraction or fuel savings were published.","sourceIds":["thoman-project","thoman-gt-launch"]}
+    ],
+    "equipment":[
+      {"category":"Battery bank","manufacturer":"Trojan Battery Company","model":"IND17-6V","detail":"Sixteen 6 V industrial flooded lead-acid batteries configured for the 48 V bank; exact string configuration and replacement history are unavailable.","sourceIds":["thoman-project"]},
+      {"category":"Power conversion and controls","manufacturer":"Schneider Electric","model":"Conext family","detail":"Line inverter, solar charge controllers, battery monitor, ComBox and automatic generator starter.","sourceIds":["thoman-project"]},
+      {"category":"PV array","detail":"28 GTRI-donated modules, approximately 7.35 kW total; module maker/model not stated.","sourceIds":["thoman-project"]},
+      {"category":"Diesel backup","detail":"Existing clinic generator retained; rating, manufacturer and fuel tank are not published.","sourceIds":["thoman-project"]}
+    ],
+    "technicalDetails":[
+      {"category":"Architecture","detail":"Stand-alone AC microgrid with PV charging a 48 V battery, a Conext inverter serving the compound, monitoring through Conext ComBox and automatic generator start on low energy/other control conditions.","sourceIds":["thoman-project"]},
+      {"category":"Commissioning outcome","detail":"Georgia Tech's launch account says the health center obtained 24/7 power and displaced its prior costly schedule of running diesel much of the night and several daytime hours. No logged reliability or fuel dataset accompanied the claim.","sourceIds":["thoman-gt-launch","thoman-project"]},
+      {"category":"Phase boundary","detail":"The 2018 installation of 25 portable Haiti RELAY solar-home units and later computer-lab/house solar work are separate follow-on scopes and are excluded from the clinic microgrid capacity.","sourceIds":["thoman-gt-2018","thoman-relay-paper","thoman-bgm-2019"]},
+      {"category":"Current-data gap","detail":"No public post-2019 inspection or battery replacement record was found; lead-acid aging, maintenance and Haiti's subsequent security crisis make present operation uncertain, but are not proof of failure.","sourceIds":["thoman-bgm-2019"]}
+    ],
+    "sources":[
+      {"id":"thoman-project","title":"Thoman Project","url":"https://sites.gatech.edu/ece-haiti-sun/home/thoman-project/","publisher":"Georgia Tech IEEE PES Haiti Solar Project","kind":"primary"},
+      {"id":"thoman-gt-launch","title":"Sunlight and Cellphones: Undergraduate Researchers Bring Solar Power to Haiti","url":"https://ece.gatech.edu/news/2023/12/sunlight-and-cellphones-undergraduate-researchers-bring-solar-power-haiti-one-house","publisher":"Georgia Tech School of ECE (originally June 2016)","kind":"primary"},
+      {"id":"thoman-gt-2018","title":"Powering Haiti","url":"https://coe.gatech.edu/news/2018/11/powering-haiti","publisher":"Georgia Tech College of Engineering","kind":"primary"},
+      {"id":"thoman-relay-paper","title":"Haiti RELAY: A Cost-Effective and Portable Solar Home System","url":"https://repository.gatech.edu/bitstreams/1aad3acc-1cb0-4ab3-bba2-196a17cc4a94/download","publisher":"Georgia Tech repository / IEEE paper","kind":"primary"},
+      {"id":"thoman-bgm-2019","title":"Thoman mission update, May 15, 2019","url":"https://www.butgodministries.com/2019/05/may-15-2019/","publisher":"But God Ministries","kind":"primary"}
+    ]
+  },
+  "tilos-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"TILOS ('Technology Innovation for the Local Scale, Optimum Integration of Battery Energy Storage') is an operating hybrid power station and research program on Tilos, Greece. The island remains connected by submarine cable to the Kos-Kalymnos oil-fired system; it is not normally an electrically isolated 100%-renewable island. Its dedicated plant combines one 800 kW wind turbine, 160 kWp PV and an 800 kW/2.88 MWh sodium-nickel-chloride battery, with demand-side management and thermal-load flexibility.",
+    "status":"The EU Horizon 2020 project ran from February 2015 through January 2020 and the hybrid station entered operation during that program. CORDIS reported it operating and winning an EU Sustainable Energy Award in 2021; 2024 Greek reporting still describes the station as covering the island and supporting emergencies. No 2025–2026 owner report discloses battery state of health, replacement or annual production, so operational is supported but detailed current performance is not.",
+    "organizations":[
+      {"name":"University of West Attica (formerly Piraeus University of Applied Sciences)","role":"Horizon 2020 coordinator and technical/research lead.","sourceIds":["tilos-cordis","tilos-paper"]},
+      {"name":"Hellenic Electricity Distribution Network Operator (HEDNO/DEDDIE)","role":"Distribution operator, interconnection party and consortium member.","sourceIds":["tilos-cordis","tilos-2024"]},
+      {"name":"EUNICE Energy Group / Eunice Energy Community","role":"Greek project developer/operator and community-energy commercialization participant.","sourceIds":["tilos-cordis","tilos-island-review"]},
+      {"name":"FZSoNick / SONICK S.p.A.","role":"Sodium-nickel-chloride battery manufacturer and consortium member.","sourceIds":["tilos-paper","tilos-cordis"]},
+      {"name":"Indrivetec AG","role":"Bidirectional battery inverter supplier.","sourceIds":["tilos-paper"]},
+      {"name":"Younicos GmbH and research consortium partners","role":"Storage/control research and replication partners; consortium participation does not imply ownership of the operating station.","sourceIds":["tilos-cordis"]},
+      {"name":"Municipality/residents of Tilos","role":"Host community and demand-side/energy-community participants.","sourceIds":["tilos-cordis-news","tilos-island-review"]}
+    ],
+    "specifications":[
+      {"label":"Wind and solar","value":"One 800 kW wind turbine plus 160 kWp PV. Public technical papers reviewed do not identify the wind-turbine or PV module manufacturer/model.","sourceIds":["tilos-paper","tilos-cordis-news"]},
+      {"label":"Battery","value":"800 kW/2.88 MWh sodium-nickel-chloride (NaNiCl2/ZEBRA), about 3.6 hours at rated power.","sourceIds":["tilos-paper","tilos-cordis"]},
+      {"label":"Battery construction","value":"128 FZSoNick ST523 modules in two 20-foot containers, 64 parallel modules per container; two 500 kVA inverters and two 630 kVA, 20/0.3 kV transformers.","sourceIds":["tilos-paper"]},
+      {"label":"Reported energy performance","value":"Mayor/project reporting cites 80–85% autonomy for two months, 100% in some winter periods and 70–75% during July–August, with about 1,200 MWh/year exported to Kos, 220 tonnes/year fuel oil and 750 tonnes/year CO2 avoided. These are project-level claims, not a current audited annual series.","sourceIds":["tilos-cordis-news"]},
+      {"label":"Project budget","value":"EUR 13.75 million total Horizon 2020 project cost and EUR 11.01 million EU contribution; this covers research/replication activities beyond the hardware alone.","sourceIds":["tilos-cordis"]},
+      {"label":"Energy mix","value":"Local wind, PV and stored renewable energy, balanced by the Kos-Kalymnos interconnection and emergency diesel. Annual renewable share varies seasonally and is not continuously 100%.","sourceIds":["tilos-paper","tilos-2024"]}
+    ],
+    "equipment":[
+      {"category":"Battery modules","manufacturer":"FZSoNick / SONICK","model":"ST523","detail":"128 high-temperature NaNiCl2 modules in two containers.","sourceIds":["tilos-paper"]},
+      {"category":"Battery inverters","manufacturer":"Indrivetec","model":"SOLO S 500","detail":"Two 500 kVA bidirectional inverter systems.","sourceIds":["tilos-paper"]},
+      {"category":"Transformers","detail":"Two 630 kVA, 20/0.3 kV battery transformers; maker/model not disclosed.","sourceIds":["tilos-paper"]},
+      {"category":"Smart-grid control","detail":"Forecast-based energy management schedules wind/PV/storage, guaranteed exports, ancillary services and demand flexibility; no definitive current commercial controller version is public.","sourceIds":["tilos-cordis","tilos-paper"]}
+    ],
+    "technicalDetails":[
+      {"category":"Operating modes","detail":"Designed for grid-connected exchange with Kos-Kalymnos and autonomous Tilos operation during interconnection outages, with storage providing power balance and stability.","sourceIds":["tilos-paper","tilos-cordis"]},
+      {"category":"Demand flexibility","detail":"The research program integrated smart meters, demand-side management and distributed domestic-hot-water thermal storage, later extending into EV charging, public lighting and water management.","sourceIds":["tilos-cordis","tilos-island-review"]},
+      {"category":"Storage services","detail":"Battery functions include energy shifting, renewable maximization, smoothing/stability, guaranteed export and ancillary services rather than merely emergency backup.","sourceIds":["tilos-paper"]},
+      {"category":"Current-data gap","detail":"Recent secondary confirmation supports continued operation, but no current HEDNO/EUNICE dataset gives annual MWh, availability, battery capacity retention or replacement planning.","sourceIds":["tilos-2024"]}
+    ],
+    "sources":[
+      {"id":"tilos-cordis","title":"TILOS: Technology Innovation for the Local Scale, Optimum Integration of Battery Energy Storage","url":"https://cordis.europa.eu/project/id/646529","publisher":"European Commission CORDIS","kind":"primary"},
+      {"id":"tilos-paper","title":"Supporting the Clean Electrification for Remote Islands: The Case of the Greek Tilos Island","url":"https://www.mdpi.com/1996-1073/14/5/1336","publisher":"Energies","kind":"primary"},
+      {"id":"tilos-cordis-news","title":"Greek island Tilos picks up award for clean energy transition","url":"https://cordis.europa.eu/article/id/430431-greek-island-tilos-picks-up-award-for-clean-energy-transition","publisher":"European Commission CORDIS","kind":"primary"},
+      {"id":"tilos-island-review","title":"Greek Islands' Energy Transition: From Lighthouse Projects to Energy Communities","url":"https://www.mdpi.com/1996-1073/15/16/5996","publisher":"Energies","kind":"primary"},
+      {"id":"tilos-2024","title":"Ai Stratis green-island project and Greek island precedents","url":"https://news.gtp.gr/2024/10/09/greek-island-ai-stratis-goes-green-through-renewable-energy-pilot-project/","publisher":"GTP Headlines","kind":"secondary"}
+    ]
+  },
+  "tokelau-island-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"Tokelau's Renewable Energy Project is three separate solar-battery-diesel island systems—one each on Fakaofo, Nukunonu and Atafu—not one electrically interconnected island microgrid. Completed in 2012–2013, the portfolio totals about 930 kWp PV and roughly 8 MWh nominal 48 V lead-acid storage. Its celebrated '100% solar' status described the initial design/early operation; UNDP reported in 2023 that growing demand and battery shortages had reduced solar's actual share to about 75%, with diesel again providing the balance.",
+    "status":"All three systems remain under Tokelau's Department of Energy, and the Government still describes the 2013 solar transition. PowerSmart received a maintenance contract in 2015 and repairs/upgrades were reported later, but the latest quantitative status found is UNDP's November 2023 estimate: 75% solar and 80% lower diesel imports than before the project. No 2024–2026 atoll-by-atoll generation, battery replacement or outage report was located; operational solar-diesel hybrids are supported, continuous 100% renewable operation is not.",
+    "organizations":[
+      {"name":"Government of Tokelau / Department of Energy","role":"Project lead, owner and utility responsible for supply and maintenance across all three atolls.","sourceIds":["tok-government","tok-department","tok-evaluation"]},
+      {"name":"New Zealand Ministry of Foreign Affairs and Trade","role":"Co-funder and development-program partner.","sourceIds":["tok-evaluation","tok-case-study"]},
+      {"name":"PowerSmart Solar (now Vector Powersmart lineage)","role":"EPC/installer, trainer and later maintenance contractor.","sourceIds":["tok-case-study","tok-maintenance"]},
+      {"name":"SMA Solar Technology","role":"Sunny Boy, Sunny Island and charge-controller/multicluster equipment supplier.","sourceIds":["tok-sma-guide"]},
+      {"name":"UNDP","role":"Current development observer reporting 2023 solar share and diesel-import reduction.","sourceIds":["tok-undp-2023"]}
+    ],
+    "specifications":[
+      {"label":"PV by atoll","value":"Final program evaluation: Fakaofo 365 kWp, Nukunonu 265 kWp and Atafu 300 kWp, 930 kWp total. IRENA's earlier Government-supplied table reports 330/264/297 kWp (891 kWp), reflecting a different design/as-built date; final totals are preferred.","sourceIds":["tok-evaluation","tok-irena"]},
+      {"label":"Battery storage","value":"Legacy aggregate 8.064 MWh nominal lead-acid at 48 V. IRENA reports 179,200 Ah aggregate at 48 V (about 8.60 MWh nominal), while final project descriptions commonly round to about 8 MWh; differing battery rating conventions/dates are preserved.","sourceIds":["tok-irena","tok-sma-guide","tok-evaluation"]},
+      {"label":"Example atoll architecture","value":"SMA's representative system lists 260 kWp PV, 156 kW battery-inverter power, 2.3 MWh storage, a 60 kW diesel generator, 390 MWh/year available solar energy and 1.5–2 days autonomy. It is one example, not a rating to multiply blindly across all atolls.","sourceIds":["tok-sma-guide"]},
+      {"label":"Portfolio equipment count","value":"4,032 PV modules and 1,344 lead-acid batteries across three systems; project sources differ on inverter counts depending on whether PV, battery and charge-controller devices are all included.","sourceIds":["tok-case-study","tok-evaluation"]},
+      {"label":"Current energy mix","value":"UNDP reported approximately 75% solar in 2023 and 80% lower diesel imports versus the pre-project baseline. This supersedes unqualified 100% claims for current operations.","sourceIds":["tok-undp-2023"]},
+      {"label":"Budget","value":"NZ$8.45 million in the program evaluation; early public figures around NZ$7–8 million reflect different funding/budget stages.","sourceIds":["tok-evaluation"]}
+    ],
+    "equipment":[
+      {"category":"PV/battery power electronics","manufacturer":"SMA Solar Technology","detail":"Sunny Boy PV inverters, Sunny Island battery inverters, Sunny Island Chargers and Multicluster Boxes; models/unit counts vary by atoll.","sourceIds":["tok-sma-guide","tok-case-study"]},
+      {"category":"Battery banks","detail":"Large ventilated 48 V lead-acid banks in purpose-built or adapted battery rooms; battery manufacturer/model and current replacement fleet are not established in current sources.","sourceIds":["tok-case-study","tok-irena"]},
+      {"category":"Backup generation","detail":"Diesel gensets retained on each atoll; early plans discussed coconut-oil biofuel, but 2023 evidence confirms imported diesel still contributes. Genset makers/models are not consistently published.","sourceIds":["tok-government","tok-undp-2023"]}
+    ],
+    "technicalDetails":[
+      {"category":"Network boundary","detail":"Fakaofo, Nukunonu and Atafu have no electrical intertie; each AC island grid independently balances PV, battery and generator resources.","sourceIds":["tok-evaluation","tok-review"]},
+      {"category":"Early performance","detail":"The 2013 technical review estimated Fakaofo at about 437 MWh/year PV and 54 MWh/year diesel, but noted inadequate data logging and estimated several values. These are commissioning-era estimates, not current output.","sourceIds":["tok-review"]},
+      {"category":"Degradation/load growth","detail":"Government reporting by 2016 said demand had risen above original 45 kW design assumptions to 50–55 kW and system efficiency had declined; UNDP later cited battery shortages. This explains the return of diesel without implying the PV arrays were retired.","sourceIds":["tok-wind-update","tok-undp-2023"]},
+      {"category":"Resilience/design","detail":"Battery buildings used thermal mass, cross-ventilation/fans and local construction; the plant was designed for around 1.5–2 days storage autonomy and retained gensets for prolonged low-solar conditions.","sourceIds":["tok-case-study","tok-sma-guide"]}
+    ],
+    "sources":[
+      {"id":"tok-government","title":"Solar Project","url":"https://www.tokelau.org.nz/Solar%2BProject.html","publisher":"Government of Tokelau","kind":"primary"},
+      {"id":"tok-department","title":"Energy and Telecommunications","url":"https://www.tokelau.org.nz/Tokelau%2BGovernment/Government%2BDepartments/Energy%2Band%2BTelecommunications.html","publisher":"Government of Tokelau","kind":"primary"},
+      {"id":"tok-undp-2023","title":"Pacific shores, solar solutions","url":"https://climatepromise.undp.org/news-and-stories/pacific-shores-solar-solutions-harnessing-renewable-energy-pacific-islands","publisher":"UNDP Climate Promise","kind":"primary"},
+      {"id":"tok-evaluation","title":"Renewable Energy Investments in the Pacific: A Process Evaluation","url":"https://www.oecd.org/derec/newzealand/Stage-2-Renewable-Energy-Pacific-process-Evaluation-Report-Final.pdf","publisher":"New Zealand MFAT / OECD evaluation repository","kind":"primary"},
+      {"id":"tok-irena","title":"Renewable Energy Opportunities and Challenges in the Pacific Islands Region: Tokelau","url":"https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2013/Sep/Tokelau.ashx?hash=08202612FB96AF4DB2B2D177389BE45B150A7004&la=en","publisher":"International Renewable Energy Agency","kind":"primary"},
+      {"id":"tok-sma-guide","title":"Sunny Island System Guide — Tokelau case","url":"https://files.sma.de/downloads/SISYSGUIDE-KEN140421.pdf","publisher":"SMA Solar Technology","kind":"primary"},
+      {"id":"tok-case-study","title":"Tokelau Renewable Energy Project Case Study","url":"https://mcstrmi.org/wp-content/uploads/2024/09/MFAT-2013-Tokelau-Renewable-Energy-Pacific-Summit-Case-Study.pdf","publisher":"Government of Tokelau / New Zealand MFAT","kind":"primary"},
+      {"id":"tok-review","title":"Tokelau Renewable Energy Project Review","url":"https://prdrse4all.spc.int/system/files/energy_tokelau_pv_system_review_-_final.pdf","publisher":"IT Power / Pacific regional energy repository","kind":"primary"},
+      {"id":"tok-maintenance","title":"Powersmart wins Tokelau Solar System Maintenance Contract","url":"https://www.tokelau.org.nz/Bulletin/March%2B%2B2015/Powersmart%2Bwins%2BTokelau%2BSolar%2BSystem%2BMaintenance%2BContract.html","publisher":"Government of Tokelau","kind":"primary"},
+      {"id":"tok-wind-update","title":"Beyond Tokelau's 100% solar: add wind power","url":"https://www.tokelau.org.nz/Bulletin/August%2B2016/wind%2Bpower.html","publisher":"Government of Tokelau","kind":"primary"}
+    ]
+  }
+}
