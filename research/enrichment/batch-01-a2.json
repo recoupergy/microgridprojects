@@ -1,0 +1,708 @@
+{
+  "ascension-island-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is the U.S. Department of the Air Force power system at Ascension Auxiliary Airfield (AAAF), not the separate Ascension Island Government utility roadmap. The airfield's six-turbine, 2.7 MW wind fleet had become non-functional by 2021, leaving the installation dependent on shipped diesel. A subsequent ERCIP project replaced it with one EWT DW54 rated 900 kW, a 1 MW battery energy system, upgraded SCADA, and integration with the existing diesel plant and electrical distribution system.",
+    "status": "The replacement wind-battery system was installed and described by EWT as operating successfully in a 2024 case study. The federal contract record is marked complete, but its end date moved from the original 2022-2023 window to 31 October 2025 and its value rose from $11.307 million to $12.271 million. No reviewed government or independently measured record publishes final acceptance, current availability, annual wind production, battery energy capacity, or realized fuel savings through 20 July 2026; the Air Force's 15%-20% reduction was a pre-construction forecast, not an operating result.",
+    "organizations": [
+      {
+        "name": "U.S. Department of the Air Force",
+        "role": "Operator of Ascension Auxiliary Airfield and owner/operator of the installation electrical system; the airfield is also used by the United Kingdom's Royal Air Force and supports multiple agencies.",
+        "sourceIds": ["asc-afmc-2021"]
+      },
+      {
+        "name": "Space Launch Delta 45",
+        "role": "Its civil engineer and contracting squadrons awarded and supported the ERCIP wind, storage, and SCADA replacement project with the Air Force Civil Engineer Center and installation personnel.",
+        "sourceIds": ["asc-afmc-2021", "asc-contract-record"]
+      },
+      {
+        "name": "Air Force Civil Engineer Center",
+        "role": "Air Force technical/program collaborator for the ERCIP energy-resilience project and publisher of the historical wind-farm record.",
+        "sourceIds": ["asc-afmc-2021", "asc-afce-2004"]
+      },
+      {
+        "name": "Jade Creek Construction LLC",
+        "role": "Prime contractor for federal contract FA2521-21-C-0016; EWT identifies Jade Creek as an Akima subsidiary and the project lead.",
+        "sourceIds": ["asc-afmc-2021", "asc-ewt-case", "asc-contract-record"]
+      },
+      {
+        "name": "Selah Group",
+        "role": "Construction partner identified by EWT for the wind-battery installation.",
+        "sourceIds": ["asc-ewt-case"]
+      },
+      {
+        "name": "Emergya Wind Technologies",
+        "role": "Manufacturer and installer/support provider of the DW54 direct-drive wind turbine.",
+        "sourceIds": ["asc-ewt-case"]
+      },
+      {
+        "name": "Ascension Island Government",
+        "role": "Client for a separate 2021-2022 island-wide wind-solar-battery transition roadmap; that modeled roadmap is not evidence that its proposed assets were built at AAAF.",
+        "sourceIds": ["asc-ricardo-roadmap"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current replacement wind rating",
+        "value": "One EWT DW54 rated 900 kW. EWT's case-study cover uses 900 kW while its narrative rounds the same turbine to 1 MW; 900 kW is the Air Force contract rating.",
+        "sourceIds": ["asc-afmc-2021", "asc-ewt-case"]
+      },
+      {
+        "label": "Current battery rating",
+        "value": "1 MW power rating. Energy capacity in MWh, duration, chemistry, usable state-of-charge window, and manufacturer were not disclosed in the reviewed sources.",
+        "sourceIds": ["asc-ewt-case", "asc-afmc-2021"]
+      },
+      {
+        "label": "Superseded wind fleet",
+        "value": "Four 225 kW turbines commissioned in 1996 plus two 900 kW turbines commissioned in September 2003, totaling 2.7 MW; all six were reported non-functional in 2021. This official phase history conflicts with a legacy 1.65 MW figure, for which no supporting source was found.",
+        "sourceIds": ["asc-afce-2004", "asc-afmc-2021"]
+      },
+      {
+        "label": "Historical primary diesel plant",
+        "value": "Three 1.9 MW diesel generators operated in parallel with the wind farm in 2004. In 2012 the Air Force also installed two containerized 1.6 MW emergency generators; reviewed sources do not establish the present number, model, or available capacity of diesel units.",
+        "sourceIds": ["asc-afce-2004", "asc-afcec-diesel-2012"]
+      },
+      {
+        "label": "ERCIP contract value and schedule",
+        "value": "$11.307 million at award in July 2021, later increased to $12.271 million; the contract record shows an end date of 31 October 2025 and complete status.",
+        "sourceIds": ["asc-afmc-2021", "asc-contract-record"]
+      },
+      {
+        "label": "Forecast energy impact",
+        "value": "Air Force forecast a 15%-20% reduction in fuel consumption relative to installation electrical demand. No measured post-installation renewable share or annual fuel reduction was found.",
+        "sourceIds": ["asc-afmc-2021"]
+      },
+      {
+        "label": "Historical wind production target",
+        "value": "The 2004 Air Force account reported 3,150 MWh/year for phase one and a 9,500 MWh/year combined wind target after phase two; those figures describe the superseded fleet, not the DW54 replacement.",
+        "sourceIds": ["asc-afce-2004"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbine",
+        "manufacturer": "Emergya Wind Technologies",
+        "model": "DW54",
+        "detail": "Direct-drive turbine rated 900 kW for this project, with a 54 m rotor and IEC IIIA design. The brochure lists generic 40 m, 50 m, and 75 m hub-height options but does not identify which height was installed at Ascension.",
+        "sourceIds": ["asc-ewt-case", "asc-afmc-2021"]
+      },
+      {
+        "category": "Battery energy storage system",
+        "detail": "1 MW system integrated with wind, diesel, distribution, and SCADA. The battery manufacturer, model, chemistry, and MWh capacity are not public in the reviewed records.",
+        "sourceIds": ["asc-ewt-case", "asc-afmc-2021"]
+      },
+      {
+        "category": "Supervisory control and data acquisition",
+        "detail": "Upgraded SCADA was part of the ERCIP scope for seamless monitoring and operation of the combined utility generation system; supplier and product were not disclosed.",
+        "sourceIds": ["asc-afmc-2021"]
+      },
+      {
+        "category": "Emergency diesel generation",
+        "detail": "Two 1.6 MW containerized CEMIRT Emergency Power System units were installed in 2012 and tied into the fuel and protection systems. Their present availability is not documented.",
+        "sourceIds": ["asc-afcec-diesel-2012"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Hybrid architecture",
+        "detail": "The Air Force described diesel as primary generation, wind as supplemental generation, and the BESS as instantaneous backup if an existing diesel generator fails. The storage and upgraded SCADA connect to the existing generation and distribution system; EWT also says excess wind is stored for low-wind periods.",
+        "sourceIds": ["asc-afmc-2021", "asc-ewt-case"]
+      },
+      {
+        "category": "Lifecycle chronology",
+        "detail": "Wind phase one entered service in 1996 and phase two in September 2003. By August 2021 all six turbines were non-functional and the airfield was 100% diesel-dependent. The replacement contract was awarded in July 2021; EWT documented the installed DW54 and battery in 2024; the contract record later showed completion with an October 2025 end date.",
+        "sourceIds": ["asc-afce-2004", "asc-afmc-2021", "asc-ewt-case", "asc-contract-record"]
+      },
+      {
+        "category": "Historical performance",
+        "detail": "For the superseded four-turbine phase one, the Air Force reported more than 20,000 MWh cumulative production, 97% availability, and $2.5 million savings by 2004. Phase-two annual savings of more than 700,000 gallons and $1 million were projections, not the performance of the current system.",
+        "sourceIds": ["asc-afce-2004"]
+      },
+      {
+        "category": "Project disambiguation",
+        "detail": "Ricardo separately modeled an optimal wind-solar-battery mix capable of more than 85% renewables for the Ascension Island Government from December 2021 to March 2022. That was an island-government roadmap and grant-planning exercise, not an as-built rating or outcome for the U.S. airfield ERCIP project.",
+        "sourceIds": ["asc-ricardo-roadmap"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "Public evidence through 20 July 2026 does not disclose final government acceptance, current measured output or renewable share, actual fuel savings, current diesel capacity, BESS energy capacity/duration/chemistry, or SCADA and battery suppliers. EWT's qualitative claims of reliability and reduced emissions are vendor claims without quantified operating data.",
+        "sourceIds": ["asc-ewt-case", "asc-contract-record", "asc-afmc-2021"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "asc-afmc-2021",
+        "title": "Air Force awards ERCIP contract for Ascension Island",
+        "url": "https://www.afmc.af.mil/News/Article-Display/Article/2743507/air-force-awards-ercip-contract-for-ascension-island/",
+        "publisher": "Air Force Materiel Command / AFIMSC Public Affairs",
+        "kind": "primary"
+      },
+      {
+        "id": "asc-ewt-case",
+        "title": "Powering Ascension Island: EWT's 900kW Wind Turbine with Battery Energy System for the US Space Force",
+        "url": "https://ewtdirectwind.com/wp-content/uploads/2024/03/EWT_CaseStudy_AscensionIsland.pdf",
+        "publisher": "Emergya Wind Technologies",
+        "kind": "primary"
+      },
+      {
+        "id": "asc-contract-record",
+        "title": "ERCIP Wind Turbine Replacement, Ascension (FA252121C0016)",
+        "url": "https://www.highergov.com/contract/FA252121C0016/",
+        "publisher": "HigherGov federal contract-data mirror",
+        "kind": "secondary"
+      },
+      {
+        "id": "asc-afce-2004",
+        "title": "Ascension Island Wind Farm",
+        "url": "https://www.afcec.af.mil/Portals/17/documents/About-Us/AFCE-Magazine/Archives/AFD-120925-028.pdf",
+        "publisher": "Air Force Civil Engineer, Volume 12, Number 2",
+        "kind": "primary"
+      },
+      {
+        "id": "asc-afcec-diesel-2012",
+        "title": "CEMIRT brings reliable power to Ascension Island",
+        "url": "https://www.afcec.af.mil/News/Article-Display/Article/466248/cemirt-brings-reliable-power-to-ascension-island/",
+        "publisher": "Air Force Civil Engineer Center",
+        "kind": "primary"
+      },
+      {
+        "id": "asc-ricardo-roadmap",
+        "title": "Transitioning Ascension Island Towards a Renewable Future",
+        "url": "https://www.ricardo.com/en/projects/transitioning-ascension-island-towards-a-renewable-future",
+        "publisher": "Ricardo",
+        "kind": "primary"
+      }
+    ]
+  },
+  "ausnet-grid-energy-storage-system": {
+    "researchedAt": "2026-07-20",
+    "summary": "AusNet's Grid Energy Storage System (GESS) is a portable 1 MW/1 MWh lithium-ion battery and 1 MVA diesel hybrid, originally commissioned at Thomastown Terminal Station in Melbourne for 22 kV network trials. AusNet physically relocated it in 2020 and commissioned it at Mallacoota in 2021 as the Mallacoota Area Grid Storage (MAGS), where it islands the remote township during feeder outages. The original ABB-led system uses Samsung SDI batteries, an ABB PowerStore PCS100 inverter, Microgrid Plus controls, and containerized switchgear/protection.",
+    "status": "Operating at Mallacoota at the latest owner update. MAGS suffered repeated technical issues in 2023 and again in February-May 2025, including waits for Samsung parts, but AusNet reported it back in service on 14 July 2025. It supplied more than 73 hours of backup during outages from September 2024 through April 2025, including a 13-hour-10-minute event on 17 April. No owner update after July 2025 was found by 20 July 2026, so present-day availability beyond that dated statement is not independently established.",
+    "organizations": [
+      {
+        "name": "AusNet Services",
+        "role": "Distribution-network owner, project sponsor, system owner/operator, original trial manager, and developer of the relocation to Mallacoota; AusNet contributed $7.5 million to the Mallacoota project.",
+        "sourceIds": ["aus-owner-overview", "aus-dmia-2020", "aus-mags-launch", "aus-mags-updates"]
+      },
+      {
+        "name": "ABB Australia",
+        "role": "Lead party in the original design-and-construction consortium and supplier/integrator of the inverter, controls, protection, and associated grid-integration technology; it also received enhancement work after the trial.",
+        "sourceIds": ["aus-dmia-2020", "aus-abb-review"]
+      },
+      {
+        "name": "Samsung SDI",
+        "role": "Original lithium-ion battery-system supplier in the ABB-led consortium; AusNet's 2023 and 2025 updates identify Samsung as the source of awaited replacement parts.",
+        "sourceIds": ["aus-abb-review", "aus-mags-updates"]
+      },
+      {
+        "name": "Victorian Government",
+        "role": "Mallacoota installation formed part of the state program to improve energy service in bushfire-prone areas.",
+        "sourceIds": ["aus-mags-launch"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Battery rating",
+        "value": "1 MW / 1 MWh lithium-ion, a nominal one-hour system at rated real power; ABB calls it a 1C system with symmetric charge/discharge capability of plus or minus 1 MW.",
+        "sourceIds": ["aus-owner-overview", "aus-abb-review", "aus-mags-launch"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "1 MVA backup diesel generator. It extends island duration, recharges low batteries, and supplies the microgrid; the reviewed primary sources do not establish a manufacturer, model, or kW rating.",
+        "sourceIds": ["aus-owner-overview", "aus-abb-review"]
+      },
+      {
+        "label": "Grid interface",
+        "value": "22 kV distribution connection through a 3 MVA transformer and three-breaker SF6 ring-main unit.",
+        "sourceIds": ["aus-abb-review"]
+      },
+      {
+        "label": "Mallacoota endurance example",
+        "value": "AusNet said the 1 MWh battery could serve 1,000 average homes for about two hours and the hybrid could supply the town for up to one day with the generator. This load example does not change the battery's nominal 1 MW/1 MWh rating.",
+        "sourceIds": ["aus-mags-launch"]
+      },
+      {
+        "label": "Energy sources at Mallacoota",
+        "value": "Battery charged from the grid, diesel generator, and customer rooftop solar present on the islanded local network. The system itself has no dedicated utility-scale renewable generator and no verified annual renewable-energy share.",
+        "sourceIds": ["aus-mags-launch", "aus-mags-updates"]
+      },
+      {
+        "label": "Mallacoota project contribution",
+        "value": "$7.5 million contributed by AusNet; the reviewed sources do not provide a full final project cost or separate relocation cost.",
+        "sourceIds": ["aus-mags-launch"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery system",
+        "manufacturer": "Samsung SDI",
+        "detail": "1 MWh, 1C lithium-ion BESS in four self-contained shipping containers with HVAC and fire suppression, capable of plus or minus 1 MW. AusNet's public rating is 1 MWh; no cell model or chemistry subtype is published.",
+        "sourceIds": ["aus-abb-review", "aus-dmia-2020"]
+      },
+      {
+        "category": "Power conversion system",
+        "manufacturer": "ABB",
+        "model": "PowerStore 4Q PCS100",
+        "detail": "IGBT four-quadrant inverter on a 1,000 V DC bus, rated plus or minus 1,372 kVA; operates as a voltage-source synthetic generator and STATCOM-like resource.",
+        "sourceIds": ["aus-abb-review"]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "ABB",
+        "model": "Microgrid Plus",
+        "detail": "Monitors power and energy flows, maintains spinning reserve, coordinates generator/battery load sharing, transitions between grid-connected and island modes, and links by RTU to AusNet's control system.",
+        "sourceIds": ["aus-abb-review"]
+      },
+      {
+        "category": "Protection relays",
+        "manufacturer": "ABB",
+        "model": "REF630",
+        "detail": "Three intelligent electronic devices protect and monitor the system; protection groups change automatically as sources enter and leave service.",
+        "sourceIds": ["aus-abb-review"]
+      },
+      {
+        "category": "Synchronization controls",
+        "manufacturer": "ABB",
+        "model": "Synchrotact",
+        "detail": "Sends signals to Microgrid Plus so PowerStore and the generator match the upstream network voltage and frequency for reconnection.",
+        "sourceIds": ["aus-abb-review"]
+      },
+      {
+        "category": "Diesel generator",
+        "detail": "Containerized 1 MVA backup generator. The reviewed manufacturer/owner sources do not establish its manufacturer, exact model, or real-power rating.",
+        "sourceIds": ["aus-abb-review"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Original trial",
+        "detail": "AusNet initiated the two-year trial in 2013 and had hardware installed at Thomastown by the end of 2014. Tests covered peak lopping, power-factor correction, voltage and harmonic support, phase balance, and islanded transitions. AusNet selected the diesel hybrid because additional diesel endurance cost less than expanding battery capacity.",
+        "sourceIds": ["aus-owner-overview", "aus-dmia-2020"]
+      },
+      {
+        "category": "Relocation chronology",
+        "detail": "AusNet developed the relocation concept in 2017, carried out enhancement and reliability work with ABB, physically moved the GESS from Thomastown to Mallacoota in 2020, began recommissioning that December, and announced the completed Mallacoota installation in 2021.",
+        "sourceIds": ["aus-dmia-2020", "aus-mags-launch"]
+      },
+      {
+        "category": "Grid-forming operation",
+        "detail": "In island mode, PowerStore supplies the feeder and establishes voltage/frequency so the diesel generator can synchronize. Battery and generator then share load; the generator can increase output as battery state of charge falls. Grid-connected services include charging at low demand, peak lopping, reactive-power control, and voltage droop.",
+        "sourceIds": ["aus-abb-review", "aus-owner-overview"]
+      },
+      {
+        "category": "Distributed solar interaction",
+        "detail": "Rooftop solar remains connected behind the islanded town load. AusNet warned in September 2023 that high solar export while the MAGS generator was supplying the town could create excess reverse flow and functional issues; operators and an automatic control system adjust power flow accordingly.",
+        "sourceIds": ["aus-mags-updates"]
+      },
+      {
+        "category": "Reliability upgrades and failures",
+        "detail": "Technical failures prevented backup during some 2023 and February-May 2025 outages. AusNet added a local registered electrical contractor, upgraded generator controls, installed automatic switches, and implemented remote start if automatic start failed, which could take up to 30 minutes. Some repairs depended on Samsung parts.",
+        "sourceIds": ["aus-mags-updates"]
+      },
+      {
+        "category": "Measured outage support",
+        "detail": "AusNet's update records more than 73 hours of backup from September 2024 through April 2025 across ten listed events. In April 2025 it supported five transient outages and one sustained outage, with the sustained event lasting 13 hours 10 minutes.",
+        "sourceIds": ["aus-mags-updates"]
+      },
+      {
+        "category": "Project-name disambiguation",
+        "detail": "The original 1 MW/1 MWh Thomastown GESS is now MAGS at Mallacoota. It is not AusNet's separate proposed 300 MW/600 MWh Thomastown BESS, whose planning permit was approved and whose construction was intended to start in late 2026.",
+        "sourceIds": ["aus-dmia-2020", "aus-thomastown-new"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No post-July-2025 owner update, current availability factor, annual energy throughput, diesel use, rooftop-solar share, battery degradation/capacity test, or complete replacement history was found through 20 July 2026.",
+        "sourceIds": ["aus-mags-updates"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "aus-owner-overview",
+        "title": "Enabling solar and battery future — Grid energy storage system",
+        "url": "https://www.ausnetservices.com.au/projects-and-innovation/innovation/enabling-solar-and-battery-future",
+        "publisher": "AusNet Services",
+        "kind": "primary"
+      },
+      {
+        "id": "aus-dmia-2020",
+        "title": "AusNet Services Demand Management Innovation Allowance Annual Report 2020",
+        "url": "https://www.aer.gov.au/system/files/AusNet%20Services%20-%20Demand%20Management%20Innovation%20Allowance%20-%20Annual%20Report%202020%20-%20April%202021.pdf",
+        "publisher": "AusNet Services via Australian Energy Regulator",
+        "kind": "primary"
+      },
+      {
+        "id": "aus-abb-review",
+        "title": "Unlocking value in storage systems: A large-scale case study of a battery/diesel grid-connected microgrid",
+        "url": "https://library.e.abb.com/public/f690a311943249f1b452bbd2521c803e/ABB%20Review%203-2016_72dpi.pdf",
+        "publisher": "ABB Review 3/2016",
+        "kind": "primary"
+      },
+      {
+        "id": "aus-mags-launch",
+        "title": "Mallacoota power supply strengthened as AusNet installs Gippsland's first community battery",
+        "url": "https://www.ausnetservices.com.au/news/mallacoota-power-supply-strengthened-as-ausnet-installs-gippslands-first-community-battery",
+        "publisher": "AusNet Services",
+        "kind": "primary"
+      },
+      {
+        "id": "aus-mags-updates",
+        "title": "Mallacoota Area Grid Storage (MAGS) — Community updates",
+        "url": "https://www.ausnetservices.com.au/projects-and-innovation/battery-storage/mallacoota-area-grid-storage-mags-community-update",
+        "publisher": "AusNet Services",
+        "kind": "primary"
+      },
+      {
+        "id": "aus-thomastown-new",
+        "title": "Thomastown Battery Energy Storage System",
+        "url": "https://www.ausnetservices.com.au/projects-and-innovation/completed-projects/thomastown-battery",
+        "publisher": "AusNet Services",
+        "kind": "primary"
+      }
+    ]
+  },
+  "babylon-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Village of Babylon project was a NY Prize Stage 1 feasibility study for a community microgrid serving critical municipal, school, shelter, and relief facilities on Long Island. Ameresco's August 2016 final concept paired two 500 kW natural-gas engine-generators with 275 kW of solar PV, a dedicated 13.2 kV microgrid feeder, automated switching, controls, and efficiency upgrades. It was never an operating microgrid: Ameresco later stated that it did not advance to Stage 2 because the economics were poor.",
+    "status": "Feasibility completed on 2 August 2016; not advanced to NY Prize Stage 2 and not built. The $4.635 million concept had a 0.5 benefit-cost ratio without assumed major outages, and Ameresco estimated an approximately $2.1 million monetizable-revenue shortfall. No procurement, construction, commissioning, or later revival was found through 20 July 2026. All equipment and performance values below are study-stage designs or estimates, not as-built assets.",
+    "organizations": [
+      {
+        "name": "Village of Babylon",
+        "role": "Municipal sponsor and intended host/customer for the proposed community microgrid.",
+        "sourceIds": ["bab-final-report", "bab-stage1-winners"]
+      },
+      {
+        "name": "New York State Energy Research and Development Authority",
+        "role": "NY Prize Stage 1 study funder and program sponsor.",
+        "sourceIds": ["bab-final-report", "bab-stage1-winners"]
+      },
+      {
+        "name": "Governor's Office of Storm Recovery",
+        "role": "NYSERDA partner sponsoring the feasibility study in response to post-Sandy resilience planning.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "name": "Ameresco",
+        "role": "Prepared the feasibility study, gathered utility/facility data, developed the conceptual design and economics, and was the proposed private owner/operator under the study's notional business model.",
+        "sourceIds": ["bab-final-report", "bab-ameresco-panel"]
+      },
+      {
+        "name": "PSEG Long Island",
+        "role": "Serving electric utility and initial Stage 1 partner; its distribution system, interconnection, tariffs, and possible grid-support purchases were evaluated, but no executed operating or procurement role is documented.",
+        "sourceIds": ["bab-stage1-winners", "bab-final-report"]
+      },
+      {
+        "name": "National Grid",
+        "role": "Serving natural-gas utility and initial Stage 1 partner; the final concept depended on natural-gas service, but no construction contract was reached.",
+        "sourceIds": ["bab-stage1-winners", "bab-final-report"]
+      },
+      {
+        "name": "Industrial Economics, Incorporated",
+        "role": "Prepared the NY Prize benefit-cost analysis included with the final report.",
+        "sourceIds": ["bab-final-report"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Conceptual firm generation",
+        "value": "Two 500 kW continuous-duty, 480 V natural-gas reciprocating engine-generators, sized redundantly with black-start starter batteries; no manufacturer or model was selected.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Conceptual solar PV",
+        "value": "275 kW total: 50 kW at Village Hall/Department of Public Works and 225 kW at Babylon Junior-Senior High School; no module or inverter supplier was selected.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Modeled solar production and share",
+        "value": "More than 350,000 kWh/year, estimated as approximately 27% of the combined annual electricity use at the three proposed PV host facilities, not 27% of all microgrid energy during islanding.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Storage and fuel cells",
+        "value": "NYSERDA's initial Stage 1 winner description mentioned energy storage and fuel cells, but Ameresco's final August 2016 design included neither a BESS nor a fuel cell. No storage power, energy, duration, chemistry, or vendor should be assigned to the final concept.",
+        "sourceIds": ["bab-stage1-winners", "bab-final-report"]
+      },
+      {
+        "label": "Critical-facility load",
+        "value": "Combined normal peak estimated at about 400-500 kW; modeled post-efficiency peaks were approximately 350 kW in winter and 310 kW in summer.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Distribution concept",
+        "value": "Dedicated 13.2 kV microgrid distribution using approximately 2,500 feet of 15 kV cable, six automatic transfer/open switches, one 1.5 MVA 480 V/13.7 kV transformer, and two 13.2 kV breakers.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Capital-cost estimate",
+        "value": "$4,635,436 including contingency and engineering; major subtotals included $1.943 million for generation/switchgear, $264,500 for distribution, $915,000 for renewables and controls, and $585,749 for efficiency measures.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "label": "Benefit-cost results",
+        "value": "At a 7% discount rate over 20 years, the no-major-outage case had $2.17 million benefits, negative $2.04 million net benefits, and a 0.5 ratio. Assuming an average three-day major outage every year raised the ratio to 1.0 and net benefits to only $15,200.",
+        "sourceIds": ["bab-final-report"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Natural-gas engine-generators (conceptual)",
+        "detail": "Two continuous-duty 500 kW, 480 V units with black-start starter batteries and exhaust treatment were budgeted. No manufacturer or model was procured or specified.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "category": "Solar PV systems (conceptual)",
+        "detail": "Two arrays totaling 275 kW were budgeted at municipal and school properties. No module, inverter, mounting, or EPC vendor was selected.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "category": "Microgrid control system (conceptual)",
+        "model": "MCS U90plus",
+        "detail": "The report uses this product designation for the proposed controller, with CPU, HMI/SCADA, 100 Mbps Ethernet, automatic island/reconnect logic, generation dispatch, and load shedding. It does not identify a manufacturer, and the system was not purchased.",
+        "sourceIds": ["bab-final-report"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Critical facilities",
+        "detail": "The final study covered Village Hall/Fire/EMS, Department of Public Works, Babylon Junior-Senior High School, American Legion Post 94, and the two-building St. Joseph's School complex. These loads were selected for emergency response, shelter, and relief roles demonstrated during Superstorm Sandy.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "category": "Island and restoration sequence",
+        "detail": "During an outage the design would isolate the 13.2 kV feeder, black-start both 500 kW generators, energize the feeder, add facilities in a controlled sequence, and then connect PV. Controls could stop one generator as load and PV conditions allowed and later synchronize/reconnect to PSEG-LI.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "category": "Controls and communications",
+        "detail": "The conceptual MCS would automatically island and reconnect, optimize generator dispatch and load shedding, provide local HMI/SCADA, and use Ethernet with optional DNP3 and Modbus TCP/IP/fiber communications plus GPS time synchronization. Generic references to storage in the controls section do not establish a BESS in the final equipment schedule.",
+        "sourceIds": ["bab-final-report"]
+      },
+      {
+        "category": "Scope evolution",
+        "detail": "The Stage 1 award sheet initially described conventional generation, solar, storage, and fuel cells and listed MTA, NYSDOT, Suffolk County, and the Town of Babylon among partners. The final study narrowed the facilities and settled on natural-gas generators plus PV without storage or fuel cells; it does not document construction roles for those initial partners.",
+        "sourceIds": ["bab-stage1-winners", "bab-final-report"]
+      },
+      {
+        "category": "Commercial outcome",
+        "detail": "The study said ownership, operating agreements, customer contracts, and financing still had to be formed. Ameresco's later presentation reported about $4.9 million NPV cost, $4.3 million broad societal benefits, only $2.8 million monetizable revenue, and a roughly $2.1 million shortfall, then stated that the project did not move to Stage 2 because of poor economics.",
+        "sourceIds": ["bab-final-report", "bab-ameresco-panel"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No evidence of Stage 2 award, detailed design, financing close, equipment procurement, construction, or operation was found through 20 July 2026. Consequently, all vendors other than the named study participants and all equipment manufacturers remain unknown.",
+        "sourceIds": ["bab-ameresco-panel", "bab-final-report"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bab-final-report",
+        "title": "NY Prize Community Grid Competition Stage 1 Feasibility Assessment Final Report — Village of Babylon",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/1-Village-of-Babylon.pdf",
+        "publisher": "NYSERDA / Ameresco",
+        "kind": "primary"
+      },
+      {
+        "id": "bab-stage1-winners",
+        "title": "NY Prize Stage 1 Winners",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf",
+        "publisher": "New York State Energy Research and Development Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "bab-ameresco-panel",
+        "title": "NY Prize Experience — Town of Babylon Project Economic Summary",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2016/07/29%20NYPrize%20Panel.pdf",
+        "publisher": "Ameresco / Symposium on Microgrids",
+        "kind": "primary"
+      }
+    ]
+  },
+  "baega-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Baega Island is the Baekado energy-self-sufficient-island project on Baekado (Korean: 백아도; also romanized Baega-do, Baegado, or Paega-do) in Baega-ri, Deokjeok-myeon, Ongjin County, Incheon. Commissioned in January 2015, it combined 250 kW of PV, four 10 kW wind turbines, about 1.1-1.125 MWh of lithium-ion storage, an energy-management system, and three existing 75 kW diesel generators. The public promise of a 100% clean/carbon-zero island was not achieved: a National Assembly Budget Office analysis found a 59% renewable/41% diesel energy mix in 2016.",
+    "status": "Historically commissioned, but current operation is unverified. Government records show completion in January 2015 and 2016 production of about 270,000 kWh renewable plus 190,000 kWh diesel. The wind component performed especially poorly: a 2019 KIER/Pusan National University study reported measured mean wind speed of 2.32 m/s and capacity factor of only 1.08%, citing a 2017 audit recommendation to relocate the turbines. No public evidence found through 20 July 2026 confirms that relocation occurred or establishes present PV, BESS, wind, EMS, or diesel availability; the record therefore should not be labeled currently 100% renewable or fully operational without qualification.",
+    "organizations": [
+      {
+        "name": "Incheon Metropolitan City",
+        "role": "Local-government project sponsor and co-funder with Ongjin County; promoted the carbon-zero-island objective.",
+        "sourceIds": ["bae-ajunews-2014", "bae-nabo-2017", "bae-incheon-study"]
+      },
+      {
+        "name": "Ongjin County",
+        "role": "Co-sponsor, co-funder, and island power-system operator identified by Incheon Institute's island inventory.",
+        "sourceIds": ["bae-ajunews-2014", "bae-incheon-study"]
+      },
+      {
+        "name": "Incheon Technopark",
+        "role": "Lead organization for the project consortium under the national renewable-energy convergence-support program.",
+        "sourceIds": ["bae-incheon-study"]
+      },
+      {
+        "name": "Ministry of Trade, Industry and Energy",
+        "role": "National-program sponsor/funder through the renewable-energy convergence-support program; national funds covered 50% of the reported project cost.",
+        "sourceIds": ["bae-ajunews-2014", "bae-nabo-2017"]
+      },
+      {
+        "name": "Korea Electric Power Corporation",
+        "role": "Source of rural-island electricity-supply operating and performance data used in the government audit. The reviewed evidence does not support assigning KEPCO sole project ownership; the local project inventory names Ongjin County as operator.",
+        "sourceIds": ["bae-nabo-2017", "bae-incheon-study"]
+      },
+      {
+        "name": "Korea Institute of Energy Research",
+        "role": "Co-author institution for the 2019 wind-resource assessment that analyzed poor wind performance and modeled a better site.",
+        "sourceIds": ["bae-wind-study"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar PV capacity",
+        "value": "250 kW; manufacturer, module model, inverter supplier, mounting configuration, and current available capacity were not found.",
+        "sourceIds": ["bae-wind-study", "bae-nabo-2017", "bae-incheon-study"]
+      },
+      {
+        "label": "Wind capacity",
+        "value": "40 kW from four 10 kW Raeun Tech GWE-10KU small wind turbines installed on 12 m towers.",
+        "sourceIds": ["bae-wind-study"]
+      },
+      {
+        "label": "Battery energy storage",
+        "value": "Approximately 1.1 MWh lithium-ion; government records commonly state 1,125 kW even though they describe stored energy, while the technical paper clarifies 1.1 MWh. Battery power rating, duration at rated output, cell/model supplier, and usable energy were not published.",
+        "sourceIds": ["bae-wind-study", "bae-nabo-2017", "bae-incheon-study"]
+      },
+      {
+        "label": "Diesel backup",
+        "value": "Three existing 75 kW diesel generators, 225 kW total, retained as emergency/backup generation; manufacturer, model, and current condition are unknown.",
+        "sourceIds": ["bae-ajunews-2014", "bae-incheon-study"]
+      },
+      {
+        "label": "Project cost and funding",
+        "value": "Approximately KRW 4.2-4.234 billion; 50% national funding and 50% combined Incheon/Ongjin local funding.",
+        "sourceIds": ["bae-ajunews-2014", "bae-nabo-2017", "bae-incheon-study"]
+      },
+      {
+        "label": "2016 measured energy mix",
+        "value": "59% renewable and 41% diesel: about 270,000 kWh from PV/wind and 190,000 kWh from diesel, versus the planned 100% renewable supply.",
+        "sourceIds": ["bae-nabo-2017"]
+      },
+      {
+        "label": "2016 electricity use",
+        "value": "330,025 kWh, up 28.9% from 256,118 kWh in 2014; demand growth contributed to but did not fully explain higher-than-planned diesel operation.",
+        "sourceIds": ["bae-nabo-2017"]
+      },
+      {
+        "label": "Diesel fuel trend",
+        "value": "116,029 liters in 2014, 86,813 liters in 2015, and 60,727 liters in 2016; fuel use fell but was not eliminated.",
+        "sourceIds": ["bae-nabo-2017"]
+      },
+      {
+        "label": "Wind measured performance",
+        "value": "Mean wind speed 2.32 m/s and measured fleet capacity factor 1.08%. A later NWP-CFD model estimated 3,666 kWh/year and 4.2% capacity factor at the current 12 m site, versus 20,254 kWh/year and 23.1% at a modeled hilltop site; modeled values are not realized production.",
+        "sourceIds": ["bae-wind-study"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Small wind turbines",
+        "manufacturer": "Raeun Tech",
+        "model": "GWE-10KU",
+        "detail": "Four 10 kW turbines on 12 m hubs. The 2019 site study attributes the installed units to Raeun Tech; the Korean Energy Agency's current certification record for the same model lists Geumpung, so the later certificate holder should not be retroactively substituted for the installed-project attribution.",
+        "sourceIds": ["bae-wind-study", "bae-kea-cert"]
+      },
+      {
+        "category": "Lithium-ion battery energy storage",
+        "detail": "About 1.1-1.125 MWh coupled through bidirectional conversion and EMS; public records reviewed do not identify the battery/PCS manufacturer, model, power rating, or current state of health.",
+        "sourceIds": ["bae-wind-study", "bae-incheon-study"]
+      },
+      {
+        "category": "Solar PV",
+        "detail": "250 kW array. Manufacturer and component models are not disclosed in the reviewed sources.",
+        "sourceIds": ["bae-wind-study", "bae-incheon-study"]
+      },
+      {
+        "category": "Energy management system",
+        "detail": "EMS and power-conversion equipment coordinate renewable generation, storage, and diesel backup; supplier and product are not disclosed.",
+        "sourceIds": ["bae-incheon-study"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Local-name and project disambiguation",
+        "detail": "The local island name is 백아도 (Baekado). English sources variously use Baega, Baega-do, Baegado, or Paega-do. It is not Gasado/Gasa Island, a separate KEPCO microgrid with different ratings and participants.",
+        "sourceIds": ["bae-incheon-study", "bae-wind-study"]
+      },
+      {
+        "category": "Dispatch architecture",
+        "detail": "The system was designed to prioritize PV and wind, use the lithium-ion ESS to balance production and load, and run existing diesel generation when renewable energy was insufficient. Diesel therefore remained physically and operationally part of the microgrid despite the carbon-zero branding.",
+        "sourceIds": ["bae-ajunews-2014", "bae-incheon-study", "bae-nabo-2017"]
+      },
+      {
+        "category": "Milestones",
+        "detail": "Construction began in 2014 under the convergence-support program. The National Assembly analysis records commissioning in January 2015, and Incheon planning material described the completed system as in operation after 2014 work.",
+        "sourceIds": ["bae-ajunews-2014", "bae-nabo-2017", "bae-incheon-plan"]
+      },
+      {
+        "category": "Renewable-share outcome",
+        "detail": "The 2016 renewable generation of roughly 270,000 kWh was only 73% of the 380,000 kWh plan, requiring 190,000 kWh of diesel output. The National Assembly Budget Office concluded that the promised 100% clean-energy supply had not been achieved.",
+        "sourceIds": ["bae-nabo-2017"]
+      },
+      {
+        "category": "Wind siting failure",
+        "detail": "The four turbines were installed in a coastal basin shielded on three sides by 70-130 m terrain. Tower height was reduced from the original 18 m design to 12 m to limit turbine shadow on the PV array. The 2017 audit found that field wind measurements were omitted and a non-specialist performed the site assessment, and recommended relocation.",
+        "sourceIds": ["bae-wind-study"]
+      },
+      {
+        "category": "Relocation analysis",
+        "detail": "The 2019 NWP-CFD study modeled a stronger hilltop location and estimated a 23.1% capacity factor there, compared with 4.2% modeled at the current site and 1.08% in reported operating data. This was an analytical relocation case, not evidence that the turbines were moved.",
+        "sourceIds": ["bae-wind-study"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No reviewed public source after the 2019 wind study confirms turbine relocation, replacement, decommissioning, battery refurbishment, EMS upgrades, current generation mix, or component availability. The most defensible status is historically commissioned with documented underperformance, present operation unknown.",
+        "sourceIds": ["bae-wind-study", "bae-nabo-2017"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bae-ajunews-2014",
+        "title": "Incheon to Make Baekado a Carbon-Zero Island",
+        "url": "https://www.ajunews.com/view/20140731102910966",
+        "publisher": "Aju Business Daily",
+        "kind": "secondary"
+      },
+      {
+        "id": "bae-incheon-plan",
+        "title": "2015 Major Business Plan",
+        "url": "https://www.incheon.go.kr/data/editor/20150120/20150120121616.pdf",
+        "publisher": "Incheon Metropolitan City",
+        "kind": "primary"
+      },
+      {
+        "id": "bae-incheon-study",
+        "title": "Environmentally Friendly Energy Supply Plan for Ongjin County Island Areas",
+        "url": "https://www.ii.re.kr/storage/report/BB0000006066.pdf",
+        "publisher": "Incheon Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "bae-nabo-2017",
+        "title": "2016 Fiscal-Year Settlement Analysis — Trade, Industry, Energy, SMEs and Startups Committee",
+        "url": "https://www.nabo.go.kr/board/file/down.do?fid=33314219",
+        "publisher": "National Assembly Budget Office, Republic of Korea",
+        "kind": "primary"
+      },
+      {
+        "id": "bae-wind-study",
+        "title": "Wind Resource Assessment of Baekado by NWP-CFD Downscaling",
+        "url": "https://journalksnre.com/xml/20088/20088.pdf",
+        "publisher": "New & Renewable Energy, Korean Society for New and Renewable Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "bae-kea-cert",
+        "title": "KS-Certified Equipment — GWE-10KU",
+        "url": "https://www.knrec.or.kr/biz/ks_cert/view.do?model_regi_no=WT-SWS-1-0013",
+        "publisher": "Korea Energy Agency New and Renewable Energy Center",
+        "kind": "primary"
+      }
+    ]
+  }
+}
