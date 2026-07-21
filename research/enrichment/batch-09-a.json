@@ -150,7 +150,7 @@
     "sources":[
       {"id":"tokyo-iee-paper","title":"Islanding protection system with active and reactive power balancing control for Tokyo Metropolitan Power System and actual operational experiences","url":"https://www.researchgate.net/publication/3900007_Islanding_protection_system_with_active_and_reactive_power_balancing_control_for_Tokyo_Metropolitan_Power_System_and_actual_operational_experiences","publisher":"IEE Conference on Developments in Power System Protection","kind":"primary"},
       {"id":"tokyo-2013-overview","title":"Status of Microgrids in Japan — Korea Smart Grid Week 2013","url":"https://de.scribd.com/document/440052583/1-5-Microgrid-of-Japan-KSGW-pdf","publisher":"Reiichiro Fujimori presentation (third-party document host)","kind":"secondary"},
-      {"id":"tokyo-legacy-index","title":"Japan project index: Tokyo Metropolitan Microgrid for High Reliability","url":"https://microgridprojects.com/property-location/japan/","publisher":"Microgrid Projects","kind":"secondary"}
+      {"id":"tokyo-legacy-index","title":"Recovered Tokyo Metropolitan Microgrid record","url":"https://web.archive.org/web/20200706000937id_/http://microgridprojects.com/microgrid/tokyo-metropolitan-microgrid-high-reliability/","publisher":"Microgrid Projects","kind":"archive"}
     ]
   },
   "tuntutuliak-kongiginak-kwigillingok-microgrids": {

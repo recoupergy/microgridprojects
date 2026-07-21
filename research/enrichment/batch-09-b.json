@@ -1,0 +1,1144 @@
+{
+  "ucsd-microgrid-2": {
+    "researchedAt": "2026-07-20",
+    "summary": "UC San Diego operates a mature, island-capable campus microgrid, but its current configuration is materially different from the older project profile often repeated online. The present backbone is a 30 MW natural-gas combined-heat-and-power plant, more than 2.8 MW of solar PV, thermal storage, and campus controls; a 2.8 MW biogas fuel cell was retired in 2023 and the old 2.5 MW/5 MWh lithium-ion battery is being decommissioned. A 2024 award announced a 10 MW/40 MWh replacement battery, while an April 2026 California filing describes the project as 8 MW/32 MWh and not yet commissioned. DERConnect is a separate, nested research testbed on the campus with about 0.5 MW/1 MWh of batteries, power-hardware-in-the-loop infrastructure, EV charging, and its own islanding controls; it should not be confused with the capacity of the campus utility microgrid.",
+    "status": "Operational campus microgrid; former fuel cell retired and former battery being decommissioned. Replacement BESS is in development/permitting, with the latest public scope 8 MW/32 MWh and no evidence of commissioning as of the research date. DERConnect is an operational research facility within the broader campus system.",
+    "organizations": [
+      {
+        "name": "University of California San Diego",
+        "role": "Owner/operator of the campus energy system and host/operator of DERConnect.",
+        "sourceIds": ["ucsd-1", "ucsd-2", "ucsd-3"]
+      },
+      {
+        "name": "San Diego Gas & Electric",
+        "role": "Interconnecting utility; the campus 12 kV system is downstream of a jointly used 69 kV SDG&E/UCSD substation.",
+        "sourceIds": ["ucsd-5"]
+      },
+      {
+        "name": "California Energy Commission",
+        "role": "Awarded $7.15 million in 2024 toward storage modernization and hosts the 2026 environmental filing for the revised battery project.",
+        "sourceIds": ["ucsd-4", "ucsd-5"]
+      },
+      {
+        "name": "Schweitzer Engineering Laboratories",
+        "role": "Supplied the PowerMAX microgrid controller and a broad suite of protection, automation, communications, and synchronization equipment.",
+        "sourceIds": ["ucsd-8", "ucsd-9"]
+      },
+      {
+        "name": "FuelCell Energy",
+        "role": "Supplied the former 2.8 MW molten-carbonate fuel-cell plant, which operated from 2011 to 2020 and was decommissioned in 2023.",
+        "sourceIds": ["ucsd-6", "ucsd-7"]
+      },
+      {
+        "name": "KORE Power, Great Power, Kronus Engineering, Skeleton Technologies, EPC Power, Dynapower and Oztek",
+        "role": "Battery, ultracapacitor, rack and inverter suppliers represented in the DERConnect research testbed; these assets are not the campus-scale replacement BESS.",
+        "sourceIds": ["ucsd-3"]
+      },
+      {
+        "name": "Minsait ACS",
+        "role": "Supplier of the Onesait DERMS used in DERConnect.",
+        "sourceIds": ["ucsd-3"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Campus peak demand",
+        "value": "55 MW",
+        "notes": "Current UCSD energy-storage pages describe the campus as a 55 MW microgrid serving roughly 60,000 people and using about 350,000 MWh annually.",
+        "sourceIds": ["ucsd-1", "ucsd-2"]
+      },
+      {
+        "name": "Natural-gas CHP",
+        "value": "30 MW",
+        "notes": "Current backbone of the campus system. UCSD says cogeneration supplies about 70% of campus electricity; this is a current order-of-magnitude mix statement, not a complete audited annual generation balance.",
+        "sourceIds": ["ucsd-2", "ucsd-5"]
+      },
+      {
+        "name": "Campus solar PV",
+        "value": ">2.8 MW",
+        "notes": "Distributed across campus. Some older UCSD material rounds this to 3 MW.",
+        "sourceIds": ["ucsd-1", "ucsd-5"]
+      },
+      {
+        "name": "Thermal storage",
+        "value": "3.8 million gallons",
+        "notes": "Current UCSD page value. Older institutional material has reported more than 8 million gallons, so tank scope or accounting has changed and the figures should not be merged.",
+        "sourceIds": ["ucsd-1", "ucsd-10"]
+      },
+      {
+        "name": "Former campus lithium-ion BESS",
+        "value": "2.5 MW / 5 MWh",
+        "notes": "A decade-old system now described in the 2026 filing as being decommissioned; it is not current available capacity.",
+        "sourceIds": ["ucsd-4", "ucsd-5", "ucsd-10"]
+      },
+      {
+        "name": "Replacement campus BESS",
+        "value": "8 MW / 32 MWh latest filed scope",
+        "notes": "The September 2024 award announcement stated 10 MW/40 MWh. The April 2026 environmental filing revised the design to 8 MW/32 MWh at the same interconnection. Treat 10/40 as the earlier announced scope, not additive capacity.",
+        "sourceIds": ["ucsd-4", "ucsd-5"]
+      },
+      {
+        "name": "Planned RedoxBlox thermal storage",
+        "value": "10 MWh",
+        "notes": "Announced for 2026; public sources reviewed do not confirm commissioning.",
+        "sourceIds": ["ucsd-4", "ucsd-7"]
+      },
+      {
+        "name": "Former biogas fuel cell",
+        "value": "2.8 MW",
+        "notes": "Molten-carbonate FuelCell Energy unit. UCSD says the research project operated 2011-2020, and a CEC document says the plant was decommissioned in 2023.",
+        "sourceIds": ["ucsd-6", "ucsd-7"]
+      },
+      {
+        "name": "DERConnect electrochemical storage",
+        "value": "approximately 0.5 MW / 1.0 MWh across five systems",
+        "notes": "Research assets: 250 kW/332 kWh KORE NMC, 125 kW/221 kWh KORE NMC, 125 kW/376 kWh Great Power LFP, two 40 kW/72.5 kWh Kronus racks, and a 125 kW/28 kWh ultracapacitor system. Power ratings are not necessarily simultaneously dispatchable and should not be rolled into the campus replacement BESS.",
+        "sourceIds": ["ucsd-3"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Microgrid controls",
+        "manufacturer": "Schweitzer Engineering Laboratories",
+        "model": "PowerMAX built around SEL-3354/3355 with RTAC, communications, protection and synchronization devices",
+        "quantity": "System-wide; more than 100 SEL devices reported",
+        "notes": "Supports islanding, critical-load shedding, black-start sequencing and resynchronization. Detailed case material lists SEL-3530 RTAC, 2411, 2730M, 3031, 3354, 3355, 3378, 5078-2, 311L, 751, 487B, 587Z and 700G devices.",
+        "sourceIds": ["ucsd-8", "ucsd-9"]
+      },
+      {
+        "type": "DERConnect batteries and inverters",
+        "manufacturer": "KORE Power / Great Power / Kronus Engineering; EPC Power / Dynapower / Oztek",
+        "model": "PD-250, MPS-125 and associated research racks",
+        "quantity": "Five storage systems",
+        "notes": "Includes NMC, LFP and ultracapacitor technologies; the 250 kW KORE/EPC system is explicitly island-capable and supports black start.",
+        "sourceIds": ["ucsd-3"]
+      },
+      {
+        "type": "DERConnect grid simulator and switchgear",
+        "manufacturer": "Various",
+        "model": "500 kVA Eagle Eye load bank; 480 V and 208 V 1,200 A switchgear; 500 kVA transformer",
+        "quantity": "Research facility equipment",
+        "notes": "Also includes eight SEL-751 PMUs, roughly 236 submeters, about 2,000 edge nodes and extensive EV charging infrastructure.",
+        "sourceIds": ["ucsd-3"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Architecture and islanding",
+        "details": "The main microgrid is a campus 12 kV distribution system downstream of a 69 kV utility/campus substation. SEL controls enable intentional islanding, critical-load prioritization, black-start sequencing and resynchronization. DERConnect has its own sectionalized test infrastructure and should be treated as a nested laboratory rather than a second 55 MW system.",
+        "sourceIds": ["ucsd-3", "ucsd-5", "ucsd-8", "ucsd-9"]
+      },
+      {
+        "topic": "Energy mix and self-supply claims",
+        "details": "UCSD's current public pages say the microgrid generates 92% of annual campus electricity and that natural-gas cogeneration supplies about 70%. The balance is solar, imported grid electricity and possibly other campus resources. Because the biogas fuel cell is retired and the old battery is being removed, older resource lists cannot be used as a current mix. The 92% figure is a university claim rather than a published recent interval-data audit.",
+        "sourceIds": ["ucsd-1", "ucsd-2", "ucsd-6", "ucsd-7"]
+      },
+      {
+        "topic": "Storage project timeline",
+        "details": "UCSD announced a CEC-supported 10 MW/40 MWh lithium-ion replacement in September 2024, originally targeting the second half of 2025. The April 2026 state environmental filing instead describes an 8 MW/32 MWh replacement delivered through a public-private partnership and the former BESS being decommissioned. No reviewed source establishes commercial operation, so the replacement remains a development asset.",
+        "sourceIds": ["ucsd-4", "ucsd-5"]
+      },
+      {
+        "topic": "Data-quality cautions",
+        "details": "Published thermal-storage volume ranges from 3.8 million gallons on the current microgrid page to more than 8 million gallons in older UCSD material. Replacement battery scope changed from 10 MW/40 MWh to 8 MW/32 MWh. These are time/scope conflicts, not capacities to add together.",
+        "sourceIds": ["ucsd-1", "ucsd-4", "ucsd-5", "ucsd-10"]
+      }
+    ],
+    "sources": [
+      {"id": "ucsd-1", "title": "UC San Diego Microgrid", "url": "https://www.energystorage.ucsd.edu/microgrid", "publisher": "UC San Diego", "kind": "primary"},
+      {"id": "ucsd-2", "title": "UC San Diego Energy Storage Labs", "url": "https://www.energystorage.ucsd.edu/labs", "publisher": "UC San Diego", "kind": "primary"},
+      {"id": "ucsd-3", "title": "DERConnect Virtual Tour", "url": "https://derconnect.ucsd.edu/testers/virtual-tour", "publisher": "UC San Diego DERConnect", "kind": "primary"},
+      {"id": "ucsd-4", "title": "UC San Diego to Receive $7 Million to Power Campus and Strengthen State Electricity Grid", "url": "https://today.ucsd.edu/story/uc-san-diego-to-receive-7-million-to-power-campus-and-strengthen-state-electricity-grid", "publisher": "UC San Diego Today", "kind": "primary"},
+      {"id": "ucsd-5", "title": "UC San Diego Battery Energy Storage System Replacement Project (SCH 2026040432)", "url": "https://ceqanet.lci.ca.gov/2026040432", "publisher": "California Governor's Office of Land Use and Climate Innovation", "kind": "primary"},
+      {"id": "ucsd-6", "title": "Repurposed Biogas Fuel Cell at UC San Diego", "url": "https://www.energystorage.ucsd.edu/projects/repurposed-biogas-fuel-cell-at-uc-san-diego", "publisher": "UC San Diego", "kind": "primary"},
+      {"id": "ucsd-7", "title": "RedoxBlox Thermochemical Energy Storage Demonstration", "url": "https://www.energy.ca.gov/filebrowser/download/6366?fid=6366", "publisher": "California Energy Commission", "kind": "primary"},
+      {"id": "ucsd-8", "title": "UC San Diego Microgrid Highlight", "url": "https://selinc.com/highlights/ucsd-microgrid/", "publisher": "Schweitzer Engineering Laboratories", "kind": "primary"},
+      {"id": "ucsd-9", "title": "UC San Diego Microgrid Control System Case Study", "url": "https://selinc.com/api/download/112981/id/114855/0/", "publisher": "Schweitzer Engineering Laboratories", "kind": "primary"},
+      {"id": "ucsd-10", "title": "How Microgrids Could Help Rebuild Puerto Rico's Power Grid", "url": "https://jacobsschool.ucsd.edu/news/release/2568", "publisher": "UC San Diego Jacobs School of Engineering", "kind": "primary"}
+    ]
+  },
+  "ulleung-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "The widely announced Ulleung-do energy-independent island project was never completed. The 2014-2016 concept went through a major redesign—from a fuel-cell-heavy portfolio to one dominated by geothermal—but economics deteriorated after the government changed its power-purchase support and public acceptance of geothermal collapsed after the 2017 Pohang earthquake. Gyeongsangbuk-do formally abandoned the KRW 268.5 billion program in 2018 after approximately KRW 11.6 billion had been spent, and the special-purpose company was subsequently liquidated. Planned generation and storage capacities are therefore design targets, not installed assets.",
+    "status": "Cancelled/abandoned in 2018; project company liquidated. No evidence that the proposed renewable microgrid was commissioned.",
+    "organizations": [
+      {
+        "name": "Gyeongsangbuk-do Province",
+        "role": "Public sponsor and participant in the 2014 memorandum; announced the project's termination in 2018.",
+        "sourceIds": ["ulleung-1"]
+      },
+      {
+        "name": "Ulleung County",
+        "role": "Host local government and participant in the project special-purpose company.",
+        "sourceIds": ["ulleung-1", "ulleung-6"]
+      },
+      {
+        "name": "Korea Electric Power Corporation",
+        "role": "Utility participant in the development consortium/special-purpose company.",
+        "sourceIds": ["ulleung-1", "ulleung-6"]
+      },
+      {
+        "name": "LG CNS",
+        "role": "Lead private developer and contracting counterparty; its financial statements record the liquidation dividend from Ulleungdo Natural Energy Co.",
+        "sourceIds": ["ulleung-1", "ulleung-2", "ulleung-7"]
+      },
+      {
+        "name": "Dohwa Engineering",
+        "role": "Engineering/EPC participant under an approximately KRW 34.48 billion contract; later reported termination of a remaining approximately KRW 31.7 billion contract.",
+        "sourceIds": ["ulleung-6", "ulleung-7"]
+      },
+      {
+        "name": "Ulleung Enerpia / Ulleungdo Natural Energy Co.",
+        "role": "Special-purpose project company, formed for the island program and later liquidated.",
+        "sourceIds": ["ulleung-1", "ulleung-2"]
+      },
+      {
+        "name": "Ministry of Trade, Industry and Energy",
+        "role": "National energy ministry whose 2016 support-policy change undermined the planned project economics.",
+        "sourceIds": ["ulleung-1"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Original 2015-2016 design portfolio",
+        "value": "0.7 MW hydro, 1 MW PV, 8 MW wind, 4 MW geothermal, 23 MW fuel cell and 37 MWh ESS",
+        "notes": "Planning presentation values only. The portfolio was marketed as a 100% renewable island even though the fuel source and renewable status of the 23 MW fuel-cell block were not clearly substantiated.",
+        "sourceIds": ["ulleung-3"]
+      },
+      {
+        "name": "Revised design",
+        "value": "12 MW geothermal plus staged solar, wind, small hydro and ESS",
+        "notes": "The 23 MW fuel-cell component was removed and the geothermal block tripled. The revised plan still did not reach construction/commissioning.",
+        "sourceIds": ["ulleung-4", "ulleung-5", "ulleung-8"]
+      },
+      {
+        "name": "Planned energy-storage capacity",
+        "value": "37 MWh",
+        "notes": "No public source reviewed identifies a power rating, chemistry, supplier or installed system. This remains a cancelled design figure.",
+        "sourceIds": ["ulleung-3"]
+      },
+      {
+        "name": "Program budget",
+        "value": "KRW 268.5 billion planned; about KRW 11.6 billion spent before cancellation",
+        "notes": "Program window had been described as 2015-2026.",
+        "sourceIds": ["ulleung-1"]
+      },
+      {
+        "name": "Legacy island diesel generation",
+        "value": "approximately 18.5 MW reported in project-era material",
+        "notes": "Incumbent island supply context, not equipment installed by the cancelled renewable project; current unit status and exact capacity require operator confirmation.",
+        "sourceIds": ["ulleung-3"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Planned renewable generation and storage equipment (not installed)",
+        "detail": "Public plans give technology-level capacities but do not establish selected manufacturers, ordered equipment, or commissioned assets. No cancelled design capacity should be represented as operating equipment.",
+        "sourceIds": ["ulleung-1", "ulleung-3", "ulleung-4"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Phase history",
+        "details": "A July 2014 public-private memorandum led to a January 2015 groundbreaking and basic design work by February 2016. The original concept staged renewables and storage ahead of a large fuel-cell component. A 2016 redesign removed the fuel cell, increased geothermal to 12 MW and pushed full renewable supply toward 2025-2026. Those were planning revisions, not completed phases.",
+        "sourceIds": ["ulleung-1", "ulleung-3", "ulleung-4", "ulleung-8"]
+      },
+      {
+        "topic": "Why it failed",
+        "details": "Low oil prices and an October 2016 change in central-government PPA/support policy damaged the business case. The 2017 Pohang earthquake then sharply reduced political and public willingness to rely on geothermal, which represented 87.5% of projected generation in the revised plan. Staff were withdrawn in October 2018 and liquidation followed.",
+        "sourceIds": ["ulleung-1"]
+      },
+      {
+        "topic": "Corporate close-out evidence",
+        "details": "LG CNS's 2021 consolidated statements show a zero carrying interest in Ulleungdo Natural Energy Co. and disclose recovery of a KRW 4.666 billion liquidation dividend in the prior year, corroborating that the special-purpose vehicle was wound up rather than left as an active developer.",
+        "sourceIds": ["ulleung-2"]
+      },
+      {
+        "topic": "Data-quality caution",
+        "details": "Project-era presentations and news reports frequently describe planned capacities in the present tense. They should be labeled proposed/cancelled. The initial 23 MW fuel-cell-heavy design and revised 12 MW geothermal design are alternatives across time, not additive components of one plant.",
+        "sourceIds": ["ulleung-1", "ulleung-3", "ulleung-4"]
+      }
+    ],
+    "sources": [
+      {"id": "ulleung-1", "title": "Gyeongbuk Abandons Ulleung Energy Independent Island Project", "url": "https://www.yna.co.kr/view/AKR20181219126500053", "publisher": "Yonhap News Agency", "kind": "secondary"},
+      {"id": "ulleung-2", "title": "LG CNS 2021 Consolidated Financial Statements", "url": "https://www.lgcns.com/content/dam/lgcns/resources/company/ir/ir-resources/en/2021_4Q_Consolidated%20financial%20statement_ENG.pdf", "publisher": "LG CNS", "kind": "primary"},
+      {"id": "ulleung-3", "title": "Eco-Friendly Energy Independent Island Solution", "url": "https://asiacleanenergyforum.adb.org/wp-content/uploads/2017/06/4_Eco-Friendly-Energy-Independent-Island-Solution.pdf", "publisher": "Asia Clean Energy Forum / LG CNS", "kind": "primary"},
+      {"id": "ulleung-4", "title": "Ulleungdo Energy Independent Island Project Removes Fuel Cells and Expands Geothermal", "url": "https://go.seoul.co.kr/news/newsView.php?id=20161010500132", "publisher": "Seoul Shinmun", "kind": "secondary"},
+      {"id": "ulleung-5", "title": "Ulleungdo Energy Independent Island Business Restructuring", "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=44208", "publisher": "Energy News", "kind": "secondary"},
+      {"id": "ulleung-6", "title": "Major Contract Disclosure for Ulleungdo Energy Independent Island", "url": "https://kind.krx.co.kr/external/2017/12/29/000155/20171229000343/91370.htm", "publisher": "Korea Exchange KIND", "kind": "primary"},
+      {"id": "ulleung-7", "title": "Dohwa Engineering Ulleungdo Contract Terminated", "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=07635846619209248", "publisher": "Edaily", "kind": "secondary"},
+      {"id": "ulleung-8", "title": "Ulleungdo Energy Self-Reliance Plan Revised Around Geothermal", "url": "https://m.dongascience.com/en/news/14477", "publisher": "Dong-A Science", "kind": "secondary"}
+    ]
+  },
+  "united-illuminating-planned-microgrid-connecticut": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is the Town of Woodbridge community microgrid centered on Amity Regional High School, not merely a proposed United Illuminating CHP installation. United Illuminating owns a 2.2 MW FuelCell Energy molten-carbonate fuel-cell plant that normally exports baseload power to the utility grid. Dedicated underground circuits and switchgear allow seven municipal facilities to separate from the wider grid during an outage, with fuel-cell waste heat serving the high school. The fuel cell came online in 2017 and the full microgrid launched in 2018. State and manufacturer records continue to present it as operational; no battery or solar component is documented.",
+    "status": "Operational since 2018. Fuel-cell generation began operating in 2017 while the resilience distribution network was still under construction.",
+    "organizations": [
+      {
+        "name": "United Illuminating",
+        "role": "Project owner, interconnecting utility and operator/dispatcher of the generation and microgrid assets.",
+        "sourceIds": ["ui-3", "ui-4", "ui-6"]
+      },
+      {
+        "name": "Town of Woodbridge, Connecticut",
+        "role": "Host community and beneficiary; municipal emergency facilities are connected to the islandable network.",
+        "sourceIds": ["ui-2", "ui-5"]
+      },
+      {
+        "name": "FuelCell Energy",
+        "role": "Designed/supplied the SureSource fuel-cell power plant and microgrid control solution and provides contracted plant operations/service support.",
+        "sourceIds": ["ui-1", "ui-3", "ui-6", "ui-7"]
+      },
+      {
+        "name": "Connecticut Department of Energy and Environmental Protection",
+        "role": "Awarded $3 million through the state Microgrid Grant and Loan Program and tracks the project as operational.",
+        "sourceIds": ["ui-2"]
+      },
+      {
+        "name": "Amity Regional School District No. 5",
+        "role": "Host of the fuel-cell plant and recipient of useful heat at Amity Regional High School.",
+        "sourceIds": ["ui-1", "ui-4", "ui-6"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Fuel-cell electrical output",
+        "value": "2.2 MW",
+        "notes": "Delivered/contracted output repeatedly reported for Woodbridge. The generic SureSource 3000 product can have a different catalog rating; the project-specific 2.2 MW figure governs here.",
+        "sourceIds": ["ui-1", "ui-2", "ui-3", "ui-6"]
+      },
+      {
+        "name": "Critical facilities served",
+        "value": "7",
+        "notes": "Amity Regional High School plus town hall, library/senior center, police headquarters, fire headquarters and public works facilities; source wording/grouping varies slightly but state and project sources agree on seven.",
+        "sourceIds": ["ui-1", "ui-2", "ui-5", "ui-7"]
+      },
+      {
+        "name": "State grant",
+        "value": "$3 million",
+        "notes": "Connecticut microgrid program award for islanding/distribution infrastructure.",
+        "sourceIds": ["ui-2"]
+      },
+      {
+        "name": "Fuel and storage",
+        "value": "Pipeline natural gas; no battery energy storage documented",
+        "notes": "Molten-carbonate fuel-cell CHP provides firm baseload. The reviewed project sources do not identify PV or BESS capacity.",
+        "sourceIds": ["ui-1", "ui-6"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Molten-carbonate fuel-cell CHP",
+        "manufacturer": "FuelCell Energy",
+        "model": "SureSource 3000",
+        "quantity": "One 2.2 MW project installation",
+        "notes": "Normally supplies baseload to the United Illuminating grid and supplies useful heat to the high school. Project output should not be replaced with a newer generic product-catalog rating.",
+        "sourceIds": ["ui-1", "ui-6"]
+      },
+      {
+        "type": "Microgrid distribution and controls",
+        "manufacturer": "FuelCell Energy / project contractors",
+        "model": "Dedicated underground feeders, switchgear and automated microgrid controls; exact component models not disclosed",
+        "quantity": "Network serving seven facilities",
+        "notes": "Designed for transfer from grid-parallel operation to an islanded municipal circuit and subsequent resynchronization.",
+        "sourceIds": ["ui-3", "ui-6"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Operating mode",
+        "details": "In normal conditions the fuel cell is a steady 2.2 MW generator on UI's distribution system. During a grid outage, switching isolates the dedicated underground municipal network so the plant can serve seven critical facilities. Recovered heat is used at Amity Regional High School.",
+        "sourceIds": ["ui-1", "ui-3", "ui-6"]
+      },
+      {
+        "topic": "Timeline and phase boundary",
+        "details": "UI finalized the development arrangement in 2015. The fuel cell began producing power in January 2017, but contemporaneous reporting corrected an initial implication that the whole microgrid was complete. The full community microgrid was launched in May 2018, and CT DEEP records February 2018 as the operational date.",
+        "sourceIds": ["ui-2", "ui-3", "ui-4", "ui-5"]
+      },
+      {
+        "topic": "Current performance evidence",
+        "details": "FuelCell Energy's 2020 performance release and 2024 sustainability report continue to cite Woodbridge as a successful operating microgrid. The reviewed public sources do not provide recent availability, outage hours served, annual MWh, heat output or fuel-use data, so those metrics remain unverified.",
+        "sourceIds": ["ui-6", "ui-7"]
+      },
+      {
+        "topic": "Naming caution",
+        "details": "Older database titles call this a 'planned United Illuminating microgrid.' It is now an operating Town of Woodbridge community resilience project. The generation plant and islandable feeder network reached operation on different dates.",
+        "sourceIds": ["ui-2", "ui-4", "ui-5"]
+      }
+    ],
+    "sources": [
+      {"id": "ui-1", "title": "Microgrid Applications: Woodbridge, Connecticut", "url": "https://www.fuelcellenergy.com/applications/microgrids", "publisher": "FuelCell Energy", "kind": "primary"},
+      {"id": "ui-2", "title": "Connecticut Microgrid Grant and Loan Program Project Award Tracking", "url": "https://portal.ct.gov/-/media/deep/energy/microgrids/microgrid-grant-and-loan-program/microgrids-project-award-tracking-all-projects-822022.pdf?hash=72541D2E20CFF98F3EC096DC1C39B358&rev=dc8ca4700d21468faed9223b741e47e6", "publisher": "Connecticut Department of Energy and Environmental Protection", "kind": "primary"},
+      {"id": "ui-3", "title": "UI Finalizes Deal to Build Microgrid in Woodbridge", "url": "https://investor.fce.com/press-releases/press-release-details/2015/UI-Finalizes-Deal-to-Build-Microgrid-in-Woodbridge/default.aspx", "publisher": "United Illuminating / FuelCell Energy", "kind": "primary"},
+      {"id": "ui-4", "title": "Fuel Cell Comes Online in Woodbridge", "url": "https://www.ctpublic.org/environment/2017-01-23/fuel-cell-comes-online-in-woodbridge", "publisher": "Connecticut Public", "kind": "secondary"},
+      {"id": "ui-5", "title": "Woodbridge Celebrates Launch of Microgrid", "url": "https://www.nhregister.com/metro/article/Woodbridge-celebrates-launch-of-microgrid-12895261.php", "publisher": "New Haven Register", "kind": "secondary"},
+      {"id": "ui-6", "title": "FuelCell Energy Details Microgrid Performance Successes", "url": "https://s21.q4cdn.com/256256048/files/doc_news/FuelCell-Energy-Details-Microgrid-Performance-Successes-2020.pdf", "publisher": "FuelCell Energy", "kind": "primary"},
+      {"id": "ui-7", "title": "2024 Sustainability Report", "url": "https://go.fuelcellenergy.com/hubfs/FuelCell-energy-2024-sustainability-report.pdf", "publisher": "FuelCell Energy", "kind": "primary"}
+    ]
+  },
+  "ust-kamchatsk": {
+    "researchedAt": "2026-07-20",
+    "summary": "Ust-Kamchatsk is an operating isolated diesel-wind power system, not a battery microgrid. The Japanese-Russian demonstration installed three cold-climate 300 kW Komai wind turbines plus Fuji Electric controls, using controllable electric boilers to absorb excess wind and support district heating. NEDO reported a 7.6% annual diesel reduction—about 400 tonnes—during the demonstration. The current local utility page lists an 18.6 MW diesel station, the three original Komai units, an earlier 275 kW Vergnet turbine and a fourth 300 kW wind turbine installed in 2022. The latest public page does not give current annual wind penetration or confirm the maker of the 2022 unit.",
+    "status": "Operational isolated diesel-wind system. The Japanese demonstration concluded successfully in 2016; the local utility continues to list the wind and diesel assets, including fleet renewal and an additional 300 kW wind unit in 2022.",
+    "organizations": [
+      {
+        "name": "AO Southern Electric Grids of Kamchatka (AO UESK / ЮЭСК)",
+        "role": "Current local utility/operator of the Ust-Kamchatsk diesel station, wind assets and local grids.",
+        "sourceIds": ["ust-1", "ust-7"]
+      },
+      {
+        "name": "New Energy and Industrial Technology Development Organization",
+        "role": "Japanese public funder and administrator of the 2014-2016 cold-region wind/microgrid demonstration.",
+        "sourceIds": ["ust-2", "ust-4", "ust-5"]
+      },
+      {
+        "name": "Komaihaltec",
+        "role": "Supplied the KWT300 cold-climate wind turbines and led turbine construction/commissioning work.",
+        "sourceIds": ["ust-2", "ust-3"]
+      },
+      {
+        "name": "Fuji Electric",
+        "role": "Provided microgrid/grid-stabilization equipment and control integration for the demonstration.",
+        "sourceIds": ["ust-2"]
+      },
+      {
+        "name": "Mitsui & Co.",
+        "role": "Japanese project consortium participant in the NEDO demonstration.",
+        "sourceIds": ["ust-2"]
+      },
+      {
+        "name": "RAO Energy Systems of the East",
+        "role": "Russian demonstration partner/offtaker group working with the Japanese consortium.",
+        "sourceIds": ["ust-2", "ust-5"]
+      },
+      {
+        "name": "Vergnet",
+        "role": "Manufacturer of a separate 275 kW wind turbine commissioned before the Japanese three-turbine project.",
+        "sourceIds": ["ust-1"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Original NEDO wind plant",
+        "value": "3 × 300 kW = 0.9 MW",
+        "notes": "Komai KWT300 cold-climate turbines, completed in December 2015 with demonstration operation beginning January 2016.",
+        "sourceIds": ["ust-2", "ust-3"]
+      },
+      {
+        "name": "Other utility-listed wind assets",
+        "value": "275 kW Vergnet plus one additional 300 kW turbine installed in 2022",
+        "notes": "The current utility page does not name the manufacturer of the 2022 turbine or clearly document final commercial acceptance. If all listed wind units are operating, nominal wind capacity would be 1.475 MW, but that total is an inference rather than an explicit utility figure.",
+        "sourceIds": ["ust-1"]
+      },
+      {
+        "name": "Diesel station installed capacity",
+        "value": "18.6 MW",
+        "notes": "Current utility figure for diesel generation only; do not add it to a separate published station-capacity total without checking whether wind is excluded.",
+        "sourceIds": ["ust-1"]
+      },
+      {
+        "name": "Current diesel fleet",
+        "value": "3 × 0.8 MW G-72; 2 × 1.0 MW LB8250ZLD-1; 2 × 1.5 MW Caterpillar D3516; 7 × 1.6 MW Mitsubishi S16R-PTAA2-C",
+        "notes": "The unit ratings sum to 18.6 MW. The utility says six Mitsubishi sets were prepared for commissioning in 2022 as replacements, while its equipment table lists seven total Mitsubishi units.",
+        "sourceIds": ["ust-1"]
+      },
+      {
+        "name": "Demonstrated diesel savings",
+        "value": "7.6% annual reduction, approximately 400 tonnes of diesel per year",
+        "notes": "NEDO demonstration result/estimate, not a current audited operating-year metric.",
+        "sourceIds": ["ust-4", "ust-5"]
+      },
+      {
+        "name": "Battery storage",
+        "value": "None documented",
+        "notes": "The demonstration managed wind variability with controls, diesels and controllable electric-boiler load rather than a reported BESS.",
+        "sourceIds": ["ust-2", "ust-6"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Cold-climate wind turbine",
+        "manufacturer": "Komaihaltec",
+        "model": "KWT300",
+        "quantity": "Three confirmed in the original NEDO project",
+        "notes": "Komai's current project-results page displays a quantity of four, conflicting with its original completion release and the utility history, both of which identify three original Japanese-project units. A separate fourth 300 kW turbine was installed in 2022, but its maker is not established by the utility source.",
+        "sourceIds": ["ust-1", "ust-2", "ust-3"]
+      },
+      {
+        "type": "Wind turbine",
+        "manufacturer": "Vergnet",
+        "model": "Not disclosed",
+        "quantity": "One 275 kW unit",
+        "notes": "Commissioned in 2014 according to the current utility page.",
+        "sourceIds": ["ust-1"]
+      },
+      {
+        "type": "Microgrid/grid stabilization controls",
+        "manufacturer": "Fuji Electric",
+        "model": "Not publicly disclosed",
+        "quantity": "One integrated system",
+        "notes": "Coordinates wind generation, diesel operation and controllable electric-boiler demand. No battery was identified.",
+        "sourceIds": ["ust-2", "ust-6"]
+      },
+      {
+        "type": "Diesel generator fleet",
+        "manufacturer": "Various, including Caterpillar and Mitsubishi",
+        "model": "G-72, LB8250ZLD-1, Caterpillar D3516 and Mitsubishi S16R-PTAA2-C",
+        "quantity": "Fourteen units listed, 18.6 MW total",
+        "notes": "The utility's fleet table is the best current equipment inventory found, though not all units' operating condition or dispatch availability is stated.",
+        "sourceIds": ["ust-1"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Control approach",
+        "details": "Wind is integrated into a weak isolated diesel grid through a microgrid control system. When wind output exceeds immediate electrical demand or threatens stable diesel loading, controllable electric boilers convert excess electricity to useful heat. This provides a flexible load and fuel displacement without a disclosed battery.",
+        "sourceIds": ["ust-2", "ust-6"]
+      },
+      {
+        "topic": "Demonstration timeline and outcome",
+        "details": "NEDO selected the project in August 2014; construction began in October, three 300 kW turbines and control equipment were completed by December 2015, and demonstration operation began in January 2016. The demonstration concluded in October 2016 with reported annualized diesel savings of roughly 400 tonnes/7.6%.",
+        "sourceIds": ["ust-2", "ust-4", "ust-5"]
+      },
+      {
+        "topic": "Current system context",
+        "details": "The local utility says the diesel station and wind plants serve Ust-Kamchatsk and the Pogodny microdistrict over approximately 108.36 km of lines. Diesel capacity greatly exceeds wind nameplate, so the system remains diesel-dominant even though current annual MWh shares are not published.",
+        "sourceIds": ["ust-1"]
+      },
+      {
+        "topic": "Capacity conflict",
+        "details": "Komai's results page says four KWT300 units, while Komai's original project release and utility history identify three original Komai units. The utility separately reports a fourth 0.3 MW turbine installed in 2022 without naming its maker. The defensible inventory is therefore three confirmed KWT300s plus one manufacturer-unconfirmed 2022 unit, not four confirmed KWT300s.",
+        "sourceIds": ["ust-1", "ust-2", "ust-3"]
+      }
+    ],
+    "sources": [
+      {"id": "ust-1", "title": "Ust-Kamchatsk Energy District", "url": "https://ueskam.ru/ustKamchatsky/156", "publisher": "AO Southern Electric Grids of Kamchatka", "kind": "primary"},
+      {"id": "ust-2", "title": "Completion of Wind Power and Microgrid Equipment in Ust-Kamchatsk", "url": "https://www.komaihaltec.co.jp/topics_news/topics/160415.html", "publisher": "Komaihaltec", "kind": "primary"},
+      {"id": "ust-3", "title": "KWT300 Project Results", "url": "https://www.komaihaltec.co.jp/env/english/wind/results.html", "publisher": "Komaihaltec", "kind": "primary"},
+      {"id": "ust-4", "title": "NEDO International Wind Demonstration Results", "url": "https://www.nedo.go.jp/content/100871728.pdf", "publisher": "New Energy and Industrial Technology Development Organization", "kind": "primary"},
+      {"id": "ust-5", "title": "Japan-Russia Wind Demonstration Cuts Diesel Consumption", "url": "https://tenbou.nies.go.jp/news/jnews/detail.php?i=22455", "publisher": "National Institute for Environmental Studies, Japan", "kind": "primary"},
+      {"id": "ust-6", "title": "Ust-Kamchatsk Microgrid Project Profile", "url": "https://web.archive.org/web/20200706003232id_/http://microgridprojects.com/microgrid/ust-kamchatsk/", "publisher": "Microgrid Projects", "kind": "archive"},
+      {"id": "ust-7", "title": "Company History", "url": "https://ueskam.ru/history", "publisher": "AO Southern Electric Grids of Kamchatka", "kind": "primary"}
+    ]
+  },
+  "vandenberg-afb": {
+    "researchedAt": "2026-07-20",
+    "summary": "Vandenberg Space Force Base has a large operating 28 MWdc solar array, but the installation-wide islandable microgrid is still a development project rather than an existing commissioned system. DOE's current project description combines a 13.71 MW/54.82 MWh utility energy-service-contract BESS with a 1.96 MW/7.83 MWh AFFECT-supported BESS and microgrid controls, totaling 15.67 MW/62.65 MWh. A 2024 environmental document covered design and installation, and a later federal award record reports an $8.1 million award with completion scheduled for July 2027. Older Sandia references identify Vandenberg as a conceptual-design site only; they do not prove deployment.",
+    "status": "28 MWdc solar array operational since 2018. Base-wide BESS/microgrid controls are funded/in implementation but not publicly confirmed commissioned; latest award completion date is July 31, 2027.",
+    "organizations": [
+      {
+        "name": "Vandenberg Space Force Base / United States Space Force",
+        "role": "Installation owner, project host and resilience beneficiary; formerly Vandenberg Air Force Base.",
+        "sourceIds": ["vafb-1", "vafb-2", "vafb-4"]
+      },
+      {
+        "name": "Air Force Civil Engineer Center",
+        "role": "Managed/communicated the solar energy project and supports installation energy-resilience development.",
+        "sourceIds": ["vafb-1"]
+      },
+      {
+        "name": "United States Department of Energy Federal Energy Management Program",
+        "role": "Provided AFFECT technical/financial support and publishes the current BESS and controls scope.",
+        "sourceIds": ["vafb-2", "vafb-3", "vafb-4"]
+      },
+      {
+        "name": "Pacific Gas and Electric Company",
+        "role": "Electric utility and utility-energy-service-contract partner for the larger BESS component.",
+        "sourceIds": ["vafb-3"]
+      },
+      {
+        "name": "SunPower",
+        "role": "Developed, owns and operates the 28 MWdc photovoltaic system under a 25-year power-purchase agreement.",
+        "sourceIds": ["vafb-1"]
+      },
+      {
+        "name": "Naval Postgraduate School Energy Academic Group",
+        "role": "Supports/facilitates energy-resilience project implementation and research at Vandenberg.",
+        "sourceIds": ["vafb-6"]
+      },
+      {
+        "name": "Sandia National Laboratories",
+        "role": "Performed early energy-surety site assessment/conceptual microgrid design; not evidence of a completed microgrid.",
+        "sourceIds": ["vafb-7", "vafb-8"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Operating solar PV",
+        "value": "28 MWdc",
+        "notes": "Approximately 65,000 panels on 129 acres; entered service in 2018 under a 25-year PPA.",
+        "sourceIds": ["vafb-1", "vafb-3"]
+      },
+      {
+        "name": "Reported solar energy contribution",
+        "value": "approximately 35% of annual base electricity needs at commissioning",
+        "notes": "2018 estimate, not a recent measured share. A 2021 base release says export restrictions caused excess solar production to be curtailed, which motivates storage.",
+        "sourceIds": ["vafb-1", "vafb-2"]
+      },
+      {
+        "name": "PG&E UESC battery",
+        "value": "13.71 MW / 54.82 MWh",
+        "notes": "Larger planned storage component in DOE's current project scope.",
+        "sourceIds": ["vafb-3"]
+      },
+      {
+        "name": "AFFECT-supported battery",
+        "value": "1.96 MW / 7.83 MWh",
+        "notes": "Paired with microgrid controls as part of the federal project.",
+        "sourceIds": ["vafb-3"]
+      },
+      {
+        "name": "Combined planned BESS",
+        "value": "15.67 MW / 62.65 MWh",
+        "notes": "Arithmetic total of DOE's two explicitly listed components; a later award database rounds the program to approximately 16 MW/60 MWh. These descriptions refer to the same developing program and must not be added together again.",
+        "sourceIds": ["vafb-3", "vafb-5"]
+      },
+      {
+        "name": "Projected savings",
+        "value": "up to $900,000 per year",
+        "notes": "DOE project estimate, not verified realized savings.",
+        "sourceIds": ["vafb-3"]
+      },
+      {
+        "name": "Federal funding and schedule",
+        "value": "$500,000 initial AFFECT grant; later $8.1 million award, target completion July 31, 2027",
+        "notes": "The later award information is from a federal-award data aggregator and should be checked against USAspending/DOE when a final commissioning date is claimed.",
+        "sourceIds": ["vafb-2", "vafb-4", "vafb-5"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Solar photovoltaic plant",
+        "manufacturer": "SunPower",
+        "model": "Panel/inverter models not disclosed in reviewed official source",
+        "quantity": "Approximately 65,000 modules, 28 MWdc",
+        "notes": "SunPower-owned system operated under a 25-year PPA.",
+        "sourceIds": ["vafb-1"]
+      },
+      {
+        "type": "Battery energy storage",
+        "manufacturer": "Not publicly disclosed",
+        "model": "Chemistry, cell, inverter and integrator not disclosed",
+        "quantity": "Two scoped components totaling 15.67 MW/62.65 MWh",
+        "notes": "Development-stage equipment; public capacity values do not establish installation or commercial operation.",
+        "sourceIds": ["vafb-3", "vafb-4", "vafb-5"]
+      },
+      {
+        "type": "Microgrid and building controls",
+        "manufacturer": "Not publicly disclosed",
+        "model": "Base microgrid controls and building-automation controls",
+        "quantity": "Project scope",
+        "notes": "Intended to coordinate PV, batteries and critical loads during grid-connected and islanded operation.",
+        "sourceIds": ["vafb-3", "vafb-4"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Current architecture versus future state",
+        "details": "Today the confirmed asset is a grid-connected 28 MWdc PV plant whose output is limited by a prohibition on exporting excess generation. The funded project adds roughly four-hour battery storage and controls so solar can be shifted and critical facilities can be islanded. Public documents reviewed do not define the final critical-load list, island duration or controller vendor.",
+        "sourceIds": ["vafb-1", "vafb-2", "vafb-3"]
+      },
+      {
+        "topic": "Development timeline",
+        "details": "PV service began in 2018. DOE awarded a $500,000 AFFECT grant in 2021 for feasibility/engineering. The November 2024 environmental document covers design and installation subject to NEPA conditions, and 2024 NPS material describes related work as being implemented. The later award record places completion in 2027, so no pre-2027 operational claim is supported.",
+        "sourceIds": ["vafb-1", "vafb-2", "vafb-4", "vafb-5", "vafb-6"]
+      },
+      {
+        "topic": "Legacy-record correction",
+        "details": "Sandia documents have been used in older microgrid lists to label Vandenberg operational. The underlying material describes conceptual design/assessment: one 2014 Sandia report says only an initial site visit had been completed. Those records should be retained as project history, not commissioning evidence.",
+        "sourceIds": ["vafb-7", "vafb-8"]
+      },
+      {
+        "topic": "Energy mix and performance gap",
+        "details": "The solar plant was expected to supply about 35% of annual electricity at commissioning, with the grid supplying the balance and mission backup generation outside the documented project scope. Current measured solar share, curtailment, grid imports, battery vendor and construction progress are not publicly reported in the reviewed sources.",
+        "sourceIds": ["vafb-1", "vafb-2", "vafb-3"]
+      }
+    ],
+    "sources": [
+      {"id": "vafb-1", "title": "Vandenberg Flips the Switch on New Solar Array System", "url": "https://www.afcec.af.mil/News/Article/1495158/vandenberg-flips-the-switch-on-new-solar-array-system/", "publisher": "Air Force Civil Engineer Center", "kind": "primary"},
+      {"id": "vafb-2", "title": "Vandenberg AFB Awarded $500,000 Grant from U.S. Department of Energy", "url": "https://www.vandenberg.spaceforce.mil/News/Article-Display/Article/2547416/vandenberg-afb-awarded-500000-grant-from-us-department-of-energy/", "publisher": "Vandenberg Space Force Base", "kind": "primary"},
+      {"id": "vafb-3", "title": "AFFECT Phase 2 Project: Vandenberg Space Force Base", "url": "https://www.energy.gov/cmei/femp/assisting-federal-facilities-energy-conservation-technologies-affect-phase-2-project", "publisher": "U.S. Department of Energy", "kind": "primary"},
+      {"id": "vafb-4", "title": "Categorical Exclusion Determination CX-032450", "url": "https://www.energy.gov/sites/default/files/2025-01/CX-032450.pdf", "publisher": "U.S. Department of Energy", "kind": "primary"},
+      {"id": "vafb-5", "title": "Federal Grant DE-SE0001766", "url": "https://govtribe.com/award/federal-grant-award/project-grant-dese0001766", "publisher": "GovTribe", "kind": "secondary"},
+      {"id": "vafb-6", "title": "Energy Resilience Projects at Vandenberg Space Force Base", "url": "https://nps.edu/web/eag/september-3-2024", "publisher": "Naval Postgraduate School", "kind": "primary"},
+      {"id": "vafb-7", "title": "Energy Surety Microgrids and SPIDERS Peer Review", "url": "https://www.energy.gov/sites/prod/files/SG%202010%20Peer%20Review%20-%20Energy%20Surety%2C%20Microgrids%20and%20SPIDERS%20-%20Michael%20Hightower%2C%20SNL.pdf", "publisher": "U.S. Department of Energy / Sandia National Laboratories", "kind": "primary"},
+      {"id": "vafb-8", "title": "Military Base Microgrid Planning and Assessment", "url": "https://www.osti.gov/servlets/purl/1315680", "publisher": "Sandia National Laboratories / OSTI", "kind": "primary"}
+    ]
+  },
+  "vavau-tonga-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Vava'u now has two distinct solar-microgrid generations that must be separated. The original La'a Lahi plant was commissioned in 2013 at roughly 500-512 kW with SMA diesel-integration controls and small lead-acid support batteries, but Tonga Power's FY2022/23 report says the aging plant suffered a major failure and required comprehensive panel/inverter replacement. A separate Tonga Renewable Energy Project plant—300 kW solar plus a high-power 900 kW/450 kWh grid-forming BESS—was commissioned in March 2023 and received its completion certificate in October 2024. The newer plant is confirmed operating; restoration of the original plant has not been publicly confirmed.",
+    "status": "New 300 kW solar + 900 kW/450 kWh BESS plant operational, contract completed/closed in 2024. Original La'a Lahi solar plant reported failed in FY2022/23 with replacement funding under consideration; later restoration not verified.",
+    "organizations": [
+      {
+        "name": "Tonga Power Limited",
+        "role": "Owner/operator of the Vava'u grid, La'a Lahi solar plant and 2023 TREP solar/BESS installation.",
+        "sourceIds": ["vavau-3", "vavau-4", "vavau-5"]
+      },
+      {
+        "name": "Infratec-NETcon Joint Venture",
+        "role": "Engineering, procurement and construction contractor for the Vava'u and 'Eua TREP solar/BESS package.",
+        "sourceIds": ["vavau-3", "vavau-4"]
+      },
+      {
+        "name": "Asian Development Bank",
+        "role": "Administrator/financier of the Tonga Renewable Energy Project and source of completion reporting.",
+        "sourceIds": ["vavau-7", "vavau-8"]
+      },
+      {
+        "name": "Government of Australia and Green Climate Fund",
+        "role": "Co-financiers of the broader Tonga Renewable Energy Project.",
+        "sourceIds": ["vavau-7", "vavau-8"]
+      },
+      {
+        "name": "Masdar / Abu Dhabi Fund for Development",
+        "role": "Project manager/developer and financier, respectively, for the original La'a Lahi solar plant.",
+        "sourceIds": ["vavau-9", "vavau-10"]
+      },
+      {
+        "name": "Ingenero",
+        "role": "EPC/integration contractor for the original 2013 La'a Lahi plant.",
+        "sourceIds": ["vavau-1", "vavau-10"]
+      },
+      {
+        "name": "SMA Solar Technology",
+        "role": "Supplied PV inverters, Sunny Backup units and the Fuel Save Controller for the original diesel-solar hybrid system.",
+        "sourceIds": ["vavau-1", "vavau-10"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Original La'a Lahi PV capacity",
+        "value": "approximately 500-512 kW originally reported",
+        "notes": "SMA reported 500 kW and 1,680 modules; regional project records reported 512 kW. Tonga Power's later rehabilitation scope refers to a 550 kW panel set and 420 kW AC inverter capacity, indicating later configuration/accounting changes. These values should not be summed.",
+        "sourceIds": ["vavau-1", "vavau-5", "vavau-9", "vavau-10"]
+      },
+      {
+        "name": "Original La'a Lahi projected output",
+        "value": "approximately 866-873 MWh per year",
+        "notes": "Pre-/early-operation projections, not recent production. Sources also projected roughly 225,000-280,000 litres of annual diesel savings and about 17% of island annual electricity.",
+        "sourceIds": ["vavau-9", "vavau-10"]
+      },
+      {
+        "name": "Original diesel fleet",
+        "value": "2 × 600 kW, 2 × 186 kW and 1 × 300 kW = 1.872 MW",
+        "notes": "2013 configuration reported by SMA; current generator fleet and available capacity were not found.",
+        "sourceIds": ["vavau-1"]
+      },
+      {
+        "name": "Original support batteries",
+        "value": "120 × 1,000 Ah cells/units",
+        "notes": "SMA reported the count and amp-hour rating but not enough voltage/series-parallel information to calculate a defensible kWh capacity. They were control/backup components, not a utility-scale BESS.",
+        "sourceIds": ["vavau-1"]
+      },
+      {
+        "name": "New TREP solar plant",
+        "value": "300 kW",
+        "notes": "Connected to the existing low-voltage Vava'u bus; operational from March 2023 with project close-out in October 2024.",
+        "sourceIds": ["vavau-3", "vavau-4", "vavau-6"]
+      },
+      {
+        "name": "New TREP BESS",
+        "value": "900 kW / 450 kWh",
+        "notes": "A 0.5-hour high-power, grid-forming battery designed primarily for frequency/voltage support and enabling future diesel-off operation, not long-duration backup.",
+        "sourceIds": ["vavau-4", "vavau-6"]
+      },
+      {
+        "name": "Renewable penetration target after TREP",
+        "value": "approximately 16%",
+        "notes": "Tonga Power design expectation for the Vava'u grid, not a verified recent annual generation share.",
+        "sourceIds": ["vavau-4"]
+      },
+      {
+        "name": "FY2022/23 reported fuel savings",
+        "value": "119,579 L attributed to La'a Lahi and 92,880 L attributed to TREP solar/BESS",
+        "notes": "Tonga Power report values. The accompanying 3.95% and 3.06% figures are shares of TPL's national renewable fuel-savings table, not Vava'u energy-mix percentages.",
+        "sourceIds": ["vavau-5"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Original PV array",
+        "manufacturer": "Trina Solar",
+        "model": "Module model not disclosed",
+        "quantity": "Approximately 1,680 modules originally; later report refers to about 700 panels needing replacement",
+        "notes": "The difference likely reflects a changed/reduced rehabilitation scope or later module configuration. The FY2022/23 report says the plant had suffered a recent failure.",
+        "sourceIds": ["vavau-1", "vavau-5"]
+      },
+      {
+        "type": "Original PV inverters",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Sunny Tripower 20000TL",
+        "quantity": "21",
+        "notes": "Tonga Power later proposed replacing the inverter fleet with twenty-one 25 kW string inverters, 525 kW AC total, but funding/installation was not confirmed.",
+        "sourceIds": ["vavau-1", "vavau-5", "vavau-10"]
+      },
+      {
+        "type": "Original hybrid controls and battery interfaces",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Fuel Save Controller and 15 Sunny Backup SBU 5000 units",
+        "quantity": "One control system and 15 backup inverters",
+        "notes": "Coordinated solar with the diesel station and small lead-acid battery bank.",
+        "sourceIds": ["vavau-1", "vavau-10"]
+      },
+      {
+        "type": "TREP grid-forming BESS and PV plant",
+        "manufacturer": "Not disclosed in public completion pages",
+        "model": "Not disclosed",
+        "quantity": "900 kW/450 kWh BESS plus 300 kW PV",
+        "notes": "Delivered by the Infratec-NETcon JV; chemistry and inverter model were not found in reviewed primary sources.",
+        "sourceIds": ["vavau-3", "vavau-4", "vavau-6"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Two-project boundary",
+        "details": "La'a Lahi is the original 2013 diesel-solar installation. TREP03 is a separate 2023 plant with 300 kW solar and a 900 kW/450 kWh BESS. Their capacities can be discussed together at island level only when operational status is explicit; the original plant's failure means nominal sum is not a defensible current available-capacity figure.",
+        "sourceIds": ["vavau-3", "vavau-4", "vavau-5", "vavau-9"]
+      },
+      {
+        "topic": "New BESS operating role",
+        "details": "The BESS is power-heavy relative to its energy capacity. It provides voltage and frequency regulation and grid-forming capability on the low-voltage bus, with a design goal of allowing diesels to switch off during favorable renewable/load conditions. At full rated power, nominal duration is only 30 minutes.",
+        "sourceIds": ["vavau-4"]
+      },
+      {
+        "topic": "Completion status",
+        "details": "The new system was commissioned in Neiafu on March 14, 2023. Tonga Power reports that commissioning tests were successful, the completion certificate was issued in October 2024, the plant is in operation and the contract is closed.",
+        "sourceIds": ["vavau-3", "vavau-6"]
+      },
+      {
+        "topic": "Original plant condition and unresolved update",
+        "details": "Tonga Power's FY2022/23 annual report says a recent failure left La'a Lahi needing comprehensive replacement of roughly 700 Trina modules and inverters; the proposed new inverter capacity was 525 kW AC versus 420 kW AC then installed. Funding was still under consideration. A live promotional webpage may still describe La'a Lahi as operating, but no later source reviewed proves that rehabilitation was completed.",
+        "sourceIds": ["vavau-5"]
+      },
+      {
+        "topic": "Energy-mix caution",
+        "details": "Early claims of 17% solar and the later approximately 16% TREP figure are design-era expectations, not additive shares or a current measured mix. Current diesel generation, total load, solar curtailment and full-year BESS performance are not publicly quantified in the reviewed sources.",
+        "sourceIds": ["vavau-4", "vavau-9", "vavau-10"]
+      }
+    ],
+    "sources": [
+      {"id": "vavau-1", "title": "Vava'u, Kingdom of Tonga Reference", "url": "https://www.sma-america.com/references/vavau-kingdom-of-tonga", "publisher": "SMA Solar Technology", "kind": "primary"},
+      {"id": "vavau-3", "title": "TREP03 Lot 1 Solar and BESS Project Update", "url": "https://tongapower.to/node/218", "publisher": "Tonga Power Limited", "kind": "primary"},
+      {"id": "vavau-4", "title": "'Eua and Vava'u Solar and BESS", "url": "https://tongapower.to/%27Eua%20%26%20Vava%27u%20Solar%20%26%20BESS", "publisher": "Tonga Power Limited", "kind": "primary"},
+      {"id": "vavau-5", "title": "Tonga Power Annual Report 2022/23", "url": "https://www.tongapower.to/sites/default/files/inline-files/English%20Final%20Annual%20Report%2023.pdf", "publisher": "Tonga Power Limited", "kind": "primary"},
+      {"id": "vavau-6", "title": "New Solar Plant and Battery Energy Storage System for Vava'u", "url": "https://matangitonga.to/2023/03/14/new-solar-plant-and-battery-energy-storage-system-vavau", "publisher": "Matangi Tonga", "kind": "secondary"},
+      {"id": "vavau-7", "title": "Tonga Renewable Energy Project", "url": "https://www.adb.org/projects/49450-012/main", "publisher": "Asian Development Bank", "kind": "primary"},
+      {"id": "vavau-8", "title": "ADB and Partners Open Renewable-Based Minigrid in Tonga", "url": "https://www.adb.org/news/adb-partners-open-renewable-based-minigrid-deliver-clean-electricity-niuafo-ou", "publisher": "Asian Development Bank", "kind": "primary"},
+      {"id": "vavau-9", "title": "Tonga La'a Lahi 512 kW Solar PV Facility", "url": "https://prdrse4all.spc.int/content/tonga-laa-lahi-big-sun-512-kw-solar-pv-facility", "publisher": "Pacific Regional Data Repository / Pacific Community", "kind": "primary"},
+      {"id": "vavau-10", "title": "SMA Fuel Save Solution Commissioned for First Time in APAC", "url": "https://www.pressebox.com/pressrelease/sma-solar-technology-ag-niestetal/The-SMA-Fuel-Save-Solution-successfully-commissioned-for-the-first-time-in-APAC/boxid/647819", "publisher": "SMA Solar Technology / PresseBox", "kind": "primary"}
+    ]
+  },
+  "wesleyan-university-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Wesleyan University's operational campus microgrid is a natural-gas CHP network with solar connected to the same campus distribution system—not a fully renewable campus island. Its principal resources are a roughly 2.4 MW central cogeneration plant, a 676 kW Freeman Athletic Center CHP unit and at least 960.2 kW of specifically enumerated campus solar. The Freeman project entered service in March 2014 and an expanded critical-load network reached operation in December 2017. Current Wesleyan data show substantial natural-gas use and that purchased wind RECs ended in FY2024; the university's stated goal is to make the microgrid's heating, cooling and electricity 100% renewable by 2035. No utility-scale BESS is documented.",
+    "status": "Operational since 2014 with resilience-network expansion operational since 2017. Still fossil-gas dominated; renewable transformation is a 2035 target, not current condition.",
+    "organizations": [
+      {
+        "name": "Wesleyan University",
+        "role": "Owner/operator and host of the campus microgrid, CHP plants, distribution system and solar arrays.",
+        "sourceIds": ["wesleyan-1", "wesleyan-2", "wesleyan-8", "wesleyan-9"]
+      },
+      {
+        "name": "Connecticut Department of Energy and Environmental Protection",
+        "role": "Awarded $693,815 for the first microgrid phase and $424,000 for the expansion; tracks both as operational.",
+        "sourceIds": ["wesleyan-3"]
+      },
+      {
+        "name": "A/Z Corporation",
+        "role": "Design-build/EPC contractor for the Freeman Athletic Center microgrid/CHP project.",
+        "sourceIds": ["wesleyan-4"]
+      },
+      {
+        "name": "EBD Engineering",
+        "role": "Electrical/mechanical design and control-integration engineer for the Freeman CHP and connections to existing campus feeders.",
+        "sourceIds": ["wesleyan-7"]
+      },
+      {
+        "name": "Guascor Energy",
+        "role": "Manufacturer of the 676 kWe Freeman natural-gas reciprocating generator set.",
+        "sourceIds": ["wesleyan-6"]
+      },
+      {
+        "name": "Kraft Power",
+        "role": "Packager/supplier supporting the Guascor CHP installation.",
+        "sourceIds": ["wesleyan-6"]
+      },
+      {
+        "name": "GE Jenbacher",
+        "role": "Manufacturer identified for the central-plant reciprocating CHP generator.",
+        "sourceIds": ["wesleyan-5"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Central-plant CHP",
+        "value": "approximately 2.4 MW",
+        "notes": "Current university page rounds the plant to 2.4 MW. A/Z's project page reports a 2.3 MW Jenbacher generator; these describe the same central resource at different precision, not two units.",
+        "sourceIds": ["wesleyan-1", "wesleyan-3", "wesleyan-5"]
+      },
+      {
+        "name": "Freeman Athletic Center CHP",
+        "value": "676 kW electrical",
+        "notes": "Some contractor material rounds this to 680 kW. The detailed Guascor/EBD rating is 676 kWe.",
+        "sourceIds": ["wesleyan-2", "wesleyan-3", "wesleyan-4", "wesleyan-6", "wesleyan-7"]
+      },
+      {
+        "name": "Freeman useful-heat recovery",
+        "value": "approximately 850 lb/hour steam and more than 2,000 MBH thermal recovery",
+        "notes": "Recovered heat supports domestic hot water, pool heating and ice-rink loads.",
+        "sourceIds": ["wesleyan-6", "wesleyan-7"]
+      },
+      {
+        "name": "Enumerated campus solar",
+        "value": "at least 960.2 kW",
+        "notes": "750 kW Long Lane, 200 kW Freeman, 7.2 kW 19 Fountain Avenue and 3 kW Admissions. Wesleyan also mentions later preschool solar without stating a capacity on the current energy page, so 960.2 kW is a documented floor rather than a complete current total.",
+        "sourceIds": ["wesleyan-1", "wesleyan-8"]
+      },
+      {
+        "name": "Freeman projected annual electricity",
+        "value": "approximately 4,700 MWh/year",
+        "notes": "Launch-era university projection/claim, not a recent audited production value.",
+        "sourceIds": ["wesleyan-2"]
+      },
+      {
+        "name": "Microgrid grants",
+        "value": "$693,815 first phase plus $424,000 expansion",
+        "notes": "CT DEEP award tracker values.",
+        "sourceIds": ["wesleyan-3"]
+      },
+      {
+        "name": "2024 energy consumption reported by Wesleyan",
+        "value": "77,054 MMBtu electricity; 251,587 MMBtu natural gas; 5,573 MMBtu fuel oil",
+        "notes": "Natural gas was divided into 85,664 MMBtu for cogeneration and 165,923 MMBtu for non-cogeneration uses. Units are site energy-accounting values, not generator electrical output.",
+        "sourceIds": ["wesleyan-1"]
+      },
+      {
+        "name": "Battery storage",
+        "value": "No utility-scale BESS documented",
+        "notes": "Island support comes from dispatchable CHP, controls and feeder configuration.",
+        "sourceIds": ["wesleyan-1", "wesleyan-3", "wesleyan-7"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Central natural-gas reciprocating CHP",
+        "manufacturer": "GE Jenbacher",
+        "model": "Exact engine model not disclosed",
+        "quantity": "One approximately 2.3-2.4 MW generator",
+        "notes": "An approximately 22,000-pound engine-generator with waste-heat recovery producing steam for campus thermal loads.",
+        "sourceIds": ["wesleyan-1", "wesleyan-5"]
+      },
+      {
+        "type": "Freeman natural-gas reciprocating CHP",
+        "manufacturer": "Guascor Energy / Kraft Power",
+        "model": "G-36SL",
+        "quantity": "One 676 kWe unit",
+        "notes": "CHP heat serves domestic hot water, the approximately 80 °F pool and the ice rink.",
+        "sourceIds": ["wesleyan-6"]
+      },
+      {
+        "type": "Freeman heat-recovery steam generator",
+        "manufacturer": "Not disclosed",
+        "model": "Approximately 850 lb/hour HRSG",
+        "quantity": "One",
+        "notes": "Integrated with the campus thermal system.",
+        "sourceIds": ["wesleyan-7"]
+      },
+      {
+        "type": "Microgrid control",
+        "manufacturer": "Not disclosed",
+        "model": "New PLC-based central control and feeder switching",
+        "quantity": "One integrated scheme",
+        "notes": "Coordinates the Freeman unit, two existing campus feeders and the central 2.4 MW CHP plant. Public project pages do not name the PLC/controller vendor.",
+        "sourceIds": ["wesleyan-7"]
+      },
+      {
+        "type": "Solar PV",
+        "manufacturer": "Multiple/not fully disclosed",
+        "model": "Not disclosed",
+        "quantity": "At least 960.2 kW across named installations",
+        "notes": "The 750 kW-AC Long Lane array is explicitly connected to the microgrid.",
+        "sourceIds": ["wesleyan-1", "wesleyan-8"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Islanded scope",
+        "details": "The system interconnects two existing campus feeders, the central CHP and the Freeman CHP through PLC-based controls. Its protected network covers selected central-campus/critical buildings, not necessarily every university building. In 2016 Wesleyan described roughly 80 buildings on the cogeneration grid out of 311 total.",
+        "sourceIds": ["wesleyan-3", "wesleyan-7", "wesleyan-8"]
+      },
+      {
+        "topic": "Resilience phases",
+        "details": "The Freeman microgrid launched March 6, 2014, with the athletic center designated as an emergency shelter and FEMA distribution point. A second CT-funded phase serving additional dining, public-safety and physical-plant loads became operational in December 2017.",
+        "sourceIds": ["wesleyan-2", "wesleyan-3"]
+      },
+      {
+        "topic": "Current energy mix",
+        "details": "Wesleyan remains gas-heavy: its current energy page reports 251,587 MMBtu of natural gas in 2024, including 85,664 MMBtu attributed to cogeneration, versus 77,054 MMBtu of purchased electricity. On-site solar is under 1 MW in explicitly named capacity. Wesleyan bought 100% wind RECs for purchased electricity in FY2020-23 but stopped in FY2024 because of cost; RECs did not change on-site physical generation.",
+        "sourceIds": ["wesleyan-1"]
+      },
+      {
+        "topic": "Future plan versus present state",
+        "details": "The university's master plan targets 100% renewable heating, cooling and electricity within the microgrid by 2035. That is a decarbonization commitment, not evidence that the current natural-gas CHP network is renewable or already converted.",
+        "sourceIds": ["wesleyan-1", "wesleyan-9"]
+      },
+      {
+        "topic": "Rating/performance cautions",
+        "details": "The central CHP appears as 2.3 MW in contractor material and 2.4 MW in university/state material; Freeman appears as 676 kW or rounded 680 kW. Launch-era claims of 4,700 MWh/year and more than 80% campus electric coverage are not current verified production data.",
+        "sourceIds": ["wesleyan-1", "wesleyan-2", "wesleyan-4", "wesleyan-5", "wesleyan-6"]
+      }
+    ],
+    "sources": [
+      {"id": "wesleyan-1", "title": "Energy", "url": "https://www.wesleyan.edu/sustainability/commitments/energy.html", "publisher": "Wesleyan University", "kind": "primary"},
+      {"id": "wesleyan-2", "title": "Wesleyan Launches Microgrid at Freeman Athletic Center", "url": "https://newsletter.blogs.wesleyan.edu/2014/03/10/microgridfreeman/", "publisher": "Wesleyan University", "kind": "primary"},
+      {"id": "wesleyan-3", "title": "Connecticut Microgrid Grant and Loan Program Project Award Tracking", "url": "https://portal.ct.gov/-/media/deep/energy/microgrids/microgrid-grant-and-loan-program/microgrids-project-award-tracking-all-projects-822022.pdf?hash=72541D2E20CFF98F3EC096DC1C39B358&rev=dc8ca4700d21468faed9223b741e47e6", "publisher": "Connecticut Department of Energy and Environmental Protection", "kind": "primary"},
+      {"id": "wesleyan-4", "title": "Wesleyan University Microgrid Project", "url": "https://www.a-zcorp.com/portfolio/microgrid-project/", "publisher": "A/Z Corporation", "kind": "primary"},
+      {"id": "wesleyan-5", "title": "Wesleyan University CHP Facility", "url": "https://www.a-zcorp.com/portfolio/chp-facility-6/", "publisher": "A/Z Corporation", "kind": "primary"},
+      {"id": "wesleyan-6", "title": "Combined Heat and Power Solution Saves University USD 1,000 a Day", "url": "https://guascor-energy.com/portfolio-item/combined-heat-and-power-solution-saves-university-usd-1000-a-day/", "publisher": "Guascor Energy", "kind": "primary"},
+      {"id": "wesleyan-7", "title": "Wesleyan University Microgrid Portfolio Entry", "url": "https://www.ebdengineering.com/portfolio", "publisher": "EBD Engineering", "kind": "primary"},
+      {"id": "wesleyan-8", "title": "Long Lane Solar Array Is Live", "url": "https://newsletter.blogs.wesleyan.edu/2016/11/01/solarphotovoltaic/", "publisher": "Wesleyan University", "kind": "primary"},
+      {"id": "wesleyan-9", "title": "Carbon Neutrality", "url": "https://www.wesleyan.edu/sustainability/commitments/carbon-neutrality.html", "publisher": "Wesleyan University", "kind": "primary"}
+    ]
+  },
+  "west-point": {
+    "researchedAt": "2026-07-20",
+    "summary": "No reviewed official source confirms a fixed, installation-wide operational microgrid at the U.S. Military Academy. Sandia and Army records describe energy-surety studies and conceptual configurations, while the Academy's confirmed fixed renewable asset is a 200 kWdc grid-tied array at the Lichtenberg Tennis Center. A separate 2024 Viridi project placed one mobile RPS150 battery system at Camp Buckner for a tactical diesel-battery microgrid demonstration and a cadet integration project; it is not a base-wide stationary microgrid, and the release gives no power or energy rating. A 2024 Army-NYPA memorandum explores future clean-energy work but is not a construction commitment.",
+    "status": "No fixed installation-wide microgrid verified. A 200 kWdc grid-tied PV array is operational; one mobile tactical battery/diesel demonstration began in 2024. Broader resilience work remains study/exploratory.",
+    "organizations": [
+      {
+        "name": "United States Military Academy at West Point",
+        "role": "Installation owner/host; operates the tennis-center solar asset and hosts the mobile tactical storage demonstration and cadet research.",
+        "sourceIds": ["westpoint-3", "westpoint-4", "westpoint-6"]
+      },
+      {
+        "name": "U.S. Army Garrison West Point Directorate of Public Works",
+        "role": "Installation energy-management and infrastructure organization involved in Net Zero and resilience planning.",
+        "sourceIds": ["westpoint-1", "westpoint-9"]
+      },
+      {
+        "name": "Sandia National Laboratories",
+        "role": "Performed early energy-surety assessments and identified conceptual microgrid configurations; no reviewed document shows those concepts were built.",
+        "sourceIds": ["westpoint-1", "westpoint-2"]
+      },
+      {
+        "name": "NORESCO and Munro Solar",
+        "role": "Client/development and solar-contractor entities associated with the 200 kWdc tennis-center PV installation.",
+        "sourceIds": ["westpoint-5"]
+      },
+      {
+        "name": "Viridi",
+        "role": "Supplied the RPS150 fail-safe mobile battery system for the Camp Buckner diesel-hybrid demonstration.",
+        "sourceIds": ["westpoint-6", "westpoint-7"]
+      },
+      {
+        "name": "USMA Department of Electrical Engineering and Computer Science",
+        "role": "Runs the cadet capstone/research effort to integrate the mobile battery with the Army Tactical Microgrid Standard.",
+        "sourceIds": ["westpoint-6"]
+      },
+      {
+        "name": "New York Power Authority",
+        "role": "Entered a 2024 memorandum with the Army to explore energy efficiency and possible onsite carbon-free generation at West Point; no committed microgrid scope was announced.",
+        "sourceIds": ["westpoint-8"]
+      }
+    ],
+    "specifications": [
+      {
+        "name": "Lichtenberg Tennis Center PV",
+        "value": "200 kWdc",
+        "notes": "Army FY2016 Net Zero reporting identifies the capacity and says it came online in FY2015. An earlier Army article reports 780 panels and expected production equal to 50-60% of the building's consumption. It is described as grid-tied, not islandable.",
+        "sourceIds": ["westpoint-3", "westpoint-4", "westpoint-5"]
+      },
+      {
+        "name": "Mobile tactical BESS",
+        "value": "One Viridi RPS150 unit; MW/kW and MWh/kWh not publicly stated in the project release",
+        "notes": "The product name must not be interpreted as a 150 kW or 150 kWh rating without a project datasheet. The unit was placed at Camp Buckner for demonstration.",
+        "sourceIds": ["westpoint-6", "westpoint-7"]
+      },
+      {
+        "name": "Conceptual microgrid configurations",
+        "value": "Four concepts serving six energy-surety areas",
+        "notes": "Sandia/Army study output only. The Army report says most proposed renewable options were not planned for implementation at that stage.",
+        "sourceIds": ["westpoint-1", "westpoint-2"]
+      },
+      {
+        "name": "Legacy solar capacity conflict",
+        "value": "200 kWdc official versus 249 kW in legacy microgrid lists",
+        "notes": "Use the official Army 200 kW value. The 249 kW figure has no supporting project specification in the reviewed legacy source and may conflate AC/DC, planned and installed scope, or another asset.",
+        "sourceIds": ["westpoint-4", "westpoint-10"]
+      },
+      {
+        "name": "Stationary BESS / fixed microgrid capacity",
+        "value": "None verified",
+        "notes": "No official source reviewed provides a commissioned installation-wide controller, stationary battery, generation portfolio or islandable load capacity.",
+        "sourceIds": ["westpoint-1", "westpoint-2", "westpoint-8"]
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Grid-tied solar PV array",
+        "manufacturer": "Not disclosed in reviewed official source",
+        "model": "Not disclosed",
+        "quantity": "780 panels, 200 kWdc",
+        "notes": "Mounted at the Lichtenberg Tennis Center; project contractor reference identifies NORESCO/Munro Solar but not module/inverter models.",
+        "sourceIds": ["westpoint-3", "westpoint-4", "westpoint-5"]
+      },
+      {
+        "type": "Mobile battery energy-storage system",
+        "manufacturer": "Viridi",
+        "model": "RPS150",
+        "quantity": "One",
+        "notes": "Fail-safe mobile system deployed with a diesel generator at Camp Buckner. Project-specific power, energy, chemistry and inverter ratings were not stated in the release.",
+        "sourceIds": ["westpoint-6", "westpoint-7"]
+      },
+      {
+        "type": "Diesel generator",
+        "manufacturer": "Not disclosed",
+        "model": "Not disclosed",
+        "quantity": "At least one in the Camp Buckner demo",
+        "notes": "The RPS150 automatically recharges from the generator in the tactical demonstration. This mobile equipment is separate from fixed installation emergency-generation inventories.",
+        "sourceIds": ["westpoint-6"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "topic": "Concept versus deployment",
+        "details": "Army Net Zero and Sandia materials document site assessment and design alternatives for six mission-critical energy-surety areas. The Army's FY2013 report says West Point continued to rely on conventional energy sources and that many studied renewables were not planned. A conceptual-design listing is not commissioning evidence.",
+        "sourceIds": ["westpoint-1", "westpoint-2"]
+      },
+      {
+        "topic": "Solar operating boundary",
+        "details": "The tennis-center array is a building-scale, grid-tied 200 kWdc project. It may reduce the building's annual grid consumption, but the official articles do not describe black-start capability, storage or an islanding switch. It should not by itself qualify the Academy as an operational microgrid.",
+        "sourceIds": ["westpoint-3", "westpoint-4"]
+      },
+      {
+        "topic": "2024 tactical demonstration",
+        "details": "Viridi placed an RPS150 mobile BESS at Camp Buckner and connected it with a diesel generator in a microgrid configuration with automatic recharge. In parallel, a one-year cadet capstone was to integrate the unit with the Army Tactical Microgrid Standard. This is a mobile training/research system and should be recorded as a separate subproject.",
+        "sourceIds": ["westpoint-6", "westpoint-7"]
+      },
+      {
+        "topic": "Future activity",
+        "details": "The November 2024 Army-NYPA memorandum creates a framework to identify efficiency and possible onsite carbon-free generation projects. It announces exploration and technical cooperation, not an awarded fixed microgrid, equipment capacity or construction schedule.",
+        "sourceIds": ["westpoint-8"]
+      },
+      {
+        "topic": "Unresolved data gaps",
+        "details": "No current public inventory was found for base electric load, annual energy mix, fixed backup generators, islandable critical loads, microgrid controller, stationary BESS or measured resilience performance. Older references to a 5 MW gas plant describe a planned option after cogeneration was found uneconomic; no reviewed source confirms it was built.",
+        "sourceIds": ["westpoint-4", "westpoint-8", "westpoint-9"]
+      }
+    ],
+    "sources": [
+      {"id": "westpoint-1", "title": "Army Net Zero Installation Strategy and Progress, FY2013", "url": "https://api.army.mil/e2/c/downloads/361767.pdf", "publisher": "U.S. Army", "kind": "primary"},
+      {"id": "westpoint-2", "title": "Energy Surety Microgrids and SPIDERS Peer Review", "url": "https://www.energy.gov/sites/prod/files/SG%202010%20Peer%20Review%20-%20Energy%20Surety%2C%20Microgrids%20and%20SPIDERS%20-%20Michael%20Hightower%2C%20SNL.pdf", "publisher": "U.S. Department of Energy / Sandia National Laboratories", "kind": "primary"},
+      {"id": "westpoint-3", "title": "Solar Panels Deliver New Energy to West Point's Net Zero Initiative", "url": "https://www.army.mil/article-amp/92008/solar_panels_deliver_new_energy_to_west_points_net_zero_initiative", "publisher": "U.S. Army", "kind": "primary"},
+      {"id": "westpoint-4", "title": "Army Net Zero Progress Report, FY2016", "url": "https://api.army.mil/e2/c/downloads/456813.pdf", "publisher": "U.S. Army", "kind": "primary"},
+      {"id": "westpoint-5", "title": "U.S. Military Academy Solar Project", "url": "https://www.ny-engineers.com/solar-projects/us-military-academy", "publisher": "New York Engineers", "kind": "secondary"},
+      {"id": "westpoint-6", "title": "Viridi Fail-Safe Battery Storage Systems at West Point", "url": "https://viridiparente.com/wp-content/uploads/Viridi-Failsafe-Battery-Storage-Systems-at-West-Point-PR.pdf", "publisher": "Viridi", "kind": "primary"},
+      {"id": "westpoint-7", "title": "Viridi Fail-Safe Battery Storage Systems at West Point", "url": "https://www.prnewswire.com/news-releases/viridi-failsafe-battery-storage-systems-at-west-point-302231260.html", "publisher": "Viridi / PR Newswire", "kind": "primary"},
+      {"id": "westpoint-8", "title": "NYPA and U.S. Army Sign Energy Resilience Agreement", "url": "https://www.nypa.gov/news/press-releases/2024/20241119-army", "publisher": "New York Power Authority", "kind": "primary"},
+      {"id": "westpoint-9", "title": "West Point on Track to Achieve Net Zero Goals", "url": "https://www.army.mil/article/140073/west_point_on_track_to_achieve_net_zero_goals_with_army_corps_of_engineers_help", "publisher": "U.S. Army", "kind": "primary"},
+      {"id": "westpoint-10", "title": "Recovered West Point Microgrid Project Profile", "url": "https://web.archive.org/web/20210420132829id_/http://microgridprojects.com/microgrid/west-point/", "publisher": "Microgrid Projects", "kind": "archive"}
+    ]
+  }
+}

@@ -108,7 +108,15 @@ function mergeByName(base, additions) {
 }
 
 function mergeSpecifications(base, additions) {
-  const all = [...base, ...(additions ?? [])];
+  const all = [...base, ...(additions ?? [])].map((item) => {
+    const notes = cleanText(item.notes ?? "");
+    const value = cleanText(item.value ?? "");
+    return {
+      label: cleanText(item.label ?? item.name ?? ""),
+      value: notes && !value.includes(notes) ? `${value}${value ? " — " : ""}${notes}` : value,
+      sourceIds: item.sourceIds ?? [],
+    };
+  });
   const seen = new Set();
   return all.filter((item) => {
     const key = `${item.label}:${item.value}`.toLowerCase();
@@ -119,7 +127,11 @@ function mergeSpecifications(base, additions) {
 }
 
 function mergeTechnicalDetails(base, additions) {
-  const all = [...base, ...(additions ?? [])];
+  const all = [...base, ...(additions ?? [])].map((item) => ({
+    category: cleanText(item.category ?? item.topic ?? ""),
+    detail: cleanText(item.detail ?? item.details ?? ""),
+    sourceIds: item.sourceIds ?? [],
+  }));
   const seen = new Set();
   return all.filter((item) => {
     const key = `${item.category}:${item.detail}`.toLowerCase();
@@ -130,7 +142,20 @@ function mergeTechnicalDetails(base, additions) {
 }
 
 function mergeEquipment(base, additions) {
-  const all = [...base, ...(additions ?? [])];
+  const all = [...base, ...(additions ?? [])].map((item) => {
+    const detailParts = [
+      item.detail,
+      item.quantity ? `Quantity/status: ${item.quantity}` : null,
+      item.notes,
+    ].filter(Boolean).map((value) => cleanText(value));
+    return {
+      category: cleanText(item.category ?? item.type ?? ""),
+      ...(item.manufacturer ? { manufacturer: cleanText(item.manufacturer) } : {}),
+      ...(item.model ? { model: cleanText(item.model) } : {}),
+      detail: [...new Set(detailParts)].join(" — "),
+      sourceIds: item.sourceIds ?? [],
+    };
+  });
   const seen = new Set();
   return all.filter((item) => {
     const key = `${item.category}:${item.manufacturer ?? ""}:${item.model ?? ""}:${item.detail}`.toLowerCase();

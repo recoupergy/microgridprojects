@@ -34,6 +34,33 @@ for (const slug of projectSlugs) {
     continue;
   }
   const sourceIds = new Set(record.sources.map((source) => source.id));
+
+  for (const organization of record.organizations) {
+    if (!organization.name?.trim() || !organization.role?.trim() || !Array.isArray(organization.sourceIds)) {
+      failures.push(`${slug}: invalid organization record shape`);
+    }
+  }
+  for (const specification of record.specifications) {
+    if (!specification.label?.trim() || !specification.value?.trim() || !Array.isArray(specification.sourceIds)) {
+      failures.push(`${slug}: invalid specification record shape`);
+    }
+  }
+  for (const equipment of record.equipment) {
+    if (!equipment.category?.trim() || !equipment.detail?.trim() || !Array.isArray(equipment.sourceIds)) {
+      failures.push(`${slug}: invalid equipment record shape`);
+    }
+  }
+  for (const detail of record.technicalDetails) {
+    if (!detail.category?.trim() || !detail.detail?.trim() || !Array.isArray(detail.sourceIds)) {
+      failures.push(`${slug}: invalid technical-detail record shape`);
+    }
+  }
+  for (const source of record.sources) {
+    if (!source.id?.trim() || !source.title?.trim() || !source.url?.trim() || !source.publisher?.trim() || !["primary", "secondary", "archive"].includes(source.kind)) {
+      failures.push(`${slug}: invalid source record shape`);
+    }
+  }
+
   const citedItems = [
     ...record.organizations,
     ...record.specifications,

@@ -1,0 +1,1039 @@
+{
+  "whites-lane-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Whites Lane was a small, grid-connected smart-grid demonstration hosted by Woodstock Hydro in Woodstock, Ontario—not an islandable community microgrid. Its first configuration paired approximately 13.5 kW of solar with a 10 kWh lead-acid battery, smart meters, an EV charging station/Nissan Leaf load, weather and power-quality monitoring, and OutBack power electronics. A second phase led by eCAMION planned a four-module 20 kWh lithium-ion cabinet and Survalent supervisory integration for a cluster described as 16 residential/commercial customers and six buildings. The successive batteries should not be added together as though both remained active.",
+    "status": "The system was installed and being toured as an operating demonstration in May 2015. At that point phase 2 was described as complete in design, with its 20 kWh lithium-ion cabinet due for installation by September 2015 and data/control integration expected in early 2016. Hydro One acquired Woodstock Hydro on October 31, 2015, and completed the utility transition in 2016. Federal and academic catalogues continue to list the historical project, but no public post-2017 source located reports the present PV, battery, EV charger, controller, or customer-cluster condition. Current operation in July 2026 is unverified; the legacy 'Construction' status is obsolete but cannot safely be replaced with 'operational.'",
+    "organizations": [
+      {
+        "name": "Woodstock Hydro Services Inc.",
+        "role": "Original utility host and demonstration operator; provided the distribution facility, customer cluster, smart-meter data, and project operating context until acquisition by Hydro One.",
+        "sourceIds": ["b09c-whites-original", "b09c-whites-mars", "b09c-whites-hydroone"]
+      },
+      {
+        "name": "Hydro One Inc. / Hydro One Networks Inc.",
+        "role": "Acquired Woodstock Hydro and its distribution assets on October 31, 2015. No located Hydro One source states whether it retained, repurposed, or removed the demonstration equipment.",
+        "sourceIds": ["b09c-whites-hydroone"]
+      },
+      {
+        "name": "eCAMION Inc.",
+        "role": "Led the Ontario Smart Grid Fund application and phase-2 storage work, supplying the planned lithium-ion cabinet and its local control system.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-ontario", "b09c-whites-funding"]
+      },
+      {
+        "name": "Arntjen Solar",
+        "role": "Solar/project technology partner named in the original overview and later demonstration coverage; accessible sources do not expose a module bill of materials.",
+        "sourceIds": ["b09c-whites-original", "b09c-whites-mars"]
+      },
+      {
+        "name": "Survalent Technology Corporation",
+        "role": "Provided the smart-grid analytics/control layer, aggregating device data and applying real-time microgrid-control algorithms through an ADMS/SCADA environment.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "name": "Elster Electricity Metering / Sun Country Highway",
+        "role": "Elster supplied bidirectional smart-meter technology and Sun Country Highway participated on the EV-charging side; exact equipment models were not disclosed.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "name": "York University, Toronto Metropolitan University (then Ryerson University), and Fanshawe College",
+        "role": "Academic and training partners supporting sustainability research, data analysis, and demonstration work.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-ontario"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Phase-1 solar capacity",
+        "value": "13.5 kW in the recovered September 2013 overview. The accessible record does not state whether this is DC module nameplate or inverter-limited AC capacity.",
+        "sourceIds": ["b09c-whites-archive", "b09c-whites-original"]
+      },
+      {
+        "label": "Phase-1 storage",
+        "value": "10 kWh lead-acid battery storage. Battery voltage, usable energy, power rating, maker, model, and replacement history were not recovered.",
+        "sourceIds": ["b09c-whites-archive", "b09c-whites-original", "b09c-whites-mars"]
+      },
+      {
+        "label": "Phase-2 storage",
+        "value": "A four-module, 20 kWh lithium-ion system was due for installation by September 2015. MaRS described a 20-50 kWh scalable product range and placed Woodstock at the smaller end; it did not publish a verified final inverter kW rating.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-nrc"]
+      },
+      {
+        "label": "Customer/building scope",
+        "value": "Sixteen residential and commercial customers across six buildings in the phase-2 description. Ontario's funding summary likewise says 16 loads would be supported.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-ontario"]
+      },
+      {
+        "label": "Operating mode",
+        "value": "Grid-connected and explicitly unable to couple/decouple for islanded operation. 'Microgrid' referred to coordinated distributed resources, customers, and controls on the utility feeder, not backup service during a wider outage.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-scielo"]
+      },
+      {
+        "label": "Public support",
+        "value": "Contemporary coverage reports C$309,317 of Ontario support for the eCAMION/Woodstock project. Ontario's own Round 2 summary confirms the Smart Grid Fund project and 16-load scope but does not repeat the amount on the accessible page.",
+        "sourceIds": ["b09c-whites-funding", "b09c-whites-ontario"]
+      },
+      {
+        "label": "EV integration",
+        "value": "The archived overview identifies an EV charging station with a Nissan Leaf as a primary demonstration load. Public sources do not establish charger kW, connector standard, vehicle-to-grid capability, or continued operation.",
+        "sourceIds": ["b09c-whites-original", "b09c-whites-mars"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Inverters and charge controllers",
+        "manufacturer": "OutBack Power",
+        "detail": "Off-the-shelf inverter/charge-control equipment managed the solar and storage interface and exported surplus AC to the grid. No exact model or quantity was found.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "category": "Phase-1 battery",
+        "detail": "Lead-acid storage rated 10 kWh. Manufacturer, model, cell count, voltage, power, and usable capacity remain undisclosed.",
+        "sourceIds": ["b09c-whites-original", "b09c-whites-mars"]
+      },
+      {
+        "category": "Phase-2 battery cabinet",
+        "manufacturer": "eCAMION",
+        "detail": "Four-module lithium-ion cabinet and local controller planned at 20 kWh. The located company-neutral reporting does not verify the final cell supplier, inverter kW, or commissioning acceptance date.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-nrc"]
+      },
+      {
+        "category": "Distribution management and control",
+        "manufacturer": "Survalent Technology",
+        "detail": "ADMS/SCADA and microgrid-control algorithms aggregated smart-meter, weather, power-quality, transformer, PV, storage, and EV-charger data for real-time decisions.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "category": "Smart meters",
+        "manufacturer": "Elster Electricity Metering",
+        "detail": "Bidirectional customer meters provided hourly import/export data through the utility metering backend; no meter model was published.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "category": "EV charging",
+        "manufacturer": "Sun Country Highway (project partner)",
+        "detail": "Charging station used with a Nissan Leaf demonstration load. The source names the partner but not the charger model or electrical rating.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-original"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Control objective",
+        "detail": "The project aimed to 'power-match' renewable production, storage, and customer load while testing customer control, power-system flexibility, adaptive infrastructure, and utility analytics.",
+        "sourceIds": ["b09c-whites-mars", "b09c-whites-funding"]
+      },
+      {
+        "category": "Data architecture",
+        "detail": "Weather, power quality, a microFIT PV system, bidirectional smart meters, the EV charger, the distribution transformer, and battery data were aggregated by Survalent. Weather data supported both load and renewable-production forecasting.",
+        "sourceIds": ["b09c-whites-mars"]
+      },
+      {
+        "category": "Phase boundary",
+        "detail": "The 10 kWh lead-acid system was the installed phase-1 asset; the 20 kWh lithium-ion cabinet was its phase-2 successor/augmentation plan. The evidence does not establish that both were retained, so 30 kWh is not reported as installed storage.",
+        "sourceIds": ["b09c-whites-original", "b09c-whites-mars"]
+      },
+      {
+        "category": "Utility ownership transition",
+        "detail": "Hydro One bought Woodstock Hydro on October 31, 2015 and transitioned operations in 2016, overlapping the planned phase-2 installation and data-integration schedule. No disposition record for the demonstration was located.",
+        "sourceIds": ["b09c-whites-hydroone", "b09c-whites-mars"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No public post-2017 source was found for PV output, battery availability, customer participation, controller status, EV-charger use, islanding retrofit, or equipment removal. A current federal technology catalogue entry establishes historical recognition, not continuous operation.",
+        "sourceIds": ["b09c-whites-nrc", "b09c-whites-hydroone"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b09c-whites-mars",
+        "title": "Microgrids: Making way for customer control and renewable energy integration",
+        "url": "https://www.marsdd.com/our-story/microgrids-making-way-for-customer-control-and-renewable-energy-integration/",
+        "publisher": "MaRS Discovery District",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-whites-ontario",
+        "title": "Smart Grid Fund Round 2 Projects",
+        "url": "https://news.ontario.ca/en/backgrounder/31154/smart-grid-fund-round-2-projects",
+        "publisher": "Government of Ontario",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-whites-hydroone",
+        "title": "Hydro One completes acquisition of Woodstock Hydro Holdings Inc.",
+        "url": "https://hydroone.mediaroom.com/2015-10-31-Hydro-One-completes-acquisition-of-Woodstock-Hydro-Holdings-Inc",
+        "publisher": "Hydro One",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-whites-nrc",
+        "title": "Woodstock Whites Lane Smart MicroGRID for Utility and Residential Application",
+        "url": "https://csres-cnrse.nrc-cnrc.gc.ca/en/node/540",
+        "publisher": "National Research Council Canada, Hydrogen and Energy Storage Technologies database",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-whites-funding",
+        "title": "Ontario provides funding for Whites Lane Microgrid",
+        "url": "https://www.microgridknowledge.com/google-news-feed/article/11432873/ontario-plans-microgrid-in-northern-most-community-will-invest-25m",
+        "publisher": "Microgrid Knowledge",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-whites-scielo",
+        "title": "Proposal of a microgrid based on Whites Lane Smart Micro Grid",
+        "url": "https://www.scielo.sa.cr/scielo.php?pid=S0379-39822017000500055&script=sci_arttext&tlng=es",
+        "publisher": "Tecnologia en Marcha / SciELO Costa Rica",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-whites-original",
+        "title": "WHSI Whites Lane microGRID Overview, September 2013",
+        "url": "https://web.archive.org/web/20210420143143/http://ontario-sea.org/Storage/80/7173_WHSI_Whites_Lane_microGRID_Overview_September_2013.pdf",
+        "publisher": "Woodstock Hydro Services / Ontario Sustainable Energy Association via Internet Archive",
+        "kind": "archive"
+      },
+      {
+        "id": "b09c-whites-archive",
+        "title": "Whites Lane Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420143143id_/http://microgridprojects.com/microgrid/whites-lane-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "wikwemikong-unceded-indian-reserve": {
+    "researchedAt": "2026-07-20",
+    "summary": "Wiikwemkoong's project advanced from the archive's empty planning record to five completed, net-metered solar installations at the High School, Junior School, Arena, Band Office, and Nursing Home. Early public descriptions conflict at 250 kW and 300 kW; a July 2019 project presentation says 705 kW total while its individual design slides sum to 778 kW; JAZZ Solar's current portfolio gives 735 kW and December 2019 completion. The 735 kW completed-project figure is the best current portfolio rating, with the older values retained as dated planning/design evidence rather than silently reconciled.",
+    "status": "JAZZ reports the 735 kW net-metered portfolio completed in 2019, and the project presentation says the microgrid turned on in December 2019. The current Wikwemikong Development Commission profile still identifies the community's solar investments, although it repeats the earlier 250 kW/ten-building description rather than an as-built inventory. No public 2025/26 production, inverter availability, net-meter credits, curtailment, or maintenance series was found. The supportable status is installed and operating as distributed net-metered PV, not a demonstrated islandable reserve-wide microgrid.",
+    "organizations": [
+      {
+        "name": "Wiikwemkoong Unceded Territory",
+        "role": "Community project owner/host and beneficiary, with arrays on five community facilities and a local energy/economic-development mandate.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-jazz", "b09c-wiky-wdc"]
+      },
+      {
+        "name": "Wikwemikong Development Commission (Enaadmaagehjik)",
+        "role": "Community economic-development organization that pursued solar investments, assisted the Small Communities Fund application, and supported the project with JAZZ Solar.",
+        "sourceIds": ["b09c-wiky-wdc", "b09c-wiky-project"]
+      },
+      {
+        "name": "JAZZ Solar Solutions Inc.",
+        "role": "Developer, engineering/procurement/construction and project-management partner; reports the completed 735 kW net-meter portfolio and worked to train/use local installers.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-jazz"]
+      },
+      {
+        "name": "Government of Canada",
+        "role": "Federal Small Communities Fund co-funder. The 2019 project deck assigns C$814,568, approximately one third of eligible cost, to the federal contribution.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-ontario"]
+      },
+      {
+        "name": "Government of Ontario",
+        "role": "Provincial co-funder, likewise assigned C$814,568 in the project deck; Ontario's 2017 plan publicized an earlier 300 kW scope.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-ontario"]
+      },
+      {
+        "name": "Hydro One Networks Inc.",
+        "role": "Distribution-utility/interconnection counterpart for the net-metered systems, not owner of the community solar assets in the reviewed sources.",
+        "sourceIds": ["b09c-wiky-project"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Completed portfolio rating",
+        "value": "735 kW of net-metered solar completed in 2019 according to JAZZ Solar's current project portfolio. Battery storage is not included in that completed-project description.",
+        "sourceIds": ["b09c-wiky-jazz"]
+      },
+      {
+        "label": "2019 project-deck rating",
+        "value": "705 kW total PV in the July 2019 project presentation. The same deck labels the Junior School 62 kW, Band Office 108 kW, High School 108 kW, Arena 250 kW, and Nursing Home 250 kW—778 kW if added—so the deck contains an internal design-stage conflict.",
+        "sourceIds": ["b09c-wiky-project"]
+      },
+      {
+        "label": "Early published capacities",
+        "value": "Ontario's 2017 energy plan described 300 kW, while the Development Commission's later company profile repeats a 250 kW project intended to serve at least ten buildings. Both predate the five-site 2019 completion and are retained as planning figures, not as-built totals.",
+        "sourceIds": ["b09c-wiky-ontario", "b09c-wiky-wdc"]
+      },
+      {
+        "label": "Facility scope",
+        "value": "Completed-project sources identify five facilities: High School, Junior School, Arena, Band Office, and Nursing Home/Elders facility.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-jazz"]
+      },
+      {
+        "label": "Eligible project cost",
+        "value": "C$2,443,705 total net eligible cost in the 2019 deck, with C$814,568 each from the federal and provincial governments. The source does not fully itemize the remaining share or final out-turn cost.",
+        "sourceIds": ["b09c-wiky-project"]
+      },
+      {
+        "label": "Storage scope",
+        "value": "The project deck includes 'solar PV + storage + microGrid software,' while the Infrastructure Canada-derived project description says a battery may be installed at one building. No primary as-built battery kW/kWh, chemistry, maker, or commissioning proof was found; storage is therefore not asserted as installed.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-infracanada"]
+      },
+      {
+        "label": "Operating mode",
+        "value": "Net-metered, behind-the-meter/community-building PV interconnected with Hydro One. No reviewed source establishes islanding, black start, a common private distribution bus, or reserve-wide backup power.",
+        "sourceIds": ["b09c-wiky-jazz", "b09c-wiky-project"]
+      },
+      {
+        "label": "Timeline",
+        "value": "Grant application in 2014, funding agreement in 2016, engineering through the first half of 2019, construction in the second half of 2019, and energization in December 2019.",
+        "sourceIds": ["b09c-wiky-project"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic arrays",
+        "manufacturer": "Not publicly disclosed",
+        "detail": "Rooftop and ground-mounted systems across five community buildings, 735 kW completed-portfolio rating. No dependable module manufacturer/model, count, or DC/AC breakdown was found.",
+        "sourceIds": ["b09c-wiky-jazz", "b09c-wiky-project"]
+      },
+      {
+        "category": "Nursing Home racking",
+        "model": "HES PV FR-2T-GM170 series",
+        "detail": "A project-deck design drawing identifies ground-mount racking and HES PV documentation for the Nursing Home array. This is mounting equipment, not a PV module model.",
+        "sourceIds": ["b09c-wiky-project"]
+      },
+      {
+        "category": "Inverters and net-metering",
+        "detail": "Each facility required grid-interactive conversion, protection, monitoring, and utility metering, but the reviewed sources disclose no verified inverter or meter manufacturer/model.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-jazz"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Storage appeared in planning material, but no as-built power, energy, chemistry, manufacturer, model, or operating record was located. It is recorded as unverified rather than assigned zero or an invented rating.",
+        "sourceIds": ["b09c-wiky-project", "b09c-wiky-infracanada"]
+      },
+      {
+        "category": "Microgrid software",
+        "detail": "Control/monitoring software appeared in the project scope, but no public platform name, vendor, functions, islanding logic, or commissioning test was found.",
+        "sourceIds": ["b09c-wiky-project"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture correction",
+        "detail": "The completed system is best evidenced as five separate Hydro One-interconnected, net-metered solar installations. The marketing term 'community microgrid' does not by itself establish islandable operation or a shared electrical bus.",
+        "sourceIds": ["b09c-wiky-jazz", "b09c-wiky-project"]
+      },
+      {
+        "category": "Capacity reconciliation",
+        "detail": "The 250 and 300 kW figures describe earlier proposals; 705 kW is a 2019 presentation total; 735 kW is JAZZ's current completed-project figure; and individual design slides total 778 kW. The evidence supports project evolution/design revision, not adding these numbers together.",
+        "sourceIds": ["b09c-wiky-wdc", "b09c-wiky-ontario", "b09c-wiky-project", "b09c-wiky-jazz", "b09c-wiky-archive"]
+      },
+      {
+        "category": "Local workforce",
+        "detail": "The procurement approach sought a minimum of 50% local crew participation based on earlier JAZZ installations, planned training for six to twelve installers, and required bidders to submit local-labour plans.",
+        "sourceIds": ["b09c-wiky-project"]
+      },
+      {
+        "category": "Energy-efficiency scope",
+        "detail": "Planning included facility energy assessments and conservation measures such as HVAC/insulation/building upgrades alongside solar. Public sources do not provide building-by-building savings or prove every measure was delivered.",
+        "sourceIds": ["b09c-wiky-ontario", "b09c-wiky-project"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "No consolidated public series was found for annual generation, utility imports/exports, bill savings, outages, inverter availability, panel degradation, battery operation, or 2025/26 maintenance. JAZZ's current portfolio supports completion, not audited performance.",
+        "sourceIds": ["b09c-wiky-jazz", "b09c-wiky-wdc"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b09c-wiky-project",
+        "title": "Wiikwemkoong Community Solar microGrid",
+        "url": "https://wikydevcom.ca/wp-content/uploads/2019/09/SCF-Project.pdf",
+        "publisher": "Wikwemikong Development Commission / JAZZ Solar Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-wiky-jazz",
+        "title": "Wiikwemkoong - 735 kW Net Meter",
+        "url": "https://www.jazzsolar.com/",
+        "publisher": "JAZZ Solar Solutions Inc.",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-wiky-wdc",
+        "title": "Wikwemikong Development Commission Company Profile 2023",
+        "url": "https://wikydevcom.ca/wp-content/uploads/2024/09/WDC-Company-Profile-2023.pdf",
+        "publisher": "Wikwemikong Development Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-wiky-ontario",
+        "title": "2017 Long-Term Energy Plan",
+        "url": "https://files.ontario.ca/books/ltep2017_0.pdf",
+        "publisher": "Government of Ontario",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-wiky-infracanada",
+        "title": "Smart Solar Community Micro-Grid Integrated Energy Solution",
+        "url": "https://infra.taiyo.ai/all_public/details/projects/smart-solar-community-micro-grid-integrated-energy-solution?id=A4eEOpcB_6AnFnyNgQ7Z&index=dpdata2_projects_infracanada-v6",
+        "publisher": "Taiyo project record derived from Infrastructure Canada data",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-wiky-archive",
+        "title": "Wikwemikong Unceded Indian Reserve - archived legacy record",
+        "url": "https://web.archive.org/web/20210420124930id_/http://microgridprojects.com/microgrid/wikwemikong-unceded-indian-reserve/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "xiamen-dc-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Xiamen University's project is a 150 kWp, 380 V DC building microgrid at the School of Energy's engineering complex on the Xiang'an campus—not at the university library as the legacy record states. Announced in 2012 and reported operating successfully in March 2014, it directly couples rooftop PV, a DC storage unit, AC/DC backup, and DC building loads. Xiamen University's current instrument platform still lists the custom DC microgrid system as online, with Emerson Network Power named as manufacturer. That asset-register attribution complements rather than automatically replaces the earlier implementation alliance led by Xiamen University with CGN Solar, Nextek, People Power, Canadian Solar, Intel, and LBNL.",
+    "status": "The first phase moved from alliance announcement in March 2012 to successful operation in 2014. University reporting documented air conditioning, EV charging, resistive test load, and planned LED lighting on the 380 V DC bus. The current School of Energy equipment platform lists asset 1504738G as online in Engineering Building C and describes it as a rooftop-PV building-supply system. This is meaningful current continuity evidence, but no 2025/26 production, storage-health, load, availability, or research-use log was found; 'online' is an asset-platform state, not a generation guarantee.",
+    "organizations": [
+      {
+        "name": "Xiamen University School of Energy / Institute of Solar Energy",
+        "role": "Owner/host, research lead, and current equipment custodian; Professor Fengyan Zhang led development of the DC microgrid.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-asset", "b09c-xiamen-alliance"]
+      },
+      {
+        "name": "China General Nuclear Power Solar Energy Development Co., Ltd. (CGN Solar)",
+        "role": "Joint developer identified by Xiamen University's 2014 commissioning/operation report.",
+        "sourceIds": ["b09c-xiamen-xmu2014"]
+      },
+      {
+        "name": "Nextek Power Systems",
+        "role": "Introduced its Direct Coupling DC distribution/microgrid platform for diverse DC building loads.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "name": "People Power Company",
+        "role": "Provided the planned cloud-based energy-management, control, behavioral-analytics, mobile, and web applications.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "name": "Lawrence Berkeley National Laboratory",
+        "role": "Developed methods and algorithms for optimal equipment selection and operation of DC microgrids.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "name": "Canadian Solar Inc.",
+        "role": "Committed customized rooftop solar modules for the original alliance implementation. No module model or verified final installed count was found.",
+        "sourceIds": ["b09c-xiamen-alliance"]
+      },
+      {
+        "name": "Intel Corporation",
+        "role": "Technical-advisory participant in the original DC microgrid research alliance.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "name": "Emerson Network Power Co., Ltd.",
+        "role": "Manufacturer assigned to the custom system in Xiamen University's current equipment asset registry; the public page does not explain its scope relative to the 2012 alliance partners.",
+        "sourceIds": ["b09c-xiamen-asset"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Photovoltaic capacity",
+        "value": "150 kWp rooftop solar on the engineering laboratory building, the principal DC energy source.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "label": "DC bus voltage",
+        "value": "380 V DC, following the commercial-building DC level promoted internationally at the time.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-news"]
+      },
+      {
+        "label": "Documented DC loads",
+        "value": "30 kW DC variable-speed heating/cooling air conditioning, a 40 kW outdoor DC EV charging station, a 30 kW resistive load, and 20 kW of planned DC LED lighting.",
+        "sourceIds": ["b09c-xiamen-xmu2014"]
+      },
+      {
+        "label": "Storage and backup",
+        "value": "A DC energy-storage unit and AC/DC backup supply were included for stable, continuous service. No authoritative public kW/kWh, chemistry, voltage, manufacturer, model, or current state of health was found.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-school2014"]
+      },
+      {
+        "label": "EV charging claim",
+        "value": "University reporting said the 40 kW DC station could complete a fast charge in approximately 1.5 hours for more than 250 km of driving range. The vehicle, battery size, test standard, and present charger availability were not stated.",
+        "sourceIds": ["b09c-xiamen-xmu2014"]
+      },
+      {
+        "label": "Asset-register value",
+        "value": "The current university platform identifies custom/non-standard asset 1504738G, lists a purchase price of CNY 950,000, places it in Engineering Building C, and marks it online. The purchase date is blank/invalid on the page.",
+        "sourceIds": ["b09c-xiamen-asset"]
+      },
+      {
+        "label": "Research efficiency results",
+        "value": "A Xiamen University poster reports DC-versus-AC conversion-chain efficiencies of 92% versus 78% for lighting, 93% versus 87% for air conditioning, 78% versus 64% for a data center, and 94% versus 76% for EV charging. These are project research results, not annual whole-building energy savings.",
+        "sourceIds": ["b09c-xiamen-poster"]
+      },
+      {
+        "label": "Location",
+        "value": "Three School of Energy buildings in the east area of Xiamen University's Xiang'an campus—Engineering Building and its north/south buildings. The archived 'Xiamen University Library' location is unsupported and retired.",
+        "sourceIds": ["b09c-xiamen-archive", "b09c-xiamen-xmu2014", "b09c-xiamen-asset"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Custom DC microgrid system",
+        "manufacturer": "Emerson Network Power Co., Ltd.",
+        "model": "Non-standard/custom; XMU asset 1504738G",
+        "detail": "Current university equipment-register attribution for the integrated system in Engineering Building C. It does not identify individual converter, storage, or protection models.",
+        "sourceIds": ["b09c-xiamen-asset"]
+      },
+      {
+        "category": "Photovoltaic modules",
+        "manufacturer": "Canadian Solar (original alliance commitment)",
+        "detail": "Customized rooftop modules for a 150 kWp array. Final installed module model and count were not found, and the 2014 report does not re-confirm brand.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-xmu2014"]
+      },
+      {
+        "category": "DC distribution platform",
+        "manufacturer": "Nextek Power Systems",
+        "model": "Direct Coupling",
+        "detail": "Original alliance platform for directly linking renewable generation/storage with lighting, HVAC, data-center, EV, and plug loads.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "category": "Energy-management software",
+        "manufacturer": "People Power Company",
+        "detail": "Cloud-based monitoring, management, behavioral analytics, and mobile/web control were committed in the alliance and shown in the research poster; no current software version was found.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "category": "DC air conditioning",
+        "detail": "30 kW reversible variable-frequency DC HVAC reported stable during the 2014 operation announcement; manufacturer/model undisclosed.",
+        "sourceIds": ["b09c-xiamen-xmu2014"]
+      },
+      {
+        "category": "DC EV charger",
+        "detail": "40 kW outdoor DC fast-charging station; manufacturer, connector, protocol, and vehicle-to-grid capability undisclosed.",
+        "sourceIds": ["b09c-xiamen-xmu2014"]
+      },
+      {
+        "category": "Energy storage",
+        "detail": "DC-coupled storage supporting stable and continuous operation. No reliable public chemistry, power, energy, manufacturer, or model was located.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-school2014"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "DC architecture",
+        "detail": "Rooftop PV feeds a 380 V DC bus serving native-DC loads and storage, avoiding repeated DC-to-AC-to-DC conversions. AC/DC backup supports continuity, and the design could be expanded into an AC/DC hybrid microgrid.",
+        "sourceIds": ["b09c-xiamen-xmu2014", "b09c-xiamen-poster"]
+      },
+      {
+        "category": "Control and optimization",
+        "detail": "People Power supplied the planned cloud/user-control layer, while LBNL contributed optimal sizing and operating algorithms. The sources do not disclose final control protocols, protection settings, cybersecurity, or present software maintenance.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-poster"]
+      },
+      {
+        "category": "Project evolution",
+        "detail": "The 2012 international alliance described intended roles; Xiamen University's 2014 report names CGN Solar as joint developer; the current asset registry names Emerson Network Power as manufacturer. These are preserved as phase/scope evidence rather than treated as mutually exclusive errors.",
+        "sourceIds": ["b09c-xiamen-alliance", "b09c-xiamen-xmu2014", "b09c-xiamen-asset"]
+      },
+      {
+        "category": "Identity correction",
+        "detail": "The system is associated with the School of Energy engineering complex on the Xiang'an campus. No credible source supports the legacy library location.",
+        "sourceIds": ["b09c-xiamen-archive", "b09c-xiamen-xmu2014", "b09c-xiamen-asset"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "The current university platform marks the asset online, but no public 2025/26 data were found for PV yield, storage state of health, renewable fraction, grid imports, load uptime, EV sessions, outages, or research utilization. Online listing is not equated with continuous full-capability operation.",
+        "sourceIds": ["b09c-xiamen-asset"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b09c-xiamen-xmu2014",
+        "title": "China's first practical building-integrated photovoltaic DC microgrid operates successfully",
+        "url": "https://xaxq.xmu.edu.cn/info/1032/8595.htm",
+        "publisher": "Xiamen University Xiang'an Campus",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-asset",
+        "title": "DC Microgrid System - Xiamen University School of Energy Equipment Sharing Platform",
+        "url": "https://energyetc.xmu.edu.cn/instrument/detail-193.html",
+        "publisher": "Xiamen University School of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-alliance",
+        "title": "Xiamen University Partners With Leading Technology and Energy Providers to Build China's First Direct-Current Microgrid",
+        "url": "https://www.globenewswire.com/news-release/2012/03/19/1186539/0/en/Xiamen-University-Partners-With-Leading-Technology-and-Energy-Providers-to-Build-China-s-First-Direct-Current-Microgrid.html",
+        "publisher": "People Power Company press release via GlobeNewswire",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-poster",
+        "title": "DC Microgrid at Xiamen University, Xiamen, China",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2014/12/evora_poster_zhang.pdf",
+        "publisher": "Xiamen University / Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-school2014",
+        "title": "President Zhu Chongshi inspects School of Energy DC microgrid demonstration",
+        "url": "https://energy.xmu.edu.cn/info/1078/1867.htm",
+        "publisher": "Xiamen University School of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-news",
+        "title": "Xiamen University establishes China's first photovoltaic DC microgrid",
+        "url": "https://news.xmu.edu.cn/info/1023/34641.htm",
+        "publisher": "Xiamen University News",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-xiamen-archive",
+        "title": "Xiamen University DC Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20200706003256id_/http://microgridprojects.com/microgrid/xiamen-dc-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "yokohama": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy Yokohama entry is Tokyo Gas's roughly 100 kW-class holonic energy-system research microgrid at its Yokohama Research Institute, commissioned for testing in 2006. It combined inverter-interfaced natural-gas and biogas cogeneration, solar, wind, two battery chemistries, a UPS and thermal equipment, and could transfer from grid-connected operation to an island supplied by a grid-forming 25 kW gas engine plus batteries. It is distinct from the much larger Yokohama Smart City Project. Tokyo Gas later began a separate virtual-power-plant demonstration at the same institute in 2020, using 50 kW of on-site PV and a 100 kW/255 kWh battery while coordinating remote generation through self-wheeling.",
+    "status": "The original laboratory configuration is a historical R&D installation: construction/testing began in September-October 2006, and published trials document grid-connected power balancing and intentional islanding. Tokyo Gas still lists the Yokohama site, now called Yokohama Techno Station, as an active R&D base. A successor VPP demonstration began operation there in January 2020, but no public evidence found in this review confirms that all 2006 generators, batteries and thermal plant remain installed or provides post-2020 operating results. The original microgrid should therefore be classified as historically commissioned/tested, with current configuration and performance unverified.",
+    "organizations": [
+      {
+        "name": "Tokyo Gas Co., Ltd.",
+        "role": "Owner, host and principal developer of the Yokohama Research Institute holonic energy-system laboratory; operator of the later VPP demonstration.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-jfs", "b09c-yoko-vpp2020", "b09c-yoko-current"]
+      },
+      {
+        "name": "The University of Tokyo",
+        "role": "Research collaborator on capacity planning and optimal operation of the holonic energy system.",
+        "sourceIds": ["b09c-yoko-jstage2006"]
+      },
+      {
+        "name": "Tokyo Gas Engineering Solutions Corporation",
+        "role": "Joint operator and energy-management-system provider for the 2020 VPP demonstration.",
+        "sourceIds": ["b09c-yoko-vpp2020"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original facility scale",
+        "value": "Approximately 100 kW research microgrid; component nameplates are not all simultaneously dispatchable and should not be summed as a single plant rating.",
+        "sourceIds": ["b09c-yoko-ieee2007"]
+      },
+      {
+        "label": "Natural-gas cogeneration",
+        "value": "25 kW grid-forming/islanding-capable gas-engine CHP plus non-islanding 25 kW and 9.9 kW gas-engine CHP, totaling 59.9 kW (the legacy 60 kW figure is a rounded value).",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-ieee2007"]
+      },
+      {
+        "label": "Biogas cogeneration",
+        "value": "One 9.9 kW biogas-engine CHP, separate from the 59.9 kW natural-gas total.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "label": "Original renewable generation",
+        "value": "10 kW photovoltaic array and two 6 kW wind turbines (12 kW total wind).",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-ieee2007", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "label": "Original electrical storage",
+        "value": "196 Ah lead-acid battery and 392 Ah nickel-metal-hydride battery. Published sources omit nominal voltage, so an energy capacity in kWh cannot be calculated responsibly.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "label": "Power conditioning and critical supply",
+        "value": "71 kVA bidirectional charge/discharge power-conditioning system and 50 kW uninterruptible power supply sharing storage through a DC link.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "label": "Measured grid-connected control result",
+        "value": "A five-day trial held purchased utility power to approximately +/-3% of its target on a one-minute evaluation basis using gas-engine output and batteries.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "label": "Modeled energy and emissions result",
+        "value": "The gas-cogeneration case was assessed at 21.3% CO2 reduction and 9.8% primary-energy reduction; microgrid coordination was reported to add another 4.7 and 5.3 percentage points, respectively. These are study results, not a continuous operating-year audit.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "label": "2020 on-site VPP resources",
+        "value": "50 kW photovoltaic system and 100 kW/255 kWh storage battery at the Yokohama Research Institute.",
+        "sourceIds": ["b09c-yoko-vpp2020"]
+      },
+      {
+        "label": "2020 remote VPP resources",
+        "value": "The demonstration coordinated a remote 10 kW PV array and 8,730 kW plus 6,970 kW cogeneration units, with self-wheeling limited to roughly 1,000 kW. These are off-site resources and are not part of the on-site Yokohama microgrid capacity.",
+        "sourceIds": ["b09c-yoko-vpp2020"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Natural-gas cogeneration",
+        "detail": "Three inverter-interfaced gas-engine CHP units rated 25 kW, 25 kW and 9.9 kW; one 25 kW unit provided the voltage/frequency reference in island mode.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-ieee2007"]
+      },
+      {
+        "category": "Biogas cogeneration",
+        "detail": "One 9.9 kW inverter-interfaced biogas-engine CHP. Testing noted that changing gas quality/input could constrain availability and load following.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "category": "Solar photovoltaic",
+        "detail": "Original 10 kW PV array; the separate 2020 VPP phase reports 50 kW of on-site PV.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-vpp2020"]
+      },
+      {
+        "category": "Wind generation",
+        "detail": "Two 6 kW wind turbines, 12 kW total.",
+        "sourceIds": ["b09c-yoko-ieee2007", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Original 196 Ah lead-acid and 392 Ah nickel-metal-hydride banks connected through a 71 kVA bidirectional PCS; the later VPP phase has a separately reported 100 kW/255 kWh battery.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-vpp2020"]
+      },
+      {
+        "category": "Critical-power equipment",
+        "detail": "50 kW UPS tied to the storage DC link for higher-quality/continuity loads.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "category": "Thermal plant",
+        "detail": "Triple-effect absorption chiller plus hot-water/heat-use equipment recovered energy from cogeneration; public sources reviewed do not provide thermal nameplate capacities.",
+        "sourceIds": ["b09c-yoko-jglobal"]
+      },
+      {
+        "category": "Energy-management system",
+        "manufacturer": "Tokyo Gas Engineering Solutions Corporation",
+        "model": "HelionetAdvance",
+        "detail": "Used in the 2020 VPP phase to forecast on-site PV and building demand, control the battery, and coordinate remote resources.",
+        "sourceIds": ["b09c-yoko-vpp2020"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Island operation",
+        "detail": "A point-of-common-coupling breaker was opened for intentional island tests. Batteries supplied short-period imbalance and the grid-forming 25 kW gas CHP supplied longer-duration energy; published results say voltage remained within statutory limits and frequency within ordinary utility bands.",
+        "sourceIds": ["b09c-yoko-jglobal", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "category": "Power-quality tiers",
+        "detail": "The laboratory was built to test differentiated reliability/power-quality service: ordinary loads, higher-quality UPS-backed loads, and island-capable critical loads.",
+        "sourceIds": ["b09c-yoko-ieee2007", "b09c-yoko-iaqvec2007"]
+      },
+      {
+        "category": "Holonic architecture",
+        "detail": "Distributed sources were coupled through inverters and coordinated as autonomous but cooperative energy-system 'holons,' allowing grid support, economic scheduling and island-mode experiments.",
+        "sourceIds": ["b09c-yoko-jstage2006", "b09c-yoko-jglobal"]
+      },
+      {
+        "category": "Phase distinction",
+        "detail": "The 2006 Tokyo Gas laboratory, the citywide Yokohama Smart City Project, and the 2020 Tokyo Gas VPP are related only by geography/organizational continuity. Their capacities must not be combined into one microgrid.",
+        "sourceIds": ["b09c-yoko-archive", "b09c-yoko-vpp2020", "b09c-yoko-current"]
+      },
+      {
+        "category": "Current-data gap",
+        "detail": "Tokyo Gas confirms that the site remains an R&D base, but no public inventory found in this review confirms retention of each 2006 component, battery state of health, annual fuel/renewable mix, outage performance, or results from the 2020 VPP after launch.",
+        "sourceIds": ["b09c-yoko-current", "b09c-yoko-vpp2020"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b09c-yoko-jglobal",
+        "title": "Operational characteristics and environmental performance of a holonic energy system",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200902204445884002",
+        "publisher": "J-GLOBAL, Japan Science and Technology Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-jstage2006",
+        "title": "Study on capacity planning and optimal operation of Holonic Energy System",
+        "url": "https://www.jstage.jst.go.jp/article/jsmemecjo/2006.7/0/2006.7_175/_article/-char/en",
+        "publisher": "J-STAGE / Japan Society of Mechanical Engineers",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-iaqvec2007",
+        "title": "Holonic energy system demonstration at Tokyo Gas Yokohama Research Institute",
+        "url": "https://web.archive.org/web/20210420123702/http://www.inive.org/members_area/medias/pdf/Inive%5CIAQVEC2007%5CTsukada.pdf",
+        "publisher": "Tokyo Gas conference paper via Internet Archive",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-ieee2007",
+        "title": "Microgrid technologies and demonstration projects in Japan",
+        "url": "https://www.science.smith.edu/~jcardell/Courses/EGR325/microGrid%20Readings/uGridTech%26Proj.pdf",
+        "publisher": "IEEE / academic mirror",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-jfs",
+        "title": "Tokyo Gas starts construction of a test microgrid in Yokohama",
+        "url": "https://www.japanfs.org/sp/en/news/archives/news_id029184.html",
+        "publisher": "Japan for Sustainability",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-yoko-vpp2020",
+        "title": "Start of operation of a virtual power plant utilizing self-wheeling",
+        "url": "https://www.tokyo-gas.co.jp/news/press/20200108-01.html",
+        "publisher": "Tokyo Gas Co., Ltd.",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-current",
+        "title": "Yokohama Techno Station research and development",
+        "url": "https://www.tokyo-gas.co.jp/techno/category3/index.html",
+        "publisher": "Tokyo Gas Co., Ltd.",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-yoko-archive",
+        "title": "Yokohama Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20210420123702id_/http://microgridprojects.com/microgrid/yokohama/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "thabazimbi-chrome-mine-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record concerns CRONIMET Chrome Mining's 1 MW solar-diesel hybrid at the Thaba/Thabazimbi chrome mine, commissioned in November 2012. Legacy and secondary material often call it the Zwartkop Chrome Mine microgrid, but current environmental documentation places the CRONIMET operation northwest of the older Zwartkop mine; the old BHP Billiton Zwartkop operation was already in closure/rehabilitation work by 2006. The original battery-free system combined roughly 1.0 MWp of JinkoSolar PV, 63 SMA inverters and two 800 kVA diesel generators under an SMA Fuel Save Controller. A 500 kVA utility connection was added in April 2014, converting the original off-grid PV-diesel plant into a grid-PV-diesel hybrid and changing dispatch priorities.",
+    "status": "Commissioned in November 2012 and documented in operation through at least the first two years; a 500 kVA grid connection was integrated in April 2014. The Thaba mine remains the subject of current environmental/research work in 2024/25, and SMA continues to publish the project as a reference, but no recent generation, availability, module condition or diesel-displacement dataset was found. The mine appears active, while the present operating condition and configuration of the 2012 microgrid are unverified rather than assumed unchanged.",
+    "organizations": [
+      {
+        "name": "CRONIMET Chrome Mining SA (Pty) Ltd.",
+        "role": "Mine and plant operator; host/offtaker for the hybrid power project.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-eia2024", "b09c-thaba-amrep2025"]
+      },
+      {
+        "name": "CRONIMET Energy South Africa (Pty) Ltd.",
+        "role": "Project investor and solar-power supplier under an electricity/PPA-style arrangement with the mine.",
+        "sourceIds": ["b09c-thaba-jesa2016", "b09c-thaba-ccsi"]
+      },
+      {
+        "name": "Solea AG",
+        "role": "Planner and implementation partner for the photovoltaic plant.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-pvmag"]
+      },
+      {
+        "name": "Solea Renewables (Pty) Ltd.",
+        "role": "South African EPC/implementation partner.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-pvmag"]
+      },
+      {
+        "name": "SMA Solar Technology AG",
+        "role": "Supplier of the photovoltaic inverters and Fuel Save Controller.",
+        "sourceIds": ["b09c-thaba-sma", "b09c-thaba-sma-sheet"]
+      },
+      {
+        "name": "JinkoSolar Holding Co., Ltd.",
+        "role": "Photovoltaic-module manufacturer.",
+        "sourceIds": ["b09c-thaba-pvmag"]
+      },
+      {
+        "name": "Eskom",
+        "role": "Utility serving the 500 kVA grid connection added in April 2014.",
+        "sourceIds": ["b09c-thaba-study2015"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "PV capacity",
+        "value": "1 MW-class array. The EPC account gives 4,170 x 240 W = 1,000.8 kWp; project summaries round this to 1 MW.",
+        "sourceIds": ["b09c-thaba-pvmag", "b09c-thaba-sma-sheet"]
+      },
+      {
+        "label": "PV module-count discrepancy",
+        "value": "The EPC announcement reports 4,170 modules, while a 2014 in-service account reports 4,158 and SMA rounds to about 4,200. The 4,170 count is retained as the best construction-stage bill-of-material evidence, not presented as a verified current count.",
+        "sourceIds": ["b09c-thaba-pvmag", "b09c-thaba-modern2014", "b09c-thaba-sma"]
+      },
+      {
+        "label": "PV inverter capacity",
+        "value": "63 SMA Sunny Tripower 17000TL inverters, 1,071 kVA aggregate nameplate.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-pvmag"]
+      },
+      {
+        "label": "Original diesel plant",
+        "value": "Two 800 kVA generator sets, 1.6 MVA aggregate. The legacy record attributes them to Perkins, but the official SMA project sheet reviewed does not identify the engine/genset manufacturer.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-archive"]
+      },
+      {
+        "label": "Utility interconnection",
+        "value": "500 kVA grid connection added in April 2014; the plant was off-grid PV-diesel before this addition.",
+        "sourceIds": ["b09c-thaba-study2015"]
+      },
+      {
+        "label": "Expected/early annual PV generation",
+        "value": "Up to approximately 1.8 GWh per year at stated irradiation of 1,840 kWh/kWp.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-ccsi"]
+      },
+      {
+        "label": "Diesel displacement",
+        "value": "Approximately 450,000 litres per year against a reported pre-solar use of about 1.9 million litres per year (roughly 24% by volume).",
+        "sourceIds": ["b09c-thaba-study2015", "b09c-thaba-jesa2016"]
+      },
+      {
+        "label": "Solar share / penetration",
+        "value": "The literature reports about 30% of annual operating electricity from the 1.8 GWh solar output and a 60% PV penetration ratio. These are different metrics: the latter is a design/instantaneous capacity ratio, not a 60% annual energy share.",
+        "sourceIds": ["b09c-thaba-ccsi", "b09c-thaba-jesa2016"]
+      },
+      {
+        "label": "Carbon reduction",
+        "value": "Sources report roughly 1,200 to 2,000 tonnes CO2 avoided per year. The methodological boundary behind the difference is not sufficiently disclosed, so both estimates are preserved.",
+        "sourceIds": ["b09c-thaba-study2015", "b09c-thaba-ccsi"]
+      },
+      {
+        "label": "Project economics",
+        "value": "Reported capital cost is approximately EUR2.42 million / US$2.66 million, with about US$500,000 annual savings and a modeled 3.6-year break-even under assumptions including 12% annual diesel-price escalation. The payback is a scenario result, not audited realized performance.",
+        "sourceIds": ["b09c-thaba-jesa2016", "b09c-thaba-ccsi"]
+      },
+      {
+        "label": "Electrical storage",
+        "value": "None reported. Stability and spinning reserve were managed through diesel-generator operation and active PV curtailment/control rather than a battery.",
+        "sourceIds": ["b09c-thaba-sma", "b09c-thaba-jesa2016"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic modules",
+        "manufacturer": "JinkoSolar",
+        "model": "JKM240P-60",
+        "detail": "240 W polycrystalline modules; 4,170 were reported at completion, equivalent to 1,000.8 kWp.",
+        "sourceIds": ["b09c-thaba-pvmag"]
+      },
+      {
+        "category": "PV inverters",
+        "manufacturer": "SMA Solar Technology AG",
+        "model": "Sunny Tripower 17000TL",
+        "detail": "63 units with 1,071 kVA aggregate nameplate.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-pvmag"]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "SMA Solar Technology AG",
+        "model": "Fuel Save Controller",
+        "detail": "One controller coordinated PV output with load and diesel-generator constraints, including minimum genset loading and spinning reserve.",
+        "sourceIds": ["b09c-thaba-sma", "b09c-thaba-sma-sheet"]
+      },
+      {
+        "category": "Diesel generators",
+        "manufacturer": "Perkins (legacy attribution; not independently confirmed in the official equipment sheet)",
+        "detail": "Two 800 kVA generator sets, 1.6 MVA total.",
+        "sourceIds": ["b09c-thaba-sma-sheet", "b09c-thaba-archive"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "No battery energy-storage system is documented for the original hybrid plant.",
+        "sourceIds": ["b09c-thaba-jesa2016", "b09c-thaba-sma"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Original operating architecture",
+        "detail": "During daylight, PV displaced diesel generation while the Fuel Save Controller limited solar output as needed to preserve genset spinning reserve and safe loading. At night the original off-grid mine load was supplied by diesel. There is no battery to absorb excess PV or bridge disturbances.",
+        "sourceIds": ["b09c-thaba-sma", "b09c-thaba-sma-sheet", "b09c-thaba-jesa2016"]
+      },
+      {
+        "category": "2014 architecture change",
+        "detail": "Adding a 500 kVA Eskom connection introduced a third power source and required new technical/economic dispatch priorities among grid power, PV and diesel. Performance statements from the pre-grid phase should not be assumed to describe the later operating regime.",
+        "sourceIds": ["b09c-thaba-study2015"]
+      },
+      {
+        "category": "Deployment speed",
+        "detail": "The project was reported as moving from concept to commissioning in roughly six months, with the PV system complete at the end of November 2012.",
+        "sourceIds": ["b09c-thaba-jesa2016", "b09c-thaba-study2015"]
+      },
+      {
+        "category": "Identity correction",
+        "detail": "The operating project is consistently tied to CRONIMET's Thaba/Thabazimbi mine. A 2024 environmental notice locates it northwest of the old Zwartkop mine, while a 2006 account describes the BHP Billiton Zwartkop operation as an old mine under closure/rehabilitation. The legacy 'Zwartkop Chrome Mine' label is therefore retained only as an alias, not treated as the physical identity.",
+        "sourceIds": ["b09c-thaba-eia2024", "b09c-thaba-old-zwartkop", "b09c-thaba-archive"]
+      },
+      {
+        "category": "Current status evidence",
+        "detail": "2024 environmental documentation and a research case-study platform updated in 2025 confirm continuing activity/research at the Thaba Chromium Mine, but neither provides recent microgrid output or condition data. The SMA reference page confirms the historical installation, not present-day availability.",
+        "sourceIds": ["b09c-thaba-eia2024", "b09c-thaba-amrep2025", "b09c-thaba-sma"]
+      },
+      {
+        "category": "Outstanding data gaps",
+        "detail": "No public post-2015 record found in this review reports annual PV yield, diesel and grid shares, outages, inverter replacements, module degradation, controller upgrades, curtailment, mine-load growth, PPA status or whether the original two gensets remain the active fleet.",
+        "sourceIds": ["b09c-thaba-study2015", "b09c-thaba-amrep2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b09c-thaba-sma",
+        "title": "PV diesel hybrid system for a mine in Thabazimbi, South Africa",
+        "url": "https://www.sma.de/en/references/thabazimbi-south-africa",
+        "publisher": "SMA Solar Technology AG",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-sma-sheet",
+        "title": "Thabazimbi reference project data sheet",
+        "url": "https://www.sma.de/fileadmin/content/global/references/africa/Thabazimbi/REFTHABAZIMBI-AEN131110.pdf?v=1652968747",
+        "publisher": "SMA Solar Technology AG",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-pvmag",
+        "title": "Solea Renewables completes 1 MW diesel/PV hybrid plant",
+        "url": "https://www.pv-magazine.com/2012/12/06/solea-renewables-completes-1mw-dieselpv-hybrid-plant_10009502/",
+        "publisher": "pv magazine",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-thaba-modern2014",
+        "title": "Renewables come of age in the African mining sector",
+        "url": "https://www.crown.co.za/reader/modernmining/2014/April/files/assets/common/downloads/publication.pdf",
+        "publisher": "Modern Mining",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-thaba-study2015",
+        "title": "Solar, energy efficiency and load shifting at Thaba mine",
+        "url": "https://s3c84f35fd1174efa.jimcontent.com/download/version/1674467770/module/13505811524/name/2015SEP_Study_Solar_EnergyEfficiency_LoadShifting.pdf",
+        "publisher": "CRONIMET / project study",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-jesa2016",
+        "title": "Renewable energy projects at mine sites in South Africa",
+        "url": "https://scielo.org.za/scielo.php?pid=S1021-447X2016000200001&script=sci_arttext",
+        "publisher": "Journal of Energy in Southern Africa",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-ccsi",
+        "title": "The renewable power of the mine: Accelerating renewable energy integration",
+        "url": "https://minsus.net/mineria-sustentable/wp-content/uploads/2020/05/PDF-3418-CCSI-RE-and-mining-report-09-lr-reduced-optmized-07-no-links.pdf",
+        "publisher": "Columbia Center on Sustainable Investment",
+        "kind": "secondary"
+      },
+      {
+        "id": "b09c-thaba-eia2024",
+        "title": "Thaba Chrome Mine proposed expansion: background information document",
+        "url": "https://altavandykenvironmental.co.za/wp-content/uploads/2024/03/Appendix-C4-BID.pdf",
+        "publisher": "Alta van Dyk Environmental Consultants",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-amrep2025",
+        "title": "AMREP research case study: Thaba Chromium Mine",
+        "url": "https://amrep.gfz-potsdam.de/index.html",
+        "publisher": "GFZ Helmholtz Centre for Geosciences",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-old-zwartkop",
+        "title": "BHP Billiton and Northam Platinum jointly renovate school near old Zwartkop mine",
+        "url": "https://www.northam.co.za/investors-and-media/announcements/2006/908-bhp-billiton-and-northam-platinum-mine-jointly-renovate-school-in-the-limpopo-province-2006-10-13",
+        "publisher": "Northam Platinum",
+        "kind": "primary"
+      },
+      {
+        "id": "b09c-thaba-archive",
+        "title": "Thabazimbi/Zwartkop Chrome Mine Microgrid - archived legacy record",
+        "url": "https://web.archive.org/web/20200706000932id_/http://microgridprojects.com/microgrid/thabazimbi-chrome-mine-microgrid/",
+        "publisher": "Microgrid Projects via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  }
+}

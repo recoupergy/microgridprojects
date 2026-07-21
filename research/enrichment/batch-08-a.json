@@ -247,7 +247,7 @@
       {"id": "sapsi-apjjf", "title": "South Korea's energy-independent island program", "url": "https://apjjf.org/2016/24/kim", "publisher": "The Asia-Pacific Journal", "kind": "secondary"},
       {"id": "sapsi-economics-review", "title": "Review of Korea's Energy Independent Island projects", "url": "https://www.ijsgce.com/uploadfile/2021/1208/20211208111324806.pdf", "publisher": "International Journal of Smart Grid and Clean Energy", "kind": "primary"},
       {"id": "sapsi-biennale", "title": "Sapsi-do island profile", "url": "https://www.islandbiennale.or.kr/eng", "publisher": "Boryeong Island Biennale", "kind": "primary"},
-      {"id": "sapsi-archive", "title": "Sapsi Island microgrid project record", "url": "https://microgridprojects.com/microgrid/sapsi-island/", "publisher": "Microgrid Projects", "kind": "secondary"}
+      {"id": "sapsi-archive", "title": "Sapsi Island microgrid project record", "url": "https://web.archive.org/web/20200706000858id_/http://microgridprojects.com/microgrid/sapsi-island/", "publisher": "Microgrid Projects", "kind": "archive"}
     ]
   },
   "santa-rita-jail-microgrid": {

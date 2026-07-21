@@ -1,0 +1,341 @@
+{
+  "coral-bay-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Coral Bay is a real isolated community power system operated by Horizon Power. It opened in 2007 as a wind-diesel microgrid with three tilt-up wind turbines and a short-duration ABB PowerStore flywheel; in 2021 Pacific Energy's Hybrid Systems Australia added a 576 kW/343 kWh lithium-ion BESS and controls capable of shutting all diesel units down when wind is sufficient. Horizon Power now describes three 275 kW turbines, multiple low-load diesel generators, the BESS and advanced controls, with wind supplying about 45% of annual electricity.",
+    "status": "Operational, but entering a major renewal cycle. Horizon Power says the ageing wind turbines are approaching end of life and is developing a Future Energy System replacement. Its published program places market engagement in 2025-26, procurement in 2026-27, delivery in 2027-29 and completion around late 2029. No replacement technology, capacity, contractor or investment decision had been announced by the research cutoff, so the future system must not be counted as installed.",
+    "organizations": [
+      {"name":"Horizon Power","role":"Owner/operator of the isolated electricity system and developer of the current replacement program.","sourceIds":["coral-horizon-current","coral-wa-launch"]},
+      {"name":"Verve Energy","role":"Historical delivery partner for the 2007 wind-diesel project.","sourceIds":["coral-wa-launch"]},
+      {"name":"Pacific Energy / Hybrid Systems Australia","role":"2021 lithium-ion BESS, microgrid-control and integration provider.","sourceIds":["coral-pacific-bess"]},
+      {"name":"ABB","role":"Supplier/integrator of the original PowerStore flywheel and microgrid control architecture.","sourceIds":["coral-abb-brochure","coral-archive"]},
+      {"name":"Vergnet","role":"Supplier of the original tilt-up wind turbines; current Horizon material does not publish the model.","sourceIds":["coral-archive"]}
+    ],
+    "specifications": [
+      {"label":"Wind generation","value":"Current owner rating: three 275 kW turbines, 825 kW aggregate. Older documents disagree—ABB says three 200 kW units and the recovered project record says three 225 kW units—so 600/675 kW figures should be treated as historical reporting bases rather than current nameplate.","sourceIds":["coral-horizon-current","coral-wa-launch","coral-abb-brochure","coral-archive"]},
+      {"label":"2021 battery","value":"576 kW/343 kWh lithium-ion BESS, approximately 36 minutes at full rated power before losses/reserves. Battery-cell and PCS models are not disclosed.","sourceIds":["coral-pacific-bess"]},
+      {"label":"Historical diesel plant","value":"The recovered technical record identifies seven Detroit Series 60 low-load diesel sets at 320 kW each (2.24 MW aggregate). Horizon's current page confirms multiple low-load diesels but not count, maker or present aggregate rating.","sourceIds":["coral-archive","coral-horizon-current"]},
+      {"label":"Historical flywheel","value":"ABB PowerStore rated 500 kW and 18 MW-seconds (18 MJ, equivalent to only 5 kWh). The legacy database's '500 kWh flywheel' is a unit error: 500 kW is power, not stored energy.","sourceIds":["coral-archive","coral-abb-brochure"]},
+      {"label":"Load","value":"Historical peak demand about 600 kW and minimum about 200 kW; no current peak or annual demand is public.","sourceIds":["coral-archive"]},
+      {"label":"Energy mix","value":"Horizon reports wind provides approximately 45% of annual electricity. ABB's older case study reported instantaneous wind shares up to 95%, more than 80% for roughly one-third of the year and above 90% for about 900 hours/year; these are not annual energy shares or current BESS-era measurements.","sourceIds":["coral-horizon-current","coral-abb-brochure"]}
+    ],
+    "equipment": [
+      {"category":"Wind turbines","manufacturer":"Vergnet","detail":"Three tilt-up machines; Horizon currently rates each at 275 kW, while older sources use lower ratings and do not provide a reliable model designation.","sourceIds":["coral-horizon-current","coral-archive"]},
+      {"category":"Battery energy storage","manufacturer":"Pacific Energy / Hybrid Systems Australia","detail":"576 kW/343 kWh lithium-ion system commissioned in 2021 with plant controls; cell and converter OEMs were not published.","sourceIds":["coral-pacific-bess"]},
+      {"category":"Flywheel (historical)","manufacturer":"ABB","model":"PowerStore","detail":"500 kW/18 MW-seconds high-power flywheel used in the original configuration. The 2021 battery superseded its grid-forming/high-renewables role, but reviewed sources do not explicitly document disposal date.","sourceIds":["coral-abb-brochure","coral-archive","coral-pacific-bess"]},
+      {"category":"Diesel generation","manufacturer":"Detroit Diesel","model":"Series 60","detail":"Seven 320 kW low-load sets in the recovered historical record; present fleet configuration has not been republished by Horizon.","sourceIds":["coral-archive"]}
+    ],
+    "technicalDetails": [
+      {"category":"Diesel-off operation","detail":"The 2021 BESS and controls can turn all diesel generators off during sufficient renewable production and automatically restart/reconnect them as wind falls.","sourceIds":["coral-pacific-bess"]},
+      {"category":"Original architecture","detail":"ABB's flywheel and distributed control system smoothed wind variability and supplied fast frequency/voltage support while low-load diesels supplied longer-duration balancing.","sourceIds":["coral-abb-brochure"]},
+      {"category":"Renewal risk","detail":"The three wind turbines are ageing and Horizon is planning their replacement. Published material defines a staged procurement program but does not yet establish the replacement resource mix or whether existing BESS/diesels will be retained.","sourceIds":["coral-horizon-current"]},
+      {"category":"Data-quality warning","detail":"Capacity discrepancies and the flywheel unit error come from historical project literature. Current-owner ratings are preferred, and no unsupported conversion of MW-seconds to kWh should be retained.","sourceIds":["coral-horizon-current","coral-abb-brochure","coral-archive"]}
+    ],
+    "sources": [
+      {"id":"coral-horizon-current","title":"Coral Bay Future Energy System Project","url":"https://www.horizonpower.com.au/your-community/getting-future-ready/coral-bay-future-energy-system-project/","publisher":"Horizon Power","kind":"primary"},
+      {"id":"coral-wa-launch","title":"WA first for Coral Bay","url":"https://www.wa.gov.au/government/media-statements/Carpenter%20Labor%20Government/WA-first-for-Coral-Bay-20070819","publisher":"Government of Western Australia","kind":"primary"},
+      {"id":"coral-pacific-bess","title":"Coral Bay battery energy storage system","url":"https://pacificenergy.com.au/wp-content/uploads/2022/03/2021-Coral-Bay.pdf","publisher":"Pacific Energy / Hybrid Systems Australia","kind":"primary"},
+      {"id":"coral-abb-brochure","title":"Integrating renewables into microgrids — Coral Bay case","url":"https://resources.news.e.abb.com/attachments/published/13748/en-US/DB030CBB625F/Brochure-Integrating-renewables-into-microgrids.pdf","publisher":"ABB","kind":"primary"},
+      {"id":"coral-archive","title":"Recovered Coral Bay Microgrid project record","url":"https://web.archive.org/web/20210420202327id_/http://microgridprojects.com/microgrid/coral-bay-microgrid/","publisher":"Internet Archive / Microgrid Projects","kind":"archive"}
+    ]
+  },
+  "de-grussa-copper-mine-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "DeGrussa was an off-grid mine hybrid combining 10.6 MWac of single-axis-tracking PV, a 6 MW/1.5 MWh battery and an existing 19 MW diesel station for an 11–13 MW continuous mine load. Commissioned in June 2016, it produced roughly 20.4 GWh/year and met close to 20% of annual mine electricity, with expected savings around five million litres of diesel and 12,000 tonnes CO2 each year. It was a mine-life asset, not a permanent community power system.",
+    "status": "Decommissioned. Sandfire extracted the last stoping ore on 5 October 2022 and moved DeGrussa into care, maintenance and rehabilitation. Neoen then began dismantling the solar-battery plant, and Westforce reports the removal and site rehabilitation completed in 2024. The former project's capacity must no longer be shown as operational; resale/reuse destinations for individual panels, inverters, transformers and battery equipment were not publicly confirmed.",
+    "organizations": [
+      {"name":"Sandfire Resources","role":"Mine owner and solar-power purchaser/offtaker; now responsible for mine closure and rehabilitation.","sourceIds":["degrussa-arena","degrussa-sandfire-rampdown"]},
+      {"name":"DeGrussa Solar Project Pty Ltd / Neoen","role":"Solar-battery project company and owner during operation; initiated dismantling after mine closure.","sourceIds":["degrussa-arena","degrussa-pv-mag-decommission"]},
+      {"name":"juwi Renewable Energy","role":"Hybrid developer, EPC/integration contractor and operating-knowledge author.","sourceIds":["degrussa-arena-report","degrussa-juwi"]},
+      {"name":"Kalgoorlie Power Systems","role":"Owner/operator of the pre-existing 19 MW diesel power station.","sourceIds":["degrussa-arena"]},
+      {"name":"Australian Renewable Energy Agency","role":"Provided A$20.9 million support and required project knowledge sharing.","sourceIds":["degrussa-arena"]},
+      {"name":"OTOC Limited","role":"Construction partner for the original solar project.","sourceIds":["degrussa-arena"]},
+      {"name":"Westforce Construction","role":"Contractor for 2024 PV/BESS dismantling, recycling preparation and 240,000 m² site rehabilitation.","sourceIds":["degrussa-westforce"]},
+      {"name":"ABB / ComAp","role":"Battery-control and InteliSys communications-bridge suppliers named in the commissioning record.","sourceIds":["degrussa-arena-report"]}
+    ],
+    "specifications": [
+      {"label":"Solar PV","value":"10.6 MWac on single-axis trackers using 34,080 modules; expected/reported output approximately 20.4 GWh/year.","sourceIds":["degrussa-arena","degrussa-juwi","degrussa-westforce"]},
+      {"label":"Battery","value":"Commissioning/project records describe 6 MW/1.5 MWh lithium-ion storage (15 minutes at full power). Westforce's decommissioning page calls the removed BESS 4 MW, likely a different battery-versus-converter reporting basis; the discrepancy is unresolved.","sourceIds":["degrussa-arena-report","degrussa-archive","degrussa-westforce"]},
+      {"label":"Diesel generation","value":"19 MW existing isolated-mine station operated by Kalgoorlie Power Systems.","sourceIds":["degrussa-arena"]},
+      {"label":"Mine load","value":"Approximately 11–13 MW continuous during the operating-mine period.","sourceIds":["degrussa-arena-report"]},
+      {"label":"Battery interconnection","value":"One 5 MVA battery transformer documented in the integration report.","sourceIds":["degrussa-arena-report"]},
+      {"label":"Cost and support","value":"Approximately A$40 million total project cost, including A$20.9 million ARENA support. These are original-development values, not dismantling costs.","sourceIds":["degrussa-arena"]},
+      {"label":"Energy mix and savings","value":"Solar supplied nearly 20% of annual mine electricity; expected annual displacement was about five million litres of diesel and 12,000 tonnes CO2. These operating-period figures ended with mine/project closure.","sourceIds":["degrussa-arena","degrussa-juwi","degrussa-pv-mag-decommission"]},
+      {"label":"Decommissioning quantities","value":"Westforce reports removing 34,080 panels, about 850 tonnes of steel and 30 tonnes of copper, then rehabilitating approximately 240,000 m² in 2024.","sourceIds":["degrussa-westforce"]}
+    ],
+    "equipment": [
+      {"category":"PV field","detail":"34,080 modules on single-axis trackers; module and inverter models were not identified in the reviewed authoritative sources.","sourceIds":["degrussa-arena","degrussa-westforce"]},
+      {"category":"Battery and PCS","manufacturer":"ABB","detail":"6 MW/1.5 MWh project rating; ABB is explicitly named for the battery-control interface, but the cell manufacturer and exact PCS product are not established by the knowledge report.","sourceIds":["degrussa-arena-report","degrussa-archive"]},
+      {"category":"Controller communications bridge","manufacturer":"ComAp","model":"InteliSys Bridge","detail":"Connected the plant-control layers; obsolete bridge firmware caused an intermittent commissioning communications fault.","sourceIds":["degrussa-arena-report"]},
+      {"category":"Hybrid controls","manufacturer":"juwi","detail":"Coordinated diesel, PV, battery reserve, voltage/reactive-power and ramp-rate limits.","sourceIds":["degrussa-arena-report"]}
+    ],
+    "technicalDetails": [
+      {"category":"Operating reserve","detail":"The control philosophy maintained reserve equal to 1 MW plus 85% of instantaneous PV output across battery and diesel resources.","sourceIds":["degrussa-arena-report"]},
+      {"category":"Battery services","detail":"Ramp-rate control, frequency response, reactive-power/voltage support and spinning reserve allowed high PV penetration on the isolated mine network.","sourceIds":["degrussa-arena-report"]},
+      {"category":"Commissioning lesson","detail":"A field communications failure was traced to out-of-date ComAp InteliSys Bridge firmware, an unusually specific public integration lesson.","sourceIds":["degrussa-arena-report"]},
+      {"category":"Lifecycle outcome","detail":"The plant fulfilled its intended mine-life role for roughly seven years. Dismantling after ore depletion is not evidence of technical failure, but the lack of a post-mine load made continued operation at the site uneconomic.","sourceIds":["degrussa-sandfire-rampdown","degrussa-pv-mag-decommission","degrussa-westforce"]}
+    ],
+    "sources": [
+      {"id":"degrussa-arena","title":"DeGrussa Solar Project","url":"https://arena.gov.au/projects/degrussa-solar-project/","publisher":"Australian Renewable Energy Agency","kind":"primary"},
+      {"id":"degrussa-arena-report","title":"DeGrussa Solar Project Knowledge Sharing Report","url":"https://arena.gov.au/assets/2017/05/juwi_ARENA-DeGrussa-Knowledge-Sharing-Reports_170309_Rev2.pdf","publisher":"juwi / Australian Renewable Energy Agency","kind":"primary"},
+      {"id":"degrussa-juwi","title":"Solar power plant and battery storage in one — DeGrussa","url":"https://www.juwi.com/hybrid/solutions-with-storage-technology/solar-hybrid-power-plant-degrussa","publisher":"juwi","kind":"primary"},
+      {"id":"degrussa-sandfire-rampdown","title":"DeGrussa ramp-down","url":"https://www.sandfire.com.au/2022/10/06/degrussa-ramp-down/","publisher":"Sandfire Resources","kind":"primary"},
+      {"id":"degrussa-westforce","title":"DeGrussa BESS and solar plant decommissioning","url":"https://westforce.com.au/our-projects/degrussa-bess-and-solar-plant-decommissioning/","publisher":"Westforce Construction","kind":"primary"},
+      {"id":"degrussa-pv-mag-decommission","title":"DeGrussa solar and battery hub labelled brilliant success as decommissioning begins","url":"https://www.pv-magazine-australia.com/2024/01/18/degrussa-solar-and-battery-hub-labelled-brilliant-success-as-decommissioning-begins/","publisher":"pv magazine Australia","kind":"secondary"},
+      {"id":"degrussa-archive","title":"Recovered DeGrussa Copper Mine Microgrid project record","url":"https://web.archive.org/web/20200705235934id_/http://microgridprojects.com/microgrid/de-grussa-copper-mine-microgrid/","publisher":"Internet Archive / Microgrid Projects","kind":"archive"}
+    ]
+  },
+  "denver-international-airport": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy title is misleading: this is the Peña Station NEXT microgrid at 61st and Peña, an energy district next to Denver International Airport, not an airport-terminal-wide island. The core installation combines a 1.6 MWdc/1.3 MWac airport parking-canopy array, a 259 kWdc/200 kWac Panasonic-rooftop array and Xcel Energy's 1 MW/2 MWh lithium-ion battery. The islanding demonstration initially protects Panasonic's building while also testing feeder-level solar integration and grid services.",
+    "status": "Operational as a district/test-bed asset: Peña Station NEXT's current site says the Xcel-owned battery and solar form an on-site microgrid. The original utility demonstration had a two-year pilot period, but no current public report gives battery state of health, islanding-event duration, annual solar production or whether every original research use case remains enabled. Denver airport's separate 2025 2.2 MW/4.4 MWh AGTS backup battery is a different project and is excluded.",
+    "organizations": [
+      {"name":"Public Service Company of Colorado / Xcel Energy","role":"Battery owner/operator, serving utility and microgrid demonstration lead.","sourceIds":["denver-xcel-fact","denver-cec-study"]},
+      {"name":"Panasonic Enterprise Solutions","role":"Anchor tenant, rooftop-PV host and initially islanded building/load.","sourceIds":["denver-xcel-fact","denver-cec-study"]},
+      {"name":"Denver International Airport / City and County of Denver","role":"Parking-lot/solar-canopy host, land/infrastructure partner and airport capital contributor.","sourceIds":["denver-airport-parking","denver-cec-study"]},
+      {"name":"L.C. Fulenwider","role":"Peña Station NEXT master developer and public-private consortium participant.","sourceIds":["denver-pena-current","denver-cec-study"]},
+      {"name":"Younicos","role":"Supplier/integrator of the 1 MW/2 MWh battery and control platform.","sourceIds":["denver-cec-study"]},
+      {"name":"Namasté Solar / SunPower","role":"PV construction and equipment partners for the parking canopy and rooftop systems.","sourceIds":["denver-airport-parking","denver-namaste"]},
+      {"name":"National Renewable Energy Laboratory","role":"Cooperative research partner for the wider 400-acre energy-district master plan and modeling.","sourceIds":["denver-nrel"]}
+    ],
+    "specifications": [
+      {"label":"Parking-canopy PV","value":"1.6 MWdc/approximately 1.3 MWac over 609 parking spaces at the airport-owned 61st and Peña lot.","sourceIds":["denver-airport-parking","denver-cec-study","denver-namaste"]},
+      {"label":"Panasonic rooftop PV","value":"259 kWdc/200 kWac. Combined with the carport, the core solar portfolio is about 1.86 MWdc/1.5 MWac; the legacy 1.3 MW figure captures only the canopy's AC rating.","sourceIds":["denver-cec-study","denver-namaste"]},
+      {"label":"Battery","value":"1 MW/2 MWh lithium-ion, two hours at rated output; cell chemistry subtype and cell manufacturer were not disclosed in reviewed public material.","sourceIds":["denver-xcel-fact","denver-cec-study"]},
+      {"label":"Demonstration scale","value":"CEC's case study totals the PV and battery power resources at approximately 2.86 MW on a nameplate-sum basis. This is not average generation or airport load served.","sourceIds":["denver-cec-study"]},
+      {"label":"Cost","value":"Approximately US$10.3 million for the district demonstration excluding Panasonic's rooftop system; Denver separately reported US$4.5 million airport capital for the parking facility, which included 800 spaces and related infrastructure.","sourceIds":["denver-cec-study","denver-airport-parking"]},
+      {"label":"Resilience reserve","value":"The study reserved about 20% of battery capacity for approximately four hours of Panasonic-building backup; the remainder supported grid/market use cases.","sourceIds":["denver-cec-study"]},
+      {"label":"Energy mix","value":"Solar, stored solar/grid energy and normal Xcel feeder supply. No dedicated fossil generator is identified in the core Peña microgrid, and no current annual renewable fraction is public.","sourceIds":["denver-xcel-fact","denver-cec-study"]}
+    ],
+    "equipment": [
+      {"category":"Battery energy storage","manufacturer":"Younicos","detail":"1 MW/2 MWh lithium-ion BESS and dispatch/control system owned by Xcel; battery-cell OEM and current usable capacity are not public.","sourceIds":["denver-cec-study","denver-xcel-fact"]},
+      {"category":"Solar parking canopy","manufacturer":"SunPower","detail":"Approximately 1.6 MWdc over 609 of the lot's 800 parking spaces; Namasté Solar participated in construction.","sourceIds":["denver-airport-parking","denver-namaste"]},
+      {"category":"Rooftop PV","detail":"259 kWdc on Panasonic's building; module/inverter model detail is not disclosed in the reviewed sources.","sourceIds":["denver-cec-study","denver-namaste"]},
+      {"category":"Electric-vehicle charging","detail":"Eleven Level 1 charging stations were included at the airport parking lot. They are loads/amenities, not generation capacity.","sourceIds":["denver-airport-parking"]}
+    ],
+    "technicalDetails": [
+      {"category":"Demonstrated use cases","detail":"PV ramp smoothing and voltage management, feeder/system peak reduction, energy arbitrage, frequency/regulation service and islanding of the Panasonic building.","sourceIds":["denver-xcel-fact","denver-cec-study"]},
+      {"category":"Grid context","detail":"The test feeder was described at roughly 30% solar penetration, making distribution-voltage and variability management central research objectives.","sourceIds":["denver-cec-study"]},
+      {"category":"Delivery speed","detail":"The storage/control core was commissioned in roughly 20 weeks under the original pilot, a notable public-private deployment result.","sourceIds":["denver-cec-study"]},
+      {"category":"Boundary warning","detail":"The surrounding Peña Station NEXT district is approximately 400 acres, but the cited evidence does not show that every future building can island. Likewise, airport ownership of the parking canopy does not make this a whole-airport microgrid.","sourceIds":["denver-nrel","denver-pena-current","denver-airport-parking"]},
+      {"category":"Separate airport asset","detail":"DEN later announced a separate 2.2 MW/4.4 MWh battery to back up the Automated Guideway Transit System. It should not be added to Peña Station's capacity.","sourceIds":["denver-airport-2025"]}
+    ],
+    "sources": [
+      {"id":"denver-xcel-fact","title":"Panasonic Peña Station NEXT microgrid fact sheet","url":"https://www.xcelenergy.com/staticfiles/xe-responsive/Energy%20Portfolio/CO-Panasonic-Fact-Sheet.pdf","publisher":"Xcel Energy","kind":"primary"},
+      {"id":"denver-airport-parking","title":"Denver International Airport opens 61st and Peña parking lot","url":"https://www.flydenver.com/press-release/denver-international-airport-adds-800-new-parking-spaces-with-the-opening-of-61stand-pena-parking-lot/","publisher":"Denver International Airport","kind":"primary"},
+      {"id":"denver-pena-current","title":"Peña Station NEXT vision","url":"https://penastationnext.com/vision/","publisher":"Peña Station NEXT","kind":"primary"},
+      {"id":"denver-cec-study","title":"Peña Station NEXT Microgrid case study","url":"https://www.energy.ca.gov/sites/default/files/2021-06/CEC-500-2018-022.pdf","publisher":"California Energy Commission / Navigant","kind":"primary"},
+      {"id":"denver-namaste","title":"Peña Station solar portfolio","url":"https://www.namastesolar.com/portfolio/pena-station/","publisher":"Namasté Solar","kind":"primary"},
+      {"id":"denver-nrel","title":"Peña Station NEXT Energy District Master Plan cooperative research","url":"https://research-hub.nrel.gov/en/publications/pena-station-next-energy-district-master-plan-cooperative-researc/","publisher":"National Renewable Energy Laboratory","kind":"primary"},
+      {"id":"denver-airport-2025","title":"DEN on track to meet sustainability initiatives","url":"https://www.flydenver.com/press-release/den-on-track-to-meet-sustainability-initiatives/","publisher":"Denver International Airport","kind":"primary"}
+    ]
+  },
+  "deokjeok-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "The legacy record conflates three different Deokjeok Island efforts: the physical KEPCO island grid, a large KT-led 'energy-independent island' proposal announced in 2015, and a tiny KICT research hybrid at Urumsil village. The last detailed whole-island inventory found describes a diesel-dominant 6.9 kV system with 2.9 MW diesel, 169 kW PV, 63 kW wind and no battery. The proposed 500 kW PV/1.5 MW wind/6 MWh ESS project did not progress after a tariff-rule change damaged its economics.",
+    "status": "Mixed identity, with the large project stopped before construction. Reporting in 2018 said none of the five 2015 Korean energy-independent-island projects, including Deokjeok, had formed an SPC or advanced after the 2016 tariff change. A 2021 peer-reviewed study provides the latest authoritative physical inventory of the existing diesel/renewable grid, while the small Urumsil research installation was monitored in 2016-17. No source through the research cutoff verifies that the proposed utility-scale ESS was built or that the experimental village equipment still operates.",
+    "organizations": [
+      {"name":"Korea Electric Power Corporation (KEPCO)","role":"Operator/utility associated with the island's existing isolated distribution and diesel system.","sourceIds":["deokjeok-grid-paper"]},
+      {"name":"KT consortium","role":"Selected private consortium for the 2015 energy-independent-island proposal; the project later stalled before an SPC/build.","sourceIds":["deokjeok-korea-policy","deokjeok-incheon-plan","deokjeok-stall-report"]},
+      {"name":"Ministry of Trade, Industry and Energy","role":"National program sponsor that selected the Deokjeok consortium.","sourceIds":["deokjeok-korea-policy"]},
+      {"name":"Incheon Metropolitan City / Ongjin County","role":"Local-government planning and community partners for the proposed island program and research activities.","sourceIds":["deokjeok-incheon-plan","deokjeok-kict-study"]},
+      {"name":"Korea Institute of Civil Engineering and Building Technology (KICT)","role":"Developer/researcher of the separate small Urumsil village hybrid renewable system.","sourceIds":["deokjeok-kict-study"]}
+    ],
+    "specifications": [
+      {"label":"Existing whole-island diesel","value":"2.9 MW from three 300 kW and four 500 kW generators.","sourceIds":["deokjeok-grid-paper"]},
+      {"label":"Existing whole-island renewables","value":"169 kW PV plus 63 kW wind (eleven 3 kW and three 10 kW turbines), with no ESS in the surveyed system.","sourceIds":["deokjeok-grid-paper"]},
+      {"label":"Existing network and load","value":"6.9 kV, 60 Hz isolated grid with two radial feeders and normally open ties; approximately 1,900 kW maximum, 1,190 kW average and 700 kW minimum load, averaging 28,554 kWh/day in the study data.","sourceIds":["deokjeok-grid-paper"]},
+      {"label":"Existing energy mix","value":"About 3% annual renewable penetration in the study, with roughly 2.56 million litres/year diesel consumption and diesel providing the overwhelming majority of electricity.","sourceIds":["deokjeok-grid-paper"]},
+      {"label":"Unbuilt 2015 proposal","value":"Planned 500 kW PV, 1.5 MW wind and 6 MWh ESS over 2016-18 at a projected KRW17.8 billion. These are proposal values, not installed equipment.","sourceIds":["deokjeok-incheon-plan","deokjeok-stall-report"]},
+      {"label":"Urumsil research hybrid","value":"Components described as two 1.5 kW vertical-axis wind turbines plus 3 kW PV, a 6 kW arithmetic total, with battery storage and pumped-water loads. The same publication inconsistently calls it 24 kW in one passage; no defensible 24 kW equipment breakdown is given.","sourceIds":["deokjeok-kict-study"]}
+    ],
+    "equipment": [
+      {"category":"Whole-island diesel fleet","detail":"Three 300 kW and four 500 kW generator sets; engine/generator OEMs and models are not given in the grid study.","sourceIds":["deokjeok-grid-paper"]},
+      {"category":"Whole-island PV and wind","detail":"169 kW PV and fourteen small wind turbines totaling 63 kW; exact module, turbine and inverter models are undisclosed.","sourceIds":["deokjeok-grid-paper"]},
+      {"category":"Urumsil wind turbines","detail":"Two 1.5 kW Darrieus vertical-axis turbines using NACA0015 blades; 3 m blade length, 2 m rotor diameter, 3 m/s cut-in, 13.5 m/s rated wind speed and 300 rpm rated speed.","sourceIds":["deokjeok-kict-study"]},
+      {"category":"Urumsil PV/storage","detail":"3 kW PV tilted 30 degrees, battery bank and inverter feeding AC loads; battery chemistry, kWh and equipment vendors were not disclosed.","sourceIds":["deokjeok-kict-study"]},
+      {"category":"Proposed equipment","detail":"The planned 1.5 MW wind/500 kW PV/6 MWh ESS package never reached a verified installation; no final OEM selection should be inferred.","sourceIds":["deokjeok-incheon-plan","deokjeok-stall-report"]}
+    ],
+    "technicalDetails": [
+      {"category":"Physical grid topology","detail":"Buk-ri and Seopo-ri radial feeders have normally open interconnection points; modeling evaluated sectionalizing and optimal renewables/storage, but modeled configurations are not as-built assets.","sourceIds":["deokjeok-grid-paper"]},
+      {"category":"Project failure mechanism","detail":"A 2016 change linked island electricity purchase prices to oil prices rather than a fixed tariff, undermining private-project economics. By late 2018 the selected Deokjeok consortium had not established an SPC or proceeded.","sourceIds":["deokjeok-stall-report"]},
+      {"category":"Urumsil control","detail":"Wind acted as the master renewable source; power flowed through battery/inverter stages to village experimental loads including pumping, and the research monitored performance in 2016-17.","sourceIds":["deokjeok-kict-study"]},
+      {"category":"Conflation warning","detail":"The grid paper's optimized high-renewables scenarios are simulations, not construction evidence. The archive's NEDO/geothermal attribution is also unsupported by the project-specific sources reviewed and should not be presented as installed electric generation.","sourceIds":["deokjeok-grid-paper","deokjeok-archive"]}
+    ],
+    "sources": [
+      {"id":"deokjeok-grid-paper","title":"Optimal Operation of an Islanded Microgrid with Renewable Generation and Energy Storage","url":"https://www.mdpi.com/1996-1073/14/2/457","publisher":"Energies","kind":"primary"},
+      {"id":"deokjeok-korea-policy","title":"Energy self-reliant island private operators selected","url":"https://www.korea.kr/briefing/policyBriefingView.do?newsId=148797749","publisher":"Government of the Republic of Korea","kind":"primary"},
+      {"id":"deokjeok-incheon-plan","title":"Incheon energy-independent island implementation plan","url":"https://www.incheon.go.kr/data/editor/20160107/20160107132959.pdf","publisher":"Incheon Metropolitan City","kind":"primary"},
+      {"id":"deokjeok-stall-report","title":"Energy-independent island projects lose momentum after tariff change","url":"https://www.ajunews.com/view/20181219180431362","publisher":"Aju Business Daily","kind":"secondary"},
+      {"id":"deokjeok-kict-study","title":"Hybrid Renewable Energy System in Urumsil Village, Deokjeok Island","url":"https://www.intechopen.com/chapters/66174","publisher":"IntechOpen / KICT researchers","kind":"primary"},
+      {"id":"deokjeok-archive","title":"Recovered Deokjeok Island project record","url":"https://web.archive.org/web/20200705235939id_/http://microgridprojects.com/microgrid/deokjeok-island/","publisher":"Internet Archive / Microgrid Projects","kind":"archive"}
+    ]
+  },
+  "dharnai-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Greenpeace commissioned Dharnai's 100 kW solar mini-grid in 2014 as a demonstration for a Bihar village that had lacked reliable grid power. The design split 70 kW among homes, shops and community services and 30 kW among irrigation pumps, with battery-backed distribution and streetlights. It delivered meaningful early social benefits, but it was not durable: grid electricity arrived in 2016, batteries failed after roughly three years, tariffs and load limits were unattractive, and maintenance and collections collapsed.",
+    "status": "Defunct as a mini-grid. Field reporting in 2021 found the power station used as a makeshift cattle shed and the PV, CCTV and distribution infrastructure idle; a 2026 sector report classifies the project as failed by 2018. A few stand-alone daytime irrigation pumps were still working in 2021 because they did not depend on the failed battery bank, but that does not make the central mini-grid operational.",
+    "organizations": [
+      {"name":"Greenpeace India","role":"Project initiator, principal funder, public campaign lead and commissioning reporter.","sourceIds":["dharnai-greenpeace-launch","dharnai-greenpeace-press"]},
+      {"name":"BASIX","role":"Livelihood/community implementation and operating partner.","sourceIds":["dharnai-greenpeace-launch","dharnai-mongabay"]},
+      {"name":"Centre for Environment and Energy Development (CEED)","role":"Community mobilization and local implementation partner.","sourceIds":["dharnai-greenpeace-launch","dharnai-mongabay"]},
+      {"name":"Kripa Solar","role":"Solar installation contractor identified at project foundation.","sourceIds":["dharnai-greenpeace-foundation"]},
+      {"name":"Village Electricity Committee","role":"Local governance, tariff/collection and community interface described in post-project research.","sourceIds":["dharnai-apu-study"]}
+    ],
+    "specifications": [
+      {"label":"Solar PV","value":"100 kW total: 70 kW for household/commercial/community demand and 30 kW allocated to irrigation pumping.","sourceIds":["dharnai-greenpeace-launch"]},
+      {"label":"PV module count","value":"Greenpeace's retrospective reports 280 panels; module wattage, manufacturer, inverter model and actual AC capacity were not published.","sourceIds":["dharnai-greenpeace-germany"]},
+      {"label":"Initial service scope","value":"Launch reporting cites more than 450 households, about 50 commercial loads, two schools, one health centre, a farmer-training centre and 60 streetlights, serving roughly 2,400 people. Another Greenpeace retrospective says about 400 homes and six pumps, while the launch says ten 3 hp pumps; these are reporting/boundary differences.","sourceIds":["dharnai-greenpeace-launch","dharnai-greenpeace-press","dharnai-greenpeace-germany"]},
+      {"label":"Project cost","value":"Approximately INR3 crore at commissioning.","sourceIds":["dharnai-greenpeace-press"]},
+      {"label":"Battery","value":"Battery-backed service was central to night operation, but reliable public sources do not establish chemistry, manufacturer, nominal kWh, usable duration or replacement plan.","sourceIds":["dharnai-greenpeace-launch","dharnai-mongabay","dharnai-apu-study"]},
+      {"label":"Connection decline","value":"A cited village study counted 225 solar connections in 2014 and 126 in 2016, before final collapse.","sourceIds":["dharnai-mongabay"]},
+      {"label":"Tariff competition","value":"Field reporting cites about INR9/kWh for mini-grid power versus INR3/kWh for conventional grid power after grid arrival; service also restricted high-power appliances.","sourceIds":["dharnai-mongabay"]}
+    ],
+    "equipment": [
+      {"category":"PV arrays","detail":"Approximately 280 rooftop/ground-mounted panels across community facilities; module and inverter OEM/models were not disclosed.","sourceIds":["dharnai-greenpeace-germany","dharnai-mongabay"]},
+      {"category":"Battery bank","detail":"Unspecified battery storage for night/firm service. Exhaustion after roughly three years and lack of repair disabled the central mini-grid; kWh and chemistry remain unverified.","sourceIds":["dharnai-mongabay","dharnai-apu-study"]},
+      {"category":"Irrigation pumps","detail":"Commissioning material says ten 3 hp solar pumps under a 30 kW allocation; a later Greenpeace account says six. Some battery-free daytime pumps remained in use in 2021.","sourceIds":["dharnai-greenpeace-launch","dharnai-greenpeace-germany","dharnai-mongabay"]},
+      {"category":"Distribution and metering","detail":"Local wires, meters, rooftop installations, CCTV/monitoring and 60 solar-powered streetlights were deployed; commercial component models were not published.","sourceIds":["dharnai-greenpeace-launch","dharnai-mongabay"]}
+    ],
+    "technicalDetails": [
+      {"category":"Early outcomes","detail":"Residents reported improved evening study, cooking and perceived safety, plus fewer snakebite deaths around lit streets. These social benefits were real but concentrated in the first operating years.","sourceIds":["dharnai-mongabay"]},
+      {"category":"Failure sequence","detail":"Grid power arrived about two years after commissioning; lower tariffs and fewer appliance restrictions drew customers away. Around year three the batteries were exhausted, maintenance was not restored and billing/collection arrangements deteriorated, leaving the system defunct by 2017-18.","sourceIds":["dharnai-mongabay","dharnai-apu-study","dharnai-cse-2026"]},
+      {"category":"Business-model lesson","detail":"The case shows that a technically commissioned donor-backed mini-grid still needs competitive service, replacement reserves, durable O&M, collection authority and rules for coexistence with an arriving central grid.","sourceIds":["dharnai-apu-study","dharnai-cse-2026"]},
+      {"category":"Residual assets","detail":"Daytime solar irrigation can survive independently of battery failure, but isolated functioning pumps must not be used to label the village distribution microgrid operational.","sourceIds":["dharnai-mongabay"]}
+    ],
+    "sources": [
+      {"id":"dharnai-greenpeace-launch","title":"Dharnai goes live, powered by Greenpeace's first solar microgrid","url":"https://www.greenpeace.org/india/en/story/278/dharnai-goes-live-powered-by-greenpeaces-first-solar-microgrid/","publisher":"Greenpeace India","kind":"primary"},
+      {"id":"dharnai-greenpeace-press","title":"Bihar village declares independence from darkness and anonymity","url":"https://www.greenpeace.org/india/en/press/2550/bihar-village-declares-independence-from-darkness-and-anonymity/","publisher":"Greenpeace India","kind":"primary"},
+      {"id":"dharnai-greenpeace-foundation","title":"Greenpeace lays foundation for energy independence in Dharnai","url":"https://www.greenpeace.org/india/en/press/3054/greenpeace-lays-foundation-for-energy-independence-in-dharnai-jehanabad/","publisher":"Greenpeace India","kind":"primary"},
+      {"id":"dharnai-greenpeace-germany","title":"Energy for Dharnai","url":"https://www.greenpeace.de/klimaschutz/klimakrise/energie-dharnai","publisher":"Greenpeace Germany","kind":"primary"},
+      {"id":"dharnai-mongabay","title":"The downfall of solar energy at Dharnai, Bihar's first solar village","url":"https://india.mongabay.com/2021/12/solar-power-station-at-bihars-first-solar-village-is-now-a-makeshift-cattle-shed/","publisher":"Mongabay India","kind":"secondary"},
+      {"id":"dharnai-apu-study","title":"Sociotechnical transitions and the Dharnai solar microgrid","url":"https://publications.azimpremjiuniversity.edu.in/5306/1/WP%2024_APU%20220463%20Working%20Paper%20Series%2024-05.05.2022%5B4866%5D.pdf","publisher":"Azim Premji University","kind":"primary"},
+      {"id":"dharnai-cse-2026","title":"Mini-grid Markets, Mechanisms and Monetisation","url":"https://www.cseindia.org/content/downloadreports/13073","publisher":"Centre for Science and Environment","kind":"primary"}
+    ]
+  },
+  "diavik-mine-wind-diesel-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Diavik's remote mine power system combined an approximately 46–48 MW Caterpillar diesel station with four 2.3 MW Enercon E-70 cold-climate wind turbines commissioned in 2012. A 3.5 MW, 6,620-panel bifacial solar plant was completed in 2024, evolving the record from wind-diesel to wind-solar-diesel. Wind delivered more than 190 GWh over the operating period and the renewable assets materially reduced annual fuel hauled over the ice road.",
+    "status": "Transitioning from production to closure. Rio Tinto delivered the mine's final diamond production on 26 March 2026 and plans active closure work through 2029 followed by monitoring. The solar plant was expressly designed to supply up to 25% of closure-stage electricity, so the hybrid power assets still support closure rather than diamond production. No public decision yet establishes the wind/solar equipment's disposition after closure.",
+    "organizations": [
+      {"name":"Rio Tinto / Diavik Diamond Mines Inc.","role":"Mine and power-system owner/operator; now leading closure and rehabilitation.","sourceIds":["diavik-rio-final","diavik-rio-current","diavik-rio-solar"]},
+      {"name":"Enercon","role":"Supplier of the four E-70 direct-drive cold-climate wind turbines.","sourceIds":["diavik-nrcan","diavik-cim"]},
+      {"name":"Caterpillar","role":"Supplier of the operating-mine diesel generator fleet.","sourceIds":["diavik-cim","diavik-archive"]},
+      {"name":"Solvest Inc.","role":"Solar-project designer/installer.","sourceIds":["diavik-rio-solar"]},
+      {"name":"Tłı̨chǫ Investment Corporation","role":"Indigenous construction partner for the 2024 solar plant.","sourceIds":["diavik-rio-solar"]},
+      {"name":"Natural Resources Canada","role":"Federal technical reporting and clean-energy support source.","sourceIds":["diavik-nrcan","diavik-government-report"]}
+    ],
+    "specifications": [
+      {"label":"Wind farm","value":"Four Enercon E-70 turbines at 2.3 MW each, 9.2 MW aggregate; first power 28 September 2012.","sourceIds":["diavik-nrcan","diavik-cim"]},
+      {"label":"Solar plant","value":"3.5 MW from 6,620 bifacial panels, completed in 2024; expected generation approximately 4.2 GWh/year.","sourceIds":["diavik-rio-solar"]},
+      {"label":"Diesel station","value":"Detailed trade reporting identifies eleven Caterpillar generators totaling 46.2 MW—nine 4.4 MW plus two 3.3 MW units—while the recovered project record rounds the fleet to 48 MW.","sourceIds":["diavik-cim","diavik-archive"]},
+      {"label":"Wind performance","value":"Peak instantaneous wind penetration reached 52%. First-year average penetration was about 7%, displacing 3.8 million litres of diesel; design expectations were roughly 17 GWh/year, 10% annual energy and 12,000 tonnes CO2/year.","sourceIds":["diavik-nrcan","diavik-cim"]},
+      {"label":"Cumulative performance","value":"A federal mining report cites about 191 GWh wind generation and 43.4 million litres of diesel displaced over the reporting period; Rio's current site says total renewable generation exceeded 200 GWh over mine operations.","sourceIds":["diavik-government-report","diavik-rio-current"]},
+      {"label":"Solar savings","value":"Expected approximately one million litres diesel and 2,900 tonnes CO2e avoided annually, and up to 25% of electricity demand during closure. These are forecasts, not a published 2025-26 meter result.","sourceIds":["diavik-rio-solar"]},
+      {"label":"Storage","value":"No electrical battery storage is documented in the wind-solar-diesel system; diesel remains the dispatchable firming source.","sourceIds":["diavik-nrcan","diavik-rio-solar"]}
+    ],
+    "equipment": [
+      {"category":"Wind turbines","manufacturer":"Enercon","model":"E-70","detail":"Four 2.3 MW gearless/direct-drive cold-climate units with blade heating/de-icing adaptations for temperatures near -40°C.","sourceIds":["diavik-nrcan","diavik-cim"]},
+      {"category":"Diesel generators","manufacturer":"Caterpillar","detail":"Nine 4.4 MW and two 3.3 MW units in operating-mine reporting; precise engine/generator models are not provided.","sourceIds":["diavik-cim"]},
+      {"category":"Solar PV","detail":"6,620 bifacial modules totaling 3.5 MW. Rio Tinto does not identify module, inverter or tracker OEM/model in its completion release.","sourceIds":["diavik-rio-solar"]}
+    ],
+    "technicalDetails": [
+      {"category":"Arctic adaptation","detail":"Direct drive reduces gearbox exposure; blade de-icing/heating, low-temperature lubrication and electronics modifications addressed frost and extreme-cold issues encountered in early operation.","sourceIds":["diavik-nrcan","diavik-cim"]},
+      {"category":"Logistics value","detail":"Every litre of displaced diesel reduces fuel hauled to the remote mine over a limited winter-road season, giving renewables an operational-resilience value beyond commodity fuel price.","sourceIds":["diavik-nrcan"]},
+      {"category":"Closure load change","detail":"The solar plant's stated 25% share applies to lower closure-stage electricity demand, not historical full-production load. It cannot be added to the historical wind percentage as a current mine-production energy mix.","sourceIds":["diavik-rio-solar","diavik-rio-final"]},
+      {"category":"Current boundary","detail":"Diamond extraction is complete, but closure work still needs power through 2029. Asset retirement, resale or community reuse after closure remains unannounced.","sourceIds":["diavik-rio-final"]}
+    ],
+    "sources": [
+      {"id":"diavik-rio-final","title":"Rio Tinto's Diavik Diamond Mine delivers its final production","url":"https://www.riotinto.com/en/news/releases/2026/rio-tintos-diavik-diamond-mine-delivers-its-final-production","publisher":"Rio Tinto","kind":"primary"},
+      {"id":"diavik-rio-current","title":"Diavik","url":"https://www.riotinto.com/operations/canada/diavik","publisher":"Rio Tinto","kind":"primary"},
+      {"id":"diavik-rio-solar","title":"Rio Tinto completes construction of solar power plant at Diavik","url":"https://www.riotinto.com/en/can/news/releases/2024/rio-tinto-completes-construction-of-its-solar-power-plant-at-diavik-diamond-mine","publisher":"Rio Tinto","kind":"primary"},
+      {"id":"diavik-nrcan","title":"Diavik Diamond Mine, Northwest Territories","url":"https://natural-resources.canada.ca/maps-tools-publications/publications/diavik-diamond-mine-northwest-territories","publisher":"Natural Resources Canada","kind":"primary"},
+      {"id":"diavik-government-report","title":"Renewable energy and electrification at Canadian mines","url":"https://publications.gc.ca/collections/collection_2025/rncan-nrcan/M31-15-2023-eng.pdf","publisher":"Government of Canada / Natural Resources Canada","kind":"primary"},
+      {"id":"diavik-cim","title":"Into the wind — Diavik wind farm","url":"https://magazine.cim.org/en/projects/into-the-wind/","publisher":"Canadian Institute of Mining, Metallurgy and Petroleum Magazine","kind":"secondary"},
+      {"id":"diavik-archive","title":"Recovered Diavik Mine Wind-Diesel Microgrid project record","url":"https://web.archive.org/web/20200706001408id_/http://microgridprojects.com/microgrid/diavik-mine-wind-diesel-microgrid/","publisher":"Internet Archive / Microgrid Projects","kind":"archive"}
+    ]
+  },
+  "dnv-gl-internet-things-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record was a US$2.15 million ARPA-E NODES software-and-controls R&D project, not a newly built DNV-owned microgrid. DNV GL, Geli and Group NIRE proposed an 'Internet of Energy' platform that could register, aggregate, schedule and dispatch as many as 100 small distributed resources while coordinating market regulation and local distribution support. It was demonstrated at Group NIRE's pre-existing utility-connected test facility at Reese Technology Center in Lubbock.",
+    "status": "Research program completed/alumni. DOE documentation gives an August 2016–August 2019 project term, and ARPA-E now lists NODES and the DNV project as Alumni. The Reese testbed continues in evolved form as Texas Tech/Group NIRE's GLEAMM facility, but no public final report found verifies that the DNV deployment reached 100 devices, quantifies service performance or confirms the original 1 MW/1 MWh battery remains installed. Do not label the R&D award as a currently operating commercial microgrid.",
+    "organizations": [
+      {"name":"DNV GL (now DNV)","role":"ARPA-E award lead; provided power-system simulation, platform development and independent validation.","sourceIds":["dnv-arpa-nodes","dnv-dnv-release","dnv-doe-questionnaire"]},
+      {"name":"Geli","role":"Networking, DER control and market-balancing software partner.","sourceIds":["dnv-arpa-descriptions","dnv-dnv-release"]},
+      {"name":"Group NIRE","role":"Host/partner operating the pre-existing Reese utility-connected test facility.","sourceIds":["dnv-arpa-descriptions","dnv-dnv-release"]},
+      {"name":"ARPA-E / U.S. Department of Energy","role":"NODES program sponsor and US$2.15 million award funder.","sourceIds":["dnv-arpa-nodes","dnv-arpa-descriptions"]},
+      {"name":"Texas Tech University","role":"Research partner in the Reese testbed and current GLEAMM successor facility.","sourceIds":["dnv-battery-release","dnv-ttu-current"]},
+      {"name":"South Plains Electric Cooperative","role":"Serving utility/interconnection partner for the test facility and original battery project.","sourceIds":["dnv-battery-release"]}
+    ],
+    "specifications": [
+      {"label":"ARPA-E award","value":"US$2.15 million under NODES; documented project term 15 August 2016 to 14 August 2019.","sourceIds":["dnv-arpa-descriptions","dnv-doe-questionnaire"]},
+      {"label":"DER target","value":"Platform concept for up to 100 distributed resources/controllable loads. This was a scalability target, not verified installed capacity or achieved device count.","sourceIds":["dnv-dnv-release","dnv-arpa-descriptions"]},
+      {"label":"Pre-existing battery","value":"1 MW/1 MWh lithium-ion system commissioned 18 October 2013, about three years before the DNV award term. It was host-testbed infrastructure, not NODES-funded new storage.","sourceIds":["dnv-battery-release","dnv-doe-questionnaire"]},
+      {"label":"Target resource mix","value":"Batteries, EVs, HVAC, water heaters, LED lighting and renewable generation were eligible controllable resources; public sources do not identify the final number or aggregate capacity actually enrolled.","sourceIds":["dnv-dnv-release","dnv-arpa-descriptions"]},
+      {"label":"Current GLEAMM inventory","value":"Texas Tech currently lists 150 kW monocrystalline PV, 900 kW wind interconnection, 500 kW diesel, 1 MW electronic load, 180 kW reactive load, 48 kW lead-acid storage, a 30 kW EV simulator and 20 kW data center. This evolved inventory is not the original DNV project's commissioned scope.","sourceIds":["dnv-ttu-current"]}
+    ],
+    "equipment": [
+      {"category":"Host battery (pre-existing)","manufacturer":"Xtreme Power","model":"PEAK Series","detail":"1 MW, 60-minute system using Samsung SDI lithium-ion batteries, commissioned in 2013; current disposition is not confirmed.","sourceIds":["dnv-battery-release"]},
+      {"category":"Internet of Energy software","manufacturer":"DNV GL / Geli","detail":"DNV simulation/validation combined with Geli networking, dispatch and market-balancing software; commercial release/version was not disclosed.","sourceIds":["dnv-arpa-descriptions","dnv-dnv-release"]},
+      {"category":"Utility interface","detail":"Platform integration with the local utility's SCADA/monitoring and control environment; specific gateway, relay and communications products were not published.","sourceIds":["dnv-arpa-descriptions"]},
+      {"category":"Current testbed assets","detail":"GLEAMM's live inventory includes PV, wind interconnection, diesel, programmable loads, small lead-acid storage and EV/data-center simulators; these show continued testbed use, not continuity of every original asset.","sourceIds":["dnv-ttu-current"]}
+    ],
+    "technicalDetails": [
+      {"category":"Platform functions","detail":"Automated resource registration, scheduling, aggregation, dispatch and performance validation were intended to let behind-the-meter resources support both frequency regulation and distribution reliability.","sourceIds":["dnv-arpa-descriptions","dnv-dnv-release"]},
+      {"category":"Customer constraint","detail":"The research objective was to deliver grid services with minimal interference to each resource's local behind-the-meter demand-management purpose.","sourceIds":["dnv-arpa-descriptions"]},
+      {"category":"Status evidence","detail":"ARPA-E's live portfolio classifies NODES and the DNV project as Alumni; no public operational KPI, commercial rollout or verified 100-device demonstration result was located.","sourceIds":["dnv-arpa-nodes"]},
+      {"category":"Asset-boundary warning","detail":"The 2013 battery and present GLEAMM equipment belong to the host test facility. They must not be reported as hardware purchased by the 2016 DNV NODES award.","sourceIds":["dnv-battery-release","dnv-doe-questionnaire","dnv-ttu-current"]}
+    ],
+    "sources": [
+      {"id":"dnv-arpa-nodes","title":"NODES program and project portfolio","url":"https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/nodes","publisher":"ARPA-E","kind":"primary"},
+      {"id":"dnv-arpa-descriptions","title":"NODES project descriptions","url":"https://arpa-e.energy.gov/sites/default/files/migrated/documents/files/NODES_Project_Descriptions.pdf","publisher":"ARPA-E","kind":"primary"},
+      {"id":"dnv-dnv-release","title":"DNV GL to validate ARPA-E Internet of Energy microgrid in Texas","url":"https://www.dnv.com/news/2016/dnv-gl-to-validate-arpa-e-internet-of-energy-microgrid-in-texas-61149/","publisher":"DNV GL","kind":"primary"},
+      {"id":"dnv-doe-questionnaire","title":"2016 DOE Transition Questionnaire — DNV GL NODES project","url":"https://www.energy.gov/sites/prod/files/2017/06/f35/MAAdm_2016%20DOE%20Transition%20Questionnaire-%20redacted_1.pdf","publisher":"U.S. Department of Energy","kind":"primary"},
+      {"id":"dnv-battery-release","title":"Xtreme Power commissions electric technologies energy storage project","url":"https://www.batterypoweronline.com/news/xtreme-power-announces-commissioning-of-electric-technologies-energy-storage-project/","publisher":"Battery Power / Xtreme Power","kind":"primary"},
+      {"id":"dnv-ttu-current","title":"Grid Integration and Resilience — GLEAMM test facility","url":"https://www.depts.ttu.edu/research/energy-institute/grid-integration-resilience.php","publisher":"Texas Tech University","kind":"primary"}
+    ]
+  },
+  "east-hampton-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Long Island Community Microgrid Project was a 2015–16 NY Prize Stage 1 feasibility study, not a constructed microgrid. Its preferred concept would have coordinated up to 15 MW of solar, a central 5 MW/25 MWh battery, three smaller facility batteries, existing 6 MW substation peakers and critical-site generators across two East Hampton feeders. The resilient boundary included water pumping and fire protection plus thousands of customers, far beyond the police-substation address in the legacy record.",
+    "status": "Feasibility completed; proposed system not built. East Hampton was absent from the eleven NY Prize Stage 2 awardees, and the Town's current renewable-energy roadmap still describes LICMP as a 2016 study while recommending that the Town develop future large-scale microgrid partnerships. A separate NextEra 5 MW/40 MWh utility battery entered service in East Hampton in 2018, but it is not the proposed 5 MW/25 MWh LICMP community microgrid and must remain a separate record.",
+    "organizations": [
+      {"name":"Town of East Hampton","role":"NY Prize applicant, community sponsor and current energy-roadmap owner.","sourceIds":["easthampton-feasibility","easthampton-roadmap"]},
+      {"name":"Clean Coalition","role":"Lead technical/project-development consultant for the LICMP feasibility study.","sourceIds":["easthampton-feasibility"]},
+      {"name":"PSEG Long Island / Long Island Power Authority","role":"Serving utility, distribution/SCADA partner and owner/operator context for proposed substation resources.","sourceIds":["easthampton-feasibility"]},
+      {"name":"New York State Energy Research and Development Authority","role":"NY Prize Stage 1 study funder and administrator.","sourceIds":["easthampton-feasibility","easthampton-stage2"]},
+      {"name":"Suffolk County Water Authority","role":"Critical-facility partner for Bridgehampton and Oak View pumping stations.","sourceIds":["easthampton-feasibility"]},
+      {"name":"Springs Fire District","role":"Critical-facility/first-responder partner in the proposed resilient boundary.","sourceIds":["easthampton-feasibility"]},
+      {"name":"NextEra Energy Resources","role":"Developer of the separate 5 MW/40 MWh East Hampton Energy Storage Center commissioned in 2018.","sourceIds":["easthampton-nyserda-bess"]}
+    ],
+    "specifications": [
+      {"label":"Proposed solar","value":"Up to 15 MW: 10 MW of separately planned third-party PV plus 5 MW additional PV enabled/optimized by the microgrid. None is verified as built under LICMP.","sourceIds":["easthampton-feasibility","easthampton-roadmap"]},
+      {"label":"Proposed central storage","value":"5 MW/25 MWh at the East Hampton gas-turbine substation, five-hour nameplate duration, plus three smaller local facility batteries whose final ratings were not selected for construction.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Existing backup generation in study","value":"Three 2 MW distillate-fueled substation generators (6 MW aggregate) plus site emergency generators with roughly two days' fuel. These were existing/secondary backup, not new renewable capacity.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Proposed customer/critical-load boundary","value":"Two feeders serving two water-pumping stations, Springs Fire District, about 100 commercial/industrial customers and approximately 3,200 residential customers; study context cites water service for roughly 40,000 people.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Modeled solar energy","value":"Approximately 17.8 MWh/day from 5 MW new PV, 35.6 MWh/day from the 10 MW portfolio and 53.4 MWh/day at 15 MW, compared with about 27.3 MWh/day of secondary-priority demand.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Independent BCA cost","value":"Approximately US$40.4 million lifecycle cost: US$34.9 million capital, US$60,000 planning and US$5.47 million present-value fixed O&M; the central 5 MW/25 MWh battery accounted for roughly US$20 million installed/service cost over 20 years.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Benefit-cost result","value":"Without a specific avoided transmission upgrade, BCR 0.4 and NPV -US$24.7 million; with that deferral credited, BCR 1.1, NPV +US$4.04 million and IRR 8.2%. The no-deferral case needed about 6.6 outage days/year to break even.","sourceIds":["easthampton-feasibility"]},
+      {"label":"Separate operating BESS","value":"East Hampton Energy Storage Center: 5 MW/40 MWh lithium-ion, commercial operation August 2018. It is a utility peak/resilience asset from a separate South Fork procurement, not LICMP's 25 MWh conceptual battery.","sourceIds":["easthampton-nyserda-bess","easthampton-pseg-bess"]}
+    ],
+    "equipment": [
+      {"category":"Central BESS (proposed only)","detail":"5 MW/25 MWh at the East Hampton substation, with battery/inverter OEM and chemistry to be selected in a later stage that did not occur.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Facility DER (proposed only)","detail":"Local PV, storage and controllers at three critical sites, capable of local autonomous operation if communications failed; final vendors and ratings were not procured.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Existing peakers","detail":"Three 2 MW distillate generator units at the substation, retained as secondary/emergency supply in the study; exact engine models are not disclosed.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Separate East Hampton BESS","manufacturer":"NextEra Energy Resources","detail":"5 MW/40 MWh lithium-ion East Hampton Energy Storage Center commissioned in 2018; listed here only to prevent conflation, not as LICMP equipment.","sourceIds":["easthampton-nyserda-bess"]}
+    ],
+    "technicalDetails": [
+      {"category":"Control architecture","detail":"A central substation controller would coordinate utility-owned/front-of-meter DER through PSEG Long Island SCADA and hardwired/leased telecommunications, with facility controllers able to island locally on communications loss.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Emergency operation","detail":"The central battery was modeled near 50% state of charge before an event, and conservative P10 solar production was used for resilience planning rather than average-weather output.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Hardening assumptions","detail":"Critical installations were to be designed around 130 mph wind and one-in-500-year flood criteria.","sourceIds":["easthampton-feasibility"]},
+      {"category":"Stage outcome","detail":"The project did not appear among the eleven NY Prize Stage 2 winners. The current Town roadmap's future-tense recommendation to develop large microgrids corroborates that LICMP remained a study.","sourceIds":["easthampton-stage2","easthampton-roadmap"]},
+      {"category":"Technology-boundary warning","detail":"The legacy text mentions wind, but the final quantified study configuration centers on solar, batteries and existing backup generation. South Fork Wind and the 2018 5 MW/40 MWh battery are separate projects.","sourceIds":["easthampton-feasibility","easthampton-nyserda-bess","easthampton-pseg-bess"]}
+    ],
+    "sources": [
+      {"id":"easthampton-feasibility","title":"Long Island Community Microgrid Project — NY Prize Stage 1 Feasibility Study","url":"https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/8-Town-of-East-Hampton.pdf","publisher":"Town of East Hampton / Clean Coalition / NYSERDA","kind":"primary"},
+      {"id":"easthampton-stage2","title":"Meet the microgrid project winners selected in Stage 2 of the NY Prize","url":"https://www.microgridknowledge.com/google-news-feed/article/11431558/meet-the-microgrid-project-winners-selected-in-stage-2-of-the-ny-prize","publisher":"Microgrid Knowledge","kind":"secondary"},
+      {"id":"easthampton-roadmap","title":"Town of East Hampton 100% Renewable Energy Roadmap","url":"https://www.ehamptonny.gov/DocumentCenter/View/19355/Renewable-Energy-Roadmap?bidId=","publisher":"Town of East Hampton","kind":"primary"},
+      {"id":"easthampton-nyserda-bess","title":"East Hampton Energy Storage Center","url":"https://der.nyserda.ny.gov/projects/696/","publisher":"NYSERDA Distributed Energy Resources database","kind":"primary"},
+      {"id":"easthampton-pseg-bess","title":"Battery Energy Storage Systems serve Long Island","url":"https://www.psegliny.com/newsroom/2022/021722-batteryday","publisher":"PSEG Long Island","kind":"primary"}
+    ]
+  }
+}

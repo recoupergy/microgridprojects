@@ -16,7 +16,20 @@ npm run dev
 ```bash
 npm run lint
 npm run build
+npm run audit:research
+npm run audit:seo
 ```
+
+## Research data
+
+The recovered historical records live in `research/legacy-recovered.json`. Current, source-backed findings are maintained as additive per-batch fragments in `research/enrichment/`, then merged into the site dataset:
+
+```bash
+npm run research:build
+npm run audit:research
+```
+
+The research audit fails if any project lacks a current review, a source-backed summary and status, or resolvable citations. It also validates the organization, specification, equipment, technical-detail, and source record shapes consumed by the project pages.
 
 ## Legacy data import
 
