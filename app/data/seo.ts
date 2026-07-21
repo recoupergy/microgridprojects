@@ -4,11 +4,11 @@ export const SITE_NAME = "Microgrid Projects";
 export const SITE_URL = "https://microgridprojects.com";
 
 export const socialImage = {
-  url: "/og-v2.jpg",
+  url: "/og-v3.png",
   width: 1734,
   height: 907,
-  type: "image/jpeg",
-  alt: "Microgrid Projects global research directory",
+  type: "image/png",
+  alt: "Microgrid Projects — open knowledge for better microgrids",
 } as const;
 
 function trimAtWord(value: string, maximumLength: number) {

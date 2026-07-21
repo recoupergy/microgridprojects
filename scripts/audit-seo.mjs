@@ -219,7 +219,7 @@ try {
     ["/apple-icon.png", "image/png"],
     ["/icon-192.png", "image/png"],
     ["/icon-512.png", "image/png"],
-    ["/og-v2.jpg", "image/jpeg"],
+    ["/og-v3.png", "image/png"],
   ]) {
     const response = await fetch(`${baseUrl}${path}`, { redirect: "manual" });
     if (response.status !== 200) fail(path, `returned ${response.status}`);
