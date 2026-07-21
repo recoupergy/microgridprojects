@@ -701,19 +701,56 @@
       ]
     },
     "baikampady-mangalore-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": null,
-      "status": "Operational",
+      "summary": "SELCO India commissioned a small direct-current solar microgrid in April 2014 for a 75-home informal labor colony in the Baikampady industrial estate north of Mangalore. The documented design combined 1.2 kWp of PV, a nominal 19.2 kWh battery bank, grid-assisted charging, and 96 VDC distribution for efficient lighting, phone charging, three fans, and one television. Canara Bank financed the system through a loan to the property owner, who collected service payments with rent. Public evidence located in this review documents implementation through 2015 but not the system's later operating condition.",
+      "status": "Commissioned in April 2014 and documented as implemented in a 2015 SELCO site summary. No reliable independent post-2015 operating or decommissioning evidence was found through July 2026, so present operating status is unknown.",
       "classification": "Community",
       "historicalLocation": "Kochi - Panvel Hwy, New Mangalore, Baikampady, Mangaluru, Karnataka 575011, India",
       "archiveCapturedAt": "2021-02-25",
       "organizations": [
         {
+          "name": "Canara Bank",
+          "role": "Local lender that financed the system through a loan to the colony's property owner.",
+          "sourceIds": [
+            "baik-vikalp-2014",
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "name": "EmmVee",
+          "role": "PV module manufacturer identified in SELCO's documented equipment schedule.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "name": "Power One",
+          "role": "Supplier of the custom solar/grid 96 VDC charging unit identified in SELCO's site summary.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "name": "Primetech",
+          "role": "Battery manufacturer identified in SELCO's documented equipment schedule.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
           "name": "SELCO",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "SELCO India",
+          "role": "Designer and implementer of the solar microgrid; its site documentation also identifies the component configuration and service model.",
+          "sourceIds": [
+            "baik-vikalp-2014",
+            "baik-selco-site-summaries-2015"
           ]
         }
       ],
@@ -731,9 +768,77 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "PV capacity",
+          "value": "1.2 kWp, configured as four 300 W, 24 V modules in series",
+          "sourceIds": [
+            "baik-vikalp-2014",
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "label": "Battery bank",
+          "value": "19.2 kWh nominal at 96 VDC: eight 12 V, 200 Ah batteries in series",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "label": "Customers and connected appliances",
+          "value": "75 households; documented aggregate service was 90 LED lights, 75 phone chargers, three fans, and one television",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "label": "Household service tiers",
+          "value": "60 homes received one 3 W LED tube and charging point; 15 homes received two 3 W LED tubes plus provision for a television/set-top box or fan",
+          "sourceIds": [
+            "baik-vikalp-2014"
+          ]
+        },
+        {
+          "label": "Documented customer charge",
+          "value": "INR 140-200 per month, collected with rent to cover the bank loan payment and service costs",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "PV modules",
+          "manufacturer": "EmmVee",
+          "detail": "Four 300 W, 24 V modules connected in series for a 1.2 kWp array.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Battery bank",
+          "manufacturer": "Primetech",
+          "detail": "Eight 12 V, 200 Ah batteries in series, yielding a nominal 96 V, 19.2 kWh bank.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Hybrid charger",
+          "manufacturer": "Power One",
+          "detail": "Custom solar-and-grid 96 VDC charger with solar-battery-grid source priority.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Distribution and protection",
+          "detail": "96 VDC aluminum distribution conductors in PVC conduit, copper service drops, and fuse protection; loads were switched by a manual central timer.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
@@ -762,6 +867,36 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Architecture",
+          "detail": "The microgrid used 96 VDC distribution and prioritized solar, then battery, then grid-assisted charging. This avoided household AC inverters for the small DC loads.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Business model",
+          "detail": "Because a conventional grid extension to the informal settlement was impractical, the property owner borrowed from Canara Bank, owned the shared plant, and recovered the monthly payment through rent/service collections, displacing kerosene lighting.",
+          "sourceIds": [
+            "baik-vikalp-2014",
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Monitoring",
+          "detail": "SELCO documented a local data logger but no remote monitoring connection.",
+          "sourceIds": [
+            "baik-selco-site-summaries-2015"
+          ]
+        },
+        {
+          "category": "Evidence gap",
+          "detail": "Searches using the colony, industrial-estate, component, and developer aliases found no reliable operating update after the 2015 SELCO documentation. Current status should not be inferred from undated catalog reproductions.",
+          "sourceIds": [
+            "baik-vikalp-2014",
+            "baik-selco-site-summaries-2015"
+          ]
         }
       ],
       "sources": [
@@ -780,23 +915,59 @@
           "publisher": "microgridprojects.com",
           "kind": "archive",
           "capturedAt": "2021-02-25"
+        },
+        {
+          "id": "baik-vikalp-2014",
+          "title": "A labour colony gets solar power",
+          "url": "https://vikalpsangam.org/article/a-labour-colony-gets-solar-power/",
+          "publisher": "Vikalp Sangam",
+          "kind": "secondary"
+        },
+        {
+          "id": "baik-selco-site-summaries-2015",
+          "title": "Micro-Grid Site Summaries",
+          "url": "https://www.slideshare.net/slideshow/microgrid-site-summaries/61200723",
+          "publisher": "SELCO Foundation / Jonathan Bassett",
+          "kind": "primary"
         }
       ]
     },
     "banggi-island": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "Sabah Electricity's Banggi Island station is a solar-battery-diesel hybrid supplying homes, schools, and businesses on the island. Current owner documentation gives 1,200 kWp of PV, a 720-cell gel battery bank, and eight diesel generators ranging from 200 kW to 1,000 kW against an approximately 950 kW served load. A Leonics engineering presentation for the project records a 1,200 kWp array, 2,075 kW of inverter capacity, a 2,880 kWh main battery bank, and 1,650 kVA of diesel capacity. The station has received battery, inverter, and diesel upgrades and remains in service, but no source found provides a current annual renewable-energy percentage.",
+      "status": "Operating under Sabah Electricity as of the owner's current ESG account reviewed in July 2026. That account says battery and inverter upgrades and added diesel capacity have sustained performance. Commissioning dates conflict by phase/source: TNB describes commissioning in 2013, while Leonics records commercial operation on 25 January 2014 and operation since February 2014.",
       "classification": "Island",
       "historicalLocation": "Banggi Island Sabah Malaysia",
       "archiveCapturedAt": "2020-07-05",
       "organizations": [
         {
           "name": "Leonics",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Supplier of bidirectional battery inverters, PV grid inverters, MPPT equipment, and hybrid control equipment documented for the 1.2 MWp project.",
           "sourceIds": [
-            "archive"
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "name": "Sabah Electricity Sdn Bhd (SESB)",
+          "role": "Owner and operator of the Banggi solar-hybrid station and the island distribution service.",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "name": "Tenaga Nasional Berhad (TNB)",
+          "role": "Parent utility of SESB and publisher of the current operating account.",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "name": "Usaha Sirimas Sdn Bhd",
+          "role": "Main contractor identified in Leonics' project record.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015"
           ]
         }
       ],
@@ -821,15 +992,141 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Solar PV capacity",
+          "value": "1,200 kWp",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026",
+            "banggi-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Leonics project battery rating",
+          "value": "2,880 kWh main bank; the engineering diagram also shows a 720 kWh remote-bank value, which should not be silently added without phase clarification",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "label": "Current owner battery description",
+          "value": "720 gel cells; a current energy capacity is not disclosed",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "label": "Leonics inverter capacity",
+          "value": "2,075 kW total: 1,100 kW battery-side and 975 kW PV/grid-side in the vendor project table",
+          "sourceIds": [
+            "banggi-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Leonics diesel capacity",
+          "value": "1,650 kVA in the project summary; individual-generator values vary between vendor diagrams and appear to reflect configuration or phase changes",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "label": "Current diesel fleet",
+          "value": "Eight generators, each rated between 200 kW and 1,000 kW; aggregate current capacity is not stated",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "label": "Served load",
+          "value": "Approximately 950 kW serving homes, schools, and businesses",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "Solar generation with battery storage and diesel backup/supplement; no verified annual percentage split was located",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Bidirectional battery inverters",
+          "manufacturer": "Leonics",
+          "detail": "The engineering diagram identifies three 300 kW bidirectional inverter blocks (900 kW shown at this level), within a project table that reports 1,100 kW of battery-inverter capacity.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "PV grid inverters",
+          "manufacturer": "Leonics",
+          "detail": "Three 250 kW PV grid-inverter blocks (750 kW) are shown in the main-station diagram.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "PV charge control",
+          "manufacturer": "Leonics",
+          "detail": "Three 70 kW MPPT blocks (210 kW total) are shown for DC-coupled PV, alongside three 75 kW remote grid-inverter blocks (225 kW).",
+          "sourceIds": [
+            "banggi-leonics-adb-2015"
+          ]
+        },
+        {
+          "category": "Hybrid control",
+          "manufacturer": "Leonics",
+          "detail": "Hybrid Control and Communication Unit (HCCU) coordinating PV, batteries, and diesel generation.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
           "detail": "Sample application of PV – Wind Turbine- Diesel Generator Hybrid Minigrid System",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Architecture",
+          "detail": "The vendor diagrams show a mixed AC/DC-coupled hybrid: PV grid inverters feed the AC bus, MPPT units charge a 480 VDC battery system, bidirectional inverters form/support the island grid, and diesel generators provide backup and firm capacity.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "Commissioning record",
+          "detail": "TNB's current account says the plant was commissioned in 2013. Leonics' project documentation instead gives 25 January 2014 as COD and describes operation since February 2014; these may reflect construction, handover, or phased commercial-operation milestones.",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026",
+            "banggi-leonics-adb-2015",
+            "banggi-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "Later upgrades",
+          "detail": "The current owner says battery and inverter upgrades have sustained performance and additional diesel capacity has been installed for high demand. It does not identify the replacement vendors, models, dates, or energy capacity.",
+          "sourceIds": [
+            "banggi-tnb-sesb-2026"
+          ]
+        },
+        {
+          "category": "Rating caveat",
+          "detail": "A Leonics slide labels 4.93 MW by arithmetically summing PV nameplate, inverter capacity, and diesel capacity. That figure is not a valid independent generating-capacity rating and is not used here as plant output.",
+          "sourceIds": [
+            "banggi-leonics-adb-2015"
           ]
         }
       ],
@@ -865,23 +1162,60 @@
           "publisher": "leonics.com",
           "kind": "archive",
           "capturedAt": "2020-07-05"
+        },
+        {
+          "id": "banggi-tnb-sesb-2026",
+          "title": "TNB & SESB: Lighting the Islands",
+          "url": "https://www.tnb.com.my/sustainability/esg-stories-tnb-sesb-lighting-the-islands",
+          "publisher": "Tenaga Nasional Berhad",
+          "kind": "primary"
+        },
+        {
+          "id": "banggi-leonics-adb-2015",
+          "title": "Inverter Technologies in Isolated Microgrid",
+          "url": "https://asiacleanenergyforum.adb.org/wp-content/uploads/2015/06/Wuthipong-Suponthana_-Inverter-Technologies-in-Isolated-Microgrid-Microgrid.pdf",
+          "publisher": "Leonics / Asian Development Bank Asia Clean Energy Forum",
+          "kind": "primary"
+        },
+        {
+          "id": "banggi-leonics-homer-2014",
+          "title": "MW Scale Stand-Alone PV-DG Hybrid Systems",
+          "url": "https://homerenergy.com/static/pdf/MW_scale_Stand-alone_PV-DG_Hybrid_systems.pdf",
+          "publisher": "Leonics / HOMER Energy",
+          "kind": "primary"
         }
       ]
     },
     "bario": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "The Bario Central Solar Hybrid Power System supplies the remote Bario Highlands with an off-grid combination of PV, battery storage, and diesel backup. Sarawak Energy records construction beginning in 2010, initial commissioning in September 2015, transfer to its operation in June 2016, and an October 2016 official launch. The launch-era rating was 887 kW and at least 70% of generated energy was expected from solar. Vendor documents preserve design changes around 885.84-906 kWp of PV, 3,860 kWh of battery storage, and varying inverter/diesel totals. Sarawak's current Rural Electrification Masterplan describes a 998 kW station serving more than 400 households and proposes a future 33 kV grid interconnection.",
+      "status": "Operating as an off-grid solar-battery-diesel station under Sarawak Energy in the current Rural Electrification Masterplan reviewed in July 2026. The plan proposes interconnecting Bario to the state grid via an approximately 60 km Ba'kelalan-Bario line and 33 kV substation by 2030; that connection is not yet documented as complete.",
       "classification": "Community",
       "historicalLocation": "Bario Town Marudi, Sarawak Malaysia",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
           "name": "Leonics",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Supplier/documenter of the PV, bidirectional inverter, MPPT, and hybrid-control architecture for the Bario system.",
           "sourceIds": [
-            "archive"
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        },
+        {
+          "name": "Ministry of Rural and Regional Development (KKLW)",
+          "role": "Federal project funder/client; the reported project allocation was RM27 million and KKLW appointed Sarawak Energy for operation and maintenance.",
+          "sourceIds": [
+            "bario-sarawak-energy-2016"
+          ]
+        },
+        {
+          "name": "Sarawak Energy Berhad",
+          "role": "Operator and maintenance authority since the June 2016 handover; its Rural Off-Grid Operation Division employed local operators for the station.",
+          "sourceIds": [
+            "bario-sarawak-energy-2016",
+            "bario-redm-2030"
           ]
         }
       ],
@@ -906,10 +1240,145 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Commissioned plant rating (2016 owner account)",
+          "value": "887 kW solar-hybrid system",
+          "sourceIds": [
+            "bario-sarawak-energy-2016"
+          ]
+        },
+        {
+          "label": "Current masterplan station rating",
+          "value": "998 kW Bario Central Solar Hybrid Station with three diesel generators",
+          "sourceIds": [
+            "bario-redm-2030"
+          ]
+        },
+        {
+          "label": "Vendor PV configuration",
+          "value": "885.84 kWp detailed design: 402 kWp AC-coupled plus 483.84 kWp DC-coupled; a later Leonics project table gives 906 kWp, indicating a phase/design revision",
+          "sourceIds": [
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Vendor battery rating",
+          "value": "3,860 kWh at 480 VDC",
+          "sourceIds": [
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Vendor inverter rating",
+          "value": "1,200 kW in an early project summary; 1,100 kW in a later Leonics table",
+          "sourceIds": [
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Vendor diesel rating",
+          "value": "886 kVA in an early project summary; 1,443 kVA in a later Leonics table. An early diagram separately labels 275, 275, 158, and 450 kVA units, consistent with a revised or staged fleet.",
+          "sourceIds": [
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        },
+        {
+          "label": "Launch-era energy mix",
+          "value": "At least 70% solar, with the balance supplied by diesel and battery storage used for balancing/time shifting",
+          "sourceIds": [
+            "bario-sarawak-energy-2016"
+          ]
+        },
+        {
+          "label": "Customers",
+          "value": "More than 200 households in nine villages plus the bazaar and government facilities at launch; current masterplan says more than 400 households",
+          "sourceIds": [
+            "bario-sarawak-energy-2016",
+            "bario-redm-2030"
+          ]
         }
       ],
-      "equipment": [],
-      "technicalDetails": [],
+      "equipment": [
+        {
+          "category": "PV grid inverters",
+          "manufacturer": "Leonics",
+          "detail": "Early design diagrams show four 125 kW AC-coupled grid-inverter blocks; the slide's printed aggregate contains an arithmetic inconsistency, so the component count and ratings are retained without adopting its total.",
+          "sourceIds": [
+            "bario-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "Bidirectional battery inverters",
+          "manufacturer": "Leonics",
+          "detail": "Three 200 kW bidirectional units (600 kW total) connected to the 480 VDC, 3,860 kWh battery bank.",
+          "sourceIds": [
+            "bario-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "MPPT charge controllers",
+          "manufacturer": "Leonics",
+          "detail": "Eight 70 kW MPPT blocks are depicted for the 483.84 kWp DC-coupled PV section. One text extraction renders the multiplier incorrectly; eight units are consistent with the displayed 560 kW total.",
+          "sourceIds": [
+            "bario-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "Hybrid controller",
+          "manufacturer": "Leonics",
+          "detail": "Hybrid control and communications coordinate AC-coupled PV, DC-coupled PV/battery, and diesel generation.",
+          "sourceIds": [
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015"
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "category": "Operating architecture",
+          "detail": "Published engineering analysis describes a mixed-bus system: PV and batteries feed a DC bus through converters while diesel generators feed the AC bus. In the modeled load-following logic, PV serves load and charges storage; the battery discharges to its minimum state of charge before diesel is dispatched.",
+          "sourceIds": [
+            "bario-uthm-2020",
+            "bario-leonics-homer-2014"
+          ]
+        },
+        {
+          "category": "Milestones",
+          "detail": "Construction began in 2010, first commissioning occurred in September 2015, Sarawak Energy accepted operation in June 2016, and the official launch was held on 25 October 2016.",
+          "sourceIds": [
+            "bario-sarawak-energy-2016"
+          ]
+        },
+        {
+          "category": "Expansion context",
+          "detail": "The central plant initially covered nine villages. Two extension villages were expected to lift the central-plant reach above 300 homes, while five other small nearby settlements were assigned separate stand-alone hybrid systems and should not be counted as central-plant capacity.",
+          "sourceIds": [
+            "bario-sarawak-energy-2016"
+          ]
+        },
+        {
+          "category": "Future grid connection",
+          "detail": "Sarawak's Rural Electrification Masterplan proposes a 33 kV substation and roughly 60 km covered-conductor link from Ba'kelalan, interconnecting rather than simply replacing the hybrid station under the 2030 plan.",
+          "sourceIds": [
+            "bario-redm-2030"
+          ]
+        },
+        {
+          "category": "Rating provenance",
+          "detail": "The 887 kW launch rating, 885.84/906 kWp vendor PV values, and 998 kW current masterplan value belong to different dated descriptions. They are retained separately rather than normalized into a single undocumented capacity.",
+          "sourceIds": [
+            "bario-sarawak-energy-2016",
+            "bario-leonics-homer-2014",
+            "bario-leonics-adb-2015",
+            "bario-redm-2030"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -918,24 +1387,74 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "bario-sarawak-energy-2016",
+          "title": "Electrification of Bario Highlands via Solar Hybrid Power System",
+          "url": "https://www.sarawakenergy.com/media-info/media-releases/2016/electrification-of-bario-highlands-via-solar-hybrid-power-system",
+          "publisher": "Sarawak Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "bario-leonics-homer-2014",
+          "title": "MW Scale Stand-Alone PV-DG Hybrid Systems",
+          "url": "https://homerenergy.com/static/pdf/MW_scale_Stand-alone_PV-DG_Hybrid_systems.pdf",
+          "publisher": "Leonics / HOMER Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "bario-leonics-adb-2015",
+          "title": "Inverter Technologies in Isolated Microgrid",
+          "url": "https://asiacleanenergyforum.adb.org/wp-content/uploads/2015/06/Wuthipong-Suponthana_-Inverter-Technologies-in-Isolated-Microgrid-Microgrid.pdf",
+          "publisher": "Leonics / Asian Development Bank Asia Clean Energy Forum",
+          "kind": "primary"
+        },
+        {
+          "id": "bario-redm-2030",
+          "title": "Sarawak Rural Electrification Masterplan 2030",
+          "url": "https://mut.sarawak.gov.my/web/attachment/show/?docid=SWVGbW1sZEh6WDlhb0VkczVqSTUrZz09OjrstIA-iDMKZGnrCZwsVC0W",
+          "publisher": "Government of Sarawak, Ministry of Utility and Telecommunication",
+          "kind": "primary"
+        },
+        {
+          "id": "bario-uthm-2020",
+          "title": "Operational Strategy and Performance Analysis of the Bario Solar Hybrid System",
+          "url": "https://publisher.uthm.edu.my/ojs/index.php/ijie/article/download/6388/3693/26108",
+          "publisher": "International Journal of Integrated Engineering, Universiti Tun Hussein Onn Malaysia",
+          "kind": "primary"
         }
       ]
     },
     "baron-techno-park": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": "Baron Techno Park is an Indonesian government renewable-energy research and training site. Published plant studies document a PV-wind-biodiesel-diesel-battery hybrid system and a 25 kVA hybrid controller, but do not identify the controller manufacturer.",
-      "status": "Government research and demonstration site; present operating configuration not independently confirmed",
+      "summary": "Baron Techno Park is an off-grid renewable-energy research and demonstration site at Parang Racuk, Gunungkidul. Its documented hybrid plant combined 36 kW of PV, two wind turbines totaling 15 kW, nominal 25 kW diesel and 25 kW biodiesel generators, a battery bank reported as 288 kVAh/1,200 Ah, and a 25 kVA hybrid controller. The available plant changed over time: a 2017 study said only 24 kW of PV and 5 kW of wind were operating, while a 2023 engineering paper describes a current 36 kW PV/5 kW wind/20 kWh battery/25 kW inverter configuration and reports that the Fortis wind turbine had been stopped by a 2019 malfunction.",
+      "status": "Continues to be documented as an off-grid research/test microgrid. The 5 kW Fortis wind subsystem had been out of service since a 2019 malfunction and was planned for reinstallation in the 2023 paper; no later public confirmation of its return to service was found through July 2026. PV/battery operation is described in 2023, but a recent measured generation mix was not located.",
       "classification": "University",
       "historicalLocation": "Baron Techno Park BPPT, Kanigoro, Gunung Kidul Regency, Special Region of Yogyakarta, Indonesia",
       "archiveCapturedAt": "2020-07-06",
       "organizations": [
+        {
+          "name": "Agency for Assessment and Application of Technology (BPPT)",
+          "role": "Original developer and research operator of Baron Techno Park; its functions were later absorbed into Indonesia's BRIN.",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
         {
           "name": "Agency for the Assessment and Application of Technology (BPPT; now BRIN)",
           "role": "Developer and research-site operator",
           "sourceIds": [
             "baron-study",
             "brin-baron"
+          ]
+        },
+        {
+          "name": "Fortis Wind Energy",
+          "role": "Manufacturer of the 5 kW wind turbine documented in the 2023 engineering paper.",
+          "sourceIds": [
+            "baron-evergreen-2023"
           ]
         },
         {
@@ -950,6 +1469,13 @@
           "role": "Regional project collaborator",
           "sourceIds": [
             "baron-study"
+          ]
+        },
+        {
+          "name": "Norwegian Agency for Development Cooperation (NORAD)",
+          "role": "Grant funder associated with the site's establishment in 2009.",
+          "sourceIds": [
+            "baron-evergreen-2023"
           ]
         }
       ],
@@ -995,6 +1521,58 @@
           "sourceIds": [
             "baron-study"
           ]
+        },
+        {
+          "label": "Installed PV capacity",
+          "value": "36 kW: three arrays, each documented as 120 modules at 120 Wp",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "label": "Wind capacity by phase",
+          "value": "Original installed total 15 kW (10 kW plus 5 kW); the 2023 configuration describes only the 5 kW Fortis unit, which had been stopped since 2019 due to malfunction",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "label": "Dispatchable generation",
+          "value": "25 kW diesel generator and 25 kW biodiesel generator in the 2017 system inventory",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
+        },
+        {
+          "label": "Legacy battery description",
+          "value": "288 kVAh / 1,200 Ah in the 2017 equipment profile; the same paper's introduction says 228 kVAh, an internal conflict",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
+        },
+        {
+          "label": "2023 battery description",
+          "value": "20 kWh",
+          "sourceIds": [
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "label": "Hybrid inverter/controller",
+          "value": "25 kW/kVA class hybrid inverter and data-acquisition/control system",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "label": "2017 study load",
+          "value": "184.7 kWh/day, averaging approximately 7.7 kW",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
         }
       ],
       "equipment": [
@@ -1004,9 +1582,77 @@
           "sourceIds": [
             "baron-study"
           ]
+        },
+        {
+          "category": "Wind turbine",
+          "manufacturer": "Fortis Wind Energy",
+          "detail": "5 kW DC-output wind turbine connected through the site's main control room and hybrid inverter; reported stopped since 2019 because of malfunction.",
+          "sourceIds": [
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "category": "PV arrays",
+          "detail": "Three nominal 14.4 kWp module groupings are described by component count (120 x 120 Wp each), although the installed project rating is consistently reported as 36 kW; this published arithmetic inconsistency is not silently resolved.",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
+        },
+        {
+          "category": "Hybrid controller and inverter",
+          "detail": "25 kVA-class unit in the main control room, integrating PV, wind, storage, dispatchable generation, and data acquisition.",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "category": "Battery bank",
+          "detail": "The 2017 profile describes two arrays, eight strings per array and 15 batteries per string, while also printing 120 cells; the count statements are internally inconsistent. A 2023 paper instead characterizes the active configuration as 20 kWh.",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
         }
       ],
-      "technicalDetails": [],
+      "technicalDetails": [
+        {
+          "category": "Architecture",
+          "detail": "PV, wind, biodiesel/diesel, battery storage, and inverter resources connect through an off-grid hybrid controller with data acquisition. The site is primarily a demonstration and research platform rather than a utility-scale supply plant.",
+          "sourceIds": [
+            "baron-garuda-2017",
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "category": "Availability in 2017",
+          "detail": "The 2017 performance study says obstacles left only 24 kW of the 36 kW PV inventory and 5 kW of the 15 kW wind inventory operating at the study time.",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
+        },
+        {
+          "category": "Wind outage update",
+          "detail": "The Fortis 5 kW turbine stopped operating in 2019 due to malfunction. The 2023 paper says reinstallation was planned in the near future, but the review found no later commissioning confirmation.",
+          "sourceIds": [
+            "baron-evergreen-2023"
+          ]
+        },
+        {
+          "category": "Fuel research",
+          "detail": "A 2015 site account says the biodiesel demonstration shifted from unsuccessful jatropha feedstock toward used cooking oil; the installation was a pilot/research line, not commercial mass production.",
+          "sourceIds": [
+            "baron-antara-2015"
+          ]
+        },
+        {
+          "category": "Performance caveat",
+          "detail": "Large annual generation and energy-mix figures in the 2017 paper are HOMER-model results, not metered operating production, and are therefore not presented as an observed energy mix here.",
+          "sourceIds": [
+            "baron-garuda-2017"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -1029,31 +1675,55 @@
           "url": "https://penerbit.brin.go.id/press/catalog/download/900/798/19076?inline=1",
           "publisher": "National Research and Innovation Agency (BRIN)",
           "kind": "primary"
+        },
+        {
+          "id": "baron-garuda-2017",
+          "title": "Effect of Load Growth on PLTH Baron Techno Park Performance",
+          "url": "https://download.garuda.kemdikbud.go.id/article.php?article=1300928&title=Effect+of+Load+Growth+on+PLTH+Baron+Techno+Park+Performance&val=17524",
+          "publisher": "Garuda / Indonesian Ministry of Education research repository",
+          "kind": "primary"
+        },
+        {
+          "id": "baron-evergreen-2023",
+          "title": "Performance Analysis of Wind Turbine at Baron Techno Park",
+          "url": "https://www.tj.kyushu-u.ac.jp/evergreen/contents/EG2023-10_3_content/pdf/p1753-1761.pdf",
+          "publisher": "Evergreen, Joint Journal of Novel Carbon Resource Sciences & Green Asia Strategy",
+          "kind": "primary"
+        },
+        {
+          "id": "baron-antara-2015",
+          "title": "Baron Technopark diharapkan dongkrak kunjungan wisata",
+          "url": "https://jogja.antaranews.com/berita/336692/baron-technopark-diharapkan-dongkrak-kunjungan-wisata",
+          "publisher": "ANTARA News Yogyakarta",
+          "kind": "secondary"
         }
       ]
     },
     "blue-lake-rancheria-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": "Blue Lake Rancheria's community-scale microgrid entered service in 2017 and combines solar, battery storage, legacy backup generation, building controls, and islanding capability.",
-      "status": "Operational; community-scale system commissioned in 2017",
+      "summary": "Blue Lake Rancheria's main community microgrid has operated since 2017 with a 420 kW SolarWorld/SMA PV plant, a 500 kW/950 kWh Tesla Powerpack battery system through two Dynapower inverters, a Siemens Spectrum Power microgrid controller, and a 1 MW Cummins diesel generator. It has islanded through grid outages and supported the surrounding community during disasters. A second Play Station 777 microgrid entered service in 2020, a new Tesla Megapack installation was commissioned in 2024 without a published capacity, and a $5 million 2025 California Energy Commission award is funding a nested 12 kV Microgrid 2.0 expansion.",
+      "status": "The 2017 main microgrid and 2020 Play Station 777 microgrid are operational. The tribe reports commissioning an additional Tesla Megapack installation in 2024, but does not disclose its power or energy capacity. The nested Microgrid 2.0 expansion was funded in June 2025 and remained an active demonstration/expansion effort in 2026; it should not yet be counted as commissioned capacity.",
       "classification": "Building",
       "historicalLocation": "Blue Lake Rancheria, Humboldt County, CA, United States",
       "archiveCapturedAt": "2021-02-28",
       "organizations": [
         {
           "name": "Blue Lake Rancheria",
-          "role": "Owner, operator, and co-funder",
+          "role": "Tribal owner, project host, and operator/customer of the community resilience microgrids.",
           "sourceIds": [
-            "doe-blue-lake-partners",
-            "doe-blue-lake"
+            "bluelake-cec-final-2019",
+            "bluelake-tribe-timeline-2026",
+            "bluelake-nested-2025"
           ]
         },
         {
           "name": "California Energy Commission",
-          "role": "Regulator and EPIC grant funder",
+          "role": "Public funder and oversight agency for the original EPIC demonstration and the $5 million 2025 nested-microgrid award.",
           "sourceIds": [
-            "doe-blue-lake-partners"
+            "bluelake-cec-final-2019",
+            "bluelake-nested-2025",
+            "bluelake-cec-nested-sow-2025"
           ]
         },
         {
@@ -1078,6 +1748,13 @@
           ]
         },
         {
+          "name": "GHD",
+          "role": "Engineer of record, system integrator, construction manager, commissioning agent, civil engineer, and owner's engineer for the original microgrid.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
           "name": "Grid Alternatives",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
@@ -1099,6 +1776,13 @@
           ]
         },
         {
+          "name": "Johnson Controls",
+          "role": "Supplier/integrator of the Metasys facility energy-management and load-shedding system.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
           "name": "Kernen Construction",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
@@ -1110,6 +1794,13 @@
           "role": "Research participant",
           "sourceIds": [
             "doe-blue-lake-partners"
+          ]
+        },
+        {
+          "name": "McKeever Energy & Electric",
+          "role": "PV installation contractor for the original array.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
           ]
         },
         {
@@ -1134,6 +1825,14 @@
           ]
         },
         {
+          "name": "Pacific Gas and Electric Company (PG&E)",
+          "role": "Interconnecting utility for the 12.5 kV service and invited utility participant in the nested 12 kV testing program.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-cec-nested-sow-2025"
+          ]
+        },
+        {
           "name": "PG&E",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
@@ -1142,24 +1841,33 @@
         },
         {
           "name": "REC Solar",
-          "role": "Solar vendor",
+          "role": "Turnkey PV engineering/procurement contractor for the original 420 kW array.",
           "sourceIds": [
-            "doe-blue-lake-partners"
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "name": "Robert Colburn Electric",
+          "role": "Main electrical contractor for the original project outside the solar scope.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
           ]
         },
         {
           "name": "Schatz Energy Research Center",
-          "role": "Integration engineering lead",
+          "role": "Lead integrator and concept-of-operations developer for the original project; technical partner for the 2025 nested Microgrid 2.0 project.",
           "sourceIds": [
-            "doe-blue-lake-partners"
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018",
+            "bluelake-nested-2025"
           ]
         },
         {
           "name": "Siemens",
-          "role": "Microgrid controls supplier",
+          "role": "Supplier of the Spectrum Power microgrid management system and power-flow controls.",
           "sourceIds": [
-            "siemens-blue-lake",
-            "doe-blue-lake-partners"
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
           ]
         },
         {
@@ -1171,9 +1879,11 @@
         },
         {
           "name": "Tesla",
-          "role": "Battery-system vendor",
+          "role": "Supplier and integrator of the original ten-Powerpack BESS; the tribe also reports a separate Tesla Megapack installation commissioned in 2024.",
           "sourceIds": [
-            "doe-blue-lake-partners"
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018",
+            "bluelake-tribe-timeline-2026"
           ]
         }
       ],
@@ -1219,6 +1929,58 @@
           "sourceIds": [
             "siemens-blue-lake"
           ]
+        },
+        {
+          "label": "Main microgrid PV",
+          "value": "420 kW, 1,548 SolarWorld 325 W modules through fourteen 30 kW SMA inverters",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "label": "Main microgrid battery",
+          "value": "500 kW / 950 kWh, ten Tesla Powerpacks through two 250 kW Dynapower inverters",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "label": "Backup generator",
+          "value": "1 MW Cummins diesel generator",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "label": "Utility interconnection",
+          "value": "12.5 kV PG&E service through a computer-controlled point-of-common-coupling breaker",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "label": "Play Station 777 microgrid",
+          "value": "60 kW PV and a battery reported as 169 kWh by the tribe and 174 kWh by the CEC; operational in 2020",
+          "sourceIds": [
+            "bluelake-tribe-timeline-2026",
+            "bluelake-cec-tribal-2026"
+          ]
+        },
+        {
+          "label": "2024 Megapack expansion",
+          "value": "New Tesla Megapack installation commissioned in 2024; power and energy ratings were not publicly disclosed in the located source",
+          "sourceIds": [
+            "bluelake-tribe-timeline-2026"
+          ]
+        },
+        {
+          "label": "2017 renewable contribution",
+          "value": "PV supplied approximately 15% of on-site electric load in the first operating year; grid electricity, stored energy, and diesel served the balance according to operating mode",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
         }
       ],
       "equipment": [
@@ -1248,6 +2010,82 @@
             "doe-blue-lake",
             "doe-blue-lake-partners"
           ]
+        },
+        {
+          "category": "PV modules",
+          "manufacturer": "SolarWorld",
+          "model": "Sunmodule SW 325 XL",
+          "detail": "1,548 modules forming the 420 kW array.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "category": "PV inverters",
+          "manufacturer": "SMA",
+          "model": "Sunny Tripower 30TL-US",
+          "detail": "Fourteen 30 kW units for the original PV plant.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "category": "Battery system",
+          "manufacturer": "Tesla",
+          "model": "Powerpack",
+          "detail": "Ten Powerpacks, totaling 500 kW/950 kWh in the original commissioned system.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "category": "Battery inverters",
+          "manufacturer": "Dynapower",
+          "model": "MPS-250",
+          "detail": "Two 250 kW power-conversion systems.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "category": "Microgrid controller",
+          "manufacturer": "Siemens",
+          "model": "Spectrum Power MGMS",
+          "detail": "Supervisory microgrid management, dispatch, islanding, and power-flow control.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "category": "Facility energy management",
+          "manufacturer": "Johnson Controls",
+          "model": "Metasys",
+          "detail": "Building-load monitoring and automated load shedding coordinated with the microgrid controller.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "category": "Point-of-common-coupling relay",
+          "manufacturer": "Schweitzer Engineering Laboratories",
+          "model": "SEL-700GT+",
+          "detail": "Protection and interconnection relay at the utility interface.",
+          "sourceIds": [
+            "bluelake-schatz-factsheet-2018"
+          ]
+        },
+        {
+          "category": "Backup generator",
+          "manufacturer": "Cummins",
+          "model": "KTA38-G1",
+          "detail": "1 MW diesel generator for prolonged island operation and resilience.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
         }
       ],
       "technicalDetails": [
@@ -1263,6 +2101,51 @@
           "detail": "The 175 kilowatt (kW) system is fueled by biomass (plant-based biological material) that has been reduced to sawdust size.",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Operating performance",
+          "detail": "The original project finished on schedule with less than 1.5% cost overrun. It saved approximately $160,000 in 2017 and was expected to save about $200,000 annually thereafter while avoiding 159 metric tons CO2e in 2017 (about 175 tons expected annually).",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "category": "Resilience record",
+          "detail": "The main system islanded seamlessly during a 2017 outage. Both tribal microgrids remained operational during a three-day 2019 utility outage, and the tribe reports supporting thousands of people after the December 2022 magnitude-6.4 earthquake.",
+          "sourceIds": [
+            "bluelake-cec-final-2019",
+            "bluelake-cec-tribal-2026",
+            "bluelake-tribe-timeline-2026"
+          ]
+        },
+        {
+          "category": "Nested Microgrid 2.0",
+          "detail": "A $5 million CEC award announced 11 June 2025 funds advanced 12 kV nested controls/protection, circuit reconfiguration, and added solar/storage across three facility microgrids, with PG&E invited to testing. Equipment vendors and final capacities were not fixed in the public scope and are not assigned here.",
+          "sourceIds": [
+            "bluelake-nested-2025",
+            "bluelake-cec-nested-sow-2025"
+          ]
+        },
+        {
+          "category": "Regional replication",
+          "detail": "The nested project is intended to inform replication along the approximately 142-mile Hoopa 1101 feeder serving Hoopa Valley, Yurok, and Karuk communities.",
+          "sourceIds": [
+            "bluelake-nested-2025"
+          ]
+        },
+        {
+          "category": "Configuration correction",
+          "detail": "The CEC final report for the commissioned 2017 system identifies PV, BESS, grid, and a diesel generator. It does not include the 175 kW biomass/fuel-cell concept found in older planning material; that concept should not be counted as installed main-microgrid capacity.",
+          "sourceIds": [
+            "bluelake-cec-final-2019"
+          ]
+        },
+        {
+          "category": "2026 update",
+          "detail": "The tribe hosted an operating-microgrid tour in April 2026 and described ongoing TERAS and nested-microgrid expansion work, providing current evidence that the resilience program remains active.",
+          "sourceIds": [
+            "bluelake-tour-2026"
           ]
         }
       ],
@@ -1295,18 +2178,76 @@
           "url": "https://blog.siemens.com/2021/04/microgrids-the-innovation-we-need-for-a-livable-future/",
           "publisher": "Siemens",
           "kind": "primary"
+        },
+        {
+          "id": "bluelake-cec-final-2019",
+          "title": "Demonstrating a Secure, Reliable, Low-Carbon Community Microgrid at the Blue Lake Rancheria",
+          "url": "https://www.energy.ca.gov/publications/2019/demonstrating-secure-reliable-low-carbon-community-microgrid-blue-lake-rancheria",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-schatz-factsheet-2018",
+          "title": "Blue Lake Rancheria Microgrid Fact Sheet",
+          "url": "https://bluelakerancheria-nsn.gov/wp-content/uploads/2018/11/BLR_Microgrid_FactSheet.pdf",
+          "publisher": "Blue Lake Rancheria / Schatz Energy Research Center",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-tribe-timeline-2026",
+          "title": "Sustainability and Resilience",
+          "url": "https://www.bluelakerancheria-nsn.gov/departments/sustainability-and-resilience/",
+          "publisher": "Blue Lake Rancheria",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-cec-tribal-2026",
+          "title": "Tribal Microgrids",
+          "url": "https://www.energy.ca.gov/programs-and-topics/programs/tribal-program/tribal-microgrids",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-nested-2025",
+          "title": "Nested Microgrid",
+          "url": "https://www.bluelakerancheria-nsn.gov/nested-microgrid/",
+          "publisher": "Blue Lake Rancheria",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-cec-nested-sow-2025",
+          "title": "Microgrid 2.0: Flexible, Scalable and Cost-Effective Nested Microgrids — Scope of Work",
+          "url": "https://www.energy.ca.gov/filebrowser/download/7680?fid=7680",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bluelake-tour-2026",
+          "title": "Blue Lake Rancheria Hosts Microgrid Tour",
+          "url": "https://www.bluelakerancheria-nsn.gov/blue-lake-rancheria-hosts-microgrid-tour/",
+          "publisher": "Blue Lake Rancheria",
+          "kind": "primary"
         }
       ]
     },
     "bonaire-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": null,
-      "status": "Operational",
+      "summary": "Bonaire's island power system is an operating hybrid of 11.1 MW of wind, 5.3 MW of solar, 28.5 MW of thermal generation, and a battery fleet currently described by ContourGlobal as 14 MW. The original 2010 renewable build used twelve Enercon E-44/900 turbines, one E-33/330 turbine, MAN diesel engines, and a 3 MW Saft nickel-cadmium battery. Wärtsilä added a 6 MW/6 MWh battery and GEMS controls in 2019, and ContourGlobal added a further battery and the 5.3 MW solar plant in 2023. The system remains the island's sole bulk supply to distributor WEB, although 2024 demand growth, extreme heat, and cable damage caused outages and prompted capacity and grid upgrades.",
+      "status": "Operating under ContourGlobal, with WEB distributing electricity. Current owner figures are 28.5 MW thermal, 11.1 MW wind, 14 MW BESS power, and 5.3 MW solar. WEB reported 2024 reliability problems and added 5 MW of production capacity while upgrading controls and transmission. Wind repowering/expansion is planned, but the publicly stated 60% renewable target was not verified as achieved and no current audited annual energy mix was found.",
       "classification": "Island",
       "historicalLocation": "Bonaire, Caribbean Netherlands",
       "archiveCapturedAt": "2020-07-05",
       "organizations": [
+        {
+          "name": "ContourGlobal Bonaire",
+          "role": "Current owner/operator and sole bulk electricity generator supplying WEB Bonaire.",
+          "sourceIds": [
+            "bonaire-contour-asset-2026",
+            "bonaire-contour-wind-2024",
+            "bonaire-web-electricity-2026"
+          ]
+        },
         {
           "name": "EcoPower Bonaire",
           "role": "Publicly named participant; role not specified in the recovered record",
@@ -1323,9 +2264,53 @@
         },
         {
           "name": "Enercon",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original wind-turbine, renewable-system, and load-balancing supplier; held a minority project interest at development.",
           "sourceIds": [
-            "archive"
+            "bonaire-saft-2010",
+            "bonaire-dutch-audit-2016"
+          ]
+        },
+        {
+          "name": "Evelop / Eneco",
+          "role": "Original majority developer, financier, and operator of the 2010 hybrid power plant (reported 90% project interest at development).",
+          "sourceIds": [
+            "bonaire-saft-2010"
+          ]
+        },
+        {
+          "name": "Green World Company Projects",
+          "role": "Construction contractor identified by ContourGlobal for the 2023 solar project.",
+          "sourceIds": [
+            "bonaire-contour-solar-2023"
+          ]
+        },
+        {
+          "name": "MAN",
+          "role": "Original diesel-genset supplier and minority project participant.",
+          "sourceIds": [
+            "bonaire-saft-2010",
+            "bonaire-dutch-audit-2016"
+          ]
+        },
+        {
+          "name": "Saft",
+          "role": "Supplier of the original 3 MW nickel-cadmium energy-storage system commissioned with the 2010 plant.",
+          "sourceIds": [
+            "bonaire-saft-2010"
+          ]
+        },
+        {
+          "name": "SMA Altenso",
+          "role": "Engineering and main-component supplier identified by ContourGlobal for the 2023 solar expansion.",
+          "sourceIds": [
+            "bonaire-contour-solar-2023"
+          ]
+        },
+        {
+          "name": "Wärtsilä",
+          "role": "EPC and controls/storage supplier for the 6 MW/6 MWh 2019 battery expansion and GEMS energy-management system.",
+          "sourceIds": [
+            "bonaire-wartsila-2019"
           ]
         },
         {
@@ -1333,6 +2318,15 @@
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "Water- en Energiebedrijf Bonaire (WEB)",
+          "role": "Island electricity distributor, grid operator/customer of ContourGlobal generation, and planner of current reliability and energy-transition works.",
+          "sourceIds": [
+            "bonaire-web-electricity-2026",
+            "bonaire-web-outages-2024",
+            "bonaire-web-transition-2024"
           ]
         }
       ],
@@ -1357,9 +2351,124 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Current wind capacity",
+          "value": "11.1 MW",
+          "sourceIds": [
+            "bonaire-contour-asset-2026",
+            "bonaire-contour-wind-2024"
+          ]
+        },
+        {
+          "label": "Current solar capacity",
+          "value": "5.3 MW, commercially operating from 2023",
+          "sourceIds": [
+            "bonaire-contour-asset-2026",
+            "bonaire-contour-solar-2023"
+          ]
+        },
+        {
+          "label": "Current thermal capacity",
+          "value": "28.5 MW",
+          "sourceIds": [
+            "bonaire-contour-asset-2026"
+          ]
+        },
+        {
+          "label": "Current BESS power",
+          "value": "14 MW aggregate power rating; ContourGlobal does not disclose aggregate energy capacity on its current asset page",
+          "sourceIds": [
+            "bonaire-contour-asset-2026"
+          ]
+        },
+        {
+          "label": "Current net peak capacity",
+          "value": "58.9 MW as reported by ContourGlobal",
+          "sourceIds": [
+            "bonaire-contour-asset-2026"
+          ]
+        },
+        {
+          "label": "Original wind fleet",
+          "value": "Twelve 900 kW Enercon E-44 turbines at Morotin (10.8 MW) plus one 330 kW Enercon E-33 at Sorobon, approximately 11.13 MW total",
+          "sourceIds": [
+            "bonaire-dutch-audit-2016",
+            "bonaire-web-sustainable-2026"
+          ]
+        },
+        {
+          "label": "2019 battery expansion",
+          "value": "6 MW / 6 MWh",
+          "sourceIds": [
+            "bonaire-wartsila-2019"
+          ]
+        },
+        {
+          "label": "Renewable-energy share",
+          "value": "WEB describes wind as roughly 22% of annual energy on its current public page and had targeted 60% renewable energy; the review found no audited evidence that the 60% target was achieved after the 2023 solar/BESS additions",
+          "sourceIds": [
+            "bonaire-web-electricity-2026",
+            "bonaire-web-sustainable-2026"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Wind turbines",
+          "manufacturer": "Enercon",
+          "model": "E-44/900",
+          "detail": "Twelve 900 kW units at Morotin, totaling 10.8 MW.",
+          "sourceIds": [
+            "bonaire-dutch-audit-2016",
+            "bonaire-web-sustainable-2026"
+          ]
+        },
+        {
+          "category": "Wind turbine",
+          "manufacturer": "Enercon",
+          "model": "E-33/330",
+          "detail": "One 330 kW unit at Sorobon.",
+          "sourceIds": [
+            "bonaire-dutch-audit-2016",
+            "bonaire-web-sustainable-2026"
+          ]
+        },
+        {
+          "category": "Original battery system",
+          "manufacturer": "Saft",
+          "model": "SMRX nickel-cadmium / nickel-block",
+          "detail": "3 MW system in three containers at 640 V and 1,320 Ah; designed for more than two minutes of immediate support while diesel generation starts and to absorb power while held near 90% state of charge.",
+          "sourceIds": [
+            "bonaire-saft-2010"
+          ]
+        },
+        {
+          "category": "2019 battery system",
+          "manufacturer": "Wärtsilä",
+          "detail": "6 MW/6 MWh BESS delivered under EPC scope.",
+          "sourceIds": [
+            "bonaire-wartsila-2019"
+          ]
+        },
+        {
+          "category": "Energy-management system",
+          "manufacturer": "Wärtsilä",
+          "model": "GEMS",
+          "detail": "Controls the hybrid thermal, wind, and storage fleet and supports fast frequency response and renewable integration.",
+          "sourceIds": [
+            "bonaire-wartsila-2019"
+          ]
+        },
+        {
+          "category": "Medium-voltage system",
+          "manufacturer": "ABB",
+          "detail": "30 kV medium-voltage equipment identified in the Dutch government project audit.",
+          "sourceIds": [
+            "bonaire-dutch-audit-2016"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Storage",
@@ -1388,6 +2497,53 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Hybrid architecture",
+          "detail": "Wind and solar are dispatched with battery storage and thermal generators on a single island grid. The batteries provide fast frequency/power-quality support, absorb excess renewable output, and bridge the interval while diesel units start.",
+          "sourceIds": [
+            "bonaire-saft-2010",
+            "bonaire-wartsila-2019",
+            "bonaire-contour-asset-2026"
+          ]
+        },
+        {
+          "category": "2019 performance",
+          "detail": "Wärtsilä reports that the 6 MW/6 MWh addition reduced CO2 emissions by 8%, fossil-fuel use by 5%, eliminated renewable curtailment, and increased annual wind utilization by 6-8%. Load-rejection tests demonstrated continued operation after loss of wind, engines, or load without customer shedding.",
+          "sourceIds": [
+            "bonaire-wartsila-2019"
+          ]
+        },
+        {
+          "category": "2023 expansion chronology",
+          "detail": "ContourGlobal's current report describes the additional battery as commercially operating in April 2023 and the 5.3 MW PV plant later in 2023. Local reporting places battery commissioning in July and solar commissioning in September; the difference likely reflects commercial-operation versus local handover milestones.",
+          "sourceIds": [
+            "bonaire-contour-report-2025",
+            "bonaire-web-transition-2024"
+          ]
+        },
+        {
+          "category": "2024 reliability update",
+          "detail": "WEB attributed recent outages to an unexpected 15-20% demand increase, extreme heat, and cable damage. It reported adding 5 MW of production capacity, digitizing controls, and advancing transmission upgrades with a January 2025 target.",
+          "sourceIds": [
+            "bonaire-web-outages-2024"
+          ]
+        },
+        {
+          "category": "Planned wind upgrade",
+          "detail": "ContourGlobal says it is pursuing wind repowering that would more than double wind capacity. WEB also identifies wind-farm expansion in its 2024-2030 transition planning; no completed repower rating was located.",
+          "sourceIds": [
+            "bonaire-contour-wind-2024",
+            "bonaire-web-transition-2024"
+          ]
+        },
+        {
+          "category": "Storage-rating caveat",
+          "detail": "The current 14 MW BESS figure is a power rating. It must not be converted to 14 MWh or simply added to historical energy ratings because the owner does not publish the current aggregate duration/energy capacity.",
+          "sourceIds": [
+            "bonaire-contour-asset-2026",
+            "bonaire-wartsila-2019"
+          ]
         }
       ],
       "sources": [
@@ -1414,14 +2570,91 @@
           "publisher": "powerengineeringint.com",
           "kind": "archive",
           "capturedAt": "2020-07-05"
+        },
+        {
+          "id": "bonaire-contour-asset-2026",
+          "title": "Bonaire",
+          "url": "https://www.contourglobal.com/assets/bonaire/",
+          "publisher": "ContourGlobal",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-contour-wind-2024",
+          "title": "ContourGlobal celebrates decade-plus wind energy milestones across three continents",
+          "url": "https://www.contourglobal.com/news/contourglobal-celebrates-decade-wind-energy-milestones-across-three-continents/",
+          "publisher": "ContourGlobal",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-web-electricity-2026",
+          "title": "Electricity",
+          "url": "https://www.webbonaire.com/electricity/?lang=en",
+          "publisher": "Water- en Energiebedrijf Bonaire",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-web-sustainable-2026",
+          "title": "Sustainable Energy",
+          "url": "https://www.webbonaire.com/sustainable-energy/?lang=en",
+          "publisher": "Water- en Energiebedrijf Bonaire",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-saft-2010",
+          "title": "Saft energy storage system to support Caribbean island of Bonaire power grid",
+          "url": "https://www.prnewswire.com/news-releases/saft-energy-storage-system-to-support-caribbean-island-of-bonaire-power-grid-in-switch-to-eco-friendly-generation-84758792.html",
+          "publisher": "Saft / PR Newswire",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-dutch-audit-2016",
+          "title": "Onderzoek naar de elektriciteitsvoorziening op Bonaire",
+          "url": "https://www.tweedekamer.nl/downloads/document?id=2016D08414",
+          "publisher": "Tweede Kamer der Staten-Generaal",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-wartsila-2019",
+          "title": "ContourGlobal Bonaire",
+          "url": "https://www.wartsila.com/energy/learn-more/references/ipps/contourglobal-bonaire",
+          "publisher": "Wärtsilä",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-contour-solar-2023",
+          "title": "ContourGlobal Bonaire continues to lead the energy transition",
+          "url": "https://www.linkedin.com/posts/contourglobal_contourglobal-bonaire-continues-to-lead-the-activity-7169349135597334529-X0he",
+          "publisher": "ContourGlobal",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-contour-report-2025",
+          "title": "Current Report, January 20, 2025",
+          "url": "https://www.contourglobal.com/wp-content/uploads/2025/04/cg_power_-_current_report_january_20_2025-1.pdf",
+          "publisher": "ContourGlobal",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-web-outages-2024",
+          "title": "WEB takes action after recent power outages",
+          "url": "https://www.webbonaire.com/2024/09/11/web-takes-action-after-recent-power-outages/?lang=en",
+          "publisher": "Water- en Energiebedrijf Bonaire",
+          "kind": "primary"
+        },
+        {
+          "id": "bonaire-web-transition-2024",
+          "title": "EZK delegation visits WEB and CGB energy projects on Bonaire",
+          "url": "https://www.webbonaire.com/2024/04/22/ezk-delegation-visits-web-and-cgb-energy-projects-on-bonaire/?lang=en",
+          "publisher": "Water- en Energiebedrijf Bonaire",
+          "kind": "primary"
         }
       ]
     },
     "bornholm-island": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": "Bornholm served as the EcoGrid EU living laboratory for real-time, price-responsive demand and renewable integration. The demonstration ran from 2011 to 2015 across the island distribution system and involved a 17-member utility, research, and technology consortium.",
-      "status": "EcoGrid EU demonstration completed in 2015; Bornholm remains an active energy test island",
+      "summary": "Bornholm is a live island power system and long-running smart-grid test platform connected to Sweden by one subsea cable. EcoGrid EU enrolled roughly 2,000 households in 2011-2015, and EcoGrid 2.0 concluded in 2019 after remotely coordinating electric heating in 800 homes. Under normal conditions BEOF says its own local generation is entirely wind, solar, biomass, and biogas, while the island imports Nordic electricity when local renewable output is insufficient and starts Rønne thermal units during cable outages. BEOF announced a 10 MW Hitachi Energy battery for installation in the old Rønne coal plant in 2026, but no public commissioning confirmation was found by this review.",
+      "status": "EcoGrid EU and EcoGrid 2.0 are complete demonstrations; Bornholm remains an operating island grid and active Test Island Bornholm platform. BEOF and Energinet signed a May 2026 reserve-supply agreement for 2027-2031. A 10 MW Hitachi Energy battery was announced for 2026 installation but is not counted as commissioned absent confirmation. The separate 3 GW Bornholm Energy Island offshore project was revived by a January 2026 Danish-German agreement and remains future infrastructure.",
       "classification": "Community",
       "historicalLocation": "Bornholm, Denmark",
       "archiveCapturedAt": "2021-04-20",
@@ -1435,9 +2668,18 @@
         },
         {
           "name": "Bornholms Energi & Forsyning (BEOF)",
-          "role": "Host distribution utility and demonstration operator",
+          "role": "Local electric-grid owner/operator, generation owner, Test Island host, EcoGrid partner, and party responsible for reserve island supply.",
           "sourceIds": [
-            "beof-ecogrid"
+            "bornholm-beof-testisland-2026",
+            "bornholm-beof-sustainability-2026",
+            "bornholm-beof-reserve-2026"
+          ]
+        },
+        {
+          "name": "Danish Energy Association",
+          "role": "EcoGrid 2.0 consortium participant and project coordinator in the completed 2016-2019 demonstration.",
+          "sourceIds": [
+            "bornholm-dtu-ecogrid2-2019"
           ]
         },
         {
@@ -1469,6 +2711,13 @@
           ]
         },
         {
+          "name": "Energinet",
+          "role": "Danish transmission-system operator and counterparty to BEOF's 2027-2031 reserve-supply agreement for Bornholm.",
+          "sourceIds": [
+            "bornholm-beof-reserve-2026"
+          ]
+        },
+        {
           "name": "Energinet.dk",
           "role": "Transmission-system and project partner",
           "sourceIds": [
@@ -1490,10 +2739,17 @@
           ]
         },
         {
-          "name": "IBM",
-          "role": "Technology partner",
+          "name": "Hitachi Energy",
+          "role": "Supplier selected for BEOF's announced 10 MW indoor battery at the former Rønne coal plant.",
           "sourceIds": [
-            "beof-ecogrid"
+            "bornholm-beof-bess-2025"
+          ]
+        },
+        {
+          "name": "IBM",
+          "role": "EcoGrid 2.0 technology/consortium participant.",
+          "sourceIds": [
+            "bornholm-dtu-ecogrid2-2019"
           ]
         },
         {
@@ -1526,9 +2782,10 @@
         },
         {
           "name": "Technical University of Denmark (DTU)",
-          "role": "Research and project partner",
+          "role": "Research lead/partner for EcoGrid demonstrations and operator of experimental monitoring, forecasting, and SCADA research infrastructure.",
           "sourceIds": [
-            "beof-ecogrid"
+            "bornholm-dtu-system-2022",
+            "bornholm-dtu-ecogrid2-2019"
           ]
         },
         {
@@ -1581,6 +2838,58 @@
           "sourceIds": [
             "beof-ecogrid"
           ]
+        },
+        {
+          "label": "Island electricity demand",
+          "value": "Approximately 250 GWh/year, with a roughly 55 MW peak and about 28,000 electricity customers in DTU's technical system description",
+          "sourceIds": [
+            "bornholm-dtu-system-2022",
+            "bornholm-beof-renewable-2024"
+          ]
+        },
+        {
+          "label": "Local renewable share",
+          "value": "BEOF says local production rose from about 50% to roughly 75% of annual island consumption over the prior decade; a separate BEOF page says its wind and solar average about 65% of consumption daily. These are different measures and not interchangeable.",
+          "sourceIds": [
+            "bornholm-beof-renewable-2024",
+            "bornholm-beof-sustainability-2026"
+          ]
+        },
+        {
+          "label": "Normal BEOF production mix",
+          "value": "BEOF characterizes 100% of its own local electricity production under normal conditions as wind, solar, biomass, and biogas; this does not mean all island consumption is renewable because Nordic grid imports cover shortfalls.",
+          "sourceIds": [
+            "bornholm-beof-testisland-2026",
+            "bornholm-beof-sustainability-2026"
+          ]
+        },
+        {
+          "label": "DTU documented generation fleet",
+          "value": "35 wind turbines totaling 30 MW, 5 MW PV, 2 MW biogas engines, 34 MW across 14 oil diesels, a 25 MW oil steam unit, and a 37 MW multi-fuel oil/coal/wood-chip steam unit; the page was updated in 2022 and its fleet figures should be treated as dated",
+          "sourceIds": [
+            "bornholm-dtu-system-2022"
+          ]
+        },
+        {
+          "label": "Announced battery",
+          "value": "10 MW indoor BESS, approximately 100 tonnes, planned in the old Rønne coal plant during 2026; MWh/duration not disclosed",
+          "sourceIds": [
+            "bornholm-beof-bess-2025"
+          ]
+        },
+        {
+          "label": "EcoGrid participation",
+          "value": "About 2,000 households in EcoGrid EU (2011-2015); 800 households with remotely controlled heat pumps/electric heaters in the completed EcoGrid 2.0 field trial",
+          "sourceIds": [
+            "bornholm-dtu-ecogrid2-2019"
+          ]
+        },
+        {
+          "label": "Future Bornholm Energy Island",
+          "value": "3 GW offshore wind connection linking Danish and German systems, intended to supply electricity equivalent to about three million homes; not current Bornholm microgrid capacity",
+          "sourceIds": [
+            "bornholm-eu-energy-island-2026"
+          ]
         }
       ],
       "equipment": [
@@ -1589,6 +2898,39 @@
           "detail": "EcoGrid used real-time electricity pricing and flexible-load control across participating customers; the public consortium page does not identify one island-wide controller model.",
           "sourceIds": [
             "beof-ecogrid"
+          ]
+        },
+        {
+          "category": "Operational SCADA",
+          "manufacturer": "ABB",
+          "model": "Network Manager SCADA",
+          "detail": "Operational at BEOF with an experimental counterpart at DTU; approximately one-second system signals support research and operation.",
+          "sourceIds": [
+            "bornholm-dtu-system-2022"
+          ]
+        },
+        {
+          "category": "Power-quality monitoring",
+          "manufacturer": "Elspec",
+          "model": "G4430",
+          "detail": "Ten grid recorders plus seven plant-level recorders are described in DTU's research instrumentation inventory.",
+          "sourceIds": [
+            "bornholm-dtu-system-2022"
+          ]
+        },
+        {
+          "category": "Advanced metering and synchrophasors",
+          "detail": "Five-minute customer smart-meter data, PMUs, and wind/PV/load forecasting feed the island research platform.",
+          "sourceIds": [
+            "bornholm-dtu-system-2022"
+          ]
+        },
+        {
+          "category": "Planned battery system",
+          "manufacturer": "Hitachi Energy",
+          "detail": "10 MW indoor BESS intended for grid balancing, ancillary services, and faster black start; energy capacity was not published.",
+          "sourceIds": [
+            "bornholm-beof-bess-2025"
           ]
         }
       ],
@@ -1605,6 +2947,50 @@
           "detail": "Diesel, steam, CHP, wind, biogas",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Grid topology",
+          "detail": "Bornholm is connected to the Swedish/Nordic grid by a single subsea cable. When that connection is unavailable, BEOF maintains island-operation capability using local reserve plant.",
+          "sourceIds": [
+            "bornholm-beof-testisland-2026",
+            "bornholm-beof-sustainability-2026",
+            "bornholm-beof-reserve-2026"
+          ]
+        },
+        {
+          "category": "EcoGrid 2.0 outcome",
+          "detail": "The 2016-2019 demonstration remotely coordinated heat pumps and electric heaters in 800 homes to test flexible demand against grid and market needs. The earlier target of 1,000 devices/households should not replace the realized 800-household figure.",
+          "sourceIds": [
+            "bornholm-dtu-ecogrid2-2019"
+          ]
+        },
+        {
+          "category": "Test platform scale",
+          "detail": "BEOF reports more than ten years as a full-scale test island, a portfolio valued around DKK650 million, and more than EUR100 million of project activity handled.",
+          "sourceIds": [
+            "bornholm-beof-testisland-2026"
+          ]
+        },
+        {
+          "category": "Reserve-supply update",
+          "detail": "The May 2026 BEOF-Energinet agreement requires BEOF to maintain reserve generation and response for 2027-2031 when the Sweden cable is unavailable, replacing the arrangement that runs through the end of 2026.",
+          "sourceIds": [
+            "bornholm-beof-reserve-2026"
+          ]
+        },
+        {
+          "category": "Battery update",
+          "detail": "BEOF announced the 10 MW battery on 13 March 2025 for installation during 2026. No public commissioning confirmation was found by 20 July 2026, so it remains classified as announced/in installation.",
+          "sourceIds": [
+            "bornholm-beof-bess-2025"
+          ]
+        },
+        {
+          "category": "Energy Island distinction",
+          "detail": "The January 2026 Danish-German agreement revived the separate 3 GW Bornholm Energy Island offshore transmission project. It is future interconnector/offshore-wind infrastructure and must not be added to the current island microgrid fleet.",
+          "sourceIds": [
+            "bornholm-eu-energy-island-2026"
           ]
         }
       ],
@@ -1631,72 +3017,213 @@
           "url": "https://www.beof.dk/testisland-bornholm/tidligere-projekter/elnettet/ecogrid-eu",
           "publisher": "Bornholms Energi & Forsyning",
           "kind": "primary"
+        },
+        {
+          "id": "bornholm-beof-testisland-2026",
+          "title": "Test Island Bornholm",
+          "url": "https://www.beof.dk/testisland-bornholm/test-island-bornholm",
+          "publisher": "Bornholms Energi & Forsyning",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-beof-sustainability-2026",
+          "title": "Sustainability",
+          "url": "https://beof.dk/om-os/baeredygtighed/",
+          "publisher": "Bornholms Energi & Forsyning",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-beof-renewable-2024",
+          "title": "Renewable Energy",
+          "url": "https://www.beof.dk/om-os-1/presse/vedvarende-energi",
+          "publisher": "Bornholms Energi & Forsyning",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-dtu-system-2022",
+          "title": "Technical Bornholm Power System",
+          "url": "https://wind.dtu.dk/Facilities/PowerLabDK-Facilities/BornholmPowerSystem/Technical-Bornholm",
+          "publisher": "Technical University of Denmark",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-dtu-ecogrid2-2019",
+          "title": "EcoGrid 2.0 completes large-scale smart-grid experiment on Bornholm",
+          "url": "https://www.dtu.dk/english/news/all-news/nyhed?id=a5277a8f-024a-430b-85d6-c29355910073",
+          "publisher": "Technical University of Denmark",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-beof-bess-2025",
+          "title": "100-tons tungt batteri skal stå i gammelt kulkraftværk på Bornholm",
+          "url": "https://beof.dk/100-tons-tungt-batteri-skal-staa-i-gammelt-kulkraftvaerk-paa-bornholm/",
+          "publisher": "Bornholms Energi & Forsyning",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-beof-reserve-2026",
+          "title": "BEOF sikrer strøm til Bornholm med ny aftale om reserveforsyning",
+          "url": "https://beof.dk/beof-sikrer-stroem-til-bornholm-med-ny-aftale-om-reserveforsyning/",
+          "publisher": "Bornholms Energi & Forsyning",
+          "kind": "primary"
+        },
+        {
+          "id": "bornholm-eu-energy-island-2026",
+          "title": "Energy highways: Germany and Denmark agree on joint development of Bornholm Energy Island",
+          "url": "https://energy.ec.europa.eu/news/energy-highways-germany-and-denmark-agree-joint-development-bornholm-energy-island-offshore-wind-2026-01-26_en?prefLang=en",
+          "publisher": "European Commission Directorate-General for Energy",
+          "kind": "primary"
         }
       ]
     },
     "borrego-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": null,
-      "status": "Operational",
+      "summary": "SDG&E's Borrego Springs community microgrid serves an isolated desert feeder with extensive local solar, batteries, an ultracapacitor, diesel backup, and advanced islanding controls. The original system supported thousands of customers during major 2013 outages. A major Microgrid 3.0 upgrade replaces two 1.8 MW diesels with two 2.5 MW Tier IV Final units and adds six Tesla battery containers totaling 7 MW/14 MWh. Replacement generators were commissioned in March 2025, while June 2025 community minutes say the battery was still commissioning and local/remote control integration remained unfinished. DOE/NREL work nevertheless completed field validation of renewable-led black start and islanding using a grid-forming battery and PXiSE controller.",
+      "status": "Operating community microgrid in a major upgrade/integration phase. The two 2.5 MW replacement diesels were commissioned and functional by March 2025. The 7 MW/14 MWh Tesla BESS was still commissioning on 4 June 2025, with local controls targeted for September and remote integration by year-end; no later official completion confirmation was found through July 2026. A proposed 250 kW, 16-hour hydrogen resource also remains unverified as commissioned.",
       "classification": "Community",
       "historicalLocation": "Borrego Springs, CA, United States",
       "archiveCapturedAt": "2021-02-28",
       "organizations": [
         {
           "name": "AES",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Legacy attribution requiring disambiguation: later technical reports use AES 1, AES 2, and AES 3 as asset identifiers for energy-storage systems, not as evidence that AES Corporation supplied or owned them.",
           "sourceIds": [
-            "archive"
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "name": "Anza-Borrego Desert Natural History Association",
+          "role": "Community partner for the current upgrade and resilience work.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024"
+          ]
+        },
+        {
+          "name": "Borrego Water District",
+          "role": "Community/critical-services partner for the current upgrade.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024"
+          ]
+        },
+        {
+          "name": "California Energy Commission",
+          "role": "Public funder and research partner for the original community microgrid and subsequent lessons/upgrade work.",
+          "sourceIds": [
+            "borrego-cec-final-2019",
+            "borrego-sdge-factsheet-2024",
+            "borrego-cec-lessons-2024"
           ]
         },
         {
           "name": "Horizon Energy",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original architecture, business-process, and systems-integration participant (identified more fully as Horizon Energy Group in the project review).",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
           ]
         },
         {
           "name": "IBM",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original RDSI project-management participant.",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
           ]
         },
         {
           "name": "Lockheed Martin",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original RDSI consortium participant; the located sources do not assign a narrower equipment role.",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
           ]
         },
         {
           "name": "Motorola",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original network communications and security participant.",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
+          ]
+        },
+        {
+          "name": "National Renewable Energy Laboratory (NREL)",
+          "role": "Research and validation partner for controller-in-the-loop, grid-forming BESS, renewable black-start, and islanding tests.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-osti-2025",
+            "borrego-nrel-phil-2026"
           ]
         },
         {
           "name": "Oracle",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Original outage-management and distribution-management systems participant.",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
+          ]
+        },
+        {
+          "name": "Parker Hannifin",
+          "role": "Integrator/power-conversion partner for the original 500 kW/1.5 MWh Saft battery.",
+          "sourceIds": [
+            "borrego-doe-storage-2014"
+          ]
+        },
+        {
+          "name": "PXiSE Energy Solutions",
+          "role": "Supplier of the later microgrid controller used in the renewable-led black-start and grid-forming-storage work.",
+          "sourceIds": [
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "name": "Saft",
+          "role": "Manufacturer of the original 500 kW/1.5 MWh battery system.",
+          "sourceIds": [
+            "borrego-doe-storage-2014"
           ]
         },
         {
           "name": "SDG&E",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Utility owner, operator, lead developer, controls integrator, and interconnection authority for the Borrego Springs community microgrid.",
           "sourceIds": [
-            "archive"
+            "borrego-cec-final-2019",
+            "borrego-sdge-factsheet-2024",
+            "borrego-doe-rdsi-2010"
+          ]
+        },
+        {
+          "name": "Tesla",
+          "role": "Supplier identified in community project updates for the six-container, 7 MW/14 MWh upgrade battery system.",
+          "sourceIds": [
+            "borrego-community-minutes-2025",
+            "borrego-sdge-factsheet-2024"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy",
+          "role": "Funder of the original Renewable and Distributed Systems Integration demonstration and the later Solar Energy Technologies Office renewable-black-start project.",
+          "sourceIds": [
+            "borrego-doe-rdsi-2010",
+            "borrego-sdge-factsheet-2024",
+            "borrego-osti-2025"
           ]
         },
         {
           "name": "UCSD",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Legacy catalog attribution not corroborated by the original DOE partner slide; the named academic partner was University of San Diego, not University of California San Diego.",
           "sourceIds": [
-            "archive"
+            "borrego-doe-rdsi-2010"
+          ]
+        },
+        {
+          "name": "University of San Diego",
+          "role": "Original project participant supporting regulatory-design work.",
+          "sourceIds": [
+            "borrego-doe-rdsi-2010",
+            "borrego-nyserda-2010"
           ]
         }
       ],
@@ -1721,9 +3248,122 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Community served",
+          "value": "Approximately 2,500 residential and 300 commercial customers on a single radial feeder",
+          "sourceIds": [
+            "borrego-cec-final-2019"
+          ]
+        },
+        {
+          "label": "Local solar resource",
+          "value": "Approximately 26 MW utility-scale PV plus roughly 3 MW customer rooftop PV in the CEC final report; the CPUC later describes the microgrid as supporting about 40 MW of local solar resources",
+          "sourceIds": [
+            "borrego-cec-final-2019",
+            "borrego-cpuc-2025"
+          ]
+        },
+        {
+          "label": "Legacy battery fleet",
+          "value": "1.5 MW / 4.5 MWh total across AES 1 (0.5 MW/1.5 MWh) and AES 2 (1 MW/3 MWh), equivalent to three hours at aggregate nameplate power",
+          "sourceIds": [
+            "borrego-cpuc-2025",
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "label": "Ultracapacitor",
+          "value": "Approximately 0.25-0.3 MW with about 30 seconds of support, depending on rounded source description",
+          "sourceIds": [
+            "borrego-cpuc-2025",
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "label": "Legacy diesel generation",
+          "value": "Two 1.8 MW units, 3.6 MW total",
+          "sourceIds": [
+            "borrego-cec-final-2019",
+            "borrego-cpuc-2025",
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "label": "Replacement diesel generation",
+          "value": "Two 2.5 MW Tier IV Final units, 5 MW total; commissioned by March 2025",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-community-minutes-2025"
+          ]
+        },
+        {
+          "label": "Microgrid 3.0 battery",
+          "value": "Six containers totaling 7 MW / 14 MWh (two-hour duration); still commissioning in June 2025",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-community-minutes-2025"
+          ]
+        },
+        {
+          "label": "Planned hydrogen resource",
+          "value": "250 kW with 16-hour duration in the CPUC's Microgrid 3.0 plan; no commissioning evidence located",
+          "sourceIds": [
+            "borrego-cpuc-2025"
+          ]
+        },
+        {
+          "label": "Typical peak load",
+          "value": "Approximately 14 MW in the CEC's 2024 lessons report",
+          "sourceIds": [
+            "borrego-cec-lessons-2024"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Original battery system",
+          "manufacturer": "Saft",
+          "detail": "500 kW/1.5 MWh battery manufactured by Saft and integrated with Parker Hannifin power conversion.",
+          "sourceIds": [
+            "borrego-doe-storage-2014"
+          ]
+        },
+        {
+          "category": "Grid-forming battery asset",
+          "detail": "The 1 MW/3 MWh AES 2 storage asset was upgraded for grid-forming operation and used as the island-grid leader in renewable black-start testing. 'AES' is an asset label in the technical paper.",
+          "sourceIds": [
+            "borrego-nrel-phil-2026",
+            "borrego-osti-2025"
+          ]
+        },
+        {
+          "category": "Microgrid controller",
+          "manufacturer": "PXiSE Energy Solutions",
+          "detail": "Coordinates batteries, ultracapacitor, diesel generation, switching, load management, and renewable-led black start in the later control architecture.",
+          "sourceIds": [
+            "borrego-nrel-phil-2026",
+            "borrego-osti-2025"
+          ]
+        },
+        {
+          "category": "Upgrade battery system",
+          "manufacturer": "Tesla",
+          "detail": "Six battery containers totaling 7 MW/14 MWh; installation began in August 2024 and commissioning was ongoing in June 2025.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-community-minutes-2025"
+          ]
+        },
+        {
+          "category": "Replacement diesel generators",
+          "detail": "Two 2.5 MW Tier IV Final units replacing the original two 1.8 MW machines; commissioned and functional by March 2025. The located sources do not identify the manufacturer/model.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-community-minutes-2025"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
@@ -1780,6 +3420,58 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Operating modes",
+          "detail": "The microgrid normally remains grid-connected/dormant while local solar exports. During daytime island operation it can serve the whole community; at night it prioritizes critical loads and can shed noncritical load according to available battery and fuel.",
+          "sourceIds": [
+            "borrego-cec-final-2019",
+            "borrego-sdge-factsheet-2024"
+          ]
+        },
+        {
+          "category": "2013 outage performance",
+          "detail": "After an April 2013 windstorm the microgrid served 1,225 customers for about six hours. During a September 2013 storm that downed 20 poles, it served 1,060 customers for roughly 25 hours.",
+          "sourceIds": [
+            "borrego-iepr-2019"
+          ]
+        },
+        {
+          "category": "Reliability lessons",
+          "detail": "CEC's 2024 review records several successful planned outages but also failed islanding demonstrations caused by controller-communications and frequency-stabilization problems, showing that nameplate capacity alone did not guarantee successful transitions.",
+          "sourceIds": [
+            "borrego-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "2023 failure and recovery",
+          "detail": "Community minutes report that both legacy generators failed during a 61-hour planned February 2023 microgrid operation, taking the system out of service. The replacement generators were commissioned by March 2025.",
+          "sourceIds": [
+            "borrego-community-minutes-2025"
+          ]
+        },
+        {
+          "category": "Renewable black start",
+          "detail": "The DOE/NREL project completed modeling, controller/hardware-in-the-loop work, and field tests in which a grid-forming battery led black start and islanding instead of diesel. Synchrophasor and power-quality measurements verified the fast response, and the DERMS interface was replicated at other SDG&E sites.",
+          "sourceIds": [
+            "borrego-osti-2025",
+            "borrego-nrel-phil-2026"
+          ]
+        },
+        {
+          "category": "Upgrade schedule evidence",
+          "detail": "SDG&E's 2024 fact sheet expected completion in Q2 2025, but 4 June 2025 minutes say batteries were still commissioning, local controls were targeted for September, and remote control-center integration for year-end. The later direct evidence supersedes the forecast.",
+          "sourceIds": [
+            "borrego-sdge-factsheet-2024",
+            "borrego-community-minutes-2025"
+          ]
+        },
+        {
+          "category": "Market plan",
+          "detail": "The CPUC describes planned CAISO market participation for the upgraded assets; it also says the then-current microgrid did not provide resource adequacy. This is a plan, not verified operating revenue/service.",
+          "sourceIds": [
+            "borrego-cpuc-2025"
+          ]
         }
       ],
       "sources": [
@@ -1798,23 +3490,116 @@
           "publisher": "building-microgrid.lbl.gov",
           "kind": "archive",
           "capturedAt": "2021-02-28"
+        },
+        {
+          "id": "borrego-cec-final-2019",
+          "title": "Borrego Springs: California's First Renewable Energy-Based Community Microgrid",
+          "url": "https://www.energy.ca.gov/publications/2019/borrego-springs-californias-first-renewable-energy-based-community-microgrid",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-cpuc-2025",
+          "title": "California's Grid Modernization Report 2025, Volume III",
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/office-of-governmental-affairs-division/reports/2025/californias-grid-modernization-report-2025--volume-iii--2024-cpuc-scaling-up-and-crossing-bounds-ene.pdf",
+          "publisher": "California Public Utilities Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-sdge-factsheet-2024",
+          "title": "Borrego Springs Microgrid Fact Sheet",
+          "url": "https://www.sdge.com/sites/default/files/documents/2024-10/FINAL_S2470069_BorregoSprings_FS_ONLINE.pdf",
+          "publisher": "San Diego Gas & Electric",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-community-minutes-2025",
+          "title": "Borrego Springs Community Sponsor Group Minutes, June 4, 2025",
+          "url": "https://www.sandiegocounty.gov/content/dam/sdc/pds/Groups/borregosprings/2025/BS250604MI.pdf",
+          "publisher": "County of San Diego",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-osti-2025",
+          "title": "100% Renewable Microgrid Controls: Final Technical Report",
+          "url": "https://www.osti.gov/biblio/2589920",
+          "publisher": "U.S. Department of Energy Office of Scientific and Technical Information",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-nrel-phil-2026",
+          "title": "Power Hardware-in-the-Loop Validation of a Community Microgrid with Grid-Forming Energy Storage",
+          "url": "https://www.osti.gov/servlets/purl/3011839",
+          "publisher": "National Renewable Energy Laboratory / IEEE",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-doe-storage-2014",
+          "title": "Energy Storage Activities in the SDG&E Service Territory",
+          "url": "https://www.energy.gov/sites/prod/files/2014/06/f17/EACJune2014-4Bialek.pdf",
+          "publisher": "San Diego Gas & Electric / U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-doe-rdsi-2010",
+          "title": "Borrego Springs Microgrid: RDSI Peer Review",
+          "url": "https://www.energy.gov/sites/prod/files/SG%202010%20Peer%20Review%20-%20Borrego%20Springs%20Microgrid%20-%20Tom%20Bialek%2C%20SDG%26E.pdf",
+          "publisher": "San Diego Gas & Electric / U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-nyserda-2010",
+          "title": "Microgrids: An Assessment of the Value, Opportunities and Barriers to Deployment in New York State",
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/Research/Electic-Power-Delivery/microgrids-value-opportunities-barriers.pdf",
+          "publisher": "New York State Energy Research and Development Authority",
+          "kind": "secondary"
+        },
+        {
+          "id": "borrego-cec-lessons-2024",
+          "title": "Lessons Learned from Community Microgrids",
+          "url": "https://www.energy.ca.gov/sites/default/files/2024-06/CEC-500-2024-067.pdf",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "borrego-iepr-2019",
+          "title": "2019 Integrated Energy Policy Report Workshop: Microgrid Resilience Experience",
+          "url": "https://efiling.energy.ca.gov/GetDocument.aspx?DocumentContentId=63734&tn=231883",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
         }
       ]
     },
     "bosch-dc-microgrid-california-honda-facility": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Construction",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "California Energy Commission grant EPC-14-053 funded Bosch's 380 V direct-current building microgrid demonstration at an American Honda Motor Co. warehouse in Chino, California. The final installation coupled 286 kW of rooftop solar, a 180 kW/540 kWh lithium-ion battery, Bosch energy management, DC lighting, fan drives, and forklift charging on a common DC bus. CEC's 2024 retrospective says the system was removed after the grant because Bosch discontinued the commercial offering.",
+      "status": "Demonstration completed in 2019 and subsequently uninstalled; CEC reported in 2024 that Bosch discontinued the DC Building Microgrid Platform offering.",
       "classification": "Building",
       "historicalLocation": "MG Honda Parts, Recycle Road, Rancho Cordova, CA, United States",
       "archiveCapturedAt": "2021-02-28",
       "organizations": [
         {
+          "name": "American Honda Motor Co.",
+          "role": "Host and customer at the Chino parts-distribution warehouse",
+          "sourceIds": [
+            "bosch-cec-lessons-2024",
+            "bosch-pnnl-tracker"
+          ]
+        },
+        {
           "name": "Bosch",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "California Energy Commission",
+          "role": "EPIC funder and project administrator under agreement EPC-14-053",
+          "sourceIds": [
+            "bosch-cec-project",
+            "bosch-cec-epic-2019"
           ]
         },
         {
@@ -1832,10 +3617,56 @@
           ]
         },
         {
+          "name": "Imergy Power Systems",
+          "role": "Original supply-chain project partner; the planned flow-battery path was disrupted when the vendor went out of business",
+          "sourceIds": [
+            "bosch-cec-lessons-2024",
+            "bosch-pnnl-tracker"
+          ]
+        },
+        {
+          "name": "Johnson Controls",
+          "role": "Supplier of the lithium-ion energy-storage container used in the completed demonstration",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
           "name": "Maxwell Labs",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "Maxwell Technologies",
+          "role": "Supply-chain project partner",
+          "sourceIds": [
+            "bosch-cec-epic-2019",
+            "bosch-pnnl-tracker"
+          ]
+        },
+        {
+          "name": "Navigant Consulting",
+          "role": "Design and independent performance-validation partner named at award",
+          "sourceIds": [
+            "bosch-press-2015"
+          ]
+        },
+        {
+          "name": "Robert Bosch LLC",
+          "role": "CEC grantee, system integrator, and supplier of the DC microgrid energy-management system",
+          "sourceIds": [
+            "bosch-cec-project",
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "name": "UC Davis California Lighting Technology Center",
+          "role": "Design, training, and performance partner for the DC lighting and building-load demonstration",
+          "sourceIds": [
+            "bosch-pnnl-tracker",
+            "bosch-press-2015"
           ]
         }
       ],
@@ -1846,15 +3677,129 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Rooftop photovoltaic capacity",
+          "value": "286 kW DC",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "label": "Battery rating",
+          "value": "180 kW / 540 kWh lithium-ion (3-hour duration)",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "label": "DC distribution voltage",
+          "value": "380 V DC common bus",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "On-site solar plus lithium-ion storage and utility-grid supply; no fuel-fired generator was part of the final DC microgrid",
+          "sourceIds": [
+            "bosch-cec-lessons-2024",
+            "bosch-cec-epic-2019"
+          ]
+        },
+        {
+          "label": "CEC award and match",
+          "value": "$2,817,566 EPIC award; $2,389,216 spent; $1,797,544 match funding",
+          "sourceIds": [
+            "bosch-cec-project",
+            "bosch-cec-epic-2019"
+          ]
+        },
+        {
+          "label": "CEC project term",
+          "value": "June 30, 2015 to March 29, 2019; an older PNNL tracker listed March 29, 2018 as the planned end",
+          "sourceIds": [
+            "bosch-cec-project",
+            "bosch-pnnl-tracker"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Microgrid controls",
+          "manufacturer": "Robert Bosch LLC",
+          "detail": "DC microgrid energy-management system coordinating sources, storage, and DC loads",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "Battery energy storage",
+          "manufacturer": "Johnson Controls",
+          "detail": "Containerized 180 kW/540 kWh lithium-ion system connected to the DC bus",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "DC loads",
+          "detail": "High-bay LED lighting, industrial-fan variable-frequency drives, and forklift charging operated on the DC architecture",
+          "sourceIds": [
+            "bosch-cec-lessons-2024",
+            "bosch-cec-epic-2019"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
           "detail": "The buildings solar PV arrays, DC ventalation system, DC lighting, and DC energy storage will form a microgrid on a 380-volt DC bus.",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Architecture",
+          "detail": "The building-scale system avoided repeated DC-to-AC-to-DC conversions by linking rooftop PV, battery storage, and compatible building loads on a 380 V DC bus while retaining utility service.",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "Measured performance",
+          "detail": "CEC reported 2-6% DC-load efficiency improvement, 7-10% greater solar utilization, and an 8% storage-efficiency improvement; the 2019 EPIC summary reported 3-5% overall efficiency improvement for lighting, ventilation, and forklift charging.",
+          "sourceIds": [
+            "bosch-cec-lessons-2024",
+            "bosch-cec-epic-2019"
+          ]
+        },
+        {
+          "category": "Resilience demonstration",
+          "detail": "The system supported designated critical loads during outage testing and avoided use of the site's diesel backup generator.",
+          "sourceIds": [
+            "bosch-cec-epic-2019"
+          ]
+        },
+        {
+          "category": "Economics and maintenance",
+          "detail": "CEC estimated roughly 30% lower total cost of ownership at commercial scale; the host facility manager estimated 45-50% lower maintenance cost, but CEC cautioned that project delays left limited baseline and operating data.",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "Outcome",
+          "detail": "Flow-battery supplier failure, interconnection delays, a separately managed rooftop-solar project, and rate changes delayed the work. After the grant, Bosch discontinued the product offering and the demonstration equipment was uninstalled, so the project did not proceed to a commercial launch.",
+          "sourceIds": [
+            "bosch-cec-lessons-2024"
+          ]
+        },
+        {
+          "category": "Location correction",
+          "detail": "Current CEC and PNNL project records place the host warehouse in Chino, California, not Rancho Cordova.",
+          "sourceIds": [
+            "bosch-cec-project",
+            "bosch-pnnl-tracker"
           ]
         }
       ],
@@ -1874,23 +3819,89 @@
           "publisher": "businesswire.com",
           "kind": "archive",
           "capturedAt": "2021-02-28"
+        },
+        {
+          "id": "bosch-cec-lessons-2024",
+          "title": "Lessons Learned from Energy Commission Microgrid Projects: Final Project Report",
+          "url": "https://www.energy.ca.gov/sites/default/files/2024-06/CEC-500-2024-067.pdf",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bosch-cec-project",
+          "title": "Renewable-Based Direct Current Building-Scale Microgrid",
+          "url": "https://www.energizeinnovation.fund/projects/renewable-based-direct-current-building-scale-microgrid",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bosch-cec-epic-2019",
+          "title": "2019 EPIC Annual Report, Appendix C: Project Summaries",
+          "url": "https://www.energy.ca.gov/sites/default/files/2021-05/CEC-500-2020-009-AP-CMF.pdf",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "bosch-pnnl-tracker",
+          "title": "Renewable-Based Direct Current Building-Scale Microgrid",
+          "url": "https://basc.pnnl.gov/research-tracker/renewable-based-direct-current-building-scale-microgrid",
+          "publisher": "Pacific Northwest National Laboratory",
+          "kind": "primary"
+        },
+        {
+          "id": "bosch-press-2015",
+          "title": "Bosch Receives $2.8 Million CEC Grant to Demonstrate DC Microgrid Technology",
+          "url": "https://cltc.ucdavis.edu/sites/g/files/dgvnsk12206/files/media/documents/150318-bosch-press-release-microgrid.pdf",
+          "publisher": "Robert Bosch LLC and UC Davis California Lighting Technology Center",
+          "kind": "primary"
         }
       ]
     },
     "brevoort-co-op-microgrid": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Operational",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "The Brevoort cooperative at 11 Fifth Avenue in Manhattan installed a 400 kW natural-gas combined-heat-and-power microgrid built from four 100 kW Tecogen InVerde modules. Commissioned in 2010, it normally operated in parallel with Con Edison under zero-export control and islanded for six days after Hurricane Sandy, serving electricity, heat, domestic hot water, elevators, and other building loads.",
+      "status": "Commissioned in 2010 and documented operating through at least 2013; no reliable public source confirms the system's operating condition through 2026.",
       "classification": "Building",
       "historicalLocation": "11 5th Avenue, Brooklyn, NY, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
-          "name": "Tecogen",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "name": "Con Edison",
+          "role": "Host electric utility; the system normally paralleled the utility and maintained a minimum import",
           "sourceIds": [
-            "archive"
+            "brevoort-tecogen-sandy",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "name": "Energy Concepts",
+          "role": "Design engineer for the CHP/microgrid installation",
+          "sourceIds": [
+            "brevoort-tecogen-sandy"
+          ]
+        },
+        {
+          "name": "Tecogen",
+          "role": "Supplier of the four InVerde CHP modules, inverter controls, and microgrid operating technology",
+          "sourceIds": [
+            "brevoort-tecogen-sandy",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "name": "The Brevoort cooperative",
+          "role": "Owner and operator of the 20-story residential building and its CHP microgrid",
+          "sourceIds": [
+            "brevoort-tecogen-sandy",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "name": "Wisconsin Alumni Research Foundation",
+          "role": "Licensor of CERTS autonomous load-sharing software used by Tecogen",
+          "sourceIds": [
+            "brevoort-ieee-performance"
           ]
         }
       ],
@@ -1908,15 +3919,123 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "CHP electrical capacity",
+          "value": "400 kW nominal: four 100 kW modules, each capable of 125 kW peak",
+          "sourceIds": [
+            "brevoort-case-study",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "label": "Absorption chiller",
+          "value": "90 refrigeration tons",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "Natural-gas CHP supplies electricity and recovered heat; Con Edison supplies supplemental grid electricity. No solar or battery storage is documented.",
+          "sourceIds": [
+            "brevoort-tecogen-sandy",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "label": "Building load profile",
+          "value": "Winter average/peak about 250/350 kW; summer average/peak about 400/550 kW",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "label": "Installed project cost",
+          "value": "$3.2 million",
+          "sourceIds": [
+            "brevoort-epa-chp"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Combined heat and power",
+          "manufacturer": "Tecogen",
+          "model": "InVerde",
+          "detail": "Four natural-gas engine-generator modules rated 100 kW each, with heat recovery from engine jacket water and exhaust",
+          "sourceIds": [
+            "brevoort-case-study",
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "category": "Absorption cooling",
+          "manufacturer": "Yazaki",
+          "detail": "90-ton absorption chiller using recovered CHP heat",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "category": "Microgrid controls",
+          "detail": "Tecogen inverter controls with CERTS autonomous power sharing and a utility-protection panel for isolation and reconnection",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
           "detail": "Cogeneration saves $300,000 / year",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "category": "Grid operation",
+          "detail": "In normal grid-parallel operation the controls maintained at least 50 kW of utility import and prohibited export; typically three engines ran in winter and all four in summer.",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "category": "Controls",
+          "detail": "UL 1741-certified CERTS logic let modules share load autonomously without a master controller. A utility-protection panel detected grid failure, opened the service breaker, and initiated an island restart.",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "category": "Hurricane Sandy performance",
+          "detail": "The automatic utility breaker did not operate during Sandy, so the superintendent manually isolated the building and restarted the CHP. The building then ran islanded for six days, supporting residents and temporary guests with electricity, heat, water, and elevators.",
+          "sourceIds": [
+            "brevoort-tecogen-sandy",
+            "brevoort-ieee-performance",
+            "brevoort-epa-chp"
+          ]
+        },
+        {
+          "category": "Efficiency",
+          "detail": "The IEEE performance paper calculated as much as 92% total fuel utilization when all recoverable heat was used.",
+          "sourceIds": [
+            "brevoort-ieee-performance"
+          ]
+        },
+        {
+          "category": "Economics",
+          "detail": "The IEEE analysis calculated $228,871 of 2013 energy savings on a 2007-cost basis and expected payback under five years; EPA reported approximately $300,000 annual realized savings.",
+          "sourceIds": [
+            "brevoort-ieee-performance",
+            "brevoort-epa-chp"
+          ]
+        },
+        {
+          "category": "Disambiguation",
+          "detail": "This record is the Brevoort at 11 Fifth Avenue and should not be combined with the separate Brevoort East cooperative project, which public databases list with different CHP capacity.",
+          "sourceIds": [
+            "brevoort-case-study"
           ]
         }
       ],
@@ -1936,23 +4055,94 @@
           "publisher": "ghi.wisc.edu",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "brevoort-tecogen-sandy",
+          "title": "Grid-Independent Cogen System from Tecogen Comes Through During Hurricane Sandy",
+          "url": "https://www.tecogen.com/news-events/press-releases/detail/163/grid-independent-cogen-system-from-tecogen-comes-through",
+          "publisher": "Tecogen",
+          "kind": "primary"
+        },
+        {
+          "id": "brevoort-case-study",
+          "title": "The Brevoort: 1950s Greenwich Village Co-Op Retrofitted with 21st Century Green Technology",
+          "url": "https://d1io3yog0oux5.cloudfront.net/_5e4eeb37c773fb645de01bac26fc1df0/tecogen/db/268/793/pdf/The_Brevoort_1950s_Greenwich_Village_Co-Op.pdf",
+          "publisher": "Tecogen",
+          "kind": "primary"
+        },
+        {
+          "id": "brevoort-ieee-performance",
+          "title": "Real-World Performance of a CERTS Microgrid in Manhattan",
+          "url": "https://d1io3yog0oux5.cloudfront.net/_110a6cb2eb3256b7bd707c5c38427aba/tecogen/db/295/784/pdf/Real-World_Performance_of_a_CERTS_Microgrid_in_Manhattan.pdf",
+          "publisher": "IEEE Transactions on Sustainable Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "brevoort-epa-chp",
+          "title": "Combined Heat and Power: Enabling Resilient Energy Infrastructure for Critical Facilities",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2019-05/documents/chp_multifamily.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "kind": "primary"
         }
       ]
     },
     "brookhaven-microgrid-feasibility-study": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Feasibility",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "Brookhaven's Independence Hill Microgrid was a NY Prize Stage 1 feasibility design linking Brookhaven Town Hall and Sachem High School East on Long Island. The preferred concept combined two new natural-gas CHP plants, two existing 10 kW wind turbines, existing diesel backup, and a proposed battery over an underground interconnection. The study did not establish that the project was built.",
+      "status": "Stage 1 feasibility study completed in 2016. The Independence Hill project is absent from NYSERDA's published complete list of Stage 2 awardees, indicating it did not advance in NY Prize; no construction or commissioning evidence was found through 2026.",
       "classification": "Community",
       "historicalLocation": "Sachem Central School District, Suffolk County, NY, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
         {
           "name": "Brookhaven National Laboratory",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Provided DER-CAM optimization, economic modeling, and software support",
           "sourceIds": [
-            "archive"
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "name": "ERS",
+          "role": "Project proposer and lead feasibility/design consultant",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "name": "New York State Energy Research and Development Authority",
+          "role": "NY Prize Stage 1 funder and program administrator",
+          "sourceIds": [
+            "brookhaven-stage1-report",
+            "brookhaven-stage2-list"
+          ]
+        },
+        {
+          "name": "PSEG Long Island",
+          "role": "Serving utility and prospective interconnection/ownership participant considered in the study",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "name": "Sachem Central School District",
+          "role": "Host and critical-load customer at Sachem High School East; considered as a possible co-owner",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "name": "Schneider Electric",
+          "role": "Developed the proposed microgrid control architecture and supporting cost estimates with ERS",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "name": "Town of Brookhaven",
+          "role": "NY Prize applicant, Town Hall site host, and proposed microgrid owner/operator",
+          "sourceIds": [
+            "brookhaven-stage1-report"
           ]
         }
       ],
@@ -1963,9 +4153,81 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Proposed Town Hall CHP",
+          "value": "1,148 kW natural-gas combined heat and power",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Proposed Sachem High School CHP",
+          "value": "383 kW natural-gas combined heat and power",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Existing wind generation",
+          "value": "Two 10 kW turbines, one at each site (20 kW total)",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Existing diesel backup",
+          "value": "300 kW at Town Hall; the report lists the school generator as 500 kW in the main resource table but 300 kW in a later DER table",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Proposed battery power",
+          "value": "50-150 kW; energy capacity and final technology were not selected",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Proposed energy mix",
+          "value": "Natural-gas CHP, existing wind, existing diesel for outages, battery storage, and utility supply; photovoltaic and wastewater-methane generation remained future options with capacity TBD",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "label": "Feasibility-stage capital estimate",
+          "value": "$9,649,136 installed capital plus $611,000 planning/design, approximately $10.26 million total",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Proposed generation",
+          "detail": "Two natural-gas CHP packages totaling 1,531 kW; manufacturer and model were not selected in Stage 1",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Existing renewables",
+          "detail": "One 10 kW wind turbine at Town Hall and one 10 kW wind turbine at Sachem High School East",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Proposed controls",
+          "manufacturer": "Schneider Electric",
+          "detail": "Feasibility-level supervisory control architecture for grid-parallel, island, load-shed, and resynchronization functions; final product/model not selected",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "General",
@@ -1987,6 +4249,55 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Architecture",
+          "detail": "The two facilities would be joined by an underground distribution cable and normally operate grid-connected without exporting power. Controls were intended to detect outages, island automatically, prioritize renewable generation, shed noncritical loads, black-start, and reconnect after utility restoration.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Modeled production",
+          "detail": "The study modeled annual CHP output of 5,608 MWh at Town Hall and 3,350 MWh at the school, plus 22 MWh per year from each wind turbine. Diesel generation was reserved for outage operation.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Modeled resilience",
+          "detail": "The preferred design was modeled to cover 98% of annual electric needs and assumed seven days of natural-gas availability during a major outage; these were feasibility assumptions, not measured results.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Modeled economics",
+          "detail": "The study projected $810,352 in annual energy savings, approximately $140,000 annual operating and maintenance cost, and about a 15-year simple payback.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Emissions tradeoff",
+          "detail": "The feasibility model reduced annual carbon dioxide at both sites but increased NOx and particulate emissions under its uncontrolled natural-gas CHP assumptions, illustrating that the proposal was not an all-renewable design.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Scope change",
+          "detail": "Tecumseh Elementary School was evaluated initially and then removed because the district planned to close it; the final study covered Town Hall and Sachem High School East only.",
+          "sourceIds": [
+            "brookhaven-stage1-report"
+          ]
+        },
+        {
+          "category": "Outcome evidence",
+          "detail": "NYSERDA describes its published Stage 2 list as complete, and Independence Hill is not present. The conclusion that it stopped after Stage 1 is therefore a program-record inference rather than an explicit cancellation notice.",
+          "sourceIds": [
+            "brookhaven-stage2-list"
+          ]
         }
       ],
       "sources": [
@@ -1997,18 +4308,71 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "brookhaven-stage1-report",
+          "title": "NY Prize Stage 1 Feasibility Assessment: Independence Hill Microgrid",
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/6-Town-of-Brookhaven.pdf",
+          "publisher": "Town of Brookhaven, ERS, and NYSERDA",
+          "kind": "primary"
+        },
+        {
+          "id": "brookhaven-stage2-list",
+          "title": "Complete List of NY Prize Stage 2 Awarded Projects",
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf",
+          "publisher": "New York State Energy Research and Development Authority",
+          "kind": "primary"
         }
       ]
     },
     "brooklyn-microgrid": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Feasibility",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "Brooklyn Microgrid was LO3 Energy's peer-to-peer local-energy trading pilot in Brooklyn, New York. Participants used custom meters and the Exergy blockchain platform to transact attributes associated with rooftop solar while electricity continued to flow over Con Edison's distribution system. A physical ten-block islandable microgrid was discussed, but public evidence documents a virtual marketplace pilot rather than a completed electrical island.",
+      "status": "Pilot no longer operating by 2025. Public activity is documented from the first 2016 trades through a 2019 regulatory-sandbox effort; the project site stopped updating in 2019 and LO3's site later disappeared.",
       "classification": "Community",
       "historicalLocation": "President Street, Brooklyn, NY, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
+        {
+          "name": "Brooklyn community participants",
+          "role": "Prosumers and consumers using the pilot marketplace; LO3 described a 50/50 community-and-company ownership concept",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-asme"
+          ]
+        },
+        {
+          "name": "Con Edison",
+          "role": "Distribution utility whose wires continued to carry participants' physical electricity",
+          "sourceIds": [
+            "brooklyn-utility-dive",
+            "brooklyn-current-status-2025"
+          ]
+        },
+        {
+          "name": "ConsenSys",
+          "role": "Co-developer with LO3 of the original TransActive Grid blockchain demonstration",
+          "sourceIds": [
+            "brooklyn-first-trade"
+          ]
+        },
+        {
+          "name": "LO3 Energy",
+          "role": "Project developer and operator; built the Exergy transactive-energy platform and custom participant metering",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-siemens-2017"
+          ]
+        },
+        {
+          "name": "Siemens",
+          "role": "Technology collaborator and investor providing grid-management and data-analytics expertise; physical microgrid integration remained planned",
+          "sourceIds": [
+            "brooklyn-siemens-2017",
+            "brooklyn-dnv-interview"
+          ]
+        },
         {
           "name": "Transactive Grid",
           "role": "Publicly named participant; role not specified in the recovered record",
@@ -2024,10 +4388,109 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Documented participant scale",
+          "value": "More than 60 community members by December 2017; later reports described about 50-60 solar prosumers and roughly 500-750 participants or sign-ups, reflecting different dates and definitions",
+          "sourceIds": [
+            "brooklyn-siemens-2017",
+            "brooklyn-asme",
+            "brooklyn-utility-dive"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "Participating rooftop solar attributes plus ordinary Con Edison grid electricity; no verified central generation or storage capacity",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-current-status-2025"
+          ]
+        },
+        {
+          "label": "Planned physical footprint",
+          "value": "A ten-block islandable microgrid serving community solar and critical facilities was proposed, but not shown in public sources to have been constructed",
+          "sourceIds": [
+            "brooklyn-dnv-interview"
+          ]
+        },
+        {
+          "label": "2019 regulatory sandbox",
+          "value": "Approved as a 12-month pilot anticipated to enroll about 200 participants trading energy attributes",
+          "sourceIds": [
+            "brooklyn-regulatory-sandbox"
+          ]
         }
       ],
-      "equipment": [],
-      "technicalDetails": [],
+      "equipment": [
+        {
+          "category": "Transactive-energy platform",
+          "manufacturer": "LO3 Energy",
+          "model": "Exergy",
+          "detail": "Decentralized-ledger marketplace matching local bids and offers and tracking energy attributes",
+          "sourceIds": [
+            "brooklyn-siemens-2017",
+            "brooklyn-dnv-interview"
+          ]
+        },
+        {
+          "category": "Participant metering",
+          "manufacturer": "LO3 Energy",
+          "detail": "Custom smart meter/computer packages recorded participant production and consumption for the blockchain marketplace",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-asme"
+          ]
+        },
+        {
+          "category": "Microgrid management",
+          "manufacturer": "Siemens",
+          "detail": "Microgrid-management algorithms and grid-control integration were collaboration goals; LO3 said this physical integration had not yet been done in Brooklyn",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-siemens-2017"
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "category": "Trading design",
+          "detail": "Users could bid according to price, fuel source, and other energy attributes through an application. Early transactions represented local solar value while financial settlement and actual power delivery still depended on conventional systems and Con Edison wires.",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-utility-dive"
+          ]
+        },
+        {
+          "category": "Virtual versus physical microgrid",
+          "detail": "The demonstrated system was a virtual peer-to-peer marketplace. Islanding a ten-block section to support a high school, medical facilities, and other critical loads was a future plan, not a documented completed capability.",
+          "sourceIds": [
+            "brooklyn-dnv-interview",
+            "brooklyn-current-status-2025"
+          ]
+        },
+        {
+          "category": "Regulatory constraint",
+          "detail": "New York rules did not generally permit non-utilities to sell electricity directly. The 2019 sandbox therefore focused on trading energy attributes while regulators evaluated a broader framework.",
+          "sourceIds": [
+            "brooklyn-regulatory-sandbox"
+          ]
+        },
+        {
+          "category": "Outcome",
+          "detail": "A 2025 Electrosuisse follow-up found the project had quietly ended: brooklyn.energy had not been updated since 2019, LO3's website was gone, and an early participant confirmed the marketplace was no longer operating. His solar array remained an ordinary Con Edison-interconnected system.",
+          "sourceIds": [
+            "brooklyn-current-status-2025"
+          ]
+        },
+        {
+          "category": "Alias",
+          "detail": "The first demonstration was also called TransActive Grid; later public materials used Brooklyn Microgrid and BMG.",
+          "sourceIds": [
+            "brooklyn-first-trade",
+            "brooklyn-siemens-2017"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -2068,14 +4531,63 @@
           "publisher": "microgridnews.com",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "brooklyn-siemens-2017",
+          "title": "Siemens Invests in LO3 Energy and Strengthens Existing Partnership",
+          "url": "https://press.siemens.com/global/en/pressrelease/siemens-invests-lo3-energy-and-strengthens-existing-partnership",
+          "publisher": "Siemens",
+          "kind": "primary"
+        },
+        {
+          "id": "brooklyn-dnv-interview",
+          "title": "The Brooklyn Microgrid: Blockchain-Enabled Community Power",
+          "url": "https://www.dnv.com/publications/the-brooklyn-microgrid-blockchain-enabled-community-power-107415/",
+          "publisher": "DNV",
+          "kind": "primary"
+        },
+        {
+          "id": "brooklyn-first-trade",
+          "title": "This Machine Just Bought Energy from a Neighbor's Solar Panel",
+          "url": "https://www.vice.com/en/article/transactive-grid-ethereum-brooklyn-microgrid/",
+          "publisher": "VICE",
+          "kind": "secondary"
+        },
+        {
+          "id": "brooklyn-asme",
+          "title": "Blockchain Enables New Power Market",
+          "url": "https://www.asme.org/topics-resources/content/blockchain-enables-new-power-market",
+          "publisher": "American Society of Mechanical Engineers",
+          "kind": "secondary"
+        },
+        {
+          "id": "brooklyn-utility-dive",
+          "title": "Grid Complexity Is Increasing Exponentially. Is Blockchain the Answer?",
+          "url": "https://www.utilitydive.com/news/grid-complexity-is-increasing-exponentially-is-blockchain-the-answer/514951/",
+          "publisher": "Utility Dive",
+          "kind": "secondary"
+        },
+        {
+          "id": "brooklyn-regulatory-sandbox",
+          "title": "Brooklyn Microgrid Moves Ahead with Pilot Regulatory Sandbox",
+          "url": "https://www.microgridknowledge.com/microgrids/article/11429213/brooklyn-microgrid-moves-ahead-with-pilot-regulatory-sandbox-for-program",
+          "publisher": "Microgrid Knowledge",
+          "kind": "secondary"
+        },
+        {
+          "id": "brooklyn-current-status-2025",
+          "title": "Energiewende in Brooklyn",
+          "url": "https://www.bulletin.ch/de/news-detail/energiewende-in-brooklyn.html",
+          "publisher": "Electrosuisse Bulletin",
+          "kind": "secondary"
         }
       ]
     },
     "burlington-dc-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": null,
-      "status": "Operational",
+      "summary": "ARDA Power's industrial DC microgrid demonstration in Burlington, Ontario, used a bipolar 380 V DC platform to integrate 16 kW of solar, a 10 kW natural-gas generator, a 20 kW/100 kWh vanadium-redox flow battery, grid service, and DC/AC loads. The battery converter regulated the DC bus while distributed source and load controls coordinated without relying on a central real-time communications link.",
+      "status": "Demonstration commissioned around 2017. ARDA still lists the Burlington C&I deployment on its project page, but no public source verifies current operation or performance through 2026.",
       "classification": "Building",
       "historicalLocation": "Etratech Inc, Cooke Boulevard, Burlington, ON, Canada",
       "archiveCapturedAt": "2021-04-20",
@@ -2085,6 +4597,44 @@
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "ARDA Power",
+          "role": "Microgrid developer, integrator, and supplier of the battery-centric DC platform and power converters",
+          "sourceIds": [
+            "burlington-arda-platform",
+            "burlington-arda-projects",
+            "burlington-gildemeister-announcement"
+          ]
+        },
+        {
+          "name": "Etratech",
+          "role": "Burlington industrial host identified in project literature",
+          "sourceIds": [
+            "burlington-technical-review",
+            "burlington-gentherm-acquisition"
+          ]
+        },
+        {
+          "name": "Gentherm",
+          "role": "Acquired host company Etratech in November 2017 and continued operations at its Burlington headquarters",
+          "sourceIds": [
+            "burlington-gentherm-acquisition"
+          ]
+        },
+        {
+          "name": "Gildemeister Energy Storage GmbH",
+          "role": "Supplier of the CellCube vanadium-redox flow battery and interface-development partner",
+          "sourceIds": [
+            "burlington-gildemeister-announcement"
+          ]
+        },
+        {
+          "name": "Sustainable Development Technology Canada",
+          "role": "Provided a $400,000 grant for the DC microgrid demonstration",
+          "sourceIds": [
+            "burlington-gildemeister-announcement"
           ]
         }
       ],
@@ -2109,9 +4659,80 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Photovoltaic capacity",
+          "value": "16 kW total, configured as two 8 kW arrays",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "label": "Flow-battery rating",
+          "value": "20 kW / 100 kWh vanadium-redox flow battery (5-hour duration)",
+          "sourceIds": [
+            "burlington-gildemeister-announcement",
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "label": "Natural-gas generator",
+          "value": "10 kW",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "label": "DC bus",
+          "value": "Bipolar +/-380 V DC",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "16 kW solar as the renewable source, 10 kW natural gas for dispatchable backup, utility-grid supply, and 20 kW/100 kWh flow-battery storage",
+          "sourceIds": [
+            "burlington-gildemeister-announcement",
+            "burlington-technical-review"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Flow battery",
+          "manufacturer": "Gildemeister Energy Storage GmbH",
+          "model": "CellCube",
+          "detail": "20 kW/100 kWh vanadium-redox flow-battery system",
+          "sourceIds": [
+            "burlington-gildemeister-announcement"
+          ]
+        },
+        {
+          "category": "Battery converter",
+          "manufacturer": "ARDA Power",
+          "detail": "Bidirectional DC/DC converter that exclusively regulates DC-bus voltage in the battery-centric architecture",
+          "sourceIds": [
+            "burlington-arda-platform",
+            "burlington-gildemeister-announcement"
+          ]
+        },
+        {
+          "category": "Solar converters",
+          "manufacturer": "ARDA Power",
+          "detail": "Unidirectional MPPT DC/DC interfaces for the two photovoltaic arrays",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "category": "Demonstration loads",
+          "detail": "A 230 W LED fixture replacing a 400 W metal-halide fixture, an 18,000 BTU air conditioner, and a 48 V mini-refrigerator were among documented controllable loads",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Storage",
@@ -2147,6 +4768,34 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Control architecture",
+          "detail": "The battery energy-storage converter forms and regulates the DC bus. Sources and loads respond locally to bus voltage, allowing real-time coordination without communications; supervisory communications are used for optimization, monitoring, and data collection.",
+          "sourceIds": [
+            "burlington-arda-platform"
+          ]
+        },
+        {
+          "category": "Grid transition",
+          "detail": "ARDA describes the platform as capable of seamless transition between grid-connected and islanded operation, with the battery remaining the bus-voltage reference in both modes.",
+          "sourceIds": [
+            "burlington-arda-platform"
+          ]
+        },
+        {
+          "category": "Load management",
+          "detail": "A PLC could shed or dim loads based on system conditions while bidirectional interfaces supported AC and DC loads on the common bus.",
+          "sourceIds": [
+            "burlington-technical-review"
+          ]
+        },
+        {
+          "category": "Corporate update",
+          "detail": "Gentherm acquired Etratech in November 2017 and said it would continue operations at the Burlington headquarters; this establishes a host ownership change, not the microgrid's current operating status.",
+          "sourceIds": [
+            "burlington-gentherm-acquisition"
+          ]
         }
       ],
       "sources": [
@@ -2165,18 +4814,61 @@
           "publisher": "ardapower.com",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "burlington-arda-platform",
+          "title": "DC Microgrid Platform",
+          "url": "https://www.ardapower.com/dc-platform.html",
+          "publisher": "ARDA Power",
+          "kind": "primary"
+        },
+        {
+          "id": "burlington-arda-projects",
+          "title": "ARDA Power Projects",
+          "url": "https://www.ardapower.com/projects.html",
+          "publisher": "ARDA Power",
+          "kind": "primary"
+        },
+        {
+          "id": "burlington-gildemeister-announcement",
+          "title": "ARDA Power and Gildemeister Energy Storage GmbH Collaborate on Burlington DC Microgrid",
+          "url": "https://electricalindustry.ca/changing-scenes/2174-arda-power-and-gildemeister-energy-storage-gmbh-collaborate-on-burlington-on-dc-microgrid/",
+          "publisher": "Electrical Industry News Week",
+          "kind": "secondary"
+        },
+        {
+          "id": "burlington-technical-review",
+          "title": "A Comprehensive Review of DC Microgrids: Control Strategies, Protection, Standards and Applications",
+          "url": "https://www.mdpi.com/3194460",
+          "publisher": "Energies",
+          "kind": "secondary"
+        },
+        {
+          "id": "burlington-gentherm-acquisition",
+          "title": "Gentherm Announces Acquisition of Etratech",
+          "url": "https://www.prnewswire.com/news-releases/gentherm-announces-acquisition-of-etratech-provides-platform-for-continued-growth-and-diversification-of-product-portfolio-300547851.html",
+          "publisher": "Gentherm",
+          "kind": "primary"
         }
       ]
     },
     "camp-pendleton-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": null,
-      "status": "Feasibility",
+      "summary": "The assigned Camp Pendleton record is the Area 52 School of Infantry FractalGrid demonstration, not later Camp Pendleton microgrids. Four distributed microgrids combined fixed and concentrated solar, diesel backup, flywheel and GEL-battery storage, vehicle-to-grid capability, and CleanSpark controls across a 12 kV system that could coordinate as a roughly 1.1 MW-class site microgrid.",
+      "status": "Area 52 was commissioned in 2014 and CleanSpark reported continuous operation for more than three years in 2017. CleanSpark expected release to the Marine Corps in 2018, but no public source verifies the final transfer or continued operation through 2026.",
       "classification": "Community",
       "historicalLocation": "Camp Pendleton South, CA, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
+        {
+          "name": "California Energy Commission",
+          "role": "Provided a reported $1.7 million grant for the Area 52 demonstration",
+          "sourceIds": [
+            "pendleton-epri-review",
+            "pendleton-cec-program-report"
+          ]
+        },
         {
           "name": "CEC",
           "role": "Publicly named participant; role not specified in the recovered record",
@@ -2186,9 +4878,10 @@
         },
         {
           "name": "CleanSpark",
-          "role": "Publicly named participant; role not specified in the recovered record",
+          "role": "Subcontracted designer, controls developer, integrator, installer, and later owner/operator under the transfer arrangement",
           "sourceIds": [
-            "archive"
+            "pendleton-sec-2017",
+            "pendleton-sec-2016"
           ]
         },
         {
@@ -2199,6 +4892,14 @@
           ]
         },
         {
+          "name": "Harper Construction",
+          "role": "CEC grantee and general contractor; later transferred the microgrid control infrastructure to CleanSpark",
+          "sourceIds": [
+            "pendleton-sec-2017",
+            "pendleton-sec-2016"
+          ]
+        },
+        {
           "name": "Quantum",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
@@ -2206,10 +4907,26 @@
           ]
         },
         {
+          "name": "Quantum Energy Storage",
+          "role": "Flywheel energy-storage developer/supplier for the Area 52 demonstration",
+          "sourceIds": [
+            "pendleton-epri-review",
+            "pendleton-flywheel-report"
+          ]
+        },
+        {
           "name": "Specialized Energy",
           "role": "Publicly named participant; role not specified in the recovered record",
           "sourceIds": [
             "archive"
+          ]
+        },
+        {
+          "name": "U.S. Marine Corps / Camp Pendleton",
+          "role": "Host and intended ultimate recipient/operator of the Area 52 system",
+          "sourceIds": [
+            "pendleton-sec-2017",
+            "pendleton-sec-2018"
           ]
         }
       ],
@@ -2234,9 +4951,89 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "label": "Area 52 photovoltaic resources",
+          "value": "Approximately 525 kW total: 225 kW concentrated PV plus 300 kW flat-plate PV",
+          "sourceIds": [
+            "pendleton-epri-review"
+          ]
+        },
+        {
+          "label": "Area 52 diesel backup",
+          "value": "200 kW",
+          "sourceIds": [
+            "pendleton-epri-review"
+          ]
+        },
+        {
+          "label": "Area 52 storage design",
+          "value": "300 kWh total: 240 kWh flywheel storage plus 60 kWh deep-cycle GEL battery storage",
+          "sourceIds": [
+            "pendleton-epri-review",
+            "pendleton-sec-2016"
+          ]
+        },
+        {
+          "label": "Area 52 coordinated microgrid scale",
+          "value": "Four local microgrids coordinated into a roughly 1.1 MW-class 12 kV system; 1.1 MW describes the combined site/grid scale, not installed generation alone",
+          "sourceIds": [
+            "pendleton-sec-2017"
+          ]
+        },
+        {
+          "label": "Area 52 energy mix",
+          "value": "Solar PV plus flywheel/GEL storage and vehicle-to-grid support, with a 200 kW diesel generator for dispatchable backup and utility-grid service in normal operation",
+          "sourceIds": [
+            "pendleton-epri-review",
+            "pendleton-sec-2017"
+          ]
+        },
+        {
+          "label": "CEC project term",
+          "value": "June 30, 2013 to March 31, 2015",
+          "sourceIds": [
+            "pendleton-cec-program-report"
+          ]
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "category": "Microgrid controls",
+          "manufacturer": "CleanSpark",
+          "model": "mPulse / fractal power system controls",
+          "detail": "Distributed control platform coordinating four local microgrids, islanding, reconnection, generation, storage, and loads",
+          "sourceIds": [
+            "pendleton-sec-2017",
+            "pendleton-sec-2016"
+          ]
+        },
+        {
+          "category": "Concentrated photovoltaics",
+          "detail": "Fifteen dual-axis concentrated-PV trackers totaling about 225 kW",
+          "sourceIds": [
+            "pendleton-sec-2017",
+            "pendleton-epri-review"
+          ]
+        },
+        {
+          "category": "Flywheel storage",
+          "manufacturer": "Quantum Energy Storage",
+          "detail": "Two low-speed flywheel systems; public sources describe a 240 kWh project allocation, while a contemporaneous technology report described a tested 60 kW/120 kWh unit",
+          "sourceIds": [
+            "pendleton-sec-2016",
+            "pendleton-epri-review",
+            "pendleton-flywheel-report"
+          ]
+        },
+        {
+          "category": "Battery storage",
+          "detail": "60 kWh deep-cycle GEL battery bank supporting the flywheel-based storage design",
+          "sourceIds": [
+            "pendleton-epri-review"
+          ]
+        }
+      ],
       "technicalDetails": [
         {
           "category": "Management",
@@ -2279,6 +5076,50 @@
           "sourceIds": [
             "archive"
           ]
+        },
+        {
+          "category": "Architecture",
+          "detail": "Distributed controls formed four separate microgrids at Area 52 and allowed them to align autonomously as a larger 12 kV microgrid, island from the utility, and reconnect after restoration.",
+          "sourceIds": [
+            "pendleton-sec-2017"
+          ]
+        },
+        {
+          "category": "Operational update",
+          "detail": "CleanSpark reported in late 2017 that the mPulse system had operated continuously for more than three years with minimal maintenance.",
+          "sourceIds": [
+            "pendleton-sec-operation-2017"
+          ]
+        },
+        {
+          "category": "Ownership and transfer",
+          "detail": "CleanSpark bought the control infrastructure from Harper for $1 and assumed a ten-year operating/maintenance obligation. A 2018 filing said the company expected to release the assets to the Marine Corps that year, but that forward-looking statement is not proof the transfer closed.",
+          "sourceIds": [
+            "pendleton-sec-2016",
+            "pendleton-sec-2018"
+          ]
+        },
+        {
+          "category": "Capacity clarification",
+          "detail": "The 1.1 MW figure in CleanSpark filings is the coordinated site microgrid scale and should not be added to the 525 kW solar and 200 kW diesel figures as another generator.",
+          "sourceIds": [
+            "pendleton-sec-2017",
+            "pendleton-epri-review"
+          ]
+        },
+        {
+          "category": "Later Camp Pendleton project disambiguation",
+          "detail": "A separate Critical Infrastructure Support microgrid accepted in 2019 used about 150 kW solar and 400 kWh iron-flow storage. It is not the 2014 Area 52 FractalGrid represented by this record.",
+          "sourceIds": [
+            "pendleton-cis-2019"
+          ]
+        },
+        {
+          "category": "Future Camp Pendleton update",
+          "detail": "California announced a separate Haybarn Energy Reliability Center in December 2024: $42 million for an initial 6 MW/48 MWh battery system, expandable to 50 MW/400 MWh, with operation expected in summer 2027. This does not establish the current status of Area 52.",
+          "sourceIds": [
+            "pendleton-haybarn-2024"
+          ]
         }
       ],
       "sources": [
@@ -2305,18 +5146,88 @@
           "publisher": "microgridmedia.com",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "pendleton-sec-2017",
+          "title": "CleanSpark SEC Filing: Camp Pendleton Area 52 Microgrid Asset Disclosure",
+          "url": "https://www.sec.gov/Archives/edgar/data/827876/000166357717000260/R11.htm",
+          "publisher": "U.S. Securities and Exchange Commission / CleanSpark",
+          "kind": "primary"
+        },
+        {
+          "id": "pendleton-sec-2016",
+          "title": "CleanSpark SEC Exhibit: Area 52 FractalGrid Acquisition and Technology",
+          "url": "https://www.sec.gov/Archives/edgar/data/827876/000166357716000276/ex99_2.htm",
+          "publisher": "U.S. Securities and Exchange Commission / CleanSpark",
+          "kind": "primary"
+        },
+        {
+          "id": "pendleton-sec-operation-2017",
+          "title": "CleanSpark Annual Report: Camp Pendleton Operating History",
+          "url": "https://www.sec.gov/Archives/edgar/data/827876/000166357718000019/mainbody.htm",
+          "publisher": "U.S. Securities and Exchange Commission / CleanSpark",
+          "kind": "primary"
+        },
+        {
+          "id": "pendleton-sec-2018",
+          "title": "CleanSpark Quarterly Report: Expected Marine Corps Asset Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/827876/000166357718000081/mainbody.htm",
+          "publisher": "U.S. Securities and Exchange Commission / CleanSpark",
+          "kind": "primary"
+        },
+        {
+          "id": "pendleton-epri-review",
+          "title": "Microgrid Demonstration Projects and Case Studies: A Review of Lessons Learned",
+          "url": "https://restservice.epri.com/publicdownload/000000003002007384/0/Product",
+          "publisher": "Electric Power Research Institute",
+          "kind": "secondary"
+        },
+        {
+          "id": "pendleton-flywheel-report",
+          "title": "Quantum Energy Storage Redesigns the Flywheel for Microgrids",
+          "url": "https://www.greentechmedia.com/articles/read/quantum-energy-storage-redesigns-the-flywheel-for-microgrids",
+          "publisher": "Greentech Media",
+          "kind": "secondary"
+        },
+        {
+          "id": "pendleton-cec-program-report",
+          "title": "Electric Program Investment Charge 2015 Annual Report",
+          "url": "https://www.energy.ca.gov/sites/default/files/2021-06/CEC-500-2016-032.pdf",
+          "publisher": "California Energy Commission",
+          "kind": "primary"
+        },
+        {
+          "id": "pendleton-cis-2019",
+          "title": "CleanSpark Completes Solar Microgrid with 400-kWh Iron-Flow Battery at Camp Pendleton",
+          "url": "https://www.solarpowerworldonline.com/2019/05/cleanspark-completes-solar-microgrid-with-400-kwh-iron-flow-battery-at-camp-pendleton/",
+          "publisher": "Solar Power World",
+          "kind": "secondary"
+        },
+        {
+          "id": "pendleton-haybarn-2024",
+          "title": "State Boosts Critical Battery Storage Project at Camp Pendleton with $42 Million Investment",
+          "url": "https://www.gov.ca.gov/2024/12/11/state-boosts-critical-battery-storage-project-at-camp-pendleton-with-42-million-investment/",
+          "publisher": "Office of Governor Gavin Newsom",
+          "kind": "primary"
         }
       ]
     },
     "camp-smith-microgrid": {
-      "researchedAt": "2026-07-19",
+      "researchedAt": "2026-07-20",
       "coverage": "detailed",
-      "summary": "Camp H.M. Smith was the third phase of the federal SPIDERS demonstration and became a base-wide, cyber-secure microgrid combining new and existing generation, storage, solar, and distributed controls.",
-      "status": "Operational; SPIDERS Phase III completed in fiscal year 2015",
+      "summary": "Camp H.M. Smith in Hawaii was the third and most installation-wide phase of the DoD/DOE/DHS SPIDERS demonstration. Completed in late 2015, it integrated the base's utility service, four new Tier 4 interim diesel generators, selected existing generators, a 300 kW photovoltaic array, strategically placed battery storage, secure supervisory controls, and fast-transfer power electronics to sustain critical Pacific Command loads.",
+      "status": "SPIDERS Phase III completed and successfully demonstrated in late 2015. Marine Corps Base Hawaii still lists the Camp Smith micro-grid as an energy innovation, but no public Camp Smith-specific operating or performance data through 2026 were found.",
       "classification": "Military",
       "historicalLocation": "Camp H M Smith, Halawa, HI, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
+        {
+          "name": "Go Electric",
+          "role": "Supplier of the instantaneous synchronization/islanding module used for sub-cycle transfer and generator synchronization",
+          "sourceIds": [
+            "smith-doe-final-report"
+          ]
+        },
         {
           "name": "Go Electric, Inc.",
           "role": "Integrated storage and inverter module supplier",
@@ -2326,9 +5237,17 @@
         },
         {
           "name": "Hawaiian Electric Company",
-          "role": "Local utility and grid-services partner",
+          "role": "Serving utility and coordination partner for grid-parallel and island transition requirements",
           "sourceIds": [
-            "doe-spiders-report"
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "name": "Intelligent Power & Energy Research Corporation",
+          "role": "Lead developer of the GridMaster microgrid controls, communications, and cybersecurity platform",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-iperc-ato"
           ]
         },
         {
@@ -2341,31 +5260,54 @@
         },
         {
           "name": "Naval Facilities Engineering Systems Command",
-          "role": "Transition manager and engineering participant",
+          "role": "Navy facilities partner responsible for transitioning the capability at Camp Smith",
           "sourceIds": [
-            "navfac-spiders"
+            "smith-doe-final-report",
+            "smith-sandia-overview"
+          ]
+        },
+        {
+          "name": "Sandia National Laboratories",
+          "role": "Microgrid design, systems engineering, and cybersecurity partner",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-sandia-overview"
+          ]
+        },
+        {
+          "name": "U.S. Army Engineer Research and Development Center, Construction Engineering Research Laboratory",
+          "role": "Technical manager for the SPIDERS joint capability demonstration",
+          "sourceIds": [
+            "smith-doe-final-report"
           ]
         },
         {
           "name": "U.S. Department of Defense",
-          "role": "SPIDERS program sponsor and installation owner",
+          "role": "SPIDERS sponsor and transition customer",
           "sourceIds": [
-            "doe-spiders-report",
-            "doe-spiders-award"
+            "smith-doe-final-report"
           ]
         },
         {
           "name": "U.S. Department of Energy",
-          "role": "SPIDERS program partner",
+          "role": "SPIDERS sponsor and technical-program partner",
           "sourceIds": [
-            "doe-spiders-award"
+            "smith-doe-final-report"
           ]
         },
         {
           "name": "U.S. Department of Homeland Security",
-          "role": "SPIDERS program partner",
+          "role": "SPIDERS co-sponsor focused on cybersecure critical infrastructure",
           "sourceIds": [
-            "doe-spiders-award"
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "name": "U.S. Pacific Command",
+          "role": "Camp H.M. Smith host and mission operator for the installation-wide Phase III demonstration",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-iperc-ato"
           ]
         }
       ],
@@ -2382,6 +5324,45 @@
           "value": "New utility-grade generation plus existing generators, solar, stationary storage, and SCADA/PLC assets",
           "sourceIds": [
             "doe-spiders-report"
+          ]
+        },
+        {
+          "label": "Installation scale",
+          "value": "Approximately 5 MW class, covering essentially the whole Camp H.M. Smith installation because critical loads dominated base demand",
+          "sourceIds": [
+            "smith-sandia-overview",
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "label": "Existing photovoltaic capacity",
+          "value": "300 kW",
+          "sourceIds": [
+            "smith-sandia-methodology"
+          ]
+        },
+        {
+          "label": "New dispatchable generation",
+          "value": "Four Tier 4 interim stationary prime diesel generators; individual and aggregate ratings were not published in the reviewed sources",
+          "sourceIds": [
+            "smith-sandia-methodology",
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "label": "Battery storage",
+          "value": "Strategically located storage supporting instantaneous transition, power quality, peak management, and generator start; public reviewed sources do not give the installed kW/kWh rating",
+          "sourceIds": [
+            "smith-sandia-methodology",
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "label": "Energy mix",
+          "value": "Utility-grid electricity from Hawaiian Electric, 300 kW on-site solar, four new diesel generators plus selected existing diesel generation, and battery storage",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-sandia-methodology"
           ]
         }
       ],
@@ -2402,9 +5383,73 @@
           "sourceIds": [
             "doe-spiders-report"
           ]
+        },
+        {
+          "category": "Microgrid control system",
+          "manufacturer": "Intelligent Power & Energy Research Corporation",
+          "model": "GridMaster",
+          "detail": "Secure supervisory control overlay integrating existing SCADA/PLCs, generator dispatch, renewable resources, storage, load shedding, and resynchronization",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-iperc-ato"
+          ]
+        },
+        {
+          "category": "Fast-transfer power electronics",
+          "manufacturer": "Go Electric",
+          "model": "ISIM",
+          "detail": "Instantaneous synchronization/islanding module maintaining load through transfers under one electrical cycle and synchronizing generators after outage detection",
+          "sourceIds": [
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "category": "Prime generation",
+          "detail": "Four Tier 4 interim stationary diesel generators, supplemented by a selected subset of the base's existing generator fleet",
+          "sourceIds": [
+            "smith-sandia-methodology",
+            "smith-doe-final-report"
+          ]
         }
       ],
-      "technicalDetails": [],
+      "technicalDetails": [
+        {
+          "category": "Operational functions",
+          "detail": "Phase III demonstrated installation-scale islanding, black start, renewable integration, generator dispatch, power-factor correction, peak management, load shedding, and secure reconnection with Hawaiian Electric.",
+          "sourceIds": [
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "category": "Cybersecurity",
+          "detail": "GridMaster used an enclave architecture over existing control assets and underwent national-laboratory vulnerability and red-team evaluation. It received a DoD Platform IT Risk Approval/Authorization to Operate in August 2015, reported as the first DoD microgrid-control cybersecurity accreditation.",
+          "sourceIds": [
+            "smith-doe-final-report",
+            "smith-iperc-ato"
+          ]
+        },
+        {
+          "category": "Demonstration outcome",
+          "detail": "DOE's final report states that all three SPIDERS phases successfully operated their microgrids and met the joint demonstration goals; it does not publish a Camp Smith-specific post-2015 fuel-savings data series.",
+          "sourceIds": [
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "category": "Performance caveat",
+          "detail": "The report suggests that roughly 30% fossil-fuel reduction during long outages could be a reasonable program expectation, but this was not presented as measured Camp Smith performance and should not be treated as such.",
+          "sourceIds": [
+            "smith-doe-final-report"
+          ]
+        },
+        {
+          "category": "Current-status evidence",
+          "detail": "Marine Corps Base Hawaii's current resources page continues to identify the Camp Smith micro-grid among installation energy innovations, but provides no operating statistics or refurbishment history.",
+          "sourceIds": [
+            "smith-mcbh-current"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -2441,18 +5486,97 @@
           "url": "https://exwc.navfac.navy.mil/Products-and-Services/Shore-Technical-Department/Utilities-and-Energy-Managment/",
           "publisher": "Naval Facilities Engineering Systems Command",
           "kind": "primary"
+        },
+        {
+          "id": "smith-doe-final-report",
+          "title": "SPIDERS Joint Capability Technology Demonstration Final Report",
+          "url": "https://www.energy.gov/sites/prod/files/2016/03/f30/spiders_final_report.pdf",
+          "publisher": "U.S. Department of Energy",
+          "kind": "primary"
+        },
+        {
+          "id": "smith-sandia-methodology",
+          "title": "Energy Surety Microgrid Design Methodology",
+          "url": "https://www.osti.gov/servlets/purl/1222987",
+          "publisher": "Sandia National Laboratories",
+          "kind": "primary"
+        },
+        {
+          "id": "smith-iperc-ato",
+          "title": "IPERC Receives First DoD Cybersecurity Accreditation of a Microgrid System with Authorization to Operate",
+          "url": "https://www.powermag.com/press-releases/iperc-receives-first-dod-cybersecurity-accreditation-of-a-microgrid-system-with-authorization-to-operate-ato/",
+          "publisher": "Intelligent Power & Energy Research Corporation",
+          "kind": "primary"
+        },
+        {
+          "id": "smith-sandia-overview",
+          "title": "SPIDERS Microgrid Project Secures Military Power",
+          "url": "https://phys.org/news/2012-02-spiders-microgrid-military.html",
+          "publisher": "Sandia National Laboratories via Phys.org",
+          "kind": "primary"
+        },
+        {
+          "id": "smith-mcbh-current",
+          "title": "Marine Corps Base Hawaii Resources and Energy Innovations",
+          "url": "https://www.mcbhawaii.marines.mil/Resources-and-Services/Resources_Embeds/",
+          "publisher": "U.S. Marine Corps",
+          "kind": "primary"
         }
       ]
     },
     "cannon-afb": {
-      "researchedAt": "2026-07-19",
-      "coverage": "partial",
-      "summary": null,
-      "status": "Feasibility",
+      "researchedAt": "2026-07-20",
+      "coverage": "detailed",
+      "summary": "The historical Cannon AFB microgrid record corresponds to a FY2011 Sandia energy-surety conceptual design/assessment funded by DOE's Office of Electricity and the Department of Defense. Sandia's later portfolio places it among military conceptual studies under 1 MW, not among operational prototypes. No public design package, equipment selection, construction award, or commissioned microgrid was found.",
+      "status": "Conceptual assessment only in FY2011; no evidence it advanced to construction. Later Cannon solar-efficiency and hydrogen-backup projects are separate resilience efforts, not proof that the FY2011 microgrid was built.",
       "classification": "Military",
       "historicalLocation": "Cannon AFB, NM, United States",
       "archiveCapturedAt": "2021-04-20",
       "organizations": [
+        {
+          "name": "Ameresco",
+          "role": "Developer under a separate 2021 energy-savings performance contract for solar and facility controls",
+          "sourceIds": [
+            "cannon-afimsc-espc",
+            "cannon-ameresco-espc"
+          ]
+        },
+        {
+          "name": "Defense Logistics Agency Energy",
+          "role": "Contracting partner for the separate $18.9 million 2021 Cannon energy-savings performance contract",
+          "sourceIds": [
+            "cannon-dla-espc"
+          ]
+        },
+        {
+          "name": "Prometheus Hydrogen",
+          "role": "Designed, installed, operates, and maintains the separate 2026 HEGO solid-state hydrogen backup pilot",
+          "sourceIds": [
+            "cannon-hego-2026"
+          ]
+        },
+        {
+          "name": "Sandia National Laboratories",
+          "role": "Performed the FY2011 military energy-surety microgrid conceptual design/assessment",
+          "sourceIds": [
+            "cannon-sandia-2017",
+            "cannon-sandia-2010"
+          ]
+        },
+        {
+          "name": "U.S. Department of Defense / U.S. Air Force",
+          "role": "Co-sponsor and installation owner for the FY2011 assessment",
+          "sourceIds": [
+            "cannon-sandia-2017"
+          ]
+        },
+        {
+          "name": "U.S. Department of Energy Office of Electricity",
+          "role": "Co-funder/sponsor identified for the FY2011 conceptual assessment",
+          "sourceIds": [
+            "cannon-sandia-2017"
+          ]
+        },
         {
           "name": "US Department of Defence",
           "role": "Publicly named participant; role not specified in the recovered record",
@@ -2461,9 +5585,128 @@
           ]
         }
       ],
-      "specifications": [],
-      "equipment": [],
-      "technicalDetails": [],
+      "specifications": [
+        {
+          "label": "FY2011 conceptual microgrid scale",
+          "value": "Categorized by Sandia as a military conceptual design/assessment under 1 MW; no more precise design capacity was published",
+          "sourceIds": [
+            "cannon-sandia-2017"
+          ]
+        },
+        {
+          "label": "FY2011 conceptual energy mix",
+          "value": "Not publicly specified; no source-backed generator, storage, or renewable selection was found for the assessment",
+          "sourceIds": [
+            "cannon-sandia-2017",
+            "cannon-sandia-2010"
+          ]
+        },
+        {
+          "label": "Separate 2021 ESPC photovoltaic capacity",
+          "value": "1.9 MW ground-mounted solar PV, planned to supply about 4% of base electricity",
+          "sourceIds": [
+            "cannon-ameresco-espc",
+            "cannon-dla-espc"
+          ]
+        },
+        {
+          "label": "Separate 2021 ESPC value and savings",
+          "value": "$18.9 million; projected $1.1 million first-year and $33 million performance-period savings",
+          "sourceIds": [
+            "cannon-afimsc-espc",
+            "cannon-dla-espc"
+          ]
+        },
+        {
+          "label": "Separate 2021 ESPC projected impact",
+          "value": "77,883 million Btu annual energy reduction and 10,700 metric tons annual carbon reduction",
+          "sourceIds": [
+            "cannon-afimsc-espc"
+          ]
+        },
+        {
+          "label": "Separate 2026 HEGO rating",
+          "value": "Capacity not publicly disclosed",
+          "sourceIds": [
+            "cannon-hego-2026"
+          ]
+        }
+      ],
+      "equipment": [
+        {
+          "category": "FY2011 conceptual microgrid equipment",
+          "detail": "No public source identifies selected generation, storage, switchgear, controller manufacturer, or equipment model for the conceptual assessment",
+          "sourceIds": [
+            "cannon-sandia-2017"
+          ]
+        },
+        {
+          "category": "Separate solar project",
+          "detail": "A 1.9 MW ground-mounted photovoltaic array, transformer upgrades, direct-digital HVAC controls, and LED lighting were included in Ameresco's 2021 ESPC; no battery or islanding controller was announced",
+          "sourceIds": [
+            "cannon-ameresco-espc",
+            "cannon-dla-espc"
+          ]
+        },
+        {
+          "category": "Separate hydrogen backup",
+          "manufacturer": "Prometheus Hydrogen",
+          "model": "HEGO",
+          "detail": "Compact solid-state hydrogen energy-production backup system deployed for the base water-supply system in June 2026",
+          "sourceIds": [
+            "cannon-hego-2026"
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "category": "Assessment classification",
+          "detail": "Sandia's 2017 portfolio explicitly lists Cannon AFB as a FY2011 DOE Office of Electricity/DoD conceptual design or assessment under 1 MW, while operational prototypes and large demonstrations are shown in separate categories.",
+          "sourceIds": [
+            "cannon-sandia-2017"
+          ]
+        },
+        {
+          "category": "Early timeline",
+          "detail": "A 2010 Sandia presentation listed Cannon among installations expressing FY2011 project interest; the later 2017 portfolio confirms an assessment occurred but provides no evidence of implementation.",
+          "sourceIds": [
+            "cannon-sandia-2010",
+            "cannon-sandia-2017"
+          ]
+        },
+        {
+          "category": "Separate 2021 project",
+          "detail": "The Air Force/DLA Energy awarded Ameresco an ESPC in June 2021 covering five conservation measures across 119 buildings and a 1.9 MW PV array. Announcements targeted Q1 2023 completion, but the reviewed official sources do not confirm final completion or describe the project as an islandable microgrid.",
+          "sourceIds": [
+            "cannon-afimsc-espc",
+            "cannon-ameresco-espc",
+            "cannon-dla-espc"
+          ]
+        },
+        {
+          "category": "Separate 2026 resilience pilot",
+          "detail": "On June 4, 2026 the Air Force demonstrated Prometheus Hydrogen's HEGO backup system for Cannon's water supply. The solid-state hydrogen system is being evaluated as an alternative to mobile and stationary diesel backup generators; the Air Force calls it a pilot, not the FY2011 microgrid.",
+          "sourceIds": [
+            "cannon-hego-2026"
+          ]
+        },
+        {
+          "category": "Current energy mix context",
+          "detail": "As of June 2026 Cannon still relied on mobile and stationary diesel generators for outage backup and was piloting hydrogen for one water-supply application. Public sources do not establish a base-wide islandable microgrid or storage fleet.",
+          "sourceIds": [
+            "cannon-hego-2026"
+          ]
+        },
+        {
+          "category": "Disambiguation",
+          "detail": "The FY2011 conceptual microgrid, the 2021 solar/controls ESPC, and the 2026 water-system hydrogen backup pilot are three distinct efforts and should not have their capacities or status merged.",
+          "sourceIds": [
+            "cannon-sandia-2017",
+            "cannon-afimsc-espc",
+            "cannon-hego-2026"
+          ]
+        }
+      ],
       "sources": [
         {
           "id": "archive",
@@ -2472,6 +5715,48 @@
           "publisher": "Internet Archive",
           "kind": "archive",
           "capturedAt": "2021-04-20"
+        },
+        {
+          "id": "cannon-sandia-2017",
+          "title": "Grid Modernization Program Area: Energy Surety Microgrid Efforts",
+          "url": "https://www.osti.gov/servlets/purl/1458426",
+          "publisher": "Sandia National Laboratories",
+          "kind": "primary"
+        },
+        {
+          "id": "cannon-sandia-2010",
+          "title": "Current Sandia Military Microgrid Conceptual Design Efforts",
+          "url": "https://s3.us-gov-west-1.amazonaws.com/sepub-demo-0001-124733793621-us-gov-west-1/s3fs-public/documents%2F1D_Hightower.pdf",
+          "publisher": "Sandia National Laboratories",
+          "kind": "primary"
+        },
+        {
+          "id": "cannon-afimsc-espc",
+          "title": "ESPC Awarded for Cannon AFB",
+          "url": "https://www.afimsc.af.mil/News/Article-Display/Article/2651251/espc-awarded-for-cannon-afb/",
+          "publisher": "Air Force Installation and Mission Support Center",
+          "kind": "primary"
+        },
+        {
+          "id": "cannon-dla-espc",
+          "title": "Cannon Air Force Base Receives Energy Conservation Upgrades",
+          "url": "https://www.dla.mil/About-DLA/News/News-Article-View/Article/2664858/cannon-air-force-base-receives-energy-conservation-upgrades/",
+          "publisher": "Defense Logistics Agency",
+          "kind": "primary"
+        },
+        {
+          "id": "cannon-ameresco-espc",
+          "title": "Cannon Air Force Base Partners with Ameresco for $19 Million Cleantech Project",
+          "url": "https://d1io3yog0oux5.cloudfront.net/_f7f171d119f5755eafe2a196a4502433/ameresco/news/2021-06-15_Cannon_Air_Force_Base_Partners_with_Ameresco_for_453.pdf",
+          "publisher": "Ameresco",
+          "kind": "primary"
+        },
+        {
+          "id": "cannon-hego-2026",
+          "title": "Cannon AFB Trials New Hydrogen Energy Program to Provide Alternate Power for Water Supply",
+          "url": "https://www.cannon.af.mil/News/Article/4509218/cannon-afb-trials-new-hydrogen-energy-program-to-provide-alternate-power-for-wa/",
+          "publisher": "U.S. Air Force",
+          "kind": "primary"
         }
       ]
     },
