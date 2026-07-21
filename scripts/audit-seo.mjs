@@ -214,7 +214,7 @@ try {
     ["/robots.txt", "text/plain"],
     ["/llms.txt", "text/plain"],
     ["/manifest.webmanifest", "application/manifest+json"],
-    ["/favicon.ico", "image/x-icon"],
+    ["/favicon.ico", ["image/x-icon", "image/vnd.microsoft.icon"]],
     ["/icon.svg", "image/svg+xml"],
     ["/apple-icon.png", "image/png"],
     ["/icon-192.png", "image/png"],
@@ -223,7 +223,9 @@ try {
   ]) {
     const response = await fetch(`${baseUrl}${path}`, { redirect: "manual" });
     if (response.status !== 200) fail(path, `returned ${response.status}`);
-    if (!(response.headers.get("content-type") ?? "").includes(expectedType)) fail(path, `unexpected content type ${response.headers.get("content-type")}`);
+    const contentType = response.headers.get("content-type") ?? "";
+    const acceptedTypes = Array.isArray(expectedType) ? expectedType : [expectedType];
+    if (!acceptedTypes.some((type) => contentType.includes(type))) fail(path, `unexpected content type ${contentType}`);
   }
 
   const robotsText = await (await fetch(`${baseUrl}/robots.txt`)).text();
