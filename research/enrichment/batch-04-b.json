@@ -1,0 +1,402 @@
+{
+  "hartley-bay-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Hartley Bay's documented smart-microgrid project was a diesel-efficiency and demand-response retrofit, not a commissioned hydro hybrid. Natural Resources Canada reports a 1.05 MW diesel plant, building controls, smart meters, and an energy-management system that shifted or shed electric heating and ventilation loads. The community was still diesel supplied in 2025; a separate 948–950 kW Gitga'at Power hydro project is in development and is currently projected for 2028–2030 construction and completion if leadership proceeds.",
+    "status": "The 2008-era smart-metering, efficiency, and demand-response project was commissioned and demonstrated, although continued operation of every legacy controller is not independently confirmed. BC Hydro reports 0.6 million litres of diesel consumption in Hartley Bay in 2025. The proposed hydro plant has not been built: permitting, studies, commercial negotiations, and financing remain in progress, with 2030 the current target completion year.",
+    "organizations": [
+      {"name": "Gitga'at First Nation", "role": "Community host and owner of the future hydro initiative through Gitga'at Power", "sourceIds": ["hartley-nrcan-page", "hartley-gitgaat-current"]},
+      {"name": "Natural Resources Canada / CanmetENERGY", "role": "Federal research, documentation, and support for the smart remote microgrid demonstration", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]},
+      {"name": "BC Hydro", "role": "Current electricity service provider and planner for the non-integrated diesel system", "sourceIds": ["hartley-bchydro-2026"]},
+      {"name": "Pulse Energy", "role": "Supplier of the energy-management and demand-response platform used in the demonstration", "sourceIds": ["hartley-nrcan-paper"]},
+      {"name": "Gitga'at Power", "role": "Developer of the separate proposed hydro project", "sourceIds": ["hartley-gitgaat-current", "hartley-gitgaat-2025"]},
+      {"name": "Coast Funds", "role": "Provided C$2 million in 2024 toward the hydro project's development", "sourceIds": ["hartley-coastfunds-2024"]}
+    ],
+    "specifications": [
+      {"label": "Existing generation", "value": "Three diesel generator sets: two 420 kW units and one 210 kW unit, totaling 1.05 MW", "sourceIds": ["hartley-nrcan-paper"]},
+      {"label": "Existing annual electricity", "value": "Up to approximately 2 GWh/year in the demonstration-era documentation", "sourceIds": ["hartley-nrcan-paper"]},
+      {"label": "Distribution", "value": "600 V generator bus stepped up to 25 kV for roughly 2 km of distribution, then stepped down for 120/240/208 V service", "sourceIds": ["hartley-nrcan-paper"]},
+      {"label": "Demand-response capability", "value": "61.3 kW of identified controllable load, about 15% of maximum community demand; demonstrations measured reductions up to approximately 35 kW", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]},
+      {"label": "Diesel-dispatch savings estimate", "value": "Reconfigured generator dispatch was estimated to save about 77,000 litres and C$77,000 per year; a further 27,000 litres/year from demand response was a projection rather than a verified result", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]},
+      {"label": "2025 diesel consumption", "value": "Approximately 0.6 million litres", "sourceIds": ["hartley-bchydro-2026"]},
+      {"label": "Proposed hydro", "value": "948–950 kW small-storage/run-of-lake plant, not yet constructed", "sourceIds": ["hartley-bchydro-2026", "hartley-gitgaat-current", "hartley-coastfunds-2024"]},
+      {"label": "Proposed hydro impact", "value": "BC Hydro models approximately 0.5 million litres/year of diesel displacement; Coast Funds described a 95% reduction target. Both are forecasts, not operating results", "sourceIds": ["hartley-bchydro-2026", "hartley-coastfunds-2024"]},
+      {"label": "Proposed hydro schedule and cost", "value": "Current developer projection is C$77.5 million, construction beginning in 2028, and completion in 2030, contingent on leadership approval and project progression", "sourceIds": ["hartley-gitgaat-current"]}
+    ],
+    "equipment": [
+      {"category": "Diesel generation", "detail": "Two 420 kW and one 210 kW generator sets; manufacturers and models are not disclosed in the cited technical report", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Energy-management system", "manufacturer": "Pulse Energy", "detail": "Community-wide energy information and demand-response platform", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Load controls", "detail": "Wireless, adjustable 30 A thermostats/load controllers installed at major facilities to control electric heating and ventilation loads", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Metering", "detail": "Wireless smart meters deployed to community buildings beginning in 2008", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]},
+      {"category": "Storage", "detail": "No battery energy-storage system is documented for the commissioned smart-microgrid phase", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]}
+    ],
+    "technicalDetails": [
+      {"category": "Architecture", "detail": "The project overlaid monitoring, building-efficiency measures, coordinated diesel dispatch, and demand response on an isolated diesel power system.", "sourceIds": ["hartley-nrcan-page", "hartley-nrcan-paper"]},
+      {"category": "Controlled loads", "detail": "Baseboard heating, domestic hot water, HVAC, and ventilation loads at the school, clinic, community centre, and other buildings were candidates for short-duration control.", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Community scale", "detail": "The technical report describes about 170 residents and 82 buildings, comprising 62 residential and 20 commercial or mixed-use buildings.", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Economics", "detail": "The demonstration-era cost of electricity was estimated at roughly C$0.67/kWh and more than C$500,000 per year; these are historical estimates, not current tariffs.", "sourceIds": ["hartley-nrcan-paper"]},
+      {"category": "Current energy mix", "detail": "The latest primary planning evidence still treats Hartley Bay as a diesel community. The hydro contribution is zero until the separate Gitga'at Power project is commissioned.", "sourceIds": ["hartley-bchydro-2026", "hartley-gitgaat-current"]},
+      {"category": "Hydro development update", "detail": "A 5.7 km access road was completed in January 2024, commercial negotiations began in August 2025, and environmental, technical, and permitting work continues.", "sourceIds": ["hartley-gitgaat-2025", "hartley-coastfunds-2024"]}
+    ],
+    "sources": [
+      {"id": "hartley-nrcan-page", "title": "First Canadian smart remote microgrid in Hartley Bay, BC", "url": "https://natural-resources.canada.ca/energy-efficiency/first-canadian-smart-remote-microgrid-hartley-bay-bc", "publisher": "Natural Resources Canada", "kind": "primary"},
+      {"id": "hartley-nrcan-paper", "title": "Hartley Bay Smart Microgrid Project", "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/canmetenergy/files/pubs/2013-035_en.pdf", "publisher": "Natural Resources Canada / CanmetENERGY", "kind": "primary"},
+      {"id": "hartley-bchydro-2026", "title": "Non-Integrated Areas Strategy to 2030", "url": "https://www.bchydro.com/content/dam/BCHydro/customer-portal/documents/projects/nia/non-integrated-areas-strategy-to-2030.pdf", "publisher": "BC Hydro", "kind": "primary"},
+      {"id": "hartley-gitgaat-current", "title": "Phase 2: Hydroelectric Development", "url": "https://www.gitgaatpower.com/phase2", "publisher": "Gitga'at Power", "kind": "primary"},
+      {"id": "hartley-gitgaat-2025", "title": "Gitga'at Power Project Update – August 2025", "url": "https://www.gitgaatpower.com/post/gitga-at-power-project-update-august-2025", "publisher": "Gitga'at Power", "kind": "primary"},
+      {"id": "hartley-coastfunds-2024", "title": "2024 Annual Report", "url": "https://coastfunds.ca/wp-content/uploads/2025/04/CF_AnnualReport2024_WEB.pdf", "publisher": "Coast Funds", "kind": "primary"},
+      {"id": "hartley-legacy-archive", "title": "Hartley Bay Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20210420192702id_/http://microgridprojects.com/microgrid/hartley-bay-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "hefei-university-of-technology-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Hefei University of Technology built a laboratory microgrid testbed with the University of New Brunswick to study multi-energy generation, power electronics, storage, and hierarchical control. The best primary descriptions identify 10 kW single-phase and 30 kVA three-phase PV sources, two 30 kW wind-generation simulators, a 5 kW fuel cell, battery and ultracapacitor storage, and two 15 kW conventional-generator simulators. This corrects legacy descriptions that treated all 60 kW of wind as physical turbines and attributed the project to the Chinese Academy of Sciences.",
+    "status": "Historical academic research facility. The testbed was reported in 2008 and reviewed in 2013. HFUT researchers continued publishing related islanded-microgrid control work through at least 2018, but no primary source confirms that the original hardware configuration remains intact or operating in 2026.",
+    "organizations": [
+      {"name": "Hefei University of Technology", "role": "Lead institution and site of the laboratory microgrid testbed", "sourceIds": ["hefei-testbed-2008", "hefei-review-2013"]},
+      {"name": "University of New Brunswick", "role": "Research collaborator in development of the testbed", "sourceIds": ["hefei-testbed-2008", "hefei-review-2013"]},
+      {"name": "Institute of Electrical Engineering, Chinese Academy of Sciences", "role": "A separate Chinese microgrid research organization discussed in the national review, not documented as a builder of the HFUT testbed", "sourceIds": ["hefei-review-2013"]}
+    ],
+    "specifications": [
+      {"label": "Photovoltaic sources", "value": "One 10 kW single-phase PV generator and one 30 kVA three-phase PV generator", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Wind sources", "value": "Two 30 kW three-phase wind-generation simulators, totaling 60 kW of simulated wind capacity", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Fuel cell", "value": "5 kW", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Battery storage", "value": "300 Ah battery bank; voltage and usable kWh are not stated in the cited review", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Ultracapacitor storage", "value": "1,800 F bank; energy capacity is not reported", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Conventional generation simulators", "value": "Two 15 kW generator sets used to emulate small hydro and small fossil-fuel generation", "sourceIds": ["hefei-review-2013"]},
+      {"label": "Control hierarchy", "value": "Two layers: local source/load controls and a central supervisory energy-management layer", "sourceIds": ["hefei-testbed-2008", "hefei-review-2013"]}
+    ],
+    "equipment": [
+      {"category": "Solar generation", "detail": "10 kW single-phase and 30 kVA three-phase PV generation interfaces; makes and models are not disclosed", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Wind emulation", "detail": "Two 30 kW three-phase wind-generation simulator systems rather than documented outdoor wind turbines", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Fuel cell", "detail": "5 kW fuel-cell generator; chemistry, manufacturer, and model are not disclosed", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Hybrid storage", "detail": "A 300 Ah electrochemical battery bank paired with a 1,800 F ultracapacitor bank", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Dispatchable-source emulation", "detail": "Two 15 kW conventional generator sets configured to represent small hydro and fossil generation", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Loads", "detail": "Resistive, capacitive, and inductive banks; AC and DC motors; and power-electronic loads", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Energy-management system", "detail": "Central EMS designed around IEC 61970-compatible information models and supervisory coordination", "sourceIds": ["hefei-review-2013"]}
+    ],
+    "technicalDetails": [
+      {"category": "Research purpose", "detail": "The platform was designed to test coordinated operation of heterogeneous distributed generators, storage, loads, and their power-electronic interfaces.", "sourceIds": ["hefei-testbed-2008"]},
+      {"category": "Source interpretation", "detail": "The reported 60 kW wind component is simulator capacity. It should not be described as installed wind-turbine nameplate capacity.", "sourceIds": ["hefei-review-2013"]},
+      {"category": "Operating modes", "detail": "Later HFUT integrated-microgrid research demonstrated master-slave control and flexible transitions between grid-connected and islanded operation; this is related work and not proof of the exact original testbed configuration.", "sourceIds": ["hefei-integrated-2011"]},
+      {"category": "Institution attribution", "detail": "The primary testbed paper names HFUT and the University of New Brunswick. The Chinese Academy of Sciences is covered separately in the 2013 China review and should not be listed as an original HFUT-testbed partner without additional evidence.", "sourceIds": ["hefei-testbed-2008", "hefei-review-2013"]},
+      {"category": "Later work", "detail": "HFUT faculty publication records show continuing work on decentralized power control for islanded AC microgrids in 2018, but they do not establish present operation of the 2008 hardware.", "sourceIds": ["hefei-faculty-2018"]}
+    ],
+    "sources": [
+      {"id": "hefei-testbed-2008", "title": "Testbed for microgrid with multi-energy generators", "url": "https://doi.org/10.1109/CCECE.2008.4564613", "publisher": "IEEE", "kind": "primary"},
+      {"id": "hefei-review-2013", "title": "Research on Microgrid and its Application in China", "url": "https://www.scirp.org/pdf/EPE_2013101509085326.pdf", "publisher": "Energy and Power Engineering", "kind": "primary"},
+      {"id": "hefei-integrated-2011", "title": "Research and Practice of Integrated Microgrid System Control", "url": "https://www.scientific.net/AMR.225-226.504", "publisher": "Advanced Materials Research", "kind": "primary"},
+      {"id": "hefei-faculty-2018", "title": "Decentralized Coordination Power Control for Islanding Microgrid Based on P-f and Q-U Droop Control", "url": "https://faculty.hfut.edu.cn/mmq/en/lwcg/123268/content/5835.htm", "publisher": "Hefei University of Technology", "kind": "primary"},
+      {"id": "hefei-legacy-archive", "title": "Hefei University of Technology Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20200706000338id_/http://microgridprojects.com/microgrid/hefei-university-of-technology-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "hempstead-port-washington-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Town of North Hempstead's Port Washington project was a NY Prize Stage 1 feasibility study for five coordinated, site-level microgrids serving municipal, school, fire, water, library, cultural, and emergency facilities. The 2016 concept combined 616 kW of CHP, 310 kW of proposed PV, 150 kWh of storage, 40 kW of existing PV, and 1.712 MW of existing emergency generators. It remained a planning study: Port Washington does not appear on NYSERDA's official Stage 2 award list, and no commissioning evidence was found.",
+    "status": "Stage 1 feasibility study completed in April 2016; not built. The project received a Stage 1 award but is absent from the official Stage 2 award roster. The conclusion that it did not advance is an inference from NYSERDA's award records and the lack of subsequent construction or operating documentation.",
+    "organizations": [
+      {"name": "Town of North Hempstead", "role": "NY Prize applicant, project sponsor, and owner of several proposed host facilities", "sourceIds": ["port-stage1-report", "port-stage1-awards"]},
+      {"name": "Hitachi Microgrids", "role": "Technical lead for the feasibility study and proposed microgrid-control architecture", "sourceIds": ["port-stage1-report"]},
+      {"name": "Johnson Controls", "role": "Feasibility-study team member supporting building and energy-system analysis", "sourceIds": ["port-stage1-report"]},
+      {"name": "National Renewable Energy Laboratory", "role": "Technical-analysis team member", "sourceIds": ["port-stage1-report"]},
+      {"name": "Pace Energy and Climate Center", "role": "Legal, regulatory, and community-analysis team member", "sourceIds": ["port-stage1-report"]},
+      {"name": "NYSERDA", "role": "NY Prize Stage 1 funder and program administrator", "sourceIds": ["port-stage1-report", "port-stage1-awards"]},
+      {"name": "PSEG Long Island / Long Island Power Authority", "role": "Electric distribution utility and interconnection stakeholder", "sourceIds": ["port-stage1-report"]},
+      {"name": "National Grid", "role": "Natural-gas utility for the proposed CHP systems", "sourceIds": ["port-stage1-report"]},
+      {"name": "Port Washington Union Free School District", "role": "Host and critical-load stakeholder for school-system nodes", "sourceIds": ["port-stage1-report"]},
+      {"name": "Port Washington Fire Department", "role": "Critical-load stakeholder and host of proposed node facilities", "sourceIds": ["port-stage1-report"]},
+      {"name": "Port Washington Water District", "role": "Critical-load stakeholder and proposed microgrid node host", "sourceIds": ["port-stage1-report"]},
+      {"name": "Port Washington Public Library", "role": "Critical-load and community-refuge facility in the proposed network", "sourceIds": ["port-stage1-report"]},
+      {"name": "Landmark on Main Street", "role": "Proposed host facility and community shelter/resource", "sourceIds": ["port-stage1-report"]}
+    ],
+    "specifications": [
+      {"label": "Proposed new generation", "value": "926 kW total: eleven CHP units totaling 616 kW and six PV systems totaling 310 kW", "sourceIds": ["port-stage1-report"]},
+      {"label": "Existing solar", "value": "One 40 kW PV system", "sourceIds": ["port-stage1-report"]},
+      {"label": "Proposed storage", "value": "Ten energy-storage systems totaling 150 kWh; aggregate power rating was not reported", "sourceIds": ["port-stage1-report"]},
+      {"label": "Existing emergency generation", "value": "Seven generator sets totaling 1,712 kW", "sourceIds": ["port-stage1-report"]},
+      {"label": "Study-area demand", "value": "4,957,372 kWh annual consumption, 2,812 kW maximum demand, and 566 kW average demand", "sourceIds": ["port-stage1-report"]},
+      {"label": "Modeled CHP output", "value": "3,714,393 kWh/year across the proposed installations", "sourceIds": ["port-stage1-report"]},
+      {"label": "Capital cost", "value": "Approximately US$4.347 million installed, or US$3.596 million after the federal investment-tax-credit assumption used in the study", "sourceIds": ["port-stage1-report"]},
+      {"label": "Benefit-cost result", "value": "At zero outage days/year the modeled benefit-cost ratio was 0.6; at 0.7 outage days/year it reached approximately 1.0, with a small positive net present value", "sourceIds": ["port-stage1-report"]},
+      {"label": "Modeled annual non-resilience benefits", "value": "Approximately US$351,877 in energy savings and US$42,000 in greenhouse-gas benefits", "sourceIds": ["port-stage1-report"]}
+    ],
+    "equipment": [
+      {"category": "Combined heat and power", "detail": "Eleven proposed natural-gas CHP units totaling 616 kW; final manufacturers and models were not selected in the feasibility study", "sourceIds": ["port-stage1-report"]},
+      {"category": "Photovoltaics", "detail": "Six proposed systems totaling 310 kW plus one existing 40 kW system", "sourceIds": ["port-stage1-report"]},
+      {"category": "Battery storage", "detail": "Ten proposed systems totaling 150 kWh, distributed among host facilities; chemistry and model were not finalized", "sourceIds": ["port-stage1-report"]},
+      {"category": "Emergency generation", "detail": "Seven existing backup generators totaling 1,712 kW, retained for resilience rather than counted as new clean generation", "sourceIds": ["port-stage1-report"]},
+      {"category": "Microgrid controls", "manufacturer": "Hitachi Microgrids", "detail": "Conceptual active controllers coordinating local generation, storage, building-management systems, islanding, and load priorities", "sourceIds": ["port-stage1-report"]},
+      {"category": "Planning software", "model": "HOMER Pro", "detail": "Used for feasibility optimization and economics; it was a study tool, not proposed operating control equipment", "sourceIds": ["port-stage1-report"]}
+    ],
+    "technicalDetails": [
+      {"category": "Topology", "detail": "Five site-specific nodes were intended to coordinate as one resilience entity, but the study notes that the nodes might not all be physically interconnected.", "sourceIds": ["port-stage1-report"]},
+      {"category": "Islanding", "detail": "Each site microgrid was conceived to isolate locally and support prioritized critical loads with CHP, PV, storage, and existing standby generators.", "sourceIds": ["port-stage1-report"]},
+      {"category": "Node 1", "detail": "Landmark on Main Street, Port Washington Public Library, and two fire stations formed the central civic/emergency cluster.", "sourceIds": ["port-stage1-report"]},
+      {"category": "Other nodes", "detail": "Additional nodes covered school-district buildings, water-district infrastructure, fire headquarters, and the Town animal shelter.", "sourceIds": ["port-stage1-report"]},
+      {"category": "Energy mix interpretation", "detail": "The CHP output in the model equals roughly three-quarters of the listed annual load by arithmetic, but this is a planning-model result rather than measured generation. Solar and grid energy would supply the balance under normal conditions.", "sourceIds": ["port-stage1-report"]},
+      {"category": "Outcome", "detail": "NYSERDA lists the project among Stage 1 winners but not among the eleven Stage 2 awards, supporting classification as an unbuilt feasibility concept.", "sourceIds": ["port-stage1-awards", "port-stage2-awards"]}
+    ],
+    "sources": [
+      {"id": "port-stage1-report", "title": "Town of North Hempstead – Port Washington NY Prize Stage 1 Feasibility Study", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/10-Town-North-Hempstead-Port-Washington.pdf", "publisher": "NYSERDA / Town of North Hempstead", "kind": "primary"},
+      {"id": "port-stage1-awards", "title": "NY Prize Stage 1 Award Winners", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "port-stage2-awards", "title": "NY Prize Stage 2 Awarded Projects", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "port-legacy-archive", "title": "Hempstead Port Washington Microgrid Feasibility Study (archived legacy record)", "url": "https://web.archive.org/web/20200706003738id_/http://microgridprojects.com/microgrid/hempstead-port-washington-microgrid-feasibility-study/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "huntington-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Town of Huntington NY Prize concept linked Town Hall-area civic loads, Huntington Hospital, and the wastewater treatment plant through a 13.8 kV community microgrid. Its Stage 1 design proposed a 2.8 MW fuel-cell CHP system, 400 kW reciprocating-engine CHP, a 1.3 MW peaking generator, 560 kW of PV, 2 MW/2 MWh battery storage, a 100 kW flywheel, and 900 kW of existing diesel generation. Huntington won US$1 million for Stage 2 detailed engineering in 2017, but NYSERDA later ended the Stage 3 funding path; no construction or commissioning evidence was found.",
+    "status": "Feasibility and detailed-engineering work completed or substantially advanced, but the community microgrid was not built. In October 2020 the Town stated that NYSERDA was no longer pursuing NY Prize and that no Stage 3 funding would be available. A 2021 federal research proposal referenced the facilities, but it is not evidence that the NY Prize design entered construction.",
+    "organizations": [
+      {"name": "Town of Huntington", "role": "Project sponsor, NY Prize applicant, and host/owner for Town facilities", "sourceIds": ["hunt-stage1-report", "hunt-town-2017", "hunt-town-2020"]},
+      {"name": "NYSERDA", "role": "NY Prize Stage 1 and Stage 2 funder and program administrator", "sourceIds": ["hunt-stage1-report", "hunt-stage2-awards", "hunt-town-2020"]},
+      {"name": "TRC Companies", "role": "Stage 2 detailed-engineering lead", "sourceIds": ["hunt-trc-2017"]},
+      {"name": "New York Power Authority", "role": "Energy and engineering advisor in Stage 2", "sourceIds": ["hunt-town-2017", "hunt-trc-2017"]},
+      {"name": "PSEG Long Island / Long Island Power Authority", "role": "Electric-distribution and interconnection stakeholder", "sourceIds": ["hunt-stage1-report"]},
+      {"name": "National Grid", "role": "Natural-gas utility and fuel-infrastructure stakeholder", "sourceIds": ["hunt-stage1-report"]},
+      {"name": "Huntington Hospital", "role": "Critical-load host for the proposed fuel cell and battery node", "sourceIds": ["hunt-stage1-report"]},
+      {"name": "YMCA of Long Island", "role": "Critical-load and shelter stakeholder in the Town Hall node", "sourceIds": ["hunt-stage1-report"]},
+      {"name": "FuelCell Energy", "role": "Vendor assumed for the fuel-cell power-purchase-agreement scenario; not a confirmed installed supplier", "sourceIds": ["hunt-stage1-report"]},
+      {"name": "Beacon Power", "role": "Named supplier for the proposed 100 kW flywheel; equipment was not installed", "sourceIds": ["hunt-stage1-report"]}
+    ],
+    "specifications": [
+      {"label": "Proposed fuel-cell CHP", "value": "2.8 MW natural-gas fuel cell at Huntington Hospital", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Proposed battery", "value": "2 MW / 2 MWh battery and inverter at Huntington Hospital", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Town Hall-area resources", "value": "400 kW natural-gas reciprocating-engine CHP, 560 kW PV, and 100 kW flywheel", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Wastewater-plant resources", "value": "1.3 MW natural-gas peaking generator, 400 kW natural-gas/biogas CHP, and an existing 900 kW diesel generator", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Aggregate design capacity", "value": "Approximately 7.7 MW including PV and the existing diesel unit; the report also uses a 6.9 MW figure excluding those resources", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Interconnection", "value": "Three 13.8 kV points of common coupling on the PSEG Long Island system", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "New feeder", "value": "Approximately 0.464 mile of underground 13.8 kV cable between the wastewater plant and hospital", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Peak reduction", "value": "Modeled grid peak reduction of approximately 3.7 MW", "sourceIds": ["hunt-stage1-report"]},
+      {"label": "Stage 2 award", "value": "US$1 million in 2017 for audit-grade design and engineering", "sourceIds": ["hunt-stage2-awards", "hunt-town-2017"]}
+    ],
+    "equipment": [
+      {"category": "Fuel-cell CHP", "manufacturer": "FuelCell Energy", "detail": "Proposed 2.8 MW natural-gas fuel-cell system under a modeled PPA structure; model not finalized and system not installed", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Battery storage", "detail": "Proposed 2 MW / 2 MWh battery-inverter system; chemistry and vendor not finalized", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Flywheel storage", "manufacturer": "Beacon Power", "detail": "Proposed 100 kW flywheel at the Town Hall-area node", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Solar generation", "detail": "Proposed 560 kW PV across the Town Hall, YMCA, and Senior Center area", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Reciprocating CHP", "detail": "Proposed 400 kW natural-gas engine-generator at the Town Hall node", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Wastewater CHP", "detail": "Proposed 400 kW unit modeled with approximately 25% digester gas and 75% natural gas", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Peaking and standby generation", "detail": "Proposed 1.3 MW natural-gas generator plus an existing 900 kW diesel standby unit", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Protection and communications", "detail": "Concept included reclosers, protective relays, RTUs, fiber communications, GPS/IRIG-B time synchronization, and a supervisory microgrid controller; final makes/models were not selected", "sourceIds": ["hunt-stage1-report"]}
+    ],
+    "technicalDetails": [
+      {"category": "Topology", "detail": "The proposed ring connected the wastewater plant and hospital underground, while an overhead link reached the Town Hall area. The Town Hall cluster was designed to retain an independent island if the overhead tie failed.", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Island transition", "detail": "Storage would bridge transitions and regulate voltage and frequency while dispatchable generators started; the fuel cell was treated as grid-following rather than the primary grid-forming source.", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Load management", "detail": "The control concept shed load to about 80% of available online distributed-generation capacity and restored loads according to criticality and reserve.", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Battery operation", "detail": "The feasibility design targeted roughly 70–80% state of charge before a forecast islanding event to preserve transition reserve.", "sourceIds": ["hunt-stage1-report"]},
+      {"category": "Program history", "detail": "Huntington moved from a US$100,000 Stage 1 study to a US$1 million Stage 2 engineering award in 2017 and was preparing for Stage 3 by 2019.", "sourceIds": ["hunt-stage2-awards", "hunt-town-2017", "hunt-town-2020"]},
+      {"category": "Program outcome", "detail": "The Town reported in October 2020 that NYSERDA would not offer Stage 3 construction funding and sought FEMA BRIC funding instead. No evidence located shows that alternative funding produced the designed microgrid.", "sourceIds": ["hunt-town-2020"]},
+      {"category": "Later research proposal", "detail": "A January 2021 Town resolution supported a DOE Connected Communities proposal with Ecogy, Brookhaven National Laboratory, Stony Brook University, and Pacific Northwest National Laboratory; this was a proposal, not commissioning documentation.", "sourceIds": ["hunt-town-2021"]}
+    ],
+    "sources": [
+      {"id": "hunt-stage1-report", "title": "Town of Huntington NY Prize Stage 1 Feasibility Study", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/2-Town-of-Huntington.pdf", "publisher": "NYSERDA / Town of Huntington", "kind": "primary"},
+      {"id": "hunt-stage2-awards", "title": "NY Prize Stage 2 Awarded Projects", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "hunt-town-2017", "title": "Huntington Wins $1M NY Prize Microgrid Grant", "url": "https://huntingtonny.gov/news/?FeedID=2332", "publisher": "Town of Huntington", "kind": "primary"},
+      {"id": "hunt-trc-2017", "title": "TRC and Partners Win $1 Million Grant for Engineering Innovative New York Microgrid", "url": "https://www.trccompanies.com/insights/trc-and-partners-win-1-million-grant-for-engineering-innovative-new-york-microgrid/", "publisher": "TRC Companies", "kind": "primary"},
+      {"id": "hunt-town-2020", "title": "Town Board to Apply for FEMA BRIC Grant for Huntington Microgrid", "url": "https://huntingtonny.gov/news/?FeedID=4619", "publisher": "Town of Huntington", "kind": "primary"},
+      {"id": "hunt-town-2021", "title": "Town of Huntington Resolution 2021-25", "url": "https://huntingtonny.granicus.com/DocumentViewer.php?file=huntingtonny_ba383767c0b37d9f108f7e13760cd54e.pdf&view=1", "publisher": "Town of Huntington", "kind": "primary"},
+      {"id": "hunt-legacy-archive", "title": "Huntington Microgrid Feasibility Study (archived legacy record)", "url": "https://web.archive.org/web/20200706003946id_/http://microgridprojects.com/microgrid/huntington-microgrid-feasibility-study/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "huatacondo-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Energía Sustentable Cóndor (ESUSCON) is the isolated community microgrid inaugurated in Huatacondo, Chile, in 2010 by the University of Chile, Compañía Minera Doña Inés de Collahuasi, and the community. It expanded electricity service from roughly 8–10 hours per day to continuous service using diesel, tracking PV, a small wind turbine, lead-acid storage, advanced dispatch, and a community-facing 'Social SCADA.' Published capacity figures conflict by date and boundary: the strongest monitored configuration reports 23 kW PV, 108 kW diesel, and 27 kW/127 kWh storage, while earlier control papers report 22 kW PV, 5 kW wind, and 120 kW diesel.",
+    "status": "Commissioned in 2010 and directly described as operating in a 2019 University of Chile thesis. Monitoring papers analyze 2011–2013 operation. Later publications continue to use ESUSCON as a live case study, but no primary 2026 operating report or current equipment inventory was located, so present-day status beyond the last direct confirmation is unverified.",
+    "organizations": [
+      {"name": "University of Chile Energy Center", "role": "Technical developer, controls researcher, monitoring lead, and long-term technical-support organization", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-monitoring-2016", "huatacondo-thesis-2019"]},
+      {"name": "Compañía Minera Doña Inés de Collahuasi", "role": "Industrial project partner and principal sponsor", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-monitoring-2016"]},
+      {"name": "Huatacondo community / neighborhood council", "role": "Community host, beneficiary, and participant in demand-response and operating decisions", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-social-scada-2011"]}
+    ],
+    "specifications": [
+      {"label": "Monitored configuration", "value": "23 kW photovoltaic array, 108 kW diesel generation, and 27 kW / 127 kWh lead-acid battery storage", "sourceIds": ["huatacondo-monitoring-2016"]},
+      {"label": "2014 control-paper configuration", "value": "22 kW PV, 5 kW wind turbine, 120 kW diesel generator, and approximately 28 kW peak load", "sourceIds": ["huatacondo-ems-2014"]},
+      {"label": "Alternative demonstration listing", "value": "22 kW PV, 3 kW wind, 150 kW diesel, and 170 kWh battery storage; retained as a dated conflicting source rather than blended with monitored values", "sourceIds": ["huatacondo-symposium"]},
+      {"label": "Distribution", "value": "380/220 V, 50 Hz isolated low-voltage microgrid", "sourceIds": ["huatacondo-monitoring-2016"]},
+      {"label": "Electricity service", "value": "24-hour service after commissioning, compared with about 10 hours on weekdays and 8 hours on weekends under the previous diesel-only schedule", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-monitoring-2016"]},
+      {"label": "Observed renewable contribution", "value": "A January 2011 operating analysis reported a 21% renewable-to-total generation ratio and approximately 0.191 litres of diesel per generated kWh", "sourceIds": ["huatacondo-monitoring-2016"]},
+      {"label": "Observed PV capacity factor", "value": "Approximately 5% for the early monitored interval, including losses and operational limitations", "sourceIds": ["huatacondo-monitoring-2016"]},
+      {"label": "Demonstration claim", "value": "A project-summary source reports about 50% diesel reduction and 28% PV capacity factor; these claims conflict with the early measured data and should not be treated as a current audited result", "sourceIds": ["huatacondo-symposium", "huatacondo-monitoring-2016"]}
+    ],
+    "equipment": [
+      {"category": "Photovoltaics", "detail": "Tracking PV field reported as 22–23 kW and 84 modules; manufacturer and module model are not disclosed in the cited technical sources", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-monitoring-2016"]},
+      {"category": "Wind generation", "detail": "Small wind turbine reported as 5 kW in the 2014 control paper and 3 kW in a project summary; it is omitted from the monitored single-line capacity table", "sourceIds": ["huatacondo-ems-2014", "huatacondo-symposium", "huatacondo-monitoring-2016"]},
+      {"category": "Diesel generation", "detail": "Published nameplate values range from 108 to 150 kW depending on source and year; make and model are undisclosed", "sourceIds": ["huatacondo-monitoring-2016", "huatacondo-ems-2014", "huatacondo-symposium"]},
+      {"category": "Battery storage", "detail": "Lead-acid bank reported as 27 kW / 127 kWh in monitoring literature; project accounts also describe 96 batteries and an alternative 170 kWh total", "sourceIds": ["huatacondo-uchile-2010", "huatacondo-monitoring-2016", "huatacondo-symposium"]},
+      {"category": "Supervisory controls", "detail": "SCADA and energy-management software forecast load and renewable output and optimize diesel, battery, and controllable-load schedules", "sourceIds": ["huatacondo-ems-2014", "huatacondo-thesis-2019"]},
+      {"category": "Community interface", "detail": "Social SCADA traffic-light indicators communicated red, yellow, and green demand conditions to residents", "sourceIds": ["huatacondo-social-scada-2011"]},
+      {"category": "Controllable load", "detail": "Water-pumping demand could be shifted within operational constraints as part of the optimized schedule", "sourceIds": ["huatacondo-ems-2014"]}
+    ],
+    "technicalDetails": [
+      {"category": "Control horizon", "detail": "The robust EMS formulation used 15-minute scheduling intervals and a two-day prediction horizon for solar, wind, and load uncertainty.", "sourceIds": ["huatacondo-ems-2014"]},
+      {"category": "Community demand response", "detail": "Social SCADA translated system conditions into simple visual signals, allowing the neighborhood council and households to participate in load management.", "sourceIds": ["huatacondo-social-scada-2011"]},
+      {"category": "Early reliability issue", "detail": "Monitoring literature records failure of the PV tracking mechanism and a repair period of roughly two months, helping explain the low early PV capacity factor.", "sourceIds": ["huatacondo-monitoring-2016"]},
+      {"category": "Capacity reconciliation", "detail": "The 23/108/127 figures come from a monitored-system paper, while 22/5/120 and 22/3/150/170 appear in control and demonstration descriptions. They likely reflect different dates, rating conventions, or system boundaries and cannot be safely collapsed into one exact configuration.", "sourceIds": ["huatacondo-monitoring-2016", "huatacondo-ems-2014", "huatacondo-symposium"]},
+      {"category": "Software maintainability", "detail": "A 2019 thesis reports that the original C# SCADA code was difficult to maintain and describes a modular redesign while stating that ESUSCON had operated since 2010 with Energy Center support.", "sourceIds": ["huatacondo-thesis-2019"]},
+      {"category": "Energy-mix interpretation", "detail": "Diesel remained the firm source; PV, wind, and storage reduced fuel consumption and enabled continuous service. The most defensible measured renewable share is the dated 21% early-operation value, not a current annual mix.", "sourceIds": ["huatacondo-monitoring-2016"]}
+    ],
+    "sources": [
+      {"id": "huatacondo-uchile-2010", "title": "Huatacondo, el ejemplo del lugar más limpio de Chile", "url": "https://radio.uchile.cl/2010/10/08/huatacondo-el-ejemplo-del-lugar-mas-limpio-de-chile/", "publisher": "University of Chile Radio", "kind": "primary"},
+      {"id": "huatacondo-monitoring-2016", "title": "Long-Term Evaluation of a Remote Microgrid in Chile", "url": "https://rael.berkeley.edu/wp-content/uploads/2017/03/sustainability-08-01163.pdf", "publisher": "Sustainability", "kind": "primary"},
+      {"id": "huatacondo-ems-2014", "title": "Robust Energy Management System for a Microgrid Based on a Fuzzy Prediction Interval Model", "url": "https://www.cec.uchile.cl/~dsaez/wp-content/uploads/2015/06/07098372-PDF-Felipe-et-al.pdf", "publisher": "IEEE Transactions on Smart Grid", "kind": "primary"},
+      {"id": "huatacondo-social-scada-2011", "title": "Social SCADA and demand response for the Huatacondo microgrid", "url": "https://doi.org/10.1109/PES.2011.6039749", "publisher": "IEEE", "kind": "primary"},
+      {"id": "huatacondo-thesis-2019", "title": "Diseño e implementación de un sistema SCADA modular para la microrred de Huatacondo", "url": "https://repositorio.uchile.cl/handle/2250/173776", "publisher": "University of Chile", "kind": "primary"},
+      {"id": "huatacondo-symposium", "title": "Huatacondo Microgrid", "url": "https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/huatacondo-microgrid/", "publisher": "Microgrid Symposiums", "kind": "secondary"},
+      {"id": "huatacondo-legacy-archive", "title": "Huatacondo Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20200706004131id_/http://microgridprojects.com/microgrid/huatacondo-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "ilse-of-eigg-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Eigg Electric is an operating, community-owned island microgrid commissioned in 2008. The current system combines about 170 kW of PV, 112 kW of hydro, 24 kW of wind, two 64 kW backup diesel generators, and a substantially upgraded Rolls/SMA battery system of roughly 714 kWh usable-to-50%-depth-of-discharge basis and 216 kW inverter capacity. Current project sources report approximately 93–95% renewable electricity, while a new 300 kW wind project remains in planning rather than operation.",
+    "status": "Operating. Eigg Electric's official site is current, contractor records document PV and storage upgrades through 2024–2025, and Companies House shows the operating company filing accounts through March 2025. Three proposed 100 kW wind turbines are in planning and fundraising and must not be counted in present capacity.",
+    "organizations": [
+      {"name": "Eigg Electric Ltd", "role": "Community-owned electricity-system operator", "sourceIds": ["eigg-official", "eigg-companies-house"]},
+      {"name": "Isle of Eigg Heritage Trust", "role": "Community landowner, project sponsor, and parent community institution", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"name": "Wind & Sun Ltd", "role": "Renewable-energy and storage contractor for the original system and later upgrades", "sourceIds": ["eigg-windandsun"]},
+      {"name": "Econnect", "role": "Original electrical-system and control design contributor", "sourceIds": ["eigg-windandsun"]},
+      {"name": "Scottish Hydro Contracting", "role": "Main contractor for the original island electrical network", "sourceIds": ["eigg-windandsun"]},
+      {"name": "Synergie Scotland", "role": "Original project-management contributor", "sourceIds": ["eigg-windandsun"]},
+      {"name": "Gilbert Gilkes & Gordon", "role": "Manufacturer of the principal hydro turbine", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"name": "SMA Solar Technology", "role": "Supplier of grid-forming battery inverters and newer PV inverters", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]},
+      {"name": "Rolls Battery Engineering / Surrette", "role": "Supplier of original and replacement flooded lead-acid storage batteries", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]}
+    ],
+    "specifications": [
+      {"label": "Photovoltaic capacity", "value": "Approximately 170 kW current total; the 2022 expansion included 96.8 kWp ground-mounted and 21.1 kWp rooftop arrays", "sourceIds": ["eigg-windandsun"]},
+      {"label": "Hydro capacity", "value": "Approximately 112 kW: one 100 kW Gilkes unit and two approximately 6 kW units", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"label": "Wind capacity", "value": "24 kW from four 6 kW turbines", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"label": "Current battery capacity", "value": "Approximately 714 kWh at 50% depth of discharge, following the 2024 storage upgrade", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]},
+      {"label": "Current battery inverter capacity", "value": "216 kW from twelve 18 kW three-phase inverter clusters", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]},
+      {"label": "Backup diesel", "value": "Two 64 kW generator sets", "sourceIds": ["eigg-official"]},
+      {"label": "Distribution", "value": "Approximately 11 km of underground 3.3 kV three-phase cable with 11 local transformers", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"label": "Renewable share", "value": "About 93% for the latest contractor-reported annual period and around 95% as the long-run figure reported by Eigg Electric", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"label": "Customer limits", "value": "5 kW for domestic connections and 10 kW / 40 A for businesses", "sourceIds": ["eigg-official", "eigg-localenergy-2025"]},
+      {"label": "Proposed wind expansion", "value": "Three 100 kW turbines, totaling 300 kW, in planning/fundraising and not installed", "sourceIds": ["eigg-official", "eigg-localenergy-2025"]}
+    ],
+    "equipment": [
+      {"category": "Battery cells", "manufacturer": "Rolls Battery Engineering", "model": "5000 Series 4V 4 KS 25P", "detail": "Flooded lead-acid cells selected for the storage replacement; contractor reporting indicates the 120-battery upgrade was completed in 2024", "sourceIds": ["eigg-rolls-2023", "eigg-windandsun"]},
+      {"category": "Battery inverters", "manufacturer": "SMA Solar Technology", "model": "Sunny Island SI-8.0H-13", "detail": "Grid-forming inverter clusters with an SMA Multicluster Box MC-Box 36; total upgraded inverter power approximately 216 kW", "sourceIds": ["eigg-rolls-2023", "eigg-windandsun"]},
+      {"category": "PV modules", "model": "REC-440AA", "detail": "Modules used in the 2022 96.8 kWp ground-mounted and 21.1 kWp rooftop additions", "sourceIds": ["eigg-windandsun"]},
+      {"category": "PV inverters", "manufacturer": "SMA Solar Technology", "model": "STP-20000TL", "detail": "Inverters used for the 2022 PV expansion", "sourceIds": ["eigg-windandsun"]},
+      {"category": "Hydro turbine", "manufacturer": "Gilbert Gilkes & Gordon", "detail": "100 kW principal hydro unit, supplemented by two smaller approximately 6 kW machines", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"category": "Wind turbines", "manufacturer": "Proven Energy", "detail": "Four 6 kW turbines, 24 kW total", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"category": "Backup generation", "detail": "Two automatic-start 64 kW diesel generators; manufacturer and model are not identified", "sourceIds": ["eigg-official"]},
+      {"category": "Customer monitoring", "manufacturer": "OWL", "detail": "In-home energy monitors help customers remain within connection limits", "sourceIds": ["eigg-official"]}
+    ],
+    "technicalDetails": [
+      {"category": "Grid forming", "detail": "SMA Sunny Island battery inverters establish island voltage and frequency and coordinate renewable generation, storage, and diesel backup.", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]},
+      {"category": "Diesel automation", "detail": "The generators automatically start at approximately 50% battery state of charge and stop around 90%.", "sourceIds": ["eigg-official"]},
+      {"category": "Surplus-energy control", "detail": "Frequency-based controls route excess energy to community heating loads and wind dump heaters and can throttle hydro output when batteries are full.", "sourceIds": ["eigg-official", "eigg-windandsun"]},
+      {"category": "Storage evolution", "detail": "The original system had roughly 212 kWh usable at 50% depth of discharge and 60 kW of inverter capacity; an intermediate configuration reached about 530 kWh and 156 kW before the 2024 upgrade to roughly 714 kWh and 216 kW.", "sourceIds": ["eigg-windandsun", "eigg-rolls-2023"]},
+      {"category": "Reliability and energy mix", "detail": "Diesel is standby firm capacity, not the dominant annual energy source. The official site says diesel generators run less than 17% of the time on average; this runtime percentage is not the same as energy share.", "sourceIds": ["eigg-official"]},
+      {"category": "Electrification constraint", "detail": "The 5 kW household cap limits simultaneous electric heating, transport, cooking, and conventional loads. Current planning includes a second 5 kW household circuit for electrification growth.", "sourceIds": ["eigg-localenergy-2025"]},
+      {"category": "Corporate continuity", "detail": "Eigg Electric Ltd remains active in the UK register with accounts filed through the year ending March 2025, corroborating ongoing institutional operation.", "sourceIds": ["eigg-companies-house"]}
+    ],
+    "sources": [
+      {"id": "eigg-official", "title": "Eigg Electric", "url": "https://isleofeigg.org/eigg-electric/", "publisher": "Isle of Eigg Heritage Trust / Eigg Electric", "kind": "primary"},
+      {"id": "eigg-windandsun", "title": "Isle of Eigg renewable power system and upgrades", "url": "https://www.windandsun.co.uk/pages/isle-of-eigg", "publisher": "Wind & Sun Ltd", "kind": "primary"},
+      {"id": "eigg-rolls-2023", "title": "Rolls Battery Selected for Isle of Eigg Energy Storage Upgrade", "url": "https://www.rollsbattery.com/rolls-battery-selected-for-isle-of-eigg-energy-storage-upgrade/", "publisher": "Rolls Battery Engineering", "kind": "primary"},
+      {"id": "eigg-localenergy-2025", "title": "Eigg Electric case study", "url": "https://localenergy.scot/wp-content/uploads/2025/02/Eigg-Electric.pdf", "publisher": "Local Energy Scotland", "kind": "primary"},
+      {"id": "eigg-companies-house", "title": "Eigg Electric Ltd company record", "url": "https://find-and-update.company-information.service.gov.uk/company/SC293992", "publisher": "UK Companies House", "kind": "primary"},
+      {"id": "eigg-legacy-archive", "title": "Isle of Eigg Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20200808001330id_/http://microgridprojects.com/microgrid/ilse-of-eigg-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "indian-head-nwc": {
+    "researchedAt": "2026-07-20",
+    "summary": "Naval Support Facility Indian Head progressed from a 2009–2010 Sandia energy-surety concept to a real 13.2 kV microgrid delivered under MILCON P-222 in 2015. The installed electrical resources are a 4.6 MW natural-gas combustion-turbine CHP plant and two 2.5 MW diesel standby generators, totaling 9.6 MW of on-site generation. A frequently cited '15 MW microgrid' label describes the served system/load class rather than generation nameplate. The Navy replaced the old coal-fired central steam plant with decentralized natural-gas steam plants and the CHP facility; in 2023 it privatized the base distribution system to SMECO while retaining the cogeneration plant.",
+    "status": "Operational. The first islanding test occurred in August 2015, and a 2018 commissioning review documented corrective work after more than two years of operation. A 2023 NAVFAC utility-privatization award requires the Navy-owned cogeneration plant to remain able to feed the distribution system, providing the latest direct evidence of continuing microgrid capability, though no recent annual islanding or energy-performance statistics were found.",
+    "organizations": [
+      {"name": "Naval Support Facility Indian Head / U.S. Navy", "role": "Host, mission owner, and owner/operator of the cogeneration and standby resources", "sourceIds": ["indian-sandia-2010", "indian-commissioning-2018", "indian-navfac-2023"]},
+      {"name": "Naval Facilities Engineering Systems Command", "role": "Facilities authority, project oversight, and 2023 utilities-contracting authority", "sourceIds": ["indian-navy-2016", "indian-navfac-2023"]},
+      {"name": "Sandia National Laboratories", "role": "Developed the earlier energy-surety microgrid conceptual design and consequence-based load analysis", "sourceIds": ["indian-sandia-2010"]},
+      {"name": "Wiley|Wilson", "role": "Designer of the decentralized steam, cogeneration, electrical-distribution, protection, and microgrid-control systems", "sourceIds": ["indian-wiley-project", "indian-automation-2015"]},
+      {"name": "Clark Construction", "role": "General contractor for the MILCON P-222 utility and energy project", "sourceIds": ["indian-commissioning-2018"]},
+      {"name": "Helios Electric", "role": "Microgrid systems integrator and Schweitzer-relay programming contractor", "sourceIds": ["indian-helios"]},
+      {"name": "Southern Maryland Electric Cooperative", "role": "Electric utility and, under the 2023 award, long-term owner/operator of the privatized distribution system", "sourceIds": ["indian-navfac-2023"]},
+      {"name": "Defense Logistics Agency Energy", "role": "Federal contracting partner for the utility-privatization procurement", "sourceIds": ["indian-navfac-2023"]}
+    ],
+    "specifications": [
+      {"label": "Natural-gas CHP generation", "value": "4.6 MW combustion-turbine generator with heat-recovery steam generation at the Strauss cogeneration plant", "sourceIds": ["indian-wiley-project", "indian-commissioning-2018"]},
+      {"label": "Diesel standby generation", "value": "Two 2.5 MW generator sets, totaling 5 MW", "sourceIds": ["indian-commissioning-2018"]},
+      {"label": "Total on-site electric generation", "value": "9.6 MW; the 15 MW description used in project materials is not the sum of installed generators", "sourceIds": ["indian-commissioning-2018"]},
+      {"label": "Microgrid voltage", "value": "13.2 kV distribution and islanded operation", "sourceIds": ["indian-automation-2015", "indian-commissioning-2018"]},
+      {"label": "Utility service", "value": "Two 69/13.2 kV substation transformers on the SMECO interconnection", "sourceIds": ["indian-commissioning-2018"]},
+      {"label": "Construction schedule", "value": "MILCON P-222 construction ran from approximately June 2013 to October 2015; the first temporary-configuration microgrid test occurred in August 2015", "sourceIds": ["indian-commissioning-2018"]},
+      {"label": "Decentralized steam", "value": "Seven natural-gas nodal plants rated approximately 200–750 boiler horsepower; these are thermal assets and should not be counted as electric generation", "sourceIds": ["indian-navy-2016", "indian-wiley-project"]},
+      {"label": "Coal displacement", "value": "The previous central plant burned approximately 15,000 tons of coal per year before replacement", "sourceIds": ["indian-navy-2016"]},
+      {"label": "Early emissions result", "value": "For the first ten months of the new decentralized steam system, the Navy reported total air pollution down 42% (about 300 tons), particulate matter and NOx down 28%, and SO2 down 44%; these are site steam-system results, not solely microgrid-electric savings", "sourceIds": ["indian-navy-2016"]}
+    ],
+    "equipment": [
+      {"category": "Combustion-turbine CHP", "detail": "4.6 MW natural-gas combustion turbine and heat-recovery steam generator; manufacturer and model are not identified in the cited sources", "sourceIds": ["indian-wiley-project", "indian-commissioning-2018"]},
+      {"category": "Standby generators", "detail": "Two 2.5 MW diesel generator sets; manufacturer and model are not disclosed", "sourceIds": ["indian-commissioning-2018"]},
+      {"category": "Protection relays", "manufacturer": "Schweitzer Engineering Laboratories", "detail": "SEL protective relays programmed for coordinated utility-connected and island protection; exact model numbers are not disclosed", "sourceIds": ["indian-automation-2015", "indian-helios"]},
+      {"category": "Supervisory control", "detail": "Centralized SCADA and Utilities and Energy Management controls coordinate breakers, generators, load priorities, and islanding", "sourceIds": ["indian-automation-2015", "indian-commissioning-2018"]},
+      {"category": "Control power", "detail": "Uninterruptible-power supplies were added or corrected so protective and fail-safe controls would remain functional through utility-loss events", "sourceIds": ["indian-commissioning-2018"]},
+      {"category": "Steam plants", "detail": "Seven decentralized natural-gas boiler plants, approximately 200–750 hp each, plus the Strauss CHP steam output", "sourceIds": ["indian-navy-2016", "indian-wiley-project"]}
+    ],
+    "technicalDetails": [
+      {"category": "Mission architecture", "detail": "The system can separate from the utility, prioritize and shed mission loads, synchronize local generators, and restore load as generation becomes available.", "sourceIds": ["indian-automation-2015", "indian-commissioning-2018"]},
+      {"category": "Project lineage", "detail": "Sandia's 2009–2010 Energy Surety Microgrid work was a consequence-based conceptual design. The later P-222 construction documents the actual commissioned system and should be used for installed equipment.", "sourceIds": ["indian-sandia-2010", "indian-commissioning-2018"]},
+      {"category": "Generation-rating correction", "detail": "The installed generator arithmetic is 4.6 MW plus 5 MW, or 9.6 MW. The presentation's 15 MW microgrid label is best interpreted as a system or served-load rating, not generation nameplate.", "sourceIds": ["indian-commissioning-2018"]},
+      {"category": "Commissioning findings", "detail": "The 2018 review found false breaker-failure indications, generator-availability and fuel-control problems, and a combustion-turbine trip following utility loss; control logic, recovery sequencing, UPS coverage, and turbine isolation were corrected.", "sourceIds": ["indian-commissioning-2018"]},
+      {"category": "Distribution", "detail": "The base used overhead 13.2 kV delta distribution. Microgrid protection had to accommodate low fault current and different source configurations during island operation.", "sourceIds": ["indian-automation-2015", "indian-commissioning-2018"]},
+      {"category": "2023 utility privatization", "detail": "SMECO received a 50-year contract to own, operate, maintain, and modernize the electric distribution system. The Navy retained the cogeneration plant, which must continue to be capable of supplying the privatized network.", "sourceIds": ["indian-navfac-2023"]},
+      {"category": "Energy mix", "detail": "Normal electricity can come from the SMECO grid and the gas CHP plant; diesel provides standby/island support. The cited sources do not publish a current annual MWh or fuel-share breakdown.", "sourceIds": ["indian-commissioning-2018", "indian-navfac-2023"]}
+    ],
+    "sources": [
+      {"id": "indian-sandia-2010", "title": "Indian Head Energy Surety Microgrid conceptual design", "url": "https://www.osti.gov/servlets/purl/1681128", "publisher": "Sandia National Laboratories / OSTI", "kind": "primary"},
+      {"id": "indian-wiley-project", "title": "Naval Support Facility Indian Head utility and energy improvements", "url": "https://www.wileywilson.com/project/naval-support-facility/", "publisher": "Wiley|Wilson", "kind": "primary"},
+      {"id": "indian-automation-2015", "title": "Automation and Protection of a Naval Facility Microgrid", "url": "https://www.wileywilson.com/wp-content/uploads/2015/01/2015_IDEA_AUTOMATION-AND-PROTECTION-OF-A-NAVAL-FACILITY-MICROGRID-1.pdf", "publisher": "Wiley|Wilson / IDEA", "kind": "primary"},
+      {"id": "indian-commissioning-2018", "title": "Commissioning a 15 MW Microgrid at Naval Support Facility Indian Head", "url": "https://www.districtenergy.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=2621a75a-6932-c799-e641-31678ed4aa88&forceDialog=0", "publisher": "International District Energy Association / Wiley|Wilson", "kind": "primary"},
+      {"id": "indian-navy-2016", "title": "NSF Indian Head's New Steam Distribution System Showing Efficiencies", "url": "https://www.navy.mil/Press-Office/News-Stories/Article/2261013/nsf-indian-heads-new-steam-distribution-system-showing-efficiencies/", "publisher": "U.S. Navy", "kind": "primary"},
+      {"id": "indian-navfac-2023", "title": "NAVFAC Washington Awards Cost-Saving Utilities Contract for Naval Support Facility Indian Head", "url": "https://www.navfac.navy.mil/Home/News-Detail/Article/3634746/navfac-washington-awards-cost-saving-utilities-contract-for-naval-support-facil/", "publisher": "NAVFAC", "kind": "primary"},
+      {"id": "indian-helios", "title": "Heavy Industry – Indian Head Naval Base microgrid", "url": "https://www.helioselectric.net/heavy-industry", "publisher": "Helios Electric", "kind": "primary"},
+      {"id": "indian-legacy-archive", "title": "Indian Head NWC Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20200706004515id_/http://microgridprojects.com/microgrid/indian-head-nwc/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "intelligent-dc-microgrid-living-lab": {
+    "researchedAt": "2026-07-20",
+    "summary": "Aalborg University's Intelligent DC Microgrid Living Lab (iDClab) was a 2014–2017 research project comparing a multivoltage DC apartment microgrid with a conventional 230 V AC apartment under realistic residential use. The documented DC architecture included 380 V down to 12 V buses, four bidirectional TDK-Lambda EZA2500 converters, storage, programmable/real loads, meters, and proposed interfaces for PV, wind, electric vehicles, and hydrogen micro-CHP. A partnered North China Electric Power University facility used separate 750 V DC buses and must not be merged into the Aalborg equipment inventory.",
+    "status": "The funded iDClab project is finished; Aalborg records its duration as January 2014 through December 2017. A 2020 IoT-MGLab publication and Aalborg's current Microgrids and Energy Internet Laboratory show related research continuing with newer infrastructure, but neither source proves that the original apartment testbed remains in its 2015 configuration.",
+    "organizations": [
+      {"name": "Aalborg University", "role": "Lead institution and host of the Danish living laboratory", "sourceIds": ["idc-aau-project", "idc-paper-2015"]},
+      {"name": "Danish Council for Strategic Research", "role": "Research funder, providing DKK 5,396,587", "sourceIds": ["idc-aau-project"]},
+      {"name": "North China Electric Power University", "role": "Chinese research collaborator and host of a separate industrial DC laboratory", "sourceIds": ["idc-paper-2015"]},
+      {"name": "Institute of Electrical Engineering, Chinese Academy of Sciences", "role": "Chinese-side collaborator on energy-management research", "sourceIds": ["idc-paper-2015"]},
+      {"name": "Kamstrup", "role": "Advanced multiutility-metering partner and supplier", "sourceIds": ["idc-paper-2015"]},
+      {"name": "TDK-Lambda", "role": "Supplier of bidirectional DC/DC converters identified in the Aalborg platform", "sourceIds": ["idc-paper-2015"]}
+    ],
+    "specifications": [
+      {"label": "Project duration", "value": "1 January 2014 to 31 December 2017", "sourceIds": ["idc-aau-project"]},
+      {"label": "Funding", "value": "DKK 5,396,587 from the Danish Council for Strategic Research", "sourceIds": ["idc-aau-project"]},
+      {"label": "Danish living-lab comparison", "value": "Two fully functional apartment sections: one 230 V, 50 Hz AC microgrid and one multibus DC microgrid", "sourceIds": ["idc-paper-2015"]},
+      {"label": "DC bus levels", "value": "380 V DC stepped through lower-voltage buses down to 12 V DC; project descriptions also identify 48 V and 24 V intermediate levels", "sourceIds": ["idc-paper-2015"]},
+      {"label": "Bidirectional conversion", "value": "Four TDK-Lambda EZA2500 bidirectional DC/DC converters in the documented laboratory setup", "sourceIds": ["idc-paper-2015"]},
+      {"label": "Chinese partner lab", "value": "Separate NCEPU research platform with two 750 V DC buses and a diagrammed 1 MVA power-electronic transformer", "sourceIds": ["idc-paper-2015"]},
+      {"label": "Current broader AAU lab resources", "value": "Aalborg's successor/current laboratory lists an 80 kW bidirectional supply and 45 kVA grid simulator; these are not capacities of the original iDClab apartment system", "sourceIds": ["idc-aau-lab-current"]}
+    ],
+    "equipment": [
+      {"category": "Bidirectional DC/DC converters", "manufacturer": "TDK-Lambda", "model": "EZA2500", "detail": "Four converters used to route energy among DC buses and storage/source interfaces", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Metering", "manufacturer": "Kamstrup", "model": "OMNIA", "detail": "Advanced multiutility metering concept covering electricity, gas, and district heat", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Storage", "detail": "Battery storage and associated bidirectional interfaces are part of the platform; chemistry, voltage, and kWh capacity are not disclosed in the core project paper", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Distributed generation interfaces", "detail": "The platform was designed for PV and wind integration, but the paper does not establish nameplate capacity or final installed manufacturer/model for either source", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Hydrogen micro-CHP", "detail": "Research concept combining electrolyzer, hydrogen storage, and fuel cell for electricity and heat; no installed capacity or vendor is documented", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Residential loads", "detail": "LED lighting, DC appliances, programmable constant-power loads, and conventional AC/DC household devices for side-by-side efficiency testing", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Communications", "detail": "ZigBee home-area communications and gateway for measurement and device coordination", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Real-time control", "detail": "Real-time digital-control modules, meters, and medium-voltage interface terminals supported converter and microgrid experiments", "sourceIds": ["idc-paper-2015"]}
+    ],
+    "technicalDetails": [
+      {"category": "Research objective", "detail": "The paired apartments enabled direct comparison of AC and DC distribution efficiency, conversion losses, control, power quality, and user behavior under similar load profiles.", "sourceIds": ["idc-aau-project", "idc-paper-2015"]},
+      {"category": "Boundary caution", "detail": "The NCEPU 750 V buses, 1 MVA transformer, supercapacitors, and multiple battery chemistries belong to the separate Chinese industrial lab, not the Aalborg residential apparatus.", "sourceIds": ["idc-paper-2015"]},
+      {"category": "Unverified savings", "detail": "The project paper cites efficiency-savings percentages from other DC-distribution literature but does not report a completed, measured annual energy-savings result for iDClab itself.", "sourceIds": ["idc-paper-2015"]},
+      {"category": "IoT successor work", "detail": "A 2020 paper describes an IoT-MGLab at Aalborg with 230 V AC and 48/400 V DC buses, PV, wind, and battery resources using FIWARE/NGSI context-broker infrastructure. It is related follow-on work, not a verified unchanged continuation of iDClab.", "sourceIds": ["idc-iot-2020"]},
+      {"category": "Current research infrastructure", "detail": "Aalborg's current Microgrids and Energy Internet Laboratory supports microgrid, converter, intelligent-electronic-device, advanced-metering, and real-time-platform research, confirming institutional continuity rather than original-project operating status.", "sourceIds": ["idc-aau-lab-current"]},
+      {"category": "Energy mix", "detail": "This was a flexible laboratory, not a utility-serving plant with a stable annual generation mix. PV, wind, storage, grid exchange, and hydrogen micro-CHP were research elements, and no annual MWh split is published.", "sourceIds": ["idc-paper-2015"]}
+    ],
+    "sources": [
+      {"id": "idc-aau-project", "title": "iDClab: Intelligent DC Microgrid Living Lab", "url": "https://vbn.aau.dk/en/projects/idclab-intelligent-microgrid-living-lab/", "publisher": "Aalborg University", "kind": "primary"},
+      {"id": "idc-paper-2015", "title": "Intelligent DC Microgrid Living Laboratories – A Chinese-Danish Cooperation Project", "url": "https://vbn.aau.dk/ws/files/214827024/2015_ICDCM_INTELLIGENT_DC_MICROGRID_LIVING_LABS.pdf", "publisher": "Aalborg University / IEEE", "kind": "primary"},
+      {"id": "idc-iot-2020", "title": "An IoT-Based Microgrid Laboratory", "url": "https://www.mdpi.com/2079-9292/9/4/550", "publisher": "Electronics", "kind": "primary"},
+      {"id": "idc-aau-lab-current", "title": "Microgrids and Energy Internet Laboratory", "url": "https://www.energy.aau.dk/laboratories/microgrids-and-energy-internet-laboratory", "publisher": "Aalborg University", "kind": "primary"},
+      {"id": "idc-legacy-archive", "title": "Intelligent DC Microgrid Living Lab (archived legacy record)", "url": "https://web.archive.org/web/20200706004753id_/http://microgridprojects.com/microgrid/intelligent-dc-microgrid-living-lab/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  }
+}

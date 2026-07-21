@@ -1,0 +1,1284 @@
+{
+  "goldwind-demonstration-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is Goldwind's grid-connected smart microgrid at its global-headquarters/industrial park in Beijing Yizhuang. The most detailed 2016 participant presentation documents the demonstration as a 2.5 MW Goldwind wind turbine, 500 kWp of PV, several battery and supercapacitor technologies, 730 kW of gas microturbines, and 500 kW of diesel backup. Goldwind subsequently expanded the park: its January 2021 certification announcement reports 4.8 MW of wind and 1.3 MW of solar in 2020. The recovered 3.73 MW figure therefore describes neither the full 2016 resource portfolio nor the expanded 2020 renewable capacity.",
+    "status": "Operating and evolved into Goldwind's zero-carbon smart-park reference site. Goldwind reported that clean energy supplied 50% of park electricity in 2020 and that the headquarters received China's first carbon-neutral smart-park certification in January 2021. Goldwind continues to market the Yizhuang park as a reference project, but no later public operating dataset was located for annual generation, storage availability, islanding events, or the present installed capacity of each storage technology.",
+    "organizations": [
+      {
+        "name": "Goldwind Science & Technology Co., Ltd.",
+        "role": "Site owner, wind-turbine supplier, microgrid developer/integrator, controls developer, and operator of the Beijing headquarters smart park.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-goldwind-certification-2021", "gld-goldwind-park-current"]
+      },
+      {
+        "name": "China National Accreditation Service for Conformity Assessment (CNAS)",
+        "role": "Conducted the ISO 14064-1:2006 greenhouse-gas verification cited in Goldwind's January 2021 carbon-neutral park announcement.",
+        "sourceIds": ["gld-goldwind-certification-2021"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original wind generation",
+        "value": "One 2.5 MW permanent-magnet direct-drive turbine, Goldwind model GW106/2500, on an 80 m tower in the 2016 demonstration configuration",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "label": "Original solar PV",
+        "value": "500 kWp total: 490 kW polycrystalline silicon, 5 kW monocrystalline silicon, and 5 kW cadmium telluride",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "label": "2016 electrical storage portfolio",
+        "value": "200 kW/800 kWh vanadium-redox flow battery; 125 kW/250 kWh lithium battery; 200 kW/10-second supercapacitor; and 100 kW/150 kWh lead-carbon battery",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "label": "Gas microturbines",
+        "value": "730 kW total: two 65 kW units plus one 600 kW unit; the 600 kW unit was described as a CCHP addition under construction in the 2016 presentation",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "label": "Diesel reserve generation",
+        "value": "500 kW total: one 300 kW and one 200 kW generator in the 2016 system description",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "label": "Expanded renewable capacity reported for 2020",
+        "value": "4.8 MW wind and 1.3 MW solar; Goldwind did not provide a turbine/module count or explain which original assets were replaced versus supplemented",
+        "sourceIds": ["gld-goldwind-certification-2021"]
+      },
+      {
+        "label": "2020 clean-electricity share",
+        "value": "50% of total park electricity, according to Goldwind's certification announcement",
+        "sourceIds": ["gld-goldwind-certification-2021"]
+      },
+      {
+        "label": "Documented load range and site area",
+        "value": "200-2,200 kW load range and 91,271.6 m² site area in the 2016 participant presentation",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbine",
+        "manufacturer": "Goldwind",
+        "model": "GW106/2500",
+        "detail": "2.5 MW permanent-magnet direct-drive turbine used by the original Beijing demonstration. Public evidence reviewed does not identify the additional turbines behind the 4.8 MW wind total reported for 2020.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-goldwind-certification-2021"]
+      },
+      {
+        "category": "Hybrid electrical storage",
+        "detail": "The 2016 configuration deliberately combined vanadium-flow, lithium, lead-carbon, and supercapacitor devices across long-, medium-, and very-short-duration response. Manufacturers and commercial models are not disclosed in the reviewed material.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-storage-study-2015"]
+      },
+      {
+        "category": "Thermal generation and reserve",
+        "detail": "Two 65 kW and one 600 kW gas microturbines were paired with 300 kW and 200 kW diesel generators. The presentation labels the gas equipment as microturbines but does not identify its manufacturer or model.",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "category": "Microgrid controls",
+        "manufacturer": "Goldwind",
+        "detail": "Goldwind described wind/PV/load forecasting, economic dispatch, integrated monitoring, protection, dynamic/transient stability controls, and both grid-connected and isolated operation. No public commercial controller model is identified.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-goldwind-park-current"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "The headquarters installation combines a utility interconnection, local wind and PV, dispatchable gas generation, diesel reserve, four complementary storage types, controllable loads, and park-level monitoring/dispatch. It is an industrial-campus demonstration and product-development environment, not a stand-alone village system.",
+        "sourceIds": ["gld-goldwind-deck-2016"]
+      },
+      {
+        "category": "Storage roles",
+        "detail": "The flow battery provides four-hour energy shifting; the lithium battery provides two-hour response; the lead-carbon battery provides 1.5-hour response; and the supercapacitor addresses roughly ten-second transients. The 2015 engineering study evaluates coordinated hybrid-storage control rather than treating the devices as one interchangeable battery.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-storage-study-2015"]
+      },
+      {
+        "category": "Capacity evolution",
+        "detail": "The detailed 2016 asset list and Goldwind's later 2020 totals must be kept as separate phases. Adding 2.5 MW wind, 500 kW PV, and 730 kW gas yields the recovered 3.73 MW value, but that arithmetic excludes diesel and storage and was superseded by the 4.8 MW wind/1.3 MW solar expansion.",
+        "sourceIds": ["gld-goldwind-deck-2016", "gld-goldwind-certification-2021"]
+      },
+      {
+        "category": "Carbon-neutral claim boundary",
+        "detail": "Goldwind says clean generation covered 50% of park electricity in 2020. The broader carbon-neutral certification also relied on purchasing China Certified Emission Reductions to offset reported greenhouse-gas emissions; it should not be interpreted as 100% on-site renewable electricity.",
+        "sourceIds": ["gld-goldwind-certification-2021"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No reviewed source provides audited post-2020 annual wind/PV production, fuel use, storage cycling/availability, outage performance, or a current one-line equipment inventory. Goldwind's current park page confirms the site remains a reference but is not an operating report.",
+        "sourceIds": ["gld-goldwind-certification-2021", "gld-goldwind-park-current"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "gld-goldwind-deck-2016",
+        "title": "Goldwind Smart Microgrid and Industrial Park Smart Energy Internet",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2016/asia/12%20Asia1-Zheng-Goldwind%20Smart.pdf",
+        "publisher": "Goldwind / 2016 Asia Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "gld-goldwind-certification-2021",
+        "title": "Goldwind global headquarters is certified as China's first carbon neutral smart park",
+        "url": "https://www.goldwind.com/en/news/focus-922521824858883072/",
+        "publisher": "Goldwind",
+        "kind": "primary"
+      },
+      {
+        "id": "gld-goldwind-park-current",
+        "title": "Goldwind's Zero-carbon Smart Park Project",
+        "url": "https://www.goldwind.com/en/eco/park01/",
+        "publisher": "Goldwind",
+        "kind": "primary"
+      },
+      {
+        "id": "gld-storage-study-2015",
+        "title": "Research on Control Strategy of the Energy Storage System for Photovoltaic and Storage Combined System",
+        "url": "https://content.scirp.org/pdf/jpee_2015061015401635.pdf",
+        "publisher": "Journal of Power and Energy Engineering",
+        "kind": "primary"
+      }
+    ]
+  },
+  "graciosa-azores-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Graciólica is the operating island power system on Graciosa in Portugal's Azores, integrating a 4.5 MW wind plant, 1 MWp solar plant, Leclanché lithium-titanate storage, and the island's diesel station under Wärtsilä GEMS controls. It began supplying the island on August 21, 2019. Public sources disagree on the storage power/usable-energy label—7.425 MW/3.2 MWh from Leclanché, 7.5 MVA/2.6 MWh from the Azores project page, and 6 MW/3.2 MWh from Wärtsilä—so those figures are preserved by source rather than silently merged.",
+    "status": "Operating. Wärtsilä reports 61% renewable penetration and 139 days of 100% renewable operation during 2024. A regional-government page reported that 8.9 million liters of diesel and €8.2 million had been saved through August 31, 2023. A July 2026 Azores government update shows that the island is now studying flexible water-heater and other loads to reduce remaining renewable curtailment and thermal generation, evidence of continued operation and optimization rather than project abandonment.",
+    "organizations": [
+      {
+        "name": "Graciólica Lda.",
+        "role": "Hybrid-plant developer/operator and power producer; customer named on Wärtsilä's operating case study.",
+        "sourceIds": ["gra-wartsila-current", "gra-leclanche-completion-2018", "gra-azores-project"]
+      },
+      {
+        "name": "Eletricidade dos Açores (EDA)",
+        "role": "Island utility and electricity customer; its thermal plant remains coordinated by the hybrid controller as renewable shortfall/redundancy generation.",
+        "sourceIds": ["gra-leclanche-completion-2018", "gra-azores-project", "gra-azores-savings-2024"]
+      },
+      {
+        "name": "Leclanché",
+        "role": "Turnkey supplier of the LTO battery energy-storage system and provider of a 20-year lifetime performance warranty.",
+        "sourceIds": ["gra-leclanche-current", "gra-leclanche-completion-2018"]
+      },
+      {
+        "name": "Wärtsilä Energy / Greensmith Energy",
+        "role": "Supplier of the GEMS Digital Energy Platform and hybrid microgrid controls; Greensmith was acquired by Wärtsilä and is named in the 2018 completion account.",
+        "sourceIds": ["gra-wartsila-current", "gra-leclanche-completion-2018"]
+      },
+      {
+        "name": "Tractebel",
+        "role": "Coordinated the project during the 2018 completion phase.",
+        "sourceIds": ["gra-leclanche-completion-2018"]
+      },
+      {
+        "name": "Government of the Azores",
+        "role": "Regional-government supporter and publisher of operating milestones, savings, and current flexibility work.",
+        "sourceIds": ["gra-azores-project", "gra-azores-savings-2024", "gra-flexibility-2026"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Wind power",
+        "value": "4.5 MW total from five 900 kW turbines; turbine manufacturer/model is not identified in the reviewed sources",
+        "sourceIds": ["gra-leclanche-current", "gra-wartsila-current", "gra-azores-project"]
+      },
+      {
+        "label": "Solar PV",
+        "value": "1 MWp",
+        "sourceIds": ["gra-leclanche-current", "gra-wartsila-current", "gra-azores-project"]
+      },
+      {
+        "label": "Battery rating reported by Leclanché",
+        "value": "7.425 MW/3.2 MWh, lithium-titanate-oxide chemistry",
+        "sourceIds": ["gra-leclanche-current"]
+      },
+      {
+        "label": "Battery rating reported by Azores project page",
+        "value": "7.5 MVA/2.6 MWh; this may use a different AC/apparent-power and usable-energy convention, but the reviewed source does not reconcile it with Leclanché's rating",
+        "sourceIds": ["gra-azores-project"]
+      },
+      {
+        "label": "Battery rating reported by Wärtsilä",
+        "value": "6 MW/3.2 MWh; retained as vendor-published rather than treated as a separate battery",
+        "sourceIds": ["gra-wartsila-current"]
+      },
+      {
+        "label": "Diesel power plant",
+        "value": "4.6 MW in Leclanché's equipment list: three 600 kW, one 810 kW, and two 1,000 kW units",
+        "sourceIds": ["gra-leclanche-current"]
+      },
+      {
+        "label": "Pre-project annual electricity and fuel",
+        "value": "13.6 GWh annual island load, formerly supplied entirely by diesel using more than 3.3 million liters per year, according to Leclanché",
+        "sourceIds": ["gra-leclanche-current"]
+      },
+      {
+        "label": "2024 operating performance",
+        "value": "61% renewable penetration and 139 days operating on 100% renewables during 2024",
+        "sourceIds": ["gra-wartsila-current"]
+      },
+      {
+        "label": "Cumulative savings through August 31, 2023",
+        "value": "8.9 million liters of diesel and €8.2 million, as reported by an Azores regional-government sustainability page",
+        "sourceIds": ["gra-azores-savings-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery energy storage system",
+        "manufacturer": "Leclanché",
+        "detail": "LTO battery system with grid-forming capability, rapid charge/discharge, voltage and frequency control, turnkey delivery, and a 20-year performance warranty. The public rating varies by reporting convention/source.",
+        "sourceIds": ["gra-leclanche-current", "gra-azores-project", "gra-wartsila-current"]
+      },
+      {
+        "category": "Energy-management system",
+        "manufacturer": "Wärtsilä",
+        "model": "GEMS Digital Energy Platform",
+        "detail": "Coordinates wind, solar, battery, and thermal generation using load patterns, weather forecasts, and asset data to increase renewable dispatch while maintaining reliability.",
+        "sourceIds": ["gra-wartsila-current", "gra-leclanche-completion-2018"]
+      },
+      {
+        "category": "Wind turbines and PV modules",
+        "detail": "Aggregate ratings and wind-turbine count are public, but the wind turbine, PV module, and PV inverter manufacturers/models were not identified in the reviewed authoritative sources.",
+        "sourceIds": ["gra-leclanche-current", "gra-azores-project"]
+      },
+      {
+        "category": "Thermal backup",
+        "detail": "Six existing diesel units remain under the intelligent controller and are dispatched when renewables and stored energy are insufficient or redundancy is required.",
+        "sourceIds": ["gra-leclanche-current", "gra-azores-project"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Island-grid operation",
+        "detail": "The battery forms and stabilizes the isolated island grid, compensates for fast renewable variability, and regulates voltage and frequency; GEMS schedules the full hybrid portfolio from forecasts of generation and demand.",
+        "sourceIds": ["gra-leclanche-current", "gra-wartsila-current", "gra-azores-project"]
+      },
+      {
+        "category": "Renewable penetration",
+        "detail": "The strongest dated current evidence is Wärtsilä's 61% and 139 fully renewable days in 2024. The Azores project page separately reports a cumulative 62% and 273 fully renewable days without giving its measurement cutoff, so it is not substituted for the dated 2024 figure.",
+        "sourceIds": ["gra-wartsila-current", "gra-azores-project"]
+      },
+      {
+        "category": "Diesel reduction claims",
+        "detail": "Leclanché says diesel consumption fell by more than 65% and estimates €1.9 million in annual fuel savings. The regional government later reported cumulative physical and financial savings through August 2023. These are publisher-reported results; no independent audited dispatch dataset was located.",
+        "sourceIds": ["gra-leclanche-current", "gra-azores-savings-2024"]
+      },
+      {
+        "category": "Commissioning chronology",
+        "detail": "Leclanché announced installation completion in December 2018 and Wärtsilä lists delivery in 2018, while the Azores government identifies August 21, 2019 as the start of electricity production and island supply. These dates describe installation/delivery versus commercial supply rather than a contradiction.",
+        "sourceIds": ["gra-leclanche-completion-2018", "gra-wartsila-current", "gra-azores-project"]
+      },
+      {
+        "category": "Current optimization work",
+        "detail": "In April 2026, the LIFE IP CLIMAZ program convened Graciosa stakeholders to characterize daily demand flexibility, including controllable water heaters, so additional renewable energy can be absorbed instead of curtailed and thermal generation can be reduced.",
+        "sourceIds": ["gra-flexibility-2026"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "The public sources do not reconcile the three storage power/energy labels, publish unit-level wind/PV output, or provide battery state-of-health and availability. A proposed future hydrogen system in later studies is not part of the as-built plant and is excluded from installed capacity.",
+        "sourceIds": ["gra-leclanche-current", "gra-wartsila-current", "gra-azores-project"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "gra-leclanche-current",
+        "title": "Graciosa case study",
+        "url": "https://www.leclanche.com/etude-cas/graciosa/",
+        "publisher": "Leclanché",
+        "kind": "primary"
+      },
+      {
+        "id": "gra-wartsila-current",
+        "title": "Energy storage improves energy security in remote island in northern Azores, Portugal",
+        "url": "https://www.wartsila.com/energy/learn-more/references/utilities/graciolica",
+        "publisher": "Wärtsilä Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "gra-azores-project",
+        "title": "Projeto Graciólica",
+        "url": "https://siaram.azores.gov.pt/energia/projeto-graciolica/_texto.html",
+        "publisher": "SIARAM / Government of the Azores",
+        "kind": "primary"
+      },
+      {
+        "id": "gra-azores-savings-2024",
+        "title": "Graciosa: Leading the Way in Renewable Energy Usage",
+        "url": "https://sustainable.azores.gov.pt/en/graciosa-leading-the-way-in-renewable-energy-usage/",
+        "publisher": "Government of the Azores",
+        "kind": "primary"
+      },
+      {
+        "id": "gra-leclanche-completion-2018",
+        "title": "Leclanché completes installation of 100MWh of projects around the world",
+        "url": "https://www.leclanche.com/leclanche-completes-installation-of-100mwh-of-projects-around-the-world-including-landmark-replicable-projects-accelerating-the-integration-of-renewables-into-the-grid/",
+        "publisher": "Leclanché",
+        "kind": "primary"
+      },
+      {
+        "id": "gra-flexibility-2026",
+        "title": "LIFE IP CLIMAZ promotes session on Energy Transition and Flexibility Management on Graciosa island",
+        "url": "https://parquesnaturais.azores.gov.pt/pt/noticias/1536",
+        "publisher": "Government of the Azores",
+        "kind": "primary"
+      }
+    ]
+  },
+  "graziosa": {
+    "researchedAt": "2026-07-20",
+    "summary": "The recovered Graziosa record is conflated. Its coordinates and Spain/Canary-Islands location identify La Graciosa beside Lanzarote, but its legacy 4.5 MW wind, 1 MW solar, and multi-megawatt battery specifications belong to the unrelated Graciólica plant on Graciosa in the Portuguese Azores. Spanish La Graciosa instead remains connected to Lanzarote by subsea electricity and water links. It has a distributed 60.1 kWp residential solar-and-storage demonstration from the EU REACT project and is planning broader community microgrids and solar desalination through 2028; it does not have the Portuguese utility-scale hybrid plant.",
+    "status": "Identity corrected to La Graciosa, Canary Islands, Spain. The island remains grid-connected and largely dependent on fossil-derived energy delivered from Lanzarote. REACT installed a distributed residential pilot across 22 dwellings, while the El Sol de La Graciosa energy community and the 2025-2028 ICONIC program are developing additional PV, BESS, internal-microgrid, water, and mobility pilots. No source reviewed supports treating the legacy Azores equipment as installed in Spain.",
+    "organizations": [
+      {
+        "name": "El Sol de La Graciosa Comunidad Energética",
+        "role": "Resident-led energy community formed after the REACT pilot and now coordinating collective self-consumption and broader island transition projects.",
+        "sourceIds": ["grz-community-roadmap", "grz-eu-islands-current"]
+      },
+      {
+        "name": "REACT consortium",
+        "role": "EU Horizon 2020 consortium that deployed the household PV, battery, and smart-control pilot on La Graciosa.",
+        "sourceIds": ["grz-react-pilots", "grz-react-results-2023"]
+      },
+      {
+        "name": "European Commission Clean Energy for EU Islands Secretariat",
+        "role": "Provides transition-assistance and publishes the island's current energy/dependency profile under the 30 for 2030 initiative.",
+        "sourceIds": ["grz-eu-islands-current"]
+      },
+      {
+        "name": "Government of the Canary Islands, Cabildo de Lanzarote, and Ayuntamiento de Teguise",
+        "role": "Regional and local public partners in the island's energy-transition team and current community projects.",
+        "sourceIds": ["grz-eu-islands-current", "grz-community-roadmap"]
+      },
+      {
+        "name": "R2M Solution and ICONIC consortium",
+        "role": "Lead and consortium for the May 2025-May 2028 project developing renewable-energy, BESS/internal-microgrid, water, mobility, and community pilots.",
+        "sourceIds": ["grz-community-roadmap"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "REACT new solar PV",
+        "value": "60.1 kWp distributed across 22 residential systems ranging from 1.1 to 7.8 kWp",
+        "sourceIds": ["grz-react-pilots", "grz-react-results-2023"]
+      },
+      {
+        "label": "Other PV documented by REACT",
+        "value": "Two existing systems totaling 34.1 kWp (4.5 kWp and 29.6 kWp), separate from the new 60.1 kWp pilot",
+        "sourceIds": ["grz-react-results-2023"]
+      },
+      {
+        "label": "REACT distributed storage",
+        "value": "The project-results slide lists 11 LFP systems at 6.4 kWh each but prints a conflicting 110.8 kWh total; one 3 kWh NMC system; four systems labeled 'PLH-C' totaling 22.9 kWh (the chemistry acronym is not explained); one 7.7 kWh sodium-nickel-chloride unit; and three flooded/VRLA lead-acid systems totaling 18.8 kWh",
+        "sourceIds": ["grz-react-results-2023"]
+      },
+      {
+        "label": "Island energy dependency",
+        "value": "Electricity and drinking water are supplied from Lanzarote through underwater links; the EU island profile estimates approximately 90% of the supplied energy is fossil-derived",
+        "sourceIds": ["grz-eu-islands-current"]
+      },
+      {
+        "label": "Legacy utility-scale ratings",
+        "value": "Not applicable to Spanish La Graciosa. The inherited 4.5 MW wind, 1 MW PV, and multi-megawatt battery figures are the Portuguese Azores Graciólica plant, not equipment at these coordinates.",
+        "sourceIds": ["grz-eu-islands-current", "grz-azores-crosscheck"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Distributed household PV and storage",
+        "detail": "REACT deployed rooftop PV, multiple storage technologies, and smart energy controls at 22 preselected dwellings. The project-level results contain one internally inconsistent LFP total and an unexplained 'PLH-C' label, and do not provide a complete household-by-household manufacturer/model inventory.",
+        "sourceIds": ["grz-react-pilots", "grz-react-results-2023"]
+      },
+      {
+        "category": "Submarine interconnection",
+        "detail": "The island's main electricity supply remains the subsea cable from Lanzarote; the local energy community explicitly plans to retain that connection for security and emergency backup while increasing local self-consumption.",
+        "sourceIds": ["grz-eu-islands-current", "grz-community-objectives"]
+      },
+      {
+        "category": "ICONIC microgrid and water pilot",
+        "detail": "The current 2025-2028 work proposes PV, BESS, software/AI-managed internal microgrids, and a tailored solar-desalination pilot. These are under development and are not added to installed capacity.",
+        "sourceIds": ["grz-community-roadmap"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Record-identity correction",
+        "detail": "The app's latitude/longitude and Spain label point to La Graciosa in the Canary Islands. The legacy organizations and ratings point instead to Graciosa in the Azores, roughly 2,000 km away. This enrichment keeps the Spanish identity and removes the Portuguese plant from its installed equipment.",
+        "sourceIds": ["grz-eu-islands-current", "grz-azores-crosscheck"]
+      },
+      {
+        "category": "REACT architecture",
+        "detail": "The REACT pilot is a set of coordinated behind-the-meter household resources connected to the local grid, not a single island-forming utility plant. Its role is self-consumption, demand/storage coordination, user participation, and validation of community-energy controls.",
+        "sourceIds": ["grz-react-pilots", "grz-react-results-2023"]
+      },
+      {
+        "category": "Current island energy mix",
+        "detail": "The EU island profile says some homes have self-consumption PV but that other buildings and infrastructure depend on Lanzarote; about 90% of supplied energy is associated with fossil combustion. No current island-wide hourly generation or renewable-share dataset was located.",
+        "sourceIds": ["grz-eu-islands-current"]
+      },
+      {
+        "category": "Transition roadmap",
+        "detail": "The community's stated path is decentralized rooftop and public-infrastructure PV, storage, renewable-powered desalination and wastewater treatment, and continued subsea-cable backup. These are targets for greater independence before 2030, not an as-built 100% renewable system.",
+        "sourceIds": ["grz-community-objectives", "grz-community-roadmap"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "No reviewed source supports wind turbines, a 1 MW central solar farm, or a 2.6-3.2 MWh utility battery on Spanish La Graciosa. The capacity of any post-REACT PV/BESS installed under ICONIC had not been published by the research date.",
+        "sourceIds": ["grz-eu-islands-current", "grz-react-results-2023", "grz-community-roadmap"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "grz-eu-islands-current",
+        "title": "La Graciosa",
+        "url": "https://clean-energy-islands.ec.europa.eu/countries/spain/la-graciosa",
+        "publisher": "European Commission Clean Energy for EU Islands Secretariat",
+        "kind": "primary"
+      },
+      {
+        "id": "grz-react-pilots",
+        "title": "REACT Pilots and Follower Islands",
+        "url": "https://react2020.eu/pilots-follower-islands/",
+        "publisher": "REACT Horizon 2020 Consortium",
+        "kind": "primary"
+      },
+      {
+        "id": "grz-react-results-2023",
+        "title": "REACT: Renewable Energy for self-sustAinable island CommuniTies — pilot results presentation",
+        "url": "https://www.sustainableplaces.eu/wp-content/uploads/2023/07/7.-REACT.pdf",
+        "publisher": "REACT Consortium / Sustainable Places 2023",
+        "kind": "primary"
+      },
+      {
+        "id": "grz-community-roadmap",
+        "title": "Hoja de Ruta",
+        "url": "https://elsoldelagraciosa.org/hojaderuta.html",
+        "publisher": "El Sol de La Graciosa Comunidad Energética",
+        "kind": "primary"
+      },
+      {
+        "id": "grz-community-objectives",
+        "title": "Objetivos medioambientales",
+        "url": "https://elsoldelagraciosa.org/component/content/article/23-objetivos-medioambientales.html?catid=2",
+        "publisher": "El Sol de La Graciosa Comunidad Energética",
+        "kind": "primary"
+      },
+      {
+        "id": "grz-azores-crosscheck",
+        "title": "Graciosa case study",
+        "url": "https://www.leclanche.com/etude-cas/graciosa/",
+        "publisher": "Leclanché",
+        "kind": "primary"
+      }
+    ]
+  },
+  "greenport-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is the 2016 NY Prize Stage 1 feasibility concept for the Village of Greenport municipal utility on Long Island, not an operating 8.4 MW microgrid. The concept combined a proposed 7.4 MW Wärtsilä dual-fuel reciprocating generator, 375 kW hospital CCHP, 500 kW total PV, a 125 kW/500 kWh battery, demand response, existing backup generation, and distribution controls. Its $14.54 million financial case depended heavily on NY Prize grant support and unresolved fuel/offtake arrangements.",
+    "status": "Feasibility/design concept, not verified as built. Greenport appeared among GE's Stage 1 studies but not among the four projects GE supported in Stage 2, and the statewide Stage 2 winner list also omitted Greenport. A separate 2018 Village RFP sought design services for distribution hardening plus an as-yet-unselected renewable resource and storage with anticipated construction funding of $1-5 million; no reviewed public source confirms that the 2016 7.4 MW/CCHP/BESS design or the later RFP concept reached construction or operation.",
+    "organizations": [
+      {
+        "name": "Village of Greenport / Greenport Municipal Utilities (GMU)",
+        "role": "Municipal distribution-utility owner and applicant; proposed owner/operator of the CCHP, battery, and electric distribution system.",
+        "sourceIds": ["grp-stage1-report", "grp-village-rfp-2018"]
+      },
+      {
+        "name": "Global Common, LLC",
+        "role": "Stage 1 project developer and proposed principal of a Microgrid Energy Services Company (MESCO).",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "name": "GE Energy Consulting, D&B Engineers, and Burns Engineering",
+        "role": "Engineering, conceptual design, dispatch/economic analysis, and feasibility-study team.",
+        "sourceIds": ["grp-stage1-report", "grp-ge-program-current"]
+      },
+      {
+        "name": "Eastern Long Island Hospital",
+        "role": "Proposed host and electric/thermal customer for the 375 kW CCHP system; now known as Stony Brook Eastern Long Island Hospital, but the historic study uses ELIH.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "name": "NYSERDA",
+        "role": "Administrator of the NY Prize program and publisher/funder of the Stage 1 feasibility work.",
+        "sourceIds": ["grp-stage1-report", "grp-ge-program-current"]
+      },
+      {
+        "name": "PSEG Long Island and National Grid",
+        "role": "Proposed grid/market interface and gas supplier respectively; both roles required further agreements and engineering studies.",
+        "sourceIds": ["grp-stage1-report"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Proposed main generator",
+        "value": "7.4 MW prepackaged Wärtsilä dual-fuel reciprocating generator, modeled on LNG with possible interruptible pipeline gas; 8,400 Btu/kWh heat rate and greater than 40% efficiency quoted in the study",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Proposed hospital CCHP",
+        "value": "375 kW natural-gas unit plus a 100 kW-equivalent absorption chiller; modeled at about 3.1 million kWh/year and 95% capacity factor",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Proposed and existing solar PV",
+        "value": "500 kW total: existing 250 kW at the high school plus 250 kW proposed at the hospital and/or Moore's Lane park area",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Proposed battery storage",
+        "value": "125 kW/500 kWh, four-hour duration, proposed beside the wastewater treatment plant for peak shaving and island stability",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Proposed demand response",
+        "value": "90 kW: 65 kW at ELIH, 10 kW at the wastewater treatment plant, and 15 kW at IGA Grocery",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Existing Village plant at study date",
+        "value": "6.8 MW Number 2 fuel-oil plant with three diesel units installed in 1957, 1965, and 1971; the study characterized long-term reliability as questionable and used it as background/backup rather than the new firm resource",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Proposed LNG reserve",
+        "value": "70,000 gallons, modeled as seven days of fuel at average GMU load if pipeline gas was unavailable",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "label": "Conceptual project cost",
+        "value": "$14,535,810, including $11.36 million generation, $1.5 million CCHP, $666,750 solar, $300,000 battery, and $709,060 distribution/controls; excluded some design, financing, legal, and development costs",
+        "sourceIds": ["grp-stage1-report"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Proposed reciprocating generator",
+        "manufacturer": "Wärtsilä",
+        "detail": "A prepackaged 7.4 MW dual-fuel unit selected conceptually for output, heat rate, installed-cost, and limited peaking dispatch. The study does not give a model, purchase order, or as-built serial equipment.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Proposed battery energy storage",
+        "detail": "125 kW/500 kWh system; chemistry, manufacturer, inverter, and model were to be selected later and are not disclosed.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Proposed microgrid controller",
+        "detail": "The conceptual controller would monitor multiple points of interconnection, dispatch resources, forecast/curtail PV, shed load rapidly, manage voltage/frequency, coordinate protection settings, and present a web interface. Vendor selection was explicitly undetermined.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Existing generation",
+        "detail": "The Village's three aging 6.8 MW oil units and the hospital's backup diesel equipment existed before the proposal. They should not be reported as newly built microgrid equipment.",
+        "sourceIds": ["grp-stage1-report", "grp-village-rfp-2018"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Proposed islanding sequence",
+        "detail": "Boundary switches would open after loss of grid voltage/frequency; hospital emergency generation would start first, then the CCHP and main gas engine would start/synchronize, feeder ties would close to build the island, loads would be picked up sequentially, and PV would reconnect after stable voltage and frequency were established.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Proposed service scope",
+        "detail": "The concept targeted the entire GMU service area during outages, including the hospital, wastewater and water facilities, schools, fire services, Village Hall, ferry/downtown businesses, and other loads on the reused feeders. The 7.4 MW unit was sized near GMU's roughly 6.6 MW peak.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Normal-mode dispatch",
+        "detail": "The CCHP was modeled as hospital baseload, PV and the battery as peak reduction, and the 7.4 MW plant as a market/contract resource serving customers outside GMU when prices justified dispatch. The design was therefore more than an emergency-only backup concept.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Financial dependency",
+        "detail": "The study found the microgrid technically feasible, but modeled $7 million of NY Prize support. It concluded GMU could not service its modeled share of debt without that support and that MESCO equity would likely be difficult to attract because short-term offtake might not cover plant output.",
+        "sourceIds": ["grp-stage1-report"]
+      },
+      {
+        "category": "Program outcome",
+        "detail": "GE's current program summary places Greenport only in Stage 1 and lists Albany University Heights, Binghamton, Freeport, and Syracuse as its Stage 2 communities. The statewide 11-winner announcement likewise omits Greenport, so the Stage 1 ratings remain proposals rather than an award-backed as-built configuration.",
+        "sourceIds": ["grp-ge-program-current", "grp-stage2-winners-2017"]
+      },
+      {
+        "category": "Separate 2018 follow-on",
+        "detail": "The Village later solicited engineering/design services for pole replacement, reconductoring, automated switching, and an unspecified renewable source plus storage under a $1-5 million CDBG-DR construction envelope. Because the RFP asked the engineer to select the renewable resource, it is not evidence that the earlier Wärtsilä/CCHP/BESS design was procured.",
+        "sourceIds": ["grp-village-rfp-2018"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "No construction notice, equipment award, commissioning record, operating data, or current microgrid asset list was located. Every new-generation and storage rating from the Stage 1 report is therefore labeled proposed.",
+        "sourceIds": ["grp-stage1-report", "grp-ge-program-current", "grp-village-rfp-2018"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "grp-stage1-report",
+        "title": "Greenport Microgrid NY Prize Stage 1 Report",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/4-Village-of-Greenport.pdf",
+        "publisher": "NYSERDA / Global Common / GE Energy Consulting / D&B / Burns Engineering",
+        "kind": "primary"
+      },
+      {
+        "id": "grp-ge-program-current",
+        "title": "NYSERDA: NY Prize Community Microgrid Design Program",
+        "url": "https://www.gevernova.com/consulting/resources/case-studies/nyserda-microgrids",
+        "publisher": "GE Vernova",
+        "kind": "primary"
+      },
+      {
+        "id": "grp-village-rfp-2018",
+        "title": "Request for Proposals: Greenport Municipal Utility Microgrid Project",
+        "url": "https://villageofgreenport.org/forms-bid-frp-request/Greenport-Municip-Utility-Microgrid-Project_10-31-FINAL_ver-2-12-18.pdf",
+        "publisher": "Village of Greenport",
+        "kind": "primary"
+      },
+      {
+        "id": "grp-stage2-winners-2017",
+        "title": "NY Prize Announces Stage 2 Microgrid Winners",
+        "url": "https://www.microgridknowledge.com/google-news-feed/article/11431561/ny-prize-announces-stage-2-microgrid-winners-sweetens-the-pot-by-50m-per-finalist",
+        "publisher": "Microgrid Knowledge",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "groton-submarine-base": {
+    "researchedAt": "2026-07-20",
+    "summary": "The operating islandable microgrid at Naval Submarine Base New London in Groton, Connecticut now combines a 10.75 MW natural-gas combined-heat-and-power plant with first-call access to a 7.4 MW FuelCell Energy fuel-cell park, plus cybersecure controls, fast load shedding, upgraded distribution, steam, lighting, and base-wide energy management. Its directly documented firm resources total 18.15 MW, so the recovered 13 MW rating is obsolete.",
+    "status": "Operating. The FuelCell Energy project entered commercial operation on December 16, 2022; the Navy held its comprehensive microgrid ribbon cutting in October 2024; and DOE/NAVFAC recognized first-year performance in 2025. NORESCO says the ESPC has exceeded its annual savings guarantee in every year of performance and has 18 years of ongoing O&M/repair/replacement services. A 2026 FuelCell Energy SEC filing continued to list the Groton project in its operating portfolio.",
+    "organizations": [
+      {
+        "name": "U.S. Navy / Naval Submarine Base New London",
+        "role": "Installation owner and microgrid beneficiary/operator; the system supports base-wide loads, waterfront operations, training facilities, shore power, and moored submarines.",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-doe-award-2025", "gro-navfac-award-2025"]
+      },
+      {
+        "name": "Naval Facilities Engineering Systems Command Mid-Atlantic",
+        "role": "Navy project-delivery, technical, contracting, and energy-program organization for the financed microgrid and ESPC work.",
+        "sourceIds": ["gro-navfac-award-2025", "gro-noresco-espc-2025"]
+      },
+      {
+        "name": "NORESCO",
+        "role": "Energy service company responsible for the CHP, cybersecure microgrid, energy-management controls, infrastructure upgrades, and long-term performance/O&M under the ESPC.",
+        "sourceIds": ["gro-noresco-groundbreak-2020", "gro-noresco-espc-2025", "gro-navy-ribbon-2024"]
+      },
+      {
+        "name": "FuelCell Energy, Inc.",
+        "role": "Fuel-cell technology supplier and owner/operator of the 7.4 MW generating portfolio through its project entity.",
+        "sourceIds": ["gro-fce-cod-2022", "gro-fce-sec-2026", "gro-navy-ribbon-2024"]
+      },
+      {
+        "name": "Connecticut Municipal Electric Energy Cooperative (CMEEC)",
+        "role": "Purchaser of normal-operation fuel-cell electricity and public-power partner; the Navy has first right to the fuel-cell output during a base outage.",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-fce-sec-2026"]
+      },
+      {
+        "name": "Groton Utilities and State of Connecticut",
+        "role": "Local utility/community and state partners cited by the Navy in bringing the base-resilience project to operation.",
+        "sourceIds": ["gro-navy-ribbon-2024"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Combined heat and power plant",
+        "value": "10.75 MW electrical capacity from two new generators, with high-efficiency boilers and steam heat for mission-critical waterfront and training facilities",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-noresco-groundbreak-2020", "gro-noresco-espc-2025"]
+      },
+      {
+        "label": "Fuel-cell park",
+        "value": "7.4 MW nameplate; FuelCell Energy said it would operate at approximately 6 MW during its first year after December 2022 commercial operation",
+        "sourceIds": ["gro-fce-cod-2022", "gro-navy-ribbon-2024"]
+      },
+      {
+        "label": "Total documented on-site generation available to microgrid",
+        "value": "18.15 MW nameplate across 10.75 MW CHP and 7.4 MW fuel cells; the fuel-cell output normally serves the public grid and becomes first-call base supply during outages",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-navfac-award-2025"]
+      },
+      {
+        "label": "First-year reported savings",
+        "value": "$8 million, 162,800 MBtu net energy reduction, and 3.6 million gallons of water conserved",
+        "sourceIds": ["gro-doe-award-2025", "gro-navfac-award-2025"]
+      },
+      {
+        "label": "Reported annual emissions reductions",
+        "value": "48,084 metric tons CO2, 7 metric tons sulfur oxides, and 33 metric tons nitrogen oxides",
+        "sourceIds": ["gro-noresco-espc-2025", "gro-navfac-award-2025"]
+      },
+      {
+        "label": "ESPC economics",
+        "value": "NORESCO's 2025 fact sheet describes a $90.1 million ESPC with more than $183.8 million guaranteed savings; its 2020 groundbreaking release described a broader 21-year, $169.3 million contract. The different published scopes are retained rather than reconciled without contract documents.",
+        "sourceIds": ["gro-noresco-espc-2025", "gro-noresco-groundbreak-2020"]
+      },
+      {
+        "label": "Resilience coverage",
+        "value": "NORESCO states that the CHP and microgrid support 100% of base power requirements during grid outages; DOE says the system now powers the entire base, including moored submarines",
+        "sourceIds": ["gro-noresco-espc-2025", "gro-doe-award-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Fuel-cell generation",
+        "manufacturer": "FuelCell Energy",
+        "detail": "7.4 MW natural-gas fuel-cell portfolio on leased base land. Public project sources reviewed do not give a definitive commercial platform/model designation, so none is inferred.",
+        "sourceIds": ["gro-fce-cod-2022", "gro-fce-sec-2026", "gro-navy-ribbon-2024"]
+      },
+      {
+        "category": "Combined heat and power",
+        "detail": "Two new natural-gas generators totaling 10.75 MW plus high-efficiency boilers and steam distribution. NORESCO and Navy sources do not identify generator/engine manufacturer or model.",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-noresco-espc-2025"]
+      },
+      {
+        "category": "Microgrid and energy-management controls",
+        "manufacturer": "NORESCO",
+        "detail": "Cybersecure base-wide controls provide automated data collection, precise peak-demand management, utility separation, fast load shedding, islanding, and dispatch of on-site resources. A product/model name is not disclosed.",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-navfac-award-2025", "gro-noresco-espc-2025"]
+      },
+      {
+        "category": "Electrical and thermal infrastructure",
+        "detail": "The ESPC also upgraded electrical infrastructure, steam distribution, LED lighting, and base-wide building/energy controls. No as-built BESS is identified in the current project sources.",
+        "sourceIds": ["gro-noresco-groundbreak-2020", "gro-noresco-espc-2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Grid relationship",
+        "detail": "In normal operation the fuel-cell park sells to the public grid through CMEEC. During a base interruption, the Navy has first right to its 7.4 MW output, and the microgrid combines that resource with the 10.75 MW CHP after separating from the utility.",
+        "sourceIds": ["gro-navy-ribbon-2024", "gro-fce-sec-2026"]
+      },
+      {
+        "category": "Mission scope",
+        "detail": "The islanded system supports submarine maintenance, training systems, base-wide communications, mission-critical waterfront facilities, shore power, and moored submarines, rather than only a small subset of buildings.",
+        "sourceIds": ["gro-doe-award-2025", "gro-navfac-award-2025", "gro-navy-ribbon-2024"]
+      },
+      {
+        "category": "Implementation chronology",
+        "detail": "The Navy/NORESCO CHP expansion broke ground in June 2020 with late-2022 operation expected. FuelCell Energy reached COD in December 2022. The Navy celebrated completion of the comprehensive microgrid in October 2024, reflecting phased completion rather than a single commissioning date.",
+        "sourceIds": ["gro-noresco-groundbreak-2020", "gro-fce-cod-2022", "gro-navy-ribbon-2024"]
+      },
+      {
+        "category": "Verified performance",
+        "detail": "DOE and NAVFAC report $8 million first-year savings and quantified energy/water reductions. NORESCO's 2025 fact sheet adds that annual savings guarantees have been exceeded every performance year and supplies emissions reductions; these are federal/contractor reports, not raw interval-meter data.",
+        "sourceIds": ["gro-doe-award-2025", "gro-navfac-award-2025", "gro-noresco-espc-2025"]
+      },
+      {
+        "category": "Current update",
+        "detail": "FuelCell Energy's April 2026 Form 10-Q continued to describe the Groton Station project as part of its operating portfolio with CMEEC as purchaser and Navy resilience access, providing current regulatory evidence that the fuel-cell asset remained in service.",
+        "sourceIds": ["gro-fce-sec-2026"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "No current primary source identifies a battery-storage installation, individual CHP-engine models, fuel-cell platform model, island duration under a specified outage/load case, or measured annual renewable share. The system is predominantly natural-gas generation plus efficiency/control measures, not a renewable-storage microgrid.",
+        "sourceIds": ["gro-noresco-espc-2025", "gro-navy-ribbon-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "gro-navy-ribbon-2024",
+        "title": "SUBASE holds Ceremonial Ribbon Cutting establishing a Micro-grid on the base",
+        "url": "https://www.navy.mil/DesktopModules/ArticleCS/Print.aspx?Article=3946004&ModuleId=523&PortalId=1",
+        "publisher": "U.S. Navy",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-doe-award-2025",
+        "title": "2024 Federal Energy and Water Management Awards Winners",
+        "url": "https://www.energy.gov/cmei/femp/2024-federal-energy-and-water-management-awards-winners",
+        "publisher": "U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-navfac-award-2025",
+        "title": "SUBASE New London Energy Team Honored with 2024 Federal Energy and Water Management Award",
+        "url": "https://atlantic.navfac.navy.mil/Home/News-Detail/Article/4246352/subase-new-london-mcas-cherry-point-energy-teams-honored-with-2024-federal-ener/",
+        "publisher": "Naval Facilities Engineering Systems Command Atlantic",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-noresco-espc-2025",
+        "title": "Naval Submarine Base New London ESPC",
+        "url": "https://www.noresco.com/media/NSB%20New%20London_ESPC_2025_tcm23-257736.pdf",
+        "publisher": "NORESCO",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-noresco-groundbreak-2020",
+        "title": "NORESCO and U.S. Navy Break Ground on Cogeneration System to Enhance Resiliency at Naval Submarine Base New London",
+        "url": "https://www.noresco.com/news/news-articles/noresco_and_u_s__navy_break_ground_on_cogeneration_system_to_enhance_resiliency_at_naval_submarine_base_new_london.html",
+        "publisher": "NORESCO",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-fce-cod-2022",
+        "title": "U.S. Navy Subbase Project Achieves Commercial Operation",
+        "url": "https://investor.fce.com/press-releases/press-release-details/2022/U.S.-Navy-Subbase-Project-Achieves-Commercial-Operation/default.aspx",
+        "publisher": "FuelCell Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "gro-fce-sec-2026",
+        "title": "FuelCell Energy Form 10-Q for the quarter ended April 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/886128/000110465926071183/fcel-20260430x10q.htm",
+        "publisher": "U.S. Securities and Exchange Commission / FuelCell Energy",
+        "kind": "primary"
+      }
+    ]
+  },
+  "hachinohe-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Hachinohe microgrid was a NEDO research demonstration in Hachinohe, Aomori, Japan, operated from October 2005 through March 2008. It linked city hall, schools, and other municipal loads over a dedicated 6 kV distribution/communications network to 510 kW of sewage/food-waste biogas generation, 130 kW of PV, a 20 kW wind turbine, a 100 kW lead-acid battery, and heat equipment. It was not a permanently operating post-2008 city utility microgrid.",
+    "status": "Demonstration concluded in March 2008 after the NEDO operating period. The project successfully completed a one-week islanded test in November 2007, but the Microgrid Symposium's project summary says the microgrid is no longer operating because public funding ended. No credible current source was located showing that the private feeder, gas engines, battery, or EMS continue as a unified microgrid.",
+    "organizations": [
+      {
+        "name": "New Energy and Industrial Technology Development Organization (NEDO)",
+        "role": "Japanese government R&D sponsor of the Regional Power Grid with Renewable Energy Resources demonstration program.",
+        "sourceIds": ["hac-iea-communications-2011", "hac-mitsubishi-2009", "hac-symposium-summary"]
+      },
+      {
+        "name": "City of Hachinohe",
+        "role": "Municipal host and participant; city hall, schools, and municipal facilities formed the principal load group.",
+        "sourceIds": ["hac-symposium-summary", "hac-mitsubishi-2009"]
+      },
+      {
+        "name": "Mitsubishi Research Institute",
+        "role": "Project consortium participant identified in the demonstration history.",
+        "sourceIds": ["hac-symposium-summary"]
+      },
+      {
+        "name": "Mitsubishi Electric",
+        "role": "Developed and demonstrated the four-level supply-demand control system and Mitsubishi MELSEC-based communications/control architecture.",
+        "sourceIds": ["hac-mitsubishi-2009", "hac-iea-communications-2011"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Biogas generation",
+        "value": "510 kW from three 170 kW gas-engine generators using sewage-digester and food-waste gas",
+        "sourceIds": ["hac-symposium-summary"]
+      },
+      {
+        "label": "Solar PV",
+        "value": "130 kW total: two 50 kW arrays and three 10 kW arrays",
+        "sourceIds": ["hac-symposium-summary"]
+      },
+      {
+        "label": "Wind generation",
+        "value": "One 20 kW wind turbine",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "100 kW lead-acid battery; usable energy capacity and manufacturer/model were not found",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "label": "Private distribution",
+        "value": "Approximately 5.4 km of dedicated 6 kV line, connected to the public utility at one point",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "label": "Wood-fired heat",
+        "value": "Wood-waste boiler rated approximately 907 kg of steam per hour, plus recovered heat from the gas engines",
+        "sourceIds": ["hac-symposium-summary"]
+      },
+      {
+        "label": "Demonstration performance",
+        "value": "For November 2005-July 2007, Mitsubishi Electric reported 71.3% lower energy consumption and 68.9% lower CO2 emissions versus the pre-microgrid baseline; the six-minute moving-average balance error was within 3% for 99.98% of the evaluated period",
+        "sourceIds": ["hac-mitsubishi-2009"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Biogas engines",
+        "detail": "Three 170 kW reciprocating engines dispatched by the EMS. The reviewed sources do not identify manufacturer or model.",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "category": "Lead-acid battery",
+        "detail": "100 kW fast-response resource used for tie-line compensation, isolated-operation frequency response, and instant supply-demand imbalance. Energy capacity and product details are not disclosed.",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "category": "Control and communications",
+        "manufacturer": "Mitsubishi Electric",
+        "model": "MELSEC / MELSECNET-H architecture",
+        "detail": "Hub and local PLCs communicated over private optical-fiber Ethernet and MELSECNET/H, with RS-485, analog, and digital interfaces to generators, storage, meters, and breakers; SCADA and EMS used Ethernet/TCP-IP.",
+        "sourceIds": ["hac-iea-communications-2011"]
+      },
+      {
+        "category": "Renewable generation and boilers",
+        "detail": "PV, wind, wood boiler, and heat-recovery equipment are documented only by aggregate size/function; public manufacturer and model information was not located.",
+        "sourceIds": ["hac-symposium-summary"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Four-level controls",
+        "detail": "Daily operating plans and three-minute economic dispatch formed the upper optimization layers; one-second tie-line control and roughly 10 ms/local frequency response formed the power-quality layers. Gas engines handled slower adjustment while the battery responded within about one second.",
+        "sourceIds": ["hac-iea-communications-2011", "hac-mitsubishi-2009"]
+      },
+      {
+        "category": "Grid relationship",
+        "detail": "The project used private electrical and communication lines and a single point of common coupling to the utility. Tie-line power measured system imbalance in normal mode; after separation, generator droop and battery frequency control maintained the island.",
+        "sourceIds": ["hac-iea-communications-2011"]
+      },
+      {
+        "category": "Islanding test",
+        "detail": "From November 3-10, 2007, city hall and six other users maintained normal operation on the private network while isolated from the commercial system.",
+        "sourceIds": ["hac-mitsubishi-2009"]
+      },
+      {
+        "category": "Load and energy mix",
+        "detail": "Electric loads included city hall, four schools, and other offices/facilities. The local generation mix was treated as renewable because the dispatchable engines used sewage/food-waste gas, supplemented by PV, wind, and wood-waste heat, while the utility remained available during grid-connected operation.",
+        "sourceIds": ["hac-symposium-summary", "hac-iea-communications-2011"]
+      },
+      {
+        "category": "Performance boundary",
+        "detail": "The 71.3% energy and 68.9% CO2 reductions are demonstration-period results reported by a controls participant, not post-project performance. No annual fuel, renewable share, battery cycling, or availability series was located.",
+        "sourceIds": ["hac-mitsubishi-2009"]
+      },
+      {
+        "category": "Closure",
+        "detail": "IEA documents operation only through March 2008, and the Microgrid Symposium summary says the integrated microgrid did not continue once public funding ceased. Historical assets must not be labeled currently operating without newer evidence.",
+        "sourceIds": ["hac-iea-communications-2011", "hac-symposium-summary"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "hac-symposium-summary",
+        "title": "Hachinohe Microgrid",
+        "url": "https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/hachinohe-microgrid/",
+        "publisher": "Microgrid Symposiums",
+        "kind": "secondary"
+      },
+      {
+        "id": "hac-iea-communications-2011",
+        "title": "Communication Between Components in Mini-Grids",
+        "url": "https://iea-pvps.org/wp-content/uploads/2020/01/rep11_04.pdf",
+        "publisher": "IEA Photovoltaic Power Systems Programme",
+        "kind": "primary"
+      },
+      {
+        "id": "hac-mitsubishi-2009",
+        "title": "Mitsubishi Electric ADVANCE Vol. 125: Energy Management System Technologies",
+        "url": "https://www.advance.mitsubishielectric.com/advance/pdf/2009/vol125.pdf",
+        "publisher": "Mitsubishi Electric",
+        "kind": "primary"
+      }
+    ]
+  },
+  "hakai-beach-institute-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Hakai Beach Institute microgrid is the off-grid solar-battery-diesel system at what is now Hakai Institute's Calvert Coastal Observatory in Pruth Bay on Calvert Island, British Columbia. The owner currently describes about 450 PV modules totaling roughly 150 kW, approximately 240 kWh of battery storage, one 72 kW normal-operation diesel generator, a second 72 kW backup, and a 12 kW core-load backup. This is a major expansion from the 30-50 kW PV configurations documented around its 2011 commissioning.",
+    "status": "Operating. Hakai Institute's current technology page says the solar array can power the entire site under favorable conditions and charges the battery with surplus energy. The latest quantified fuel outcome found is historical: a 2016 owner article said diesel use had fallen below 20% of the pre-project level despite added buildings. Current annual renewable share, diesel liters, battery state of health, and generator runtime are not publicly reported.",
+    "organizations": [
+      {
+        "name": "Hakai Institute / Tula Foundation",
+        "role": "Research-station owner and current operator; the Tula Foundation acquired the former resort site in 2009 and developed the Calvert Island observatory.",
+        "sourceIds": ["hak-hakai-tech-current", "hak-hakai-story-2016"]
+      },
+      {
+        "name": "Hakai Energy Solutions",
+        "role": "System designer/integrator formed from the team that rebuilt the site's electrical system; now independent but continuing to work with Hakai Institute.",
+        "sourceIds": ["hak-hakai-energy-case", "hak-hakai-story-2016"]
+      },
+      {
+        "name": "SMA Solar Technology",
+        "role": "Supplier of the early-phase Sunny Island battery inverters, Sunny Boy PV inverters, and Multicluster controls documented for the 2011 system.",
+        "sourceIds": ["hak-sma-guide", "hak-sma-portal"]
+      },
+      {
+        "name": "Canadian Solar",
+        "role": "PV module supplier identified in the SMA monitoring record for the early 50 kWp phase.",
+        "sourceIds": ["hak-sma-portal"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current solar PV",
+        "value": "Approximately 450 modules and about 150 kW total capacity",
+        "sourceIds": ["hak-hakai-tech-current"]
+      },
+      {
+        "label": "Current battery storage",
+        "value": "Approximately 240 kWh; chemistry, battery power, manufacturer, and model are not stated on Hakai Institute's current page",
+        "sourceIds": ["hak-hakai-tech-current"]
+      },
+      {
+        "label": "Current diesel generation",
+        "value": "One 72 kW unit supplements normal operation, a second 72 kW unit is maintenance/backup reserve, and a 12 kW unit can support core systems",
+        "sourceIds": ["hak-hakai-tech-current"]
+      },
+      {
+        "label": "2011 initial expansion",
+        "value": "Hakai Energy describes a three-phase modular inverter system, 50 kW PV, and battery storage; daily diesel fell from as much as 500 liters before 2010 to less than 100 liters by 2011",
+        "sourceIds": ["hak-hakai-energy-case"]
+      },
+      {
+        "label": "Early SMA published configuration",
+        "value": "SMA's off-grid guide lists 30 kWp PV, 63 kW battery-inverter power, 250 kWh storage, and 55 kW diesel; its monitoring portal separately labels the commissioned plant 50 kWp with a 72 kW diesel. These are early-phase/vendor records and are not substituted for the current 150 kW/240 kWh owner figures.",
+        "sourceIds": ["hak-sma-guide", "hak-sma-portal"]
+      },
+      {
+        "label": "Historical diesel reduction",
+        "value": "Less than 20% of the former diesel use after implementation, according to Hakai Institute's 2016 retrospective, despite additional buildings and research infrastructure",
+        "sourceIds": ["hak-hakai-story-2016"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Current PV array",
+        "detail": "Approximately 450 modules/150 kW. Current module and inverter manufacturers/models are not identified; Canadian Solar modules and SMA inverters belong to the documented early phase and should not automatically be assigned to every later expansion.",
+        "sourceIds": ["hak-hakai-tech-current", "hak-sma-portal"]
+      },
+      {
+        "category": "Early battery inverter cluster",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Nine Sunny Island SI 6048-US with one Multicluster Box MCB-12U",
+        "detail": "SMA's published early configuration provided 63 kW of battery-inverter power. It is not confirmed as the complete current inverter fleet after the solar expansion.",
+        "sourceIds": ["hak-sma-guide"]
+      },
+      {
+        "category": "Early PV inverters",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Six Sunny Boy SB 5000-US",
+        "detail": "Documented in SMA's 30 kWp system guide; the separate SMA portal records a 50 kWp early plant. Current expansion equipment is undisclosed.",
+        "sourceIds": ["hak-sma-guide", "hak-sma-portal"]
+      },
+      {
+        "category": "Early PV modules",
+        "manufacturer": "Canadian Solar",
+        "model": "CS6P-220P",
+        "detail": "Module type shown in the SMA monitoring portal for the 2011 plant; no evidence reviewed confirms that all roughly 450 present modules use this model.",
+        "sourceIds": ["hak-sma-portal"]
+      },
+      {
+        "category": "Diesel generators",
+        "detail": "Current owner page gives 72 kW + 72 kW + 12 kW roles but not manufacturers or models. Generator heat recovery was incorporated in the early system to serve heating loads.",
+        "sourceIds": ["hak-hakai-tech-current", "hak-hakai-energy-case"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Off-grid architecture",
+        "detail": "The Calvert Island research station has no utility interconnection. Solar directly serves site loads, excess charges the battery, and dispatchable diesel fills renewable/energy deficits; multiple generators provide operational and core-load redundancy.",
+        "sourceIds": ["hak-hakai-tech-current", "hak-sma-guide"]
+      },
+      {
+        "category": "Demand and thermal integration",
+        "detail": "The original retrofit included demand-side management and recovered generator heat for building heating. Site growth continued while fuel consumption fell, so simple capacity comparisons across the 2011 and current phases do not represent an unchanged load.",
+        "sourceIds": ["hak-hakai-energy-case", "hak-hakai-story-2016"]
+      },
+      {
+        "category": "Capacity evolution",
+        "detail": "SMA documented an early 30 kWp configuration and portal metadata labels 50 kWp; Hakai Energy likewise describes 50 kW by 2011; the current owner page reports about 150 kW. These are expansion stages, not three simultaneous PV plants.",
+        "sourceIds": ["hak-sma-guide", "hak-sma-portal", "hak-hakai-energy-case", "hak-hakai-tech-current"]
+      },
+      {
+        "category": "Fuel performance",
+        "detail": "Hakai Energy reports pre-2010 fuel use of up to 500 L/day and under 100 L/day by 2011. Hakai Institute's 2016 retrospective reports less than 20% of former diesel use. Neither is a current audited energy mix, and no annual solar-generation series was found.",
+        "sourceIds": ["hak-hakai-energy-case", "hak-hakai-story-2016"]
+      },
+      {
+        "category": "Location clarification",
+        "detail": "The electrical system is at the Calvert Coastal Observatory in Pruth Bay on Calvert Island. Hakai Institute also operates instruments across nearby Hecate Island, but that does not make Hecate Island the microgrid site.",
+        "sourceIds": ["hak-hakai-tech-current"]
+      },
+      {
+        "category": "Evidence quality warning",
+        "detail": "The public SMA portal's annual-production metadata is implausibly large for a 50 kWp plant and is excluded. Current storage chemistry, inverter fleet, PV module models, generator makes, measured renewable fraction, and state-of-health remain undisclosed.",
+        "sourceIds": ["hak-sma-portal", "hak-hakai-tech-current"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "hak-hakai-tech-current",
+        "title": "Calvert Coastal Observatory: Tech",
+        "url": "https://hakai.org/science/coastal-observatories/calvert-coastal-observatory/tech",
+        "publisher": "Hakai Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "hak-hakai-story-2016",
+        "title": "A Renewable Alternative in Coastal Communities",
+        "url": "https://hakai.org/stories/a-renewable-alternative-in-coastal-communities",
+        "publisher": "Hakai Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "hak-hakai-energy-case",
+        "title": "Calvert Island Field Station",
+        "url": "https://hakaienergysolutions.com/calvert-island/",
+        "publisher": "Hakai Energy Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "hak-sma-guide",
+        "title": "Sunny Island System Guide: System Solutions for Reliable Off-Grid Power Supply",
+        "url": "https://files.sma.de/downloads/SISYSGUIDE-KEN140421.pdf",
+        "publisher": "SMA Solar Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "hak-sma-portal",
+        "title": "Hakai Beach Institute public plant overview",
+        "url": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?page=e613e137-8628-407e-90ea-acf660858cf5&plant=bd62269e-9ce5-4c8a-affa-fb464307ad4c&splang=en-US",
+        "publisher": "SMA Sunny Portal",
+        "kind": "primary"
+      }
+    ]
+  },
+  "hangzhou": {
+    "researchedAt": "2026-07-20",
+    "summary": "This is the NEDO-Hangzhou Dianzi University high-PV microgrid demonstration at the university's Xiasha campus in Hangzhou, China. Completed in September/October 2008, it paired 120 kW of rooftop PV with a 120 kW diesel generator, battery storage, a 100 kW electric-double-layer capacitor, and multiple power-quality devices to supply two teaching buildings in grid-connected and islanded modes. Credible technical sources identify the disputed 50 kW component as lead-acid storage, not a fuel cell.",
+    "status": "The formal China demonstration ran during Japanese fiscal years 2007-2009 and was evaluated as completed by NEDO in 2010. A 2022 profile of a university researcher still described the campus equipment, but no current operating report, generation data, maintenance status, or explicit decommissioning notice was found. The safe current classification is completed research demonstration with physical-system status unknown, not a verified continuously operating commercial microgrid.",
+    "organizations": [
+      {
+        "name": "Hangzhou Dianzi University",
+        "role": "Host university, research partner, and load-site owner at the Xiasha campus.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014", "han-retrospective-2022"]
+      },
+      {
+        "name": "New Energy and Industrial Technology Development Organization (NEDO)",
+        "role": "Japanese government sponsor and evaluator of the international cooperative demonstration.",
+        "sourceIds": ["han-nedo-evaluation-2010", "han-shimizu-deck-2010"]
+      },
+      {
+        "name": "Shimizu Corporation",
+        "role": "Japanese project builder/integrator and co-research organization for the microgrid and high-PV grid-stabilization controls.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "name": "National Development and Reform Commission and Zhejiang Development and Reform Commission",
+        "role": "Chinese national/provincial counterpart organizations identified in the published project history.",
+        "sourceIds": ["han-china-review-2014"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar PV",
+        "value": "120 kW rooftop array; 50% of the 240 kW generation nameplate",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "120 kW",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "label": "Total generation capacity",
+        "value": "240 kW (120 kW PV plus 120 kW diesel); storage power is not counted as generation nameplate in the participant presentation",
+        "sourceIds": ["han-shimizu-deck-2010"]
+      },
+      {
+        "label": "Hybrid storage",
+        "value": "100 kW electric-double-layer capacitor plus lead-acid battery storage. A 2014 review gives 50 kW for the battery, while the 2010 participant diagram appears to label the battery 100 kW x 0.5 h; the underlying project documents reviewed do not reconcile the two labels.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "label": "Demonstration period",
+        "value": "China university-site work ran Japanese FY2007-FY2009; the system was completed by the end of September 2008 and publicly launched in October 2008",
+        "sourceIds": ["han-nedo-evaluation-2010", "han-shimizu-deck-2010", "han-history-2020"]
+      },
+      {
+        "label": "Fuel-cell capacity",
+        "value": "None established. The credible NEDO/participant/review configurations list PV, diesel, lead-acid storage, and an EDLC but no fuel cell; the legacy 50 kW fuel-cell label is a likely classification error.",
+        "sourceIds": ["han-nedo-evaluation-2010", "han-shimizu-deck-2010", "han-china-review-2014"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar PV array",
+        "detail": "120 kW installed on the roofs of teaching buildings. Public sources reviewed do not disclose module or inverter manufacturers/models.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-retrospective-2022"]
+      },
+      {
+        "category": "Diesel generator",
+        "detail": "120 kW dispatchable source used for grid-connected and island-mode balance/frequency support. Manufacturer and model are not identified.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "category": "Fast storage",
+        "detail": "100 kW electric-double-layer capacitor used for rapid load/renewable fluctuation compensation; product manufacturer, energy capacity, and model are not disclosed.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Lead-acid battery used for slower energy balancing. Published power/energy labels conflict, so neither a 50 kW nor 50 kWh figure is converted into an assumed definitive current rating.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "category": "Power-quality equipment",
+        "detail": "Dynamic/power-quality regulator, voltage-dip compensator, disturbance-producing test device, high- and low-voltage switchboards, supply-demand controller, and monitoring equipment supported grid and island tests. Commercial model numbers are not public.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-nedo-evaluation-2010", "han-retrospective-2022"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Research objective",
+        "detail": "NEDO designed the China work to prove stable grid-connected and islanded operation with PV making up at least 50% of generation capacity, evaluate secondary-battery and EDLC load-following, assess voltage/power-quality compensation, inject controlled disturbances, and validate simulations.",
+        "sourceIds": ["han-nedo-evaluation-2010"]
+      },
+      {
+        "category": "Architecture",
+        "detail": "PV, diesel, battery, EDLC, and compensators served two teaching buildings behind a controllable point of common coupling. Closing the linking breaker provided grid-connected mode; opening it created islanded operation under the supply-demand control system.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-china-review-2014"]
+      },
+      {
+        "category": "Control roles",
+        "detail": "The diesel generator carried sustained dispatch and frequency/voltage control, the battery addressed lower-frequency energy imbalance, and the EDLC supplied rapid transient response. Power-quality and voltage-dip compensators allowed tests that went beyond ordinary energy scheduling.",
+        "sourceIds": ["han-shimizu-deck-2010", "han-nedo-evaluation-2010"]
+      },
+      {
+        "category": "Demonstration result",
+        "detail": "NEDO's post-evaluation says the China project completed grid-connected and independent-operation testing at roughly 50% PV capacity share, including battery/EDLC tracking and power-quality equipment evaluation. It also records that simulation/experiment iteration was needed to tune an initially uncertain diesel response and correct unexpected voltage distortion and lightning-related communications damage.",
+        "sourceIds": ["han-nedo-evaluation-2010"]
+      },
+      {
+        "category": "Historical significance",
+        "detail": "A 2020 China microgrid history identifies the October 2008 Xiasha installation as a 240 kW early interconnected demonstration and, at the time, the only experimental microgrid with 50% PV generation-capacity share. This is historical context, not evidence of current uniqueness or operation.",
+        "sourceIds": ["han-history-2020"]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "A 2022 retrospective describes the teaching-building rooftop array, substation controls, diesel, battery, EDLC, and test devices, but publishes no operating measurements. No credible source was found for current output, battery condition, diesel hours/fuel, islanding availability, ownership changes, or retirement.",
+        "sourceIds": ["han-retrospective-2022", "han-nedo-evaluation-2010"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "han-nedo-evaluation-2010",
+        "title": "Post-project evaluation: International Cooperative Demonstration Development of Advanced Grid-Connection Stabilization Technologies for Photovoltaic Systems",
+        "url": "https://www.nedo.go.jp/content/100116228.pdf",
+        "publisher": "New Energy and Industrial Technology Development Organization (NEDO)",
+        "kind": "primary"
+      },
+      {
+        "id": "han-shimizu-deck-2010",
+        "title": "Shimizu Carbon Management Approach — from Microgrid to Smartgrid",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2014/12/vancouver_denda.pdf",
+        "publisher": "Shimizu Corporation and Hangzhou Dianzi University / 2010 Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "han-china-review-2014",
+        "title": "Policies and demonstrations of micro-grids in China: A review",
+        "url": "https://doi.org/10.1016/j.rser.2013.09.029",
+        "publisher": "Renewable and Sustainable Energy Reviews",
+        "kind": "secondary"
+      },
+      {
+        "id": "han-history-2020",
+        "title": "Microgrids for Electricity Generation in China",
+        "url": "https://nautilus.org/napsnet/napsnet-special-reports/microgrids-for-electricity-generation-in-china/",
+        "publisher": "Nautilus Institute for Security and Sustainability",
+        "kind": "secondary"
+      },
+      {
+        "id": "han-retrospective-2022",
+        "title": "Hangzhou Dianzi University researcher Liu Dongliang: advancing motor applications",
+        "url": "https://zhejiang.eol.cn/zhejiang_news/202205/t20220513_2225153.shtml",
+        "publisher": "China Education Online — Zhejiang",
+        "kind": "secondary"
+      }
+    ]
+  }
+}
