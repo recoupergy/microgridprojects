@@ -1,0 +1,1737 @@
+{
+  "mara-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record is the stand-alone microgrid on Marado (also rendered Mara Island), South Korea's southernmost inhabited island near Jeju; it is not the neighboring Gapado system. A 150 kW photovoltaic plant using 2,010 GE 75 W modules was commissioned in December 2005 for Nam Jeju-gun and operated in parallel with the island diesel plant. Later Korean utility research describes two 75 kW PV blocks, two 600 kWh battery systems, a short-duration 50 kW EDLC device, supervisory controls, and diesel generation. A 2019 engineering study, however, says Marado's PV and battery equipment was not actually operating because surplus-power and operational problems had not been resolved. That paper's proposed 1 MVA medium-voltage DC connection to Gapado was a simulation/design proposal, not evidence of a built inter-island link.",
+    "status": "Historically commissioned, but the last detailed field-status source found reports the PV and 1.2 MWh battery plant inactive and represents Marado as diesel-supplied. No authoritative later source through July 2026 was found confirming that the renewable plant was restored, that the batteries were replaced, or that the proposed Gapado-Marado MVDC cable was built. Treat the original installation as real, its current renewable operating status as unverified, and the MVDC link as proposed only.",
+    "organizations": [
+      {
+        "name": "Nam Jeju-gun",
+        "role": "Local-government customer for the 2005 photovoltaic project.",
+        "sourceIds": [
+          "mar-ge-2006"
+        ]
+      },
+      {
+        "name": "GE Energy",
+        "role": "Supplied the 2,010 GEPV-75W photovoltaic modules used in the 150 kW plant.",
+        "sourceIds": [
+          "mar-ge-2006"
+        ]
+      },
+      {
+        "name": "AstroKorea",
+        "role": "General contractor for the 2005 solar project.",
+        "sourceIds": [
+          "mar-ge-2006"
+        ]
+      },
+      {
+        "name": "Kwangdong Electronic",
+        "role": "Installed the photovoltaic equipment.",
+        "sourceIds": [
+          "mar-ge-2006"
+        ]
+      },
+      {
+        "name": "Korea Electric Power Research Institute (KEPRI)",
+        "role": "Documented and developed the island microgrid EMS/control architecture and associated field research.",
+        "sourceIds": [
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Photovoltaic capacity",
+        "value": "150 kW total: 2 x 75 kW arrays; the original installation comprised 2,010 modules rated 75 W each.",
+        "sourceIds": [
+          "mar-ge-2006",
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "label": "Battery storage",
+        "value": "1.2 MWh nominal, arranged as 2 x 600 kWh systems. The 2019 study reports the battery systems were not operating; power and usable-energy ratings were not established in the sources reviewed.",
+        "sourceIds": [
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "label": "Fast-response storage",
+        "value": "50 kW for 5 seconds, described by KEPRI as a 250 kJ electric double-layer capacitor (EDLC).",
+        "sourceIds": [
+          "mar-kepri-2014"
+        ]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "Published configurations conflict. KEPRI lists four diesel engines across 120, 200, and 300 kW ratings; the 2019 paper's narrative refers to two 150 kW diesels while one analytical case uses 2 x 120 kW. These are preserved as dated study/configuration values rather than merged into one unsupported total.",
+        "sourceIds": [
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "label": "Electrical system and demand",
+        "value": "The 2019 study describes a 6.9 kV island system with maximum load of about 240 kW.",
+        "sourceIds": [
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "label": "Proposed inter-island link",
+        "value": "1 MVA medium-voltage DC connection between Gapado and Marado in the 2019 simulation/design study; construction was not demonstrated.",
+        "sourceIds": [
+          "mar-energies-2019"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic modules",
+        "manufacturer": "GE Energy",
+        "model": "GEPV-75W",
+        "detail": "2,010 open-ground modules supplied for the 150 kW plant.",
+        "sourceIds": [
+          "mar-ge-2006"
+        ]
+      },
+      {
+        "category": "Microgrid controls",
+        "manufacturer": "Korea Electric Power Research Institute (KEPRI)",
+        "detail": "EMS and gateway architecture interfacing static transfer switches, intelligent electronic devices, power-conversion systems, PV, batteries, diesel generators, and loads.",
+        "sourceIds": [
+          "mar-kepri-2014"
+        ]
+      },
+      {
+        "category": "Fast-response storage",
+        "detail": "EDLC rated 50 kW for 5 seconds (250 kJ), used for rapid transient support in the documented architecture.",
+        "sourceIds": [
+          "mar-kepri-2014"
+        ]
+      },
+      {
+        "category": "Load-unbalance compensator",
+        "detail": "A three-phase four-leg inverter compensator was developed and tested using Marado operational data; it is research equipment and should not be assumed to have become the permanent production configuration.",
+        "sourceIds": [
+          "mar-unbalance-2015"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity",
+        "detail": "The project is on Marado/Mara Island. Gapado appears in a later proposed interconnection study but is a different island microgrid.",
+        "sourceIds": [
+          "mar-ge-2006",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "category": "Timeline",
+        "detail": "The PV plant was commissioned in December 2005. KEPRI subsequently documented a fuller PV-battery-diesel EMS configuration, and the 2019 paper evaluated a possible MVDC interconnection.",
+        "sourceIds": [
+          "mar-ge-2006",
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "category": "Operability caveat",
+        "detail": "Although the PV and battery assets had been installed, the 2019 authors state that they were not operating because the surplus-power problem and other operational issues had not been resolved. Installed capacity therefore must not be reported as demonstrated current renewable output.",
+        "sourceIds": [
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "category": "Architecture",
+        "detail": "The documented microgrid is an isolated diesel system augmented by AC-connected PV, battery power-conversion equipment, fast transient storage, switching/protection, and supervisory control. The proposed MVDC link would have connected it to Gapado, but the paper reports simulations rather than commissioning.",
+        "sourceIds": [
+          "mar-kepri-2014",
+          "mar-energies-2019"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No current operator report, recent generation mix, fuel savings, battery chemistry, replacement history, or post-2019 operating update was found through July 2026.",
+        "sourceIds": [
+          "mar-energies-2019"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mar-ge-2006",
+        "title": "GE Solar Modules Used in Large Korean Solar Project",
+        "url": "https://www.renewableenergyworld.com/solar/ge-solar-modules-used-in-large-korean-solar-project-44420/",
+        "publisher": "Renewable Energy World",
+        "kind": "secondary"
+      },
+      {
+        "id": "mar-kepri-2014",
+        "title": "Microgrid EMS Solution in Korea - Mara Island",
+        "url": "https://microgrid-symposiums.org/wp-content/uploads/2014/12/evora_poster_shin.pdf",
+        "publisher": "Korea Electric Power Research Institute / Microgrid Symposium",
+        "kind": "primary"
+      },
+      {
+        "id": "mar-energies-2019",
+        "title": "Implementation of a Microgrid Scheme Using a MVDC Connection between Gapado Island and Marado Island in South Korea",
+        "url": "https://www.mdpi.com/1996-1073/12/1/187",
+        "publisher": "Energies",
+        "kind": "primary"
+      },
+      {
+        "id": "mar-unbalance-2015",
+        "title": "A Novel Three-Phase Four-Leg Inverter Based Load Unbalance Compensator for Stand-Alone Microgrid",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0142061514005869",
+        "publisher": "International Journal of Electrical Power & Energy Systems",
+        "kind": "primary"
+      }
+    ]
+  },
+  "marble-bar-and-nullagine-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This is an umbrella record for two separate Horizon Power town systems in Western Australia's Pilbara: Marble Bar and Nullagine, about 88 km apart. The original combined portfolio comprised about 505-508 kW of tracked solar, 2.24 MW of diesel generation, and one 500 kW flywheel at each town under ABB/Powercorp controls. Marble Bar was integrated in May 2010 and Nullagine in October 2010. Contemporary case-study data reported roughly 30% annual solar contribution at each site, much higher instantaneous/daylight penetration, substantial diesel displacement, and improved interruption performance. It overlaps intentionally with the separate `marble-bar` record; that component record should be used for Marble Bar-only updates.",
+    "status": "Both towns remain active Horizon Power service areas and their solar stations remain described by the utility. The original architecture is no longer uniform: Marble Bar commissioned a central BESS in 2021, and a current control-engineering case study says its original ABB flywheel reached end-of-life and the storage/control system is being replaced or upgraded. No equivalent recent technical update was found for Nullagine, so its current flywheel condition, solar share, and storage availability are unverified. Do not describe the pair as one electrically interconnected microgrid.",
+    "organizations": [
+      {
+        "name": "Horizon Power",
+        "role": "Owner/operator and developer of both isolated town power systems.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-horizon-renewable",
+          "mbn-horizon-bess-2021"
+        ]
+      },
+      {
+        "name": "Australian Government Remote Renewable Power Generation Program",
+        "role": "Provided a shared A$4.9 million grant toward the two original projects.",
+        "sourceIds": [
+          "mbn-arena-2014"
+        ]
+      },
+      {
+        "name": "SunPower Australia",
+        "role": "Solar supplier/contractor and initial panel operator in the original projects.",
+        "sourceIds": [
+          "mbn-arena-2014"
+        ]
+      },
+      {
+        "name": "Powercorp",
+        "role": "Provided original control integration, civil works, and energy-storage/control technology later incorporated into ABB's portfolio.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier/support organization for the PowerStore flywheels and Microgrid Plus control platform in the original design.",
+        "sourceIds": [
+          "mbn-abb-2016",
+          "mbn-ace-current"
+        ]
+      },
+      {
+        "name": "Hybrid Systems Australia",
+        "role": "Supplied and installed Marble Bar's later central battery energy storage system; this role does not apply to Nullagine.",
+        "sourceIds": [
+          "mbn-horizon-bess-2021"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Combined original solar capacity",
+        "value": "Approximately 505-508 kW: 302 kW at Marble Bar plus 203 kW at Nullagine in the ARENA case study; later rounded descriptions use 300 kW plus 200 kW or 508 kW combined.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-rmi-2015",
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "label": "Combined diesel capacity",
+        "value": "2.24 MW: Marble Bar 4 x 320 kW (1.28 MW) and Nullagine 3 x 320 kW (0.96 MW).",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-rmi-2015"
+        ]
+      },
+      {
+        "label": "Original flywheel storage",
+        "value": "One 500 kW PowerStore flywheel at each town; ABB material gives 16.5 MW-seconds per unit. This is high-power, short-duration storage, not a 500 kWh battery.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "label": "Solar module counts",
+        "value": "Horizon Power's current education page describes 1,350 panels at Marble Bar and 900 at Nullagine. Module wattage and whether these counts reflect replacement or expansion were not stated.",
+        "sourceIds": [
+          "mbn-horizon-renewable"
+        ]
+      },
+      {
+        "label": "Historical renewable share",
+        "value": "ARENA's operating case study reported about 30% annual solar energy at Marble Bar and 30-40% at Nullagine, with approximately 65% daytime solar at Marble Bar and high instantaneous penetration. Horizon's education page now says the solar stations can provide up to 87% of daytime power, a different metric and period.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-horizon-renewable"
+        ]
+      },
+      {
+        "label": "Historical diesel savings",
+        "value": "ABB reported approximately 405,000 litres per year at Marble Bar and 400,000 litres per year at Nullagine, with roughly 1,100 tonnes of CO2 avoided annually at each site. These are historical/vendor case-study figures, not verified current performance.",
+        "sourceIds": [
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "label": "Marble Bar replacement BESS",
+        "value": "Commissioned in 2021; Horizon Power disclosed that it enabled more than 100 kW of additional rooftop-solar hosting but did not publish battery MW, MWh, chemistry, or model in the source reviewed.",
+        "sourceIds": [
+          "mbn-horizon-bess-2021"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic arrays",
+        "manufacturer": "SunPower",
+        "detail": "Ground-mounted, sun-tracking arrays at both towns; published capacities are 302 kW at Marble Bar and 203 kW at Nullagine.",
+        "sourceIds": [
+          "mbn-arena-2014"
+        ]
+      },
+      {
+        "category": "Flywheel storage",
+        "manufacturer": "ABB / Powercorp",
+        "model": "PowerStore",
+        "detail": "Original 500 kW, 16.5 MW-second flywheel at each site for grid-forming/stability support and high renewable penetration. Marble Bar's unit is now reported end-of-life; Nullagine's current condition was not found.",
+        "sourceIds": [
+          "mbn-abb-2016",
+          "mbn-ace-current"
+        ]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "ABB / Powercorp",
+        "model": "Microgrid Plus",
+        "detail": "Original supervisory and generator/renewable integration platform for the two diesel-solar-flywheel systems.",
+        "sourceIds": [
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Hybrid Systems Australia",
+        "detail": "Later central BESS at Marble Bar only; supplier, inverter, cell chemistry, and nameplate ratings were not disclosed in the utility announcement.",
+        "sourceIds": [
+          "mbn-horizon-bess-2021"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Record boundary",
+        "detail": "This portfolio record aggregates two independent isolated grids for comparative reporting. The towns are not connected by a shared microgrid feeder. The separate `marble-bar` record is a component-level duplicate, not an additional third project.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-rmi-2015"
+        ]
+      },
+      {
+        "category": "Original operating strategy",
+        "detail": "Tracked PV displaced diesel while the flywheel and Microgrid Plus controls supplied rapid balancing/grid support, allowing very high instantaneous solar penetration without treating the flywheel as bulk-duration storage.",
+        "sourceIds": [
+          "mbn-arena-2014",
+          "mbn-abb-2016"
+        ]
+      },
+      {
+        "category": "Reliability outcome",
+        "detail": "ARENA's case study reports Marble Bar outage duration falling from 38 minutes in 2009-10 to 8 minutes in 2010-11 and Nullagine from 110 minutes to zero over the same comparison period. The result is historical and not a current reliability guarantee.",
+        "sourceIds": [
+          "mbn-arena-2014"
+        ]
+      },
+      {
+        "category": "Storage operating lesson",
+        "detail": "A later independent case study reported parasitic nighttime losses from the flywheel and said Horizon Power would likely choose a battery if repeating the design. Marble Bar subsequently did commission a BESS.",
+        "sourceIds": [
+          "mbn-rmi-2015",
+          "mbn-horizon-bess-2021"
+        ]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "No recent public source was found giving a combined present-day generation mix, Nullagine storage condition, current diesel consumption, or the Marble Bar BESS's rated power and energy.",
+        "sourceIds": [
+          "mbn-horizon-renewable",
+          "mbn-horizon-bess-2021",
+          "mbn-ace-current"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mbn-arena-2014",
+        "title": "Renewable Energy in the Australian Mining Sector - Case Study Appendix",
+        "url": "https://arena.gov.au/assets/2014/12/ARENA_RAR-report-20141201.pdf",
+        "publisher": "Australian Renewable Energy Agency / AECOM",
+        "kind": "primary"
+      },
+      {
+        "id": "mbn-rmi-2015",
+        "title": "Remote but Connected: Two Australian Communities Go Solar",
+        "url": "https://rmi.org/resources/blog_2015_12_7_remote_but_connected_two_australian_communities_go_solar/",
+        "publisher": "Rocky Mountain Institute",
+        "kind": "secondary"
+      },
+      {
+        "id": "mbn-abb-2016",
+        "title": "Renewable Microgrids - Reduced LCOE and Secure Power Supply",
+        "url": "https://new.abb.com/docs/librariesprovider77/default-document-library/renewable-microgrids---reduced-lcoe-and-secure-power-supply---2016-08-25th---keabb-technology-day---light-version.pdf?sfvrsn=2",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "mbn-horizon-renewable",
+        "title": "Generating Electricity: Renewable Energy",
+        "url": "https://hdz.horizonpower.com.au/generating-electricity/renewable.html",
+        "publisher": "Horizon Power",
+        "kind": "primary"
+      },
+      {
+        "id": "mbn-horizon-bess-2021",
+        "title": "Customers in Australia's Hottest Town to Get More Solar Power",
+        "url": "https://www.horizonpower.com.au/about-us/news-announcements/customers-in-australias-hottest-town-to-get-more-solar-power/",
+        "publisher": "Horizon Power",
+        "kind": "primary"
+      },
+      {
+        "id": "mbn-ace-current",
+        "title": "Marble Bar Power Plant Control Systems Engineering",
+        "url": "https://www.acectrl.com/case-studies/marble-bar-power-plant-control-systems-engineering/",
+        "publisher": "Australian Control Engineering",
+        "kind": "primary"
+      }
+    ]
+  },
+  "marble-bar": {
+    "researchedAt": "2026-07-20",
+    "summary": "Marble Bar is the Marble Bar component of the two-town Horizon Power solar-diesel project also represented by the `marble-bar-and-nullagine-microgrid` umbrella record. Its original system integrated 302 kW of tracked solar, four 320 kW diesel generators, a 500 kW ABB/Powercorp flywheel, and Microgrid Plus controls in May 2010. Historical case studies reported about 30% annual solar energy, 65% daytime solar, up to 92% instantaneous solar penetration, and a reduction in annual diesel use of roughly 405,000 litres. The system has since entered a modernization phase: a central BESS was commissioned in 2021, and a current engineering case study identifies the original flywheel and PLC/control assets as end-of-life or unsupported.",
+    "status": "Operating Horizon Power town system with ongoing storage and controls modernization. The 2021 BESS is commissioned and the central solar plant remains active, producing more than 1 GWh per year according to Horizon Power. The original PowerStore flywheel should not be presented as current: it is explicitly described as end-of-life in the replacement project. Public sources reviewed do not disclose the replacement BESS rating, chemistry, exact commissioning configuration, or current renewable fraction.",
+    "organizations": [
+      {
+        "name": "Horizon Power",
+        "role": "Owner/operator of the Marble Bar power system and developer of both the original hybrid plant and later BESS project.",
+        "sourceIds": [
+          "mba-arena-2014",
+          "mba-horizon-bess-2021"
+        ]
+      },
+      {
+        "name": "SunPower Australia",
+        "role": "Original solar-array supplier/contractor for the tracked PV plant.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "name": "Powercorp",
+        "role": "Original storage, civil works, control, and integration provider; its technology later became part of ABB's offering.",
+        "sourceIds": [
+          "mba-abb-2016"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier/support organization for the original PowerStore flywheel and Microgrid Plus controls.",
+        "sourceIds": [
+          "mba-abb-2016",
+          "mba-ace-current"
+        ]
+      },
+      {
+        "name": "Hybrid Systems Australia",
+        "role": "Supplied and installed the central BESS commissioned in 2021.",
+        "sourceIds": [
+          "mba-horizon-bess-2021"
+        ]
+      },
+      {
+        "name": "Australian Control Engineering",
+        "role": "Engineering contractor for generator-control, storage-replacement, RTU/IT, and SCADA modernization work.",
+        "sourceIds": [
+          "mba-ace-current"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar capacity",
+        "value": "302 kW in the detailed ARENA case study, often rounded to 300 kW in supplier literature.",
+        "sourceIds": [
+          "mba-arena-2014",
+          "mba-abb-2016"
+        ]
+      },
+      {
+        "label": "Diesel capacity",
+        "value": "1.28 MW from 4 x 320 kW generator sets in the original configuration.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "label": "Original flywheel",
+        "value": "500 kW PowerStore rated at 16.5 MW-seconds; subsequently reported end-of-life and subject to replacement.",
+        "sourceIds": [
+          "mba-abb-2016",
+          "mba-ace-current"
+        ]
+      },
+      {
+        "label": "Replacement battery storage",
+        "value": "Central BESS commissioned in 2021. Horizon Power did not disclose power, energy, duration, chemistry, inverter, or cell manufacturer in the announcement reviewed.",
+        "sourceIds": [
+          "mba-horizon-bess-2021"
+        ]
+      },
+      {
+        "label": "Historical energy mix",
+        "value": "About 30% annual solar and 65% daytime solar, with peak instantaneous solar contribution up to 92%, in the original operating case study.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "label": "Historical fuel and emissions savings",
+        "value": "Approximately 405,000 litres of diesel and 1,100 tonnes of CO2 per year in ABB's historical case study.",
+        "sourceIds": [
+          "mba-abb-2016"
+        ]
+      },
+      {
+        "label": "Current central-solar output and hosting benefit",
+        "value": "Horizon Power reported central solar generation above 1 GWh per year and more than 100 kW of additional rooftop-PV hosting enabled by the 2021 BESS.",
+        "sourceIds": [
+          "mba-horizon-bess-2021"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic array",
+        "manufacturer": "SunPower",
+        "detail": "Single-axis/tracked ground-mounted array, published as 302 kW in the detailed case study.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "category": "Flywheel storage",
+        "manufacturer": "ABB / Powercorp",
+        "model": "PowerStore",
+        "detail": "Original 500 kW, 16.5 MW-second high-power flywheel; now end-of-life according to the modernization case study.",
+        "sourceIds": [
+          "mba-abb-2016",
+          "mba-ace-current"
+        ]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "ABB / Powercorp",
+        "model": "Microgrid Plus",
+        "detail": "Original controller coordinating diesel generation, tracked PV, and flywheel response.",
+        "sourceIds": [
+          "mba-abb-2016"
+        ]
+      },
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Hybrid Systems Australia",
+        "detail": "Replacement/modernization BESS commissioned in 2021; nameplate and component manufacturers were not disclosed.",
+        "sourceIds": [
+          "mba-horizon-bess-2021"
+        ]
+      },
+      {
+        "category": "Controls and communications upgrade",
+        "manufacturer": "Australian Control Engineering",
+        "detail": "Generator-control replacement, energy-storage replacement integration, and RTU, IT, and SCADA upgrades prompted by obsolete PLC hardware and end-of-life storage.",
+        "sourceIds": [
+          "mba-ace-current"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Duplicate relationship",
+        "detail": "This is not separate from the Marble Bar portion of `marble-bar-and-nullagine-microgrid`; the umbrella record additionally includes Nullagine.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "category": "Commissioning and cost",
+        "detail": "The integrated solar-diesel-flywheel system was commissioned in May 2010. ARENA reports an original project cost of about A$16 million.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "category": "Reliability outcome",
+        "detail": "Annual outage duration fell from 38 minutes in 2009-10 to 8 minutes in 2010-11 in the historical case-study comparison.",
+        "sourceIds": [
+          "mba-arena-2014"
+        ]
+      },
+      {
+        "category": "Architecture evolution",
+        "detail": "The original flywheel supplied short-duration grid support while PV displaced diesel. The current project replaces obsolete generator/control/storage assets and adds conventional battery storage, but public documentation does not reveal the finalized one-line design or BESS ratings.",
+        "sourceIds": [
+          "mba-abb-2016",
+          "mba-horizon-bess-2021",
+          "mba-ace-current"
+        ]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "No recent audited fuel saving, present annual solar percentage, BESS dispatch data, or complete post-upgrade equipment schedule was found through July 2026.",
+        "sourceIds": [
+          "mba-horizon-bess-2021",
+          "mba-ace-current"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mba-arena-2014",
+        "title": "Renewable Energy in the Australian Mining Sector - Case Study Appendix",
+        "url": "https://arena.gov.au/assets/2014/12/ARENA_RAR-report-20141201.pdf",
+        "publisher": "Australian Renewable Energy Agency / AECOM",
+        "kind": "primary"
+      },
+      {
+        "id": "mba-abb-2016",
+        "title": "Renewable Microgrids - Reduced LCOE and Secure Power Supply",
+        "url": "https://new.abb.com/docs/librariesprovider77/default-document-library/renewable-microgrids---reduced-lcoe-and-secure-power-supply---2016-08-25th---keabb-technology-day---light-version.pdf?sfvrsn=2",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "mba-horizon-bess-2021",
+        "title": "Customers in Australia's Hottest Town to Get More Solar Power",
+        "url": "https://www.horizonpower.com.au/about-us/news-announcements/customers-in-australias-hottest-town-to-get-more-solar-power/",
+        "publisher": "Horizon Power",
+        "kind": "primary"
+      },
+      {
+        "id": "mba-ace-current",
+        "title": "Marble Bar Power Plant Control Systems Engineering",
+        "url": "https://www.acectrl.com/case-studies/marble-bar-power-plant-control-systems-engineering/",
+        "publisher": "Australian Control Engineering",
+        "kind": "primary"
+      }
+    ]
+  },
+  "marisol-village": {
+    "researchedAt": "2026-07-20",
+    "summary": "Marisol is a remote community on the Alto Huayabamba River in Pachiza District, San Martín, Peru. The record spans two distinct installations. In November 2011, SMART Hydro Power installed a 5 kW floating hydrokinetic turbine for a village then described as 28 families/approximately 240 residents, supplemented by 24 very small household solar systems. Floods, rising water, and debris subsequently damaged or disabled that first configuration. A redesigned hybrid system reported operating from November 2014 combined a river turbine, more than 1.2 kW of PV, a 48 V battery bank, backup generation, and a SMART energy-management system for roughly 60 households. Older catalog figures of 2 kW PV and 20 kWh storage were not corroborated by the supplier's current project page and are retained only as legacy values.",
+    "status": "The 2014 hybrid rebuild is documented as commissioned and is still presented as a completed reference project by SMART Hydro Power, but no independent recent operating report, turbine replacement history, battery health, load data, or current service count was found through July 2026. The 2011 floating-turbine installation should not be described as continuously operating; project literature explicitly records its failure/inactivity before the later redesign.",
+    "organizations": [
+      {
+        "name": "SMART Hydro Power",
+        "role": "Turbine and hybrid-system technology supplier and project developer for both the 2011 installation and later rebuild.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "name": "Regional Government of San Martín / regional energy directorate",
+        "role": "Regional-government implementation partner and participant in the 2011 installation.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-andina-2011"
+        ]
+      },
+      {
+        "name": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) Peru",
+        "role": "Development-cooperation partner supporting the electrification initiative.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-andina-2011"
+        ]
+      },
+      {
+        "name": "Marisol Electrification Committee",
+        "role": "Local community organization involved in managing the electricity service and community participation.",
+        "sourceIds": [
+          "msv-autodesk-case",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "name": "Marisol community",
+        "role": "Owner/user community and contributor to local operation and tariff collection.",
+        "sourceIds": [
+          "msv-wame-2014",
+          "msv-smart-current"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Initial hydrokinetic capacity",
+        "value": "5 kW floating river turbine installed in November 2011.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-andina-2011"
+        ]
+      },
+      {
+        "label": "Initial household solar component",
+        "value": "24 pico-PV systems using approximately 5 W panels, alongside 51 reported community connections in the 2011 account.",
+        "sourceIds": [
+          "msv-andina-2011"
+        ]
+      },
+      {
+        "label": "Rebuilt-system photovoltaic capacity",
+        "value": "More than 1.2 kW according to SMART Hydro Power's project page. A legacy project catalog listed 2 kW; the difference could not be reconciled and should not be silently normalized.",
+        "sourceIds": [
+          "msv-smart-current",
+          "msv-catalog-archive"
+        ]
+      },
+      {
+        "label": "Rebuilt-system battery bank",
+        "value": "24 x 2 V cells connected as a 48 V bank. Ampere-hour rating, chemistry, usable energy, and power were not stated on the supplier page. A legacy catalog's 20 kWh value remains unverified.",
+        "sourceIds": [
+          "msv-smart-current",
+          "msv-catalog-archive"
+        ]
+      },
+      {
+        "label": "Community served",
+        "value": "The first installation was described as serving 28 families or 240 residents; the later hybrid reference describes approximately 60 households. These reflect different phases and reporting dates.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-andina-2011",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "label": "Reported electricity cost",
+        "value": "Approximately US$0.30/kWh in the supplier's later project description; tariff date and current applicability are not specified.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      },
+      {
+        "label": "Reported environmental benefit",
+        "value": "WAME's project profile reports about 5,058 kg of CO2 avoided per year and more than 100 beneficiaries; this is a project-reported estimate rather than independently audited output.",
+        "sourceIds": [
+          "msv-wame-2014"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Hydrokinetic turbine",
+        "manufacturer": "SMART Hydro Power",
+        "detail": "Original floating, three-blade river turbine with diffuser and 5 kW generator. Later project material describes a redesigned river-turbine installation but does not clearly publish its current nameplate rating.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-autodesk-case",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Photovoltaic array",
+        "detail": "More than 1.2 kW of PV in the rebuilt hybrid system; module and inverter manufacturers were not disclosed.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Twenty-four 2 V cells forming a 48 V bank; make, model, chemistry, Ah capacity, and current replacement status were not disclosed.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Energy-management system",
+        "manufacturer": "SMART Hydro Power",
+        "detail": "SMART EMS coordinates hydro, solar, batteries, backup generation, and village distribution.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Backup generator",
+        "detail": "A backup generator is included in the later hybrid architecture; fuel, rating, manufacturer, and model were not published.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Phase history",
+        "detail": "The 2011 floating-turbine project and the hybrid system reported running from November 2014 are successive phases, not two simultaneously verified plants.",
+        "sourceIds": [
+          "msv-smart-2011",
+          "msv-autodesk-case",
+          "msv-wame-2014",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Initial failure mechanism",
+        "detail": "Project case material says unusually high/rising river water and debris damaged or disabled the original floating installation, requiring redesign and reinstallation.",
+        "sourceIds": [
+          "msv-autodesk-case"
+        ]
+      },
+      {
+        "category": "Hybrid architecture",
+        "detail": "The rebuilt system combines continuous river energy where available with PV, a low-voltage battery bank, backup generation, centralized EMS, and a village distribution network.",
+        "sourceIds": [
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Community outcomes",
+        "detail": "Project profiles describe household electricity, community services including dental equipment, and round-the-clock availability after the rebuild, but do not publish interval generation, uptime, or independently audited reliability data.",
+        "sourceIds": [
+          "msv-wame-2014",
+          "msv-smart-current"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "Current hydro rating, actual PV capacity above the stated minimum, storage energy, diesel use, renewable fraction, tariff governance, and post-commissioning maintenance/replacement history remain unverified.",
+        "sourceIds": [
+          "msv-smart-current",
+          "msv-catalog-archive"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "msv-smart-2011",
+        "title": "Successful First Installation in Latin America",
+        "url": "https://www.smart-hydro.de/successful-first-installation-in-latin-america/",
+        "publisher": "SMART Hydro Power",
+        "kind": "primary"
+      },
+      {
+        "id": "msv-andina-2011",
+        "title": "Más de 200 habitantes de comunidad de San Martín se benefician con energía eléctrica limpia",
+        "url": "https://andina.pe/agencia/noticia-mas-200-habitantes-comunidad-san-martin-se-benefician-energia-electrica-limpia-392311.aspx",
+        "publisher": "Agencia Peruana de Noticias Andina",
+        "kind": "secondary"
+      },
+      {
+        "id": "msv-autodesk-case",
+        "title": "SMART Hydro Power Customer Story",
+        "url": "https://images.autodesk.com/adsk/files/smart-hydro-power-customer-story0.pdf",
+        "publisher": "Autodesk / SMART Hydro Power",
+        "kind": "secondary"
+      },
+      {
+        "id": "msv-wame-2014",
+        "title": "Hybrid Rural Electrification System in Marisol, Peru",
+        "url": "https://www.wame2030.org/project/1077/",
+        "publisher": "World Access to Modern Energy (WAME)",
+        "kind": "secondary"
+      },
+      {
+        "id": "msv-smart-current",
+        "title": "Peru Rural Electrification",
+        "url": "https://www.smart-hydro.de/decentralized-rural-electrification-projects-worldwide/peru-rural-electrification/",
+        "publisher": "SMART Hydro Power",
+        "kind": "primary"
+      },
+      {
+        "id": "msv-catalog-archive",
+        "title": "Marisol Village Microgrid (Archived Project Record)",
+        "url": "https://web.archive.org/web/20210420201538id_/http://microgridprojects.com/microgrid/marisol-village/",
+        "publisher": "Microgrid Projects / Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "marsabit": {
+    "researchedAt": "2026-07-20",
+    "summary": "Marsabit is Kenya Power's isolated town power system at Marsabit, Kenya; it is not the 310 MW Lake Turkana Wind Power plant elsewhere in Marsabit County. The documented hybrid configuration added two 275 kW wind turbines to diesel generation and an ABB 500 kW PowerStore flywheel with Microgrid Plus controls. Kenya's 2022 public register lists the Marsabit off-grid undertaking at 1.666 MW licensed capacity using wind and liquid-fuel generation, while an ABB presentation described 2 x 800 kW diesels plus 550 kW wind; these are different regulatory/equipment figures and are not merged. Recent evidence shows the town remained off-grid, suffered serious outages attributed to aged generators, and was still procuring repairs for two ABC medium-speed diesel engines in 2026.",
+    "status": "Operating but capacity- and reliability-constrained off-grid utility system. Kenya Power was procuring repair services and spare parts for two Marsabit Power Station diesel engines in 2026, confirming that thermal generation remained operationally important. A national-grid transmission connection has been discussed/planned, but no source reviewed establishes that Marsabit was interconnected by July 2026. Current wind availability, flywheel condition, renewable fraction, and fuel consumption were not publicly verified.",
+    "organizations": [
+      {
+        "name": "Kenya Power and Lighting Company (Kenya Power)",
+        "role": "Licensed owner/operator of the Marsabit off-grid power undertaking and procuring entity for diesel-engine repair.",
+        "sourceIds": [
+          "mrs-epra-2022",
+          "mrs-kna-2023",
+          "mrs-kplc-2026"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier of the containerized PowerStore flywheel, Microgrid Plus controls, and diesel-control integration.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "name": "Socabelec East Africa Ltd (SEAL)",
+        "role": "Project customer/contracting partner that placed the storage and control order with ABB.",
+        "sourceIds": [
+          "mrs-abb-2015"
+        ]
+      },
+      {
+        "name": "Energy and Petroleum Regulatory Authority (EPRA)",
+        "role": "Kenyan regulator publishing the licensed off-grid undertaking and capacity.",
+        "sourceIds": [
+          "mrs-epra-2022"
+        ]
+      },
+      {
+        "name": "Kenya Electricity Transmission Company (KETRACO)",
+        "role": "Transmission developer associated with the planned Loyangalani-Marsabit grid connection; commissioning was not established in the sources reviewed.",
+        "sourceIds": [
+          "mrs-kna-2023"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Wind generation",
+        "value": "550 kW from 2 x 275 kW wind turbines.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-hitachi-2017",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "label": "Flywheel storage",
+        "value": "500 kW ABB PowerStore. An ABB presentation gives 16.5 MW-seconds of stored energy, equivalent to very short-duration grid support rather than bulk battery storage.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "label": "Licensed aggregate capacity",
+        "value": "1.666 MW for the Marsabit wind/IDO/HFO undertaking in EPRA's February 2022 register.",
+        "sourceIds": [
+          "mrs-epra-2022"
+        ]
+      },
+      {
+        "label": "Published diesel equipment capacity",
+        "value": "An ABB presentation describes 2 x 800 kW diesel generators. This equipment figure plus 550 kW wind exceeds EPRA's 1.666 MW licensed figure, so the two values likely reflect different definitions, dates, or available versus installed capacity.",
+        "sourceIds": [
+          "mrs-abb-presentation",
+          "mrs-epra-2022"
+        ]
+      },
+      {
+        "label": "2026 diesel units under repair",
+        "value": "2 x ABC Type 6DZC-750-170-A medium-speed diesel engines; the tender covers repairs, spares, testing, and commissioning but does not clearly state their electrical kW output.",
+        "sourceIds": [
+          "mrs-kplc-2026"
+        ]
+      },
+      {
+        "label": "Population/service descriptions",
+        "value": "ABB's early case material referred to reliable electricity for about 5,000 people, while 2023 reporting described a town population above 70,000. These are different dates/service-area descriptions and should not be treated as a single stable customer count.",
+        "sourceIds": [
+          "mrs-hitachi-2017",
+          "mrs-kna-2023"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "detail": "Two 275 kW units. Manufacturer and model were not identified in the authoritative sources reviewed.",
+        "sourceIds": [
+          "mrs-abb-2015"
+        ]
+      },
+      {
+        "category": "Flywheel energy storage",
+        "manufacturer": "ABB",
+        "model": "PowerStore",
+        "detail": "Containerized 500 kW flywheel for fast active-power balancing, frequency support, and renewable integration.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "ABB",
+        "model": "Microgrid Plus",
+        "detail": "Coordinates wind, diesel, flywheel, and load and was designed to integrate with the existing diesel controls.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "category": "Diesel engines",
+        "manufacturer": "Anglo Belgian Corporation (ABC)",
+        "model": "6DZC-750-170-A",
+        "detail": "Two medium-speed engines named in Kenya Power's 2026 repair procurement; their relationship to the earlier 2 x 800 kW description is not explicitly documented.",
+        "sourceIds": [
+          "mrs-kplc-2026"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity exclusion",
+        "detail": "This record covers the Marsabit town off-grid station. Lake Turkana Wind Power is a separate, grid-scale project and must not be counted as this microgrid's generation.",
+        "sourceIds": [
+          "mrs-epra-2022",
+          "mrs-kna-2023"
+        ]
+      },
+      {
+        "category": "Control architecture",
+        "detail": "The flywheel and Microgrid Plus controller smooth wind variability and coordinate diesels so that the isolated grid can maintain frequency and voltage without using the flywheel as long-duration energy supply.",
+        "sourceIds": [
+          "mrs-abb-2015",
+          "mrs-abb-presentation"
+        ]
+      },
+      {
+        "category": "Reliability update",
+        "detail": "In 2023 residents protested persistent outages; Kenya Power attributed constraints to old/unserviceable generators and moved an additional 500 kVA generator from Moyale as an interim measure.",
+        "sourceIds": [
+          "mrs-kna-2023"
+        ]
+      },
+      {
+        "category": "Current maintenance",
+        "detail": "The 2026 tender for major repairs, spare parts, testing, and recommissioning of two ABC engines is direct evidence that diesel remains central to the station and that overhaul work is ongoing.",
+        "sourceIds": [
+          "mrs-kplc-2026"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No current wind production, flywheel availability, diesel efficiency, customer energy mix, outage trend after the repairs, or confirmed grid-interconnection date was found through July 2026.",
+        "sourceIds": [
+          "mrs-kna-2023",
+          "mrs-kplc-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mrs-abb-2015",
+        "title": "ABB Microgrid Technology to Power Kenya's Remote Regions",
+        "url": "https://resources.news.e.abb.com/attachments/published/12807/en-US/D4DAA26755AF/PR-Kenya-microgrid-EN.pdf",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "mrs-hitachi-2017",
+        "title": "Microgrids Provide Solutions to Today's Energy Challenges",
+        "url": "https://www.hitachienergy.com/uk-ie/en/news-and-events/features/2017/10/microgrids-provide-solutions-to-today-s-energy-challenges",
+        "publisher": "Hitachi Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "mrs-epra-2022",
+        "title": "Register of Licences for Electric Power Undertakings, February 2022",
+        "url": "https://www.epra.go.ke/sites/default/files/Documents/Power-Undertaking-Register-February-2022-00000002.pdf",
+        "publisher": "Energy and Petroleum Regulatory Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "mrs-kna-2023",
+        "title": "Marsabit Residents Protest over Persistent Power Outage",
+        "url": "https://www.kenyanews.go.ke/marsabit-residents-protest-over-persistent-power-outage/",
+        "publisher": "Kenya News Agency",
+        "kind": "secondary"
+      },
+      {
+        "id": "mrs-kplc-2026",
+        "title": "Procurement of Repair Service and Spare Parts for 2 No. ABC Medium Speed Diesel Engines for Marsabit Power Station",
+        "url": "https://kplc.co.ke/storage/01KTX6YW7KNSBY6GMAVRGFF1N0.pdf",
+        "publisher": "Kenya Power and Lighting Company",
+        "kind": "primary"
+      },
+      {
+        "id": "mrs-abb-presentation",
+        "title": "Renewables Automation Solutions, Battery Energy Storage and Microgrids",
+        "url": "https://slideplayer.com/slide/17588700/",
+        "publisher": "ABB presentation mirrored by SlidePlayer",
+        "kind": "archive"
+      }
+    ]
+  },
+  "mawson-station-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Mawson is the Australian Antarctic Division's year-round Antarctic research station microgrid. Two cold-climate Enercon E-30 wind turbines, each rated 300 kW on 30 m towers, entered service in 2003 and were integrated with the station diesel powerhouse by Powercorp controls. The system uses surplus wind in three 90 kW electric boilers for station heat, providing a controllable thermal sink rather than electrochemical battery storage. The first operating year reportedly cut fuel consumption about 27%, with wind averaging 44% of station electrical demand and supplying roughly 60% under typical winds. One turbine suffered a critical failure in 2017 and remains described by the division as unavailable; the surviving 300 kW unit was repaired and returned to full operation after a blade-motor fault in 2023.",
+    "status": "Operating wind-diesel station system with one of the original two 300 kW turbines available at the last authoritative equipment updates found. Diesel generator sets remain the backup and can run in parallel with wind. Original 600 kW wind nameplate should not be reported as current available wind capacity. No post-2023 public performance series or 2026 fuel/renewable fraction was found, and there is no evidence that the failed second turbine or the never-erected spare third turbine has entered service.",
+    "organizations": [
+      {
+        "name": "Australian Antarctic Division (AAD)",
+        "role": "Station owner/operator, project developer, foundation designer/builder, and current operator/maintainer.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-current",
+          "mws-aad-2023"
+        ]
+      },
+      {
+        "name": "Enercon",
+        "role": "Manufacturer of the E-30 turbines and specialist maintenance/support partner.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-current"
+        ]
+      },
+      {
+        "name": "Powercorp",
+        "role": "Designed and supplied the power-system switchboards, generator controls, turbine integration, and supervisory software.",
+        "sourceIds": [
+          "mws-aad-2004"
+        ]
+      },
+      {
+        "name": "Australian Government",
+        "role": "Funded the approximately A$6.5 million renewable-energy project through the Antarctic program.",
+        "sourceIds": [
+          "mws-aad-energy-2003"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original wind capacity",
+        "value": "600 kW installed from 2 x 300 kW Enercon E-30 turbines on 30 m towers.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-current"
+        ]
+      },
+      {
+        "label": "Current documented available wind capacity",
+        "value": "300 kW from one remaining turbine after a critical failure disabled the other in 2017; the surviving unit returned to full operation after repair in 2023.",
+        "sourceIds": [
+          "mws-aad-current",
+          "mws-aad-2023"
+        ]
+      },
+      {
+        "label": "Thermal diversion load",
+        "value": "3 x 90 kW electric boilers, 270 kW total, used to absorb excess wind energy and displace fuel otherwise used for heating.",
+        "sourceIds": [
+          "mws-aad-2017"
+        ]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "Legacy project catalogs report approximately 550 kW total diesel capacity, but the current AAD pages do not provide a present generator count, make/model, or aggregate rating; the legacy value is therefore not treated as a current equipment schedule.",
+        "sourceIds": [
+          "mws-catalog-archive",
+          "mws-aad-current"
+        ]
+      },
+      {
+        "label": "First-year wind contribution",
+        "value": "Reported average 44% of station electrical demand, approximately 60% under typical wind conditions, and peaks up to 80%.",
+        "sourceIds": [
+          "mws-aad-2004"
+        ]
+      },
+      {
+        "label": "First-year fuel reduction",
+        "value": "Approximately 27% compared with the prior diesel-only operation.",
+        "sourceIds": [
+          "mws-aad-2004"
+        ]
+      },
+      {
+        "label": "Original projected fuel/emissions benefit",
+        "value": "The 2003 project announcement projected annual diesel use falling from about 600,000 litres to below 200,000 litres and roughly 1,500 tonnes of CO2 avoided. These are forecasts, not measured current results.",
+        "sourceIds": [
+          "mws-aad-energy-2003"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E-30",
+        "detail": "Two specially adapted variable-speed 300 kW turbines designed for Antarctic cold and high winds; only one is documented available after 2017.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-current"
+        ]
+      },
+      {
+        "category": "Microgrid and generator controls",
+        "manufacturer": "Powercorp",
+        "detail": "Switchboards, engine controls, and supervisory software dynamically coordinate wind output, diesel generation, station load, and electric boilers.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-current"
+        ]
+      },
+      {
+        "category": "Electric boilers",
+        "detail": "Three 90 kW controllable boilers use surplus wind electricity for station heat and provide rapid balancing headroom.",
+        "sourceIds": [
+          "mws-aad-2017"
+        ]
+      },
+      {
+        "category": "Diesel generator sets",
+        "detail": "Multiple powerhouse generator sets provide backup and can operate in parallel with wind; current manufacturer, models, and ratings were not published in the sources reviewed.",
+        "sourceIds": [
+          "mws-aad-current",
+          "mws-aad-2017"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Commissioning",
+        "detail": "The wind project was formally opened on 3 March 2003 and integrated into the existing station powerhouse.",
+        "sourceIds": [
+          "mws-aad-2004"
+        ]
+      },
+      {
+        "category": "No battery storage",
+        "detail": "Published descriptions sometimes call the electric-boiler arrangement energy storage, but it is a flexible thermal load that converts surplus electricity to useful heat. No electrochemical BESS is documented.",
+        "sourceIds": [
+          "mws-aad-2004",
+          "mws-aad-2017"
+        ]
+      },
+      {
+        "category": "Third turbine clarification",
+        "detail": "A third turbine was delivered as part of the early project but was not erected because its foundation was not ready. Installed wind capacity was two turbines, not three.",
+        "sourceIds": [
+          "mws-aad-2004"
+        ]
+      },
+      {
+        "category": "Failure and recovery history",
+        "detail": "One turbine experienced a critical failure in 2017. In 2023 the other turbine had a blade-motor fault that AAD staff and Enercon support repaired, returning that unit to full operation.",
+        "sourceIds": [
+          "mws-aad-current",
+          "mws-aad-2023"
+        ]
+      },
+      {
+        "category": "Operating limitation",
+        "detail": "AAD has documented power interruptions when wind falls faster than the boiler controls can shed load, illustrating the balancing challenge of a small isolated wind-diesel system.",
+        "sourceIds": [
+          "mws-aad-2017"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No recent annual fuel consumption, measured renewable fraction after loss of the second turbine, current diesel schedule, or second-turbine replacement plan was found through July 2026.",
+        "sourceIds": [
+          "mws-aad-current",
+          "mws-aad-2023"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mws-aad-current",
+        "title": "Wind Power at Australian Antarctic Stations",
+        "url": "https://www.antarctica.gov.au/antarctic-operations/stations-and-field-locations/amenities-and-operations/renewable-energy/wind-power/",
+        "publisher": "Australian Antarctic Division",
+        "kind": "primary"
+      },
+      {
+        "id": "mws-aad-2004",
+        "title": "Mawson: Antarctica's First Wind-Powered Station",
+        "url": "https://www.antarctica.gov.au/magazine/issue-6-autumn-2004/feature/mawson-antarcticas-first-wind-powered-station/",
+        "publisher": "Australian Antarctic Division",
+        "kind": "primary"
+      },
+      {
+        "id": "mws-aad-energy-2003",
+        "title": "Energy in the Antarctic",
+        "url": "https://www.antarctica.gov.au/news/2003/energy-in-the-antarctic/",
+        "publisher": "Australian Antarctic Division",
+        "kind": "primary"
+      },
+      {
+        "id": "mws-aad-2017",
+        "title": "This Week at Mawson: 21 July 2017",
+        "url": "https://www.antarctica.gov.au/news/stations/mawson/2017/this-week-at-mawson-21-july-2017/",
+        "publisher": "Australian Antarctic Division",
+        "kind": "primary"
+      },
+      {
+        "id": "mws-aad-2023",
+        "title": "This Week at Mawson: 1 September 2023",
+        "url": "https://www.antarctica.gov.au/news/stations/mawson/2023/this-week-at-mawson-1-september-2023/",
+        "publisher": "Australian Antarctic Division",
+        "kind": "primary"
+      },
+      {
+        "id": "mws-catalog-archive",
+        "title": "Mawson Station Microgrid (Archived Project Record)",
+        "url": "https://web.archive.org/web/20210420195627id_/http://microgridprojects.com/microgrid/mawson-station-microgrid/",
+        "publisher": "Microgrid Projects / Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "maxwell-afb": {
+    "researchedAt": "2026-07-20",
+    "summary": "Maxwell Air Force Base in Alabama has multiple distinct microgrid/energy phases that should not be combined as one commissioned plant. The legacy CERTS research demonstration connected two existing 600 kW diesel generators in one building with a new 100 kW generator in another, creating a 1.3 MW two-building test system whose autonomous droop controls were successfully demonstrated without a central dispatch controller. Separately, a modern US$107.9 million energy-savings performance contract includes 4 MW of combined heat and power and broader efficiency/resilience work. A later DOE AFFECT award for the Gunter Annex is ongoing through July 2027 and now identifies 4.6 MWdc solar, a 5 MW/20 MWh BESS, and a microgrid controller; DOE's earlier selection description used approximately 5.5 MW of PV, indicating scope evolution.",
+    "status": "Multi-phase site. The CERTS configuration is a completed historical R&D demonstration, but the sources reviewed do not confirm that its exact three-generator topology remains in production service. The 4 MW CHP/ESPC is an executed modern infrastructure project, while the Gunter Annex solar-storage microgrid is an awarded, ongoing project rather than a commissioned asset; its grant period runs to 31 July 2027. No source found demonstrates current operation of the planned PV/BESS or permits adding those proposed capacities to the legacy 1.3 MW demonstration.",
+    "organizations": [
+      {
+        "name": "United States Air Force / Maxwell Air Force Base",
+        "role": "Site owner, host, and beneficiary of the legacy demonstration and modern resilience projects.",
+        "sourceIds": [
+          "max-lbnl-2015",
+          "max-doe-honorees-2026",
+          "max-highergov-award"
+        ]
+      },
+      {
+        "name": "Consortium for Electric Reliability Technology Solutions (CERTS)",
+        "role": "Developed the autonomous microgrid control concepts demonstrated at Maxwell.",
+        "sourceIds": [
+          "max-lbnl-2015",
+          "max-doe-2011"
+        ]
+      },
+      {
+        "name": "Lawrence Berkeley National Laboratory",
+        "role": "Research organization documenting and supporting the CERTS demonstration program.",
+        "sourceIds": [
+          "max-lbnl-2015"
+        ]
+      },
+      {
+        "name": "U.S. Department of Energy Federal Energy Management Program (FEMP)",
+        "role": "Recognized the modern ESPC and selected/funded the Gunter Annex resilience expansion through AFFECT.",
+        "sourceIds": [
+          "max-doe-honorees-2026",
+          "max-doe-affect"
+        ]
+      },
+      {
+        "name": "Gunter Annex",
+        "role": "Maxwell AFB sub-installation hosting the awarded solar, battery, and microgrid-controller project.",
+        "sourceIds": [
+          "max-doe-affect",
+          "max-highergov-award"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Legacy CERTS generation",
+        "value": "1.3 MW total: 2 x 600 kW existing diesel generator sets plus one new 100 kW CERTS generator set across two buildings.",
+        "sourceIds": [
+          "max-lbnl-2015"
+        ]
+      },
+      {
+        "label": "Modern combined heat and power",
+        "value": "4 MW CHP included in the US$107.9 million Maxwell AFB energy-savings performance contract.",
+        "sourceIds": [
+          "max-doe-honorees-2026"
+        ]
+      },
+      {
+        "label": "Gunter Annex planned solar",
+        "value": "Current award data identify 4.6 MWdc. DOE's earlier AFFECT selection description said approximately 5.5 MW; use 4.6 MWdc for the awarded scope while retaining the earlier value as a dated proposal.",
+        "sourceIds": [
+          "max-doe-affect",
+          "max-highergov-award"
+        ]
+      },
+      {
+        "label": "Gunter Annex planned battery",
+        "value": "5 MW / 20 MWh BESS, a nominal four-hour power-to-energy ratio, in the ongoing award scope.",
+        "sourceIds": [
+          "max-highergov-award"
+        ]
+      },
+      {
+        "label": "ESPC projected savings",
+        "value": "34.8 GWh annual electricity savings and US$109.5 million over 21 years, as DOE-reported projections for the broader performance contract rather than measured microgrid production.",
+        "sourceIds": [
+          "max-doe-honorees-2026"
+        ]
+      },
+      {
+        "label": "AFFECT award",
+        "value": "US$10 million federal award beginning in August 2025 and listed as ongoing through 31 July 2027.",
+        "sourceIds": [
+          "max-highergov-award"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Legacy diesel generators",
+        "detail": "Two existing 600 kW units and one new 100 kW unit used in the CERTS two-building demonstration; manufacturers and models were not disclosed in the research overview.",
+        "sourceIds": [
+          "max-lbnl-2015"
+        ]
+      },
+      {
+        "category": "Legacy microgrid controls",
+        "manufacturer": "CERTS",
+        "detail": "Autonomous peer-to-peer/droop control allowed sources to share load and transition without reliance on a central command-and-control system.",
+        "sourceIds": [
+          "max-lbnl-2015",
+          "max-doe-2011"
+        ]
+      },
+      {
+        "category": "Combined heat and power",
+        "detail": "Modern 4 MW CHP installation; prime mover, fuel, heat-recovery configuration, and manufacturer/model were not identified on the DOE recognition page.",
+        "sourceIds": [
+          "max-doe-honorees-2026"
+        ]
+      },
+      {
+        "category": "Planned photovoltaic system",
+        "detail": "Awarded 4.6 MWdc Gunter Annex array; module, inverter, and EPC suppliers were not disclosed in the sources reviewed.",
+        "sourceIds": [
+          "max-highergov-award"
+        ]
+      },
+      {
+        "category": "Planned battery energy storage",
+        "detail": "5 MW / 20 MWh BESS intended to support the entirety of Gunter Annex during grid loss and to perform time-of-use charging/discharging; chemistry and manufacturer were not disclosed.",
+        "sourceIds": [
+          "max-highergov-award"
+        ]
+      },
+      {
+        "category": "Planned microgrid controller",
+        "detail": "Controller for Gunter Annex solar, BESS, facility loads, and grid-island operation; supplier and model were not disclosed.",
+        "sourceIds": [
+          "max-doe-affect",
+          "max-highergov-award"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Phase separation",
+        "detail": "The historical 1.3 MW CERTS demonstration, the modern 4 MW CHP ESPC, and the awarded Gunter Annex PV-BESS microgrid are separate scopes and dates. Their capacities must not be summed as if one simultaneously commissioned microgrid.",
+        "sourceIds": [
+          "max-lbnl-2015",
+          "max-doe-honorees-2026",
+          "max-highergov-award"
+        ]
+      },
+      {
+        "category": "Legacy research result",
+        "detail": "The CERTS work successfully validated autonomous source control and a sectionalized two-building microgrid using three generators without central dispatch.",
+        "sourceIds": [
+          "max-lbnl-2015"
+        ]
+      },
+      {
+        "category": "Modern resilience design",
+        "detail": "The Gunter Annex award couples PV, a four-hour BESS, and a controller so the battery can serve the annex during loss of grid power while also shifting energy by time of use in normal operation.",
+        "sourceIds": [
+          "max-highergov-award"
+        ]
+      },
+      {
+        "category": "Scope evolution",
+        "detail": "DOE's selection-stage description used approximately 5.5 MW PV; the later award record uses 4.6 MWdc. The later award value is more specific, but neither is evidence of installed capacity before commissioning.",
+        "sourceIds": [
+          "max-doe-affect",
+          "max-highergov-award"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No commissioning date, equipment vendor schedule, actual CHP performance, operational PV/BESS data, or confirmation that the old CERTS topology remains in service was found through July 2026.",
+        "sourceIds": [
+          "max-doe-honorees-2026",
+          "max-highergov-award"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "max-lbnl-2015",
+        "title": "Microgrids: An Overview of Ongoing Research, Development, and Demonstration Projects",
+        "url": "https://www.osti.gov/servlets/purl/1210908",
+        "publisher": "Lawrence Berkeley National Laboratory / U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "max-doe-2011",
+        "title": "Microgrids and Distributed Energy Resources: CERTS Microgrid Concepts and Maxwell AFB",
+        "url": "https://www.energy.gov/documents/eac-presentation-microgrids-2011-lasseterpdf",
+        "publisher": "U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "max-doe-honorees-2026",
+        "title": "2025 Federal Energy and Water Management Awards Spotlight Honorees",
+        "url": "https://www.energy.gov/cmei/femp/2025-feds-spotlight-honorees",
+        "publisher": "U.S. Department of Energy Federal Energy Management Program",
+        "kind": "primary"
+      },
+      {
+        "id": "max-doe-affect",
+        "title": "Assisting Federal Facilities with Energy Conservation Technologies (AFFECT) Phase 2 Projects",
+        "url": "https://www.energy.gov/cmei/femp/assisting-federal-facilities-energy-conservation-technologies-affect-phase-2-project",
+        "publisher": "U.S. Department of Energy Federal Energy Management Program",
+        "kind": "primary"
+      },
+      {
+        "id": "max-highergov-award",
+        "title": "Federal Award DE-SE0001781: Maxwell AFB Gunter Annex Microgrid",
+        "url": "https://www.highergov.com/grant/DESE0001781/",
+        "publisher": "HigherGov",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "mendare-village-karnatanka-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This project is the Mendare village DC pico-grid in the Male Mahadeshwara Hills near Mysore, Karnataka, India; the slug's `Karnatanka` is a misspelling of Karnataka. SELCO project material documents 600 Wp of solar (two 300 W modules), four 12 V 200 Ah batteries in series as a 48 V/200 Ah bank, a Phocos 48 V charge controller, overhead 48 V DC distribution, and basic LED/mobile-phone service for 22 Soliga-community houses. The underlying equipment schedule therefore contradicts legacy catalog headlines of 1 kW solar and 800 Ah storage: series-connected batteries increase voltage, not ampere-hour capacity. Field research in 2016-17 described Mendare as an operating 0.6 kW lighting pico-grid serving about 20 customers, with evening-only service and limited productive use.",
+    "status": "Historically installed and independently observed operating during 2016-17 fieldwork. A project catalog continues to label it operational, but no recent operator log, battery-replacement record, remote-monitoring data, customer count, or 2026 field verification was found. Current operating status is therefore unverified; retain the project as a small lighting-focused DC pico-grid rather than a 1 kW AC microgrid.",
+    "organizations": [
+      {
+        "name": "SELCO Foundation",
+        "role": "Project developer/designer and owner or coordinating ESCO for the solar DC pico-grid.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study"
+        ]
+      },
+      {
+        "name": "SELCO India, Mysore branch",
+        "role": "Local technical/service support organization named in project documentation.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "name": "MYRADA",
+        "role": "Local NGO partner supporting community engagement, fee collection, and field implementation.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study",
+          "men-catalog"
+        ]
+      },
+      {
+        "name": "Armstrong Energy Foundation",
+        "role": "Grant funder identified in the legacy project record, which reports approximately Rs 380,000 in capital support.",
+        "sourceIds": [
+          "men-catalog"
+        ]
+      },
+      {
+        "name": "Mendare Soliga community",
+        "role": "Village users and participants in local payment and oversight arrangements.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Photovoltaic capacity",
+        "value": "600 Wp from 2 x 300 W modules connected for a 48 V DC system. The 1 kW catalog headline conflicts with the component schedule and field study.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study",
+          "men-catalog"
+        ]
+      },
+      {
+        "label": "Battery bank",
+        "value": "4 x 12 V, 200 Ah batteries connected in series: 48 V and 200 Ah, or 9.6 kWh nominal by arithmetic. Usable energy, chemistry, depth of discharge, and current condition were not published. The catalog's 800 Ah headline incorrectly sums series-connected Ah ratings.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-catalog"
+        ]
+      },
+      {
+        "label": "Distribution",
+        "value": "48 V DC overhead distribution with fused household branches; no AC inverter is identified in the documented design.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "label": "Household service package",
+        "value": "Two 3 W LED lights plus one 48 V mobile-phone charging point per house.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "label": "Customers/houses",
+        "value": "SELCO slides describe 22 houses; the later field study reports 20 customers. The small discrepancy is retained as a dated difference rather than forced to one count.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study"
+        ]
+      },
+      {
+        "label": "Operating hours",
+        "value": "Field research reported service from about 5 p.m. to midnight, consistent with a lighting/phone-charging pico-grid rather than continuous productive-power service.",
+        "sourceIds": [
+          "men-field-study"
+        ]
+      },
+      {
+        "label": "Capital support and payment model",
+        "value": "Project descriptions identify CSR/grant subsidy and annual or monthly community payments; one legacy record reports a Rs 380,000 grant and approximately Rs 1,000 per household per year. Current tariff collection was not verified.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-catalog"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic modules",
+        "manufacturer": "Emmvee",
+        "detail": "Two 300 W modules mounted in a raised configuration and wired for the 48 V DC system.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "category": "Battery storage",
+        "manufacturer": "Primetech",
+        "detail": "Four 12 V, 200 Ah batteries in series; model and chemistry were not specified in the project slides.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "category": "Charge controller",
+        "manufacturer": "Phocos",
+        "model": "CR 48 V",
+        "detail": "48 V charge controller for the PV and centralized battery bank.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "category": "End-use equipment",
+        "detail": "Low-power 3 W LED lamps and 48 V mobile chargers supplied at household level.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "category": "Monitoring and control",
+        "detail": "Centralized data logger with remote monitoring/control capability; vendor, communications method, and surviving telemetry access were not disclosed.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Identity",
+        "detail": "Mendare is a Soliga tribal settlement in the Male Mahadeshwara Hills of Karnataka. It should not be conflated with other SELCO `Community Mini-Grid: Karnataka` projects that use different 1.2 kW/96 V configurations.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study"
+        ]
+      },
+      {
+        "category": "Capacity correction",
+        "detail": "The 600 Wp PV value is supported both by the component schedule and field study. Four 200 Ah batteries in series remain a 200 Ah string; 800 Ah is not the bank capacity unless strings are parallel, which the project diagram does not show.",
+        "sourceIds": [
+          "men-selco-slides",
+          "men-field-study",
+          "men-catalog"
+        ]
+      },
+      {
+        "category": "Architecture",
+        "detail": "A centralized PV/battery enclosure feeds a low-voltage DC overhead network. Household fuses and highly constrained end-use packages limit demand and avoid inverter conversion losses.",
+        "sourceIds": [
+          "men-selco-slides"
+        ]
+      },
+      {
+        "category": "Observed outcome",
+        "detail": "The 2016-17 field study found the pico-grid operating and useful for lighting, but its small capacity and evening schedule provided little productive-use energy or broader livelihood transformation.",
+        "sourceIds": [
+          "men-field-study"
+        ]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "Commissioning date, current operating status, battery replacement interval, measured solar yield, outage history, collected tariffs, and remote-logger data were not established by recent authoritative sources.",
+        "sourceIds": [
+          "men-field-study",
+          "men-catalog"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "men-selco-slides",
+        "title": "Microgrid Site Summaries",
+        "url": "https://www.slideshare.net/slideshow/microgrid-site-summaries/61200723",
+        "publisher": "SELCO Foundation (presentation mirrored by SlideShare)",
+        "kind": "primary"
+      },
+      {
+        "id": "men-field-study",
+        "title": "Lighting the Last Mile: A Study of Solar PV Micro-Grids",
+        "url": "https://www.researchgate.net/publication/372629093_LIGHTING_THE_LAST_MILE_A_Study_of_Solar_PV_Micro-Grids",
+        "publisher": "Independent field research",
+        "kind": "primary"
+      },
+      {
+        "id": "men-catalog",
+        "title": "Mendare Village Karnatanka Microgrid",
+        "url": "https://microgridprojects.com/projects/mendare-village-karnatanka-microgrid",
+        "publisher": "Microgrid Projects",
+        "kind": "secondary"
+      }
+    ]
+  }
+}

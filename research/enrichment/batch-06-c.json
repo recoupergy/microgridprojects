@@ -1,0 +1,1322 @@
+{
+  "necker-island-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Necker Island's private-island microgrid was built in at least two documented stages, rather than as the archived 700 kW-solar/300 kW-wind configuration. Modeselekt reports a 2015 first phase with 350 kW of solar PV, 900 kW of diesel generation, desalination and integrated controls, followed by a 2019 phase that added 900 kW of wind, 1.2 MWh of battery storage, a second desalination plant and controllable thermal/water loads. An earlier 2014 NRG/Virgin agreement and 2015-2019 planning documents describe changing targets, not the final as-built equipment list.",
+    "status": "Operational according to the latest project-integrator account located. Modeselekt says the combined system remains in operation, can run on 100% renewable energy on many days, and has reduced annual diesel use by an average of 90%. Those are supplier-reported results without a disclosed baseline, audit, annual MWh series or fuel-volume dataset. The first phase also survived Hurricane Irma in 2017 with its controls/data intact and resumed operation when personnel could safely restart generation and desalination. No independent 2024-2026 availability, battery-health or turbine-performance report was found.",
+    "organizations": [
+      {
+        "name": "Virgin Limited Edition / Necker Island",
+        "role": "Island owner/client and operator of the resort and its utility loads.",
+        "sourceIds": ["b06c-necker-nrg-2014", "b06c-necker-mode-p1", "b06c-necker-mode-p2"]
+      },
+      {
+        "name": "Modeselekt",
+        "role": "Designed and implemented the phase-one and phase-two integration, communications and control systems and published the principal as-built/current project accounts.",
+        "sourceIds": ["b06c-necker-mode-p1", "b06c-necker-mode-p2"]
+      },
+      {
+        "name": "NRG Energy",
+        "role": "Signed a 2014 agreement with Virgin Limited Edition to develop an integrated renewable system. The announcement describes an approval-dependent development scope; reviewed sources do not establish which later as-built assets, if any, NRG supplied.",
+        "sourceIds": ["b06c-necker-nrg-2014"]
+      },
+      {
+        "name": "Carbon War Room / Rocky Mountain Institute",
+        "role": "Included Necker in the Ten Island Challenge and documented an early-phase snapshot and planned additions; its older figures are useful for chronology but are not final as-built ratings.",
+        "sourceIds": ["b06c-necker-rmi"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Phase 1, commissioned 2015",
+        "value": "350 kW solar PV, 900 kW diesel generation, an integrated desalination plant and island control/communications infrastructure",
+        "sourceIds": ["b06c-necker-mode-p1"]
+      },
+      {
+        "label": "Phase 2, commissioned 2019",
+        "value": "900 kW combined wind capacity, 1.2 MWh battery storage, a second desalination plant described as a 'water battery,' and controllable pool-heat-pump/thermal loads",
+        "sourceIds": ["b06c-necker-mode-p2"]
+      },
+      {
+        "label": "Historical planning figures versus as-built record",
+        "value": "RMI's earlier snapshot listed roughly 300 kW solar installed and planned 900 kW wind plus 500 kWh storage; the 2019 BVI R-NETS report repeated 300 kW/900 kW/500 kWh planning values. The archived database instead listed 700 kW solar and 300 kW wind. None matches Modeselekt's later phase-by-phase as-built account, so the archived capacities should be replaced rather than added to it.",
+        "sourceIds": ["b06c-necker-rmi", "b06c-necker-bvi-rnets", "b06c-necker-archive", "b06c-necker-mode-p1", "b06c-necker-mode-p2"]
+      },
+      {
+        "label": "Reported operating outcome",
+        "value": "Supplier-reported average annual diesel reduction of 90%, with 100% renewable operation on many days; no audited annual renewable fraction or fuel baseline was published",
+        "sourceIds": ["b06c-necker-mode-p2"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Generation and storage",
+        "detail": "Solar PV, diesel generators, wind turbines and battery storage form the electrical supply. Reviewed public sources do not identify PV module/inverter models, diesel-generator models, turbine manufacturer/models, battery power rating, chemistry, manufacturer or usable energy.",
+        "sourceIds": ["b06c-necker-mode-p1", "b06c-necker-mode-p2"]
+      },
+      {
+        "category": "Flexible water and thermal loads",
+        "detail": "Two desalination plants and pool heat pumps are dispatchable loads. Phase two treats stored fresh water as a 'water battery,' shifting desalination to periods of abundant renewable production.",
+        "sourceIds": ["b06c-necker-mode-p2"]
+      },
+      {
+        "category": "Controls and communications",
+        "manufacturer": "Modeselekt",
+        "detail": "A staged island control and network architecture integrates generation, storage and controllable loads. The public case studies do not name controller hardware or publish dispatch logic, telemetry intervals or cybersecurity details.",
+        "sourceIds": ["b06c-necker-mode-p1", "b06c-necker-mode-p2"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "2014 development scope",
+        "detail": "NRG's agreement targeted at least 75% renewable energy and described solar, wind, storage, diesel backup, efficiency and automated controls, subject to British Virgin Islands approval. It should be treated as a development announcement, not evidence that its unspecified design was commissioned.",
+        "sourceIds": ["b06c-necker-nrg-2014"]
+      },
+      {
+        "category": "Hurricane Irma experience",
+        "detail": "Modeselekt reports that Irma severed external communications in 2017 but the internal microgrid network continued collecting data and functioning; generation, desalination and solar were restarted when the island was safe to access. The account does not provide outage hours, damaged-equipment inventory or an independent resilience audit.",
+        "sourceIds": ["b06c-necker-mode-p1"]
+      },
+      {
+        "category": "Early solar result",
+        "detail": "RMI's older case study attributed a 15-20% diesel reduction to the initial roughly 300 kW solar installation and projected a future 75% renewable system. That historical result predates the larger wind/storage phase and is not a current-system performance figure.",
+        "sourceIds": ["b06c-necker-rmi"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No public annual generation by source, peak/average load, fuel litres, curtailment, storage state of health, component availability, operating-cost savings or verified renewable fraction through July 2026 was located.",
+        "sourceIds": ["b06c-necker-mode-p2", "b06c-necker-rmi"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-necker-mode-p1",
+        "title": "Necker Island Phase 1",
+        "url": "https://www.modeselekt.com/projects/necker-island-phase-1/",
+        "publisher": "Modeselekt",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-necker-mode-p2",
+        "title": "Necker Island Microgrid Phase 2",
+        "url": "https://www.modeselekt.com/projects/necker-island-microgrid-phase-2/",
+        "publisher": "Modeselekt",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-necker-nrg-2014",
+        "title": "NRG Energy Signs Deal with Virgin Limited Edition to Power Necker Island with Renewable Energy",
+        "url": "https://investors.nrg.com/news-releases/news-release-details/nrg-energy-signs-deal-virgin-limited-edition-power-necker-island",
+        "publisher": "NRG Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-necker-rmi",
+        "title": "Renewable Microgrids: Profiles from Islands and Remote Communities Across the Globe",
+        "url": "https://energycommunityplatform.eu/wp-content/uploads/2022/09/Renewable-Microgrids-1.pdf",
+        "publisher": "Rocky Mountain Institute / Carbon War Room",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-necker-bvi-rnets",
+        "title": "British Virgin Islands Renewable Energy National Targets, Strategies and Action Plan",
+        "url": "https://bvielectricity.com/wp-content/uploads/2021/05/BVI-R-NETS-June-2019.pdf",
+        "publisher": "Government of the Virgin Islands / BVI Electricity Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-necker-archive",
+        "title": "Archived Necker Island Microgrid record",
+        "url": "https://web.archive.org/web/20200706000524id_/http://microgridprojects.com/microgrid/necker-island-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "neelakantarayanagaddi-village-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "SELCO Foundation's Neelakantarayanagaddi project is a very small centralized 48 VDC solar microgrid built for 41 houses plus a school and three temples in a river-island village in Karnataka's Yadgir area. The documented design uses 1.2 kWp of EmmVee PV, Primetech batteries, a Phocos 48 V controller, overhead DC distribution, 3 W LED lights, phone charging, per-house fuses and both local and remote timing/monitoring. The archived '1,600 Ah' storage label is electrically misleading, and the source deck itself contains an unresolved energy-versus-Ah conflict.",
+    "status": "The system was documented as installed and operating in SELCO's 2014-2016 program material, but no reliable site-specific 2024-2026 operating report was found. A 2016 report said residents crossed to the mainland to charge mobile phones while monsoon flooding isolated the village. That raises a service-availability question but does not establish whether the microgrid had failed, lacked sufficient charging capacity, or was unavailable to those residents. Present battery condition, replacements, collections, expansion and grid arrival remain unknown; the record should not continue to label the project operational without qualification.",
+    "organizations": [
+      {
+        "name": "SELCO Foundation",
+        "role": "Program designer, technical implementer and author of the detailed case-study material.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-selco-current"]
+      },
+      {
+        "name": "Armstrong Energy Foundation",
+        "role": "Reported grant funder, contributing approximately INR 600,000.",
+        "sourceIds": ["b06c-neela-mgp"]
+      },
+      {
+        "name": "Local business associate, entrepreneur and village committee",
+        "role": "The local business associate reportedly contributed about INR 100,000; a village representative collected fixed monthly payments and the entrepreneur manually set service times and handled local operation.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar array",
+        "value": "1.2 kWp: four 300 W, 24 V EmmVee modules on a raised mounting structure",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "label": "Battery source conflict",
+        "value": "The case material lists eight 12 V, 200 Ah Primetech batteries and elsewhere a 48 V, 400 Ah bank, which would equal 19.2 kWh nominal; the same deck also labels storage as 9.6 kWh. The archived record's 1,600 Ah is merely the sum of eight battery Ah ratings and is not a valid bank rating. The reviewed sources do not reconcile whether the 9.6 kWh figure reflects an earlier four-battery configuration, usable energy, or a documentation error.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp", "b06c-neela-archive"]
+      },
+      {
+        "label": "Customers and loads",
+        "value": "41 houses, one school and three temples; household service was designed around one or two 48 VDC, 3 W LED lights and a 48 VDC mobile-phone charger",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "label": "Tariff and finance",
+        "value": "A fixed monthly service-package fee was collected locally; surviving summaries report approximately INR 50-100 per month depending on package. Armstrong Energy Foundation reportedly provided INR 600,000 and the local business associate INR 100,000, with collections intended for maintenance and future expansion.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "PV modules",
+        "manufacturer": "EmmVee",
+        "detail": "Four 300 W, 24 V modules, described as series-connected and installed on a raised metal mounting structure for protection.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "category": "Battery bank",
+        "manufacturer": "Primetech",
+        "detail": "Eight 12 V, 200 Ah batteries are listed. The public material does not identify battery model, chemistry, date of replacement, allowable depth of discharge or present state of health.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "category": "Charge controller",
+        "manufacturer": "Phocos",
+        "model": "CR 48 V",
+        "detail": "DC charge regulation at the central plant; no AC inverter is needed for the documented 48 VDC load architecture.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "category": "End-use equipment",
+        "detail": "48 VDC 3 W LED lamps and 48 VDC phone chargers. The nonstandard voltage improved distribution efficiency for tiny loads but the program deck flags replacement-device availability as a challenge.",
+        "sourceIds": ["b06c-neela-selco-deck"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Distribution and protection",
+        "detail": "The centralized plant supplies 48 VDC through overhead wiring. Service lines enter a junction box in each house and individual fuses limit household power draw.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "category": "Controls and monitoring",
+        "detail": "An entrepreneur manually controlled service timing, while a centralized data logger allowed remote monitoring, data collection and remote changes to system timing. Public material does not identify modem/network type, controller make, alarm response or historical telemetry.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-mgp"]
+      },
+      {
+        "category": "Operating model and lessons",
+        "detail": "SELCO emphasized simple, robust designs, locally held spares and a strong community partner. Its own lessons note that specialized 48 V loads can be difficult to replace and that ongoing support is essential.",
+        "sourceIds": ["b06c-neela-selco-deck"]
+      },
+      {
+        "category": "Community isolation",
+        "detail": "The village is periodically cut off when the river rises. A 2016 news report described residents going to the mainland for phone charging during isolation; this is a contemporaneous service signal but not a diagnostic record of the microgrid.",
+        "sourceIds": ["b06c-neela-toi-2016"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No recent generation, load, battery replacement, uptime, collections, customer-growth or utility-grid interconnection data was found. Commissioning date is also not unambiguously stated in the reviewed material.",
+        "sourceIds": ["b06c-neela-selco-deck", "b06c-neela-toi-2016"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-neela-selco-deck",
+        "title": "Microgrid Site Summaries",
+        "url": "https://www.slideshare.net/slideshow/microgrid-site-summaries/61200723",
+        "publisher": "SELCO Foundation (reposted by SlideShare)",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-neela-mgp",
+        "title": "Neelakantarayanagaddi Village Microgrid",
+        "url": "https://microgridprojects.com/microgrid/neelakantarayanagaddi-village-microgrid/",
+        "publisher": "MicrogridProjects.com",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-neela-toi-2016",
+        "title": "Pregnant Yallamma won't swim to mainland this time",
+        "url": "https://timesofindia.indiatimes.com/city/hubballi/pregnant-yallamma-wont-swim-to-mainland-this-time/articleshow/53567494.cms",
+        "publisher": "The Times of India",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-neela-selco-current",
+        "title": "SELCO Foundation",
+        "url": "https://selcofoundation.org/",
+        "publisher": "SELCO Foundation",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-neela-archive",
+        "title": "Archived Neelakantarayanagaddi Village Microgrid record",
+        "url": "https://web.archive.org/web/20210228035525id_/http://microgridprojects.com/microgrid/neelakantarayanagaddi-village-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "new-york-affordable-housing-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The generic archived name refers to the Marcus Garvey Apartments/Village distributed-energy system at 353 Chester Street in Brooklyn. NYSERDA's current DER registry identifies 479.7 kW of solar PV, two 210 kW Bloom natural-gas fuel cells and a 300 kW/1,200 kWh lithium-ion battery. The assets are coordinated for demand-charge management and Consolidated Edison's Brooklyn-Queens Demand Management program, while selected community/management spaces can be supplied during outages. Rounded case studies often say 400 kW solar and 400 kW fuel cell; those are nominal marketing figures, not additional assets.",
+    "status": "Operational asset with public evidence extending beyond its 2017 commissioning, though recent device-level operating data is limited. NYSERDA's registry records the three technologies and their commercial dates; a state climate case study retrieved in 2024 continues to present it as an operating resilience project. NYSERDA monitoring windows ended in March 2020 for fuel cells and March 2021 for solar, so neither those dates nor the current registry prove continuous output after them. No 2024-2026 battery state-of-health, availability, outage-islanding result or annual energy balance was found.",
+    "organizations": [
+      {
+        "name": "L+M Development Partners / Marcus Garvey Partners LLC",
+        "role": "Property developer/owner and project host; Marcus Garvey Partners is identified as the power-purchase-agreement counterparty.",
+        "sourceIds": ["b06c-marcus-nyserda-case", "b06c-marcus-nyceec-2017"]
+      },
+      {
+        "name": "Demand Energy / EnerNOC / Enel X",
+        "role": "Battery developer and energy-services provider and supplier of the DEN.OS distributed-energy operating platform; corporate ownership/name changed after commissioning.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyceec-2017"]
+      },
+      {
+        "name": "Bright Power",
+        "role": "Solar developer/energy-efficiency partner listed by NYSERDA.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyserda-case"]
+      },
+      {
+        "name": "Bloom Energy",
+        "role": "Supplier of the two natural-gas solid-oxide fuel-cell systems.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-bloom"]
+      },
+      {
+        "name": "Consolidated Edison",
+        "role": "Distribution utility and provider of approximately $540,000 in Brooklyn-Queens Demand Management incentives for peak reduction.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyceec-2017"]
+      },
+      {
+        "name": "New York City Energy Efficiency Corporation",
+        "role": "Provided a $1.2 million, ten-year loan toward the approximately $1.3 million battery project, closing in December 2016.",
+        "sourceIds": ["b06c-marcus-nyceec-deal", "b06c-marcus-nyceec-2017"]
+      },
+      {
+        "name": "New York State Energy Research and Development Authority",
+        "role": "Maintains the authoritative DER registry and published a project case study.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyserda-case"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar PV",
+        "value": "479.7 kW in NYSERDA's detailed registry (displayed as 480 kW); project narratives commonly round this to 479 or 400 kW",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyserda-case", "b06c-marcus-climate"]
+      },
+      {
+        "label": "Fuel cells",
+        "value": "420 kW total in NYSERDA's registry: two 210 kW Bloom Energy ES5-BABAA0 units using natural gas and configured without export; case studies round the total to 400 kW",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-bloom", "b06c-marcus-climate"]
+      },
+      {
+        "label": "Battery energy storage",
+        "value": "300 kW / 1,200 kWh lithium-ion, a four-hour nameplate ratio, commercially operating from June 2017",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyserda-case"]
+      },
+      {
+        "label": "Site and load boundary",
+        "value": "625 apartments in 32 buildings across nine blocks; state case material gives roughly 1.5 MW summer and 3 MW winter peak demand, so the approximately 1.1 MW DER portfolio does not make the property normally grid-independent",
+        "sourceIds": ["b06c-marcus-climate"]
+      },
+      {
+        "label": "Reported peak-demand result",
+        "value": "NYCEEC reports an average 207 kW peak reduction, approximately 15%, and $26,268 annual savings for the battery financing case. The case material does not publish interval data or distinguish clearly between forecast and post-commissioning measurement for every figure.",
+        "sourceIds": ["b06c-marcus-nyceec-deal", "b06c-marcus-nyceec-2017"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Fuel cells",
+        "manufacturer": "Bloom Energy",
+        "model": "ES5-BABAA0",
+        "detail": "Two 210 kW natural-gas units. NYSERDA records them as non-exporting resources.",
+        "sourceIds": ["b06c-marcus-nyserda-der"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Three outdoor lithium-ion battery blocks are shown in the commissioning-era operations dashboard. The archived record names LG Chem, but the current NYSERDA registry and reviewed case studies do not provide a cell/rack model or independently verify that manufacturer.",
+        "sourceIds": ["b06c-marcus-nyceec-2017", "b06c-marcus-nyserda-der", "b06c-marcus-archive"]
+      },
+      {
+        "category": "Energy management system",
+        "manufacturer": "Demand Energy",
+        "model": "DEN.OS (Distributed Energy Network Operating System)",
+        "detail": "Coordinates battery charging/discharging and site DER for demand-charge and grid-program value. Public sources do not disclose controller hardware, optimization source code or communications/cybersecurity architecture.",
+        "sourceIds": ["b06c-marcus-nyceec-2017"]
+      },
+      {
+        "category": "Solar equipment",
+        "detail": "Rooftop PV is distributed around the property. Reviewed sources do not identify module, inverter, racking or rapid-shutdown models.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyserda-case"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Economic dispatch",
+        "detail": "The battery generally charges during lower-cost/off-peak periods and discharges during higher-demand periods. It also participates in Con Edison's Brooklyn-Queens Demand Management program; NYSERDA lists demand-charge reduction as the other principal value stream.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-nyceec-2017"]
+      },
+      {
+        "category": "Resilience service",
+        "detail": "During a grid outage the project is designed to support a security office, management office and community room, providing heat, light, phone charging and medicine refrigeration for up to about 12 hours. That duration applies to selected critical loads, not all 625 apartments.",
+        "sourceIds": ["b06c-marcus-nyserda-case", "b06c-marcus-climate"]
+      },
+      {
+        "category": "Commissioning significance",
+        "detail": "NYSERDA described the 2017 system as New York City's first permitted outdoor lithium-ion installation and a pioneering low-income multifamily microgrid. Historical-first claims do not themselves establish current performance.",
+        "sourceIds": ["b06c-marcus-nyserda-case"]
+      },
+      {
+        "category": "Observed dispatch example",
+        "detail": "NYSERDA's case study shows material reduction of the property's evening peak between roughly 8 p.m. and midnight on a peak summer day in 2018, but does not provide a full-year interval dataset.",
+        "sourceIds": ["b06c-marcus-nyserda-case"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No current battery capacity test, cycle count, fuel-cell availability/fuel use, annual PV output, outage-islanding event report, tenant bill dataset or 2024-2026 operating-cost statement was located.",
+        "sourceIds": ["b06c-marcus-nyserda-der", "b06c-marcus-climate"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-marcus-nyserda-der",
+        "title": "Marcus Garvey Apartments (DER Integrated Data System facility 422)",
+        "url": "https://der.nyserda.ny.gov/facilities/422/",
+        "publisher": "NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-nyserda-case",
+        "title": "Marcus Garvey Village Microgrid Case Study",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/files/Publications/MarcusGarvey-cs.pdf",
+        "publisher": "NYSERDA",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-climate",
+        "title": "Marcus Garvey Village Microgrid",
+        "url": "https://nysclimateimpacts.org/explore-the-assessment/case-studies/marcus-garvey-village-microgrid/",
+        "publisher": "New York State Climate Impacts Assessment",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-nyceec-2017",
+        "title": "Marcus Garvey Apartments Battery Storage Case Study",
+        "url": "https://www.nyceec.com/wp-content/uploads/Marcus-Garvey-Apartments-NYCEEC-Case-Study-1.pdf",
+        "publisher": "New York City Energy Efficiency Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-nyceec-deal",
+        "title": "Deal Spotlight: Marcus Garvey Apartments",
+        "url": "https://nyceec.com/deal-spotlight/marcus-garvey-apartments/",
+        "publisher": "New York City Energy Efficiency Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-bloom",
+        "title": "2020 Sustainability Report",
+        "url": "https://www.bloomenergy.com/wp-content/uploads/2020-bloom-energy-sustainability-report.pdf",
+        "publisher": "Bloom Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-marcus-archive",
+        "title": "Archived New York Affordable Housing Microgrid record",
+        "url": "https://web.archive.org/web/20210420185427id_/http://microgridprojects.com/microgrid/new-york-affordable-housing-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "niobrara-energy-park-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Niobrara Energy Park near Carr in northern Weld County, Colorado, was a shovel-ready industrial/data-center development concept, not an operating microgrid. Harrison Resource Corporation and related entities obtained land-use and gas-pipeline approvals and marketed roughly 640-662 acres for natural-gas generation, cogeneration, solar, wind, geothermal, storage, research and data centers. Capacity concepts changed substantially between sources; no reviewed evidence shows that the archived 50 MW solar, 30 MW wind and 650 MW gas/diesel configuration was procured or built.",
+    "status": "Original proposal not built and effectively superseded. Contemporary releases continued to market the site to a buyer or joint-venture developer years after approval, and NCMC Inc. purchased the full 662-acre property from Niobrara Energy Park LLC in August 2019 for $4.9 million as a real-estate investment. No evidence was found that Harrison commissioned generation before the sale or that NCMC subsequently built the proposed microgrid through July 2026. Current disposition of individual parcels and any non-energy development requires county-title research beyond the public project record.",
+    "organizations": [
+      {
+        "name": "Harrison Resource Corporation / Niobrara Energy Park LLC",
+        "role": "Original developer, land-use applicant and marketer of the energy/data-center park concept; Craig Harrison was identified as project principal.",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-weld-2012", "b06c-niobrara-ch2m-2011"]
+      },
+      {
+        "name": "CH2M HILL / IDC Architects",
+        "role": "Retained in 2011 for visioning and master-planning work after numerous feasibility studies; this was design/marketing work, not EPC evidence.",
+        "sourceIds": ["b06c-niobrara-ch2m-2011"]
+      },
+      {
+        "name": "Niobrara NatGas LLC",
+        "role": "Received a Colorado public-utilities certificate for a 12-inch pipeline from the Cheyenne Gas Hub and local distribution system; authorization does not establish construction or operation.",
+        "sourceIds": ["b06c-niobrara-puc-2013"]
+      },
+      {
+        "name": "Weld County",
+        "role": "Approved the industrial park zoning/land-use proposal and promoted the site as a future data-center/energy development.",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-weld-2012"]
+      },
+      {
+        "name": "NCMC Inc.",
+        "role": "Acquired the entire 662-acre property in August 2019 as a real-estate investment; NCMC owns North Colorado Medical Center.",
+        "sourceIds": ["b06c-niobrara-sale-2019"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Land and location",
+        "value": "Approximately 640 acres in early approvals and 662 acres at the 2019 sale, near Carr in northern Weld County, Colorado, close to Wyoming, transmission, gas and fiber corridors",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-weld-2012", "b06c-niobrara-sale-2019"]
+      },
+      {
+        "label": "Archived capacity claim",
+        "value": "50 MW solar, 30 MW wind and 650 MW gas/diesel appeared in the archived project record, but reviewed developer, county and regulator sources do not corroborate that combination as a financed or final design.",
+        "sourceIds": ["b06c-niobrara-archive"]
+      },
+      {
+        "label": "Retrospective design concept",
+        "value": "A later Jacobs presentation describes a 300 MW data-center demand concept supported by 200 MW CHP, 100 MW PV and storage. These values demonstrate an evolving master-plan scenario, not installed capacity.",
+        "sourceIds": ["b06c-niobrara-jacobs-2022"]
+      },
+      {
+        "label": "Existing grid access",
+        "value": "A Siemens planning presentation cited about 100 MW of electricity available from the adjacent grid. Grid availability is not an onsite generation asset.",
+        "sourceIds": ["b06c-niobrara-siemens"]
+      },
+      {
+        "label": "Gas infrastructure authorization",
+        "value": "Colorado regulators authorized a 12-inch connection from the Cheyenne Gas Hub plus distribution facilities; the 2013 decision projected construction in the third quarter of 2013 and service in early 2017, but no reviewed source confirms completion.",
+        "sourceIds": ["b06c-niobrara-puc-2013"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Proposed generation",
+        "detail": "Natural-gas cogeneration/generation, solar PV, wind, geothermal and energy storage all appeared in different planning/marketing materials. No turbine, engine, module, inverter, storage, switchgear or controller manufacturer/model was publicly established as procured equipment.",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-weld-2012", "b06c-niobrara-jacobs-2022"]
+      },
+      {
+        "category": "Proposed loads",
+        "detail": "Large data centers, research facilities and other industrial uses were the intended anchor loads. None of the reviewed sources proves that a data center was constructed on the original project schedule.",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-ch2m-2011"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Development chronology",
+        "detail": "Weld County approved the concept in March 2011; CH2M/IDC was engaged later that year; the gas certificate followed in 2013. Marketing still sought a buyer or joint-venture developer in 2015, and the land was sold in 2019.",
+        "sourceIds": ["b06c-niobrara-approval-2011", "b06c-niobrara-ch2m-2011", "b06c-niobrara-puc-2013", "b06c-niobrara-sale-2019"]
+      },
+      {
+        "category": "Project boundary warning",
+        "detail": "This Colorado proposal should not be conflated with later/current developments using the Niobrara Energy Park name in Cheyenne/Laramie County, Wyoming. The archived record's County Road 29/Carr location identifies the Weld County project.",
+        "sourceIds": ["b06c-niobrara-weld-2012", "b06c-niobrara-archive"]
+      },
+      {
+        "category": "Performance",
+        "detail": "Because no operating plant was established, renewable share, fuel use, generation, outages, emissions savings and microgrid-islanding performance are not applicable. Approval, zoning and 'shovel-ready' language must not be converted into operational status.",
+        "sourceIds": ["b06c-niobrara-sale-2019", "b06c-niobrara-approval-2011"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No final power-plant design, equipment orders, financing close, construction notice, interconnection completion, pipeline in-service notice or commissioning record was located. The current use of all former park parcels is also not established here.",
+        "sourceIds": ["b06c-niobrara-sale-2019", "b06c-niobrara-puc-2013"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-niobrara-approval-2011",
+        "title": "New Hybrid Energy Park Approved for Northern Weld County, Colorado",
+        "url": "https://www.prnewswire.com/news-releases/new-hybrid-energy-park-to-combine-clean-fossil-fuels-alternative-energy-research-and-cloud-computing-data-centers-approved-for-northern-weld-county-colorado-118495599.html",
+        "publisher": "Harrison Resource Corporation / PR Newswire",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-weld-2012",
+        "title": "Weld County Economic Development News: Niobrara Energy Park",
+        "url": "https://www.weld.gov/files/sharedassets/public/newsroom/archive/2012/documents/d5dbd7b275bc9c5a58cb.pdf",
+        "publisher": "Weld County",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-puc-2013",
+        "title": "Decision Granting Niobrara NatGas LLC Certificate of Public Convenience and Necessity",
+        "url": "https://www.dora.state.co.us/pls/efi/EFI_Search_UI.Show_Decision?p_dec=19063&p_session_id=",
+        "publisher": "Colorado Public Utilities Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-ch2m-2011",
+        "title": "Niobrara Energy Park Engages CH2M HILL's IDC Architects to Vision the 640-Acre Greenfield Energy Project",
+        "url": "https://www.prnewswire.com/news-releases/niobrara-energy-park-engages-ch2m-hills-idc-architects-to-vision-the-640-acre-greenfield-energy-project-132127008.html",
+        "publisher": "Niobrara Energy Park / PR Newswire",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-siemens",
+        "title": "Niobrara Energy Park planning presentation",
+        "url": "https://sid.siemens.com/api/khub/documents/OuZLK8dB2~gD6gEaejYt5w/content",
+        "publisher": "Siemens",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-jacobs-2022",
+        "title": "Designing Sustainable Data Centers and Energy Parks",
+        "url": "https://pichtr.org/wp-content/uploads/2022/03/Presentation_by_Andrew_Bedford.pdf",
+        "publisher": "Jacobs",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niobrara-sale-2019",
+        "title": "NCMC Inc. buys 662-acre Niobrara Energy Park",
+        "url": "https://bizwest.com/2019/08/21/ncmc-inc-buys-662-acre-niobrara-energy-park/",
+        "publisher": "BizWest",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-niobrara-archive",
+        "title": "Archived Niobrara Energy Park Data Center Microgrid record",
+        "url": "https://web.archive.org/web/20210420140558id_/http://microgridprojects.com/microgrid/niobrara-energy-park-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "nj-transitgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "NJ TRANSITGRID is an umbrella resilience program, not one operational microgrid. Its two independent components were (1) the approximately 104 MW natural-gas Microgrid Central Facility/Traction Power System in Kearny and (2) Distributed Generation Solutions at seven stations, garages and a ferry terminal. NJ TRANSIT formally canceled the central facility on January 26, 2024 and redirected $503 million. The smaller seven-site program survived and still had design, construction-management, construction and commissioning contract actions before the board in July 2025.",
+    "status": "Split outcome. The Microgrid Central Facility and associated traction-power project are canceled, after progressing through environmental review and early design but before construction of the generation plant. The Distributed Generation Solutions component remains active: NJ TRANSIT's July 2025 board minutes authorized expanded final-design, construction and commissioning work, but no reviewed source establishes that all seven installations had reached commercial operation by July 2026. The archived database's 'operational' classification is therefore wrong for the umbrella program.",
+    "organizations": [
+      {
+        "name": "NJ TRANSIT",
+        "role": "Program owner, transit-asset operator and contracting authority for both the canceled central facility and continuing distributed-generation work.",
+        "sourceIds": ["b06c-njt-fta-2016", "b06c-njt-cancel-2024", "b06c-njt-board-2025"]
+      },
+      {
+        "name": "Federal Transit Administration",
+        "role": "Federal resilience-funding and National Environmental Policy Act lead; explicitly defined the traction-power and distributed-generation projects as independent components.",
+        "sourceIds": ["b06c-njt-fta-2016", "b06c-njt-grant-2019"]
+      },
+      {
+        "name": "U.S. Department of Energy / Sandia National Laboratories",
+        "role": "Provided technical, conceptual-design and cybersecurity support. Sandia's reports document an evolving early design, not as-built equipment.",
+        "sourceIds": ["b06c-njt-sandia-2021", "b06c-njt-sandia-2022"]
+      },
+      {
+        "name": "Dynamic US Inc.",
+        "role": "Design-build contractor for the distributed-generation program; the July 2025 amendment covered final design, construction and commissioning.",
+        "sourceIds": ["b06c-njt-board-2025"]
+      },
+      {
+        "name": "Burns Engineering Inc.",
+        "role": "Construction-management contractor for Distributed Generation Solutions under the 2025 amendment.",
+        "sourceIds": ["b06c-njt-board-2025"]
+      },
+      {
+        "name": "AECOM / Jacobs",
+        "role": "Engineering/design participants. AECOM's July 2025 amendment covered construction assistance for the distributed-generation program; Jacobs participated in central-facility design.",
+        "sourceIds": ["b06c-njt-board-2025", "b06c-njt-sandia-2021"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Canceled central facility",
+        "value": "Approximately 104 MW of natural-gas generation was proposed in Kearny, New Jersey, with new electrical connections, substations and traction-power infrastructure for selected Northeast Corridor and Morris & Essex Lines service",
+        "sourceIds": ["b06c-njt-permits", "b06c-njt-cancel-2024"]
+      },
+      {
+        "label": "Early central-facility DER design",
+        "value": "At roughly 20% design in early 2021, Sandia documented five natural-gas generator sets, about 600 kW of solar PV and flywheel energy storage. Final ratings/models were not fixed, and none of this should be reported as commissioned equipment after project cancellation.",
+        "sourceIds": ["b06c-njt-sandia-2021"]
+      },
+      {
+        "label": "Distributed-generation sites",
+        "value": "Seven facilities: Greenville, Wayne and Meadowlands bus garages; Newark Penn, Newark Broad Street and Secaucus Junction rail stations; and Port Imperial ferry terminal. The 2019 program announcement specifically included a Wayne solar canopy and described local fuel-cell, solar and CHP technologies more generally.",
+        "sourceIds": ["b06c-njt-grant-2019", "b06c-njt-fta-2016"]
+      },
+      {
+        "label": "Distributed-generation funding",
+        "value": "$45.828 million FTA grant plus $15.276 million from New Jersey's Transportation Trust Fund, approximately $61.105 million total in the 2019 announcement",
+        "sourceIds": ["b06c-njt-grant-2019"]
+      },
+      {
+        "label": "July 2025 distributed-generation contract ceilings",
+        "value": "AECOM construction assistance up to $1.556 million; Burns construction management up to $5.286 million; Dynamic US final design/construction/commissioning up to $47.585 million, plus a 5% contingency. Contract ceilings are not plant capacity or completed-project cost.",
+        "sourceIds": ["b06c-njt-board-2025"]
+      },
+      {
+        "label": "Central-facility cancellation reallocation",
+        "value": "$503 million of federal resilience funding was redirected to other NJ TRANSIT projects after industry responses were judged financially infeasible and regional-grid improvements reduced the facility's relative need",
+        "sourceIds": ["b06c-njt-cancel-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Central-facility generation",
+        "detail": "Five natural-gas generator sets, 600 kW PV and flywheel storage appeared in early design documents. Manufacturer, model, unit ratings and final storage energy were not established as procured equipment before cancellation.",
+        "sourceIds": ["b06c-njt-sandia-2021", "b06c-njt-cancel-2024"]
+      },
+      {
+        "category": "Distributed generation",
+        "detail": "FTA/NJ TRANSIT materials identify a mix of fuel cells, solar PV, combined heat and power and backup/local generation across seven sites. Reviewed public sources do not provide a final site-by-site as-built capacity, model, fuel, storage or commissioning list.",
+        "sourceIds": ["b06c-njt-fta-2016", "b06c-njt-grant-2019", "b06c-njt-board-2025"]
+      },
+      {
+        "category": "Communications and control",
+        "detail": "The program envisioned SCADA, dedicated fiber and secure coordination among a central plant, distributed sites and rail operations. These documents describe design objectives and cybersecurity recommendations, not a verified commissioned control network.",
+        "sourceIds": ["b06c-njt-sandia-2021", "b06c-njt-sandia-2022"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Program boundary",
+        "detail": "FTA defined the Traction Power System and Distributed Generation Solutions as independent projects in 2016. Canceling the central facility did not cancel the seven-site program, and evidence of continued distributed-generation contracting should not be used to revive the central plant.",
+        "sourceIds": ["b06c-njt-fta-2016", "b06c-njt-cancel-2024", "b06c-njt-board-2025"]
+      },
+      {
+        "category": "Central-facility environmental milestone",
+        "detail": "The Final Environmental Impact Statement and Record of Decision were completed in April 2020. Environmental approval allowed the project to proceed but did not establish construction or operation.",
+        "sourceIds": ["b06c-njt-permits"]
+      },
+      {
+        "category": "Cybersecurity design findings",
+        "detail": "Sandia documented open questions at the 20% design stage over network boundaries, communications, firewalls/data-diode approaches, remote access and ownership of cybersecurity controls. Its follow-on guide proposed a defense-in-depth architecture; the recommendations are not evidence of final installation.",
+        "sourceIds": ["b06c-njt-sandia-2021", "b06c-njt-sandia-2022"]
+      },
+      {
+        "category": "Archived electric-vehicle note",
+        "detail": "The archived page's statement about purchasing electric non-revenue vehicles to maximize energy storage appears to be one program measure, not a specification for the traction microgrid and not proof that vehicle batteries supplied grid services.",
+        "sourceIds": ["b06c-njt-archive"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No verified final capacity/equipment schedule, site-by-site completion dates, islanding tests, generation, fuel use, storage performance or avoided-outage data for the seven-site program was located through July 2026.",
+        "sourceIds": ["b06c-njt-board-2025", "b06c-njt-grant-2019"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-njt-fta-2016",
+        "title": "Notice of Intent to Prepare an Environmental Impact Statement for the NJ TRANSITGRID Traction Power System",
+        "url": "https://www.transit.dot.gov/regulations/federal-register-documents/2016-00048",
+        "publisher": "Federal Transit Administration",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-permits",
+        "title": "NJ TRANSITGRID Traction Power System Environmental Impact Statement",
+        "url": "https://www.permits.performance.gov/proj/nj-transitgrid-traction-power-system/environmental-impact-statement-eis",
+        "publisher": "Federal Permitting Dashboard",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-sandia-2021",
+        "title": "Cybersecurity Analysis of NJ TRANSITGRID",
+        "url": "https://www.osti.gov/servlets/purl/1780582",
+        "publisher": "Sandia National Laboratories / U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-sandia-2022",
+        "title": "Cybersecurity Guide for NJ TRANSITGRID",
+        "url": "https://www.osti.gov/servlets/purl/1900087",
+        "publisher": "Sandia National Laboratories / U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-grant-2019",
+        "title": "NJ TRANSIT Receives $46M Grant to Fund TRANSITGRID Resiliency Project",
+        "url": "https://www.njtransit.com/press-releases/nj-transit-receives-46m-grant-fund-transitgrid-resiliency-project",
+        "publisher": "NJ TRANSIT",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-cancel-2024",
+        "title": "NJ TRANSIT Reallocates Federal Funding to Support Critical Resiliency Projects",
+        "url": "https://www.njtransit.com/press-releases/nj-transit-reallocates-federal-funding-support-critical-resiliency-projects",
+        "publisher": "NJ TRANSIT",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-board-2025",
+        "title": "NJ TRANSIT Board Meeting Minutes, July 17, 2025",
+        "url": "https://content.njtransit.com/sites/default/files/board/meeting_minutes/2025_07_17_OpenSess.pdf",
+        "publisher": "NJ TRANSIT",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-njt-archive",
+        "title": "Archived NJ TRANSITGRID record",
+        "url": "https://web.archive.org/web/20200706002921id_/http://microgridprojects.com/microgrid/nj-transitgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "nouadhibou-iron-ore-mine-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The archived name is geographically misleading: SNIM's iron-ore mines are inland around Zouerate and F'derick, while this 4.4 MW wind/16 MW diesel hybrid serves SNIM's coastal port, processing, industrial and community electricity system at Nouadhibou/Cansado. Sixteen 275 kW Vergnet GEV MP-C turbines operate on the 5.5 kV diesel grid under Vergnet's Hybrid Wizard control strategy. SNIM's 2024 report still counts the wind plant in service, and a 2024 repair/training mission provides recent maintenance evidence.",
+    "status": "Operational with documented 2024 maintenance. SNIM's 2024 annual report lists 4.4 MW of wind at Nouadhibou within its 19.4 MW clean-generation portfolio, alongside the 16 MW Nouadhibou thermal plant. Vergnet completed a repair and technician-training mission in July 2024. A recent African Development Bank account says wind supplies nearly 30% of the plant's electricity needs; no site-specific annual MWh, availability, curtailment or diesel-savings series was published, so the exact current renewable fraction and performance cannot be independently audited.",
+    "organizations": [
+      {
+        "name": "Société Nationale Industrielle et Minière (SNIM)",
+        "role": "Owner/operator of the integrated iron-ore mining, railway, port and power system and client for the wind-diesel installation.",
+        "sourceIds": ["b06c-nouad-snim-2024", "b06c-nouad-snim-about", "b06c-nouad-paper-2018"]
+      },
+      {
+        "name": "Vergnet",
+        "role": "Wind-turbine and Hybrid Wizard supplier/integrator; performed the 2024 repair and maintenance-training mission.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-vergnet-repair", "b06c-nouad-vergnet-hybrid"]
+      },
+      {
+        "name": "African Development Bank",
+        "role": "Longstanding financier of SNIM modernization and source of a recent portfolio-level assessment of the wind plant's contribution.",
+        "sourceIds": ["b06c-nouad-afdb"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Wind plant",
+        "value": "4.4 MW: sixteen 275 kW turbines. Vergnet's 2024 repair announcement rounds the plant to 4.5 MW; SNIM's annual report and the exact unit arithmetic support 4.4 MW as the canonical rating.",
+        "sourceIds": ["b06c-nouad-snim-2024", "b06c-nouad-paper-2018", "b06c-nouad-vergnet-repair"]
+      },
+      {
+        "label": "Thermal plant and grid",
+        "value": "16 MW from four diesel generator sets feeding a 5.5 kV isolated industrial grid",
+        "sourceIds": ["b06c-nouad-snim-2024", "b06c-nouad-paper-2018"]
+      },
+      {
+        "label": "Wind resource",
+        "value": "8.78 m/s mean wind speed at the 55 m turbine hub height in the project study",
+        "sourceIds": ["b06c-nouad-paper-2018"]
+      },
+      {
+        "label": "Reported current contribution",
+        "value": "African Development Bank reports the Nouadhibou wind plant supplies nearly 30% of plant electricity needs; the account does not publish the measurement period, denominator or annual MWh.",
+        "sourceIds": ["b06c-nouad-afdb"]
+      },
+      {
+        "label": "SNIM-wide context, not site production",
+        "value": "SNIM reported 19.4 MW total clean capacity in 2024 (15 MW solar at Zouerate plus 4.4 MW wind at Nouadhibou) and 415,823 MWh total company-system generation, including 343,226 MWh for industrial facilities and 62,113 MWh for communities. Those MWh figures combine multiple power plants and cannot be assigned to the Nouadhibou hybrid alone.",
+        "sourceIds": ["b06c-nouad-snim-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Vergnet",
+        "model": "GEV MP-C",
+        "detail": "Sixteen 275 kW, two-bladed turbines with 32 m rotor diameter and 55 m hub height. The design was selected for a warm, dry, near-shore and highly corrosive environment and supports lowering/servicing suited to remote sites.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-vergnet-repair"]
+      },
+      {
+        "category": "Diesel generation",
+        "detail": "Four generator sets totaling 16 MW provide dispatchable generation and grid-forming support. Reviewed public sources do not identify engine/alternator manufacturers, models, individual ratings or fuel-efficiency curves.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-snim-2024"]
+      },
+      {
+        "category": "Hybrid controller",
+        "manufacturer": "Vergnet",
+        "model": "Hybrid Wizard",
+        "detail": "Supervisory control measures load and generation, limits wind to preserve diesel minimum loading/spinning reserve and manages connections and shortfall response. Public material does not identify the installed software version or current hardware platform.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-vergnet-hybrid"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Commissioning chronology",
+        "detail": "Sources variously cite 2012 construction/start and 2013 commissioning. The project was operational by 2013; the one-year wording difference should be retained rather than forced into a single unsupported date.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-vergnet-repair"]
+      },
+      {
+        "category": "Hybrid operation",
+        "detail": "The control study modeled wind profile, load cycles and diesel characteristics to maximize renewable penetration while maintaining frequency/voltage, generator reserve and minimum diesel loading. No battery storage is documented in the operating architecture.",
+        "sourceIds": ["b06c-nouad-paper-2018", "b06c-nouad-vergnet-hybrid"]
+      },
+      {
+        "category": "2024 maintenance update",
+        "detail": "Vergnet reported completing repair work and training a five-to-six-person SNIM technical team in operation and maintenance in July 2024. The announcement does not disclose how many turbines were unavailable, downtime duration, replacement parts or post-repair availability.",
+        "sourceIds": ["b06c-nouad-vergnet-repair"]
+      },
+      {
+        "category": "Asset boundary",
+        "detail": "SNIM mines ore inland and transports it by rail to the Nouadhibou coast. The wind-diesel plant is therefore better classified as a port/industrial microgrid within an integrated mining system, not an onsite iron-ore mine microgrid.",
+        "sourceIds": ["b06c-nouad-snim-about", "b06c-nouad-snim-2024"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No site-specific annual wind MWh, capacity factor, curtailment, diesel litres, generator heat rate, turbine availability, outages, repair scope or measured emissions savings through July 2026 was located.",
+        "sourceIds": ["b06c-nouad-snim-2024", "b06c-nouad-afdb", "b06c-nouad-vergnet-repair"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-nouad-snim-2024",
+        "title": "SNIM Annual Report 2024",
+        "url": "https://snim.com/sites/default/files/SNIM_Rapport_activite2024_Ang.pdf",
+        "publisher": "SNIM",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nouad-snim-about",
+        "title": "Who We Are",
+        "url": "https://snim.com/en/qui-sommes-nous",
+        "publisher": "SNIM",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nouad-paper-2018",
+        "title": "Wind-Diesel Hybrid System at SNIM's Nouadhibou Site",
+        "url": "https://hybridpowersystems.org/wp-content/uploads/sites/9/2018/05/2A_4_TENE18_023_paper_Vales_Eric.pdf",
+        "publisher": "International Hybrid Power Systems Workshop / Vergnet",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nouad-vergnet-hybrid",
+        "title": "Hybrid Wizard: Hybrid Power Plant Controller",
+        "url": "https://www.vergnet.com/en/hybrid/",
+        "publisher": "Vergnet",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nouad-vergnet-repair",
+        "title": "Vergnet finalises repair and training mission at the Nouadhibou power plant in Mauritania",
+        "url": "https://www.boursorama.com/bourse/actualites/vergnet-vergnet-finalisation-de-la-mission-reparation-et-formation-a-la-centrale-de-nouadhibou-en-mauritanie-85adda32f7b17e3b822478c502b37ebf",
+        "publisher": "Vergnet (syndicated by Boursorama)",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nouad-afdb",
+        "title": "Mauritania: SNIM, a flagship of growth, steps up its expansion",
+        "url": "https://www.afdb.org/en/success-stories/mauritania-snim-flagship-growth-steps-its-expansion-91413",
+        "publisher": "African Development Bank",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-nouad-archive",
+        "title": "Archived Nouadhibou Iron Ore Mine Microgrid record",
+        "url": "https://web.archive.org/web/20200706002925id_/http://microgridprojects.com/microgrid/nouadhibou-iron-ore-mine-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "nova-nickel-mine-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Nova is IGO's remote nickel-copper-cobalt operation in Western Australia's Fraser Range. Its power system evolved from a 19 MW diesel station to a battery-free solar-diesel hybrid in 2019 and then to an engine-off hybrid with approximately 16 MW total solar, a 12 MW/12 MWh BESS and two synchronous condensers. The archived 6.7 MW solar/20 MW diesel figures reflect the original contract/design scale, while Zenith's current as-built account reports 5.5 MW initial solar and 19 MW diesel before the 10.2 MW relocatable-solar expansion.",
+    "status": "Operational, with the renewable expansion commissioned and engine-off operation demonstrated. IGO's FY2023 report says the new solar farm and battery were commissioned and achieved Nova's first period on 100% renewable power; later company material lists the full 16 MW-solar/12 MW-battery system as installed. The power system also experienced a major diesel-engine-room fire in December 2022 that shut the mine for 18 days before 14.9 MW of temporary generation restored operations. IGO now expects the Nova mine to reach end of life in late 2026, making the expansion's relocatable design important; no public post-closure destination or current battery-health data was found.",
+    "organizations": [
+      {
+        "name": "IGO Limited (formerly Independence Group)",
+        "role": "100% owner/operator of the Nova mine and power-system client/offtaker.",
+        "sourceIds": ["b06c-nova-igo-current", "b06c-nova-igo-2019", "b06c-nova-igo-2023"]
+      },
+      {
+        "name": "Zenith Energy (formerly Zenith Pacific)",
+        "role": "Built, owns/operates and integrates the diesel, solar, battery and synchronous-condenser power system under a ten-year contract reported on its current project page.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-2019"]
+      },
+      {
+        "name": "Solea AG",
+        "role": "Named as Zenith's solar-integration partner in the original 2015 battery-free development concept; later as-built/current sources do not clarify its continuing role.",
+        "sourceIds": ["b06c-nova-abc-2015", "b06c-nova-archive"]
+      },
+      {
+        "name": "5B",
+        "role": "Supplied the relocatable Maverick solar technology for the approximately 10 MW expansion.",
+        "sourceIds": ["b06c-nova-5b"]
+      },
+      {
+        "name": "NGK Insulators / BASF Stationary Energy Storage",
+        "role": "NGK manufactured and BASF's storage subsidiary supplied a separate 250 kW/1.45 MWh sodium-sulfur demonstration battery that began operating in February 2023.",
+        "sourceIds": ["b06c-nova-ngk-2023"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Diesel station",
+        "value": "19 MW installed according to Zenith's current as-built project page. Early development announcements rounded the design to 20 MW.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-abc-2015"]
+      },
+      {
+        "label": "2019 solar phase and rating conflict",
+        "value": "Zenith's current project page says 5.5 MW commissioned in 2019 and an ASX presentation described 5.67 MWp, while the amended PPA/original archived record used 6.7 MW and forecast 12.5 GWh/year. These appear to be design/DC-nameplate versus delivered/rounded figures; they should not be added together.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-2019", "b06c-nova-archive"]
+      },
+      {
+        "label": "Expanded solar capacity",
+        "value": "Approximately 16 MW total on Zenith's current page, comprising the original approximately 5.5 MW plus 10.2 MW of relocatable solar (15.7 MW before rounding)",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-5b"]
+      },
+      {
+        "label": "Main battery energy storage",
+        "value": "12 MW / 12 MWh BESS, a one-hour nameplate ratio, supporting cloud smoothing, solar-spill capture and engine-off operation",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-2023"]
+      },
+      {
+        "label": "Synchronous support",
+        "value": "Two 2.8 MVAr synchronous condensers provide grid-forming/reactive support when diesel engines are off",
+        "sourceIds": ["b06c-nova-zenith"]
+      },
+      {
+        "label": "Separate long-duration-storage trial",
+        "value": "One containerized NGK NAS sodium-sulfur battery, 250 kW DC maximum and 1,450 kWh DC at beginning of life, started operation in February 2023 for fluctuation mitigation, peak shifting and research. This is separate from, and should not be merged into, the 12 MW/12 MWh engine-off BESS.",
+        "sourceIds": ["b06c-nova-ngk-2023"]
+      },
+      {
+        "label": "Initial-solar operating result",
+        "value": "Zenith reports an average 11 GWh/year in the first three years, approximately 3 million litres/year of avoided diesel and 8,100 tCO2/year avoided. These are operator-reported figures and predate the full engine-off expansion.",
+        "sourceIds": ["b06c-nova-zenith"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Diesel generator sets",
+        "detail": "Five 3 MW medium-speed sets and three 1.7 MW high-speed sets are listed by Zenith. Their simple arithmetic exceeds the published 19 MW plant total, likely reflecting gross/nominal versus station rating, but the source does not reconcile it. Engine and alternator manufacturers/models are not disclosed.",
+        "sourceIds": ["b06c-nova-zenith"]
+      },
+      {
+        "category": "Original solar farm",
+        "detail": "Single-axis-tracking PV integrated directly with diesel generation without battery stabilization in 2019. Public sources reviewed do not identify module, inverter or tracker manufacturers/models.",
+        "sourceIds": ["b06c-nova-igo-2019"]
+      },
+      {
+        "category": "Relocatable solar expansion",
+        "manufacturer": "5B",
+        "model": "Maverick",
+        "detail": "5B reports a 10 MWp, 210-Maverick array deployed in 42 days by a small onsite team and designed to be removed/redeployed after Nova's short remaining mine life.",
+        "sourceIds": ["b06c-nova-5b"]
+      },
+      {
+        "category": "Main BESS",
+        "detail": "12 MW/12 MWh battery system. Reviewed public sources do not disclose cell chemistry, pack/PCS manufacturer, model, usable energy, warranty or state of health.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-2023"]
+      },
+      {
+        "category": "Long-duration demonstration battery",
+        "manufacturer": "NGK Insulators",
+        "model": "NAS battery",
+        "detail": "Sodium-sulfur chemistry distributed by BASF Stationary Energy Storage; selected for long duration and tolerance of mine-site temperatures approaching 50°C.",
+        "sourceIds": ["b06c-nova-ngk-2023"]
+      },
+      {
+        "category": "Forecasting and plant control",
+        "manufacturer": "Zenith Energy",
+        "detail": "Cloud-prediction and integration controls forecast large cloud events and increase thermal generation before PV falls. Expanded controls coordinate battery, solar, synchronous condensers and diesel-free operation; algorithm and hardware details are not public.",
+        "sourceIds": ["b06c-nova-zenith"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Engine-off capability",
+        "detail": "IGO reports the expansion achieved the mine's first 100% renewable operating period, while Zenith describes the installed system as engine-off enabled when solar and storage conditions permit. Earlier targets of eight or nine consecutive hours were design objectives; no public annual hours-at-engine-off dataset was found.",
+        "sourceIds": ["b06c-nova-igo-2023", "b06c-nova-zenith"]
+      },
+      {
+        "category": "December 2022 fire and recovery",
+        "detail": "A December 3 fire extensively damaged a 10 MW diesel engine room and suspended all mine operations. IGO said the fire did not damage the control room, switch room, solar PV, BESS or distribution network. IGO and Zenith deployed 14.9 MW of temporary generation and resumed operations within 18 days.",
+        "sourceIds": ["b06c-nova-fire-2022", "b06c-nova-igo-2023"]
+      },
+      {
+        "category": "Commercial chronology",
+        "detail": "The original power station began in 2015, mine commercial production began in July 2017, the first hybrid solar phase was commissioned in 2019, and the battery/solar expansion reached commissioning and initial engine-off operation in FY2023 with further completion reporting in FY2024.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-current", "b06c-nova-igo-2023"]
+      },
+      {
+        "category": "Mine-life boundary",
+        "detail": "IGO announced in March 2025 that Nova is expected to reach end of life in late 2026. The 5B array was expressly chosen to reduce stranded-asset risk by permitting removal and redeployment; public material does not state plans for the diesel station, BESS, synchronous condensers or original solar after closure.",
+        "sourceIds": ["b06c-nova-igo-current", "b06c-nova-5b"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No current annual energy mix, engine-off hours, BESS cycling/state of health, PV curtailment, post-fire permanent-repair scope, diesel litres after expansion, plant availability or closure/redeployment plan was located.",
+        "sourceIds": ["b06c-nova-zenith", "b06c-nova-igo-current"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-nova-zenith",
+        "title": "Nova",
+        "url": "https://zenithenergy.com.au/nova/",
+        "publisher": "Zenith Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-igo-current",
+        "title": "Nova Nickel Operation",
+        "url": "https://www.igo.com.au/site/operations/nova",
+        "publisher": "IGO Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-igo-2019",
+        "title": "Zenith solar powers IGO Nova Operation",
+        "url": "https://www.igo.com.au/site/PDF/a22a8048-431e-4ef9-9443-73489a42f019/ZENZenithsolarpowersIGONovaOperation",
+        "publisher": "IGO Limited / Zenith Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-igo-2023",
+        "title": "IGO Annual Report 2023",
+        "url": "https://announcements.asx.com.au/asxpdf/20230831/pdf/05tb3vxgvfzh9c.pdf",
+        "publisher": "IGO Limited / Australian Securities Exchange",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-fire-2022",
+        "title": "Fire Incident at Nova Operation",
+        "url": "https://www.igo.com.au/site/PDF/8fae9ea6-1b9f-4c29-bc4d-c4cce24c2676/FireIncidentatNovaOperation",
+        "publisher": "IGO Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-5b",
+        "title": "NOVA, off-grid nickel mine, WA",
+        "url": "https://5b.co/projects/nova",
+        "publisher": "5B",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-ngk-2023",
+        "title": "NAS Battery Starts Operation at Nickel-Copper-Cobalt Mine in Australia",
+        "url": "https://www.ngk-global.com/news/2023/20230515_1.html",
+        "publisher": "NGK Insulators",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-nova-abc-2015",
+        "title": "Goldfields' Nova nickel mine to use privately-funded hybrid solar power plant",
+        "url": "https://www.abc.net.au/news/2015-11-27/goldfields-mine-to-use-privately-funded-solar-power-plant/6981168",
+        "publisher": "ABC News Australia",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-nova-archive",
+        "title": "Archived Nova Nickel Mine Microgrid record",
+        "url": "https://web.archive.org/web/20200706002930id_/http://microgridprojects.com/microgrid/nova-nickel-mine-microgrid/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  },
+  "nuie-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "The slug and archived title misspell Niue, and the archived 480 kW 'solar' value is a load figure, not generation capacity. Niue's national island grid has accumulated several distinct solar/storage phases: an early Optimal Power Solutions/Mitsubishi/Toshiba fast-response battery; a 2019 Vector PowerSmart project that brought total PV to about 1.1 MW and added a 0.80 MW/3.15 MWh Tesla battery and central EMS; and a much larger 2.79 MWp PV/8.19 MWh BESS project at Hikufenoga/Tamakautoa that was still approaching testing and commissioning in the latest government update.",
+    "status": "Existing island grid operating, major expansion not yet proven commissioned. The 2019 hybrid demonstrated diesel-off operation and initially supplied 28.6% of energy from solar. A November 2023 lightning strike affected the BESS and solar infrastructure, and Niue soft-launched a relocated/new power station in November 2024 while working to restore and reintegrate storage and solar. A July 2025 UNDP summit account reported 38% renewable penetration. The latest Government of Niue construction update says the NZD 20.5 million Hikufenoga project was nearing completion, with testing/commissioning ahead and transfer to Niue Power Corporation anticipated in mid-2026. No completion/acceptance notice was found by July 20, so the expansion should remain construction/commissioning rather than operational.",
+    "organizations": [
+      {
+        "name": "Government of Niue / Ministry of Infrastructure / Department of Utilities",
+        "role": "National policy sponsor, project owner and public source for power-station recovery and current expansion progress.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress", "b06c-niue-gov-power-2024"]
+      },
+      {
+        "name": "Niue Power Corporation",
+        "role": "Island electricity utility and intended owner/operator of the new PV/BESS assets after completion and handover.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress", "b06c-niue-vector-2019"]
+      },
+      {
+        "name": "New Zealand Ministry of Foreign Affairs and Trade",
+        "role": "Funded the 2019 project and NZD 20.5 million current expansion, and contributed NZD 2.5 million to relocation/restoration of the BESS after power-station changes and the lightning incident.",
+        "sourceIds": ["b06c-niue-vector-2019", "b06c-niue-gov-project", "b06c-niue-gov-power-2024"]
+      },
+      {
+        "name": "Vector PowerSmart",
+        "role": "Designed and built the 2019 600 kW PV, 0.80 MW/3.15 MWh BESS integration and bespoke energy-management system.",
+        "sourceIds": ["b06c-niue-vector-2019", "b06c-niue-seanz-2020"]
+      },
+      {
+        "name": "Tesla",
+        "role": "Supplier of the Powerpack 2 battery system used in the 2019 project and participant in the 2024 recommissioning work.",
+        "sourceIds": ["b06c-niue-seanz-2020", "b06c-niue-gov-power-2024"]
+      },
+      {
+        "name": "Sunergise",
+        "role": "Construction contractor for the 2.79 MWp Hikufenoga solar/BESS expansion.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress"]
+      },
+      {
+        "name": "Optimal Power Solutions, Mitsubishi Electric and Toshiba",
+        "role": "Participants in an earlier fast-response lithium-titanate storage/control project; Mitsubishi was the client, OPS supplied power electronics/control, and Toshiba is named in the battery integration.",
+        "sourceIds": ["b06c-niue-ops"]
+      },
+      {
+        "name": "Australian Department of Foreign Affairs and Trade / UNDP",
+        "role": "Australia funded two new diesel generators and technical support for the relocated/new power station; UNDP/AREAN supported station-building and electrical infrastructure and later convened the 2025 energy summit.",
+        "sourceIds": ["b06c-niue-gov-power-2024", "b06c-niue-undp-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Legacy data correction",
+        "value": "Niue had about 342-343 kWp of installed PV around 2014 against approximately 480 kW electricity demand; only a small share of potential solar reached the grid because of instability/curtailment. The archived record transformed that 480 kW demand into solar capacity and listed 200 kWh storage, neither of which matches the original context or OPS's current 300 kWh project description.",
+        "sourceIds": ["b06c-niue-roadmap", "b06c-niue-ops", "b06c-niue-archive"]
+      },
+      {
+        "label": "2019 solar portfolio",
+        "value": "600 kW of new PV increased island-wide solar capacity to approximately 1.1 MW",
+        "sourceIds": ["b06c-niue-vector-2019", "b06c-niue-seanz-2020"]
+      },
+      {
+        "label": "2019 battery",
+        "value": "0.80 MW / 3.15 MWh Tesla Powerpack 2 BESS at the power station, integrated with old and new solar and diesel generation",
+        "sourceIds": ["b06c-niue-seanz-2020", "b06c-niue-vector-2019"]
+      },
+      {
+        "label": "2019 initial performance",
+        "value": "Over a five-month reporting period from May 2019, solar supplied 28.6% of energy and avoided more than 130,000 litres of diesel. Diesel generators were off 5-7 hours/day on average and up to 10 hours; Vector's six-month corporate account reported 320,000 kWh from the new 600 kW array and up to 12 diesel-off hours on sunny days.",
+        "sourceIds": ["b06c-niue-seanz-2020", "b06c-niue-vector-2019"]
+      },
+      {
+        "label": "Current expansion",
+        "value": "2.79 MWp PV and 8.19 MWh BESS at Hikufenoga/Tamakautoa, plus electricity-network safety and resilience upgrades; more than 4,000 panels and about 1,000 concrete foundations were reported in the latest progress update",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress"]
+      },
+      {
+        "label": "Current-project forecast",
+        "value": "Government forecast of 816,000 litres of diesel and 2,202 tCO2e avoided in year one; the 2025 UNDP summit account separately cited up to 753,000 litres/year and more than 52,000 tCO2e across a 25-year asset life. Both are forecasts, with differing assumptions that are not reconciled in the public material.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-undp-2025"]
+      },
+      {
+        "label": "Renewable-energy target and reported progress",
+        "value": "80% renewable electricity target; a 2025 UNDP account reported 38% penetration before the new 2.79 MWp project was commissioned",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-undp-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "2019 battery energy storage",
+        "manufacturer": "Tesla",
+        "model": "Powerpack 2",
+        "detail": "0.80 MW/3.15 MWh lithium-ion system. The public project material does not state module count, usable energy, warranty or present state of health.",
+        "sourceIds": ["b06c-niue-seanz-2020"]
+      },
+      {
+        "category": "2019 energy management system",
+        "manufacturer": "Vector PowerSmart",
+        "detail": "Bespoke EMS balances legacy/new solar, diesel sets and battery charge state; it starts/stops diesel, sends solar directly to load or storage, and reduces curtailment while maintaining grid stability.",
+        "sourceIds": ["b06c-niue-seanz-2020", "b06c-niue-vector-2019"]
+      },
+      {
+        "category": "Earlier fast-response storage",
+        "manufacturer": "Toshiba / Optimal Power Solutions",
+        "detail": "OPS currently describes 300 kWh of lithium-titanate storage integrated for Mitsubishi, delivering roughly 2C-3C transient response to cloud ramps and a rock-crusher load. A regional source also mentions a 120 kW battery system. The archived 200 kWh value and 500 kVA GSC label are not corroborated by the current OPS page.",
+        "sourceIds": ["b06c-niue-ops", "b06c-niue-roadmap", "b06c-niue-archive"]
+      },
+      {
+        "category": "Current PV/BESS expansion",
+        "detail": "2.79 MWp of PV and 8.19 MWh of battery storage are under construction. The reviewed government sources do not name panel, inverter, battery-cell, PCS or energy-management-system manufacturers/models.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress"]
+      },
+      {
+        "category": "Diesel power stations",
+        "detail": "The island historically used four 500 kVA diesel generators. The new station soft-launched in November 2024 includes two new generators, while both old and new stations remained available during transition; new generator manufacturers and ratings were not published.",
+        "sourceIds": ["b06c-niue-vector-2019", "b06c-niue-gov-power-2024"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "2019 integration architecture",
+        "detail": "The EMS unified pre-existing solar arrays, 600 kW of new solar, the Tesla BESS and diesel generators on a live island network. Storage absorbed solar variability, shifted energy and allowed diesel engines to stop during favorable periods.",
+        "sourceIds": ["b06c-niue-vector-2019", "b06c-niue-seanz-2020"]
+      },
+      {
+        "category": "Lightning incident and recovery",
+        "detail": "A November 2023 lightning strike affected solar and BESS infrastructure. By the November 2024 new-power-station launch, government reported grid-control repair, cabling, fuel-tank and lightning-protection work and preliminary commissioning involving ComAp, Arnolds Switchboards, Generator Services and Tesla; reintegration was then expected in December. No final acceptance/test result was located.",
+        "sourceIds": ["b06c-niue-gov-power-2024"]
+      },
+      {
+        "category": "Current construction status",
+        "detail": "The latest government update says over 4,000 panels were installed, roughly 85% of concrete works were complete and major BESS foundations were in place, with testing/commissioning and planned outages still ahead. Although its page gives a July 2026 completion date and says mid-2026 handover, that schedule is not evidence of completion.",
+        "sourceIds": ["b06c-niue-gov-progress"]
+      },
+      {
+        "category": "Phase-label warning",
+        "detail": "Government pages label content for the same Hikufenoga/Tamakautoa, 2.79 MWp/8.19 MWh activity under different phase headings ('Phase 1' and 'Phase 3'). The capacities should be counted once, and the project should be identified by site and scope rather than page heading alone.",
+        "sourceIds": ["b06c-niue-gov-project", "b06c-niue-gov-progress"]
+      },
+      {
+        "category": "Island-grid boundary",
+        "detail": "This is Niue's national isolated electricity system serving government, households, commercial loads and industry, not a standalone community microgrid at one building. Diesel remains necessary while renewable/storage assets are repaired and expanded.",
+        "sourceIds": ["b06c-niue-gov-power-2024", "b06c-niue-undp-2025", "b06c-niue-gov-progress"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No current hourly/annual energy mix, diesel generation, outage indices, tariff/savings result, battery capacity test, lightning-damage inventory, 2026 acceptance certificate or as-built vendor schedule for the new project was found.",
+        "sourceIds": ["b06c-niue-gov-progress", "b06c-niue-gov-project", "b06c-niue-undp-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b06c-niue-gov-project",
+        "title": "Niue Renewable Energy",
+        "url": "https://www.gov.nu/projects/niue-renewable-energy",
+        "publisher": "Government of Niue",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-gov-progress",
+        "title": "Niue Renewable Energy Phase 3: Hikufenoga solar farm nears completion",
+        "url": "https://www.gov.nu/projects/niue-renewable-energy-phase-3",
+        "publisher": "Government of Niue",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-gov-power-2024",
+        "title": "Niue's new Power Station soft launch marks significant step in energy infrastructure development",
+        "url": "https://www.gov.nu/media-releases/niue-s-new-power-station-soft-launch-marks-significant-step-in-energy-infrastructure-development",
+        "publisher": "Government of Niue",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-undp-2025",
+        "title": "Niue Shapes a New Decade of Sustainable Energy Leadership at National Energy Summit 2025",
+        "url": "https://www.undp.org/samoa/press-releases/niue-shapes-new-decade-sustainable-energy-leadership-national-energy-summit-2025",
+        "publisher": "United Nations Development Programme",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-vector-2019",
+        "title": "Vector PowerSmart supporting Niue's new energy future",
+        "url": "https://blob-static.vector.co.nz/blob/vector/media/vector/vec196_-ar_2019_v12_web.pdf",
+        "publisher": "Vector Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-seanz-2020",
+        "title": "Vector PowerSmart for the Niue Renewable Energy Project",
+        "url": "https://www.seanz.org.nz/vector_powersmart_for_the_niue_renewable_energy_project",
+        "publisher": "Sustainable Energy Association of New Zealand",
+        "kind": "secondary"
+      },
+      {
+        "id": "b06c-niue-ops",
+        "title": "Niue Island Project, Pacific",
+        "url": "https://optimal-power-solutions.com/niue-island-pacific/",
+        "publisher": "Optimal Power Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-roadmap",
+        "title": "Niue Strategic Energy Road Map 2015-2025",
+        "url": "https://niue-data.sprep.org/system/files/niue_2015-2025EnergyRoadmap.pdf",
+        "publisher": "Government of Niue / Pacific Community",
+        "kind": "primary"
+      },
+      {
+        "id": "b06c-niue-archive",
+        "title": "Archived Nuie Island record",
+        "url": "https://web.archive.org/web/20210420204705id_/http://microgridprojects.com/microgrid/nuie-island/",
+        "publisher": "MicrogridProjects.com via Internet Archive",
+        "kind": "archive"
+      }
+    ]
+  }
+}

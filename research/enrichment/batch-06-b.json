@@ -1,0 +1,374 @@
+{
+  "mesa-del-sol-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "This record covers NEDO's Albuquerque Business District Smart Grid Demonstration at Mesa del Sol's Aperture Center, not PNM's separate Prosperity solar-storage facility about 2 km away. The roughly 400 kW commercial-building microgrid combines 50 kW of PV, a 240 kW gas-engine generator, 80 kW of phosphoric-acid fuel cells, and a lead-acid battery rated about 90 kW discharge/160 kWh, plus unusually extensive chilled- and hot-water storage. The Japan-U.S. demonstration ran from 2012 through March 2014; ownership of the equipment then transferred to the University of New Mexico, which has continued to use it as a research testbed.",
+    "status": "Commissioned in May 2012; the formal NEDO demonstration ended in March 2014 and the equipment transferred to UNM in April 2014. A 2020 UNM-Siemens agreement identified it as an operating research testbed, and a UNM dataset contains 13 months of measurements through April 2023. No later public asset-condition or availability report was found, so operation is evidenced through 2023 but 2026 health of each generator, cell stack, and battery is unverified.",
+    "organizations": [
+      {"name":"New Energy and Industrial Technology Development Organization (NEDO)","role":"Japanese program sponsor and funder of the Albuquerque demonstration.","sourceIds":["mesa-nedo-case","mesa-mhi-launch"]},
+      {"name":"University of New Mexico (UNM)","role":"U.S. research participant and owner/operator after the April 2014 equipment transfer.","sourceIds":["mesa-unm-transfer","mesa-siemens-2020","mesa-dataset-2023"]},
+      {"name":"Shimizu Corporation","role":"Overall microgrid integrator; supplied BEMS1, thermal storage/HVAC integration, site management, and verification.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"name":"Tokyo Gas","role":"Developed BEMS2 and distributed-energy-resource coordination algorithms.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"name":"Toshiba","role":"Responsible for the utility-side energy-management system and coordination with PNM's separate system.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Sharp","role":"Designed and procured the photovoltaic system and evaluated its performance.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Meidensha Corporation","role":"Supplied the PV power-conditioning system.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Mitsubishi Heavy Industries","role":"Supplied the gas-engine generator and associated controls.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Fuji Electric","role":"Supplied the phosphoric-acid fuel-cell system.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Furukawa Battery and Furukawa Electric","role":"Furukawa Battery supplied the lead-acid battery; Furukawa Electric supplied its management system.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Public Service Company of New Mexico (PNM)","role":"Local utility and U.S. demonstration partner; operated the separate Prosperity PV-storage system used in coordination tests.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"name":"Sandia National Laboratories","role":"U.S. technical/research partner.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Mesa del Sol","role":"Development owner and host of the Aperture Center demonstration site.","sourceIds":["mesa-mhi-launch"]},
+      {"name":"Siemens Industry","role":"Entered a 2020 agreement with UNM to collaborate at the UNM-owned microgrid testbed.","sourceIds":["mesa-siemens-2020"]}
+    ],
+    "specifications": [
+      {"label":"Site and load","value":"Aperture Center, a three-story commercial building of approximately 7,000 m² with an approximately 400 kW electrical load.","sourceIds":["mesa-nedo-case"]},
+      {"label":"Photovoltaics","value":"50 kW on-site PV. Do not add the separate PNM Prosperity facility's 500 kW PV to this nameplate.","sourceIds":["mesa-nedo-case","mesa-mhi-launch"]},
+      {"label":"Dispatchable generation","value":"240 kW natural-gas engine-generator plus 80 kW of phosphoric-acid fuel cells (shown as 60 kW + 20 kW in NEDO's configuration figure).","sourceIds":["mesa-nedo-case"]},
+      {"label":"Battery storage","value":"Lead-acid battery, 160 kWh; NEDO describes approximately 50 kW charge and 90 kW discharge capability. Some summaries shorten this to 90 kW/160 kWh.","sourceIds":["mesa-nedo-case","mesa-symposium"]},
+      {"label":"Thermal plant","value":"70 USRT air-cooled chiller, 20 USRT absorption chiller, 75 m³ chilled-water tank, and 110 m³ hot-water tank.","sourceIds":["mesa-nedo-case"]},
+      {"label":"Demonstration period","value":"System opened May 17, 2012; verification ran for two years through March 2014 following installation from October 2011 to April 2012.","sourceIds":["mesa-nedo-case","mesa-mhi-launch"]},
+      {"label":"Demonstrated power quality","value":"After two years of refinement, BEMS1 held point-of-common-coupling power to about 2 kW standard deviation. During island tests voltage remained within 480 V ±10%, while frequency remained within 60 Hz ±0.3 Hz more than 98% of the time.","sourceIds":["mesa-nedo-case"]},
+      {"label":"Program investment and transferred value","value":"UNM described NEDO's broader Albuquerque project as a US$22 million investment; UNM regents later recorded approximately US$15 million of equipment transferred in April 2014. These refer to different scopes and should not be treated as conflicting construction-cost estimates.","sourceIds":["mesa-unm-2012","mesa-unm-transfer"]}
+    ],
+    "equipment": [
+      {"category":"Microgrid/BEMS controls","manufacturer":"Shimizu Corporation","model":"BEMS1","detail":"Building-energy-management controller for PCC power smoothing, economic dispatch, islanding, and thermal/electrical coordination.","sourceIds":["mesa-nedo-case","mesa-mhi-launch"]},
+      {"category":"Distributed-generation controller","manufacturer":"Tokyo Gas","model":"BEMS2","detail":"Alternative algorithm set evaluated on common hardware; coordinated the gas engine, fuel cell, battery, and the separate PNM facility.","sourceIds":["mesa-nedo-case"]},
+      {"category":"Gas engine-generator","manufacturer":"Mitsubishi Heavy Industries","detail":"240 kW natural-gas unit with control equipment.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"category":"Fuel cell","manufacturer":"Fuji Electric","detail":"80 kW total phosphoric-acid fuel-cell generation.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"category":"Battery","manufacturer":"Furukawa Battery","detail":"160 kWh lead-acid bank; battery-management system supplied by Furukawa Electric.","sourceIds":["mesa-mhi-launch","mesa-nedo-case"]},
+      {"category":"PV power conditioning","manufacturer":"Meidensha Corporation","detail":"Power-conditioning equipment for the 50 kW PV array; exact model was not disclosed.","sourceIds":["mesa-mhi-launch"]},
+      {"category":"Controllable test load","detail":"100 kW dummy load included in the demonstration configuration.","sourceIds":["mesa-nedo-case"]}
+    ],
+    "technicalDetails": [
+      {"category":"Identity boundary","detail":"PNM's Prosperity installation, roughly 2 km from Aperture Center, was coordinated by BEMS2 but was a separate utility asset. NEDO text cites 500 kW PV and 500 kW/500 kWh storage for that facility; it is not part of Mesa del Sol's on-site nameplate.","sourceIds":["mesa-nedo-case"]},
+      {"category":"Control result","detail":"Coordinating the gas engine and fuel cell with storage reduced the modeled storage capacity required for PV smoothing by about 14%; the study estimated up to 17.7% with low communications delay.","sourceIds":["mesa-nedo-case"]},
+      {"category":"Transfer performance","detail":"NEDO reports grid/island switching and reconnection without instantaneous interruption in the tested configuration.","sourceIds":["mesa-nedo-case"]},
+      {"category":"Recent research evidence","detail":"The 2023 UNM dataset contains 18 measured features for power, voltage, frequency, and temperature over 13 months, providing stronger operating evidence than undated project-directory listings.","sourceIds":["mesa-dataset-2023"]},
+      {"category":"Energy mix limitation","detail":"No audited annual generation by source was found. The 50 kW PV array is small relative to the approximately 400 kW building load, while grid power, gas generation, and fuel cells provide the balance; battery and thermal storage shift energy rather than generate it.","sourceIds":["mesa-nedo-case"]}
+    ],
+    "sources": [
+      {"id":"mesa-nedo-case","title":"Japan-U.S. Collaborative Smart Grid Demonstration Project in New Mexico Part 2: Efforts in Albuquerque","url":"https://www.nedo.go.jp/content/100763124.pdf","publisher":"NEDO","kind":"primary"},
+      {"id":"mesa-mhi-launch","title":"Nine Japanese Companies Launch Japan-U.S. Collaborative Smart Grid Demonstration Project in Business District of Albuquerque, New Mexico","url":"https://www.mhi.com/news/120521.html","publisher":"Mitsubishi Heavy Industries","kind":"primary"},
+      {"id":"mesa-unm-2012","title":"UNM School of Engineering Collaborates on New International Smart Grid Project","url":"https://engineering-dev.unm.edu/news-archive/news/2012/05/unm-school-of-engineering-collaborates-on-new-international-smart-grid-project.html","publisher":"University of New Mexico","kind":"primary"},
+      {"id":"mesa-unm-transfer","title":"UNM Board of Regents Meeting E-book, June 13, 2014","url":"https://regents.unm.edu/meetings/documents/2014/bor-ebook-2014-06-13.pdf","publisher":"University of New Mexico","kind":"primary"},
+      {"id":"mesa-siemens-2020","title":"UNM Signs Agreement to Collaborate with Siemens Industry at Mesa del Sol Microgrid","url":"https://www.nmepscor.org/news-and-events/news/unm-signs-agreement-collaborate-siemens-industry-mesa-del-sol-microgrid","publisher":"New Mexico EPSCoR","kind":"primary"},
+      {"id":"mesa-dataset-2023","title":"Power, voltage, frequency and temperature dataset from Mesa Del Sol microgrid","url":"https://zenodo.org/records/8339403","publisher":"University of New Mexico / Zenodo","kind":"primary"},
+      {"id":"mesa-symposium","title":"Mesa del Sol Microgrid","url":"https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/mesa-del-sol-microgrid/","publisher":"Microgrid Symposiums","kind":"secondary"},
+      {"id":"mesa-legacy-archive","title":"Mesa del Sol Microgrid (archived project page)","url":"https://web.archive.org/web/20210420131238id_/http://microgridprojects.com/microgrid/mesa-del-sol-microgrid/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "microgrid-technology-and-demonstration-center": {
+    "researchedAt":"2026-07-20",
+    "summary":"This is Oncor's System Operating Services Facility (SOSF) microgrid and its Technology Demonstration and Education Center in Lancaster, Texas. It is a working utility testbed—not merely an exhibit—built as four independently islandable but mutually connectable zones. The 2015 installation combines approximately 106 kW of PV, five fuel-fired generators totaling about 670 kW, and two battery systems totaling 225 kW/425 kWh, with S&C switching/protection and Schneider control software.",
+    "status":"Operational in March 2015 after a nine-month design/build effort. North Central Texas Council of Governments still described it as a successful operating project in 2022, and S&C continues to present it as a proven microgrid reference. No recent Oncor publication disclosed annual availability, generation mix, fuel consumption, battery state of health, or major replacements, so continued showcase/reference status is clearer than 2026 component condition.",
+    "organizations":[
+      {"name":"Oncor Electric Delivery","role":"Owner, funder, host, and operator of the SOSF microgrid and demonstration center.","sourceIds":["oncor-power","oncor-release"]},
+      {"name":"S&C Electric Company","role":"Microgrid engineering/integration partner; supplied switching, protection, storage, and system reconfiguration equipment.","sourceIds":["oncor-release","oncor-sandc-case"]},
+      {"name":"Schneider Electric","role":"Supplied the microgrid controller, load-preservation and demand-side software, power monitoring, and building/DER coordination.","sourceIds":["oncor-release","oncor-schneider-case"]},
+      {"name":"Axium Solar","role":"Supplied/installed the 104 kW parking-canopy and 2 kW ground-mounted PV systems.","sourceIds":["oncor-power"]},
+      {"name":"Caterpillar","role":"Manufacturer of three diesel generator sets totaling 560 kW.","sourceIds":["oncor-power"]},
+      {"name":"Cummins","role":"Manufacturer of the 45 kW propane reciprocating generator.","sourceIds":["oncor-power"]},
+      {"name":"Horizon Power Systems / Capstone","role":"Horizon supplied the propane-fired Capstone C65 microturbine package.","sourceIds":["oncor-power","oncor-horizon"]},
+      {"name":"Tesla","role":"Supplied the principal lithium-ion Powerpack battery system.","sourceIds":["oncor-power"]}
+    ],
+    "specifications":[
+      {"label":"Architecture","value":"Four autonomous microgrids—telecommunications, control center, and two less-critical facility zones—that can island independently or operate as a combined system; nine DER sources when individual generators, PV arrays, and storage systems are counted.","sourceIds":["oncor-release","oncor-power"]},
+      {"label":"Photovoltaics","value":"106 kW total: 104 kW parking-canopy array plus a 2 kW ground-mounted array. The older 200 kW value in some directories is not supported by the detailed as-built account.","sourceIds":["oncor-power"]},
+      {"label":"Fuel-fired generation","value":"Approximately 670 kW: 2 x 175 kW Caterpillar diesel, 1 x 210 kW Caterpillar diesel, 1 x 45 kW Cummins propane reciprocating generator, and 1 x 65 kW propane Capstone microturbine.","sourceIds":["oncor-power","oncor-horizon"]},
+      {"label":"Battery storage","value":"225 kW/425 kWh total nameplate: 200 kW/400 kWh Tesla lithium-ion Powerpack and 25 kW/25 kWh S&C PureWave CES.","sourceIds":["oncor-power"]},
+      {"label":"Island capability","value":"About 989 kW of peak DER output for roughly two hours; approximately 660 kW can be sustained while fuel remains available. These totals reflect practical configuration/rounding and should not be recomputed as an annual energy mix.","sourceIds":["oncor-power"]},
+      {"label":"Schedule","value":"S&C and Schneider engaged June 2014, groundbreaking September 2014, operational March 2015.","sourceIds":["oncor-power"]}
+    ],
+    "equipment":[
+      {"category":"Diesel generators","manufacturer":"Caterpillar","detail":"Two 175 kW sets and one 210 kW set.","sourceIds":["oncor-power"]},
+      {"category":"Propane generator","manufacturer":"Cummins","detail":"45 kW reciprocating engine-generator.","sourceIds":["oncor-power"]},
+      {"category":"Propane microturbine","manufacturer":"Capstone","model":"C65","detail":"65 kW package supplied through Horizon Power Systems.","sourceIds":["oncor-power","oncor-horizon"]},
+      {"category":"Battery energy storage","manufacturer":"Tesla","model":"Powerpack","detail":"200 kW/400 kWh lithium-ion system providing fast voltage/frequency reference and island support.","sourceIds":["oncor-power"]},
+      {"category":"Battery energy storage","manufacturer":"S&C Electric Company","model":"PureWave CES","detail":"25 kW/25 kWh community-energy-storage unit.","sourceIds":["oncor-release","oncor-power"]},
+      {"category":"Protection and switching","manufacturer":"S&C Electric Company","model":"IntelliRupter PulseCloser, Scada-Mate CX, and Vista Underground Distribution Switchgear","detail":"Detects/tests faults, islands zones, isolates faulted sections, and dynamically reconfigures the system.","sourceIds":["oncor-release"]},
+      {"category":"Microgrid controls","manufacturer":"Schneider Electric","model":"Microgrid Controller; PowerLogic; StruxureWare Demand Side Operations","detail":"Coordinates DER dispatch, load preservation, building demand, utility pricing, forecasts, and operating history.","sourceIds":["oncor-release","oncor-schneider-case"]}
+    ],
+    "technicalDetails":[
+      {"category":"Black-start sequence","detail":"S&C's engineering case describes grid-forming BESS energizing the island first, followed by PV and the propane microturbine; a diesel is then synchronized separately because of harmonic/control constraints.","sourceIds":["oncor-sandc-case"]},
+      {"category":"Resilience logic","detail":"Continuous monitoring detects faults, isolates affected sections, preserves priority loads, and permits healthy zones to reconnect in a different topology.","sourceIds":["oncor-release","oncor-power"]},
+      {"category":"Demonstration center","detail":"The TDEC interface presents live SCADA and operating data from the actual facility microgrids, rather than a simulation-only display.","sourceIds":["oncor-power"]},
+      {"category":"Energy mix limitation","detail":"The facility is normally grid connected and exists to test mixed DER behavior. No audited annual solar, diesel, or propane contribution was published; nameplate values must not be converted into an energy percentage.","sourceIds":["oncor-power","oncor-nctcog-2022"]}
+    ],
+    "sources":[
+      {"id":"oncor-release","title":"S&C, Schneider Electric and Oncor Complete Innovative Microgrid","url":"https://www.prnewswire.com/news-releases/sc-schneider-electric-and-oncor-complete-innovative-microgrid-300061677.html","publisher":"S&C Electric Company / Schneider Electric / Oncor","kind":"primary"},
+      {"id":"oncor-schneider-case","title":"Oncor Microgrid Case Study","url":"https://www.se.com/uk/en/download/document/3070AC1503/","publisher":"Schneider Electric","kind":"primary"},
+      {"id":"oncor-power","title":"Oncor's System Operating Services Facility, Lancaster, Texas","url":"https://www.powermag.com/oncors-system-operating-services-facility-lancaster-texas/","publisher":"POWER Magazine","kind":"secondary"},
+      {"id":"oncor-sandc-case","title":"Oncor Microgrid Engineering Case Study","url":"https://www.sandc.asia/globalassets/sac-electric/documents/public---documents/sales-manual-library---external-view/case-study-180-1073.pdf?dt=639116989407826808","publisher":"S&C Electric Company","kind":"primary"},
+      {"id":"oncor-horizon","title":"Horizon Collaborates on Smart Grid Award-Winning Project","url":"https://horizonpowersystems.com/horizon-collaborates-smart-grid-award-winning-project/","publisher":"Horizon Power Systems","kind":"primary"},
+      {"id":"oncor-nctcog-2022","title":"Virtual Microgrid Tour: Successful Projects Across the U.S.","url":"https://www.nctcog.org/getmedia/f2456d8d-98e7-419e-83c5-5f187782dfb8/Virtual-Microgrid-Tour-Successful-Projects-Across-the-US.pdf","publisher":"North Central Texas Council of Governments","kind":"primary"},
+      {"id":"oncor-sandc-current","title":"Microgrids: Oncor Microgrid","url":"https://www.scelectric.org/en/solutions/microgrids/","publisher":"S&C Electric Company","kind":"primary"},
+      {"id":"oncor-legacy-archive","title":"Microgrid Technology and Demonstration Center (archived project page)","url":"https://web.archive.org/web/20210420141731id_/http://microgridprojects.com/microgrid/microgrid-technology-and-demonstration-center/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "milford-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"Milford's downtown municipal microgrid serves five public/community facilities in Connecticut. The as-built public record is a 400 kW natural-gas CHP system plus 125 kW battery storage, with Schneider EcoStruxure controls and islanding infrastructure. The frequently repeated 120 kW solar figure belongs to the 2014 award-stage design: Schneider's 2018 design-build announcement explicitly called the project solar-ready, and the state's final project tracker does not list installed PV.",
+    "status":"Completed and granted permission to operate in September 2021. Connecticut DEEP classifies it as operational, the city's 2023 hazard plan marks the project completed, and 2023 city procurement records document ongoing Schneider monitoring and maintenance. No public record found through July 2026 establishes installed PV, battery energy capacity/chemistry/vendor, annual CHP output, outage performance, or measured savings.",
+    "organizations":[
+      {"name":"City of Milford","role":"Owner, municipal customer, and operator through its Public Works department.","sourceIds":["milford-deep-tracker","milford-city-bonds","milford-maintenance"]},
+      {"name":"Connecticut Department of Energy and Environmental Protection (DEEP)","role":"State grant funder and project/interconnection program administrator.","sourceIds":["milford-deep-2014","milford-deep-tracker","milford-schneider"]},
+      {"name":"Schneider Electric","role":"Design-build contractor; supplied the microgrid control, monitoring, remote support, and maintenance platform.","sourceIds":["milford-schneider","milford-maintenance"]},
+      {"name":"United Illuminating","role":"Serving electric utility and interconnection counterparty.","sourceIds":["milford-schneider","milford-tdworld"]}
+    ],
+    "specifications":[
+      {"label":"Served facilities","value":"Parsons Government Complex, Harborside Middle School, Milford Senior Center, River Park senior apartments, and Milford City Hall.","sourceIds":["milford-deep-tracker","milford-city-bonds"]},
+      {"label":"As-built generation","value":"400 kW natural-gas combined heat and power. Public sources reviewed do not identify engine manufacturer, unit count, or heat-recovery rating.","sourceIds":["milford-deep-tracker"]},
+      {"label":"As-built storage","value":"125 kW battery energy storage; energy capacity (kWh), chemistry, usable duration, and manufacturer were not disclosed in the final state tracker or city records reviewed.","sourceIds":["milford-deep-tracker","milford-maintenance"]},
+      {"label":"Solar phase boundary","value":"The 2014 award concept included 120 kW PV. By 2018 the contracted project was described as solar-ready, with infrastructure for a future array; the 2021 as-built tracker lists no PV. Treat 120 kW as planned, not commissioned.","sourceIds":["milford-deep-2014","milford-schneider","milford-deep-tracker"]},
+      {"label":"Early-to-final design change","value":"2014 concept: 2 x 148 kW CHP, 120 kW PV, 100 kW battery. Final tracker: 400 kW CHP and 125 kW battery. The older 292/296 kW gas and 30 kW storage figures should not be used for the completed project.","sourceIds":["milford-deep-2014","milford-deep-tracker"]},
+      {"label":"Funding and contract","value":"Final DEEP tracker lists a US$2,909,341 grant; the 2014 announcement described an earlier award of nearly US$2.2 million. Schneider announced a US$4.5 million city agreement in 2018, reflecting the later project scope rather than one consistent lifetime cost figure.","sourceIds":["milford-deep-2014","milford-deep-tracker","milford-schneider"]}
+    ],
+    "equipment":[
+      {"category":"Microgrid supervisory control","manufacturer":"Schneider Electric","model":"EcoStruxure Microgrid Operation","detail":"Island/grid control and DER orchestration software maintained under the city's service agreement.","sourceIds":["milford-maintenance"]},
+      {"category":"Energy analytics","manufacturer":"Schneider Electric","model":"EcoStruxure Microgrid Advisor","detail":"Cloud/analytics layer for system optimization and reporting.","sourceIds":["milford-maintenance"]},
+      {"category":"Power monitoring","manufacturer":"Schneider Electric","model":"Power Monitoring Expert","detail":"Electrical metering and monitoring software included in current support.","sourceIds":["milford-maintenance"]},
+      {"category":"Remote support","manufacturer":"Schneider Electric","model":"Connected Services Hub","detail":"24/7 remote monitoring, semiannual reports, annual software service, and on-site preventive maintenance/testing.","sourceIds":["milford-maintenance"]},
+      {"category":"Battery energy storage","detail":"125 kW as-built BESS; manufacturer, model, chemistry, and kWh rating remain unverified.","sourceIds":["milford-deep-tracker","milford-maintenance"]}
+    ],
+    "technicalDetails":[
+      {"category":"Resilience role","detail":"The microgrid is intended to keep municipal administration, shelter/education, senior services, and senior housing energized when the utility grid is unavailable.","sourceIds":["milford-city-bonds","milford-schneider"]},
+      {"category":"Operations","detail":"Public Works manages the operating asset; Schneider's maintenance scope covers electrical equipment, BESS, control software, remote alarming, reports, and scheduled preventive work.","sourceIds":["milford-city-bonds","milford-maintenance"]},
+      {"category":"Projected versus measured performance","detail":"Pre-construction reporting projected lower cost and emissions, but no verified post-commissioning annual fuel, generation, savings, or emissions dataset was found. Those projections are not reported as outcomes here.","sourceIds":["milford-tdworld","milford-deep-tracker"]},
+      {"category":"Energy mix limitation","detail":"Normal supply combines the utility grid with natural-gas CHP, while the battery shifts/supports power. There is no as-built evidence for the planned PV and no published annual source shares.","sourceIds":["milford-deep-tracker","milford-schneider"]}
+    ],
+    "sources":[
+      {"id":"milford-deep-tracker","title":"Microgrid Grant and Loan Program Project Award Tracking","url":"https://portal.ct.gov/-/media/deep/energy/microgrids/microgrid-grant-and-loan-program/microgrids-project-award-tracking-all-projects-822022.pdf?hash=72541D2E20CFF98F3EC096DC1C39B358&rev=dc8ca4700d21468faed9223b741e47e6","publisher":"Connecticut DEEP","kind":"primary"},
+      {"id":"milford-deep-2014","title":"Gov. Malloy: Microgrid Projects in Bridgeport and Milford Awarded $5 Million in State Funding","url":"https://portal.ct.gov/malloy-archive/press-room/press-releases/2014/10-2014/gov-malloy-microgrid-projects-in-bridgeport-and-milford-awarded-5-million-in-state-funding-to-harden","publisher":"State of Connecticut","kind":"primary"},
+      {"id":"milford-schneider","title":"Schneider Electric to Design and Build Advanced Microgrid in Milford, Connecticut","url":"https://www.prnewswire.com/news-releases/schneider-electric-to-design-and-build-advanced-microgrid-in-milford-connecticut-300587325.html","publisher":"Schneider Electric","kind":"primary"},
+      {"id":"milford-city-hmp","title":"Milford Annex to the 2023 Hazard Mitigation Plan","url":"https://milfordct.us/DocumentCenter/View/3659/Milford-ANNEX-to-HMP-2023-PDF","publisher":"City of Milford","kind":"primary"},
+      {"id":"milford-city-bonds","title":"City of Milford 2024 Bonds and Notes Preliminary Official Statement","url":"https://munihub.s3.us-west-1.amazonaws.com/wp-content/uploads/20241009113208/2024-Milford-CT-Bonds_Notes-Preliminary-Official-Statement.pdf","publisher":"City of Milford","kind":"primary"},
+      {"id":"milford-maintenance","title":"City of Milford 2023 Agendas (microgrid maintenance procurement records)","url":"https://www.milfordct.us/DocumentCenter/View/4407/2023-Agendas-compressed","publisher":"City of Milford","kind":"primary"},
+      {"id":"milford-tdworld","title":"Can Milford's Microgrid Keep the Power on During a Hurricane?","url":"https://www.tdworld.com/smart-utility/article/20972391/can-milfords-microgrid-keep-the-power-on-during-a-hurricane","publisher":"T&D World","kind":"secondary"},
+      {"id":"milford-legacy-archive","title":"Milford Microgrid (archived project page)","url":"https://web.archive.org/web/20210420133449id_/http://microgridprojects.com/microgrid/milford-microgrid/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "miramar-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"MCAS Miramar's installation-wide microgrid is a 12 kV system serving more than 100 flight-line and support buildings—about 60% of base load—not every load on the installation. Its current documented portfolio is 3.2 MW landfill gas, 6.45 MW of new Tier 4 diesel/natural-gas generation, roughly 1.3–1.9 MW solar depending source/date, a separate 2 MW emergency diesel, and a 1.5 MW/3.3 MWh grid-forming lithium-ion BESS commissioned in November 2024. A separate earlier 230 kW PV/250 kW zinc-bromine flow-battery project at the Public Works building must not be merged into the base-wide BESS.",
+    "status":"The base-wide microgrid was completed in 2020 and publicly demonstrated in March 2021. It has performed more than 17 base-wide outage tests by 2023 and supported SDG&E during regional heat events. The new 1.5 MW/3.3 MWh BESS completed commissioning with a 5.5-hour black-start/island test on November 16, 2024 and then accumulated 12 continuous operating months through 2025. A May 2026 CEC final report confirms the integrated system operational and documents measured savings.",
+    "organizations":[
+      {"name":"United States Marine Corps / MCAS Miramar","role":"Installation owner, host, and operator of the microgrid and Energy and Water Operations Center.","sourceIds":["miramar-cec-2026","miramar-usmc-2022"]},
+      {"name":"Naval Facilities Engineering Systems Command (NAVFAC)","role":"Federal facilities engineering/procurement organization for the base-wide system.","sourceIds":["miramar-bv","miramar-schneider-2021"]},
+      {"name":"Schneider Electric","role":"Joint system integrator, supervisory-control supplier, and designer/installer of the 2024 BESS.","sourceIds":["miramar-bv","miramar-schneider-2021","miramar-cec-2026"]},
+      {"name":"Black & Veatch","role":"Joint EPC/design, construction, operations, and commissioning partner selected with Schneider in 2016.","sourceIds":["miramar-bv","miramar-schneider-2021"]},
+      {"name":"California Energy Commission","role":"EPIC funder of the 2024 battery demonstration and publisher of the 2026 final report.","sourceIds":["miramar-cec-2026"]},
+      {"name":"University of California San Diego","role":"CEC awardee and research lead for the BESS project.","sourceIds":["miramar-cec-2026"]},
+      {"name":"National Laboratory of the Rockies (formerly NREL)","role":"Technical analysis, controls/performance research, and coauthor of the CEC final report; NREL also supported the original 2011 concept.","sourceIds":["miramar-cec-2026","miramar-bv"]},
+      {"name":"Naval Information Warfare Center Pacific","role":"Cooperative research-and-development partner for the battery/control demonstration.","sourceIds":["miramar-cec-2026"]},
+      {"name":"Dynalectric","role":"Electrical construction/subcontract support for the BESS project.","sourceIds":["miramar-cec-2026"]},
+      {"name":"San Diego Gas & Electric","role":"Serving utility, interconnection partner, and recipient of grid-support dispatch during heat events.","sourceIds":["miramar-epa","miramar-usmc-2022"]},
+      {"name":"Fortistar","role":"Third-party landfill-gas generation owner/operator using gas from the City of San Diego landfill.","sourceIds":["miramar-epa"]}
+    ],
+    "specifications":[
+      {"label":"Critical-load coverage","value":"More than 100 flight-line and support buildings, approximately 60% of installation load. CEC reports about 15 MW peak net load and 4.2 MW median; older promotional wording that it powers the 'entire base' overstates the served scope.","sourceIds":["miramar-cec-2026","miramar-schneider-2021"]},
+      {"label":"Landfill-gas generation","value":"3.2 MW from 2 x 1.6 MW third-party generators on a dedicated 12 kV connection.","sourceIds":["miramar-cec-2026","miramar-epa"]},
+      {"label":"Prime generation plant","value":"6.45 MW final documented total: approximately 3.6 MW Tier 4 diesel plus 2.8 MW natural gas across four prime units. Earlier design pages round this to 4 MW diesel + 3 MW gas.","sourceIds":["miramar-cec-2026","miramar-bv"]},
+      {"label":"Solar capacity","value":"CEC's 2026 report uses 1.3 MW existing solar; EPA reports 1.8 MW and 2025 DOE slides show 1.9 MW. These likely reflect differing inclusion dates/scopes and are retained rather than collapsed into one false precision.","sourceIds":["miramar-cec-2026","miramar-epa","miramar-doe-2025"]},
+      {"label":"New battery","value":"1.5 MW/3.3 MWh lithium-ion BESS, approximately 2.2 hours at rated output; 3 x 500 kW/1,100 kWh ELM MG500 units.","sourceIds":["miramar-cec-2026"]},
+      {"label":"Additional emergency generation","value":"2 MW emergency diesel generator with paralleling switchgear, labeled the B7777 generator in the 2025 DOE configuration.","sourceIds":["miramar-cec-2026","miramar-doe-2025"]},
+      {"label":"Renewable share","value":"Latest CEC analysis says landfill gas plus solar supplies approximately 52% of microgrid energy needs; EPA describes approximately 50%. This is the best documented operating mix and is not a claim of zero-carbon generation because landfill gas accounting and diesel/gas backup remain material.","sourceIds":["miramar-cec-2026","miramar-epa"]},
+      {"label":"Measured BESS economics","value":"CEC reports US$258,268 demand-charge savings for calendar 2025, more than US$21,000/month. The report gives 917 kW average monthly demand reduction in one section and 962 kW elsewhere; capital cost was US$3,249,933, simple payback about 13 years, and projected 20-year NPV US$322,451.","sourceIds":["miramar-cec-2026"]}
+    ],
+    "equipment":[
+      {"category":"Battery energy storage","manufacturer":"ELM","model":"MG500","detail":"Three paralleled grid-forming packages, each 500 kW/1,100 kWh, for 1.5 MW/3.3 MWh total.","sourceIds":["miramar-cec-2026"]},
+      {"category":"Microgrid supervisory control","manufacturer":"Schneider Electric","model":"EcoStruxure OASyS SCADA","detail":"Integrates PCS/DER controls, AGC, unit commitment/economic dispatch, renewable and load forecasts, tariffs, islanding, black start, and reconnection.","sourceIds":["miramar-cec-2026","miramar-bv"]},
+      {"category":"Metering","detail":"More than 230 advanced meters feed the Energy and Water Operations Center and control platform.","sourceIds":["miramar-bv"]},
+      {"category":"Electrical distribution","detail":"480 V and 12 kV switchgear within a 12 kV base microgrid.","sourceIds":["miramar-bv","miramar-cec-2026"]},
+      {"category":"Earlier building-scale battery","detail":"Separate Public Works demonstration used a 250 kW zinc-bromine flow battery with titanium electrodes and 230 kW PV; storage energy rating was not established in the DOE page.","sourceIds":["miramar-doe-early"]}
+    ],
+    "technicalDetails":[
+      {"category":"BESS response","detail":"Battery ramp rate is approximately 1 MW/s and reaches full 1.5 MW in about 1.5 seconds, versus roughly 182 kW/s for diesel (about 10 seconds) and 7 kW/s for natural gas (about 3 minutes).","sourceIds":["miramar-cec-2026"]},
+      {"category":"Operating modes","detail":"Grid-connected P/Q and power-factor modes; island generator-following P/Q and Hz-Watts; grid-forming voltage/frequency and UPS-like modes.","sourceIds":["miramar-cec-2026"]},
+      {"category":"Landfill-gas contingency","detail":"Fuel-quality interruptions can abruptly remove 1.6–3.2 MW of landfill-gas output. The BESS supplies ride-through and now permits both landfill-gas generators to operate while islanded, whereas only one was allowed previously.","sourceIds":["miramar-cec-2026"]},
+      {"category":"Operational evidence","detail":"The first full Energy Resilience Readiness Exercise included a day-long utility outage; SDG&E requested dispatch during 2020–2022 heat events, including output roughly equivalent to 3,000 homes during the August 17 event reported by USMC.","sourceIds":["miramar-schneider-2021","miramar-usmc-2022","miramar-epa"]},
+      {"category":"Phase boundary","detail":"The DOE Public Works 230 kW PV/250 kW flow-battery pilot is a discrete building-scale research system. It should not be added to the later 1.5 MW/3.3 MWh base-wide BESS without a source proving both remain simultaneously active and inside the same accounting boundary.","sourceIds":["miramar-doe-early","miramar-cec-2026"]},
+      {"category":"Future versus installed","detail":"DOE's 2025 slides separately depict future targets of 4.8 MW landfill gas, 3 MW PV, and 3 MW/6 MWh storage; those are not commissioned nameplate values in this record.","sourceIds":["miramar-doe-2025"]}
+    ],
+    "sources":[
+      {"id":"miramar-cec-2026","title":"Marine Corps Air Station Miramar Battery Energy Storage System","url":"https://www.energy.ca.gov/sites/default/files/2026-05/CEC-500-2026-012.pdf","publisher":"California Energy Commission","kind":"primary"},
+      {"id":"miramar-epa","title":"Generate LFG Electricity for Microgrid","url":"https://www.epa.gov/lmop/generate-lfg-electricity-microgrid","publisher":"U.S. Environmental Protection Agency","kind":"primary"},
+      {"id":"miramar-bv","title":"Marine Corps Air Station Miramar Microgrid: From Design and Construction to Operations and Commissioning","url":"https://www.bv.com/en-US/projects/marine-corps-air-station-miramar-microgrid-from-design-and-construction-to-operations-and-commissioning","publisher":"Black & Veatch","kind":"primary"},
+      {"id":"miramar-schneider-2021","title":"Schneider Electric, Black & Veatch Microgrid Demonstrates Resilience Readiness at Marine Corps Air Station Miramar","url":"https://www.se.com/us/en/about-us/newsroom/news/press-releases/schneider-electric-black-veatch-microgrid-demonstrates-resilience-readiness-at-marine-corps-air-station-miramar-604908fe5e8af01881191024/","publisher":"Schneider Electric","kind":"primary"},
+      {"id":"miramar-usmc-2022","title":"MCAS Miramar Micro Grid Aids Local Community","url":"https://www.miramar.marines.mil/News/Stories/Article/Article/3239417/mcas-miramar-micro-grid-aids-local-community/","publisher":"U.S. Marine Corps","kind":"primary"},
+      {"id":"miramar-doe-early","title":"Marine Corps Air Station (MCAS) Miramar","url":"https://www.energy.gov/cmei/femp/marine-corps-air-station-mcas-miramar","publisher":"U.S. Department of Energy","kind":"primary"},
+      {"id":"miramar-doe-2025","title":"FEMP Summer Camp 2025: MCAS Miramar Microgrid Slides","url":"https://www.energy.gov/sites/default/files/2025-08/femp_summer_camp_t2_s6_slides.pdf","publisher":"U.S. Department of Energy","kind":"primary"},
+      {"id":"miramar-legacy-archive","title":"Miramar Microgrid (archived project page)","url":"https://web.archive.org/web/20210420134108id_/http://microgridprojects.com/microgrid/miramar-microgrid/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "mole-st-nicholas-microgrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"Sigora's Môle-Saint-Nicolas system in northwest Haiti began as a stand-alone solar-diesel micro-utility and later became part of one interconnected network spanning Môle, Jean Rabel, Bombardopolis, and the Presqu'île/Savanne Môle area. The best site-specific 2018 record lists 208 kW solar, 200 kW diesel, 1,055 customer connections, and 24 km of lines at Môle. Broader pilot figures—1.25 MW diesel, about 0.2 MW solar, and roughly 4,500 customers—cover the multi-municipality network and must not be assigned to the original Môle plant alone.",
+    "status":"Operating as part of Sigora Haiti's northwest network. A 2025 Haiti electrification review says the expanded system serves roughly 4,300 customers, while Sigora's current site claims 24/7 service to more than 30,000 people across four municipalities and a pico-grid. Public sources do not verify a commissioned wind plant or disclose current battery capacity, annual solar/diesel generation, availability, generator health, or audited 2026 customer counts.",
+    "organizations":[
+      {"name":"Sigora Haiti / Sigora International","role":"Developer, owner/operator, utility service provider, and supplier of the proprietary prepaid metering platform.","sourceIds":["mole-sigora-current","mole-idb-esrs","mole-sigora-meter"]},
+      {"name":"IDB Invest","role":"Lender and environmental/social reviewer for expansion of the northwest micro-utility network.","sourceIds":["mole-idb-project","mole-idb-esrs"]},
+      {"name":"ElectriFI","role":"Early impact investor; the 2025 sector review reports a US$2.5 million 2017 investment.","sourceIds":["mole-geapp-2025"]},
+      {"name":"Government and municipalities of Haiti","role":"Public counterparties under long-term concession/operating arrangements for the served municipalities.","sourceIds":["mole-sigora-current","mole-idb-project"]}
+    ],
+    "specifications":[
+      {"label":"Môle site generation (May 2018)","value":"208 kW photovoltaic plus two diesel gensets totaling 200 kW.","sourceIds":["mole-idb-esrs"]},
+      {"label":"Môle site reach (May 2018)","value":"1,055 household/business connections, 24 km of distribution/transmission, free electricity to a clinic, and 100 streetlights.","sourceIds":["mole-idb-esrs"]},
+      {"label":"Broader pilot network","value":"IDB describes the operating Môle/Jean Rabel/Bombardopolis/Presqu'île pilot as approximately 1.25 MW diesel plus 0.2 MW solar serving around 4,500 customers. This is a network total, not Môle-only nameplate.","sourceIds":["mole-idb-project"]},
+      {"label":"Current network reach","value":"A 2025 sector review reports approximately 4,300 customers after expansion to Bombardopolis, Jean Rabel, and Savanne Môle; Sigora's current website says more than 30,000 people across four municipalities plus a pico-grid. Different customer/person and date scopes explain the figures.","sourceIds":["mole-geapp-2025","mole-sigora-current"]},
+      {"label":"Service voltage and commercial model","value":"24/7 AC service at 120/240/480 V using prepaid smart metering; Sigora reports 25-year contracts for the network.","sourceIds":["mole-sigora-current","mole-sigora-meter"]},
+      {"label":"Financing","value":"2025 review reports US$2.5 million from ElectriFI in 2017 and US$9.5 million associated with IDB in 2019. IDB's project page separately lists an US$8 million syndicated package and US$1.5 million financed amount, approved in 2019 and signed December 17, 2020; these financing fields should not be summed without deal documents.","sourceIds":["mole-geapp-2025","mole-idb-project"]}
+    ],
+    "equipment":[
+      {"category":"Advanced meter","manufacturer":"Sigora","model":"Sigora Smart Meter","detail":"Prepaid mobile-account meter with anti-theft features, demand ceilings, tiered restoration delay, secure RF mesh/cloud communications, and single-, split-, or three-phase configurations.","sourceIds":["mole-sigora-meter"]},
+      {"category":"Photovoltaics","detail":"208 kW documented at Môle in 2018; module and inverter manufacturers/models were not publicly disclosed.","sourceIds":["mole-idb-esrs"]},
+      {"category":"Diesel generators","detail":"Two units totaling 200 kW at Môle in 2018; make, individual ratings, and models were not disclosed.","sourceIds":["mole-idb-esrs"]},
+      {"category":"Battery storage","detail":"Storage is discussed in expansion and secondary reporting, but no authoritative commissioned kW/kWh, chemistry, vendor, or model was found for Môle. It is therefore not included in installed nameplate.","sourceIds":["mole-idb-project","mole-solar-mag"]}
+    ],
+    "technicalDetails":[
+      {"category":"Identity boundary","detail":"The original Môle plant and the later interconnected northwest network are related but different accounting scopes. Network diesel capacity cannot be attributed to the Môle site.","sourceIds":["mole-idb-esrs","mole-idb-project"]},
+      {"category":"Wind status","detail":"IDB documents wind turbines as a proposed expansion component/environmental topic, not as installed inventory. No reliable source confirms the legacy 100 kW wind claim was commissioned; Sigora's generic statement that its hybrid grids can incorporate wind is not project evidence.","sourceIds":["mole-idb-esrs","mole-idb-project","mole-sigora-current"]},
+      {"category":"Historical reliability","detail":"Sigora reported in 2017 an average 1.167 outages and about 31 minutes of downtime per week. This is operator-reported historical performance, not a current independent availability audit.","sourceIds":["mole-sigora-reliability"]},
+      {"category":"Storm performance","detail":"Secondary reporting says service was restored within 55 hours after Hurricane Matthew and within 10 hours after Irma for customers then served across Môle and Jean Rabel; panels were temporarily removed for Irma protection.","sourceIds":["mole-solar-mag"]},
+      {"category":"Energy mix limitation","detail":"Môle's documented solar and diesel nameplates were roughly equal in 2018, but annual kWh by source was not published. Capacity parity is not an energy-mix percentage.","sourceIds":["mole-idb-esrs"]}
+    ],
+    "sources":[
+      {"id":"mole-sigora-current","title":"Sigora Haiti","url":"https://sigorahaiti.com/","publisher":"Sigora Haiti","kind":"primary"},
+      {"id":"mole-idb-esrs","title":"Environmental and Social Review Summary: Sigora Microutility Project – Haiti","url":"https://www.openlandcontracts.org/contract/ocds-591adf-8503051834/download/pdf","publisher":"IDB Invest","kind":"primary"},
+      {"id":"mole-idb-project","title":"Sigora Haiti Microutility Project","url":"https://idbinvest.org/es/projects/sigora-haiti-microutility-project","publisher":"IDB Invest","kind":"primary"},
+      {"id":"mole-geapp-2025","title":"Electrification in Haiti","url":"https://energyalliance.org/wp-content/uploads/2025/05/LAC-UAC-Haiti-Deep-Dive.pdf","publisher":"Global Energy Alliance for People and Planet / Universal Access Coalition","kind":"secondary"},
+      {"id":"mole-sigora-meter","title":"Products: Sigora Smart Meter","url":"https://sigorahaiti.com/products/","publisher":"Sigora Haiti","kind":"primary"},
+      {"id":"mole-sigora-reliability","title":"From Electrification to Empowerment: Building a Utility-Grade Micro-Utility from the Bottom Up","url":"https://sigorahaiti.com/2017/12/17/article-from-electrification-to-empowerment-building-a-utility-grade-micro-utility-from-the-bottom-up/","publisher":"Sigora Haiti","kind":"primary"},
+      {"id":"mole-solar-mag","title":"Solar Energy, Storage and Resilience on the Ground in Haiti","url":"https://solarmagazine.com/solar-energy-storage-resilience-on-the-ground-in-haiti/","publisher":"Solar Magazine","kind":"secondary"},
+      {"id":"mole-legacy-archive","title":"Môle-Saint-Nicolas Microgrid (archived project page)","url":"https://web.archive.org/web/20210420140957id_/http://microgridprojects.com/microgrid/mole-st-nicholas-microgrid/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "molokai-secure-renewable-microgrid-project": {
+    "researchedAt":"2026-07-20",
+    "summary":"The Molokaʻi Secure Renewable Microgrid Project is HNEI's fast-response utility BESS demonstration on the isolated Maui Electric island grid, not a generic label for every Molokaʻi renewable project. Its core asset is a 2 MW Altairnano lithium-titanate battery with a Parker-Hannifin PCS, variously reported as 330/333 kWh usable or 397 kWh nominal. It was built to supply sub-second reserve and frequency/fault response as rooftop PV displaced roughly 2 MW of the island's approximately 5 MW daytime generation.",
+    "status":"Commissioned in February 2016 and transferred to Maui Electric. HNEI's updated 2022 project page says the Molokaʻi BESS was operating, and later HNEI research continued to use it with a programmable load bank. No asset-specific public source after 2022 was found confirming state of health, cell replacement, availability, or continued dispatch in July 2026; classify it as operational through the latest direct confirmation, with current condition unverified.",
+    "organizations":[
+      {"name":"Hawaiʻi Natural Energy Institute (HNEI), University of Hawaiʻi","role":"Project lead, technical integrator, test/analysis organization, and performance researcher.","sourceIds":["molokai-hnei-2020","molokai-heet-final","molokai-hnei-current"]},
+      {"name":"Office of Naval Research","role":"Principal federal sponsor of the APRISES/secure-grid demonstration.","sourceIds":["molokai-onr-deck","molokai-heet-final"]},
+      {"name":"Maui Electric Company / Hawaiian Electric","role":"Island utility; supplied grid integration, communications, safety/metering/installation support and became BESS owner after commissioning.","sourceIds":["molokai-hnei-2020","molokai-heet-final"]},
+      {"name":"Altairnano","role":"Supplied lithium-titanate cells/modules and BESS integration/installation support.","sourceIds":["molokai-hnei-2020","molokai-heet-final"]},
+      {"name":"Parker-Hannifin","role":"Supplied the bidirectional inverter/power-conversion system.","sourceIds":["molokai-hnei-2020","molokai-heet-final"]},
+      {"name":"Integrated Dynamics","role":"Developed control algorithms, communications, and simulation work.","sourceIds":["molokai-heet-final"]},
+      {"name":"Northern Plains Power Technologies","role":"Performed grid modeling and algorithm development.","sourceIds":["molokai-heet-final"]},
+      {"name":"SunEdison","role":"Site-construction contractor for the BESS installation.","sourceIds":["molokai-heet-final"]}
+    ],
+    "specifications":[
+      {"label":"Power rating","value":"2 MW charge/discharge capability for fast reserve, fault response, and frequency support.","sourceIds":["molokai-hnei-2020","molokai-onr-deck"]},
+      {"label":"Energy rating","value":"HNEI's 2020 annual report gives 397 kWh, while an ONR/HNEI technical deck gives 330 kWh (commonly repeated as 333 kWh). These likely reflect nominal versus usable/revised rating; preserve both rather than selecting one silently.","sourceIds":["molokai-hnei-2020","molokai-onr-deck"]},
+      {"label":"Duration","value":"Approximately 10–12 minutes at full 2 MW, depending on whether 330 or 397 kWh is used; this is a power-quality/reserve battery, not multi-hour energy shifting.","sourceIds":["molokai-hnei-2020","molokai-onr-deck"]},
+      {"label":"Grid context","value":"Approximately 5–5.5 MW island system; around 2 MW of daytime conventional generation had been displaced by roughly 400 rooftop-PV systems when the project was documented.","sourceIds":["molokai-hnei-2020","molokai-onr-deck"]},
+      {"label":"Commissioning","value":"February 2016.","sourceIds":["molokai-onr-deck"]},
+      {"label":"Control latency result","value":"The initial utility communications path required about 350 ms and was modeled as destabilizing for the intended response. Direct PCS measurements reduced typical end-to-end response to about 58 ms, near the modeled approximately 50 ms requirement.","sourceIds":["molokai-hnei-2020"]}
+    ],
+    "equipment":[
+      {"category":"Battery cells/modules","manufacturer":"Altairnano","model":"GEN2 60 Ah lithium-titanate","detail":"Technical deck describes 416 series cell groups in a 1S7P module arrangement; system marketed in Altairnano's large-format BESS family.","sourceIds":["molokai-onr-deck","molokai-heet-final"]},
+      {"category":"Power conversion system","manufacturer":"Parker-Hannifin","detail":"2 MW-class bidirectional inverter/PCS; exact product model was not disclosed in the sources reviewed.","sourceIds":["molokai-hnei-2020","molokai-heet-final"]},
+      {"category":"Grid controller","manufacturer":"Integrated Dynamics / HNEI","detail":"Fast-response control and communications architecture for contingency reserve and frequency response.","sourceIds":["molokai-heet-final","molokai-hnei-2020"]},
+      {"category":"Dynamic load bank","detail":"750 kW programmable resistive load bank installed in 2019 to coordinate with the 2 MW BESS, absorb excess PV, and support frequency/down-reserve experiments.","sourceIds":["molokai-loadbank"]}
+    ],
+    "technicalDetails":[
+      {"category":"Primary function","detail":"The battery supplies rapid reserve and transient response after generation trips or high-PV disturbances; its short duration means its key value is stability, not replacing diesel energy over hours. By 2019, HNEI reported about 2.3 MW rooftop PV against daytime demand as low as 3.3 MW and paired the BESS with a 750 kW controllable load bank.","sourceIds":["molokai-onr-deck","molokai-hnei-2020","molokai-loadbank"]},
+      {"category":"Control validation","detail":"Modeling showed that using the original slow utility data path could worsen instability. Direct measurement/control at the PCS enabled the necessary fast action; live contingency tests were deliberately bounded for grid safety.","sourceIds":["molokai-hnei-2020"]},
+      {"category":"Identity boundary","detail":"Do not merge this 2 MW fast-response BESS with the later Molokaʻi New Energy Partners proposal (4.88 MW PV plus 3 MW/15 MWh storage) or other community-solar projects; they are separate projects and phases.","sourceIds":["molokai-hnei-current"]},
+      {"category":"Energy mix limitation","detail":"The BESS produces no net energy. HNEI documents high rooftop-PV penetration and continued diesel generation, but no project-specific annual Molokaʻi solar/diesel percentage was found. Maui County-wide RPS values are not a substitute for island data.","sourceIds":["molokai-hnei-2020"]}
+    ],
+    "sources":[
+      {"id":"molokai-hnei-2020","title":"2020 HNEI Annual Report","url":"https://www.hnei.hawaii.edu/wp-content/uploads/2020-HNEI-Annual-Report.pdf","publisher":"Hawaiʻi Natural Energy Institute","kind":"primary"},
+      {"id":"molokai-onr-deck","title":"Batteries for Grid Management","url":"https://www.hnei.hawaii.edu/wp-content/uploads/2017-ONR_APRISES-Batteries-for-Grid-Management.pdf","publisher":"Hawaiʻi Natural Energy Institute / Office of Naval Research","kind":"primary"},
+      {"id":"molokai-heet-final","title":"Hawaiʻi Energy and Environmental Technologies Initiative 2010 Final Technical Report","url":"https://www.hnei.hawaii.edu/wp-content/uploads/HEET-10-Final-Technical-Report.pdf","publisher":"Hawaiʻi Natural Energy Institute","kind":"primary"},
+      {"id":"molokai-hnei-current","title":"Utility-Scale BESS Demonstration Project","url":"https://www.hnei.hawaii.edu/utility-scale-bess-demonstration-project/","publisher":"Hawaiʻi Natural Energy Institute","kind":"primary"},
+      {"id":"molokai-loadbank","title":"HNEI Installs Dynamic Load Bank on Molokai","url":"https://www.hnei.hawaii.edu/hnei-installs-dynamic-load-bank-on-molokai/","publisher":"Hawaiʻi Natural Energy Institute","kind":"primary"},
+      {"id":"molokai-aprises-final","title":"APRISES 2011 Final Technical Report","url":"https://www.hnei.hawaii.edu/wp-content/uploads/APRISES-11-Final-Technical-Report.pdf","publisher":"Hawaiʻi Natural Energy Institute","kind":"primary"},
+      {"id":"molokai-legacy-archive","title":"Molokai Secure Renewable Microgrid Project (archived project page)","url":"https://web.archive.org/web/20200706002906id_/http://microgridprojects.com/microgrid/molokai-secure-renewable-microgrid-project/","publisher":"MicrogridProjects.com via Internet Archive","kind":"archive"}
+    ]
+  },
+  "morotai-island-minigrid": {
+    "researchedAt":"2026-07-20",
+    "summary":"The Morotai/Daruba hybrid minigrid commissioned in April 2012 combined 600 kWp solar, 2.7 MWh of battery storage, and seven diesel generators with Optimal Power Solutions' Macro Hybrid System. Its lifecycle matters: automatic control was already problematic in 2016, Indonesia's electricity directorate says Daruba PLTS Unit 1 stopped operating in March 2019, and a 2022 report described only two-thirds of the system functional and manual operation. In June 2026 PLN announced preparation of a new 600 kWp Juanga hybrid PV project; that planned replacement/addition is not yet commissioned capacity.",
+    "status":"Original 2012 solar asset is not confirmed operational. The strongest official status record says it ceased operation in March 2019; later reporting describes partial/manual operation, while a 2023 planning document still lists 600 kW and 350 kW hybrid PV assets as available infrastructure without proving output. As of June 14, 2026, PLN was preparing a new 600 kWp plant at Juanga for hybrid integration. Classify the legacy project as impaired/out of service with an uncommissioned renewal project in development.",
+    "organizations":[
+      {"name":"PT PLN (Persero)","role":"State utility, project client, owner/operator, diesel-grid operator, and developer of the 2026 replacement/addition.","sourceIds":["morotai-ops","morotai-pln-2012","morotai-pln-2015","morotai-new-2026"]},
+      {"name":"Optimal Power Solutions","role":"Hybrid-system integrator and supplier of power conversion and Macro Hybrid System controls.","sourceIds":["morotai-ops"]},
+      {"name":"Indonesia Ministry of Energy and Mineral Resources","role":"National policy/oversight body; documented the 2016 automation and staffing problems and 2019 outage status.","sourceIds":["morotai-esdm-2016","morotai-esdm-2019"]},
+      {"name":"Pulau Morotai Regency / South Morotai local government","role":"Local host and stakeholder for Daruba/Juanga electricity infrastructure.","sourceIds":["morotai-pln-2012","morotai-new-2026"]}
+    ],
+    "specifications":[
+      {"label":"Original solar plant","value":"600 kWp PV commissioned April 14, 2012 at Daruba/Juanga.","sourceIds":["morotai-pln-2012","morotai-pln-2015","morotai-ops"]},
+      {"label":"Original storage","value":"2.7 MWh battery storage. Public project material does not disclose chemistry, power rating, manufacturer, model, or usable state of health.","sourceIds":["morotai-ops"]},
+      {"label":"Power conversion","value":"1,350 kVA total inverter capacity, integrating both AC-coupled and DC-coupled PV.","sourceIds":["morotai-ops"]},
+      {"label":"Original diesel fleet","value":"Seven diesel gensets, approximately 1.7 MW total in the integrator record. PLN reported in 2015 that two were inoperable and five had 1,680 kW available capability; a separate 2 MW addition was then expected, so these figures are date-specific.","sourceIds":["morotai-ops","morotai-pln-2015"]},
+      {"label":"Observed 2015 solar dispatch","value":"PLN reported average daytime PV output around 200 kW: about 120 kW delivered to the grid and 80 kW stored for the 18:00–22:00 peak.","sourceIds":["morotai-pln-2015"]},
+      {"label":"Projected fuel/economic benefit","value":"At launch PLN projected about 800 liters/day (nearly 300,000 liters/year) diesel displacement and approximately Rp2.5 billion/year savings. No audited realized lifetime savings dataset was found.","sourceIds":["morotai-pln-2012","morotai-ops"]},
+      {"label":"2026 planned plant","value":"New 600 kWp PV at Juanga, announced June 14, 2026 as being prepared for hybrid integration with the existing electricity system; no COD, battery scope, contractor, or equipment model was published.","sourceIds":["morotai-new-2026"]}
+    ],
+    "equipment":[
+      {"category":"Hybrid controls","manufacturer":"Optimal Power Solutions","model":"Macro Hybrid System","detail":"Proprietary controller and conversion architecture dispatching AC- and DC-tied solar, batteries, and multiple diesel generators.","sourceIds":["morotai-ops"]},
+      {"category":"PV power conversion","manufacturer":"Optimal Power Solutions","detail":"1,350 kVA total inverter capacity; 2026 academic description of the legacy plant mentions 14 on-grid inverters and 1,348 modules, but exact makes/models remain undisclosed.","sourceIds":["morotai-ops","morotai-wave-2026"]},
+      {"category":"Battery bank","detail":"2.7 MWh storage in the original configuration; chemistry/vendor/model not found and condition after the 2019 outage is unknown.","sourceIds":["morotai-ops","morotai-esdm-2019"]},
+      {"category":"Diesel generators","detail":"Seven-unit original fleet; individual make/model/rating not disclosed. By 2015 only five were operating.","sourceIds":["morotai-ops","morotai-pln-2015"]}
+    ],
+    "technicalDetails":[
+      {"category":"Control/maintenance failure","detail":"A 2016 presidential inspection found the automatic system malfunctioning, forcing manual operation, with only one technician supporting the plant. The ministry emphasized remote-site spares, regular checks, and additional trained staff.","sourceIds":["morotai-esdm-2016"]},
+      {"category":"Outage evidence","detail":"The electricity directorate's 2019 performance report explicitly says PLTS Daruba Unit 1 had not operated since March 2019. This is stronger status evidence than later capacity inventories.","sourceIds":["morotai-esdm-2019"]},
+      {"category":"Later condition conflict","detail":"A 2022 Antara report caption says only two-thirds of the 2012 system functioned and it was manually coordinated with diesel, while a 2023 Bappenas inventory lists two hybrid PV plants (350 and 600 kW) as existing infrastructure. Neither demonstrates full restored output; the conflict is retained.","sourceIds":["morotai-antara-2022","morotai-bappenas-2023"]},
+      {"category":"Energy mix limitation","detail":"No recent island generation-by-source data was found. Historical PV output was far below nameplate and diesel remained the balancing source; the 2026 600 kWp plant is planned, so it cannot be counted in operating renewable mix.","sourceIds":["morotai-pln-2015","morotai-esdm-2019","morotai-new-2026"]}
+    ],
+    "sources":[
+      {"id":"morotai-ops","title":"Morotai Island Minigrid System","url":"https://optimal-power-solutions.com/morotai-island-minigrid/","publisher":"Optimal Power Solutions","kind":"primary"},
+      {"id":"morotai-pln-2012","title":"PLTS Terbesar Hadir di Morotai, PLN Hemat Rp 2,5 Milyar Per Tahun","url":"https://web.pln.co.id/cms/media/siaran-pers/2012/04/plts-terbesar-hadir-di-morotai-pln-hemat-rp-25-milyar-per-tahun/","publisher":"PT PLN (Persero)","kind":"primary"},
+      {"id":"morotai-pln-2015","title":"PLTS Daruba Perkuat Kelistrikan Pulau Morotai","url":"https://web.pln.co.id/cms/media/warta-pln/2015/07/plts-daruba-perkuat-kelistrikan-pulau-morotai/","publisher":"PT PLN (Persero)","kind":"primary"},
+      {"id":"morotai-esdm-2016","title":"Presiden RI Mengunjungi PLTS Daruba","url":"https://www.esdm.go.id/en/media-center/news-archives/presiden-ri-mengunjungi-plts-daruba","publisher":"Indonesia Ministry of Energy and Mineral Resources","kind":"primary"},
+      {"id":"morotai-esdm-2019","title":"2019 Performance Report, Directorate General of Electricity","url":"https://www.esdm.go.id/assets/media/content/content-laporan-kinerja-ditjen-ketenagalistrikan-2019.pdf","publisher":"Indonesia Ministry of Energy and Mineral Resources","kind":"primary"},
+      {"id":"morotai-antara-2022","title":"Mengatasi limbah PLTS di Maluku agar tak jadi masalah","url":"https://www.antaranews.com/berita/3164293/mengatasi-limbah-plts-di-maluku-agar-tak-jadi-masalah","publisher":"ANTARA","kind":"secondary"},
+      {"id":"morotai-bappenas-2023","title":"2023 Regional Strategic Area Monitoring Book","url":"https://komens.bappenas.go.id/public/storage/files/Dt.2.5_Buku_Pemantauan_Kawasan_Strategis_Daerah_Tertinggal_dan_Dana_Alokasi_Khusus_Tematik_III_dalam_Lingkup_Wilayah_Regional_III_Tahun_2023_2023.pdf","publisher":"Bappenas","kind":"primary"},
+      {"id":"morotai-new-2026","title":"PLN siapkan pembangunan PLTS 600 kWp di Pulau Morotai Malut percepat transisi energi hijau","url":"https://ambon.antaranews.com/berita/332749/pln-siapkan-pembangunan-plts-600-kwp-di-pulau-morotai-malut-percepat-transisi-energi-hijau","publisher":"ANTARA reporting PLN statement","kind":"secondary"},
+      {"id":"morotai-wave-2026","title":"Preliminary assessment of nearshore wave energy in Morotai for remote electrification in Indonesia","url":"https://gigvvy.com/journals/ijase/articles/ijase-202603-23-1-004","publisher":"International Journal of Applied Science and Engineering","kind":"secondary"}
+    ]
+  },
+  "mustique": {
+    "researchedAt":"2026-07-20",
+    "summary":"Mustique's private island utility has evolved through several distinct solar-diesel-storage phases. The 2015 DHYBRID Solar Valley project added 1 MWp PV to roughly 3 MVA average diesel generation. A later phase reached 1.5 MW PV and integrated a 500 kW/1 MWh Tesla battery. The current DHYBRID case describes an island-wide 7 MWp PV, 5.2 MW/10 MWh BESS, and 10,680 kVA diesel system under its Universal Power Platform; the 2024 EPC account also reports an 18-hour all-solar trial in May 2023.",
+    "status":"Operating and substantially expanded. Mustique's own September 2022 update said work was underway to raise solar's share from 16% toward 70%. DHYBRID's current project pages show completed BESS Phase I (1.3 MW/2.257 MWh) and Phase II (5.2 MW/10 MWh) configurations with 7 MWp PV, while Solar Watt Systems reported the full system operating in 2024 and additional Lagoon solar construction. Exact 2026 annual renewable share, BESS chemistry/vendor for the final phase, diesel run hours, and independently audited fuel savings were not found.",
+    "organizations":[
+      {"name":"The Mustique Company Ltd.","role":"Island owner/utility, project client, asset owner, and operating organization through its Utilities and Renewable Energy department.","sourceIds":["mustique-dhybrid-current","mustique-island-2022","mustique-solarwatt-2024"]},
+      {"name":"DHYBRID Power Systems","role":"Original hybrid-system integrator; supplier of the Fuel Reduction System, Universal Power Platform, SCADA/monitoring, and later BESS integration.","sourceIds":["mustique-dhybrid-2015","mustique-dhybrid-tesla","mustique-dhybrid-current"]},
+      {"name":"Solar Watt Systems Inc.","role":"Barbados-based EPC/installation contractor for the major 2022–2024 PV and battery expansion.","sourceIds":["mustique-solarwatt-2024"]},
+      {"name":"ACI Engineering","role":"Engineering collaborator on the expanded solar-storage-diesel system.","sourceIds":["mustique-solarwatt-2024"]},
+      {"name":"Tesla","role":"Manufacturer of the 500 kW/1 MWh battery integrated during the earlier 1.5 MW PV phase.","sourceIds":["mustique-dhybrid-tesla"]}
+    ],
+    "specifications":[
+      {"label":"Current photovoltaic capacity","value":"7,000 kWp in DHYBRID's Phase I/II case pages and Solar Watt's 2024 account.","sourceIds":["mustique-dhybrid-current","mustique-dhybrid-phase1","mustique-solarwatt-2024"]},
+      {"label":"Current battery system","value":"5,200 kW/10,000 kWh in DHYBRID's BESS Extension Phase II case—approximately 1.9 hours at rated power.","sourceIds":["mustique-dhybrid-current"]},
+      {"label":"Current diesel plant","value":"10,680 kVA installed plant in the current Phase I/II case pages. Generator count, engine makes/models, kW rating, and usable derated capability are not disclosed.","sourceIds":["mustique-dhybrid-current","mustique-dhybrid-phase1"]},
+      {"label":"2015 phase","value":"1 MWp PV integrated with several diesel generators averaging about 3 MVA output; commissioned September 2015 after approximately seven weeks of construction.","sourceIds":["mustique-dhybrid-2015"]},
+      {"label":"Intermediate Tesla phase","value":"1.5 MW total PV, 500 kW/1,000 kWh Tesla storage, and 3,500 kVA diesel plant. The DHYBRID page's size table truncates battery energy to '500 kW/kWh,' but its narrative explicitly states 500 kW/1,000 kWh.","sourceIds":["mustique-dhybrid-tesla"]},
+      {"label":"BESS Phase I","value":"1,300 kW/2,257 kWh with 7 MWp PV and 10,680 kVA diesel before expansion to Phase II.","sourceIds":["mustique-dhybrid-phase1"]},
+      {"label":"Renewable/fuel claims","value":"Mustique targeted up to 70% solar provision in 2022. Solar Watt reported about 70% fuel-dependency reduction after reaching 7 MW and roughly 30% from a recent 3 MW addition; these are operator/contractor claims whose accounting periods and demand conditions are not fully disclosed.","sourceIds":["mustique-island-2022","mustique-solarwatt-2024"]}
+    ],
+    "equipment":[
+      {"category":"Microgrid control","manufacturer":"DHYBRID Power Systems","model":"Universal Power Platform","detail":"Coordinates PV and BESS charging/discharging and starts/stops diesel generators; evolved from the 2015 Fuel Reduction System with SCADA, remote monitoring, and ring communications.","sourceIds":["mustique-dhybrid-2015","mustique-dhybrid-tesla","mustique-dhybrid-current"]},
+      {"category":"Intermediate battery","manufacturer":"Tesla","detail":"500 kW/1 MWh battery system integrated with the 1.5 MW PV phase; exact Tesla product designation was not stated.","sourceIds":["mustique-dhybrid-tesla"]},
+      {"category":"Current BESS","detail":"5.2 MW/10 MWh final Phase II battery installation; DHYBRID's public page does not identify battery manufacturer, model, or chemistry, so it should not be assumed to be the same Tesla equipment as the intermediate phase.","sourceIds":["mustique-dhybrid-current"]},
+      {"category":"Photovoltaics","detail":"7 MWp island-wide current total; public sources reviewed do not identify module or inverter manufacturers/models.","sourceIds":["mustique-dhybrid-current","mustique-solarwatt-2024"]},
+      {"category":"Diesel generation","detail":"10,680 kVA plant retained for firm capacity/backup; make, model, unit count, and fuel-storage autonomy not disclosed.","sourceIds":["mustique-dhybrid-current"]}
+    ],
+    "technicalDetails":[
+      {"category":"Control architecture","detail":"The Universal Power Platform prioritizes solar, schedules battery charge/discharge, and automatically starts/stops diesel units. The original 2015 system added permanent remote monitoring, SCADA, and ring communications to address island-grid fluctuations.","sourceIds":["mustique-dhybrid-2015","mustique-dhybrid-tesla"]},
+      {"category":"Operational demonstration","detail":"Solar Watt reports the island ran exclusively on PV/battery energy for 18 hours in a May 2023 trial. This is a demonstrated interval, not evidence of year-round 100% renewable supply.","sourceIds":["mustique-solarwatt-2024"]},
+      {"category":"Savings evolution","detail":"The 2015 supplier projected/claimed about 490,000 liters diesel and 1.2 million kg CO2 saved annually with 3.5-year payback. The later 1.5 MW PV/1 MWh battery page claims 762,000 liters and 1.78 million kg CO2 annually. These are phase-specific supplier figures, not additive savings.","sourceIds":["mustique-dhybrid-2015","mustique-dhybrid-tesla"]},
+      {"category":"Phase boundary","detail":"The 1 MW, 1.5 MW, BESS Phase I, and 7 MW/Phase II descriptions are sequential configurations. Do not add their PV or battery ratings together.","sourceIds":["mustique-dhybrid-2015","mustique-dhybrid-tesla","mustique-dhybrid-phase1","mustique-dhybrid-current"]},
+      {"category":"Expansion caveat","detail":"Solar Watt's February 2024 article also said a further 1.1 MW Lagoon project was under construction. It is excluded from the 7 MW installed total absent a later completion source.","sourceIds":["mustique-solarwatt-2024"]}
+    ],
+    "sources":[
+      {"id":"mustique-dhybrid-current","title":"Mustique, St. Vincent and the Grenadines — BESS Extension Phase II","url":"https://www.dhybrid.de/en/case/mustique-st-vincent-and-the-grenadines-3","publisher":"DHYBRID Power Systems","kind":"primary"},
+      {"id":"mustique-dhybrid-phase1","title":"Mustique, St. Vincent and the Grenadines — BESS Extension Phase I","url":"https://www.dhybrid.de/en/case/mustique-st-vincent-and-the-grenadines-2","publisher":"DHYBRID Power Systems","kind":"primary"},
+      {"id":"mustique-dhybrid-tesla","title":"Mustique, St. Vincent and the Grenadines — Photovoltaic Extension and Energy Storage Integration","url":"https://www.dhybrid.de/en/case/mustique-st-vincent-and-the-grenadines","publisher":"DHYBRID Power Systems","kind":"primary"},
+      {"id":"mustique-dhybrid-2015","title":"New DHYBRID project in the Caribbean commissioned — 490,000 liters of diesel fuel saved","url":"https://www.lifepr.de/pressemitteilung/dhybrid-power-systems-gmbh/new-dhybrid-project-in-the-caribbean-commissioned-490-000-liters-of-diesel-fuel-saved/boxid/557489","publisher":"DHYBRID Power Systems via lifePR","kind":"primary"},
+      {"id":"mustique-island-2022","title":"Conservation Update Summer 2022","url":"https://mustique-island.com/journals/conservation-update-summer-2022","publisher":"Mustique Island / The Mustique Company","kind":"primary"},
+      {"id":"mustique-solarwatt-2024","title":"Solar Watts Goes to Mustique","url":"https://solarwattsystems.com/newsroom/solar-watts-goes-to-mustique/","publisher":"Solar Watt Systems Inc.","kind":"primary"}
+    ]
+  }
+}
