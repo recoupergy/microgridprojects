@@ -1,0 +1,784 @@
+{
+  "alcatraz-island-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Alcatraz Island's National Park Service power system is an off-grid solar-battery-diesel microgrid commissioned in 2012 to replace diesel-only service. The as-built record identifies 305 kW of SunPower PV, a 1.9 MWh East Penn gel lead-acid battery, eight Princeton Power 100 kW bidirectional inverters, two 250 kW MTU diesel generators, and Princeton controls. DOE reports approximately 400,000 kWh of annual savings and a roughly 75% reduction in diesel delivered to the island after installation, while later NREL analysis found that generator-led battery charging was still curtailing PV and raising fuel and battery costs.",
+    "status": "The microgrid remains an active NPS/NLR optimization project, but its lifecycle has included material failures. A federal procurement account says the battery system failed and was replaced in late 2018, and an October 2019 energy-management failure left the two diesel generators supplying all power until repairs. NLR's page, updated 23 April 2026, says NLR was working with NPS and Princeton Power to implement and measure a revised load-following strategy. Public sources reviewed do not establish when that implementation finished or disclose current component availability, so uninterrupted full-hybrid operation should not be assumed.",
+    "organizations": [
+      {
+        "name": "National Park Service",
+        "role": "Federal site owner and operator responsible for Alcatraz Island and its off-grid electrical service.",
+        "sourceIds": ["alc-doe-femp", "alc-nps-sustainable", "alc-nlr-reopt"]
+      },
+      {
+        "name": "U.S. Department of Energy Federal Energy Management Program",
+        "role": "ARRA-era project funder/supporting federal program and publisher of the official capacity, cost, completion, and savings record.",
+        "sourceIds": ["alc-doe-femp"]
+      },
+      {
+        "name": "Princeton Power Systems",
+        "role": "Supplier of the eight power-conversion units and site energy-management/controller platform; later implementation partner for revised dispatch controls.",
+        "sourceIds": ["alc-photon-2012", "alc-nlr-reopt", "alc-govtribe-repair"]
+      },
+      {
+        "name": "Hal Hays Construction",
+        "role": "Installation contractor; work began in October 2011. NLR also identifies Hal Hayes Construction as a project partner.",
+        "sourceIds": ["alc-photon-2012", "alc-nlr-reopt"]
+      },
+      {
+        "name": "Alcatraz Island Services",
+        "role": "NPS concession contractor that maintained the island electrical system and, according to the federal repair justification, replaced the failed battery system in late 2018.",
+        "sourceIds": ["alc-govtribe-repair", "alc-doi-oig-2023"]
+      },
+      {
+        "name": "National Laboratory of the Rockies (formerly National Renewable Energy Laboratory)",
+        "role": "Analyzed microgrid dispatch with REopt and was working with NPS and Princeton Power on implementation and measurement of a load-following control strategy.",
+        "sourceIds": ["alc-nlr-reopt"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "As-built solar PV capacity",
+        "value": "305 kW from 959 SunPower 318 W modules; an NREL O&M case study later rounded the system to 308 kW",
+        "sourceIds": ["alc-doe-femp", "alc-nps-sustainable", "alc-photon-2012", "alc-nrel-om-2019"]
+      },
+      {
+        "label": "As-built battery rating",
+        "value": "Approximately 1,900 kWh at 480 V, arranged as two parallel strings of 240 cells; NREL's later O&M case study reports 1,920 kWh",
+        "sourceIds": ["alc-photon-2012", "alc-nrel-om-2019"]
+      },
+      {
+        "label": "Battery operating window in the as-built account",
+        "value": "40%-80% state of charge",
+        "sourceIds": ["alc-photon-2012"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "Two 250 kW generator sets",
+        "sourceIds": ["alc-photon-2012"]
+      },
+      {
+        "label": "Typical site load",
+        "value": "Approximately 70-80 kW",
+        "sourceIds": ["alc-nps-sustainable"]
+      },
+      {
+        "label": "Project cost and completion",
+        "value": "$8.5 million; completed in 2012, with the technical account recording first operation on 15 February 2012",
+        "sourceIds": ["alc-doe-femp", "alc-photon-2012"]
+      },
+      {
+        "label": "DOE-reported annual benefit",
+        "value": "Approximately 400,000 kWh saved and 337,000 kg of greenhouse-gas emissions avoided per year",
+        "sourceIds": ["alc-doe-femp"]
+      },
+      {
+        "label": "Energy mix outcome",
+        "value": "PV, battery storage, and diesel; DOE says diesel volume transported to the island fell approximately 75% after the system was installed, but no verified current annual renewable-energy percentage is published",
+        "sourceIds": ["alc-doe-femp", "alc-nlr-reopt"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "PV modules",
+        "manufacturer": "SunPower",
+        "model": "E19/318",
+        "detail": "959 modules totaling approximately 305 kW on the Cellhouse roof.",
+        "sourceIds": ["alc-photon-2012", "alc-nps-sustainable"]
+      },
+      {
+        "category": "PV mounting",
+        "manufacturer": "SunLink",
+        "detail": "Roof-mounting system used for the Cellhouse array.",
+        "sourceIds": ["alc-photon-2012"]
+      },
+      {
+        "category": "Bidirectional inverters",
+        "manufacturer": "Princeton Power Systems",
+        "model": "GTIB 480-100 kW",
+        "detail": "Eight 100 kW units: four interfacing the PV array and four interfacing the battery. The modular arrangement allowed individual units to be taken offline while the system continued at reduced capacity.",
+        "sourceIds": ["alc-photon-2012", "alc-govtribe-repair"]
+      },
+      {
+        "category": "Original battery bank",
+        "manufacturer": "East Penn Manufacturing",
+        "model": "2AVR125-33 IL Gel",
+        "detail": "480 gel VRLA lead-acid cells in two 240-cell strings, approximately 480 V and 1.9 MWh. The manufacturer/model of the late-2018 replacement was not disclosed in the sources reviewed.",
+        "sourceIds": ["alc-photon-2012", "alc-govtribe-repair"]
+      },
+      {
+        "category": "Diesel generator sets",
+        "manufacturer": "MTU / Valley Power Systems",
+        "detail": "Two 250 kW generator sets supplied by Valley Power Systems using MTU equipment.",
+        "sourceIds": ["alc-photon-2012"]
+      },
+      {
+        "category": "Energy-management system",
+        "manufacturer": "Princeton Power Systems",
+        "detail": "Site controller/EMOS coordinated PV, battery, and diesel dispatch. The federal repair account identifies the EMOS and battery-management system as repair and retuning scope after the 2019 failure.",
+        "sourceIds": ["alc-photon-2012", "alc-govtribe-repair", "alc-nlr-reopt"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Dispatch architecture",
+        "detail": "NPS describes PV serving the load first, batteries covering the next increment, and diesel starting last; excess PV and excess diesel generation can charge the batteries. The island has no mainland utility connection.",
+        "sourceIds": ["alc-nps-sustainable"]
+      },
+      {
+        "category": "Commissioning issues",
+        "detail": "The 2012 technical account reports an August 2012 battery-string ground fault and an inverter component failure attributed to condensation. Firmware was being tuned roughly every six weeks during early commissioning.",
+        "sourceIds": ["alc-photon-2012"]
+      },
+      {
+        "category": "O&M planning",
+        "detail": "After a March 2016 site tour, NREL estimated an ideal annual O&M budget of $90,000-$100,000, including monitoring, three battery-test visits, and two PV-cleaning visits. It recorded planning assumptions of eight years for battery replacement, ten years for inverters, and seven years for the battery-management system; these were planning intervals, not verified replacement dates.",
+        "sourceIds": ["alc-nrel-om-2019"]
+      },
+      {
+        "category": "2018-2019 lifecycle failures",
+        "detail": "A federal sole-source repair justification, available through a procurement mirror, says the battery system failed and was replaced in late 2018. It also says an October 2019 failure required removing the system from EMOS control, leaving two generators to supply all island power while repairs were arranged.",
+        "sourceIds": ["alc-govtribe-repair"]
+      },
+      {
+        "category": "Dispatch optimization finding",
+        "detail": "REopt found that cycle-charging the battery from diesel left too little capacity to absorb midday PV. A load-following strategy was projected to cut PV curtailment from about 30% to 4%, halve fuel consumption and cost by about 15,000 gallons per year, and save approximately $115,000 annually in diesel and battery wear; these are modeled opportunities, not measured realized savings.",
+        "sourceIds": ["alc-nlr-reopt"]
+      },
+      {
+        "category": "Contract-oversight update",
+        "detail": "A 2023 DOI Inspector General evaluation found that NPS could not consistently support required biannual rooftop-array inspections or weekly PV production reports under its concession contracts. This is an oversight and documentation finding, not proof that those activities never occurred.",
+        "sourceIds": ["alc-doi-oig-2023"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No reviewed source discloses the 2018 replacement battery manufacturer, chemistry, model, or present energy capacity; the completion date and measured benefit of the control change described by NLR in April 2026 are also not yet public.",
+        "sourceIds": ["alc-govtribe-repair", "alc-nlr-reopt"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "alc-doe-femp",
+        "title": "Alcatraz Island",
+        "url": "https://www.energy.gov/cmei/femp/alcatraz-island",
+        "publisher": "U.S. Department of Energy Federal Energy Management Program",
+        "kind": "primary"
+      },
+      {
+        "id": "alc-nps-sustainable",
+        "title": "Sustainable Alcatraz",
+        "url": "https://www.nps.gov/goga/learn/nature/sustainable-alcatraz.htm",
+        "publisher": "National Park Service",
+        "kind": "primary"
+      },
+      {
+        "id": "alc-nlr-reopt",
+        "title": "REopt Reveals Opportunities To Boost PV System Efficiencies, Halve Fuel Costs at Alcatraz",
+        "url": "https://www.nlr.gov/reopt/projects/case-study-alcatraz",
+        "publisher": "National Laboratory of the Rockies",
+        "kind": "primary"
+      },
+      {
+        "id": "alc-nrel-om-2019",
+        "title": "Best Practices for Operation and Maintenance of Photovoltaic and Energy Storage Systems; 3rd Edition",
+        "url": "https://docs.nlr.gov/docs/fy19osti/73822.pdf",
+        "publisher": "National Renewable Energy Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "alc-photon-2012",
+        "title": "Under the Sun: The Alcatraz Microgrid",
+        "url": "https://torial-prod.eu-central-1.linodeobjects.com/torial_uploads/124168/original/PUSA_2012-10Alcatraz.pdf",
+        "publisher": "PHOTON International",
+        "kind": "secondary"
+      },
+      {
+        "id": "alc-govtribe-repair",
+        "title": "Repair Electrical System on Alcatraz Island — Justification and Approval",
+        "url": "https://govtribe.com/category/psc/z2mg-repair-or-alteration-of-epg-facilities-solar",
+        "publisher": "GovTribe federal procurement mirror",
+        "kind": "secondary"
+      },
+      {
+        "id": "alc-doi-oig-2023",
+        "title": "The National Park Service Could Improve Oversight of Contract Services and Purchase Card Transactions for Alcatraz Island",
+        "url": "https://www.oversight.gov/sites/default/files/documents/reports/2023-08/Final-Evaluation-ReportAlcatrazIslandContracts.pdf",
+        "publisher": "U.S. Department of the Interior Office of Inspector General",
+        "kind": "primary"
+      }
+    ]
+  },
+  "amjaras-hybrid-project": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Amdjarass (also spelled Amdjeres or Am Djerass) town power system in Chad has evolved from a 1.1 MW Vergnet wind-diesel microgrid into a wind-solar-battery-diesel system. Four 275 kW wind turbines were delivered in 2016. InnoVent says a separate 5.124 MWp, 8,400-module tracker PV plant with 10 MWh of batteries began injecting power on 25 September 2025 alongside four 1 MVA generator sets, for a town load then no greater than 1 MW. The reviewed sources do not publish a measured annual renewable-energy share.",
+    "status": "Operating as an expanded hybrid town grid. The original four-turbine, 1.1 MW wind plant is still reported operational. InnoVent reported first PV injection on 25 September 2025, final testing and transformer work in progress, and official completion planned for late November 2025; Le Monde reported in February 2026 that Amdjarass had no routine power cuts and that the solar plant had been inaugurated in October 2025. Vergnet/SOTAFRIC announcements in 2021-2023 described four additional wind turbines, but later 2025-2026 accounts still identify only four turbines, so completion of that wind expansion is not established.",
+    "organizations": [
+      {
+        "name": "ADERM-TCHAD",
+        "role": "Chadian rural-energy agency and client/anticipated long-term operator of the 2025 solar-battery expansion.",
+        "sourceIds": ["amd-aderm-2025", "amd-innovent-2025"]
+      },
+      {
+        "name": "InnoVent",
+        "role": "Developer/EPC and first-year operational-support provider for the 5.124 MWp solar and 10 MWh storage expansion.",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "name": "Vergnet",
+        "role": "Supplier of the original four wind turbines and Hybrid Wizard control system; contracting party for the announced storage/renewable second phase.",
+        "sourceIds": ["amd-vergnet-2017", "amd-vergnet-hybrid", "amd-rem-2016"]
+      },
+      {
+        "name": "SOTAFRIC",
+        "role": "Vergnet subsidiary that says it resumed maintenance of phase one and work on an extension after Vergnet acquired it in 2021.",
+        "sourceIds": ["amd-vergnet-sotafric"]
+      },
+      {
+        "name": "Government of Chad",
+        "role": "Recipient of the original wind phase in February 2016 and sponsor of the town's power expansion.",
+        "sourceIds": ["amd-vergnet-2017"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original wind capacity",
+        "value": "1.1 MW from four 275 kW turbines, delivered in February 2016",
+        "sourceIds": ["amd-vergnet-2017", "amd-rem-2016", "amd-windpower-2026"]
+      },
+      {
+        "label": "2025 solar expansion",
+        "value": "5.124 MWp from 8,400 panels rated 610 W each on 120 trackers",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "label": "2025 battery storage",
+        "value": "10 MWh in five 2 MWh systems; battery power, chemistry, usable state-of-charge window, and manufacturer are not disclosed",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "label": "2025 diesel/generator interface",
+        "value": "Four generator sets rated 1 MVA each; manufacturer, model, fuel, and real-power rating are not stated",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "label": "Town load at solar commissioning",
+        "value": "No more than approximately 1 MW",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "label": "Solar-project transformer",
+        "value": "15/33 kV transformer scheduled for delivery in late October 2025 as final testing continued",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Wind, tracker PV, battery storage, and generator sets; the 10 MWh battery was intended to extend solar injection into the night before wind assumed supply, but no measured annual source percentages were located",
+        "sourceIds": ["amd-innovent-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Vergnet",
+        "model": "GEV MP 275/32",
+        "detail": "Four 275 kW turbines, 1.1 MW total. The model designation is reported by the current The Wind Power project database and is consistent with the contemporary four-by-275 kW project record.",
+        "sourceIds": ["amd-windpower-2026", "amd-rem-2016"]
+      },
+      {
+        "category": "Microgrid control",
+        "manufacturer": "Vergnet",
+        "model": "Hybrid Wizard",
+        "detail": "Controller monitors real-time grid demand and dispatches wind, solar, batteries, and generator sets, including source connection/disconnection and spinning-reserve management.",
+        "sourceIds": ["amd-vergnet-2017", "amd-vergnet-hybrid"]
+      },
+      {
+        "category": "PV array",
+        "detail": "8,400 modules rated 610 W each on 120 solar trackers. InnoVent does not identify module or tracker manufacturers/models.",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "category": "Battery energy-storage systems",
+        "detail": "Five systems rated 2 MWh each, 10 MWh total. Manufacturer, model, power rating, chemistry, and usable capacity are not disclosed.",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "category": "Generator sets",
+        "detail": "Four units rated 1 MVA each. InnoVent does not identify manufacturer, model, fuel, or power factor.",
+        "sourceIds": ["amd-innovent-2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Original phase timeline",
+        "detail": "Vergnet says the Government of Chad received the 1.1 MW four-turbine phase in February 2016. A January 2017 contract above EUR 8 million then proposed grid-forming high-capacity storage and controls intended to enable 100% renewable operation.",
+        "sourceIds": ["amd-vergnet-2017"]
+      },
+      {
+        "category": "Unverified wind-expansion claim",
+        "detail": "Vergnet/SOTAFRIC described an extension with four new turbines, 2.5 MW of solar, and 2.5 MW of generators. A May 2023 market report said civil works for four additional turbines were complete and completion was expected that June. Later project accounts in 2025-2026 still describe only four turbines, so the additional-turbine phase should remain classified as announced rather than verified complete.",
+        "sourceIds": ["amd-vergnet-sotafric", "amd-optionfinance-2023", "amd-innovent-2025", "amd-lemonde-2026"]
+      },
+      {
+        "category": "Solar rating progression",
+        "detail": "ADERM described a 5.4 MW solar plant and '10 megawatts' of batteries while construction was underway in March 2025. InnoVent's later commissioning account gives the more specific as-built ratings of 5.124 MWp and 10 MWh; the differing units and project stage are preserved rather than treated as equivalent.",
+        "sourceIds": ["amd-aderm-2025", "amd-innovent-2025"]
+      },
+      {
+        "category": "Solar commissioning sequence",
+        "detail": "The PV plant first injected power on 25 September 2025. InnoVent then expected a 15/33 kV transformer by the end of October, followed by final tests and formal completion in late November; the associated 33 kV network was intended to reach the airport and a planned slaughterhouse.",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "category": "Operating-support handoff",
+        "detail": "InnoVent planned to support the first year of operation, after which ADERM could operate independently or renew the support arrangement. No later public source found states which option was selected.",
+        "sourceIds": ["amd-innovent-2025"]
+      },
+      {
+        "category": "2026 outcome",
+        "detail": "Le Monde reported in February 2026 that Amdjarass did not experience the routine power cuts seen elsewhere and attributed supply to four wind turbines and a solar plant inaugurated in October 2025. This is a reported service outcome, not a quantified availability or renewable-share measurement.",
+        "sourceIds": ["amd-lemonde-2026"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No source reviewed provides PV or battery vendor/model data, BESS power or chemistry, current generator make/model, measured generation by source, fuel savings, load growth, or independent acceptance-test results. The relationship between the 2017 storage contract, the 2021-2023 Vergnet/SOTAFRIC extension, and the 2025 InnoVent solar-BESS plant is not fully documented.",
+        "sourceIds": ["amd-vergnet-2017", "amd-vergnet-sotafric", "amd-innovent-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "amd-vergnet-2017",
+        "title": "New contract signed with the city of Amdjarass, Chad — Installation of a 100%-renewable energy system",
+        "url": "https://live.euronext.com/sites/default/files/Connect_cp_vergnet_amdjarass__en.pdf",
+        "publisher": "Vergnet / Euronext",
+        "kind": "primary"
+      },
+      {
+        "id": "amd-vergnet-sotafric",
+        "title": "Vergnet SOTAFRIC",
+        "url": "https://www.vergnet.com/en/vergnet-sotafric/",
+        "publisher": "Vergnet",
+        "kind": "primary"
+      },
+      {
+        "id": "amd-vergnet-hybrid",
+        "title": "Hybrid — Hybrid Wizard",
+        "url": "https://www.vergnet.com/en/hybrid/",
+        "publisher": "Vergnet",
+        "kind": "primary"
+      },
+      {
+        "id": "amd-aderm-2025",
+        "title": "Centrales éolienne et photovoltaïque d'Amdjarass",
+        "url": "https://aderm.td/centrales-eolienne-et-photovoltaique-damdjarass/",
+        "publisher": "ADERM-TCHAD",
+        "kind": "primary"
+      },
+      {
+        "id": "amd-innovent-2025",
+        "title": "Les premiers kWh injectés à Amdjarass !",
+        "url": "https://innovent.fr/2025/10/14/les-premiers-kwh-injectes-a-amdjarass/",
+        "publisher": "InnoVent",
+        "kind": "primary"
+      },
+      {
+        "id": "amd-lemonde-2026",
+        "title": "Au Tchad, Amdjarass, ville symbole du règne de la famille Déby",
+        "url": "https://www.lemonde.fr/afrique/article/2026/02/26/au-tchad-amdjarass-ville-symbole-du-regne-de-la-famille-deby_6668392_3212.html",
+        "publisher": "Le Monde",
+        "kind": "secondary"
+      },
+      {
+        "id": "amd-windpower-2026",
+        "title": "Amdjarass (Chad)",
+        "url": "https://www.thewindpower.net/scripts/fpdf181/windfarm.php?id=16873",
+        "publisher": "The Wind Power",
+        "kind": "secondary"
+      },
+      {
+        "id": "amd-rem-2016",
+        "title": "Phase 1 of Chad's Amdjarass wind farm now complete",
+        "url": "https://www.renewableenergymagazine.com/wind/phase-1-of-chada-s-amdjarass-wind-20160810",
+        "publisher": "Renewable Energy Magazine",
+        "kind": "secondary"
+      },
+      {
+        "id": "amd-optionfinance-2023",
+        "title": "Vergnet dynamise ses activités au Tchad",
+        "url": "https://www.optionfinance.fr/info-financiere-en-continu/d/2023-05-31-vergnet-dynamise-ses-activites-au-tchad.html",
+        "publisher": "Option Finance / AOF",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "andaman-island-indian-coast-guard": {
+    "researchedAt": "2026-07-20",
+    "summary": "Optimal Power Solutions commissioned a remote solar-battery-diesel microgrid for the Indian Coast Guard in the Andaman Islands in 2014. The site-specific commissioning record gives 75 kWp of PV, a 240 V/2,400 Ah battery bank, two 30 kVA diesel generators, two proprietary 20 kVA parallel inverter modules, and a Station Control Module with remote monitoring. A later OPS portfolio page separately describes a broader eight-system Coast Guard island portfolio totaling 320 kWp; the relationship between that aggregate and the 75 kWp commissioning record is not explained.",
+    "status": "Commissioned in October 2014 according to the system supplier. OPS continues to present the Coast Guard island microgrids in its current project portfolio, and a 2024 Indian power-sector report lists the 75 kW project, but neither source establishes present operation, availability, or component condition. No site-specific failure, replacement, expansion, performance, or decommissioning update was located through July 2026, so current operating status is unknown.",
+    "organizations": [
+      {
+        "name": "Indian Coast Guard",
+        "role": "End user of the remote island facility power system.",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio"]
+      },
+      {
+        "name": "Optimal Power Solutions",
+        "role": "Microgrid system supplier/integrator and publisher of the 2014 commissioning record and current portfolio record.",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio"]
+      },
+      {
+        "name": "Optimal Power Synergy India",
+        "role": "Indian OPS affiliate identified as supplier of the proprietary parallel inverter modules and Station Control Module.",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "name": "BEL",
+        "role": "Named by OPS as a client for the broader India Coast Guard island-microgrid portfolio; the page does not define BEL's exact contracting or integration role.",
+        "sourceIds": ["and-ops-portfolio"]
+      },
+      {
+        "name": "Agni Power",
+        "role": "Named by OPS as a client for the broader India Coast Guard island-microgrid portfolio; the page does not define its exact project role.",
+        "sourceIds": ["and-ops-portfolio"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "2014 site PV capacity",
+        "value": "75 kWp",
+        "sourceIds": ["and-ops-2014", "and-ficci-2024"]
+      },
+      {
+        "label": "2014 site battery bank",
+        "value": "240 V, 2,400 Ah; the commissioning release does not state chemistry, manufacturer, usable capacity, discharge power, or rated duration",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "label": "2014 site diesel capacity",
+        "value": "Two 30 kVA generator sets",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "label": "2014 site inverter capacity",
+        "value": "Two 20 kVA parallel inverter modules",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "label": "Later OPS portfolio aggregate",
+        "value": "Eight 40 kWp solar systems (320 kWp total), eight 20 kVA parallel inverters, and 575 kWh of storage at 240 VDC across a broader Coast Guard island portfolio",
+        "sourceIds": ["and-ops-portfolio"]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Solar PV and battery storage with diesel backup; no verified annual renewable fraction, fuel consumption, or diesel-savings figure was found",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Parallel inverter modules",
+        "manufacturer": "Optimal Power Synergy India",
+        "detail": "Two proprietary 20 kVA modules for the 75 kWp site, configured in parallel for redundancy. No product model is given.",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "Optimal Power Synergy India",
+        "model": "Station Control Module",
+        "detail": "Coordinates battery, load, and diesel-generator operation and provides remote monitoring.",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "category": "Balance of system",
+        "detail": "AC switching cabinet, DC distribution board, and PV combiner boxes were included. Their manufacturers and models are not disclosed.",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "category": "Undisclosed major equipment",
+        "detail": "The public commissioning account does not identify the PV module, battery, or diesel-generator manufacturers/models or the battery chemistry.",
+        "sourceIds": ["and-ops-2014"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture and controls",
+        "detail": "The islanded system combines PV, a high-voltage DC battery bank, redundant parallel inverter modules, and two diesel generator sets. The Station Control Module monitors and dispatches the battery, site load, and generators and supports remote monitoring.",
+        "sourceIds": ["and-ops-2014"]
+      },
+      {
+        "category": "Scope conflict",
+        "detail": "The 2014 commissioning release describes one 75 kWp site with two 20 kVA inverters. OPS's later portfolio page describes eight 40 kWp systems totaling 320 kWp with eight 20 kVA inverters. These may represent different sites or portfolio phases, but the sources do not reconcile them, so the ratings are not combined.",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio"]
+      },
+      {
+        "category": "Battery-rating caveat",
+        "detail": "The original source reports 240 V and 2,400 Ah, while the portfolio page reports 575 kWh. No allowable depth of discharge, inverter-limited output, load profile, or battery degradation data is public, so a defensible storage duration cannot be stated.",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No post-commissioning source found provides the exact island/site name, current operator and maintenance contractor, equipment replacements, operational availability, load served, generation by source, fuel savings, or present condition. A supplier portfolio entry and a 2024 project-listing are insufficient to prove current operation.",
+        "sourceIds": ["and-ops-2014", "and-ops-portfolio", "and-ficci-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "and-ops-2014",
+        "title": "OPS commissions a new PV micro-grid for Indian Coast Guard",
+        "url": "https://optimal-power-solutions.com/ops-commissions-a-new-pv-micro-grids-for-indian-coast-guard/",
+        "publisher": "Optimal Power Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "and-ops-portfolio",
+        "title": "India Coast Guard Island Microgrids",
+        "url": "https://optimal-power-solutions.com/india-coast-guard-island-minigrid/",
+        "publisher": "Optimal Power Solutions",
+        "kind": "primary"
+      },
+      {
+        "id": "and-ficci-2024",
+        "title": "Study on Moving to a Self-Sustainable Power Distribution Sector",
+        "url": "https://copperindia.org/wp-content/uploads/2024/01/Report-on-Moving-to-a-Self-Sustainable-Power-Distribution-Sector_FICCI-x-ICA-India_2024.pdf",
+        "publisher": "FICCI / International Copper Association India",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "annobon-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Annobón's island electrification was announced in 2014 as a 5 MW solar microgrid for roughly 5,000 residents and was recorded by a New Jersey government storage study as commissioned in 2015 with 5 MW of PV, 5 MW/10 MWh of GE Durathon sodium-nickel-chloride batteries, 5 MW of diesel generation, twenty Princeton Power BIGI-250 converters, and Princeton EMOS controls. Later evidence does not describe a single stable configuration: Equatorial Guinea's 2024 budget continued to fund a 5 MVA Annobón solar-electrification line, while a cable supplier claims a 4.2 MWp/2.8 MWh hybrid configuration was supplied in 2023 and served 85% of demand by the second quarter of 2024.",
+    "status": "The original project was recorded as commissioned in 2015, but present configuration and availability are not independently established. A 2024 enacted-budget line shows continued spending on 5 MVA solar electrification through 2025-2026. GERITEL's April 2026 retrospective claims that a 4.2 MWp/2.8 MWh system supplied in 2023 covered 85% of residents' demand by Q2 2024. Public evidence does not establish whether the later work was a replacement, rehabilitation, extension, or restatement of the 2015 5 MW/10 MWh system, so July 2026 operating status remains unverified.",
+    "organizations": [
+      {
+        "name": "Government of Equatorial Guinea",
+        "role": "Project sponsor/owner; its Ministry of Mines, Industry and Energy announced the 5 MW electrification project and the national budget continued to carry the investment line in 2024.",
+        "sourceIds": ["ann-gegov-2014", "ann-ge-budget-2024"]
+      },
+      {
+        "name": "MAECI Solar",
+        "role": "Selected system integrator and solar-module supplier for the 2014-2015 project.",
+        "sourceIds": ["ann-ge-2014"]
+      },
+      {
+        "name": "Wise Power Systems International",
+        "role": "Engineering/development participant that later described installing the 5 MW Annobón solar microgrid.",
+        "sourceIds": ["ann-wise-installed"]
+      },
+      {
+        "name": "GE Power & Water",
+        "role": "Supplier of the original energy-storage system and publisher of the project announcement.",
+        "sourceIds": ["ann-ge-2014", "ann-njbpu-2019"]
+      },
+      {
+        "name": "Princeton Power Systems",
+        "role": "Supplier of twenty BIGI-250 power converters and the EMOS microgrid-control system for the original configuration.",
+        "sourceIds": ["ann-princeton-2015"]
+      },
+      {
+        "name": "Eaton",
+        "role": "Engineering and electrical-distribution equipment provider for the original 5 MW project, including switchgear, protection, and transformers.",
+        "sourceIds": ["ann-eaton-2014", "ann-enf-eaton-2014"]
+      },
+      {
+        "name": "GERITEL",
+        "role": "Cable supplier claiming delivery in 2023 for a later 4.2 MWp/2.8 MWh Annobón hybrid project; its exact relationship to the 2015 installation is not documented.",
+        "sourceIds": ["ann-geritel-2026"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original commissioned PV capacity",
+        "value": "5 MW",
+        "sourceIds": ["ann-ge-2014", "ann-njbpu-2019", "ann-princeton-2015"]
+      },
+      {
+        "label": "Original commissioned battery rating",
+        "value": "5 MW / 10 MWh, two-hour duration, sodium-nickel-chloride GE Durathon technology",
+        "sourceIds": ["ann-njbpu-2019", "ann-princeton-2015"]
+      },
+      {
+        "label": "Original diesel capacity",
+        "value": "5 MW in the Princeton system design",
+        "sourceIds": ["ann-princeton-2015"]
+      },
+      {
+        "label": "Original power converters",
+        "value": "Twenty 250 kW Princeton Power BIGI-250 three-port converters",
+        "sourceIds": ["ann-princeton-2015", "ann-ge-2014"]
+      },
+      {
+        "label": "2014 planned expansion potential",
+        "value": "The Equatorial Guinea government described a 5 MW project with possible future expansion to 10 MW; no reviewed source verifies that 10 MW expansion",
+        "sourceIds": ["ann-gegov-2014"]
+      },
+      {
+        "label": "2024 public-budget project rating",
+        "value": "5 MVA solar PV electrification, including service connections and meters",
+        "sourceIds": ["ann-ge-budget-2024"]
+      },
+      {
+        "label": "2023 supplier-claimed later configuration",
+        "value": "4.2 MWp PV and 2.8 MWh BESS; the source does not disclose BESS power, duration, chemistry, or manufacturer",
+        "sourceIds": ["ann-geritel-2026"]
+      },
+      {
+        "label": "Original service objective",
+        "value": "Meet 100% of the island's then-current electricity demand and provide 24-hour service to approximately 5,000 residents who previously had reliable power for only about five hours per day",
+        "sourceIds": ["ann-ge-2014", "ann-gegov-2014"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Original battery storage",
+        "manufacturer": "GE",
+        "model": "Durathon",
+        "detail": "Sodium-nickel-chloride high-temperature storage rated 5 MW/10 MWh in the commissioned-system record. GE stopped Durathon production in 2015 after judging it not cost-competitive, and transferred the technology to a joint venture in 2017; no source reviewed identifies Annobón replacement cells or current capacity.",
+        "sourceIds": ["ann-ge-2014", "ann-njbpu-2019"]
+      },
+      {
+        "category": "Original bidirectional converters",
+        "manufacturer": "Princeton Power Systems",
+        "model": "BIGI-250",
+        "detail": "Twenty 250 kW three-port converters interfacing solar, storage, diesel, and the island grid.",
+        "sourceIds": ["ann-ge-2014", "ann-princeton-2015"]
+      },
+      {
+        "category": "Original energy-management system",
+        "manufacturer": "Princeton Power Systems",
+        "model": "EMOS",
+        "detail": "Supervisory controller for dispatch of the solar, storage, diesel, and distribution system.",
+        "sourceIds": ["ann-princeton-2015"]
+      },
+      {
+        "category": "Original electrical distribution",
+        "manufacturer": "Eaton",
+        "detail": "Engineering services, switchgear assemblies, circuit protection, and transformers with embedded communications.",
+        "sourceIds": ["ann-eaton-2014", "ann-enf-eaton-2014"]
+      },
+      {
+        "category": "2023 PV cabling",
+        "manufacturer": "GERITEL",
+        "model": "H1Z2Z2-K",
+        "detail": "Supplier claims 18,500 m of UV- and salt-resistant PV cable for more than 6,000 modules in the later 4.2 MWp configuration.",
+        "sourceIds": ["ann-geritel-2026"]
+      },
+      {
+        "category": "2023 battery and distribution cabling",
+        "manufacturer": "GERITEL",
+        "detail": "Supplier claims 12,800 m of H07V-K battery cable for more than 200 battery modules, 6,200 m of YJV 3x70 mm² low-voltage backbone, 6.35 kV armored XLPE medium-voltage cable, and 9,600 m of KVV/KVVP control cable.",
+        "sourceIds": ["ann-geritel-2026"]
+      },
+      {
+        "category": "Undisclosed equipment",
+        "detail": "Reviewed sources do not identify the original PV module make/model, battery unit count, diesel-generator make/model, or the manufacturer/model/chemistry of the 2023 supplier-claimed BESS.",
+        "sourceIds": ["ann-ge-2014", "ann-princeton-2015", "ann-geritel-2026"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Original architecture",
+        "detail": "The original design combined PV, a two-hour battery plant, diesel generation, three-port converters, and EMOS controls in an island-wide microgrid. GE described storage as balancing intermittent production and demand while operating in tropical heat without air conditioning.",
+        "sourceIds": ["ann-ge-2014", "ann-princeton-2015"]
+      },
+      {
+        "category": "Commissioning record",
+        "detail": "A 2019 New Jersey Board of Public Utilities storage analysis records the 5 MW PV and 5 MW/10 MWh sodium-nickel-chloride system as commissioned in 2015; Wise Power separately describes the 5 MW plant as installed.",
+        "sourceIds": ["ann-njbpu-2019", "ann-wise-installed"]
+      },
+      {
+        "category": "Training plan",
+        "detail": "The Equatorial Guinea government announcement said approximately twenty national technicians would be trained to operate and maintain the plant. No follow-up source located verifies completion or identifies the present O&M organization.",
+        "sourceIds": ["ann-gegov-2014"]
+      },
+      {
+        "category": "Original project economics",
+        "detail": "Princeton's 2015 presentation cited an installed cost of approximately $3.50/W and an electricity cost of approximately $0.25-$0.35/kWh including fuel. These were project presentation figures, not a later audited tariff or levelized-cost result.",
+        "sourceIds": ["ann-princeton-2015"]
+      },
+      {
+        "category": "2024 budget continuation",
+        "detail": "Equatorial Guinea's 2024 enacted budget lists the 5 MVA Annobón solar-electrification project at CFA 23.155 billion total, with CFA 13.829 billion paid through June 2023, CFA 2.163 billion budgeted for 2024, and CFA 7.163 billion remaining for 2025-2026. The line proves continued public investment, but does not by itself establish whether generation equipment was incomplete, being rehabilitated, or being expanded.",
+        "sourceIds": ["ann-ge-budget-2024"]
+      },
+      {
+        "category": "2023-2024 supplier claim",
+        "detail": "GERITEL says an unnamed European EPC ordered tropicalized cabling in the 2023 dry season for a 4.2 MWp PV/2.8 MWh BESS hybrid, shipped via Bata. It claims that by Q2 2024 the microgrid met 85% of residents' demand, allowed diesel generators to remain off for long periods, supported continuous hospital refrigeration, and extended night classes to 9 p.m. These retrospective supplier claims were not independently corroborated in the sources reviewed.",
+        "sourceIds": ["ann-geritel-2026"]
+      },
+      {
+        "category": "Configuration conflict",
+        "detail": "The 2015 commissioned-system record gives 5 MW PV and 5 MW/10 MWh storage; the 2024 budget uses 5 MVA; GERITEL's later account gives 4.2 MWp/2.8 MWh. No public source reconciles these as design revision, rehabilitation, replacement, extension, or separate phase, so they remain dated configurations rather than a summed plant rating.",
+        "sourceIds": ["ann-njbpu-2019", "ann-ge-budget-2024", "ann-geritel-2026"]
+      },
+      {
+        "category": "Evidence gap",
+        "detail": "No independently verified operating data were found for 2015-2023 or after Q2 2024, including availability, generation by source, fuel use, battery health, current output, outages, or O&M responsibility. The effect of discontinued GE Durathon production and the identity of any replacement storage are also unknown.",
+        "sourceIds": ["ann-njbpu-2019", "ann-ge-budget-2024", "ann-geritel-2026"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "ann-ge-2014",
+        "title": "Africa's Largest Self-Sufficient Solar Microgrid Project Created through Technologies from MAECI, GE and Princeton Power Systems",
+        "url": "https://www.gevernova.com/news/press-releases/africas-largest-self-sufficient-solar-microgrid-project-created-through-technologies",
+        "publisher": "GE Power & Water / GE Vernova",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-gegov-2014",
+        "title": "Macroproyecto de energía solar para Annobón",
+        "url": "https://www.guineaecuatorialpress.com/index.php/noticias/macroproyecto_de_energia_solar_para_annobon",
+        "publisher": "Government of Equatorial Guinea",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-princeton-2015",
+        "title": "Island Microgrid Economics Today — Annobon Project Overview",
+        "url": "https://sites.utexas.edu/energy-week/files/2015/07/Hammell.pdf",
+        "publisher": "Princeton Power Systems / UT Energy Week",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-eaton-2014",
+        "title": "Eaton 2014 Annual Report",
+        "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/2014-Annual-Report.pdf",
+        "publisher": "Eaton",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-enf-eaton-2014",
+        "title": "Eaton Helps Power Africa's 5MW Microgrid Project",
+        "url": "https://www.enfsolar.com/news/8035/eaton-helps-power-africa-s-5mw-microgrid-project",
+        "publisher": "ENF Solar (republishing Eaton project information)",
+        "kind": "secondary"
+      },
+      {
+        "id": "ann-wise-installed",
+        "title": "Wise Power Systems Installs 5 Megawatt Solar Micro Grid, Annobon Island, EG",
+        "url": "https://wisepowersystems.com/tag/africa/",
+        "publisher": "Wise Power Systems International",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-njbpu-2019",
+        "title": "New Jersey Energy Storage Analysis",
+        "url": "https://www.nj.gov/bpu/bpu/pdf/commercial/New%20Jersey%20ESA%20Final%20Report%2005-23-2019.pdf",
+        "publisher": "New Jersey Board of Public Utilities",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-ge-budget-2024",
+        "title": "Presupuesto General del Estado 2024",
+        "url": "https://www.cabri-sbo.org/uploads/bia/EquatorialGuinea_2024_Approval_External_EnactedBudget_Institution_ECCAS_Spanish_72c647.pdf",
+        "publisher": "Republic of Equatorial Guinea",
+        "kind": "primary"
+      },
+      {
+        "id": "ann-geritel-2026",
+        "title": "Projet de microréseau hybride solaire Annobón en Guinée équatoriale",
+        "url": "https://www.geritelgroup.com/fr/equatorial-guinea-annobn-solar-hybrid-microgrid-project.html",
+        "publisher": "GERITEL",
+        "kind": "primary"
+      }
+    ]
+  }
+}

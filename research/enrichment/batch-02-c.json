@@ -1,0 +1,1883 @@
+{
+  "east-rockaway-bay-park-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Nassau County's 2016 NY Prize feasibility study evaluated a community microgrid centered on the Bay Park Sewage Treatment Plant and nine other critical facilities in East Rockaway, New York. It compared an advanced-digestion/biogas CHP core with wind, solar, fuel-cell, and legacy tri-fuel generation options; the report did not document a selected construction design. No later NY Prize construction award or commissioned community microgrid was found, and a later Bay Park electrical-upgrade project says the plant's four old 3.6 MW engine-generators were decommissioned after new utility feeders were installed.",
+    "status": "Feasibility study completed in 2016; no construction or commissioning verified through July 2026. East Rockaway does not appear on NYSERDA's published Stage 2 award list, and later Bay Park work replaced the legacy on-site generation role with upgraded utility connections, so the public evidence supports a stopped-after-feasibility outcome rather than an operating microgrid.",
+    "organizations": [
+      {
+        "name": "Nassau County",
+        "role": "NY Prize applicant, feasibility-study sponsor, proposed microgrid owner, and owner of the Bay Park wastewater plant",
+        "sourceIds": [
+          "eastrockaway-stage1-study",
+          "eastrockaway-stage1-awards"
+        ]
+      },
+      {
+        "name": "Village of East Rockaway",
+        "role": "Proposed principal community customer and owner of several targeted critical facilities",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "name": "United Water Long Island (later SUEZ)",
+        "role": "Wastewater-plant operator and project partner involved in evaluating generation and treatment-process integration",
+        "sourceIds": [
+          "eastrockaway-stage1-awards",
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "name": "PSEG Long Island",
+        "role": "Electric utility and study partner that supplied system and load information",
+        "sourceIds": [
+          "eastrockaway-stage1-awards",
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "name": "Long Island Power Authority",
+        "role": "Public power authority named as a Stage 1 project partner",
+        "sourceIds": [
+          "eastrockaway-stage1-awards"
+        ]
+      },
+      {
+        "name": "National Grid",
+        "role": "Natural-gas utility named as a Stage 1 project partner",
+        "sourceIds": [
+          "eastrockaway-stage1-awards"
+        ]
+      },
+      {
+        "name": "New York State Energy Research and Development Authority",
+        "role": "NY Prize program administrator and Stage 1 feasibility-study funder",
+        "sourceIds": [
+          "eastrockaway-stage1-awards",
+          "eastrockaway-stage2-awards"
+        ]
+      },
+      {
+        "name": "H2M architects + engineers",
+        "role": "Engineer for the later Bay Park Phase E4 utility-connection work that documented decommissioning of the plant's old engine-generators",
+        "sourceIds": [
+          "eastrockaway-h2m-e4"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Proposed advanced-digestion CHP",
+        "value": "2.5 MW reciprocating-engine CHP fueled by digester gas; modeled for continuous operation and 21,900 MWh/year",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Other evaluated new resources",
+        "value": "1 MW wind, 1.5 MW solar, and 1 MW fuel cell using natural gas and/or digester gas; these were alternatives or optional phases, not a documented final build package",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Legacy generation represented in the study",
+        "value": "5.5 MW of available tri-fuel engine capacity in the resource table, with digester-gas production limiting sustained biogas output to about 2.5 MW",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Targeted facilities",
+        "value": "Bay Park Sewage Treatment Plant plus East Rockaway Village Hall, three public schools, two fire facilities, the public library, public works, and the post office",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Bay Park study load",
+        "value": "The feasibility report listed the wastewater plant at 7.5 MW and 65.7 GWh/year, far larger than the other proposed community loads",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Storage",
+        "value": "No electrical energy-storage system was specified in the reviewed feasibility design",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "label": "Feasibility benefit-cost ratio",
+        "value": "2.2 in the NY Prize screening analysis",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Existing engine-generators",
+        "detail": "The study evaluated the plant's aging tri-fuel engine-generators as an interim islanding resource. A later H2M project page describes four 3,600 kW units at the site and says they were decommissioned; manufacturer and model were not disclosed in the reviewed sources.",
+        "sourceIds": [
+          "eastrockaway-stage1-study",
+          "eastrockaway-h2m-e4"
+        ]
+      },
+      {
+        "category": "Proposed CHP",
+        "detail": "A 2.5 MW reciprocating engine was preferred over microturbines for the digester-gas CHP concept, but no supplier or model was selected in the public report.",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "The concept placed generation inside the wastewater-plant fence and proposed a new 5 kV community distribution system outside it. Islanded operation was designed not to depend on utility communications, and the preferred generation path was to be black-start capable.",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "category": "Resource-plan caveat",
+        "detail": "The report's capacity table combines existing resources and mutually exclusive or staged options. Its figures should not be added together as though every resource was contracted for one final plant.",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "category": "Customer model",
+        "detail": "The proposal served public and institutional critical facilities rather than residential customers. Nassau County would own the central source, the Village would be the main customer, and the U.S. Postal Service site would have required a separate participation agreement.",
+        "sourceIds": [
+          "eastrockaway-stage1-study"
+        ]
+      },
+      {
+        "category": "Outcome evidence",
+        "detail": "The project received Stage 1 feasibility funding but is absent from the complete published Stage 2 award list. That absence is evidence of no NY Prize Stage 2 award, not a formal cancellation notice.",
+        "sourceIds": [
+          "eastrockaway-stage1-awards",
+          "eastrockaway-stage2-awards"
+        ]
+      },
+      {
+        "category": "Later site update",
+        "detail": "H2M's later Bay Park Phase E4 work reports a present peak load of about 6 MW, new utility-feeder connections, and decommissioning of four old 3.6 MW engine-generators. The reviewed page does not describe the 2016 community microgrid as having been built.",
+        "sourceIds": [
+          "eastrockaway-h2m-e4"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "No commissioning record, as-built one-line, equipment award, operating data, or explicit project-cancellation notice was found through July 2026.",
+        "sourceIds": [
+          "eastrockaway-stage2-awards",
+          "eastrockaway-h2m-e4"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "eastrockaway-stage1-study",
+        "title": "Village of East Rockaway Bay Park Community Microgrid Feasibility Study",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/11-Village-of-East-Rockaway-Bay-Park.pdf",
+        "publisher": "Nassau County / New York State Energy Research and Development Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "eastrockaway-stage1-awards",
+        "title": "NY Prize Stage 1 Award Winners",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf",
+        "publisher": "New York State Energy Research and Development Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "eastrockaway-stage2-awards",
+        "title": "NY Prize Stage 2 Awarded Projects",
+        "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf",
+        "publisher": "New York State Energy Research and Development Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "eastrockaway-h2m-e4",
+        "title": "Bay Park Phase E4",
+        "url": "https://www.h2m.com/portfolio/bay-park-phase-e4/",
+        "publisher": "H2M architects + engineers",
+        "kind": "primary"
+      }
+    ]
+  },
+  "edmondson-village-milligrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Baltimore Gas and Electric proposed the Edmonson Village public-purpose microgrid in its 2015 Maryland pilot filing. The design was a roughly 3 MW natural-gas system serving a cluster of critical commercial and public loads in Baltimore City. Maryland's Public Service Commission denied BGE's two-site proposal without prejudice in July 2016, so this was never a commissioned microgrid. Later literature's label 'milligrid' describes the proposed multi-node topology, not a built demonstration.",
+    "status": "Proposal denied by the Maryland Public Service Commission on July 19, 2016; no construction or operation. The denial was without prejudice, but no revived Edmonson/Edmondson Village project was found through July 2026.",
+    "organizations": [
+      {
+        "name": "Baltimore Gas and Electric Company",
+        "role": "Applicant and proposed owner, builder, and operator of the public-purpose microgrid",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-bge-announcement"
+        ]
+      },
+      {
+        "name": "Maryland Public Service Commission",
+        "role": "State regulator that reviewed and denied BGE's pilot proposal in Case No. 9416",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "name": "PJM Interconnection",
+        "role": "Potential wholesale-market venue for energy, capacity, ancillary-service, and demand-response revenues contemplated by BGE; no participation occurred because the project was not approved",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "name": "Edmonson Village critical-service businesses and public facilities",
+        "role": "Proposed resilience beneficiaries, including grocery, pharmacy, clinic, fuel, public-building, and emergency-shelter functions",
+        "sourceIds": [
+          "edmondson-bge-announcement",
+          "edmondson-psc-order"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Proposed generation",
+        "value": "Approximately 3 MW of natural-gas generation for the Edmonson Village site",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-nrel-2024"
+        ]
+      },
+      {
+        "label": "Proposed project cost",
+        "value": "Approximately $9.2 million for Edmonson Village",
+        "sourceIds": [
+          "edmondson-nrel-2024"
+        ]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Nearly all natural gas, with diesel described only as a fallback if gas were unavailable; the filed design included no renewable generation, CHP, or energy storage",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "label": "Proposed residential surcharge",
+        "value": "$0.04/month for an average BGE residential customer in year one, increasing to $0.13/month in year two and continuing for recovery of capital, operations, fuel, and tax costs",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "label": "Proposed market revenue",
+        "value": "BGE estimated about $215,000 per year per pilot from possible PJM market participation, but deliverability and value were not established",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "label": "Storage",
+        "value": "None proposed",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Proposed dispatchable generation",
+        "detail": "Natural-gas generator technology was specified at the project level, but the public regulatory record reviewed here does not identify a manufacturer or model because the project did not reach procurement.",
+        "sourceIds": [
+          "edmondson-psc-order"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Operating concept",
+        "detail": "BGE proposed a utility-owned system that would separate from the distribution grid during a significant or extended outage and energize a cluster of critical community services.",
+        "sourceIds": [
+          "edmondson-bge-announcement",
+          "edmondson-psc-order"
+        ]
+      },
+      {
+        "category": "Regulatory outcome",
+        "detail": "The Commission denied the filing as submitted because BGE had not sufficiently established public benefit or site selection, the design relied on a single fuel and lacked diverse distributed resources, costs would be socialized while benefits were geographically concentrated, third-party competition was limited, and projected PJM value was uncertain.",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-nrel-2024"
+        ]
+      },
+      {
+        "category": "Name and topology correction",
+        "detail": "The official order uses 'Edmonson Village,' while the Baltimore neighborhood is commonly written 'Edmondson Village.' A later Asian Development Bank handbook calls the proposal a 'milligrid' because the planned resources and customers sat at multiple points on BGE's grid rather than behind a single point of common coupling.",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-adb-handbook"
+        ]
+      },
+      {
+        "category": "Record correction",
+        "detail": "The reviewed filing describes a community cluster around Edmonson Village, not an operating project at an 'Edmonson High School.' The authoritative regulator record also supersedes later shorthand that may imply the design was tested in 2016: it was denied before construction.",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-adb-handbook"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "Because the project stopped at the regulatory proposal stage, there are no as-built equipment models, commissioning tests, outage results, or operating energy data.",
+        "sourceIds": [
+          "edmondson-psc-order",
+          "edmondson-nrel-2024"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "edmondson-psc-order",
+        "title": "Order No. 87669, Case No. 9416: BGE Microgrid Order",
+        "url": "https://psc.maryland.gov/wp-content/uploads/Order-No.-87669-Case-No.-9416-BGE-Microgrid-Order-.pdf",
+        "publisher": "Maryland Public Service Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "edmondson-nrel-2024",
+        "title": "The Value of Resilience for Distributed Energy Resources: An Overview of Current Analytical Practices",
+        "url": "https://www.nrel.gov/docs/fy24osti/90139.pdf",
+        "publisher": "National Renewable Energy Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "edmondson-bge-announcement",
+        "title": "BGE Proposes Testing Microgrids at Two Maryland Locations",
+        "url": "https://www.tdworld.com/smart-utility/article/20966005/bge-proposes-testing-microgrids-at-two-maryland-locations",
+        "publisher": "T&D World",
+        "kind": "secondary"
+      },
+      {
+        "id": "edmondson-adb-handbook",
+        "title": "Handbook on Microgrids for Power Quality and Connectivity",
+        "url": "https://www.adb.org/sites/default/files/institutional-document/623446/handbook-microgrids-power-quality-connectivity.pdf",
+        "publisher": "Asian Development Bank",
+        "kind": "primary"
+      }
+    ]
+  },
+  "el-hierro-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Gorona del Viento is El Hierro's operating wind-pumped-hydro power plant, coupling five Enercon wind turbines with pumping, two reservoirs, four Pelton hydro units, and the island's Llanos Blancos thermal station. It can run the isolated island grid entirely from renewable power for sustained periods, but it has not eliminated diesel annually: Gorona's 2025 report attributes 56% of island supply to the hydro-wind system and 44% to thermal generation.",
+    "status": "Operational. The official operator publishes production through 2025. A proposed 5 MW solar-plus-5 MW battery addition was announced in 2023, but no reviewed source confirmed it as constructed or commissioned by July 2026.",
+    "organizations": [
+      {
+        "name": "Gorona del Viento El Hierro, S.A.",
+        "role": "Owner and operator of the wind-pumped-hydro plant",
+        "sourceIds": [
+          "elhierro-gorona-system",
+          "elhierro-gorona-2025"
+        ]
+      },
+      {
+        "name": "Cabildo de El Hierro",
+        "role": "Majority shareholder; Endesa reported a 65.82% interest in 2023",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan"
+        ]
+      },
+      {
+        "name": "Endesa",
+        "role": "23.21% shareholder reported in 2023 and operator of the Llanos Blancos thermal generation that supports the island system",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan",
+          "elhierro-gorona-2025"
+        ]
+      },
+      {
+        "name": "Instituto Tecnológico de Canarias",
+        "role": "Technical partner and 7.74% shareholder reported in 2023",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan"
+        ]
+      },
+      {
+        "name": "Government of the Canary Islands",
+        "role": "3.23% shareholder reported in 2023",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan"
+        ]
+      },
+      {
+        "name": "Red Eléctrica de España",
+        "role": "System operator for El Hierro's isolated electric system",
+        "sourceIds": [
+          "elhierro-ree-2018"
+        ]
+      },
+      {
+        "name": "Enercon",
+        "role": "Supplier of the five E-70 wind turbines",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "name": "ANDRITZ Hydro",
+        "role": "Supplier of the hydro plant's electromechanical package, including horizontal Pelton turbine-generator units",
+        "sourceIds": [
+          "elhierro-andritz"
+        ]
+      },
+      {
+        "name": "Elecnor",
+        "role": "Main hydraulic-works contractor identified by ANDRITZ",
+        "sourceIds": [
+          "elhierro-andritz"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier of a power-management system described in ABB's island-grid presentation",
+        "sourceIds": [
+          "elhierro-abb-pms"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Wind plant",
+        "value": "11.5 MW total: five Enercon E-70 turbines rated 2.3 MW each",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "label": "Hydroelectric generation",
+        "value": "11.32 MW final operating rating: four horizontal Pelton units at 2.83 MW each",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "label": "Pumping plant",
+        "value": "6 MW: two 1.5 MW variable-speed pumps and six 500 kW fixed-speed pumps",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "label": "Reservoirs and head",
+        "value": "Upper reservoir 380,000 m³ at about 700 m elevation; lower reservoir 150,000 m³ at about 50 m; gross hydraulic head about 655 m",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "label": "2025 island energy split",
+        "value": "56% Gorona hydro-wind and 44% Llanos Blancos thermal generation",
+        "sourceIds": [
+          "elhierro-gorona-2025"
+        ]
+      },
+      {
+        "label": "2025 wind production",
+        "value": "30,282.498 MWh gross and 29,922.394 MWh net",
+        "sourceIds": [
+          "elhierro-gorona-2025"
+        ]
+      },
+      {
+        "label": "2025 hydro production and pumping",
+        "value": "6,235.930 MWh gross hydro, 5,588.977 MWh net hydro, and 13,185.600 MWh consumed by pumping",
+        "sourceIds": [
+          "elhierro-gorona-2025"
+        ]
+      },
+      {
+        "label": "Announced future addition",
+        "value": "A first phase of 5 MW photovoltaic generation and a 5 MW battery at Frontera was announced in 2023 as a plan, not an as-built asset",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E-70",
+        "detail": "Five direct-drive wind turbines, 2.3 MW each",
+        "sourceIds": [
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "category": "Hydro turbine-generators",
+        "manufacturer": "ANDRITZ Hydro",
+        "detail": "Four horizontal Pelton units. ANDRITZ's supply article used a 2.86 MW/unit contract figure, while the operator's final system page lists 2.83 MW/unit and 11.32 MW total; both dated contexts are retained.",
+        "sourceIds": [
+          "elhierro-andritz",
+          "elhierro-gorona-system"
+        ]
+      },
+      {
+        "category": "Power management",
+        "manufacturer": "ABB",
+        "detail": "ABB presentation material identifies an ABB power-management system coordinating the islanded hybrid plant; the reviewed public document does not provide a product model.",
+        "sourceIds": [
+          "elhierro-abb-pms"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "Wind power can supply the grid directly or drive pumps that move water to the upper reservoir. Stored water is released through Pelton turbines when wind is insufficient; speed governors and flywheels support frequency control while the thermal station remains available for balancing and adequacy.",
+        "sourceIds": [
+          "elhierro-gorona-system",
+          "elhierro-abb-pms"
+        ]
+      },
+      {
+        "category": "Renewable-operation milestone",
+        "detail": "Red Eléctrica reported 18 consecutive days of 100% renewable supply from January 25 to February 12, 2018. In 2017, renewables supplied 20,234 MWh, or 46.5% of annual demand.",
+        "sourceIds": [
+          "elhierro-ree-2018"
+        ]
+      },
+      {
+        "category": "Commissioning and investment",
+        "detail": "IDAE describes a €79 million project and Endesa dates startup to 2015. Public sources sometimes use 2014 for inauguration and 2015 for regular startup, so 2015 is used here for operating service rather than claiming one universal commissioning date.",
+        "sourceIds": [
+          "elhierro-idae",
+          "elhierro-endesa-pv-plan"
+        ]
+      },
+      {
+        "category": "Performance interpretation",
+        "detail": "Claims that El Hierro is a '100% renewable island' describe the design objective and periods of full renewable operation, not the annual mix. The operator's 2025 accounting still shows 44% thermal supply, and pumping consumption must not be counted as net generation.",
+        "sourceIds": [
+          "elhierro-gorona-2025",
+          "elhierro-ree-2018"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "No reviewed source confirmed construction, battery vendor, storage energy duration, or commissioning for the 2023 photovoltaic-and-battery proposal by July 2026. Current unit-level details for Llanos Blancos diesel generation were also not established in this review.",
+        "sourceIds": [
+          "elhierro-endesa-pv-plan",
+          "elhierro-gorona-2025"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "elhierro-gorona-system",
+        "title": "Gorona del Viento: Wind-Pumped Hydro System and Interactive Map",
+        "url": "https://www.goronadelviento.es/en/",
+        "publisher": "Gorona del Viento El Hierro, S.A.",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-gorona-2025",
+        "title": "Central Hidroeólica de Gorona del Viento: Parte anual 2025",
+        "url": "https://www.goronadelviento.es/wp-content/uploads/2026/01/00-2025-CHGV25Parte_anual-contrata.pdf",
+        "publisher": "Gorona del Viento El Hierro, S.A.",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-ree-2018",
+        "title": "La isla de El Hierro cubre su demanda de electricidad con energía 100% renovable durante 18 días",
+        "url": "https://www.ree.es/es/sala-de-prensa/notas-de-prensa/2018/02/la-isla-de-el-hierro-cubre-su-demanda-de-electricidad-con-energia-100-por-100-renovable-durante-18-dias",
+        "publisher": "Red Eléctrica de España",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-endesa-pv-plan",
+        "title": "Gorona del Viento will grow by adding a photovoltaic plant to the existing wind-hydraulic energy mix",
+        "url": "https://www.endesa.com/en/press/press-room/news/energy-transition/renewable-energies/gorona-viento-will-grow-adding-photovoltaic-plant-existing-wind-hydraulic-energy-mix",
+        "publisher": "Endesa",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-idae",
+        "title": "El Hierro Wind-Hydro Power Plant, Gorona del Viento El Hierro, S.A.",
+        "url": "https://www.idae.es/en/el-hierro-wind-hydro-power-plant-gorona-del-viento-el-hierro-sa-el-hierro",
+        "publisher": "Institute for Energy Diversification and Saving (IDAE)",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-andritz",
+        "title": "Hydro News 17: Gorona del Viento, El Hierro",
+        "url": "https://www.andritz.com/resource/blob/31526/c7081050fd23df454982215cc201d2ea/hy-hn17-en-data.pdf",
+        "publisher": "ANDRITZ Hydro",
+        "kind": "primary"
+      },
+      {
+        "id": "elhierro-abb-pms",
+        "title": "Suministro eléctrico fiable y eficiente: El Hierro",
+        "url": "https://new.abb.com/docs/librariesprovider7/default-document-library/2505-13-00-suministro-electrico-fiable-y-eficiente-eva-moreno-y-fco-moravf.pdf?sfvrsn=4",
+        "publisher": "ABB",
+        "kind": "primary"
+      }
+    ]
+  },
+  "experimental-power-grid-centre": {
+    "researchedAt": "2026-07-20",
+    "summary": "Singapore's Experimental Power Grid Centre opened on Jurong Island in 2011 as a configurable 1 MW research microgrid where generation, storage, loads, and grid disturbances could be reproduced without risking the public network. The original A*STAR/ICES facility included diesel generators, solar, multiple storage chemistries, emulators, and Meidensha's MicroGrid Central Controller. It now operates under Nanyang Technological University's Energy Research Institute as the Electrification and Power Grids Centre, with updated storage, power-electronics, motor, simulation, and hardware-in-the-loop platforms.",
+    "status": "Operational under Nanyang Technological University as the Electrification and Power Grids Centre. The site remains active in 2026 and is hosting a new FutureGrid Accelerator testbed; public sources do not establish which original 2011 assets remain in service unchanged.",
+    "organizations": [
+      {
+        "name": "Agency for Science, Technology and Research",
+        "role": "Original owner and launcher of the Experimental Power Grid Centre",
+        "sourceIds": [
+          "epgc-astar-launch",
+          "epgc-astar-2018"
+        ]
+      },
+      {
+        "name": "Institute of Chemical and Engineering Sciences",
+        "role": "A*STAR institute that originally operated the Jurong Island research facility",
+        "sourceIds": [
+          "epgc-astar-launch",
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "name": "Nanyang Technological University",
+        "role": "Current institutional home of the renamed Electrification and Power Grids Centre",
+        "sourceIds": [
+          "epgc-ntu-current",
+          "epgc-ntu-futuregrid-2026"
+        ]
+      },
+      {
+        "name": "Energy Research Institute @ NTU",
+        "role": "Current operator and research organization for EPGC",
+        "sourceIds": [
+          "epgc-ntu-current"
+        ]
+      },
+      {
+        "name": "Meidensha Corporation",
+        "role": "Turnkey system supplier for the original building, MicroGrid Central Controller, distributed resources, emulators, and test infrastructure",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "name": "Rolls-Royce, Vestas, and SP PowerGrid",
+        "role": "Industrial research collaborators named around the original launch program",
+        "sourceIds": [
+          "epgc-astar-launch"
+        ]
+      },
+      {
+        "name": "ST Telemedia Global Data Centres",
+        "role": "Partner with NTU on the 2026 FutureGrid Accelerator high-voltage direct-current and AI-infrastructure testbed hosted at EPGC",
+        "sourceIds": [
+          "epgc-ntu-futuregrid-2026"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original research-grid rating",
+        "value": "1 MW configurable experimental power grid",
+        "sourceIds": [
+          "epgc-meidensha",
+          "epgc-iea-current"
+        ]
+      },
+      {
+        "label": "Original diesel generation",
+        "value": "Three generator sets rated 40 kW, 100 kW, and 200 kW (340 kW total)",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Original photovoltaic system",
+        "value": "60 kW",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Original electrochemical storage",
+        "value": "110 kWh lead-acid plus two 20 kWh lithium-ion systems (40 kWh lithium-ion total); public paper does not provide comparable power ratings for all batteries",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Original ultracapacitors",
+        "value": "60 kW and 90 kW units, each specified for approximately ±30 seconds",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Original emulators and loads",
+        "value": "90 kW four-quadrant grid emulator, 10 kW wind emulator, and programmable loads of 50 kW, 150 kW, and 300 kW",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Original electrical bus",
+        "value": "415 V, three-phase four-wire, 50 Hz, 3,000 A test bus interfaced to Singapore's 22 kV network",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "label": "Current listed test platforms",
+        "value": "Includes a 200 kW energy-storage test system, 500 kW motor platform, 100 kW PV-inverter platform, real-time simulation and hardware-in-the-loop, multi-functional electrical testing, and building-energy-management research",
+        "sourceIds": [
+          "epgc-ntu-current"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "Meidensha Corporation",
+        "model": "MicroGrid Central Controller (MGCC)",
+        "detail": "Original supervisory controller for dispatch, test sequencing, and grid-connected/islanded experiments",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "category": "Original storage portfolio",
+        "detail": "Lead-acid, lithium-ion, and two short-duration ultracapacitor systems allowed comparison of energy- and power-oriented storage. Component manufacturers beyond the turnkey integrator were not disclosed in the reviewed paper.",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "category": "Current research equipment",
+        "detail": "NTU lists energy-storage, large-motor, PV-inverter, controller-hardware-in-the-loop, and real-time digital simulation facilities; its page does not equate these current platforms one-for-one with the original 2011 equipment.",
+        "sourceIds": [
+          "epgc-ntu-current"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Configurable architecture",
+        "detail": "Three buses could be operated independently or rearranged in series, parallel, and loop configurations. The emulators let researchers impose voltage, frequency, renewable-output, and load conditions without disturbing the public power system.",
+        "sourceIds": [
+          "epgc-meidensha"
+        ]
+      },
+      {
+        "category": "Timeline",
+        "detail": "The facility officially opened on November 1, 2011. A*STAR described continuing industrial microgrid work in 2018, and the International Energy Agency still listed the 1 MW center as an in-force measure in its June 2025 update.",
+        "sourceIds": [
+          "epgc-astar-launch",
+          "epgc-astar-2018",
+          "epgc-iea-current"
+        ]
+      },
+      {
+        "category": "Institutional transition",
+        "detail": "The acronym EPGC is retained, but the current name is Electrification and Power Grids Centre rather than Experimental Power Grid Centre. It is now presented as an NTU Energy Research Institute capability rather than an A*STAR/ICES facility.",
+        "sourceIds": [
+          "epgc-ntu-current"
+        ]
+      },
+      {
+        "category": "2026 expansion",
+        "detail": "NTU announced the FutureGrid Accelerator at EPGC in 2026 to study high-voltage direct-current architectures, AI/data-center power demand, and next-generation infrastructure with ST Telemedia Global Data Centres.",
+        "sourceIds": [
+          "epgc-ntu-futuregrid-2026"
+        ]
+      },
+      {
+        "category": "Scope caution",
+        "detail": "A*STAR's 2018 article also describes a much larger Sabang Island project. Its 1.4 MWp solar, 1.2 MW diesel, and 2.3 MWh battery ratings belong to Sabang, not to the Jurong Island EPGC test grid.",
+        "sourceIds": [
+          "epgc-astar-2018"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "Current public pages do not give a retirement/retention inventory for the original diesel sets, PV array, batteries, ultracapacitors, or MGCC, so their 2026 service status is explicitly unknown.",
+        "sourceIds": [
+          "epgc-meidensha",
+          "epgc-ntu-current"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "epgc-meidensha",
+        "title": "Construction of Experimental Power Grid Centre (EPGC): A Case Study of the Installed System",
+        "url": "https://www.meidensha.co.jp/rd/rd_02/rd_02_02/rd_02_02_03/rd_02_02_03_01/pdf/article-201403-0007_1.pdf",
+        "publisher": "Meidensha Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "epgc-astar-launch",
+        "title": "A*STAR's Experimental Power Grid Centre to spur R&D for future energy and smart grid solutions",
+        "url": "https://www.eurekalert.org/news-releases/863568",
+        "publisher": "Agency for Science, Technology and Research",
+        "kind": "primary"
+      },
+      {
+        "id": "epgc-astar-2018",
+        "title": "Micro-grids: Powering Asia's growth story",
+        "url": "https://www.a-star.edu.sg/News/a-star-innovate/innovates/industry-updates/micro-grids--powering-asia-s-growth-story",
+        "publisher": "Agency for Science, Technology and Research",
+        "kind": "primary"
+      },
+      {
+        "id": "epgc-ntu-current",
+        "title": "Electrification and Power Grids Centre",
+        "url": "https://www.ntu.edu.sg/erian/research-capabilities/electrification-power-grid-centre",
+        "publisher": "Nanyang Technological University",
+        "kind": "primary"
+      },
+      {
+        "id": "epgc-ntu-futuregrid-2026",
+        "title": "NTU hosts Southeast Asia's first next-generation infrastructure testbed systems to scale AI",
+        "url": "https://www.ntu.edu.sg/research/research-hub/ntu-hosts-southeast-asia-s-first-next-generation-infrastructure-testbed-systems-to-scale-ai?categories=8ba21e89-cf48-4986-bbca-ddbaf345398b",
+        "publisher": "Nanyang Technological University",
+        "kind": "primary"
+      },
+      {
+        "id": "epgc-iea-current",
+        "title": "Experimental Power Grid Center",
+        "url": "https://www.iea.org/policies/5231-experimental-power-grid-center",
+        "publisher": "International Energy Agency",
+        "kind": "primary"
+      }
+    ]
+  },
+  "f-grid-project-toyota-plant-tohoku-area-japan": {
+    "researchedAt": "2026-07-20",
+    "summary": "F-Grid Miyagi-Ohira is a factory-centered smart-community energy system in the Second North Sendai Central Industrial Area at Ohira Village, Miyagi Prefecture. Since 2013 it has combined utility purchases, a 7.8 MW city-gas cogeneration plant, solar, reused vehicle batteries, private distribution, heat delivery, and a community energy-management system across participating factories, with an emergency pathway to the Ohira Village disaster-management office.",
+    "status": "Operating program. Toyota still publishes a current F-Grid LLP business sheet and profiled continuing F-Grid leadership activity in December 2024. No recent annual generation, fuel-use, emissions, outage, or availability statistics were found through July 2026.",
+    "organizations": [
+      {
+        "name": "F-Grid Miyagi-Ohira Limited Liability Partnership",
+        "role": "Owner/operator entity that supplies electricity and heat, manages shared energy assets, and provides emergency power",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-yokogawa-press"
+        ]
+      },
+      {
+        "name": "Toyota Motor Corporation",
+        "role": "26.4% LLP member and program leader/representative in Toyota's current business sheet",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-launch"
+        ]
+      },
+      {
+        "name": "Toyota Motor East Japan, Inc.",
+        "role": "61.2% majority LLP member, industrial host, major electric/steam customer, and administrative/operating base",
+        "sourceIds": [
+          "fgrid-toyota-current"
+        ]
+      },
+      {
+        "name": "Toyota Tsusho Corporation",
+        "role": "10.6% LLP member involved in the shared industrial energy business",
+        "sourceIds": [
+          "fgrid-toyota-current"
+        ]
+      },
+      {
+        "name": "Tohoku Electric Power Co., Inc.",
+        "role": "1.1% LLP member, supplying grid power and enabling emergency transfer over the utility network to Ohira Village",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "name": "Gas Bureau, City of Sendai",
+        "role": "LLP member and city-gas supplier supporting cogeneration",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "name": "Skylark Co., Ltd.",
+        "role": "LLP member and electricity customer for a food-production/cold-storage facility",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "name": "VEGi-Dream Kurihara Corporation",
+        "role": "LLP member and greenhouse customer receiving electricity and recovered hot water",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "name": "Toyota Boshoku Tohoku Corporation, Toyota Transportation Co., Ltd., Central Motor Wheel Co., Ltd., and Vuteq Corporation",
+        "role": "Industrial members of the current 11-company LLP, each listed with a 0.1% interest",
+        "sourceIds": [
+          "fgrid-toyota-current"
+        ]
+      },
+      {
+        "name": "Yokogawa Solution Service Corporation",
+        "role": "Developer, integrator, and supplier of the community energy-management system that became fully operational in 2015",
+        "sourceIds": [
+          "fgrid-yokogawa-press",
+          "fgrid-yokogawa-case"
+        ]
+      },
+      {
+        "name": "Ohira Village",
+        "role": "Neighboring public beneficiary; the village office/disaster-management center can receive emergency electricity from F-Grid",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-smiles"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current gas cogeneration rating",
+        "value": "7,800 kW",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-yokogawa-press"
+        ]
+      },
+      {
+        "label": "Current solar rating",
+        "value": "740 kW in Toyota's current business sheet; early operating material reported about 700 kW, indicating a dated configuration difference",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-operation"
+        ]
+      },
+      {
+        "label": "Reused-battery power",
+        "value": "90 kW in Toyota's current business sheet; the original launch configuration was 50 kW split between 30 kW and 20 kW reused Prius-battery systems. Energy capacity and duration were not published.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-operation"
+        ]
+      },
+      {
+        "label": "Emergency community supply",
+        "value": "Up to 1.5 MW can be sent to the Ohira Village office/disaster-management center through the emergency arrangement described at launch",
+        "sourceIds": [
+          "fgrid-toyota-operation",
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "label": "Mobile emergency resources",
+        "value": "Original design included eight plug-in hybrid vehicles, each able to provide 100 V / 1.5 kW auxiliary output",
+        "sourceIds": [
+          "fgrid-toyota-operation"
+        ]
+      },
+      {
+        "label": "Capital and membership",
+        "value": "Toyota's current sheet lists ¥948 million capital and 11 members; the February 2013 establishment release listed ¥946 million and 10 initial legal entities, a dated formation-to-current change",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-launch"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Community energy-management system",
+        "manufacturer": "Yokogawa Solution Service Corporation",
+        "detail": "CEMS predicts factory energy demand, captures electricity/steam demand and tariff data, and calculates optimal cogeneration output versus utility purchases. The public case does not name a specific Yokogawa product model.",
+        "sourceIds": [
+          "fgrid-yokogawa-case",
+          "fgrid-yokogawa-press"
+        ]
+      },
+      {
+        "category": "Stationary storage",
+        "manufacturer": "Toyota",
+        "detail": "Reused nickel-metal-hydride batteries from Prius vehicles; current aggregate power is 90 kW, but chemistry detail, energy capacity, pack count, and current converter models were not disclosed in the reviewed current sheet.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-operation"
+        ]
+      },
+      {
+        "category": "Gas cogeneration",
+        "detail": "A 7.8 MW city-gas engine cogeneration plant supplies electricity and recovered steam/hot water. Manufacturer, engine model, thermal rating, and heat-to-power ratio were not found in the reviewed public sources.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-yokogawa-case"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "The CEMS coordinates utility electricity, gas cogeneration, solar generation, shared private/self-operated lines, and factory energy-management systems. It also dispatches recovered steam to the vehicle plant and hot water to the greenhouse.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-yokogawa-case"
+        ]
+      },
+      {
+        "category": "Controls and demand response",
+        "detail": "Yokogawa's system forecasts each factory's demand, develops cogeneration and purchase schedules, and created a framework for member factories to participate voluntarily in energy sharing and future demand-response coordination.",
+        "sourceIds": [
+          "fgrid-yokogawa-press",
+          "fgrid-yokogawa-case"
+        ]
+      },
+      {
+        "category": "Demonstration performance",
+        "detail": "Yokogawa reports that the April 2013-March 2015 demonstration reduced costs by 20% compared with the prior baseline. This is a supplier case-study result; no independent measurement protocol was found.",
+        "sourceIds": [
+          "fgrid-yokogawa-case"
+        ]
+      },
+      {
+        "category": "Heat-use update",
+        "detail": "Toyota's community account says recovered heat supports year-round paprika production and reduced the greenhouse's fuel spending to roughly half that of the operator's comparable farms.",
+        "sourceIds": [
+          "fgrid-toyota-smiles"
+        ]
+      },
+      {
+        "category": "Timeline",
+        "detail": "The LLP was established February 28, 2013; energy operations began in April 2013; the Yokogawa CEMS completed a two-year field demonstration and was declared fully operational in July 2015.",
+        "sourceIds": [
+          "fgrid-toyota-launch",
+          "fgrid-toyota-operation",
+          "fgrid-yokogawa-press"
+        ]
+      },
+      {
+        "category": "Location correction",
+        "detail": "The project is in Ohira Village, Kurokawa District, Miyagi Prefecture, in the Second North Sendai Central Industrial Area—not Niiza, Saitama.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-yokogawa-press"
+        ]
+      },
+      {
+        "category": "Current evidence and gap",
+        "detail": "Toyota's current business sheet and December 2024 personnel profile support continued organizational activity, but no recent annual production, renewable fraction, CHP efficiency, emissions reduction, outage performance, or battery state-of-health data were located.",
+        "sourceIds": [
+          "fgrid-toyota-current",
+          "fgrid-toyota-times-2024"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "fgrid-toyota-current",
+        "title": "F-GRID MIYAGI・OHIRA LIMITED LIABILITY PARTNERSHIP (F-GRID LLP)",
+        "url": "https://www.toyota-global.com/pages/contents/company/profile/non_automotive_business/new_business_enterprises/pdf/toyota_f_grid_e.pdf",
+        "publisher": "Toyota Motor Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-toyota-launch",
+        "title": "Ten Companies Establish F-Grid Ohira, Miyagi Limited Liability Partnership",
+        "url": "https://global.toyota/jp/detail/1906185",
+        "publisher": "Toyota Motor Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-toyota-operation",
+        "title": "F-Grid System Begins Operation in Miyagi Prefecture",
+        "url": "https://global.toyota/en/detail/10001641/",
+        "publisher": "Toyota Motor Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-yokogawa-press",
+        "title": "Yokogawa Delivers Community Energy Management System to F-Grid Ohira, Miyagi LLP",
+        "url": "https://www.yokogawa.com/news/press-releases/2015/2015-07-13/",
+        "publisher": "Yokogawa Electric Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-yokogawa-case",
+        "title": "Optimized Cogeneration System Operation for a Secure and Comfortable Life: Community Energy Management System for F-Grid Miyagi",
+        "url": "https://www.yokogawa.com/us/library/resources/references/suc-f-grid-miyagi/",
+        "publisher": "Yokogawa Electric Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-toyota-smiles",
+        "title": "The F-grid Concept",
+        "url": "https://www.toyota-global.com/sustainability/social_contribution/vision/smiles/the-f-grid-concept/",
+        "publisher": "Toyota Motor Corporation",
+        "kind": "primary"
+      },
+      {
+        "id": "fgrid-toyota-times-2024",
+        "title": "New Business: Connecting Factories, Energy, and Communities",
+        "url": "https://toyotatimes.jp/en/series/new_business/001_1.html",
+        "publisher": "Toyota Times",
+        "kind": "primary"
+      }
+    ]
+  },
+  "faial": {
+    "researchedAt": "2026-07-20",
+    "summary": "Faial's isolated Azores grid is a wind-diesel-hydro-solar system operated by EDA. Its best-documented microgrid intervention is ABB Powercorp's RMC 600 control system, commissioned in 2013 to coordinate the island's fuel-oil generation and the 4.25 MW Salão wind farm. Current EDA statistics show that the island remains predominantly thermal: 2023 grid emission totaled 48,384 MWh, including 42,810 MWh from fuel-oil and diesel generation, 5,369 MWh wind, 133 MWh hydro, and 72 MWh photovoltaic sources.",
+    "status": "The Faial island grid and its wind, thermal, hydro, and photovoltaic resources remain operational. The reviewed current EDA data do not explicitly confirm whether the original ABB RMC 600 controller is still in service in 2026, so the controller's current lifecycle status is unknown.",
+    "organizations": [
+      {
+        "name": "EDA - Electricidade dos Açores, S.A.",
+        "role": "Island electric utility, grid operator, and operator of Faial's thermal generation and distribution system",
+        "sourceIds": [
+          "faial-eda-2023",
+          "faial-eda-production",
+          "faial-eda-distribution"
+        ]
+      },
+      {
+        "name": "EDA Renováveis, S.A.",
+        "role": "Renewable-generation company responsible for the Salão wind farm and Varadouro hydro assets within the EDA group",
+        "sourceIds": [
+          "faial-inegi-wind-2023",
+          "faial-eda-renewables-plan"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier and commissioning organization for the RMC 600 renewable microgrid controller after acquiring Powercorp",
+        "sourceIds": [
+          "faial-abb-release",
+          "faial-abb-infographic"
+        ]
+      },
+      {
+        "name": "Powercorp",
+        "role": "Original developer of the RMC technology later acquired and delivered under ABB",
+        "sourceIds": [
+          "faial-abb-release"
+        ]
+      },
+      {
+        "name": "Vestas",
+        "role": "Supplier of the five V52 wind turbines at Salão",
+        "sourceIds": [
+          "faial-inegi-wind-2023"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Salão wind farm",
+        "value": "4.25 MW: five Vestas V52 turbines rated 850 kW each, connected in 2013",
+        "sourceIds": [
+          "faial-inegi-wind-2023"
+        ]
+      },
+      {
+        "label": "Varadouro hydro plant",
+        "value": "0.320 MW; EDA Renováveis forecast 218 MWh for 2024 after an estimated 190 MWh in 2023",
+        "sourceIds": [
+          "faial-eda-renewables-plan"
+        ]
+      },
+      {
+        "label": "2023 grid emission by source",
+        "value": "42,787 MWh thermal fuel oil, 23 MWh thermal diesel, 5,369 MWh wind, 133 MWh hydro, and 72 MWh photovoltaic; total 48,384 MWh",
+        "sourceIds": [
+          "faial-eda-2023"
+        ]
+      },
+      {
+        "label": "2023 demand and peak",
+        "value": "46,523 MWh consumption and 9,449 kW annual peak",
+        "sourceIds": [
+          "faial-eda-2023"
+        ]
+      },
+      {
+        "label": "Distribution voltage",
+        "value": "15 kV medium-voltage island network",
+        "sourceIds": [
+          "faial-eda-distribution"
+        ]
+      },
+      {
+        "label": "Electrical storage",
+        "value": "No battery storage was documented as installed in the reviewed Faial control-system case; ABB material discussed PowerStore only as a possible future integration, not as an as-built asset",
+        "sourceIds": [
+          "faial-abb-release"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "ABB Powercorp",
+        "model": "RMC 600",
+        "detail": "Renewable microgrid controller commissioned in December 2013 to balance wind, island demand, and dispatch of the conventional generator fleet",
+        "sourceIds": [
+          "faial-abb-release"
+        ]
+      },
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Vestas",
+        "model": "V52",
+        "detail": "Five 850 kW turbines at the Salão wind farm",
+        "sourceIds": [
+          "faial-inegi-wind-2023"
+        ]
+      },
+      {
+        "category": "Thermal generation",
+        "detail": "EDA identifies heavy fuel oil as Faial's principal thermal fuel. Public sources reviewed here do not provide a current generator manufacturer/model inventory.",
+        "sourceIds": [
+          "faial-eda-production",
+          "faial-eda-2023"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Control functions",
+        "detail": "The RMC 600 calculated economical operating combinations, balanced generation and demand, maximized wind use subject to system limits, and coordinated loading, spinning reserve, and operating constraints for the conventional plant.",
+        "sourceIds": [
+          "faial-abb-release",
+          "faial-abb-infographic"
+        ]
+      },
+      {
+        "category": "Commissioning",
+        "detail": "ABB announced the RMC 600 as delivered and commissioned on December 4, 2013, coinciding with integration of the expanded Salão wind resource.",
+        "sourceIds": [
+          "faial-abb-release",
+          "faial-inegi-wind-2023"
+        ]
+      },
+      {
+        "category": "Supplier-reported benefit",
+        "detail": "ABB's infographic claimed fuel savings above 3.5 million liters per year. The reviewed source does not disclose the measurement baseline or independent verification, so this is retained as an ABB-reported benefit rather than a verified operating result.",
+        "sourceIds": [
+          "faial-abb-infographic"
+        ]
+      },
+      {
+        "category": "Current energy-mix reality",
+        "detail": "EDA's 2023 figures show wind as the largest renewable source but thermal fuel oil still dominating annual production. Faial is therefore an operating hybrid island grid, not a renewable-only system.",
+        "sourceIds": [
+          "faial-eda-2023"
+        ]
+      },
+      {
+        "category": "Current development context",
+        "detail": "The EU Clean Energy for EU Islands page identifies ongoing study of additional renewables and ferry electrification, but does not document a commissioned large battery or replacement controller for Faial.",
+        "sourceIds": [
+          "faial-eu-islands-current"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "Current RMC 600 service status, controller software version, present thermal-generator makes/models, installed battery capacity, and independently measured fuel savings were not found in public sources through July 2026.",
+        "sourceIds": [
+          "faial-eda-2023",
+          "faial-eu-islands-current",
+          "faial-abb-release"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "faial-abb-release",
+        "title": "ABB's microgrid control technology enables greening of remote island",
+        "url": "https://www.prnewswire.com/news-releases/abbs-microgrid-control-technology-enables-greening-of-remote-island-234410381.html",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-abb-infographic",
+        "title": "Integrating wind energy into the microgrid of remote island of Faial",
+        "url": "https://resources.news.e.abb.com/attachments/published/13384/en-US/31752D34F7E6/ABB-infographic-Microgrid-Azores.pdf",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-inegi-wind-2023",
+        "title": "Parques Eólicos em Portugal, dezembro de 2023",
+        "url": "https://e2p.inegi.up.pt/reports/parks/portugal_parques_eolicos_2023.pdf",
+        "publisher": "INEGI",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-eda-2023",
+        "title": "Relatório e Contas 2023",
+        "url": "https://files.eda.pt/edasharepointfiles/Files%5CGaleriaDocumentos%5C123%5CRelatorioGestao2023.pdf",
+        "publisher": "EDA - Electricidade dos Açores",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-eda-renewables-plan",
+        "title": "Plano Plurianual e Orçamento EDA Renováveis 2024-2028",
+        "url": "https://www.eda.pt/GrupoEda/PPOEDAR/PPO%20EDA%20RENOVAVEIS%202024-2028.pdf",
+        "publisher": "EDA Renováveis",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-eda-production",
+        "title": "Produção de energia",
+        "url": "https://eda.pt/eda/o-que-fazemos/producao-de-energia",
+        "publisher": "EDA - Electricidade dos Açores",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-eda-distribution",
+        "title": "Distribuição de energia",
+        "url": "https://www.eda.pt/eda/o-que-fazemos/distribuicao-de-energia",
+        "publisher": "EDA - Electricidade dos Açores",
+        "kind": "primary"
+      },
+      {
+        "id": "faial-eu-islands-current",
+        "title": "Faial, Portugal",
+        "url": "https://clean-energy-islands.ec.europa.eu/countries/portugal/faial",
+        "publisher": "Clean Energy for EU Islands Secretariat",
+        "kind": "primary"
+      }
+    ]
+  },
+  "fairfield-ct-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Fairfield's public-safety microgrid links the town's police headquarters/emergency communications center, fire headquarters, Operation Hope shelter, and a cell site. Installed in 2015, it combines a 300 kW natural-gas standby generator, a 60 kW natural-gas CHP unit, and 47 kW of solar with Schneider Electric controls so the facilities can separate from the United Illuminating grid during an outage.",
+    "status": "Operational municipal microgrid, installed in 2015 and still cited as an operating regional resilience case in 2025. No public post-commissioning outage log or independently measured availability record was found through July 2026.",
+    "organizations": [
+      {
+        "name": "Town of Fairfield, Connecticut",
+        "role": "Owner and operator of the municipal public-safety microgrid and its critical facilities",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ct-legislature",
+          "fairfield-2025-climate-plan"
+        ]
+      },
+      {
+        "name": "Schneider Electric",
+        "role": "General contractor responsible for design, construction, installation, training, support, and microgrid controls",
+        "sourceIds": [
+          "fairfield-schneider"
+        ]
+      },
+      {
+        "name": "Connecticut Department of Energy and Environmental Protection",
+        "role": "State Microgrid Grant and Loan Pilot Program funder",
+        "sourceIds": [
+          "fairfield-ct-legislature"
+        ]
+      },
+      {
+        "name": "United Illuminating",
+        "role": "Serving electric utility from whose distribution system the microgrid can island",
+        "sourceIds": [
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "name": "Operation Hope of Fairfield",
+        "role": "Emergency-shelter load served by the microgrid",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Natural-gas standby generation",
+        "value": "300 kW",
+        "sourceIds": [
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "label": "Natural-gas CHP",
+        "value": "60 kW reciprocating-engine CHP; Schneider says controls/engine optimization increased the unit from 50 kW to 60 kW",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "label": "Solar photovoltaic capacity",
+        "value": "47 kW total: 20 kW at the shelter and 27 kW at fire headquarters",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "label": "Energy mix",
+        "value": "Utility electricity in normal service plus on-site solar and natural-gas reciprocating generation/CHP; no battery storage was documented",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "label": "Critical-load margin",
+        "value": "Regional and trade case studies describe available generation as approximately 120% of the connected critical peak, providing operating margin rather than a new nameplate rating",
+        "sourceIds": [
+          "fairfield-2025-climate-plan",
+          "fairfield-microgrid-knowledge"
+        ]
+      },
+      {
+        "label": "State grant",
+        "value": "$1,167,659",
+        "sourceIds": [
+          "fairfield-ct-legislature"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Microgrid controls and switchgear integration",
+        "manufacturer": "Schneider Electric",
+        "detail": "Controller and islanding package linking public-safety loads and coordinating utility, solar, CHP, and standby generation. The reviewed source does not identify a controller product model.",
+        "sourceIds": [
+          "fairfield-schneider"
+        ]
+      },
+      {
+        "category": "CHP generator",
+        "detail": "60 kW natural-gas reciprocating engine with recovered heat; manufacturer and model were not disclosed in the reviewed public sources.",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case"
+        ]
+      },
+      {
+        "category": "Standby generator",
+        "detail": "300 kW natural-gas unit serving the public-safety cluster; manufacturer and model were not disclosed.",
+        "sourceIds": [
+          "fairfield-ornl-case"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "New electrical links connected the shelter, police/emergency communications facility, and fire headquarters. Controls permit grid-connected operation and intentional islanding while CHP heat is recovered for useful building service.",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-2025-climate-plan"
+        ]
+      },
+      {
+        "category": "Critical services",
+        "detail": "The islanded system supports police, fire, emergency communications, an emergency shelter, and a cellular communications site.",
+        "sourceIds": [
+          "fairfield-ornl-case",
+          "fairfield-ct-legislature"
+        ]
+      },
+      {
+        "category": "Timeline",
+        "detail": "Connecticut awarded pilot funding in the first state microgrid round, and regional planning records identify the public-safety system as installed in 2015.",
+        "sourceIds": [
+          "fairfield-ct-legislature",
+          "fairfield-2025-climate-plan"
+        ]
+      },
+      {
+        "category": "Current evidence",
+        "detail": "A 2025 Southwest Connecticut climate plan continues to use the project as an installed microgrid case, and Sustainable Fairfield separately lists completed microgrids at the Police Station and wastewater plant.",
+        "sourceIds": [
+          "fairfield-2025-climate-plan",
+          "fairfield-sustainable-town"
+        ]
+      },
+      {
+        "category": "Project disambiguation",
+        "detail": "This record is the police/fire/shelter public-safety microgrid. Fairfield also developed a distinct wastewater-treatment-plant microgrid; capacities and equipment from that project should not be merged into this one.",
+        "sourceIds": [
+          "fairfield-sustainable-town",
+          "fairfield-schneider"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "No reviewed source publishes controller model, generator makes/models, CHP thermal output, measured fuel use, emissions, islanding-event history, reliability, or battery capacity; no battery was identified.",
+        "sourceIds": [
+          "fairfield-schneider",
+          "fairfield-ornl-case",
+          "fairfield-2025-climate-plan"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "fairfield-schneider",
+        "title": "Fairfield, Connecticut: Microgrid Development",
+        "url": "https://blog.se.com/smart-grid/2018/11/13/fairfield-connecticut-microgrid-development/",
+        "publisher": "Schneider Electric",
+        "kind": "primary"
+      },
+      {
+        "id": "fairfield-ornl-case",
+        "title": "Distributed Generation Resilience Guide: Fairfield Microgrid Case Study",
+        "url": "https://dg.resilienceguide.ornl.gov/case-studies",
+        "publisher": "Oak Ridge National Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "fairfield-ct-legislature",
+        "title": "Connecticut Microgrid Grant and Loan Pilot Program",
+        "url": "https://www.cga.ct.gov/2016/rpt/2016-R-0068.htm",
+        "publisher": "Connecticut General Assembly, Office of Legislative Research",
+        "kind": "primary"
+      },
+      {
+        "id": "fairfield-2025-climate-plan",
+        "title": "Southwest Connecticut Climate Action Plan",
+        "url": "https://ctmetro.org/wp-content/uploads/2025/11/CCAP_w_Appendix_11-17-25.pdf",
+        "publisher": "Connecticut Metropolitan Council of Governments",
+        "kind": "primary"
+      },
+      {
+        "id": "fairfield-sustainable-town",
+        "title": "Renewable Energy",
+        "url": "https://sustainablefairfield.org/renewable-energy/",
+        "publisher": "Sustainable Fairfield Task Force",
+        "kind": "primary"
+      },
+      {
+        "id": "fairfield-microgrid-knowledge",
+        "title": "Project Profile: Fairfield, Connecticut as an Early Leader in Microgrid Development",
+        "url": "https://www.microgridknowledge.com/microgrids/article/11432844/project-profile-fairfield-connecticut-as-an-early-leader-in-microgrid-development",
+        "publisher": "Microgrid Knowledge",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "falkland-islands-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The catalog record refers most accurately to Stanley's isolated electricity system, not one unified Falkland Islands grid. Stanley combines the 1.98 MW Sand Bay wind farm and three flywheel systems with legacy W.H. Allen diesels and three 2 MW Cummins interim sets. The existing hybrid system remains operational while the Falkland Islands Government develops Sand Bay Phase 3, a separate new Stanley power station, storage, and grid upgrades.",
+    "status": "Existing Stanley wind-diesel-flywheel system operational. Sand Bay Phase 3 is procured/under development but not commissioned: three Enercon E70 turbines and an ABB grid-forming battery package were approved in 2024, and June 2026 reporting says the construction phase was deferred to January 2027 for safer weather conditions. The new Stanley power station is separately targeted for 2028.",
+    "organizations": [
+      {
+        "name": "Falkland Islands Government Public Works Department, Power & Electrical Section",
+        "role": "Owner/operator of Stanley's power station, distribution network, and Sand Bay wind farm; project lead for Phase 3 and the replacement station",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "name": "Enercon",
+        "role": "Supplier of the existing E-33 turbines and contracted supplier of E70 turbines for Sand Bay Phase 3",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "name": "W.H. Allen",
+        "role": "Manufacturer of the legacy diesel engine fleet at Stanley B Power Station",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "name": "Cummins",
+        "role": "Supplier of three 2 MW high-speed interim generator sets commissioned in 2020",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "name": "ABB",
+        "role": "Selected supplier of the Sand Bay Phase 3 battery energy-storage and power-conversion system",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "name": "EPC Power",
+        "role": "Manufacturer of the CAB1000 power-conversion platform specified within ABB's proposed Phase 3 storage solution",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "name": "Innoven",
+        "role": "Selected integration specialist for the Phase 3 power-management system and communications between Enercon and ABB equipment",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "name": "British Forces South Atlantic Islands and UK Ministry of Defence",
+        "role": "Partner and funder for the separate Mare Harbour Phase 2 project procured in parallel with Sand Bay Phase 3; Mare Harbour serves Mount Pleasant Complex, not the Stanley grid",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Existing Sand Bay wind capacity",
+        "value": "1.98 MW using the Public Works rating: six Enercon E-33 turbines at 330 kW each. A 2024 Executive Council paper restated the same six machines as 335 kW each; this appears to be a documentation-rating discrepancy, not additional turbines.",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "label": "Existing flywheel storage",
+        "value": "Three flywheel systems commissioned with Sand Bay Phase 2 in February 2010; public current sources do not state power or energy ratings",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "label": "Legacy diesel fleet",
+        "value": "Eight W.H. Allen engines ranging from 320 kW to 1.5 MW at Stanley B Power Station",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "label": "Interim diesel fleet",
+        "value": "Three Cummins high-speed generator sets at 2 MW each, online since April 2020",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "label": "Existing station and demand context",
+        "value": "Energy Strategy reports 6.6 MW maximum existing station output and Stanley annual demand above 17 GWh",
+        "sourceIds": [
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "label": "Existing renewable contribution",
+        "value": "Public Works says Sand Bay supplies just over 30% of Stanley demand on average; another current government overview rounds the share to 40%, so the operator's more qualified figure is retained",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "label": "Sand Bay Phase 3 wind",
+        "value": "Three Enercon E70 turbines rated 2.3 MW each (6.9 MW total) approved/contracted, not yet commissioned",
+        "sourceIds": [
+          "falklands-exco-phase3-2024",
+          "falklands-energy-implementation"
+        ]
+      },
+      {
+        "label": "Sand Bay Phase 3 battery",
+        "value": "An early November 2023 design described 8 MWh; the March 2024 procurement comparison describes a 10 MWh ABB package. Final commissioned rating is not yet available because construction is incomplete.",
+        "sourceIds": [
+          "falklands-exco-concept-2023",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "label": "Planned new power station",
+        "value": "Five-engine design: four 2.4 MW units plus one 1.6 MW unit, generating at 11 kV; completion targeted for 2028 and battery accommodation considered",
+        "sourceIds": [
+          "falklands-energy-strategy",
+          "falklands-delivery-2025"
+        ]
+      },
+      {
+        "label": "Sand Bay solar trial",
+        "value": "12 kW trial array split between rooftop and ground-mounted configurations, with multi-year data collection planned before grid-scale expansion",
+        "sourceIds": [
+          "falklands-energy-strategy"
+        ]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Existing wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E-33",
+        "detail": "Six direct-drive units installed in two three-turbine phases in 2007 and 2010",
+        "sourceIds": [
+          "falklands-pwd-current"
+        ]
+      },
+      {
+        "category": "Existing diesel generation",
+        "manufacturer": "W.H. Allen and Cummins",
+        "detail": "Eight aging Allen units plus three 2 MW Cummins high-speed interim sets; individual Allen models and Cummins set models were not disclosed on the current Public Works page.",
+        "sourceIds": [
+          "falklands-pwd-current"
+        ]
+      },
+      {
+        "category": "Phase 3 wind turbines",
+        "manufacturer": "Enercon",
+        "model": "E70",
+        "detail": "Three 2.3 MW Wind Class 1, direct-drive, full-converter turbines procured before the model's production ended; installation remains pending.",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "category": "Phase 3 battery system",
+        "manufacturer": "ABB",
+        "model": "eStorage Flex with EPC Power CAB1000",
+        "detail": "Approved integrated battery and modular 1 MW-block power-conversion platform supporting grid-forming, grid-following, black-start, active-power, and reactive-power modes; not yet commissioned.",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "category": "Phase 3 controls integration",
+        "manufacturer": "Innoven",
+        "detail": "Power-management integration intended to replace an aging Windows XP-based control system and coordinate Enercon converters with the ABB battery system.",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Existing architecture",
+        "detail": "Stanley uses wind and flywheels to reduce diesel dispatch on an isolated network. The flywheels damp short lags between load changes and generator response; they are fast-response stabilizers, not documented long-duration energy storage.",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "category": "Distribution",
+        "detail": "The current station generates at 3.3 kV and uses four step-up transformers for 11 kV distribution. The network reaches Stanley Airport, Mount Kent, Pony's Pass Quarry, and the abattoir and includes 96 substations; the new station is planned to generate directly at 11 kV.",
+        "sourceIds": [
+          "falklands-energy-strategy"
+        ]
+      },
+      {
+        "category": "Phase 3 control objective",
+        "detail": "The ABB battery's grid-forming inverter is intended to establish voltage and frequency, black-start the island system, and emulate diesel-generator behavior while Enercon turbines operate as grid-following converters. Modeling projected renewable utilization rising from 38% to as much as 81% and captured wind penetration from 21% to as much as 86%; these are forecasts, not operating results.",
+        "sourceIds": [
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "category": "Phase 3 timeline",
+        "detail": "Executive Council approved the full joint renewable project and sole-source Enercon, ABB, and Innoven elements in March 2024. A February 2025 delivery update said works had commenced with estimated completion in Q2 FY2026/27. June 2026 reporting states that construction at Sand Bay and Mare Harbour was deferred to January 2027 for safer seasonal conditions.",
+        "sourceIds": [
+          "falklands-exco-phase3-2024",
+          "falklands-delivery-2025",
+          "falklands-delay-2026"
+        ]
+      },
+      {
+        "category": "Asset-life pressure",
+        "detail": "Government planning documents expect Sand Bay Phase 1 turbines to reach planned end of life in 2027 and Phase 2 in 2030. Phase 3 is intended both to raise renewable supply and avoid a return to complete diesel reliance as those units retire.",
+        "sourceIds": [
+          "falklands-energy-strategy",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "category": "System disambiguation",
+        "detail": "Stanley/Sand Bay is separate from the Mare Harbour wind farm serving the British military's Mount Pleasant Complex and from small Camp settlement systems. Capacity procured for Mare Harbour must not be added to Stanley's microgrid.",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-exco-phase3-2024"
+        ]
+      },
+      {
+        "category": "Public evidence gap",
+        "detail": "The reviewed public record does not disclose the three existing flywheels' maker, model, power, or energy capacity; final as-delivered Phase 3 battery rating; new power-station engine manufacturer/models; or a recent audited annual wind/diesel generation table.",
+        "sourceIds": [
+          "falklands-pwd-current",
+          "falklands-energy-strategy",
+          "falklands-exco-phase3-2024"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "falklands-pwd-current",
+        "title": "Power and Electrical Section",
+        "url": "https://falklands.gov.fk/publicworks/services/power-and-electrical",
+        "publisher": "Falkland Islands Government Public Works Department",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-energy-strategy",
+        "title": "Falkland Islands Energy Strategy",
+        "url": "https://www.falklands.gov.fk/policy/component/jdownloads/?Itemid=151&catid=18&id=270&m=0&task=download.send",
+        "publisher": "Falkland Islands Government",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-energy-implementation",
+        "title": "Falkland Islands Energy Strategy Implementation Plan",
+        "url": "https://www.falklands.gov.fk/policy/component/jdownloads/?Itemid=151&catid=18&id=269&m=0&task=download.send",
+        "publisher": "Falkland Islands Government",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-exco-concept-2023",
+        "title": "Executive Council Paper 168/23: Sand Bay Wind Farm Phase 3",
+        "url": "https://assembly.gov.fk/jdownloads/Executive%20Council/Executive%20Council%20Papers/2023/12%2027%20November%202023/168-23P.pdf",
+        "publisher": "Falkland Islands Government Executive Council",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-exco-phase3-2024",
+        "title": "Executive Council Paper 55/24: Sand Bay Phase 3 and Mare Harbour Phase 2 Joint Renewable Energy Project",
+        "url": "https://assembly.gov.fk/jdownloads/Executive%20Council/Executive%20Council%20Papers/2024/03%2026%20March%202024/55-24P.pdf",
+        "publisher": "Falkland Islands Government Executive Council",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-delivery-2025",
+        "title": "Executive Council Paper 30/25: Islands Plan Delivery Plan Update",
+        "url": "https://assembly.gov.fk/jdownloads/Executive%20Council/Executive%20Council%20Papers/2025/02%2025%20February%202025/30-25P.pdf",
+        "publisher": "Falkland Islands Government Executive Council",
+        "kind": "primary"
+      },
+      {
+        "id": "falklands-delay-2026",
+        "title": "Falklands postpone wind-turbine construction pending better weather conditions",
+        "url": "https://es.mercopress.com/2026/06/02/falklands-suspenden-construccion-de-turbinas-eolicas-a-espera-de-mejores-condiciones-climaticas",
+        "publisher": "MercoPress",
+        "kind": "secondary"
+      }
+    ]
+  }
+}

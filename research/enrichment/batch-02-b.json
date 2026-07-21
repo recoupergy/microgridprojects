@@ -1,0 +1,1487 @@
+{
+  "catalina-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Southern California Edison's isolated Santa Catalina Island grid is centered on the Pebbly Beach Generating Station and combines diesel generation, propane microturbines, and a sodium-sulfur battery. The best public system inventory identifies 9.4 MW of diesel generation, 23 microturbines totaling about 1.5 MW, and a 1 MW/7.2 MWh battery. SCE converted all station generator fuel to renewable diesel in 2024 and is replacing three of six older diesel units to meet tighter air limits while continuing to evaluate a longer-term repower. Solar-plus-storage scenarios in the NREL repower study were alternatives, not installed equipment.",
+    "status": "Operating as an isolated SCE utility system. SCE reports that all station generator fuel changed to renewable diesel in 2024 and that three of six older diesels are being replaced. A 2022 all-source procurement produced no compliant repower bid, so SCE was still evaluating propane and solar options in its current 2026 project account. The sodium-sulfur battery itself had not been declared end-of-life, but SCE told the CPUC in 2024 that its battery control system was inoperable because replacement parts were unavailable; a later return-to-service date was not located.",
+    "organizations": [
+      {
+        "name": "Southern California Edison",
+        "role": "Owner and operator of the island electric system, Pebbly Beach Generating Station, microturbines, and sodium-sulfur storage; also leading diesel replacement and repower procurement.",
+        "sourceIds": ["catalina-sce-current-2026", "catalina-nrel-repower-2020", "catalina-sce-battery-2017", "catalina-cpuc-bcs-2024"]
+      },
+      {
+        "name": "National Renewable Energy Laboratory",
+        "role": "Prepared the detailed repower feasibility study for SCE, including the existing-asset inventory and conceptual renewable scenarios.",
+        "sourceIds": ["catalina-nrel-repower-2020"]
+      },
+      {
+        "name": "S&C Electric Company",
+        "role": "Turnkey integrator of the sodium-sulfur storage installation and supplier of the PureWave Storage Management System identified in the commissioning account.",
+        "sourceIds": ["catalina-sandc-ngk-2011"]
+      },
+      {
+        "name": "NGK Insulators",
+        "role": "Manufacturer of the sodium-sulfur battery modules used in SCE's 1 MW/7.2 MWh installation.",
+        "sourceIds": ["catalina-sandc-ngk-2011"]
+      },
+      {
+        "name": "Emerson",
+        "role": "Supplier of the Ovation generating-station automation platform installed in 2017 and later licensed for a remote SCE workstation.",
+        "sourceIds": ["catalina-cpuc-automation-2017", "catalina-cpuc-remote-2023"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Existing diesel generation in NREL repower baseline",
+        "value": "Six units totaling 9.4 MW: 1.0, 1.5, 1.125, 1.575, 1.4, and 2.8 MW",
+        "sourceIds": ["catalina-nrel-repower-2020"]
+      },
+      {
+        "label": "Propane microturbines",
+        "value": "23 units at 65 kW each, approximately 1.5 MW total",
+        "sourceIds": ["catalina-nrel-repower-2020", "catalina-cpuc-bcs-2024"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "1 MW / 7.2 MWh sodium-sulfur system, placed in service in August 2012",
+        "sourceIds": ["catalina-sce-battery-2017", "catalina-nrel-repower-2020"]
+      },
+      {
+        "label": "NREL baseline combined nameplate",
+        "value": "Approximately 11.9 MW when diesel, microturbines, and the 1 MW battery discharge rating are listed together; this is not an annual energy-mix percentage",
+        "sourceIds": ["catalina-nrel-repower-2020"]
+      },
+      {
+        "label": "Distribution",
+        "value": "12 kV isolated system with three principal island circuits from Pebbly Beach",
+        "sourceIds": ["catalina-nrel-repower-2020"]
+      },
+      {
+        "label": "Current fuel change",
+        "value": "All generator fuel switched from conventional diesel to renewable diesel in 2024; SCE reports a 98% reduction in anthropogenic lifecycle greenhouse-gas emissions, not a 98% renewable-electricity share",
+        "sourceIds": ["catalina-sce-current-2026"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Battery modules",
+        "manufacturer": "NGK Insulators",
+        "detail": "Molten-salt sodium-sulfur modules in a 1 MW/7.2 MWh installation.",
+        "sourceIds": ["catalina-sandc-ngk-2011", "catalina-sce-battery-2017"]
+      },
+      {
+        "category": "Battery integration and controls",
+        "manufacturer": "S&C Electric Company",
+        "model": "PureWave Storage Management System",
+        "detail": "Turnkey storage-management package used for the NGK battery installation; SCE later reported the separate battery control system inoperable in 2024 because its manufacturer no longer made required parts.",
+        "sourceIds": ["catalina-sandc-ngk-2011", "catalina-cpuc-bcs-2024"]
+      },
+      {
+        "category": "Plant automation",
+        "manufacturer": "Emerson",
+        "model": "Ovation",
+        "detail": "Generating-station automation installed in 2017 to supervise diesel units, microturbines, storage, emissions controls, auxiliaries, and switchgear; SCE later added licensed remote-workstation capability.",
+        "sourceIds": ["catalina-cpuc-automation-2017", "catalina-cpuc-remote-2023"]
+      },
+      {
+        "category": "Propane microturbines",
+        "manufacturer": "Capstone",
+        "detail": "A 2012 technical presentation identifies 23 Capstone propane microturbines initially described at 60 kW each; later SCE/NREL records use 65 kW per unit. No newer replacement model was identified.",
+        "sourceIds": ["catalina-capstone-netl-2012", "catalina-nrel-repower-2020"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Battery operating role",
+        "detail": "SCE described charging the battery overnight so diesel units could remain at the roughly 80% minimum load needed by their emissions-control systems, then discharging during higher daytime demand.",
+        "sourceIds": ["catalina-sce-battery-2017"]
+      },
+      {
+        "category": "Battery-control issue",
+        "detail": "In May 2024 SCE said the battery control system was inoperable because its manufacturer no longer produced replacement parts. SCE distinguished that controls problem from battery end-of-life and had postponed a battery diagnostic until controls could be restored.",
+        "sourceIds": ["catalina-cpuc-bcs-2024"]
+      },
+      {
+        "category": "Repower procurement",
+        "detail": "SCE issued an all-source solicitation in 2022 after contacting more than 2,000 potential participants. It received only a few bids and reported that none met project requirements; the current page therefore presents propane and solar/storage as alternatives still under evaluation.",
+        "sourceIds": ["catalina-sce-current-2026"]
+      },
+      {
+        "category": "Conceptual renewable case",
+        "detail": "NREL modeled a 60% renewable solar-storage-diesel scenario and other repower choices, including an undersea cable. These were feasibility cases and must not be represented as installed Catalina capacity.",
+        "sourceIds": ["catalina-nrel-repower-2020"]
+      },
+      {
+        "category": "Current compliance work",
+        "detail": "SCE is replacing three of six older diesel generators with Tier 4-compliant units as South Coast AQMD Rule 1135 tightens allowable NOx emissions to 45 tons per year in 2027 and 30 tons in 2028. The replacement-unit manufacturer and ratings were not publicly disclosed on the reviewed page.",
+        "sourceIds": ["catalina-sce-current-2026"]
+      },
+      {
+        "category": "Evidence boundary",
+        "detail": "The most recent sources establish an operating isolated grid, a 2024 fuel transition, diesel replacement, and a storage-control problem. They do not provide a current annual electricity mix, battery availability after May 2024, or a selected long-term repower design.",
+        "sourceIds": ["catalina-sce-current-2026", "catalina-cpuc-bcs-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "catalina-sce-current-2026",
+        "title": "Catalina Island",
+        "url": "https://www.sce.com/about-sce/community/catalina-island",
+        "publisher": "Southern California Edison",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-nrel-repower-2020",
+        "title": "Santa Catalina Island Repower Feasibility Study",
+        "url": "https://www.sce.com/sites/default/files/inline-files/SantaCatalinaIslandRepower.pdf",
+        "publisher": "National Renewable Energy Laboratory / Southern California Edison",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-sce-battery-2017",
+        "title": "Batteries Help Keep Catalina's Lights On",
+        "url": "https://energized.edison.com/stories/batteries-help-keep-catalinas-lights-on",
+        "publisher": "Southern California Edison",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-cpuc-bcs-2024",
+        "title": "Catalina battery control system testimony and data responses in A.23-05-010",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2305010/7293/530903694.pdf",
+        "publisher": "California Public Utilities Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-cpuc-automation-2017",
+        "title": "Pebbly Beach Generating Station automation workpapers",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A1609001/589/191911903.pdf",
+        "publisher": "California Public Utilities Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-cpuc-remote-2023",
+        "title": "SCE workpapers describing the Catalina Ovation remote workstation",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2312011/6937/521754911.pdf",
+        "publisher": "California Public Utilities Commission",
+        "kind": "primary"
+      },
+      {
+        "id": "catalina-sandc-ngk-2011",
+        "title": "Energy Warehousing",
+        "url": "https://www.tdworld.com/grid-innovations/transmission/article/20956511/energy-warehousing",
+        "publisher": "T&D World",
+        "kind": "secondary"
+      },
+      {
+        "id": "catalina-capstone-netl-2012",
+        "title": "Catalina Island Distributed Generation Project",
+        "url": "https://netl.doe.gov/sites/default/files/event-proceedings/2012/univ%20turbine%20workshop/Nazemi.pdf",
+        "publisher": "Southern California Edison / U.S. DOE National Energy Technology Laboratory",
+        "kind": "primary"
+      }
+    ]
+  },
+  "caterpillar-tucson-proving-ground-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Caterpillar's off-grid Tucson Proving Ground main-site microgrid, installed in 2016 with Empire Power Systems, combines 528 kWp DC/500 kW AC of First Solar PV, a 500 kW short-duration lithium-ion/ultracapacitor storage system, and three 410 ekW Cat C15 prime diesel gensets under a Cat Microgrid Master Controller. A separate 2025 gatehouse project added a small 20 kW PV and 24 kW/56.8 kWh Cat XES60 storage microgrid. The two systems are separate subsystems at the same proving ground and their capacities should not be added as if one commissioning phase.",
+    "status": "The main-site system has operated since 2016 and remains presented by Caterpillar as an off-grid reference installation. Public main-site sources state expected fuel/runtime reductions but do not disclose verified lifetime savings or a current annual solar percentage. Caterpillar separately documented a February 2025 gatehouse microgrid that was operating with nearly all gatehouse energy supplied by solar and storage and diesel use reduced by about 95%.",
+    "organizations": [
+      {
+        "name": "Caterpillar",
+        "role": "Site owner and supplier/integrator of the diesel gensets, short-duration storage, power electronics, switchgear, controls, monitoring, and the later XES60 gatehouse system.",
+        "sourceIds": ["cat-tpg-main-current", "cat-tpg-power-2017", "cat-tpg-case-study-2019", "cat-tpg-gatehouse-2025"]
+      },
+      {
+        "name": "Empire Power Systems",
+        "role": "Caterpillar dealer that installed and maintains the complete main proving-ground microgrid and had previously installed the site's gensets.",
+        "sourceIds": ["cat-tpg-main-current", "cat-tpg-power-2017"]
+      },
+      {
+        "name": "First Solar",
+        "role": "PV-module supplier and development collaborator for the 528 kWp main-site array.",
+        "sourceIds": ["cat-tpg-power-2017", "cat-tpg-case-study-2019"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Main-site PV",
+        "value": "528 kWp DC / 500 kW AC, using both fixed-tilt and single-axis-tracking sections",
+        "sourceIds": ["cat-tpg-main-current", "cat-tpg-power-2017"]
+      },
+      {
+        "label": "Main-site PV modules",
+        "value": "4,800 First Solar thin-film modules rated 110 W each",
+        "sourceIds": ["cat-tpg-power-2017"]
+      },
+      {
+        "label": "Main-site storage",
+        "value": "500 kW short-duration hybrid lithium-ion/ultracapacitor system rated to provide approximately 12 minutes of supplementary power; no kWh nameplate was disclosed",
+        "sourceIds": ["cat-tpg-main-current", "cat-tpg-power-2017"]
+      },
+      {
+        "label": "Main-site diesel generation",
+        "value": "Three Cat C15 gensets rated 410 ekW prime each, approximately 1.23 MW aggregate",
+        "sourceIds": ["cat-tpg-case-study-2019"]
+      },
+      {
+        "label": "Main-site load",
+        "value": "Approximately 300 kW average in the detailed case study",
+        "sourceIds": ["cat-tpg-case-study-2019"]
+      },
+      {
+        "label": "Gatehouse subsystem (separate 2025 project)",
+        "value": "58 PV modules totaling about 20 kW plus a Cat XES60 rated 24 kW / 56.8 kWh and diesel backup",
+        "sourceIds": ["cat-tpg-gatehouse-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Diesel gensets",
+        "manufacturer": "Caterpillar",
+        "model": "C15",
+        "detail": "Three units, each rated 410 ekW prime, serving the main proving-ground system.",
+        "sourceIds": ["cat-tpg-case-study-2019"]
+      },
+      {
+        "category": "PV modules",
+        "manufacturer": "First Solar",
+        "detail": "4,800 thin-film modules rated 110 W each, split between fixed and single-axis-tracking arrays.",
+        "sourceIds": ["cat-tpg-power-2017"]
+      },
+      {
+        "category": "PV inverters",
+        "detail": "Twenty 25 kW AC string inverters, 500 kW AC total; the reviewed source does not name their manufacturer or model.",
+        "sourceIds": ["cat-tpg-power-2017"]
+      },
+      {
+        "category": "Energy storage and bidirectional conversion",
+        "manufacturer": "Caterpillar",
+        "detail": "500 kW Cat storage package combining lithium-ion batteries and ultracapacitors with Cat bidirectional power inverters for fast transient and short-duration support.",
+        "sourceIds": ["cat-tpg-main-current", "cat-tpg-power-2017"]
+      },
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "Caterpillar",
+        "model": "Microgrid Master Controller",
+        "detail": "Coordinates PV, storage, gensets, and integrated switchgear; Cat Connect provides web-based monitoring.",
+        "sourceIds": ["cat-tpg-power-2017", "cat-tpg-case-study-2019"]
+      },
+      {
+        "category": "Gatehouse battery system",
+        "manufacturer": "Caterpillar",
+        "model": "XES60",
+        "detail": "Separate 2025 gatehouse unit rated 24 kW / 56.8 kWh with an onboard microgrid controller.",
+        "sourceIds": ["cat-tpg-gatehouse-2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Main-site control strategy",
+        "detail": "The controller can shut all three diesels down when daytime PV and storage can carry the site, then restart generation as needed. Caterpillar's publication attributes materially greater savings to its integrated controller than an earlier third-party control approach, but this is a vendor-reported comparison.",
+        "sourceIds": ["cat-tpg-power-2017"]
+      },
+      {
+        "category": "Forecast main-site benefits",
+        "detail": "At installation Caterpillar forecast about 33% lower diesel use and 25% fewer genset operating hours. The reviewed sources do not present a measured multi-year result against those forecasts.",
+        "sourceIds": ["cat-tpg-main-current"]
+      },
+      {
+        "category": "Gatehouse measured result",
+        "detail": "Caterpillar reported the gatehouse's diesel use falling from more than 500 gallons per month to under 25, a 95% fuel reduction and 97% runtime reduction, with about $6,000 in monthly savings. These figures apply only to the 2025 gatehouse subsystem.",
+        "sourceIds": ["cat-tpg-gatehouse-2025"]
+      },
+      {
+        "category": "Project boundary",
+        "detail": "The 20 kW/XES60 gatehouse installation and Caterpillar's 2024 automated mining-truck energy-transfer demonstration are distinct from the 2016 main-site microgrid. Only the gatehouse is included as a later electrical expansion; the mining-truck trial is not counted as microgrid capacity.",
+        "sourceIds": ["cat-tpg-gatehouse-2025", "cat-tpg-truck-demo-2024"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "cat-tpg-main-current",
+        "title": "Proof from the Proving Ground: Tucson",
+        "url": "https://www.cat.com/en_AU/by-industry/electric-power/Articles/Testimonials/proof-from-the-proving-ground-tucson.html",
+        "publisher": "Caterpillar",
+        "kind": "primary"
+      },
+      {
+        "id": "cat-tpg-power-2017",
+        "title": "Collaboration and Innovation Produce a Powerful Microgrid Solution",
+        "url": "https://www.powermag.com/collaboration-and-innovation-produce-a-powerful-microgrid-solution/",
+        "publisher": "POWER Magazine",
+        "kind": "secondary"
+      },
+      {
+        "id": "cat-tpg-case-study-2019",
+        "title": "Microgrid Case Study: Caterpillar Tucson Proving Ground",
+        "url": "https://egsa.org/Portals/0/Documents/Committee%20Docs/F19%20-%20Microgrid_Caterpillar_Case_Study.pdf?ver=fdUlEheC2nOAmrnI5k1ZZg%3D%3D",
+        "publisher": "Caterpillar / Electrical Generating Systems Association",
+        "kind": "primary"
+      },
+      {
+        "id": "cat-tpg-gatehouse-2025",
+        "title": "Off the Grid, On the Money: Tucson Proving Ground Gatehouse",
+        "url": "https://www.cat.com/en_ID/by-industry/electric-power/Articles/Testimonials/off-the-grid-on-the-money-tpg-gatehouse.html",
+        "publisher": "Caterpillar",
+        "kind": "primary"
+      },
+      {
+        "id": "cat-tpg-truck-demo-2024",
+        "title": "Caterpillar Demonstrates New Automated Energy Transfer Solution",
+        "url": "https://www.cat.com/en_US/news/machine-press-releases/caterpillar-demonstrates-new-automated-energy-transfer-solution.html",
+        "publisher": "Caterpillar",
+        "kind": "primary"
+      }
+    ]
+  },
+  "chavanga-kola-pennisula": {
+    "researchedAt": "2026-07-20",
+    "summary": "Chavanga's village power station on the remote Tersky Coast is a wind-solar-diesel system commissioned in 2015. A Kola Science Centre technical monograph gives the Chavanga-specific configuration as 50 kW of wind, 32.4 kW of PV, and two 88 kW FG Wilson P110 diesels. The often-repeated 120 kW wind and 75 kW solar figures are totals across the Chavanga, Chapoma, and Tetrino program, not Chavanga alone. Public records show wind-equipment repairs in 2017-2018, diesel replacement work and local line repair through 2025, but no recent measured renewable share.",
+    "status": "The Murmansk regional encyclopedia says the wind-solar-diesel station has operated since August 2015. Wind units were sent for repair in October 2017 and returned in November 2018. The Tersky District's 2025 program records diesel-power-plant replacement work in Chavanga as 100% complete by 31 December 2025, after a 2024 low-voltage line repair; it does not disclose replacement genset models or present operating performance.",
+    "organizations": [
+      {
+        "name": "President-Neva",
+        "role": "Contractor associated with implementation of the Tersky Coast hybrid-generation program in the recovered and regional program record.",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-program-study-2018"]
+      },
+      {
+        "name": "Tersky District Administration",
+        "role": "Municipal authority administering recent electricity-infrastructure work, including Chavanga line repair and 2025 diesel-station replacement.",
+        "sourceIds": ["chavanga-tersky-program-2025"]
+      },
+      {
+        "name": "Government of Murmansk Oblast",
+        "role": "Regional government documenting the station and supporting the remote-settlement power program.",
+        "sourceIds": ["chavanga-murmansk-encyclopedia-2026", "chavanga-tv21-2015"]
+      },
+      {
+        "name": "Kola Science Centre of the Russian Academy of Sciences",
+        "role": "Publisher of the technical monograph that separates equipment and capacities by village.",
+        "sourceIds": ["chavanga-kola-monograph-2020"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chavanga wind capacity",
+        "value": "50 kW: five ANTARIS turbines rated 10 kW each",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-repair-presentation-2018"]
+      },
+      {
+        "label": "Chavanga solar capacity",
+        "value": "32.4 kW: 120 modules rated 270 W each",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-repair-presentation-2018"]
+      },
+      {
+        "label": "Original Chavanga diesel capacity",
+        "value": "Two FG Wilson P110 generator sets rated 88 kW each, 176 kW total",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-repair-presentation-2018"]
+      },
+      {
+        "label": "Three-village program totals, not Chavanga",
+        "value": "Chavanga, Chapoma, and Tetrino together were reported at 120 kW wind and 75 kW solar, with projected annual savings of at least 231 tonnes of fuel; these values must not be assigned to Chavanga alone",
+        "sourceIds": ["chavanga-program-study-2018"]
+      },
+      {
+        "label": "Separate 2008 telecom pilot",
+        "value": "1.3 kW FORTIS PASSAT wind plus 0.88 kW PV for a public telephone power supply; this preceded and is separate from the 2015 village station",
+        "sourceIds": ["chavanga-kola-monograph-2020"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "ANTARIS",
+        "detail": "Five 10 kW turbines, 50 kW total, installed for the 2015 Chavanga village hybrid station.",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-repair-presentation-2018"]
+      },
+      {
+        "category": "PV modules",
+        "detail": "120 crystalline modules rated 270 W each, 32.4 kW total; the reviewed technical record does not identify the manufacturer.",
+        "sourceIds": ["chavanga-kola-monograph-2020"]
+      },
+      {
+        "category": "Diesel gensets",
+        "manufacturer": "FG Wilson",
+        "model": "P110",
+        "detail": "Two original 88 kW units. A 2025 replacement is recorded, but the replacement make, model, and rating are not disclosed.",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-tersky-program-2025"]
+      },
+      {
+        "category": "Earlier telecom wind turbine",
+        "manufacturer": "FORTIS",
+        "model": "PASSAT",
+        "detail": "A separate 1.3 kW wind turbine used with 0.88 kW of PV for the 2008 public-telephone pilot.",
+        "sourceIds": ["chavanga-kola-monograph-2020"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Commissioning",
+        "detail": "Regional sources place operation from August 2015, while a later engineering presentation gives September 2015 commissioning. The difference likely reflects phased handover, so both dates remain labeled rather than silently collapsed.",
+        "sourceIds": ["chavanga-murmansk-encyclopedia-2026", "chavanga-repair-presentation-2018"]
+      },
+      {
+        "category": "Wind repair",
+        "detail": "The five wind units were sent for repair in October 2017 and returned to Chavanga on 1 November 2018. Local reporting also described restoration work on the wind-solar-diesel station in 2018.",
+        "sourceIds": ["chavanga-repair-presentation-2018", "chavanga-hibiny-repair-2018"]
+      },
+      {
+        "category": "Diesel and network renewal",
+        "detail": "The district program records a 4.275 million-ruble 0.4 kV line repair completed in 2024 and 6.501 million rubles of Chavanga diesel-station replacement work completed in 2025. Continued fuel deliveries confirm the system remains diesel-dependent.",
+        "sourceIds": ["chavanga-tersky-program-2025"]
+      },
+      {
+        "category": "Service outcome",
+        "detail": "The 2015 regional commissioning account said the Tersky Coast hybrid projects provided round-the-clock electricity to the previously constrained settlements. No recent reliability indices, annual generation, diesel savings, or renewable fraction were located for Chavanga specifically.",
+        "sourceIds": ["chavanga-tv21-2015", "chavanga-tersky-program-2025"]
+      },
+      {
+        "category": "Capacity correction",
+        "detail": "Published program totals of 75 kW solar and 120 kW wind combine Chavanga, Chapoma, and Tetrino. The village-level Kola Science Centre table is the source for Chavanga's actual 32.4 kW solar and 50 kW wind configuration.",
+        "sourceIds": ["chavanga-kola-monograph-2020", "chavanga-program-study-2018"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "chavanga-kola-monograph-2020",
+        "title": "Renewable Energy in the Murmansk Region: Experience and Prospects",
+        "url": "https://rio.ksc.ru/data/documents/45_kuznetsov_20.pdf",
+        "publisher": "Kola Science Centre of the Russian Academy of Sciences",
+        "kind": "primary"
+      },
+      {
+        "id": "chavanga-murmansk-encyclopedia-2026",
+        "title": "Chavanga",
+        "url": "https://ke-culture.gov-murman.ru/slovnik/?ELEMENT_ID=259224",
+        "publisher": "Government of Murmansk Oblast",
+        "kind": "primary"
+      },
+      {
+        "id": "chavanga-tersky-program-2025",
+        "title": "Tersky District municipal infrastructure program and 2025 implementation record",
+        "url": "https://terskyrayon.gov-murman.ru/regulatory/administratsiya/normativnye-akty-za-2025-god/531269/",
+        "publisher": "Tersky District Administration",
+        "kind": "primary"
+      },
+      {
+        "id": "chavanga-hibiny-repair-2018",
+        "title": "Wind-solar-diesel station being restored in Chavanga",
+        "url": "https://www.hibiny.ru/chavanga/news/item-v-chavange-vosstanavlivayut-vetro-solnechno-dizelnuyu-stanciyu-181855/",
+        "publisher": "Hibiny.ru",
+        "kind": "secondary"
+      },
+      {
+        "id": "chavanga-repair-presentation-2018",
+        "title": "Renewable-diesel complexes in remote Murmansk settlements",
+        "url": "https://ppt-online.org/994997",
+        "publisher": "PPT Online presentation archive",
+        "kind": "archive"
+      },
+      {
+        "id": "chavanga-program-study-2018",
+        "title": "Economic security and renewable-energy projects in remote Murmansk settlements",
+        "url": "https://rio.ksc.ru/data/documents/6_ekon_bez_2018.pdf",
+        "publisher": "Kola Science Centre of the Russian Academy of Sciences",
+        "kind": "primary"
+      },
+      {
+        "id": "chavanga-tv21-2015",
+        "title": "Governor Marina Kovtun visited the Tersky Coast",
+        "url": "https://www.tv21.ru/news/2015/08/04/marina-kovtun-pobyvala-na-terskom-beregu-belogo-morya",
+        "publisher": "TV21 Murmansk",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "695-2": {
+    "researchedAt": "2026-07-20",
+    "summary": "Bihar's chief minister residence/office complex at 1 Aney Marg in Patna received a building-scale solar and efficiency project initiated in 2012. Bihar Renewable Energy Development Agency's official achievement list records a 100 kWp installation, while contemporary reporting says Larsen & Toubro won the national tender and that the project also replaced lighting and equipment with efficient alternatives and added digital monitoring. Later industry/academic compilations instead list 125 kW and Optimal Power Solutions; those later attributions conflict with the official/contemporary record and do not explain whether 125 kW refers to solar, storage power, or a subsequent scope.",
+    "status": "The project was announced and awarded in 2012 and was reported as an operating 100 kW installation by 2014. BREDA still lists the CM House 100 kWp project as an achievement, but no post-2014 generation, maintenance, battery, or outage-performance record was found. The official residence was renamed Lok Sevak Awas and changed occupants in 2026; that administrative change does not establish the current condition of the energy system.",
+    "organizations": [
+      {
+        "name": "Bihar Renewable Energy Development Agency",
+        "role": "State nodal agency that procured and lists the CM House 100 kWp project among its achievements.",
+        "sourceIds": ["bihar-breda-achievements", "bihar-rediff-2012"]
+      },
+      {
+        "name": "Larsen & Toubro",
+        "role": "Winning contractor selected through the national tender described by BREDA's director in contemporary reporting.",
+        "sourceIds": ["bihar-rediff-2012"]
+      },
+      {
+        "name": "Government of Bihar",
+        "role": "Project owner/beneficiary for the chief minister's official residence, office, and public-meeting complex.",
+        "sourceIds": ["bihar-dh-plan-2012", "bihar-cmo-2026"]
+      },
+      {
+        "name": "Optimal Power Solutions",
+        "role": "Attributed as project developer/owner or project manager in later 125 kW catalog records; its relationship to the contemporary L&T procurement and the exact rated component are not resolved by those sources.",
+        "sourceIds": ["bihar-ficci-2019", "bihar-microgrid-review-2020"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Official BREDA solar rating",
+        "value": "100 kWp at the CM House complex",
+        "sourceIds": ["bihar-breda-achievements", "bihar-rediff-2012", "bihar-telegraph-2014"]
+      },
+      {
+        "label": "Later catalog rating conflict",
+        "value": "125 kW in 2019-2020 microgrid tables attributed to Optimal Power Solutions; FICCI notes that rated power refers to storage in most table entries, while the academic review labels it solar, so the rated component and phase remain ambiguous",
+        "sourceIds": ["bihar-ficci-2019", "bihar-microgrid-review-2020"]
+      },
+      {
+        "label": "Approved project budget",
+        "value": "INR 4.5 crore for solar and energy-efficiency work at the residence/office/public-meeting complex",
+        "sourceIds": ["bihar-dh-plan-2012", "bihar-rediff-2012"]
+      },
+      {
+        "label": "Storage",
+        "value": "No reliable public battery energy capacity, chemistry, manufacturer, or model was located",
+        "sourceIds": ["bihar-ficci-2019", "bihar-microgrid-review-2020"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar generation",
+        "detail": "BREDA lists a 100 kWp system, but the reviewed primary/contemporary sources do not identify PV module or inverter manufacturers or models.",
+        "sourceIds": ["bihar-breda-achievements", "bihar-rediff-2012"]
+      },
+      {
+        "category": "Energy-efficiency package",
+        "detail": "Contemporary reporting describes LED lighting, five-star air conditioners, efficient fan regulators, and more efficient water pumps as part of the residence overhaul; individual equipment makes and models were not disclosed.",
+        "sourceIds": ["bihar-rediff-2012"]
+      },
+      {
+        "category": "Monitoring and controls",
+        "detail": "The planned system used digital technology for generation/delivery optimization and continuous monitoring, but no controller vendor or product name is publicly identified.",
+        "sourceIds": ["bihar-rediff-2012"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Project scope",
+        "detail": "The 2012 plan covered the chief minister's residence, office, and Janata Durbar/public-meeting facilities at 1 Aney Marg, with the aim of reducing dependence on Patna's unreliable grid.",
+        "sourceIds": ["bihar-dh-plan-2012", "bihar-rediff-2012"]
+      },
+      {
+        "category": "Implementation evidence",
+        "detail": "A 2014 report on BREDA's larger block-office program describes a 100 kW solar plant already installed at the chief minister's official residence, corroborating implementation beyond the 2012 announcement.",
+        "sourceIds": ["bihar-telegraph-2014"]
+      },
+      {
+        "category": "Vendor/rating conflict",
+        "detail": "Contemporary sources name L&T and 100 kWp. Later tables name Optimal Power Solutions and 125 kW without documenting a retrofit or clearly distinguishing PV from storage power. Both dated records are retained; 125 kW is not substituted for BREDA's official value.",
+        "sourceIds": ["bihar-breda-achievements", "bihar-rediff-2012", "bihar-ficci-2019", "bihar-microgrid-review-2020"]
+      },
+      {
+        "category": "Current evidence gap",
+        "detail": "No source located through July 2026 reports current generation, solar fraction, islanding behavior, storage condition, controller status, or subsequent equipment replacement. The site's 2026 renaming and occupancy change are not evidence of the power system's condition.",
+        "sourceIds": ["bihar-cmo-2026", "bihar-indianexpress-2026"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bihar-breda-achievements",
+        "title": "BREDA Achievements",
+        "url": "https://breda.co.in/Achievement.aspx",
+        "publisher": "Bihar Renewable Energy Development Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "bihar-rediff-2012",
+        "title": "Bihar CM's official residence switches to solar energy",
+        "url": "https://www.rediff.com/news/report/bihar-cm-s-official-residence-switches-to-solar-energy/20121128.htm",
+        "publisher": "Rediff",
+        "kind": "secondary"
+      },
+      {
+        "id": "bihar-dh-plan-2012",
+        "title": "Bihar CM's residence to be solar powered",
+        "url": "https://www.deccanherald.com/india/bihar-cms-residence-solar-powered-2323094",
+        "publisher": "Deccan Herald",
+        "kind": "secondary"
+      },
+      {
+        "id": "bihar-telegraph-2014",
+        "title": "Solar plants for block offices",
+        "url": "https://www.telegraphindia.com/bihar/solar-plants-for-block-offices/cid/1543695",
+        "publisher": "The Telegraph India",
+        "kind": "secondary"
+      },
+      {
+        "id": "bihar-ficci-2019",
+        "title": "India's Energy Storage Mission",
+        "url": "https://static.investindia.gov.in/s3fs-public/2019-11/Web_Battery%20Storage-Ficci.pdf",
+        "publisher": "Federation of Indian Chambers of Commerce and Industry / Invest India",
+        "kind": "secondary"
+      },
+      {
+        "id": "bihar-microgrid-review-2020",
+        "title": "The implementation framework of a microgrid: A review",
+        "url": "https://www.researchgate.net/publication/346428365_The_implementation_framework_of_a_microgrid_A_review",
+        "publisher": "ResearchGate copy of peer-reviewed review article",
+        "kind": "secondary"
+      },
+      {
+        "id": "bihar-cmo-2026",
+        "title": "Chief Minister of Bihar official news from 1 Aney Marg",
+        "url": "https://cm.bihar.gov.in/users/viewnews.aspx?id=4197",
+        "publisher": "Chief Minister Secretariat, Government of Bihar",
+        "kind": "primary"
+      },
+      {
+        "id": "bihar-indianexpress-2026",
+        "title": "Bihar CM residence at Aney Marg renamed Lok Sevak Awas",
+        "url": "https://indianexpress.com/article/india/bihar-cm-aney-marg-lok-sevak-marg-nitish-kumar-samrat-choudhary-10676157/",
+        "publisher": "The Indian Express",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "chuja-island": {
+    "researchedAt": "2026-07-20",
+    "summary": "Chuja's record contains two different projects. A POSCO-led consortium was selected in 2015 to plan a large energy-independent-island conversion using multi-megawatt wind and solar plus storage, but contemporary POSCO and later research sources continued to describe it as site selection, design, or a proposal; no commissioning evidence for that large build was found. A separate 30 kW oscillating-water-column wave-energy microgrid with battery storage was completed at Muk-ri harbor in 2021 and remained under long-term operation and performance verification in the IEA-OES 2025 report.",
+    "status": "The large POSCO consortium conversion should be treated as selected/planned, not verified built: POSCO ICT was still selecting a generation site in 2016, engineering papers described future conversion, and a 2019 paper still proposed an optimal Chuja microgrid. Separately, KRISO held the Muk-ri wave-energy completion ceremony in November 2021 and began trial operation; IEA-OES reported the 30 kW wave/ESS microgrid in long-term operation and performance verification during 2025.",
+    "organizations": [
+      {
+        "name": "POSCO ICT",
+        "role": "Leader/participant in the consortium selected for the proposed large energy-independent-island conversion; its 2016 account shows site selection and development work rather than commissioning.",
+        "sourceIds": ["chuja-selection-2015", "chuja-posco-2016"]
+      },
+      {
+        "name": "Korea Research Institute of Ships and Ocean Engineering",
+        "role": "Research lead for the separate Muk-ri oscillating-water-column wave-energy microgrid and its commissioning/trial operation.",
+        "sourceIds": ["chuja-kriso-2021", "chuja-oes-2025"]
+      },
+      {
+        "name": "Hydrowave Power",
+        "role": "Industry partner in trial operation of the Muk-ri wave-energy system and recipient/participant in the 2021 technology transfer described by KRISO.",
+        "sourceIds": ["chuja-kriso-2021"]
+      },
+      {
+        "name": "G-Philos",
+        "role": "Partner named by KRISO for joint trial operation of the Muk-ri wave-energy microgrid.",
+        "sourceIds": ["chuja-kriso-2021"]
+      },
+      {
+        "name": "Jeju Special Self-Governing Province",
+        "role": "Provincial authority for the island and source context for the proposed energy-independent-island design.",
+        "sourceIds": ["chuja-adb-plan-2017", "chuja-icrepq-design-2017"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Existing island diesel system in planning studies",
+        "value": "Approximately 5.5 MW; one detailed model represents four 1 MW and two 0.5 MW units (5 MW), illustrating source/configuration variation rather than a verified upgrade",
+        "sourceIds": ["chuja-adb-plan-2017", "chuja-icrepq-design-2017", "chuja-design-paper-2016"]
+      },
+      {
+        "label": "Large-conversion public plan variant",
+        "value": "1.3 MW solar and 3.2 MW wind in a 2017 energy-independent-island presentation; estimated project cost US$46 million",
+        "sourceIds": ["chuja-adb-plan-2017"]
+      },
+      {
+        "label": "Large-conversion engineering-study variant",
+        "value": "1.6 MW PV, three 800 kW wind turbines (2.4 MW), and 12 MWh BESS; this was an optimized design/model, not verified installed equipment",
+        "sourceIds": ["chuja-icrepq-design-2017", "chuja-design-paper-2016"]
+      },
+      {
+        "label": "Modeled renewable fraction",
+        "value": "33.56% renewable with zero modeled loss-of-power-supply probability and 7,099 tCO2/year avoided; simulation result only",
+        "sourceIds": ["chuja-icrepq-design-2017"]
+      },
+      {
+        "label": "Built Muk-ri wave microgrid",
+        "value": "30 kW slope-type oscillating-water-column wave-energy converter integrated with a microgrid and ESS; public sources do not disclose ESS kW/kWh",
+        "sourceIds": ["chuja-kriso-2021", "chuja-oes-2025"]
+      },
+      {
+        "label": "Muk-ri feeder/load context",
+        "value": "A pre-commissioning control study measured 588.3 kW maximum active load and 741 kVA on the Muk-ri section; these are feeder observations, not wave-plant output",
+        "sourceIds": ["chuja-wave-study-2020"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Proposed wind generation",
+        "detail": "The detailed 2017 study modeled three 800 kW turbines, 2.4 MW total. No manufacturer/model or installation evidence was located.",
+        "sourceIds": ["chuja-icrepq-design-2017"]
+      },
+      {
+        "category": "Proposed solar generation",
+        "detail": "The detailed design divided 1.6 MW into sixteen 100 kW PV blocks. Manufacturer and inverter model were not disclosed, and the array was not verified as built.",
+        "sourceIds": ["chuja-icrepq-design-2017"]
+      },
+      {
+        "category": "Proposed battery storage",
+        "detail": "A 12 MWh BESS appears in the large-project engineering model; chemistry, power rating, manufacturer, and commissioning were not established.",
+        "sourceIds": ["chuja-icrepq-design-2017", "chuja-design-paper-2016"]
+      },
+      {
+        "category": "Wave-energy converter",
+        "detail": "30 kW slope-type oscillating-water-column converters incorporated into the existing Muk-ri breakwater; KRISO does not disclose the component model in the reviewed release.",
+        "sourceIds": ["chuja-kriso-2021", "chuja-oes-2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Large-project selection and development",
+        "detail": "The Korean government selected a POSCO consortium for Chuja in 2015. POSCO ICT's 2016 update said it was selecting the generation site and actively pursuing development, not that the system was operating.",
+        "sourceIds": ["chuja-selection-2015", "chuja-posco-2016"]
+      },
+      {
+        "category": "Large-project evidence boundary",
+        "detail": "A 2016 paper expected installation by 2019, a 2017 paper said the island 'will be converted,' and a 2019 peer-reviewed paper still proposed an optimal microgrid. In the absence of a commissioning or operator record, the multi-megawatt POSCO project is not counted as built.",
+        "sourceIds": ["chuja-design-paper-2016", "chuja-icrepq-design-2017", "chuja-kci-2019"]
+      },
+      {
+        "category": "Muk-ri commissioning",
+        "detail": "KRISO held a completion ceremony on 11 November 2021 and began joint trial operation with Hydrowave Power and G-Philos after a research program dating to 2016 and technology transfer in September 2021.",
+        "sourceIds": ["chuja-kriso-2021"]
+      },
+      {
+        "category": "Muk-ri current result",
+        "detail": "The IEA-OES 2025 annual report describes the 30 kW wave-energy system as integrated with a microgrid and ESS and undergoing long-term operation and performance verification. It does not publish annual MWh, availability, or storage capacity.",
+        "sourceIds": ["chuja-oes-2025"]
+      },
+      {
+        "category": "Resilience objective",
+        "detail": "A 2020 control study designed the Muk-ri wave/ESS subsystem to preserve service to Muk-ri if the rest of Chuja's diesel grid failed. Reported algorithm performance was simulated and should not be presented as observed outage performance.",
+        "sourceIds": ["chuja-wave-study-2020"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "chuja-selection-2015",
+        "title": "Consortia selected for five energy-independent islands",
+        "url": "https://www.mt.co.kr/economy/2015/07/05/2015070509110229586",
+        "publisher": "Money Today",
+        "kind": "secondary"
+      },
+      {
+        "id": "chuja-posco-2016",
+        "title": "POSCO ICT energy self-sufficient island project update",
+        "url": "https://poscoictblog.tistory.com/325",
+        "publisher": "POSCO ICT",
+        "kind": "primary"
+      },
+      {
+        "id": "chuja-adb-plan-2017",
+        "title": "Eco-Friendly Energy Independent Island Solution",
+        "url": "https://asiacleanenergyforum.adb.org/wp-content/uploads/2017/06/4_Eco-Friendly-Energy-Independent-Island-Solution.pdf",
+        "publisher": "LG CNS / Asian Development Bank Asia Clean Energy Forum",
+        "kind": "primary"
+      },
+      {
+        "id": "chuja-icrepq-design-2017",
+        "title": "Design of an optimal hybrid energy system for Chuja Island",
+        "url": "https://icrepq.com/icrepq17/290-17-kang.pdf",
+        "publisher": "International Conference on Renewable Energies and Power Quality",
+        "kind": "secondary"
+      },
+      {
+        "id": "chuja-design-paper-2016",
+        "title": "Optimal design and operation planning for the Chuja energy-independent island",
+        "url": "https://pdfs.semanticscholar.org/aeff/73af9123031cf15343715e3f2854902278d7.pdf",
+        "publisher": "Academic paper archive",
+        "kind": "secondary"
+      },
+      {
+        "id": "chuja-kci-2019",
+        "title": "Optimal Microgrid Design for Chuja Island",
+        "url": "https://kiss.kstudy.com/DetailOa/Ar?key=52021086",
+        "publisher": "The Institute of Korean Electrical and Electronics Engineers",
+        "kind": "secondary"
+      },
+      {
+        "id": "chuja-kriso-2021",
+        "title": "Completion of the wave power generation demonstration plant at Muk-ri Port, Chuja Island",
+        "url": "https://www.kriso.re.kr/gallery.es?act=view&b_list=9&bid=0014&keyField=&keyWord=&list_no=585&mid=a20301000000&nPage=10&orderby=&tag=",
+        "publisher": "Korea Research Institute of Ships and Ocean Engineering",
+        "kind": "primary"
+      },
+      {
+        "id": "chuja-oes-2025",
+        "title": "Ocean Energy Systems Annual Report 2025",
+        "url": "https://tethys.pnnl.gov/sites/default/files/publications/oes-annual-report-2025.pdf",
+        "publisher": "International Energy Agency Ocean Energy Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "chuja-wave-study-2020",
+        "title": "Operation algorithm for a wave-energy microgrid at Muk-ri, Chuja Island",
+        "url": "https://jkosmee.or.kr/_PR/view/?aidx=24175&bidx=2869",
+        "publisher": "Journal of the Korean Society of Marine Environment & Safety",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "cobija": {
+    "researchedAt": "2026-07-20",
+    "summary": "Cobija's isolated utility system in Bolivia's Pando department combines a 5.2 MWp-class solar plant, 15.2 MVA of diesel generation, and a 2.2 MW/approximately 1.16 MWh Saft lithium-ion stabilization system under SMA controls. Isotron/Isastur delivered the EPC project using Yingli modules, SMA PV and battery inverters, and an SMA Fuel Save Controller. ENDE Corporación owns the plant and ENDE Guaracachi currently operates it. Current owner and regulator pages confirm continued operation, but no current Cobija-specific annual renewable percentage was published in the sources reviewed.",
+    "status": "Operating. SMA records commissioning in December 2014; ENDE inaugurated the second phase in July 2015. ENDE Guaracachi's current plant page identifies ENDE Corporación as owner and itself as operator, while Bolivia's 2024 regulator account still lists Guaracachi operating the Cobija solar plant within the isolated system.",
+    "organizations": [
+      {
+        "name": "ENDE Corporación",
+        "role": "Owner of the Cobija solar plant and owner/operator of the wider vertically integrated Cobija isolated system.",
+        "sourceIds": ["cobija-egsa-current", "cobija-aetn-2024", "cobija-ende-inauguration-2015"]
+      },
+      {
+        "name": "ENDE Guaracachi",
+        "role": "Current operator of the solar plant under an electricity purchase/sale agreement.",
+        "sourceIds": ["cobija-egsa-current", "cobija-aetn-2024"]
+      },
+      {
+        "name": "Isotron S.A.U. (Isastur Group)",
+        "role": "Turnkey EPC contractor for the solar, storage, stabilization, SCADA, and grid-integration project.",
+        "sourceIds": ["cobija-isastur-2014", "cobija-sma-reference-current", "cobija-saft-2015"]
+      },
+      {
+        "name": "SMA Solar Technology",
+        "role": "Supplier of PV inverters, battery inverters, and the Fuel Save Controller integrating solar, storage, and diesel operation.",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-sma-blog-2015"]
+      },
+      {
+        "name": "Saft",
+        "role": "Supplier of two Intensium Max lithium-ion battery containers used for power smoothing and spinning-reserve support.",
+        "sourceIds": ["cobija-saft-2015", "cobija-saft-presentation-2018"]
+      },
+      {
+        "name": "Yingli Green Energy",
+        "role": "PV-module supplier for the approximately 5.1-5.2 MWp array.",
+        "sourceIds": ["cobija-yingli-2014", "cobija-equipment-2015"]
+      },
+      {
+        "name": "Government of Denmark",
+        "role": "Provided a US$6 million grant reported as 53% of the US$11 million project investment; ENDE supplied the balance.",
+        "sourceIds": ["cobija-ende-inauguration-2015"]
+      },
+      {
+        "name": "CIEMAT",
+        "role": "Performed the post-construction plant inspection reported in the technical project account.",
+        "sourceIds": ["cobija-equipment-2015"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Solar PV capacity",
+        "value": "5.2 MWp in the SMA design record; ENDE's current operating page rounds the installed rating to 5 MWp and the 2015 inauguration account gives nearly 5.1 MW",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-egsa-current", "cobija-ende-inauguration-2015"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "2.2 MW / 1.16 MWh from two Saft Intensium Max 20M containers, each 1.1 MW peak and 580 kWh; commonly rounded to 1.2 MWh",
+        "sourceIds": ["cobija-saft-2015", "cobija-saft-presentation-2018", "cobija-sma-reference-current"]
+      },
+      {
+        "label": "Diesel generation",
+        "value": "15.2 MVA installed genset rating in SMA's system reference; the plant remains diesel-supported and does not use diesel-off mode",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-sma-blog-2015"]
+      },
+      {
+        "label": "Expected annual solar yield",
+        "value": "7,500 MWh/year design value",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-isastur-2014"]
+      },
+      {
+        "label": "Reported 2015 PV penetration",
+        "value": "40% in a 2018 Saft project presentation; no current annual Cobija-specific mix was located",
+        "sourceIds": ["cobija-saft-presentation-2018", "cobija-aetn-2024"]
+      },
+      {
+        "label": "Fuel displacement claim",
+        "value": "Approximately 1.8-1.9 million liters of diesel per year, reported as a project estimate/early operating claim rather than independently audited current savings",
+        "sourceIds": ["cobija-ende-inauguration-2015", "cobija-sma-blog-2015", "cobija-saft-presentation-2018"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "PV modules",
+        "manufacturer": "Yingli Green Energy",
+        "model": "YL300P-35b",
+        "detail": "17,040 polycrystalline modules rated 300 Wp, wired in 18-module series strings; arithmetic nameplate is 5.112 MWp while SMA describes the plant as 5.2 MWp.",
+        "sourceIds": ["cobija-equipment-2015", "cobija-isastur-2014", "cobija-yingli-2014"]
+      },
+      {
+        "category": "PV inverters",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Sunny Central SC800CP-XT",
+        "detail": "Six central inverters in SMA's current reference, with 4.8 MW aggregate AC output.",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-equipment-2015"]
+      },
+      {
+        "category": "Battery containers",
+        "manufacturer": "Saft",
+        "model": "Intensium Max 20M Medium Power",
+        "detail": "Two lithium-ion containers, each 580 kWh and 1.1 MW peak, installed adjacent to the diesel station for fast stabilization.",
+        "sourceIds": ["cobija-saft-2015", "cobija-equipment-2015"]
+      },
+      {
+        "category": "Battery inverters",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Sunny Central Storage SCS630",
+        "detail": "Four large-scale battery inverters in SMA's system reference; commissioning-era secondary descriptions vary in how they group the inverter units.",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-sma-blog-2015"]
+      },
+      {
+        "category": "Hybrid controller",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Fuel Save Controller",
+        "detail": "Calculates permissible PV injection from real-time grid energy flows and coordinates batteries to smooth PV/load fluctuations while maintaining diesel stability.",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-sma-blog-2015", "cobija-egsa-current"]
+      },
+      {
+        "category": "SCADA and stabilization balance of plant",
+        "manufacturer": "Isotron S.A.U.",
+        "detail": "Turnkey scope included SCADA, three transformer units, and a stabilization system reported at 2.3 MVA.",
+        "sourceIds": ["cobija-isastur-2014"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "The PV field is a few kilometers from the diesel station, while the two battery arrays sit beside the diesels. SMA control limits solar injection and uses fast battery response to manage ramps, load variation, and loss of the single solar interconnection line.",
+        "sourceIds": ["cobija-sma-blog-2015", "cobija-equipment-2015", "cobija-egsa-current"]
+      },
+      {
+        "category": "Diesel-off limitation",
+        "detail": "SMA clarified in 2020 that Dynamic Genset Shutdown was not implemented because it was unavailable when the plant was built; full diesel-off operation would require larger PV/storage and grid-forming battery inverters.",
+        "sourceIds": ["cobija-sma-blog-2015"]
+      },
+      {
+        "category": "Commissioning phases",
+        "detail": "SMA dates initial operation to December 2014 after a nine-month delivery effort. ENDE's July 2015 ceremony inaugurated the second phase, explaining why public sources cite both 2014 and 2015.",
+        "sourceIds": ["cobija-sma-reference-current", "cobija-sma-blog-2015", "cobija-ende-inauguration-2015"]
+      },
+      {
+        "category": "Current operation",
+        "detail": "ENDE Guaracachi's current page identifies two battery-bank arrays and regulation that optimizes PV penetration and diesel savings. Bolivia's 2024 regulator account separately lists Guaracachi as Cobija solar operator, corroborating continuing service.",
+        "sourceIds": ["cobija-egsa-current", "cobija-aetn-2024"]
+      },
+      {
+        "category": "Current performance gap",
+        "detail": "The 2024 regulator publishes an aggregate mix for all Bolivian isolated systems, not a Cobija-only annual mix. Early design yield, fuel savings, and 2015 PV penetration therefore remain dated rather than being presented as 2024 performance.",
+        "sourceIds": ["cobija-aetn-2024", "cobija-sma-reference-current", "cobija-saft-presentation-2018"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "cobija-egsa-current",
+        "title": "Solar Fotovoltaica Cobija",
+        "url": "https://www.egsa.bo/planta/solar-fotovoltaica-cobija/",
+        "publisher": "ENDE Guaracachi",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-sma-reference-current",
+        "title": "Hybrid Energy Supply for the City of Cobija, Bolivia",
+        "url": "https://www.sma-america.com/references/cobija-bolivia",
+        "publisher": "SMA Solar Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-sma-blog-2015",
+        "title": "Photovoltaic Diesel Hybrid System in Bolivia Supplies Energy to Remote Region",
+        "url": "https://www.sma-sunny.com/en/photovoltaic-diesel-hybrid-system-in-bolivia-supplies-energy-to-remote-region/",
+        "publisher": "SMA Solar Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-saft-2015",
+        "title": "Saft Intensium Max batteries stabilize the Cobija PV-diesel hybrid",
+        "url": "https://saft4u.saft.com/en/download_file/321615a5-a34b-4ef4-8170-451434877533/English",
+        "publisher": "Saft International",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-saft-presentation-2018",
+        "title": "Saft Energy Storage Systems presentation: Cobija case study",
+        "url": "https://actions.maisondelachimie.com/wp-content/uploads/sites/2/2018/09/LIPPERT-Michael.pdf",
+        "publisher": "Saft",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-ende-inauguration-2015",
+        "title": "Inauguration: Cobija Solar Photovoltaic Plant",
+        "url": "https://www.ende.bo/noticia/noticia/7",
+        "publisher": "ENDE Corporación",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-isastur-2014",
+        "title": "ISOTRON signs contract to build Bolivia's first photovoltaic plant",
+        "url": "https://www.isastur.com/en/notice/view/573",
+        "publisher": "Isastur Group",
+        "kind": "primary"
+      },
+      {
+        "id": "cobija-yingli-2014",
+        "title": "Yingli powers Bolivia's first solar power plant",
+        "url": "https://www.pv-magazine.com/2014/11/12/yingli-powers-bolivias-first-solar-power-plant_100017135/",
+        "publisher": "pv magazine",
+        "kind": "secondary"
+      },
+      {
+        "id": "cobija-equipment-2015",
+        "title": "Cobija photovoltaic-diesel hybrid plant technical account",
+        "url": "https://www.energias-renovables.com/fotovoltaica/planta-hibrida-fotovoltaicaa-diesel-de-cobija-20150428",
+        "publisher": "Energías Renovables",
+        "kind": "secondary"
+      },
+      {
+        "id": "cobija-aetn-2024",
+        "title": "Technical characteristics and production data for isolated systems, 2024",
+        "url": "https://anuariodig.aetn.gob.bo/informacion-estadistica/caracteristicas-tecnicas-y-datos-de-produccion-de-sistemas-aislados-s-a/",
+        "publisher": "Bolivia Electricity and Nuclear Technology Regulatory Authority",
+        "kind": "primary"
+      }
+    ]
+  },
+  "coconut-island-dc-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The built Coconut Island (Moku o Loʻe) DC microgrid is a University of Hawaiʻi Natural Energy Institute research testbed serving selected critical loads in two Hawaiʻi Institute of Marine Biology buildings. The installed system is 6.2 kW of rooftop PV with an 8 kW/8 kWh lithium-ion BESS, DC loads, a custom OPTO22/Node-RED controller, and an AC-grid interface to the island's aging undersea service. It also supported an electric car and a 24-foot solar-electric boat. Earlier 500 kW-class planning references were proposals; HNEI's current reports establish the much smaller configuration that was actually installed and commissioned.",
+    "status": "Installed, commissioned, and performance-tested by 2024-2025. HNEI's December 2025 annual report says the testbed demonstrated islanded critical-load operation, 3.3% better air-conditioner efficiency and 5% lower lighting power in DC mode, but also says the research project was terminated after loss of APRISES funding in May 2025. The hardware was not reported decommissioned, yet no post-November-2025 operating program is documented.",
+    "organizations": [
+      {
+        "name": "Hawaiʻi Natural Energy Institute",
+        "role": "Project owner/research lead through its Grid System Technologies Advanced Research Team; designed, integrated, commissioned, controlled, and evaluated the testbed.",
+        "sourceIds": ["coconut-hnei-2026", "coconut-aprises22-final-2025", "coconut-hnei-2021"]
+      },
+      {
+        "name": "Hawaiʻi Institute of Marine Biology",
+        "role": "Host institution and beneficiary; the microgrid serves selected loads in its Marine Mammal Research Project building and adjacent Boat House.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "name": "Office of Naval Research",
+        "role": "Principal funding source for the Coconut Island DC microgrid and APRISES research program.",
+        "sourceIds": ["coconut-hnei-2021", "coconut-hnei-2026", "coconut-aprises22-final-2025"]
+      },
+      {
+        "name": "University of Indonesia",
+        "role": "Research partner that designed and commissioned DCON DC-DC converters raising the 48 V bus to voltages required by DC loads.",
+        "sourceIds": ["coconut-hnei-2026", "coconut-apresa-final-2025"]
+      },
+      {
+        "name": "Okinawa Institute of Science and Technology",
+        "role": "Partner in the prototype solar-electric car, boat, portable emergency source, swappable batteries, and charging station.",
+        "sourceIds": ["coconut-hnei-2021", "coconut-aprises22-final-2025"]
+      },
+      {
+        "name": "PUES Corporation",
+        "role": "Industry partner with OIST and HNEI on the original electric-mobility and swappable-battery systems.",
+        "sourceIds": ["coconut-hnei-2021", "coconut-aprises22-final-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Installed rooftop solar",
+        "value": "6.2 kW DC on the Marine Mammal Research Project building",
+        "sourceIds": ["coconut-hnei-2026", "coconut-aprises22-final-2025"]
+      },
+      {
+        "label": "Stationary battery storage",
+        "value": "8 kW / 8 kWh lithium-ion BESS on a 48 V DC bus",
+        "sourceIds": ["coconut-hnei-2021", "coconut-hnei-2026", "coconut-apresa-final-2025"]
+      },
+      {
+        "label": "DC distribution voltages",
+        "value": "48 V source/battery bus converted to approximately 200-350 V DC for building loads",
+        "sourceIds": ["coconut-hnei-2026", "coconut-apresa-final-2025"]
+      },
+      {
+        "label": "Electric-boat energy system after upgrade",
+        "value": "1.98 kWp roof PV and 18.2 kWh fixed batteries arranged as four independently managed 48 V packs",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "label": "Earlier directory proposal",
+        "value": "A 2019 state energy directory listed a 500 kW Coconut Island microgrid as proposed/under development; current HNEI build records document 6.2 kW PV and 8 kWh stationary storage instead",
+        "sourceIds": ["coconut-hseo-2019", "coconut-hnei-2026"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Microgrid controller",
+        "manufacturer": "Opto 22",
+        "model": "OPTO22 industrial controller",
+        "detail": "Custom HNEI control system using Node-RED and JavaScript/Node.js for scheduling and transitions among AC, DC, and hybrid operating modes, with Groov View dashboard monitoring.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "category": "Grid-interactive inverter",
+        "manufacturer": "Schneider Electric",
+        "model": "XW Pro",
+        "detail": "Bidirectional inverter used primarily to convert AC utility supply to the 48 V DC bus, paired with two MPPT charge controllers; HNEI's reviewed report does not state its nameplate rating.",
+        "sourceIds": ["coconut-aprises22-final-2025"]
+      },
+      {
+        "category": "DC-DC converters",
+        "manufacturer": "University of Indonesia",
+        "model": "DCON",
+        "detail": "Three research converters described at 3 kW each, raising the 48 V PV/BESS bus to 200-350 V for lighting, cooling, refrigeration, and other loads.",
+        "sourceIds": ["coconut-hnei-2026", "coconut-apresa-final-2025", "coconut-ui-dcon-2021"]
+      },
+      {
+        "category": "DC end-use equipment",
+        "detail": "AC/DC-capable air conditioner, AC/DC LED lighting, refrigeration, critical plug-load inverter, multipoint metering, contactors, breakers, and data-collection equipment installed across two buildings.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "category": "Electric-boat batteries",
+        "detail": "The original 11.2 kWh swappable packs were replaced by four fixed 48 V packs totaling 18.2 kWh, each with its own BMS, plus modern charge controllers and fault-tolerant switching.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Architecture",
+        "detail": "Coconut Island remains connected to Oʻahu through an aging undersea electrical service, while the DC testbed can isolate selected critical loads. The stationary PV/BESS supplies a 48 V bus, DCON converters feed higher-voltage DC loads, and the Schneider inverter links to AC service.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "category": "Measured efficiency result",
+        "detail": "Periodic AC/DC switching found an average 3.3% air-conditioner efficiency improvement and approximately 5% lower LED-lighting power in DC mode. Plug loads were excluded because they remained AC-only.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "category": "Control-system reliability fix",
+        "detail": "One-second Modbus polling overloaded the controller and caused freezes. HNEI reduced active connections, changed polling to five-second intervals, and shrank an oversized dashboard icon, eliminating observed freezes and stabilizing monitoring.",
+        "sourceIds": ["coconut-aprises22-final-2025"]
+      },
+      {
+        "category": "Mobility-system lifecycle",
+        "detail": "The original swappable-battery station suffered BMS/charger conflicts, poor cell balancing, and rising end-of-life failures. It was decommissioned during APRISES19 and the electric car and boat received fixed batteries; this does not mean the building microgrid was decommissioned.",
+        "sourceIds": ["coconut-aprises22-final-2025"]
+      },
+      {
+        "category": "Electric-boat integration",
+        "detail": "The upgraded 24-foot boat demonstrated initial bidirectional energy flow in laboratory trials. Engineering for a permanent shore connection and full vehicle-to-grid integration began, but the May 2025 funding stop halted that next phase.",
+        "sourceIds": ["coconut-aprises22-final-2025", "coconut-hnei-2026"]
+      },
+      {
+        "category": "Project outcome",
+        "detail": "HNEI validated islanded critical-load operation and DC efficiency/control benchmarks, then reported project termination following loss of APRISES funding. The latest report does not say the installed testbed was removed, nor does it establish continued routine operation after November 2025.",
+        "sourceIds": ["coconut-hnei-2026", "coconut-aprises22-final-2025"]
+      },
+      {
+        "category": "Capacity correction",
+        "detail": "Historical 500 kW-class planning listings and secondary 200 kW solar/440 kW diesel summaries do not match HNEI's as-built record. The verified installed building testbed is 6.2 kW PV with 8 kW/8 kWh stationary storage; island-wide diesel assets are not part of that testbed rating.",
+        "sourceIds": ["coconut-hseo-2019", "coconut-hnei-2026", "coconut-aprises22-final-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "coconut-hnei-2026",
+        "title": "HNEI Annual Report to the 2026 Legislature: Coconut Island DC Microgrid",
+        "url": "https://www.hnei.hawaii.edu/wp-content/uploads/2026-HNEI-Annual-Report.pdf",
+        "publisher": "Hawaiʻi Natural Energy Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "coconut-aprises22-final-2025",
+        "title": "APRISES 22 Final Technical Report",
+        "url": "https://www.hnei.hawaii.edu/wp-content/uploads/APRISES-22-Final-Technical-Report.pdf",
+        "publisher": "Hawaiʻi Natural Energy Institute / Office of Naval Research",
+        "kind": "primary"
+      },
+      {
+        "id": "coconut-hnei-2021",
+        "title": "HNEI Report to the 2021 Legislature: Coconut Island DC Microgrid",
+        "url": "https://www.hnei.hawaii.edu/wp-content/uploads/2021-HNEI-Annual-Report.pdf",
+        "publisher": "Hawaiʻi Natural Energy Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "coconut-apresa-final-2025",
+        "title": "Asia Pacific Regional Energy System Assessment Final Technical Report",
+        "url": "https://www.hnei.hawaii.edu/wp-content/uploads/APRESA-Final-Technical-Report.pdf",
+        "publisher": "Hawaiʻi Natural Energy Institute",
+        "kind": "primary"
+      },
+      {
+        "id": "coconut-hseo-2019",
+        "title": "Hawaii Energy Facts & Figures, July 2019",
+        "url": "https://energy.hawaii.gov/wp-content/uploads/2019/07/2019-FF_Final.pdf",
+        "publisher": "Hawaii State Energy Office",
+        "kind": "primary"
+      },
+      {
+        "id": "coconut-ui-dcon-2021",
+        "title": "University of Indonesia energy converter gains international recognition",
+        "url": "https://en.antaranews.com/news/184718/ftuis-energy-converter-garners-global-recognition",
+        "publisher": "ANTARA News",
+        "kind": "secondary"
+      }
+    ]
+  },
+  "coober-pedy": {
+    "researchedAt": "2026-07-20",
+    "summary": "EDL's Coober Pedy Hybrid Renewable Power Station is a 9.25 MW isolated wind-solar-battery-diesel system supplying the remote South Australian town. The as-built renewable plant uses two 2.05 MW Senvion MM92 wind turbines, 1 MW of First Solar PV, a Toshiba SCiB short-duration battery, two diesel rotary UPS units, and a 3 MW dynamic resistor integrated with the existing eight-engine diesel station under EDL/Hydro Tasmania controls. EDL's 2025 update reports 74% average renewable penetration over operating life, more than 25,000 hours at 100% renewables, and a 116-hour diesel-free record.",
+    "status": "Operating since 1 July 2017. EDL's current CY2025 project page lists 9.25 MW total capacity and about 11 GWh annual production. A January 2025 owner update reports nearly nine years of reliable operation, 74% average renewable penetration, 116 continuous diesel-free hours, and 64% lower diesel use and generation-related greenhouse-gas emissions. The separate ARENA grant/knowledge-sharing project closed in December 2024; the power station continues operating.",
+    "organizations": [
+      {
+        "name": "EDL",
+        "role": "Developer, owner, operator, system architect, and power supplier; took direct responsibility for the final integrated control-system architecture.",
+        "sourceIds": ["coober-edl-current-2026", "coober-edl-milestone-2025", "coober-arena-lessons-2023", "coober-arena-performance-2020"]
+      },
+      {
+        "name": "Australian Renewable Energy Agency",
+        "role": "Provided up to approximately A$18.4 million toward the A$39 million project and published performance and lessons-learned material.",
+        "sourceIds": ["coober-arena-project-current", "coober-arena-performance-2020", "coober-arena-lessons-2023"]
+      },
+      {
+        "name": "Government of South Australia",
+        "role": "Supported the project and the remote-area electricity arrangements on behalf of the District Council of Coober Pedy.",
+        "sourceIds": ["coober-arena-lessons-2023", "coober-sa-offgrid-current"]
+      },
+      {
+        "name": "District Council of Coober Pedy",
+        "role": "Local electricity distributor and retailer serving roughly 1,250 customers through the town network; counterparty within the long-term supply structure.",
+        "sourceIds": ["coober-dccp-plan-2024", "coober-arena-lessons-2023"]
+      },
+      {
+        "name": "Senvion",
+        "role": "Wind-turbine supplier/EPC contractor for the two MM92 units and associated wind works.",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-lessons-2023"]
+      },
+      {
+        "name": "UGL",
+        "role": "Major site-based balance-of-plant/solar and integration contractor identified in EDL's lessons-learned report.",
+        "sourceIds": ["coober-arena-lessons-2023", "coober-arena-performance-2020"]
+      },
+      {
+        "name": "Hydro Tasmania",
+        "role": "Supplier/developer of the advanced hybrid off-grid control solution and integration approach adapted from King and Flinders Islands.",
+        "sourceIds": ["coober-arena-2017", "coober-arena-hybrid-2018"]
+      },
+      {
+        "name": "First Solar",
+        "role": "PV-module supplier for the 1 MW fixed-tilt solar field.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "name": "Toshiba",
+        "role": "Supplier of the SCiB lithium-ion cells/system identified in the detailed as-built performance report.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "name": "Hitzinger",
+        "role": "Supplier/integrator of two 850 kVA diesel rotary UPS units using Cummins KTA38 engines.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current total generating capacity",
+        "value": "9.25 MW: 4.1 MW wind, 1 MW solar, and 4.15 MW diesel in EDL's CY2025 account",
+        "sourceIds": ["coober-edl-current-2026"]
+      },
+      {
+        "label": "Wind generation",
+        "value": "Two 2.05 MW Senvion MM92 turbines, 4.1 MW total",
+        "sourceIds": ["coober-arena-performance-2020", "coober-edl-current-2026"]
+      },
+      {
+        "label": "Solar generation",
+        "value": "1 MW AC fixed-tilt PV using approximately 12,000 First Solar Series 4 modules",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-2017"]
+      },
+      {
+        "label": "Battery rating by detailed as-built report",
+        "value": "1.5 MW / 0.49 MWh Toshiba SCiB BESS; public summaries round the usable integration rating to 1 MW / 500 kWh",
+        "sourceIds": ["coober-arena-performance-2020", "coober-edl-current-2026", "coober-arena-project-current"]
+      },
+      {
+        "label": "Regulator battery-rating conflict",
+        "value": "South Australia's 2021-22 Technical Regulator report described 600 kWh; the project performance report gives 0.49 MWh and EDL gives 500 kWh, so the difference is retained as a reporting/configuration boundary rather than silently reconciled",
+        "sourceIds": ["coober-sa-regulator-2022", "coober-arena-performance-2020", "coober-edl-current-2026"]
+      },
+      {
+        "label": "Existing diesel engines",
+        "value": "Eight Deutz TBD6 V12 reciprocating units at 518 kWe each, 4.144 MW aggregate; EDL rounds current diesel capacity to 4.15 MW",
+        "sourceIds": ["coober-arena-performance-2020", "coober-edl-current-2026"]
+      },
+      {
+        "label": "Enabling technologies",
+        "value": "Two 850 kVA diesel rotary UPS units plus a 3 MW dynamic resistor and advanced hybrid off-grid controls",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-hybrid-2018"]
+      },
+      {
+        "label": "Current annual generation",
+        "value": "Approximately 11 GWh per year in EDL's CY2025 data",
+        "sourceIds": ["coober-edl-current-2026"]
+      },
+      {
+        "label": "Observed renewable penetration",
+        "value": "74% average over operating life through the January 2025 update, exceeding the original 70% long-term PPA target",
+        "sourceIds": ["coober-edl-milestone-2025", "coober-arena-hybrid-2018"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Senvion",
+        "model": "MM92",
+        "detail": "Two turbines rated 2.05 MW each, 4.1 MW total.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "category": "PV modules",
+        "manufacturer": "First Solar",
+        "model": "Series 4, 107.5 Wp",
+        "detail": "Fixed-tilt 1 MW AC solar plant; ARENA's public account describes approximately 12,000 modules.",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-2017"]
+      },
+      {
+        "category": "PV inverter",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Sunny Central SC1000XP in MVPS",
+        "detail": "1 MW-class central inverter housed in a Sunny Central medium-voltage power station.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "category": "Battery storage",
+        "manufacturer": "Toshiba",
+        "model": "SCiB",
+        "detail": "High-power lithium-ion BESS reported at 1.5 MW/0.49 MWh in the detailed as-built inventory, used for smoothing and fast system response.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "category": "Diesel rotary UPS",
+        "manufacturer": "Hitzinger / Cummins",
+        "model": "KTA38 engine-based DUPS",
+        "detail": "Two 850 kVA units provide rotating inertia, fault response, and dispatchable support during diesel-off operation.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "category": "Diesel gensets",
+        "manufacturer": "Deutz",
+        "model": "TBD6 V12",
+        "detail": "Eight pre-existing reciprocating units at 518 kWe each.",
+        "sourceIds": ["coober-arena-performance-2020"]
+      },
+      {
+        "category": "Dynamic load",
+        "detail": "3,000 kW dynamic resistor/heat-bank system absorbs excess renewable power and contributes to fast frequency/energy balancing.",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-hybrid-2018"]
+      },
+      {
+        "category": "Hybrid control system",
+        "manufacturer": "EDL / Hydro Tasmania",
+        "detail": "Advanced Hybrid Off-grid Control System coordinating wind, solar, BESS, DUPS, resistor, and diesel generation. EDL ultimately owned the overall detailed control architecture.",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-lessons-2023", "coober-arena-2017"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Development timeline",
+        "detail": "EDL began renewable-integration studies in 2013, signed the ARENA funding agreement in July 2014, began construction in September 2016, and reached commercial operation on 1 July 2017.",
+        "sourceIds": ["coober-arena-performance-2020", "coober-arena-project-current"]
+      },
+      {
+        "category": "Current performance",
+        "detail": "EDL reported in January 2025 that the station had exceeded 25,000 cumulative hours at 100% renewables, set a 116-hour continuous diesel-free record, averaged 74% renewable penetration, and reduced diesel use and associated generation emissions by 64%.",
+        "sourceIds": ["coober-edl-milestone-2025"]
+      },
+      {
+        "category": "Early performance",
+        "detail": "In the first half-year of operation the plant saved about one million liters of diesel and operated without diesel generation for more than 1,300 hours, providing a dated baseline for later lifetime results.",
+        "sourceIds": ["coober-arena-hybrid-2018"]
+      },
+      {
+        "category": "Control architecture lesson",
+        "detail": "The balance-of-plant contractor initially held overall controls responsibility, but EDL took it in-house because hybrid communication protocols, interface points, media, hardware, and physical layouts crossed multiple supplier packages. EDL says single-party visibility reduced schedule and integration risk.",
+        "sourceIds": ["coober-arena-lessons-2023"]
+      },
+      {
+        "category": "Delivery lesson",
+        "detail": "EDL used four major EPC packages and found that including subcontractors in design reviews was essential, particularly around BESS and PV-inverter interfaces. Roughly 17% of site labor hours were local after work packages were divided to match local capability.",
+        "sourceIds": ["coober-arena-lessons-2023"]
+      },
+      {
+        "category": "Network and customer context",
+        "detail": "The District Council distributes and retails electricity to nearly 1,250 customers over about 115 km of overhead and 13 km of underground lines. Smart meters replaced most customer meters in 2021; EDL owns the generation station, not the council distribution network.",
+        "sourceIds": ["coober-dccp-plan-2024"]
+      },
+      {
+        "category": "Regulatory status",
+        "detail": "A 2021-22 Technical Regulator audit found no evidence that EDL and the council generally failed to comply with their safety, reliability, maintenance, switching, and contractor-management processes, while still issuing improvement advice.",
+        "sourceIds": ["coober-sa-regulator-2022"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "coober-edl-current-2026",
+        "title": "Coober Pedy Hybrid Renewable Power Station",
+        "url": "https://edlenergy.com/project/coober-pedy/",
+        "publisher": "EDL",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-edl-milestone-2025",
+        "title": "EDL's Coober Pedy Hybrid Renewable Power Station Continues to Set New Industry Records",
+        "url": "https://edlenergy.com/news/sustainable-energy-milestone-passed-at-coober-pedy-hybrid-renewable-power-station/",
+        "publisher": "EDL",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-arena-project-current",
+        "title": "Coober Pedy Renewable Diesel Hybrid",
+        "url": "https://arena.gov.au/projects/coober-pedy-renewable-diesel-hybrid/",
+        "publisher": "Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-arena-performance-2020",
+        "title": "Coober Pedy Hybrid Renewable Project Second Year Performance Report",
+        "url": "https://arena.gov.au/assets/2017/02/coober-pedy-hybrid-renewable-project-second-year-performance-report.pdf",
+        "publisher": "EDL / Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-arena-lessons-2023",
+        "title": "Coober Pedy Renewable Hybrid Project Lessons Learnt Report",
+        "url": "https://arena.gov.au/assets/2024/08/EDL-%25E2%2580%2593-Coober-Pedy-Renewable-Hybrid-%25E2%2580%2593-Lessons-Learnt-Report-Jan23.pdf",
+        "publisher": "EDL / Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-arena-hybrid-2018",
+        "title": "Hybrid Power Generation for Australian Off-grid Mines",
+        "url": "https://arena.gov.au/assets/2018/06/hybrid-power-generation-australian-off-grid-mines.pdf",
+        "publisher": "Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-arena-2017",
+        "title": "Time to ditch the generator? The town where renewables took over",
+        "url": "https://arena.gov.au/blog/coober-pedy-solar-farm/",
+        "publisher": "Australian Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-sa-offgrid-current",
+        "title": "Off-grid projects: Coober Pedy",
+        "url": "https://energymining.sa.gov.au/industry/hydrogen-and-renewable-energy/off-grid-energy/off-grid-projects",
+        "publisher": "Government of South Australia Department for Energy and Mining",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-sa-regulator-2022",
+        "title": "Technical Regulator Annual Report 2021-22",
+        "url": "https://www.energymining.sa.gov.au/about/open-government/annual-reports/otr-annual-reports/technical-regulator-annual-report-2021-22",
+        "publisher": "Government of South Australia Office of the Technical Regulator",
+        "kind": "primary"
+      },
+      {
+        "id": "coober-dccp-plan-2024",
+        "title": "District Council of Coober Pedy Annual Business Plan 2024-25",
+        "url": "https://www.cooberpedy.sa.gov.au/__data/assets/pdf_file/0018/1640205/2024-25-Annual-Business-Plan-Adopted-20240705.pdf",
+        "publisher": "District Council of Coober Pedy",
+        "kind": "primary"
+      }
+    ]
+  }
+}
