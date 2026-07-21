@@ -1,3 +1,10 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "./data/seo";
 
-export default function robots(): MetadataRoute.Robots { return { rules: { userAgent: "*", allow: "/", disallow: ["/api/"] }, sitemap: "https://microgridprojects.com/sitemap.xml", host: "https://microgridprojects.com" }; }
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: { userAgent: "*", allow: "/", disallow: ["/api/"] },
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: new URL(SITE_URL).host,
+  };
+}

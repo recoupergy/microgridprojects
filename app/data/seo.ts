@@ -7,6 +7,7 @@ export const socialImage = {
   url: "/og-v2.jpg",
   width: 1734,
   height: 907,
+  type: "image/jpeg",
   alt: "Microgrid Projects global research directory",
 } as const;
 

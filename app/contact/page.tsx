@@ -35,7 +35,7 @@ export default function ContactPage() {
           <p className="breadcrumb"><Link href="/">Home</Link> / Contact</p>
           <p className="eyebrow"><span /> Get in touch</p>
           <h1>Contact the team</h1>
-          <p className="page-lede">Send a project, correct a record, discuss the research, or explore a partnership. Microgrid Projects is maintained by {siteContact.organization}.</p>
+          <p className="page-lede">Help us open more microgrid knowledge and data: send a project, correct a record, discuss the research, or explore a partnership. Microgrid Projects is maintained by {siteContact.organization}.</p>
         </div>
       </section>
       <section className="content-section">

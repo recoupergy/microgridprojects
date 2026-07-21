@@ -12,26 +12,46 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", disp
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: "Microgrid Projects | Global Project Directory", template: "%s | Microgrid Projects" },
-  description: "Explore 197 microgrid projects around the world. Compare locations, sectors, reported capacity, market drivers, and major microgrid types.",
+  description: "Open knowledge and data from 197 microgrid projects—helping people see what is possible, build better systems, and advance the energy transition.",
   applicationName: "Microgrid Projects",
+  category: "technology",
+  classification: "Global microgrid research directory",
+  referrer: "strict-origin-when-cross-origin",
+  manifest: "/manifest.webmanifest",
   keywords: ["microgrid projects", "microgrid map", "microgrid directory", "distributed energy", "energy resilience", "island microgrids", "community microgrids"],
   authors: [{ name: siteContact.organization, url: siteContact.website }],
   creator: siteContact.organization,
   publisher: siteContact.organization,
   formatDetection: { email: false, address: false, telephone: false },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Microgrid Projects",
+    statusBarStyle: "black-translucent",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
     siteName: "Microgrid Projects",
-    title: "The world’s microgrids, mapped.",
-    description: "A global research directory of 197 microgrid projects, market signals, and practical guides.",
+    title: "Open knowledge for better microgrids.",
+    description: "Explore open microgrid knowledge and data, see what is possible, and take the next step with MicrogridModeler.com.",
     images: [socialImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The world’s microgrids, mapped.",
-    description: "Explore a global research directory of microgrid projects and markets.",
+    title: "Open knowledge for better microgrids.",
+    description: "See what is possible, build better microgrids, and help lead the energy transition.",
     images: [socialImage.url],
   },
   alternates: { canonical: "/" },
@@ -71,7 +91,7 @@ function SiteFooter() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <Link className="brand brand-footer" href="/"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span><span>Microgrid<br /><b>Projects</b></span></Link>
-          <p>A global field guide to resilient, local energy systems.</p>
+          <p>Open knowledge and data for building better microgrids and leading the energy transition.</p>
         </div>
         <div><h2>Explore</h2><Link href="/projects">Project directory</Link><Link href="/markets">Market profiles</Link><Link href="/guides/types-of-microgrids">Types of microgrids</Link></div>
         <div><h2>Research</h2><Link href="/about">About the archive</Link><Link href="/about#methodology">Methodology</Link><Link href="/contact#submit">Submit or correct a record</Link></div>

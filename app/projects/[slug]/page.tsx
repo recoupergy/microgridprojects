@@ -107,7 +107,7 @@ export default async function ProjectPage({ params }: Props) {
           <p className="breadcrumb"><Link href="/">Home</Link> / <Link href="/projects">Directory</Link> / {project.name}</p>
           <p className="eyebrow"><span /> {project.region} / {project.sector}</p>
           <h1>{project.name}</h1>
-          <p className="page-lede">Organizations, planners, suppliers, equipment, controls, and reported system specifications—with source-level citations.</p>
+          <p className="page-lede">Current status, energy mix, organizations, suppliers, equipment, controls, reported specifications, and project updates—with source-level citations.</p>
         </div>
       </section>
 
@@ -117,7 +117,7 @@ export default async function ProjectPage({ params }: Props) {
           <div><span>Named organizations</span><b>{research.organizations.length}</b></div>
           <div><span>System facts</span><b>{research.specifications.length + research.equipment.length + research.technicalDetails.length}</b></div>
           <div><span>Sources reviewed</span><b>{research.sources.length}</b></div>
-          <div><span>Last researched</span><b>{research.researchedAt}</b></div>
+            <div><span>Evidence reviewed</span><b>{research.researchedAt}</b></div>
         </div>
       </section>
 
@@ -164,8 +164,8 @@ export default async function ProjectPage({ params }: Props) {
 
         <div className="container research-section" id="specifications">
           <div className="research-heading">
-            <div><p className="eyebrow eyebrow-dark"><span /> System evidence</p><h2>Reported capacity and specifications</h2></div>
-            <p>Values can describe different project phases or components. Source citations are attached to each figure so discrepancies remain visible.</p>
+            <div><p className="eyebrow eyebrow-dark"><span /> System evidence</p><h2>Energy mix, capacity, and specifications</h2></div>
+            <p>Values can describe different project phases, generation sources, storage systems, or other components. Source citations are attached to each figure so discrepancies remain visible.</p>
           </div>
           {research.specifications.length ? (
             <dl className="specification-grid">
@@ -205,8 +205,8 @@ export default async function ProjectPage({ params }: Props) {
         {research.technicalDetails.length ? (
           <div className="container research-section" id="technical-notes">
             <div className="research-heading">
-              <div><p className="eyebrow eyebrow-dark"><span /> Recovered detail</p><h2>Additional technical notes</h2></div>
-              <p>Concise system facts recovered from the historical project record. Treat these as historical unless a newer primary source confirms them.</p>
+              <div><p className="eyebrow eyebrow-dark"><span /> Technical record</p><h2>Architecture, performance, and project updates</h2></div>
+              <p>Concise technical facts, milestones, operating results, and later developments. Dated notes distinguish historical design claims from current evidence.</p>
             </div>
             <ul className="technical-note-list">
               {research.technicalDetails.map((item, index) => <li key={`${item.detail}-${index}`}><span className="mono">{item.category}</span><p>{item.detail} <Citations research={research} sourceIds={item.sourceIds} /></p></li>)}

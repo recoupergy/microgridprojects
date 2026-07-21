@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Microgrid Projects network mark">
+  <rect width="512" height="512" rx="112" fill="#071b1d"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="#8de6d7" stroke-opacity=".32" stroke-width="12"/>
+  <path d="M158 177 346 220 244 354 158 177Z" fill="none" stroke="#8de6d7" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m158 177 86 177" fill="none" stroke="#18d1bd" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="158" cy="177" r="34" fill="#18d1bd"/>
+  <circle cx="346" cy="220" r="38" fill="#ff7448"/>
+  <circle cx="244" cy="354" r="34" fill="#e8e649"/>
+  <circle cx="158" cy="177" r="12" fill="#f3f1e8"/>
+  <circle cx="346" cy="220" r="13" fill="#f3f1e8"/>
+  <circle cx="244" cy="354" r="12" fill="#071b1d"/>
+</svg>

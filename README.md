@@ -2,6 +2,8 @@
 
 The modern, static-first rebuild of [microgridprojects.com](https://microgridprojects.com): a searchable global directory of 197 historical microgrid project records, plus market and educational guides.
 
+Its goal is to open-source the available knowledge and data about microgrids so more people can see what is possible, build better systems, and lead the energy transition. It is the research and discovery companion to [MicrogridModeler.com](https://www.microgridmodeler.com), which helps turn that evidence into reproducible feasibility studies for new microgrids.
+
 ## Local development
 
 ```bash

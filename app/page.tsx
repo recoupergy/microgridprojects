@@ -27,7 +27,7 @@ const faq = [
   },
   {
     question: "What is included in this directory?",
-    answer: `The directory preserves ${projectCount} geocoded projects from the original Microgrid Projects research archive, with reported capacity where it was published. Records are historical and should be independently verified.`,
+    answer: `The directory preserves ${projectCount} geocoded projects from the original Microgrid Projects research archive, with reported capacity where it was published. It is part of our goal to open-source the available knowledge and data that can help people understand and build microgrids. Records are historical and should be independently verified.`,
   },
 ];
 
@@ -46,7 +46,7 @@ const structuredData = [
     "@id": "https://microgridprojects.com/#website",
     url: "https://microgridprojects.com/",
     name: "Microgrid Projects",
-    description: "A global research directory of microgrid projects and markets.",
+    description: "Open knowledge and data about microgrid projects, technologies, and markets—created to help people build better microgrids and advance the energy transition.",
     publisher: { "@id": "https://microgridprojects.com/#organization" },
     potentialAction: {
       "@type": "SearchAction",
@@ -95,24 +95,25 @@ export default function Home() {
         <section className="hero section-pad">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow"><span /> The global field guide to local power</p>
-              <h1>The world&rsquo;s microgrids, mapped.</h1>
+              <p className="eyebrow"><span /> Open knowledge for the energy transition</p>
+              <h1>Open knowledge for better microgrids.</h1>
               <p className="hero-lede">
-                Explore the projects, technologies, and markets reshaping how
-                communities make and manage energy.
+                Our goal is to open-source the available knowledge and data about
+                microgrids—so more people can see what&rsquo;s possible, build better
+                systems, and lead the energy transition.
               </p>
               <div className="button-row">
                 <Link className="button button-primary" href="/projects">
-                  Explore the directory <span aria-hidden="true">↗</span>
+                  Explore the open directory <span aria-hidden="true">↗</span>
                 </Link>
-                <Link className="button button-ghost" href="/guides/types-of-microgrids">
-                  Learn the fundamentals
-                </Link>
+                <a className="button button-ghost" href={siteContact.website}>
+                  Visit MicrogridModeler.com
+                </a>
               </div>
               <dl className="hero-stats" aria-label="Directory statistics">
                 <div><dt>{projectCount}</dt><dd>mapped projects</dd></div>
                 <div><dt>7</dt><dd>world regions</dd></div>
-                <div><dt>Open</dt><dd>research archive</dd></div>
+                <div><dt>Open</dt><dd>knowledge base</dd></div>
               </dl>
             </div>
 
@@ -182,8 +183,8 @@ export default function Home() {
         <section className="sister-project-section">
           <div className="container">
             <SisterProjectCta
-              title="Discover the precedent. Model the next project."
-              copy="Microgrid Projects documents what has been built. MicrogridModeler turns your own load, resource, reliability, and cost assumptions into a reproducible PV, battery, and diesel feasibility case."
+              title="See what’s possible. Model what comes next."
+              copy="Microgrid Projects opens the evidence: real systems, technologies, markets, and sources. MicrogridModeler.com turns that shared knowledge into action, helping you test your own load, resource, reliability, and cost assumptions."
               href={siteContact.modeler}
               linkLabel="Launch MicrogridModeler"
               secondaryHref={siteContact.methodology}
@@ -255,7 +256,7 @@ export default function Home() {
           <div className="container contribute-inner">
             <p className="eyebrow"><span /> Improve the record</p>
             <h2>Know a project we should track?</h2>
-            <p>Help keep this open directory useful for developers, researchers, communities, and decision-makers.</p>
+            <p>Help grow the open knowledge and data that developers, researchers, communities, and decision-makers can use to build better microgrids.</p>
             <Link className="button button-signal" href="/contact#submit">Submit a project <span aria-hidden="true">↗</span></Link>
           </div>
         </section>

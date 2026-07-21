@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "research:build": "node scripts/build-research-data.mjs",
+    "audit:research": "node scripts/audit-research.mjs",
     "audit:legacy": "node scripts/audit-legacy-routes.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
     "start": "next start",

@@ -94,10 +94,17 @@ try {
   if (sitemapResponse.status !== 200) throw new Error(`Sitemap returned ${sitemapResponse.status}`);
   const sitemap = await sitemapResponse.text();
   const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => decodeHtml(match[1]));
+  const sitemapDates = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
   const uniqueSitemapUrls = [...new Set(sitemapUrls)];
 
   if (uniqueSitemapUrls.length !== sitemapUrls.length) fail("/sitemap.xml", "contains duplicate URLs");
   if (uniqueSitemapUrls.length !== 203) fail("/sitemap.xml", `expected 203 canonical pages, found ${uniqueSitemapUrls.length}`);
+  if (sitemapDates.length !== sitemapUrls.length) fail("/sitemap.xml", `expected a lastmod for every URL, found ${sitemapDates.length}`);
+  for (const lastModified of sitemapDates) {
+    const timestamp = Date.parse(lastModified);
+    if (!Number.isFinite(timestamp)) fail("/sitemap.xml", `contains invalid lastmod ${lastModified}`);
+    if (timestamp > Date.now() + 86_400_000) fail("/sitemap.xml", `contains future lastmod ${lastModified}`);
+  }
 
   await mapLimit(uniqueSitemapUrls, 12, async (canonicalUrl) => {
     const canonical = new URL(canonicalUrl);
@@ -131,6 +138,18 @@ try {
     const h1Count = [...html.matchAll(/<h1\b/gi)].length;
     if (h1Count !== 1) fail(canonicalUrl, `expected one H1, found ${h1Count}`);
     if (/<meta\b[^>]*(?:name=["']robots["'][^>]*content=["'][^"']*noindex|content=["'][^"']*noindex[^>]*name=["']robots["'])/i.test(html)) fail(canonicalUrl, "is unexpectedly noindex");
+
+    const robots = metaContent(html, "name", "robots");
+    if (!robots.includes("index") || !robots.includes("follow")) fail(canonicalUrl, `robots directives are ${robots || "missing"}`);
+    const googleBot = metaContent(html, "name", "googlebot");
+    for (const directive of ["max-video-preview:-1", "max-image-preview:large", "max-snippet:-1"]) {
+      if (!googleBot.includes(directive)) fail(canonicalUrl, `googlebot is missing ${directive}`);
+    }
+
+    const manifestLink = tags(html, "link").find((tag) => attribute(tag, "rel") === "manifest");
+    if (!manifestLink || attribute(manifestLink, "href") !== "/manifest.webmanifest") fail(canonicalUrl, "is missing the web app manifest link");
+    const iconLinks = tags(html, "link").filter((tag) => ["icon", "shortcut icon", "apple-touch-icon"].includes(attribute(tag, "rel")));
+    if (!iconLinks.length) fail(canonicalUrl, "is missing favicon metadata");
 
     const ogUrl = metaContent(html, "property", "og:url");
     if (!ogUrl || comparableUrl(ogUrl) !== comparableUrl(canonicalUrl)) fail(canonicalUrl, `Open Graph URL is ${ogUrl || "missing"}`);
@@ -191,17 +210,36 @@ try {
     if (location && new URL(location, baseUrl).pathname !== path) fail(`${canonicalUrl}/`, `trailing-slash redirect points to ${location}`);
   });
 
-  for (const [path, expectedType] of [["/robots.txt", "text/plain"], ["/llms.txt", "text/plain"], ["/og-v2.jpg", "image/jpeg"]]) {
+  for (const [path, expectedType] of [
+    ["/robots.txt", "text/plain"],
+    ["/llms.txt", "text/plain"],
+    ["/manifest.webmanifest", "application/manifest+json"],
+    ["/favicon.ico", "image/x-icon"],
+    ["/icon.svg", "image/svg+xml"],
+    ["/apple-icon.png", "image/png"],
+    ["/icon-192.png", "image/png"],
+    ["/icon-512.png", "image/png"],
+    ["/og-v2.jpg", "image/jpeg"],
+  ]) {
     const response = await fetch(`${baseUrl}${path}`, { redirect: "manual" });
     if (response.status !== 200) fail(path, `returned ${response.status}`);
     if (!(response.headers.get("content-type") ?? "").includes(expectedType)) fail(path, `unexpected content type ${response.headers.get("content-type")}`);
   }
 
+  const robotsText = await (await fetch(`${baseUrl}/robots.txt`)).text();
+  if (!robotsText.includes(`Sitemap: ${CANONICAL_ORIGIN}/sitemap.xml`)) fail("/robots.txt", "does not advertise the canonical sitemap");
+  if (!robotsText.includes("Host: microgridprojects.com")) fail("/robots.txt", "does not declare the canonical host");
+
+  const webManifest = await (await fetch(`${baseUrl}/manifest.webmanifest`)).json();
+  const manifestSizes = new Set((webManifest.icons ?? []).map((icon) => icon.sizes));
+  if (!manifestSizes.has("192x192") || !manifestSizes.has("512x512")) fail("/manifest.webmanifest", "is missing installable 192px or 512px icons");
+  if (!(webManifest.icons ?? []).some((icon) => icon.purpose === "maskable")) fail("/manifest.webmanifest", "is missing a maskable icon");
+
   if (failures.length) {
     console.error(`SEO audit failed with ${failures.length} issue(s):\n${failures.join("\n")}`);
     process.exitCode = 1;
   } else {
-    console.log(`SEO audit passed: ${uniqueSitemapUrls.length} canonical pages, ${internalTargets.size} internal targets, no orphan pages, valid metadata and structured data, and normalized trailing slashes.`);
+    console.log(`SEO audit passed: ${uniqueSitemapUrls.length} canonical pages, ${internalTargets.size} internal targets, no orphan pages, valid metadata and structured data, complete icon and manifest coverage, and normalized trailing slashes.`);
   }
 } finally {
   if (server) {

@@ -8,7 +8,7 @@ import { siteContact } from "../data/site";
 
 export const metadata: Metadata = pageMetadata({
   title: "About the Directory",
-  description: "Learn how the Microgrid Projects archive was migrated, structured, and presented for transparent research use.",
+  description: "Our mission is to open-source microgrid knowledge and data so people can see what is possible, build better systems, and advance the energy transition.",
   path: "/about",
 });
 
@@ -38,13 +38,15 @@ export default function AboutPage() {
           <p className="breadcrumb"><Link href="/">Home</Link> / About</p>
           <p className="eyebrow"><span /> Open research infrastructure</p>
           <h1>About Microgrid Projects</h1>
-          <p className="page-lede">A rebuilt, independent field guide preserving one of the early global microgrid project directories.</p>
+          <p className="page-lede">Opening the world&rsquo;s available microgrid knowledge and data so more people can understand what&rsquo;s possible—and build what comes next.</p>
         </div>
       </section>
       <section className="content-section">
         <div className="container record-grid">
           <article className="prose">
-            <p className="answer-copy">Microgrid Projects helps people discover where local energy systems have been tested, built, and studied around the world.</p>
+            <p className="answer-copy">Microgrid Projects exists to open-source the available knowledge and data about microgrids, making it easier for people to see what&rsquo;s possible, build better systems, and lead the energy transition.</p>
+            <h2>One mission, two tools</h2>
+            <p>This open research directory is the evidence layer: real projects, technologies, organizations, markets, and sources. <a href={siteContact.website}>MicrogridModeler.com</a> is the modeling layer, where that shared knowledge can inform reproducible feasibility studies for new microgrids. Together, they shorten the path from learning what has worked to designing what should come next.</p>
             <h2>Current stewardship</h2>
             <p>Microgrid Projects is maintained by <a href={siteContact.website}>{siteContact.organization}</a>. It is no longer part of or affiliated with Microgrid Media.</p>
             <h2 id="methodology">Methodology</h2>
@@ -56,7 +58,7 @@ export default function AboutPage() {
             <h2>Data quality</h2>
             <p>The source archive primarily reflects research published between 2015 and 2017, while selected primary-source enrichments extend through 2026. Projects may have changed owners, technologies, capacity, scope, or operating status. Every record shows its research date, evidence depth, sources, and a correction path.</p>
             <h2 id="data-use">Data use</h2>
-            <p>You may link to and cite individual directory pages. Before republishing data at scale or using it for commercial decisions, contact the Microgrid Projects team and independently verify the relevant records.</p>
+            <p>You may link to and cite individual directory pages. Our goal is to make the available research increasingly open and reusable while respecting the rights attached to original sources. Before republishing data at scale or using it for commercial decisions, contact the Microgrid Projects team and independently verify the relevant records.</p>
             <h2>Who built the original directory?</h2>
             <p>The original project was created by Microgrid Media to track innovative microgrids, renewable integration, and emerging energy business models. That historical attribution does not indicate a current affiliation.</p>
             <p><Link className="button button-ink" href="/contact">Contact the research team</Link></p>
@@ -73,8 +75,8 @@ export default function AboutPage() {
         </div>
         <div className="container sister-project-block">
           <SisterProjectCta
-            title="Two sister projects, one clearer path from evidence to analysis."
-            copy="Microgrid Projects is the discovery and research layer. MicrogridModeler is the modeling layer for reproducible off-grid PV, battery, and diesel feasibility studies."
+            title="Open the evidence. Model the next microgrid."
+            copy="Microgrid Projects is the open discovery and research layer. MicrogridModeler.com is the modeling layer for turning what we know into reproducible off-grid PV, battery, and diesel feasibility studies."
             href={siteContact.website}
             linkLabel="Explore MicrogridModeler"
             secondaryHref={siteContact.methodology}

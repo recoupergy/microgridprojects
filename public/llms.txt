@@ -1,8 +1,8 @@
 # Microgrid Projects
 
-> A global research directory of 197 geocoded microgrid projects, with sourced organizations, reported system specifications, equipment, operating context, and citations.
+> Open knowledge and data from 197 geocoded microgrid projects, created to help people see what is possible, build better systems, and lead the energy transition.
 
-Microgrid Projects is maintained by MicrogridModeler, Inc. Historical records require independent verification. Project pages distinguish sourced claims from unknown or undisclosed details.
+Microgrid Projects aims to open-source the available knowledge and data about microgrids. It is the research and discovery layer alongside [MicrogridModeler.com](https://www.microgridmodeler.com), where people can turn evidence into reproducible feasibility studies for new systems. Both are maintained by MicrogridModeler, Inc. Historical records require independent verification. Project pages distinguish sourced claims from unknown or undisclosed details.
 
 ## Core resources
 

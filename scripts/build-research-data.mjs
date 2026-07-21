@@ -4,10 +4,38 @@ import path from "node:path";
 const root = path.resolve(import.meta.dirname, "..");
 const legacyPath = path.join(root, "research/legacy-recovered.json");
 const overridesPath = path.join(root, "research/overrides.json");
+const enrichmentPath = path.join(root, "research/enrichment");
 const outputPath = path.join(root, "app/data/research.json");
 
 const legacy = JSON.parse(await fs.readFile(legacyPath, "utf8"));
-const overrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
+const baseOverrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
+
+const additiveFields = ["organizations", "specifications", "equipment", "technicalDetails", "sources"];
+
+function mergeOverrideRecord(base = {}, addition = {}) {
+  const merged = { ...base, ...addition };
+  for (const field of additiveFields) {
+    merged[field] = [...(base[field] ?? []), ...(addition[field] ?? [])];
+  }
+  return merged;
+}
+
+const overrides = { ...baseOverrides };
+let enrichmentFiles = [];
+try {
+  enrichmentFiles = (await fs.readdir(enrichmentPath))
+    .filter((file) => file.endsWith(".json"))
+    .sort();
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+
+for (const file of enrichmentFiles) {
+  const fragment = JSON.parse(await fs.readFile(path.join(enrichmentPath, file), "utf8"));
+  for (const [slug, addition] of Object.entries(fragment)) {
+    overrides[slug] = mergeOverrideRecord(overrides[slug], addition);
+  }
+}
 
 const usefulKeywords = /\b(kW|MW|kWh|MWh|Ah|battery|storage|solar|PV|wind|diesel|generator|genset|turbine|fuel cell|inverter|converter|controller|SCADA|EMS|microgrid|PowerStore|flywheel|hydro|CHP|cogeneration|biogas|module|model)\b/i;
 const promotional = /\b(excellent example|crucial part|innovative microgrid|broad possibilities|environmentally friendly|ideal for|future applications)\b/i;
@@ -101,10 +129,27 @@ function mergeTechnicalDetails(base, additions) {
   });
 }
 
+function mergeEquipment(base, additions) {
+  const all = [...base, ...(additions ?? [])];
+  const seen = new Set();
+  return all.filter((item) => {
+    const key = `${item.category}:${item.manufacturer ?? ""}:${item.model ?? ""}:${item.detail}`.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function mergeSources(base, additions) {
+  const map = new Map(base.map((item) => [item.id, item]));
+  for (const item of additions ?? []) map.set(item.id, item);
+  return [...map.values()];
+}
+
 const records = {};
 for (const record of legacy.records) {
   const manual = overrides[record.slug] ?? {};
-  const sources = [...historicalSources(record), ...(manual.sources ?? [])];
+  const sources = mergeSources(historicalSources(record), manual.sources);
   const organizations = mergeByName(
     (record.organizations ?? []).map((name) => ({ name: cleanText(name), role: "Publicly named participant; role not specified in the recovered record", sourceIds: ["archive"] })),
     manual.organizations,
@@ -119,7 +164,7 @@ for (const record of legacy.records) {
   const classificationParts = cleanText(record.classification ?? "").split("·").map((item) => item.trim()).filter(Boolean);
 
   records[record.slug] = {
-    researchedAt: "2026-07-19",
+    researchedAt: manual.researchedAt ?? "2026-07-19",
     coverage,
     summary: manual.summary ?? null,
     status: manual.status ?? record.status ?? classificationParts[1] ?? null,
@@ -128,13 +173,13 @@ for (const record of legacy.records) {
     archiveCapturedAt: archiveDate(record.archivedAt),
     organizations,
     specifications,
-    equipment: manual.equipment ?? [],
+    equipment: mergeEquipment([], manual.equipment),
     technicalDetails,
     sources,
   };
 }
 
-await fs.writeFile(outputPath, `${JSON.stringify({ generatedAt: "2026-07-19", records }, null, 2)}\n`);
+await fs.writeFile(outputPath, `${JSON.stringify({ generatedAt: "2026-07-20", records }, null, 2)}\n`);
 
 const values = Object.values(records);
 console.log(JSON.stringify({
@@ -148,4 +193,5 @@ console.log(JSON.stringify({
   equipment: values.reduce((sum, record) => sum + record.equipment.length, 0),
   technicalDetails: values.reduce((sum, record) => sum + record.technicalDetails.length, 0),
   sources: values.reduce((sum, record) => sum + record.sources.length, 0),
+  enrichmentFiles: enrichmentFiles.length,
 }, null, 2));
