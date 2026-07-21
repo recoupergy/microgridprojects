@@ -1,0 +1,1344 @@
+{
+  "kirtland-afb": {
+    "researchedAt": "2026-07-20",
+    "summary": "Kirtland Air Force Base hosts a 250 kW, ten-node, bipolar-DC research microgrid that links six temporary-lodging duplexes, a community building, and Sandia National Laboratories test facilities. The first phase entered sustained autonomous operation in December 2019 and combines rooftop PV, distributed and central battery storage, natural-gas backup generation, electric-vehicle charging, bidirectional utility exchange, and hierarchical controls. A separate Air Force Research Laboratory contract modification announced in May 2025 is intended to add generation, storage, and multi-microgrid control for Civil Engineering facilities; public evidence does not establish that expansion as commissioned.",
+    "status": "The original Emera/BlockEnergy-Sandia pilot is operational: DOE reported autonomous operation from December 15, 2019, Sandia reported a second successful year in 2021, and a 2023 technical paper described the fielded system as operating since 2019. In May 2025, AFRL added $3.5 million to Concurrent Technologies Corporation's contract, bringing that separate expansion effort to $8.5 million. The announcement describes work to be performed, not a completed second phase. No public completion notice, 2024-2026 annual production, outage record, storage health, or realized cost savings was located.",
+    "organizations": [
+      {
+        "name": "Kirtland Air Force Base / 377th Air Base Wing",
+        "role": "Host installation and operator of the facilities served by the field demonstration.",
+        "sourceIds": ["b05a-kirt-kafb-2019", "b05a-kirt-doe-2020"]
+      },
+      {
+        "name": "Sandia National Laboratories",
+        "role": "Research, integration, test, and validation partner; connected its Distributed Energy Technologies Laboratory and Photovoltaic Systems Evaluation Laboratory to the field microgrid.",
+        "sourceIds": ["b05a-kirt-kafb-2019", "b05a-kirt-doe-2020", "b05a-kirt-cigre-2023"]
+      },
+      {
+        "name": "Emera Technologies / BlockEnergy",
+        "role": "Developer of the modular BlockBox/BlockCentral DC architecture, distributed controls, storage, and power electronics used in the original phase. Emera Technologies now markets the platform as BlockEnergy.",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-doe-2020"]
+      },
+      {
+        "name": "U.S. Department of Energy, Office of Electricity",
+        "role": "Federal research sponsor for the original DC-microgrid demonstration.",
+        "sourceIds": ["b05a-kirt-doe-2020"]
+      },
+      {
+        "name": "Bridgers & Paxton Consulting Engineers",
+        "role": "Mechanical, electrical, and plumbing engineer for the original resiliency project; its portfolio provides an as-designed storage rating that differs from BlockEnergy's published energy figure.",
+        "sourceIds": ["b05a-kirt-bpce"]
+      },
+      {
+        "name": "Air Force Research Laboratory and Concurrent Technologies Corporation",
+        "role": "AFRL is customer/sponsor and CTC is prime contractor for the later Civil Engineering facility expansion and multi-microgrid-control effort announced in 2025.",
+        "sourceIds": ["b05a-kirt-ctc-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Original microgrid rating and topology",
+        "value": "250 kW, ten nodes, on a single bipolar ±375 VDC common bus; the field network can be configured radially or as a loop and uses high-impedance grounding",
+        "sourceIds": ["b05a-kirt-doe-2020", "b05a-kirt-cigre-2023"]
+      },
+      {
+        "label": "Solar photovoltaic capacity",
+        "value": "100 kW of rooftop PV in the original project",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-bpce"]
+      },
+      {
+        "label": "Battery rating conflict",
+        "value": "BlockEnergy publishes 220 kWh, while the project's consulting engineer publishes 200 kW/200 kWh. The reviewed sources do not reconcile whether these are nominal versus usable ratings or design revisions.",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-bpce"]
+      },
+      {
+        "label": "Utility-interface capability",
+        "value": "Up to 100 kW bidirectional import/export at the central energy park in the research architecture",
+        "sourceIds": ["b05a-kirt-cigre-2023"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Distributed nanogrid modules",
+        "manufacturer": "Emera Technologies / BlockEnergy",
+        "model": "BlockBox",
+        "detail": "Each residential power block combines local battery storage, power conversion, grid-forming capability, controls, protection, and up to a 10 kW bidirectional DC/DC interface. Each node can island locally.",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-cigre-2023"]
+      },
+      {
+        "category": "Central energy park",
+        "manufacturer": "Emera Technologies / BlockEnergy",
+        "model": "BlockCentral",
+        "detail": "Central storage and generation establish the DC-bus voltage and coordinate power across the distributed nodes and utility connection.",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-cigre-2023"]
+      },
+      {
+        "category": "Generation and charging assets",
+        "detail": "The original system includes rooftop solar, batteries, natural-gas generation, and EV chargers. Public sources reviewed do not disclose the gas-generator manufacturer/model/rating, PV module/inverter models, charger ratings, or battery cell vendor/chemistry.",
+        "sourceIds": ["b05a-kirt-doe-2020", "b05a-kirt-bpce"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Demonstrated operating modes",
+        "detail": "DOE reported import and export to the bulk grid, black start, and long-duration self-sustained operation. During the first six months, the system exported excess renewable power rather than only serving an isolated test load.",
+        "sourceIds": ["b05a-kirt-doe-2020"]
+      },
+      {
+        "category": "Hierarchical controls",
+        "detail": "Distributed nanogrids can form their own local AC service while the central energy park sets and coordinates the shared DC bus. BlockEnergy describes real-time, data-driven control; public material does not identify a commercial controller model or publish the optimization code.",
+        "sourceIds": ["b05a-kirt-blockenergy", "b05a-kirt-cigre-2023"]
+      },
+      {
+        "category": "DC protection research",
+        "detail": "The custom protection system detects high current slew rate, isolates a fault, and discharges the affected bus. Sandia's field tests report one fault case clearing current in under 1 ms and describe a design target to detect and disable within 2 ms.",
+        "sourceIds": ["b05a-kirt-cigre-2023"]
+      },
+      {
+        "category": "2025 expansion boundary",
+        "detail": "CTC's later contract is described as building on the existing testbed to serve Civil Engineering facilities, add generation and storage, coordinate multiple DC microgrids, extend off-grid duration, and reduce utility purchases. No capacities, vendors, construction milestone, or commissioning date were published.",
+        "sourceIds": ["b05a-kirt-ctc-2025"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No independently audited annual energy mix, renewable output, fuel consumption, outage-support duration, battery degradation, availability, or realized savings through July 2026 was located. The 200 versus 220 kWh storage discrepancy also remains unresolved.",
+        "sourceIds": ["b05a-kirt-doe-2020", "b05a-kirt-ctc-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kirt-kafb-2019",
+        "title": "Advanced renewable energy microgrid project hosted at Kirtland",
+        "url": "https://www.kirtland.af.mil/News/Article-Display/Article/1957931/advanced-renewable-energy-microgrid-project-hosted-at-kirtland/",
+        "publisher": "Kirtland Air Force Base",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kirt-doe-2020",
+        "title": "Kirtland Air Force Base DC Microgrid Is Fully Operational",
+        "url": "https://www.energy.gov/oe/articles/kirtland-air-force-base-dc-microgrid-fully-operational",
+        "publisher": "U.S. Department of Energy, Office of Electricity",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kirt-blockenergy",
+        "title": "Kirtland Resiliency Project Unveiled: The Future of Utility Distributed Power",
+        "url": "https://blockenergy.com/kirtland-resiliency-project-unveiled-the-future-of-utility-distributed-power/",
+        "publisher": "BlockEnergy",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kirt-bpce",
+        "title": "Kirtland Air Force Base Microgrid Resiliency Project",
+        "url": "https://www.bpce.com/project/kirtland-air-force-base-microgrid-resiliency-project/",
+        "publisher": "Bridgers & Paxton Consulting Engineers",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kirt-cigre-2023",
+        "title": "Testing and Characterization of Fault Scenarios of a Hierarchical DC Microgrid for Residential Applications",
+        "url": "https://cigre-usnc.org/wp-content/uploads/2023/11/CIGRE-GOTF-Testing-and-Characterization-of-Fault-Scenarios-of-a-Hierarchical-DC-Microgrid-for-Residential-Applications.pdf",
+        "publisher": "Sandia National Laboratories / CIGRE US National Committee",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kirt-ctc-2025",
+        "title": "Concurrent Technologies Corporation Awarded $3.5 Million Contract Modification to Advance DC Microgrid Capabilities at Kirtland Air Force Base",
+        "url": "https://www.ctc.com/public/newsandmedia/releases.aspx?ID=1610",
+        "publisher": "Concurrent Technologies Corporation",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kissi-county-kenya-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "The database label misspells Kisii County as 'Kissi' and appears to compress Powerhive's multi-village western Kenya portfolio into one project. Powerhive's initial four-village pilot totaled 80 kW, while a later technical market study lists six named Kisii systems totaling 100.25 kW, including a 47.25 kW Barane site that likely explains—but does not conclusively prove—the legacy 47 kW figure. The company subsequently expanded across Kisii and neighboring Nyamira using solar PV, batteries, smart meters, cloud controls, and mobile-money prepayment.",
+    "status": "Portfolio with documented operating sites, but not one 47 kW plant. Powerhive operated a four-village pilot for more than two years before receiving a 25-year generation-and-distribution license in February 2015. A REPP case-study snapshot reports 24 operating mini-grids totaling 0.9 MW and serving 24,806 people, and 2023 field reporting described 23 stations serving roughly 7,000 homesteads in Kisii and Nyamira. Powerhive's current corporate site says it has deployed more than 30 off-grid sites since 2013, but does not provide a site-by-site 2026 availability list. The exact present status of each original village system is therefore not independently verified.",
+    "organizations": [
+      {
+        "name": "Powerhive / Powerhive East Africa / Cloverfield Energy Services Ltd",
+        "role": "Developer, licensed generator/distributor, technology supplier, and portfolio operator; the related legal names appear in licensing and financing sources.",
+        "sourceIds": ["b05a-kisii-powerhive-2015", "b05a-kisii-license-2015", "b05a-kisii-epra-2021", "b05a-kisii-repp"]
+      },
+      {
+        "name": "First Solar",
+        "role": "Provided financial and technical backing and advanced thin-film PV modules for the initial pilot program.",
+        "sourceIds": ["b05a-kisii-powerhive-2015"]
+      },
+      {
+        "name": "Energy Regulatory Commission / Energy and Petroleum Regulatory Authority",
+        "role": "Kenyan regulator that granted and now records Powerhive's generation-and-distribution license for Kisii and Nyamira.",
+        "sourceIds": ["b05a-kisii-license-2015", "b05a-kisii-epra-2021"]
+      },
+      {
+        "name": "Enel Green Power",
+        "role": "Lead investor in the announced 2015 scale-up vehicle, with Powerhive as the minority partner; the 100-village target was a plan rather than a completed-asset count.",
+        "sourceIds": ["b05a-kisii-enel-2015"]
+      },
+      {
+        "name": "Renewable Energy Performance Platform",
+        "role": "Approved a $3 million results-based financing facility in May 2018 for the broader Powerhive portfolio.",
+        "sourceIds": ["b05a-kisii-repp"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Initial pilot portfolio",
+        "value": "Four villages, 80 kW total, serving more than 1,500 people after more than two years of pilot operation as of April 2015",
+        "sourceIds": ["b05a-kisii-powerhive-2015"]
+      },
+      {
+        "label": "Named Kisii systems in technical market study",
+        "value": "Kirwa C 10 kW, Mtangamano 21 kW, Bogeka 10 kW, Mokomoni 1.5 kW, Nyamondo 10.5 kW, and Barane 47.25 kW; 100.25 kW combined in the study's table. This later six-site boundary should not be substituted for the earlier four-site 80 kW pilot.",
+        "sourceIds": ["b05a-kisii-dtu"]
+      },
+      {
+        "label": "Licensed ceiling and geography",
+        "value": "3 MW authorized solar-PV generation/distribution capacity across Kisii and Nyamira under license GD.01.15, granted February 16, 2015 for 25 years. This is a regulatory authorization, not evidence that 3 MW was installed.",
+        "sourceIds": ["b05a-kisii-epra-2021"]
+      },
+      {
+        "label": "Expansion target versus reported achievement",
+        "value": "The 2015 investment plan targeted 100 villages, 1 MW, roughly 20,000 households, and 90,000 people. REPP later reported 24 operating grids totaling 0.9 MW and 24,806 people gaining first access at its reporting snapshot.",
+        "sourceIds": ["b05a-kisii-enel-2015", "b05a-kisii-repp"]
+      },
+      {
+        "label": "Pilot energy mix",
+        "value": "Powerhive described the initial systems as 100% renewable; later portfolio descriptions identify solar PV with distributed battery storage but do not publish a measured annual renewable fraction for every site.",
+        "sourceIds": ["b05a-kisii-powerhive-2015", "b05a-kisii-current"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Solar modules",
+        "manufacturer": "First Solar",
+        "detail": "First Solar supplied advanced PV modules to the pilot. The reviewed sources do not disclose module series, site-by-site module counts, inverter vendors, or final array sizes beyond the listed site capacities.",
+        "sourceIds": ["b05a-kisii-powerhive-2015"]
+      },
+      {
+        "category": "Smart metering",
+        "manufacturer": "Powerhive",
+        "model": "Asali",
+        "detail": "Customer meters support remote monitoring and prepaid electricity purchases, including mobile-money payment.",
+        "sourceIds": ["b05a-kisii-powerhive-2015", "b05a-kisii-rongo-2023"]
+      },
+      {
+        "category": "Control and operations software",
+        "manufacturer": "Powerhive",
+        "model": "Honeycomb and SWARM",
+        "detail": "Honeycomb provides cloud-based monitoring and control; SWARM supports site assessment and deployment. Public sources do not publish controller hardware, communications redundancy, dispatch logic, or cybersecurity architecture.",
+        "sourceIds": ["b05a-kisii-powerhive-2015"]
+      },
+      {
+        "category": "Battery storage",
+        "detail": "Powerhive and REPP describe distributed batteries as part of the mini-grid design. Chemistry, manufacturer, power, energy, usable depth of discharge, and replacement history are not disclosed for the named Kisii sites.",
+        "sourceIds": ["b05a-kisii-repp", "b05a-kisii-current"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Portfolio-boundary correction",
+        "detail": "The legacy 47 kW value aligns closely with Barane's 47.25 kW listing, but the record name refers to a county-wide portfolio. Because no source explicitly equates the database record with Barane, that correspondence remains a likely explanation rather than a confirmed alias.",
+        "sourceIds": ["b05a-kisii-dtu"]
+      },
+      {
+        "category": "Commercial model",
+        "detail": "The systems use smart meters, cloud supervision, and prepaid mobile payments so customers can buy small increments of electricity and the operator can monitor village assets remotely.",
+        "sourceIds": ["b05a-kisii-powerhive-2015", "b05a-kisii-rongo-2023"]
+      },
+      {
+        "category": "Reported development impact",
+        "detail": "REPP reports 24,806 people receiving first access and 875 cumulative tonnes of CO2-equivalent avoided at its snapshot. The latter should not be read as a current annual savings value or independently audited performance for Kisii County alone.",
+        "sourceIds": ["b05a-kisii-repp"]
+      },
+      {
+        "category": "Latest located field evidence",
+        "detail": "A May 2023 Kenyan report described 23 Powerhive stations across Kisii and Nyamira serving about 7,000 homesteads, while a 2023 university field account described continued smart-metered service and customer experience at Miwani. Neither source provides a 2026 site-level availability table.",
+        "sourceIds": ["b05a-kisii-standard-2023", "b05a-kisii-rongo-2023"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No reconciled commissioning list, present battery inventory, site-level annual generation, outage duration, losses, tariffs, collected revenue, or measured fuel displacement through July 2026 was located. The public record also does not reconcile the original four pilot villages, the six-site technical table, and the later 23/24-grid portfolio snapshots.",
+        "sourceIds": ["b05a-kisii-dtu", "b05a-kisii-repp", "b05a-kisii-standard-2023"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kisii-powerhive-2015",
+        "title": "Powerhive Inc., First Solar-Backed Off-Grid Innovator, to Capitalize on Kenya Experience",
+        "url": "https://www.globenewswire.com/news-release/2015/04/28/729555/35819/en/Powerhive-Inc-First-Solar-Backed-Off-Grid-Innovator-to-Capitalize-on-Kenya-Experience.html",
+        "publisher": "Powerhive / GlobeNewswire",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-license-2015",
+        "title": "Powerhive subsidiary becomes first private utility in Kenya's history to be licensed to sell electricity to the public",
+        "url": "https://www.prweb.com/releases/powerhive_subsidiary_becomes_first_private_utility_in_kenya_s_history_to_be_licensed_to_sell_electricity_to_the_public/prweb12707064.htm",
+        "publisher": "Powerhive / PRWeb",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-epra-2021",
+        "title": "Energy and Petroleum Statistics Report 2021",
+        "url": "https://www.epra.go.ke/sites/default/files/2025-02/Energy%20%20Petroleum%20Statistics%20Report-2021.pdf",
+        "publisher": "Energy and Petroleum Regulatory Authority of Kenya",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-enel-2015",
+        "title": "Enel Green Power boosts rural electrification in Kenya",
+        "url": "https://www.enel.com/media/explore/search-press-releases/press/2015/12/enel-green-power-boosts-rural-electrification-in-kenya",
+        "publisher": "Enel Green Power",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-repp",
+        "title": "Case study: Powerhive",
+        "url": "https://repp.energy/resource-center/publications/case-study-powerhive/",
+        "publisher": "Renewable Energy Performance Platform",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-dtu",
+        "title": "Kenya Mini-Grid Market Study",
+        "url": "https://backend.orbit.dtu.dk/ws/files/158704528/Kenya_mini_grid_market_study_FINAL.pdf",
+        "publisher": "Technical University of Denmark",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-standard-2023",
+        "title": "Solar energy lights up Nyamira's dark village",
+        "url": "https://www.standardmedia.co.ke/farmkenya/article/2001473316/solar-energy-lights-up-nyamira-s-dark-village",
+        "publisher": "The Standard",
+        "kind": "secondary"
+      },
+      {
+        "id": "b05a-kisii-rongo-2023",
+        "title": "Solar Microgrids: Providing Energy to Disadvantaged Rural Communities in Kisii County",
+        "url": "https://soi.rongovarsity.ac.ke/solar-microgrids-providing-energy-to-disadvantaged-rural-communities-in-kisii-county/",
+        "publisher": "Rongo University",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kisii-current",
+        "title": "Powerhive",
+        "url": "https://powerhive.com/",
+        "publisher": "Powerhive",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kodiak-alaska-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Kodiak's 'microgrid' is the islanded Kodiak Electric Association utility grid, not a single 75 MW facility. Its core resources are the approximately 34 MW Terror Lake hydro plant, six 1.5 MW GE wind turbines, a 3 MW lithium-ion battery system upgraded in 2017, two 1 MW ABB flywheels, and multiple diesel plants retained for backup. KEA generated more than 99% renewable electricity in 2023; a regional current profile gives 99.8%, while KEA's member handbook describes the typical mix as approximately 81% hydro, 18% wind, and 1% diesel.",
+    "status": "Operational. KEA's 2023 annual report says the cooperative generated more than 99% of its power from renewables and delivered another safe, reliable year. The cooperative raised rates 12.5% on April 1, 2024 after roughly 30 years without an increase, citing inflation, sharply higher equipment costs, lower fish-processing sales, and debt—not technical failure of the hybrid grid. Public sources reviewed do not provide a newer full-year generation mix, storage state of health, or unit-by-unit availability through July 2026.",
+    "organizations": [
+      {
+        "name": "Kodiak Electric Association",
+        "role": "Member-owned utility, system owner/operator, and developer of the hydro-wind-storage-diesel resource portfolio.",
+        "sourceIds": ["b05a-kodiak-kea-handbook-2024", "b05a-kodiak-kea-report-2024", "b05a-kodiak-kea-job-2022"]
+      },
+      {
+        "name": "ABB",
+        "role": "Supplier of two 1 MW PowerStore flywheels and the networked MGC600 decentralized microgrid-control platform.",
+        "sourceIds": ["b05a-kodiak-apec-2023", "b05a-kodiak-abb-2014"]
+      },
+      {
+        "name": "General Electric",
+        "role": "Manufacturer of the six 1.5 MW Pillar Mountain wind turbines.",
+        "sourceIds": ["b05a-kodiak-kea-wind-2012", "b05a-kodiak-kea-job-2022"]
+      },
+      {
+        "name": "Xtreme Power / Younicos",
+        "role": "Xtreme Power supplied the original advanced lead-acid BESS; Younicos, which acquired the technology, replaced the battery racks with lithium-ion batteries and commissioned the 3 MW upgrade in 2017.",
+        "sourceIds": ["b05a-kodiak-irena-2015", "b05a-kodiak-younicos-2017"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "2023 renewable performance",
+        "value": "More than 99% renewable generation in KEA's annual report; a current Kodiak Area Native Association profile reports 99.8% for 2023",
+        "sourceIds": ["b05a-kodiak-kea-report-2024", "b05a-kodiak-kana"]
+      },
+      {
+        "label": "Approximate resource mix",
+        "value": "About 81% hydroelectric, 18% wind, and 1% diesel in KEA's April 2024 member handbook. This is an approximate member-information mix, not a replacement for the separately reported 2023 99.8% result.",
+        "sourceIds": ["b05a-kodiak-kea-handbook-2024"]
+      },
+      {
+        "label": "Terror Lake hydroelectric capacity",
+        "value": "33.6 MW in Alaska's 2021 grid inventory and 34 MW nameplate in NOAA's October 2024 project profile; three approximately 11.25 MW units. Older 28 MW descriptions reflect a different historical/available-capacity boundary, not the current nameplate.",
+        "sourceIds": ["b05a-kodiak-aeg", "b05a-kodiak-noaa-2024", "b05a-kodiak-apec-2023"]
+      },
+      {
+        "label": "Wind capacity",
+        "value": "9 MW total from six GE 1.5 MW turbines on Pillar Mountain",
+        "sourceIds": ["b05a-kodiak-kea-wind-2012", "b05a-kodiak-apec-2023"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "3 MW. The original 2012 advanced lead-acid system was 750 kWh according to IRENA, not the 2 MWh repeated in some secondary accounts. Younicos replaced the lead-acid racks with lithium-ion batteries in 2017 but did not disclose the upgraded energy capacity in its commissioning release.",
+        "sourceIds": ["b05a-kodiak-irena-2015", "b05a-kodiak-younicos-2017", "b05a-kodiak-aeg"]
+      },
+      {
+        "label": "Flywheel storage",
+        "value": "2 MW total from two 1 MW ABB PowerStore units",
+        "sourceIds": ["b05a-kodiak-apec-2023", "b05a-kodiak-abb-2014"]
+      },
+      {
+        "label": "Diesel backup inventory",
+        "value": "37.2 MW in Alaska Energy Data Gateway's 2021 inventory: Kodiak 18.3 MW, Nyman's 10 MW, Swampy Acres 8.4 MW, and Port Lions 0.5 MW. This dated inventory is more specific than the legacy 33 MW aggregate.",
+        "sourceIds": ["b05a-kodiak-aeg"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Hydroelectric generation",
+        "detail": "Terror Lake has three approximately 11.25 MW turbine-generators and reservoir storage that can absorb excess wind by reducing hydro output. NOAA estimates about 135 GWh annual generation and says the project supplies roughly 80-85% of Kodiak's electricity.",
+        "sourceIds": ["b05a-kodiak-noaa-2024", "b05a-kodiak-apec-2023"]
+      },
+      {
+        "category": "Wind turbines",
+        "manufacturer": "General Electric",
+        "detail": "Six 1.5 MW units, 9 MW total. Three were added in 2012 to the original three-turbine installation.",
+        "sourceIds": ["b05a-kodiak-kea-wind-2012", "b05a-kodiak-kea-job-2022"]
+      },
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Younicos",
+        "detail": "The current 3 MW system uses lithium-ion batteries installed in 2017 as a replacement for Xtreme Power's original advanced lead-acid racks. Public commissioning material does not publish current MWh, cell supplier, rack model, or current degradation.",
+        "sourceIds": ["b05a-kodiak-younicos-2017"]
+      },
+      {
+        "category": "Flywheel energy storage",
+        "manufacturer": "ABB",
+        "model": "PowerStore",
+        "detail": "Two 1 MW flywheels respond to rapid frequency and voltage excursions, integrate the port's large electric crane, and reduce high-frequency cycling stress on the battery system.",
+        "sourceIds": ["b05a-kodiak-apec-2023", "b05a-kodiak-abb-2014"]
+      },
+      {
+        "category": "Microgrid controls",
+        "manufacturer": "ABB",
+        "model": "MGC600",
+        "detail": "Networked distributed controllers coordinate resources peer-to-peer rather than through one single controller.",
+        "sourceIds": ["b05a-kodiak-apec-2023"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Storage division of labor",
+        "detail": "The flywheels handle microsecond-scale changes and the crane's sharp load swings, allowing the battery to respond over longer seconds-to-minutes intervals; hydro governors and reservoir storage provide slower balancing and bulk renewable energy.",
+        "sourceIds": ["b05a-kodiak-apec-2023"]
+      },
+      {
+        "category": "Battery phase correction",
+        "detail": "The often-cited 3 MW/2 MWh advanced lead-acid description is not supported by IRENA's detailed case study, which gives 3 MW/750 kWh. More importantly, that chemistry was retired: Younicos commissioned a 3 MW lithium-ion replacement in November 2017 without publishing its MWh rating.",
+        "sourceIds": ["b05a-kodiak-irena-2015", "b05a-kodiak-younicos-2017"]
+      },
+      {
+        "category": "Reliability",
+        "detail": "APEC's 2023 review reports no major reliability events caused by high renewable penetration, and KEA's 2023 annual report describes continued safe and reliable operation. Neither provides standardized outage indices or unit-availability data.",
+        "sourceIds": ["b05a-kodiak-apec-2023", "b05a-kodiak-kea-report-2024"]
+      },
+      {
+        "category": "Economics update",
+        "detail": "KEA paid down more than $8 million of debt in 2023 but implemented a 12.5% rate increase in April 2024 after roughly three decades without an increase. The utility attributed the change to inflation, equipment costs, debt service, and reduced fish-processing demand, not to diesel-price exposure returning as the dominant cost.",
+        "sourceIds": ["b05a-kodiak-kea-report-2024", "b05a-kodiak-kana"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No public post-2023 full-year mix, diesel gallons, curtailment, BESS state of health, round-trip efficiency, flywheel availability, outage indices, or realized annual storage savings through July 2026 was located.",
+        "sourceIds": ["b05a-kodiak-kea-report-2024", "b05a-kodiak-aeg"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kodiak-kea-handbook-2024",
+        "title": "Kodiak Electric Association Member Handbook",
+        "url": "https://kodiakelectric.com/wp-content/uploads/2024/04/Member-Handbook-April-2024.pdf",
+        "publisher": "Kodiak Electric Association",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-kea-report-2024",
+        "title": "2024 Annual Membership Meeting Documents (including 2023 Annual Report)",
+        "url": "https://kodiakelectric.com/wp-content/uploads/2024/04/2024-Annual-Membership-Meeting-Documents.pdf",
+        "publisher": "Kodiak Electric Association",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-kana",
+        "title": "Energy Infrastructure on the Kodiak Road System",
+        "url": "https://kodiakhealthcare.org/ceds/energy-infrastructure-on-the-kodiak-road-system/",
+        "publisher": "Kodiak Area Native Association",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-noaa-2024",
+        "title": "Terror Lake",
+        "url": "https://www.fisheries.noaa.gov/alaska/habitat-conservation/terror-lake",
+        "publisher": "National Oceanic and Atmospheric Administration",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-aeg",
+        "title": "Kodiak Grid Power Generation",
+        "url": "https://akenergygateway.alaska.edu/explore/grids/kodiak-grid/power-generation",
+        "publisher": "Alaska Energy Data Gateway, University of Alaska Fairbanks",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-apec-2023",
+        "title": "Lessons Learned on Resiliency and Uptake of Variable Energy Resources from Islanded Grids",
+        "url": "https://www.apec.org/docs/default-source/publications/2023/5/lessons-learned-on-resiliency-and-uptake-of-variable-energy-resources-from-islanded-grids-that-support-apec-clean-energy-goals/223_ewg_lessons-learned-on-resiliency-and-uptake-of-variable-energy-resources-from-islanded-grids-that-support-apec-clean-energy-goals.pdf?sfvrsn=9509c4f0_2",
+        "publisher": "Asia-Pacific Economic Cooperation",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-abb-2014",
+        "title": "ABB enables renewable power integration in island microgrid",
+        "url": "https://news.cision.com/se/abb/r/abb-mojliggor-anslutning-av-fornybar-el-till-mikronat-pa-o-i-alaska%2Cc9643572",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-kea-job-2022",
+        "title": "Power Generation Technician Position Description",
+        "url": "https://kodiakelectric.com/wp-content/uploads/2022/04/2022-Power-Generation-Technician-Position-Description.pdf",
+        "publisher": "Kodiak Electric Association",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-kea-wind-2012",
+        "title": "Winds of Change: Report by KEA President/CEO Darron Scott",
+        "url": "https://kodiakelectric.wordpress.com/2012/09/13/winds-of-change-report-by-kea-presidentceo-darron-scott/",
+        "publisher": "Kodiak Electric Association",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-irena-2015",
+        "title": "Battery Storage for Renewables: Market Status and Technology Outlook — Case Studies",
+        "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2015/IRENA_Battery_Storage_case_studies_2015.pdf",
+        "publisher": "International Renewable Energy Agency",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kodiak-younicos-2017",
+        "title": "Younicos commissions upgraded 3 MW energy storage system on Kodiak Island, Alaska",
+        "url": "https://www.globenewswire.com/news-release/2017/11/16/1254328/0/en/younicos-commissions-upgraded-3-mw-energy-storage-system-on-kodiak-island-alaska.html",
+        "publisher": "Younicos / GlobeNewswire",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kotzebue": {
+    "researchedAt": "2026-07-20",
+    "summary": "Kotzebue Electric Association operates a diesel-wind-solar-battery district-energy system in Qikiktagruq (Kotzebue), Alaska. A federal FY2026 strategic plan provides an unusually complete as-operated inventory: 12.111 MW of diesel engines, 1.096 MW of solar PV, only 1.8 MW of presently functional wind capacity out of a larger aging fleet, and a 1.225 MW/950 kWh Saft lithium-ion battery, plus recovered heat, electric boilers, and residential thermal storage. In 2024 the system delivered 21.66 GWh, with 20% from non-diesel resources and 1.219 million gallons of diesel consumed.",
+    "status": "Operational but still approximately 80% diesel by annual electricity in 2024. Two 900 kW EWT turbines were functional in the FY2026 inventory; the older Vestas, Northwind, and fifteen AOC turbines were listed as needing repair. The 2015 battery remains in service but was described to Alaska legislators in April 2025 as nearing end of life. Proposed additions—two 1 MW turbines, 700 kW solar, and a 4 MW/8-12 MWh grid-forming battery—were not yet built in the strategic plan, and a $20 million EPA grant for the Native Village's wind project was terminated in May 2025. Funding and final scope therefore remain uncertain.",
+    "organizations": [
+      {
+        "name": "Kotzebue Electric Association",
+        "role": "Community utility and owner/operator of the diesel, wind, solar, battery, electric-boiler, and heat-recovery assets.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-saft"]
+      },
+      {
+        "name": "Saft",
+        "role": "Supplier of the containerized lithium-ion BESS and its Arctic thermal package.",
+        "sourceIds": ["b05a-kotz-saft"]
+      },
+      {
+        "name": "Native Village of Kotzebue",
+        "role": "Partner and project sponsor for proposed new renewable assets; its planned two-turbine project lost a $20 million EPA grant in May 2025.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-radio-2025"]
+      },
+      {
+        "name": "National Laboratory of the Rockies / U.S. Department of Energy",
+        "role": "Technical-assistance team and author/sponsor of the FY2026 strategic energy plan that consolidates current equipment and performance data.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "name": "Alaska Center for Energy and Power",
+        "role": "Research partner evaluating wind-to-heat and broader renewable expansion options.",
+        "sourceIds": ["b05a-kotz-acep-2024", "b05a-kotz-acep-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "2024 annual electricity and fuel",
+        "value": "21,659,492 kWh sold/generated in the plan's system table; 20% non-diesel, 1,219,298 gallons of diesel, 14.26 kWh per gallon, and 8.1% line losses",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "label": "Diesel generation capacity",
+        "value": "12.111 MW across six units: Caterpillar 1,135 kW and 725 kW; EMD 1,441 kW, two 2,865 kW units, and one 3,080 kW unit",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "label": "Functional wind capacity in FY2026 inventory",
+        "value": "1.8 MW from two 900 kW EWT DW54 turbines installed in 2012",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "label": "Aging wind fleet requiring repair",
+        "value": "One 65 kW Vestas V15, one 100 kW Northwind 100, and fifteen AOC 15/50 turbines listed at 66 kW each. Their nameplate should not be counted as currently functional output.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "label": "Solar capacity",
+        "value": "1,076 kW of bifacial utility PV installed in 2020 and 2023, plus 20 kW behind the water plant installed in 2015; 1.096 MW total listed solar capacity",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "label": "Battery storage",
+        "value": "1,225 kW / 950 kWh lithium-ion system installed in 2015 for spinning reserve and frequency support",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-saft"]
+      },
+      {
+        "label": "Electric heat assets",
+        "value": "450 kW electric boiler at Maniilaq installed in 2014 and 108 kW electric boiler at the National Park Service installed in 2022, plus residential electric thermal-storage heaters",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-acep-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "EWT",
+        "model": "DW54-900",
+        "detail": "Two functional 900 kW turbines, installed in 2012. The separate older Vestas, Northwind, and AOC fleet is listed as needing repair.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "category": "Battery energy storage",
+        "manufacturer": "Saft",
+        "model": "Intensium Max+ 20M",
+        "detail": "A 950 kWh lithium-ion container with a cold-climate package including insulation and hydronic heating; the FY2026 plan rates the grid interface at 1.225 MW.",
+        "sourceIds": ["b05a-kotz-saft", "b05a-kotz-nlr-2026"]
+      },
+      {
+        "category": "Solar PV",
+        "detail": "The 1.076 MW utility portfolio uses bifacial modules. Public sources reviewed do not identify module, inverter, racking, or tracker manufacturers and models.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "category": "Diesel generation and heat recovery",
+        "manufacturer": "Caterpillar and EMD",
+        "detail": "Six diesel units supply firm capacity; recovered engine heat is circulated for useful thermal loads. Individual engine models and current hours/availability were not published in the strategic plan.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Measured diesel dependence",
+        "detail": "Despite decades of renewable integration, 80% of 2024 electricity remained diesel-supplied. The plan reports that annual diesel electricity has fallen about 20% since 1995, which is a long-term system trend rather than a storage-only savings claim.",
+        "sourceIds": ["b05a-kotz-nlr-2026"]
+      },
+      {
+        "category": "Grid services",
+        "detail": "The BESS provides spinning reserve and frequency support so wind can displace diesel without keeping as much engine reserve online. Saft attributes broader fuel and cost savings to the integrated wind-storage system, but its case study does not isolate battery-only causality.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-saft"]
+      },
+      {
+        "category": "Wind-to-heat",
+        "detail": "Electric boilers and residential thermal-storage heaters absorb otherwise excess wind energy. ACEP's 2024 work evaluated household heaters that charge when excess wind is available, coupling electric and thermal dispatch.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-acep-2024"]
+      },
+      {
+        "category": "Proposed grid-forming expansion",
+        "detail": "The strategic plan evaluates two new 1 MW wind turbines, 700 kW of solar, and a 4 MW/8-12 MWh lithium-ion battery capable of roughly two hours of community supply and diesel-off operation. These are planning values, not installed capacity.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-legislature-2025"]
+      },
+      {
+        "category": "Funding risk",
+        "detail": "The FY2026 plan flags uncertain funding, and public-radio reporting says EPA terminated a $20 million grant for the Native Village of Kotzebue's two-turbine wind project in May 2025. Other storage/solar funding streams should not be assumed canceled without separate evidence.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-radio-2025"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No 2025 full-year energy mix, turbine-by-turbine availability, BESS state of health, current usable energy, renewable curtailment, outage indices, or final financing/commissioning schedule for the expansion was located.",
+        "sourceIds": ["b05a-kotz-nlr-2026", "b05a-kotz-legislature-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kotz-nlr-2026",
+        "title": "Qikiktagruq Energy Strategic Plan",
+        "url": "https://www.nlr.gov/docs/fy26osti/97123.pdf",
+        "publisher": "National Laboratory of the Rockies / U.S. Department of Energy",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kotz-saft",
+        "title": "Saft Li-ion energy storage plays a key role in KEA's Alaskan microgrid",
+        "url": "https://saft.com/en/case-studies/saft-li-ion-energy-storage-plays-key-role-kea%E2%80%99s-alaskan-microgrid",
+        "publisher": "Saft",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kotz-legislature-2025",
+        "title": "House Special Committee on Energy meeting, April 1, 2025",
+        "url": "https://www.akleg.gov/basis/Meeting/Detail?Meeting=HENE+2025-04-01+13%3A00%3A00",
+        "publisher": "Alaska State Legislature",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kotz-radio-2025",
+        "title": "EPA terminates $20M grant for the Native Village of Kotzebue's wind project",
+        "url": "https://www.kotz.org/kotz-local-news/2025-05-28/epa-terminates-20m-grant-for-the-native-village-of-kotzebues-wind-project",
+        "publisher": "KOTZ Public Radio",
+        "kind": "secondary"
+      },
+      {
+        "id": "b05a-kotz-acep-2024",
+        "title": "Excess wind energy helps heat Kotzebue homes",
+        "url": "https://www.uaf.edu/acep/news/2024/excess-wind-energy-helps-heat-kotzebue-homes.php",
+        "publisher": "Alaska Center for Energy and Power",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kotz-acep-2025",
+        "title": "Investigating viable expansions of renewable energy in Kotzebue",
+        "url": "https://www.uaf.edu/acep/news/2025/investigating-viable-expansions-of-renewable-exnergy-in-kotzebue.php",
+        "publisher": "Alaska Center for Energy and Power",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kpcl-mandya": {
+    "researchedAt": "2026-07-20",
+    "summary": "No authoritative evidence was found for the legacy description of a 100 kW KPCL microgrid in Mandya, Karnataka. The verifiable KPCL assets are grid-connected photovoltaic plants: a 5 MW Belakavadi project awarded to BHEL in 2011 and registered under the Clean Development Mechanism, plus a separate 10 MW 'KPCL-Mandya' project documented in BHEL engineering and commissioning records. Later public sources describe 15 MW of KPCL solar generation in the Shivanasamudra/Mandya area. None of the reviewed sources documents islanding, battery storage, diesel backup, or a microgrid controller.",
+    "status": "Legacy project identity unresolved; related KPCL grid-connected solar assets are operational. BHEL records the 5 MW and 10 MW projects as commissioned, April 2024 reporting says KPCL was generating 15 MW from the Shivanasamudra solar plants during a hydro shutdown, and an October 2025 university visit documented operating panels, inverters, control rooms, and grid integration. These sources do not prove that the database's 100 kW record was a real standalone asset, so it should not be presented as an operating microgrid.",
+    "organizations": [
+      {
+        "name": "Karnataka Power Corporation Limited",
+        "role": "State-owned project owner/operator for the documented Mandya-area grid-connected solar plants.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-unfccc", "b05a-kpcl-kla-2021"]
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "role": "Turnkey EPC, equipment supplier, and initial operation-and-maintenance contractor for the 5 MW Belakavadi plant; also documented equipment and commissioning for the separate 10 MW KPCL-Mandya plant.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-bhel-rfq-2014", "b05a-kpcl-bhel-report-2016"]
+      },
+      {
+        "name": "UNFCCC Clean Development Mechanism",
+        "role": "Registry for the 5 MW grid-connected Belakavadi PV project, which identifies KPCL as project participant.",
+        "sourceIds": ["b05a-kpcl-unfccc"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Legacy 100 kW claim",
+        "value": "Unverified. No reviewed KPCL, BHEL, regulator, legislative, or UNFCCC source documents a 100 kW Mandya microgrid.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-unfccc", "b05a-kpcl-bhel-rfq-2014", "b05a-kpcl-kla-2021"]
+      },
+      {
+        "label": "Belakavadi grid-connected PV plant",
+        "value": "5 MWp near Mandya; BHEL announced a ₹620 million turnkey contract covering design, manufacture, supply, installation, and operation and maintenance",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-unfccc"]
+      },
+      {
+        "label": "Separate KPCL-Mandya PV plant",
+        "value": "10 MWp in BHEL's 2014 power-conditioning-unit procurement and later commissioning record",
+        "sourceIds": ["b05a-kpcl-bhel-rfq-2014", "b05a-kpcl-bhel-report-2016"]
+      },
+      {
+        "label": "10 MW plant electrical blocks",
+        "value": "Sixteen 630 kWp three-phase grid power-conditioning units; pairs feed eight three-winding transformers as 1.26 MWp groups connected at 11 kV",
+        "sourceIds": ["b05a-kpcl-bhel-rfq-2014"]
+      },
+      {
+        "label": "Current portfolio context",
+        "value": "Karnataka legislative material lists 15 MW of KPCL solar in Mandya, and April 2024 reporting describes 15 MW generated from the Shivanasamudra solar plants. Place-name transliterations and grouping differ across sources, so this should be treated as portfolio context rather than proof of one 15 MW plant.",
+        "sourceIds": ["b05a-kpcl-kla-2021", "b05a-kpcl-toi-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Photovoltaic modules for 10 MW project",
+        "manufacturer": "BHEL",
+        "model": "L24270",
+        "detail": "The 2014 design document specifies 280 Wp monocrystalline modules with approximately 43 V open-circuit voltage, 8.5 A short-circuit current, 35 V maximum-power voltage, and 8 A maximum-power current; 20 modules form a string.",
+        "sourceIds": ["b05a-kpcl-bhel-rfq-2014"]
+      },
+      {
+        "category": "Power conditioning for 10 MW project",
+        "detail": "Sixteen 630 kWp three-phase grid-connected PCUs feeding eight three-winding step-up transformers. The reviewed BHEL request describes required functionality but does not establish the selected PCU manufacturer/model.",
+        "sourceIds": ["b05a-kpcl-bhel-rfq-2014"]
+      },
+      {
+        "category": "Microgrid and storage equipment",
+        "detail": "None established. No battery, diesel generator, transfer switch, islanding relay, black-start system, or microgrid-controller vendor/model was found for this record.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-unfccc", "b05a-kpcl-bhel-rfq-2014"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Asset-type correction",
+        "detail": "BHEL and UNFCCC repeatedly describe the relevant projects as grid-connected or grid-interactive solar PV. That is evidence against silently retaining the 'microgrid' classification, but it does not reveal how the original 100 kW database entry was created.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-unfccc", "b05a-kpcl-bhel-report-2016"]
+      },
+      {
+        "category": "Phase disambiguation",
+        "detail": "The 5 MW Belakavadi project and the 10 MW KPCL-Mandya project are separately documented. A later 15 MW regional total is consistent with their sum, but inconsistent location spellings prevent a stronger one-to-one site mapping without original KPCL asset registers.",
+        "sourceIds": ["b05a-kpcl-bhel-2011", "b05a-kpcl-bhel-rfq-2014", "b05a-kpcl-kla-2021"]
+      },
+      {
+        "category": "Recent operating evidence",
+        "detail": "During low-water conditions in April 2024, reporting said hydro generation at Shivanasamudra had stopped while KPCL's local solar plants continued producing 15 MW. A supervised university visit in October 2025 observed PV arrays, inverters, control rooms, safety systems, and grid-integration practices.",
+        "sourceIds": ["b05a-kpcl-toi-2024", "b05a-kpcl-presidency-2025"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No primary KPCL source was located that reconciles the site names, confirms the 100 kW record, publishes recent annual generation/capacity factor, or documents storage, curtailment, outage performance, or microgrid operation.",
+        "sourceIds": ["b05a-kpcl-kla-2021", "b05a-kpcl-presidency-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kpcl-bhel-2011",
+        "title": "BHEL secures major turnkey contract for grid-connected eco-friendly solar power plant from KPCL",
+        "url": "https://www.bhel.com/bhel-secures-major-turnkey-contract-grid-connected-eco-friendly-solar-power-plant-kpcl",
+        "publisher": "Bharat Heavy Electricals Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kpcl-unfccc",
+        "title": "5 MW Grid Connected Solar PV based power generation at Belakavadi, Mandya District, Karnataka",
+        "url": "https://cdm.unfccc.int/Projects/DB/BVQI1425101454.3/view",
+        "publisher": "United Nations Framework Convention on Climate Change",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kpcl-bhel-rfq-2014",
+        "title": "RFQ for 630 kWp Power Conditioning Units for KPCL-Mandya 10 MWp Solar PV Plant",
+        "url": "https://tenders.bhel.com/sites/default/files/06082014rfq-bos003-1407300395.pdf",
+        "publisher": "Bharat Heavy Electricals Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kpcl-bhel-report-2016",
+        "title": "BHEL Annual Report 2015-16",
+        "url": "https://www.bhel.com/sites/default/files/BHELAnnualReport2015-16_0.pdf",
+        "publisher": "Bharat Heavy Electricals Limited",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kpcl-kla-2021",
+        "title": "Karnataka Legislative Council Unstarred Question 749",
+        "url": "https://kla.kar.nic.in/council/Replies/unstarred/20122021/usq749%2820122021%29.pdf",
+        "publisher": "Karnataka Legislature",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kpcl-toi-2024",
+        "title": "KPCL generates 15 MW power at Shivanasamudra solar plants",
+        "url": "https://timesofindia.indiatimes.com/city/mysuru/kpcl-generates-15-mw-power-at-shivanasamudra-solar-plants/articleshow/109146334.cms",
+        "publisher": "The Times of India",
+        "kind": "secondary"
+      },
+      {
+        "id": "b05a-kpcl-presidency-2025",
+        "title": "Industrial Visit to Shivanasamudra Solar Power Plant",
+        "url": "https://presidencyuniversity.in/events/industrial-visit-to-shivanasamudra-solar-power-plant",
+        "publisher": "Presidency University",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kwig-alaska-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Kwigillingok's community system is a high-penetration wind-diesel-heat microgrid built around five 95 kW Windmatic 17-S turbines, electric thermal-storage heaters, a lithium-ion BESS added in 2014-2015, and Frontier Power Systems' e+micro supervisory control and SCADA. The BESS/control phase enabled diesel-off operation during sufficient wind. Supplier claims say diesel generators can remain off at least 33% of the year and fuel-cost savings reach 50% or better, but those figures are not accompanied by a dated independent measurement report.",
+    "status": "Core system operational in the latest explicit system accounts, but turbine condition and current availability are incompletely documented. A 2019 DOE assistance report found one of five turbines inoperable and only 20 of the original 27 thermal-storage units still present. Alaska Energy Authority described all five 1980s-era turbines as needing more efficient blades in 2022; its October 2024 portfolio report still listed the blade-upgrade grant in construction with status 'Development.' No completion notice or 2025-2026 turbine-by-turbine availability record was located.",
+    "organizations": [
+      {
+        "name": "Kwigillingok Power Company",
+        "role": "Local utility and operator/grantee for the village wind-diesel system and later turbine-upgrade work.",
+        "sourceIds": ["b05a-kwig-aea-case", "b05a-kwig-aea-2022", "b05a-kwig-aea-2024"]
+      },
+      {
+        "name": "Intelligent Energy Systems",
+        "role": "Alaska integrator for the wind turbines, thermal storage, load regulation, SCADA, and BESS-enabled diesel-off operation.",
+        "sourceIds": ["b05a-kwig-ies", "b05a-kwig-frontier-alaska"]
+      },
+      {
+        "name": "Frontier Power Systems",
+        "role": "Designed and installed integration hardware, software, SCADA, and e+micro controls; integrated the third-party BESS in 2015.",
+        "sourceIds": ["b05a-kwig-frontier-alaska", "b05a-kwig-frontier-projects"]
+      },
+      {
+        "name": "Alaska Energy Authority",
+        "role": "State funding and technical-program organization for the original wind project and later turbine-blade upgrade.",
+        "sourceIds": ["b05a-kwig-aea-case", "b05a-kwig-aea-2022", "b05a-kwig-aea-2024"]
+      },
+      {
+        "name": "U.S. Department of Energy",
+        "role": "Technical-assistance and broader Chaninik multi-village efficiency program sponsor; multi-community savings figures are not Kwigillingok-only results.",
+        "sourceIds": ["b05a-kwig-doe-assistance", "b05a-kwig-doe-chaninik"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Wind generation",
+        "value": "Five Windmatic 17-S turbines at 95 kW each, 475 kW total; original case-study capacity factor 24.5%",
+        "sourceIds": ["b05a-kwig-aea-case"]
+      },
+      {
+        "label": "Electric thermal storage",
+        "value": "27 units in the original case study; DOE's 2019 technical-assistance report found 20 units still installed, so the two counts describe different dates rather than a source error",
+        "sourceIds": ["b05a-kwig-aea-case", "b05a-kwig-doe-assistance"]
+      },
+      {
+        "label": "Original project cost",
+        "value": "$3.2 million for the wind-diesel-smart-grid project in the Alaska Energy Authority case study",
+        "sourceIds": ["b05a-kwig-aea-case"]
+      },
+      {
+        "label": "Battery storage boundary",
+        "value": "Lithium-ion BESS using automotive-industry cells and integrated in 2014-2015. Public sources reviewed in this pass establish its function but do not consistently publish a current usable kWh rating, cell manufacturer, or degradation status.",
+        "sourceIds": ["b05a-kwig-ies", "b05a-kwig-frontier-projects"]
+      },
+      {
+        "label": "Turbine blade-upgrade grant",
+        "value": "$278,716 budget in Alaska Energy Authority's October 2024 status report; the 2022 narrative describes four sets of SERI Thin Airfoil blades for the five-turbine fleet",
+        "sourceIds": ["b05a-kwig-aea-2022", "b05a-kwig-aea-2024"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Wind turbines",
+        "manufacturer": "Windmatic",
+        "model": "17-S",
+        "detail": "Five 95 kW machines. By 2019 one was inoperable; the 2022 upgrade narrative says the 1980s blade design was inefficient and not optimized for Kwigillingok's wind regime.",
+        "sourceIds": ["b05a-kwig-aea-case", "b05a-kwig-doe-assistance", "b05a-kwig-aea-2022"]
+      },
+      {
+        "category": "Battery energy storage",
+        "detail": "Automotive-derived lithium-ion batteries store surplus wind and support village-scale wind-only operation. The reviewed sources do not disclose a current battery maker, exact cell model, current usable energy, or replacement history.",
+        "sourceIds": ["b05a-kwig-ies", "b05a-kwig-frontier-alaska"]
+      },
+      {
+        "category": "Microgrid controls",
+        "manufacturer": "Frontier Power Systems",
+        "model": "e+micro",
+        "detail": "Supervisory controls, integration hardware, software, and SCADA coordinate wind, diesel generators, the BESS, load regulation, and thermal-storage stoves.",
+        "sourceIds": ["b05a-kwig-frontier-alaska", "b05a-kwig-frontier-projects"]
+      },
+      {
+        "category": "Wind-to-heat",
+        "detail": "Electric thermal-storage stoves absorb excess wind energy in homes. The system-level sources do not publish individual stove ratings, manufacturers, present connected count beyond the 2019 audit, or verified household savings for Kwigillingok alone.",
+        "sourceIds": ["b05a-kwig-aea-case", "b05a-kwig-doe-assistance", "b05a-kwig-frontier-alaska"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Diesel-off operation",
+        "detail": "Frontier says the 2015 BESS integration allowed a village in this early Alaska program to shut all diesel generators off and its project list identifies Kwigillingok as the 2014-2015 BESS site. IES explicitly says Kwigillingok can run the whole village from wind and claims diesel-off operation for at least 33% of the year.",
+        "sourceIds": ["b05a-kwig-frontier-alaska", "b05a-kwig-frontier-projects", "b05a-kwig-ies"]
+      },
+      {
+        "category": "Performance-claim caveat",
+        "detail": "IES claims fuel-cost savings of 50% or better, but its page gives no measurement period, baseline, diesel gallons, or independent audit. DOE's approximately 30% fuel-reduction account covers the wider Chaninik multi-village program and must not be presented as a Kwigillingok-only measured result.",
+        "sourceIds": ["b05a-kwig-ies", "b05a-kwig-doe-chaninik"]
+      },
+      {
+        "category": "2019 condition finding",
+        "detail": "DOE technical assistance documented one unavailable turbine, fewer thermal-storage units than originally installed, and operator troubleshooting/training needs. This is evidence of partial degradation, not proof the entire microgrid had failed.",
+        "sourceIds": ["b05a-kwig-doe-assistance"]
+      },
+      {
+        "category": "2022-2024 upgrade status",
+        "detail": "AEA proposed replacing older rotor blades with SERI Thin Airfoil designs to improve production. In October 2024 the grant remained in 'Development' within the construction portfolio, so improved production should not be counted as realized.",
+        "sourceIds": ["b05a-kwig-aea-2022", "b05a-kwig-aea-2024"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No verified 2025-2026 turbine availability, completed blade-upgrade notice, annual wind generation, diesel gallons, current storage state of health, usable kWh, outage indices, or independently measured savings was located.",
+        "sourceIds": ["b05a-kwig-aea-2024", "b05a-kwig-ies"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kwig-aea-case",
+        "title": "Kwigillingok Wind-Diesel Smart Grid Case Study",
+        "url": "https://akenergyauthority.org/Portals/0/What%20We%20Do/Renewable%20Energy%20and%20Energy%20Efficiency/Wind/Case%20Studies/KwigillingokWindDieselSmartGrid2016.pdf?ver=2019-06-19-133904-757",
+        "publisher": "Alaska Energy Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-doe-assistance",
+        "title": "Technical Assistance to Improve Operations of the Kwigillingok Wind-Diesel System",
+        "url": "https://www.osti.gov/servlets/purl/1906261",
+        "publisher": "U.S. Department of Energy / National Renewable Energy Laboratory",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-frontier-alaska",
+        "title": "Cranking Up the Heat: Alaska",
+        "url": "https://frontierpowersystems.ca/alaska/",
+        "publisher": "Frontier Power Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-frontier-projects",
+        "title": "Projects",
+        "url": "https://frontierpowersystems.ca/projects/",
+        "publisher": "Frontier Power Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-ies",
+        "title": "Kwigillingok: Sustainable Peace and Quiet",
+        "url": "https://www.iesconnect.net/kwigillingok",
+        "publisher": "Intelligent Energy Systems",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-aea-2022",
+        "title": "Renewable Energy Fund Status Update, April 2022",
+        "url": "https://www.akenergyauthority.org/Portals/0/About/Board%20Meetings/Documents/2022/2022.04.13/8C.%20%20Renewable%20Energy%20Fund%20Update.pdf?ver=2022-04-04-140919-787",
+        "publisher": "Alaska Energy Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-aea-2024",
+        "title": "Renewable Energy Fund Project Status Response, October 2024",
+        "url": "https://www.akenergyauthority.org/Portals/0/About/Board%20Meetings/Documents/2024/2024.10.22/9A.%20Response%20to%20Board%20question.pdf?ver=_i6ELA0pVfzRf1WX-3HfZw%3D%3D",
+        "publisher": "Alaska Energy Authority",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kwig-doe-chaninik",
+        "title": "EERE Success Story—Enhanced Efficiency of Wind-Diesel Power Generation in Rural Alaska",
+        "url": "https://www.energy.gov/cmei/success-stories/articles/eere-success-story-enhanced-efficiency-wind-diesel-power-generation",
+        "publisher": "U.S. Department of Energy",
+        "kind": "primary"
+      }
+    ]
+  },
+  "kithnos": {
+    "researchedAt": "2026-07-20",
+    "summary": "The slug uses 'Kithnos,' but the island is normally transliterated Kythnos. Public descriptions also combine two different systems: the island-wide diesel-wind-PV grid and the much smaller permanently islanded Gaidouromantra (also Gaidouromandra) holiday-home microgrid. The latter began operating in 2001, historically used roughly 10-11 kWp PV with lead-acid batteries and diesel backup, and was modernized through Kythnos Smart Island and RE-EMPOWERED. A May 2025 deployment report lists its current resources as 20.8 kW PV, 3 kW wind, and 22 kW backup diesel, with new metering, communications, SCADA, forecasting, demand response, and multi-vector energy management.",
+    "status": "Both boundaries remain active in the latest located evidence. The EU Clean Energy for Islands secretariat reported Kythnos Smart Island completed on June 21, 2024, including renovation of the Gaidouromantra off-grid system. RE-EMPOWERED's May 2025 deliverable says all tools were deployed, identified issues resolved, and demonstration had been ongoing since October 2024. It also lists the separate whole-island system at 5.2 MW diesel and 908.65 kW renewable capacity. No later 2026 production or reliability report was located.",
+    "organizations": [
+      {
+        "name": "Public Power Corporation and Hellenic Electricity Distribution Network Operator",
+        "role": "Utility/DSO organizations for the non-interconnected island electricity system and partners in the later demonstration.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "name": "Centre for Renewable Energy Sources and Saving",
+        "role": "Historical designer/research and operating-support organization for the Gaidouromantra microgrid and earlier Kythnos demonstrations.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-12year"]
+      },
+      {
+        "name": "SMA Solar Technology",
+        "role": "Supplier of Sunny Island battery inverters and controls for the historical Gaidouromantra system and control technology for the island system.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-12year"]
+      },
+      {
+        "name": "ICCS-NTUA, PROTASIS, DAFNI, and Kythnos Municipality",
+        "role": "Research, hardware/software deployment, local-network repair, and demonstration partners in the RE-EMPOWERED/Kythnos Smart Island modernization.",
+        "sourceIds": ["b05a-kythnos-reempowered-2025", "b05a-kythnos-ce4islands-2024"]
+      },
+      {
+        "name": "European Union RE-EMPOWERED and Kythnos Smart Island programs",
+        "role": "Funded and coordinated the recent forecasting, SCADA, demand-response, renewable, transport, and smart-island upgrades.",
+        "sourceIds": ["b05a-kythnos-ce4islands-2024", "b05a-kythnos-reempowered-2025"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Current whole-island electricity system",
+        "value": "5.2 MW diesel generation and 908.65 kW renewable capacity serving 3,353 low-voltage customers, with a 3.118 MW peak load in the RE-EMPOWERED deployment report",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "label": "Current Gaidouromantra generation",
+        "value": "20.8 kW solar PV, 3 kW small wind, and 22 kW backup diesel for 14 vacation houses",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "label": "Historical whole-island hybrid configuration",
+        "value": "100 kWp PV, one 500 kW Vestas V39 wind turbine, a 500 kW/10-minute battery reported at roughly 400 kWh, and five 400 kW MWM diesel generators in the late-1990s configuration",
+        "sourceIds": ["b05a-kythnos-sma"]
+      },
+      {
+        "label": "Historical Gaidouromantra main battery",
+        "value": "1,000 Ah at 48 V, 48 kWh nominal; the 12-year operations paper says the first bank was replaced in 2009 after about eight years. This is historical, not proof of today's usable capacity.",
+        "sourceIds": ["b05a-kythnos-12year"]
+      },
+      {
+        "label": "Historical secondary battery and backup diesel",
+        "value": "480 Ah at 60 V, 28.8 kWh nominal secondary bank and a 9 kVA three-phase diesel set in the documented earlier architecture; later sources list 22 kW diesel, demonstrating that the backup plant changed.",
+        "sourceIds": ["b05a-kythnos-12year", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "label": "Additional whole-island smart-energy loads",
+        "value": "75 kW desalination plant, three EVs with seven planned, four 22 kW chargers with five more planned, and a heat pump in the 2025 deployment inventory",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Historical whole-island wind turbine",
+        "manufacturer": "Vestas",
+        "model": "V39/500",
+        "detail": "One 500 kW turbine in the late-1990s island hybrid. The current 908.65 kW renewable aggregate does not by itself confirm the present availability of this exact machine.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Historical whole-island diesel generators",
+        "manufacturer": "MWM",
+        "detail": "Five 400 kW diesel units in SMA's historical project description. The newer whole-island inventory gives 5.2 MW total diesel without unit-level models, so the old fleet should not be treated as the complete current inventory.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Gaidouromantra battery inverters",
+        "manufacturer": "SMA Solar Technology",
+        "model": "Sunny Island SI5048 and SI4500",
+        "detail": "The documented 12-year configuration used three SI5048 units in the main three-phase system and one SI4500 in the secondary subsystem. The 2025 report does not confirm whether all original inverters remain installed.",
+        "sourceIds": ["b05a-kythnos-12year"]
+      },
+      {
+        "category": "New small wind turbine",
+        "manufacturer": "ICCS-NTUA / local project team",
+        "detail": "A locally manufactured 3 kW turbine was installed and commissioned at Gaidouromantra and maintained in September 2023; a commercial model is not identified.",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Monitoring and SCADA",
+        "manufacturer": "COPA-DATA ecosystem / project partners",
+        "model": "zenon",
+        "detail": "An Ethernet gateway, extended smart metering, environmental sensors, data logging, fiber/communications repairs, and zenon data-concentrator/SCADA support remote monitoring and control.",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "System-boundary correction",
+        "detail": "The island system and Gaidouromantra system have different owners, loads, capacities, and histories. Capacities such as the island's 5.2 MW diesel fleet must not be combined with the remote site's 20.8 kW PV as though they were one physical bus.",
+        "sourceIds": ["b05a-kythnos-sma", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Long-term Gaidouromantra operation",
+        "detail": "The permanently islanded system began in 2001 and served vacation homes with PV, batteries, and automatic diesel backup. The 12-year paper records a 2009 main-battery replacement and maintenance problems such as frequent watering of the original lead-acid bank.",
+        "sourceIds": ["b05a-kythnos-12year"]
+      },
+      {
+        "category": "Current energy-management stack",
+        "detail": "RE-EMPOWERED deployed ecoEMS, ecoMicrogrid, ecoPlanning, ecoDR, ecoPlatform, ecoMonitor, ecoCommunity, and ecoResilience tools. Functions include forecasts, outage/fault detection, demand response, SCADA/MQTT integration, remote disconnection of noncritical loads, and joint electric/HVAC optimization.",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Smart Island completion and continuing demonstration",
+        "detail": "The Kythnos Smart Island project was declared complete in June 2024, including renovation at Gaidouromantra. RE-EMPOWERED separately reported that its tool demonstration continued from October 2024, so 'completed' refers to the construction/program milestone rather than the end of all research operation.",
+        "sourceIds": ["b05a-kythnos-ce4islands-2024", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Renewable-operation wording",
+        "detail": "The 2025 deliverable characterizes Gaidouromantra as supplied by PV and batteries since 2001 while also listing 22 kW of backup diesel. The defensible interpretation is a renewable-led microgrid with emergency/low-state-of-charge backup, not evidence that diesel can never run.",
+        "sourceIds": ["b05a-kythnos-12year", "b05a-kythnos-reempowered-2025"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "Current battery chemistry, manufacturer, installed and usable kWh, state of health, annual renewable fraction, diesel runtime, outage indices, PV/wind output, and post-October-2024 demonstration results were not published in the reviewed sources.",
+        "sourceIds": ["b05a-kythnos-reempowered-2025"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-kythnos-sma",
+        "title": "Kythnos: An island supplied by solar and wind energy",
+        "url": "https://files.sma.de/downloads/Kythnos.pdf",
+        "publisher": "SMA Solar Technology",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kythnos-12year",
+        "title": "12 years operation of the Gaidouromantra Microgrid in Kythnos island",
+        "url": "https://www.researchgate.net/publication/268503424_12_years_operation_of_the_Gaidouromantra_Microgrid_in_Kythnos_island_COI-3869",
+        "publisher": "National Technical University of Athens / CRES authors",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kythnos-ce4islands-2024",
+        "title": "A testing ground for innovative technologies: Kythnos Smart Island project completed",
+        "url": "https://clean-energy-islands.ec.europa.eu/news/testing-ground-innovative-technologies-kythnos-smart-island-project-completed",
+        "publisher": "European Commission Clean Energy for EU Islands Secretariat",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-kythnos-reempowered-2025",
+        "title": "D7.3 Report on Deployment of RE-EMPOWERED Solutions",
+        "url": "https://reempowered-h2020.com/wp-content/uploads/2025/05/D7.3-Report-on-deployment-of-RE-EMPOWERED-solutions.pdf",
+        "publisher": "RE-EMPOWERED Horizon 2020 Consortium",
+        "kind": "primary"
+      }
+    ]
+  },
+  "la-gomera": {
+    "researchedAt": "2026-07-20",
+    "summary": "The La Gomera record is best understood as Endesa/Unelco's STORE flywheel demonstration, not the island's entire roughly 22 MW electricity system. ABB/PowerCorp supplied a 0.5 MW PowerStore flywheel at Playa Santiago, Alajeró, to provide automatic frequency and voltage support. The original installation entered service in December 2013, completed its experimental program, and was definitively disconnected in November 2018. A 2020 Canary Islands authorization allowed relocation to the El Palmar diesel plant; Endesa later describes a La Gomera flywheel operating as an auxiliary grid-quality asset, but a commissioning notice that conclusively links the relocated unit was not located.",
+    "status": "Original Playa Santiago demonstration retired; probable relocation/continued auxiliary use remains incompletely documented. The official 2020 authorization records the 2018 definitive disconnection, approves construction of a 0.5 MW flywheel installation at El Palmar, and cites measured improvement in frequency response and grid quality during the pilot. Endesa's current storage page says a flywheel operates on La Gomera, creating evidence of later operation but without a commissioning date or serial-number trail. Separately, the Tenerife-La Gomera submarine interconnection entered service on April 23, 2026; Spanish regulation now treats the two islands as one non-peninsular electrical system, so La Gomera is no longer an electrically isolated island grid.",
+    "organizations": [
+      {
+        "name": "Unelco-Endesa / Endesa",
+        "role": "Promoter and operator of the STORE demonstration and applicant for relocation to the El Palmar diesel station; current utility source describes flywheel frequency support on the island.",
+        "sourceIds": ["b05a-gomera-boc-2020", "b05a-gomera-endesa-storage"]
+      },
+      {
+        "name": "ABB / PowerCorp",
+        "role": "Flywheel, inverter, and microgrid-stabilization technology supplier for the original demonstration.",
+        "sourceIds": ["b05a-gomera-abb-2014", "b05a-gomera-comillas-2015"]
+      },
+      {
+        "name": "Government of the Canary Islands",
+        "role": "Electrical-installation regulator; documented the pilot's operating outcome, disconnection, and authorization for relocation to El Palmar.",
+        "sourceIds": ["b05a-gomera-boc-2020"]
+      },
+      {
+        "name": "Red Eléctrica de España",
+        "role": "Developer/operator of the 66 kV Tenerife-La Gomera interconnection and associated Chío and El Palmar substations.",
+        "sourceIds": ["b05a-gomera-ree-2026", "b05a-gomera-ree-project"]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Flywheel power",
+        "value": "0.5 MW for the original STORE installation and the authorized El Palmar relocation",
+        "sourceIds": ["b05a-gomera-boc-2020", "b05a-gomera-comillas-2015"]
+      },
+      {
+        "label": "Flywheel stored energy and duration",
+        "value": "18 MW-seconds, equivalent to 5 kWh, and 36 seconds at rated 0.5 MW in the Comillas technical description. MW-seconds is an energy unit and must not be misreported as 18 MW of power.",
+        "sourceIds": ["b05a-gomera-comillas-2015"]
+      },
+      {
+        "label": "Flywheel rotational speed",
+        "value": "3,600 rpm at full charge in the original technical description",
+        "sourceIds": ["b05a-gomera-comillas-2015"]
+      },
+      {
+        "label": "Tenerife-La Gomera interconnection",
+        "value": "66 kV double-circuit link, approximately 36 km submarine route with underground land sections; entered service April 23, 2026",
+        "sourceIds": ["b05a-gomera-ree-project", "b05a-gomera-boe-2026"]
+      }
+    ],
+    "equipment": [
+      {
+        "category": "Flywheel energy storage",
+        "manufacturer": "ABB / PowerCorp",
+        "model": "PowerStore",
+        "detail": "Low-speed flywheel rated 0.5 MW and 18 MW-seconds in the project technical paper, used for rapid active-power absorption/injection and automatic frequency and voltage support.",
+        "sourceIds": ["b05a-gomera-abb-2014", "b05a-gomera-comillas-2015", "b05a-gomera-boc-2020"]
+      },
+      {
+        "category": "Power conversion",
+        "manufacturer": "ABB / PowerCorp",
+        "detail": "Two IGBT-based inverters connect the flywheel to the grid in the technical design. Specific converter product numbers were not located.",
+        "sourceIds": ["b05a-gomera-comillas-2015"]
+      },
+      {
+        "category": "Interconnection infrastructure",
+        "detail": "The 2026 link includes a double-circuit submarine cable and the Chío (Tenerife) and El Palmar (La Gomera) substations, changing the operating boundary from a standalone island to an interconnected two-island system.",
+        "sourceIds": ["b05a-gomera-ree-2026", "b05a-gomera-ree-project", "b05a-gomera-boe-2026"]
+      }
+    ],
+    "technicalDetails": [
+      {
+        "category": "Grid-service function",
+        "detail": "The flywheel automatically absorbs short wind-power surges and supplies short lulls, emulating primary frequency regulation and supporting voltage. Its seconds-scale energy is suited to stabilization, not long-duration island backup.",
+        "sourceIds": ["b05a-gomera-abb-2014", "b05a-gomera-boc-2020"]
+      },
+      {
+        "category": "Demonstrated outcome",
+        "detail": "In its 2018 notice to the Canary government, the operator reported a notable improvement in system frequency response and grid quality, then declared the STORE experimental phase complete and definitively disconnected the Playa Santiago unit.",
+        "sourceIds": ["b05a-gomera-boc-2020"]
+      },
+      {
+        "category": "Relocation evidence conflict",
+        "detail": "The 2020 resolution authorizes construction at El Palmar and Endesa's later storage page says a La Gomera flywheel is operating as an auxiliary service. However, no located public commissioning record explicitly closes the chain from the disconnected Playa Santiago unit to an operating relocated asset, so current physical status is not fully verified.",
+        "sourceIds": ["b05a-gomera-boc-2020", "b05a-gomera-endesa-storage"]
+      },
+      {
+        "category": "2023 island blackout context",
+        "detail": "A July 30, 2023 fire affected seven of nine generator sets at El Palmar and caused an island-wide outage; the Canary government later said full restoration took more than 60 hours and imposed a €12.1 million sanction on Unelco. The sources do not attribute the event to the flywheel, and a 5 kWh stabilizer could not provide long-duration replacement generation.",
+        "sourceIds": ["b05a-gomera-blackout-2023", "b05a-gomera-sanction-2025"]
+      },
+      {
+        "category": "2026 boundary change",
+        "detail": "The Tenerife-La Gomera interconnection entered service April 23, 2026. A June 2026 ministerial order formally redefined the islands as one electrical system, ending La Gomera's status as a standalone island grid even if local diesel and flywheel assets continue operating.",
+        "sourceIds": ["b05a-gomera-ree-2026", "b05a-gomera-boe-2026"]
+      },
+      {
+        "category": "Open evidence gaps",
+        "detail": "No definitive relocated-flywheel commissioning certificate, current availability, maintenance history, measured response-event data, annual avoided curtailment, or quantified fuel savings was located. Current island energy mix after the April 2026 interconnection also was not yet available.",
+        "sourceIds": ["b05a-gomera-boc-2020", "b05a-gomera-endesa-storage", "b05a-gomera-boe-2026"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b05a-gomera-abb-2014",
+        "title": "ABB technology keeps the lights on in La Gomera",
+        "url": "https://sustainabilityreport.abb.com/2014/our-business/achievements-and-innovations-in-2014.html",
+        "publisher": "ABB",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-comillas-2015",
+        "title": "Inertial Energy Storage Systems: Flywheel Energy Storage in La Gomera",
+        "url": "https://repositorio.comillas.edu/xmlui/bitstream/handle/11531/5464/IIT-15-066A.pdf?sequence=1",
+        "publisher": "Institute for Research in Technology, Comillas Pontifical University",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-boc-2020",
+        "title": "Authorization for the 0.5 MW flywheel installation at El Palmar diesel plant",
+        "url": "https://www.gobiernodecanarias.org/boc/2020/129/015.html",
+        "publisher": "Official Gazette of the Canary Islands",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-endesa-storage",
+        "title": "Energy storage for a sustainable future",
+        "url": "https://www.endesa.com/en/projects/all-projects/energy-transition/electric-mobility/energy-storage-future-energy",
+        "publisher": "Endesa",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-blackout-2023",
+        "title": "Canary government asks Endesa to clarify causes of fire that caused La Gomera zero-energy event",
+        "url": "https://www3.gobiernodecanarias.org/noticias/el-gobierno-insta-a-endesa-a-que-aclare-las-causas-del-incendio-que-ha-provocado-el-cero-energetico-en-la-gomera/",
+        "publisher": "Government of the Canary Islands",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-sanction-2025",
+        "title": "Government imposes €12.1 million sanction on Unelco for the 2023 La Gomera blackout",
+        "url": "https://www3.gobiernodecanarias.org/noticias/el-gobierno-impone-una-sancion-de-121-millones-de-euros-a-unelco-por-el-apagon-de-la-gomera-en-2023/",
+        "publisher": "Government of the Canary Islands",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-ree-2026",
+        "title": "Red Eléctrica completes the Tenerife-La Gomera interconnection",
+        "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-interconexiones/2026/02/red-electrica-concluye-interconexion-tenerife-la-gomera",
+        "publisher": "Red Eléctrica de España",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-ree-project",
+        "title": "Tenerife-La Gomera Link",
+        "url": "https://www.ree.es/en/transmission/transmission-projects/tenerife-gomera-link",
+        "publisher": "Red Eléctrica de España",
+        "kind": "primary"
+      },
+      {
+        "id": "b05a-gomera-boe-2026",
+        "title": "Order TED/624/2026 redefining the Tenerife-La Gomera electrical system",
+        "url": "https://www.boe.es/eli/es/o/2026/06/12/ted624",
+        "publisher": "Official State Gazette of Spain",
+        "kind": "primary"
+      }
+    ]
+  }
+}

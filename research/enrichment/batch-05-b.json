@@ -1,0 +1,404 @@
+{
+  "la-palma": {
+    "researchedAt": "2026-07-20",
+    "summary": "La Palma's documented STORE project is a fast-response ultracapacitor installation at Endesa's Los Guinchos diesel power station, not a generation microgrid for the whole island. The 4 MW, 20 MW-s system is connected to the isolated island grid at 20 kV and injects power for roughly five to six seconds after a generator trip, buying time for generator governors and reducing under-frequency load shedding. Ingeteam supplied the conversion, control, and integration package under Endesa's STORE research program.",
+    "status": "Installed and demonstrated around 2013–2014. The Canary Islands government published Endesa subsidiary Unión Eléctrica de Canarias Generación's application for definitive authorization of the 4 MW installation in 2019, and Endesa continues to describe the Los Guinchos ultracapacitor as an island-storage reference. No recent public source reports 2025–2026 availability, cycling, or maintenance condition, so present operational performance is not independently confirmed.",
+    "organizations": [
+      {"name": "Endesa", "role": "Lead of the STORE research program and operator group for the Los Guinchos island-grid demonstration", "sourceIds": ["palma-endesa", "palma-enel", "palma-ingeteam"]},
+      {"name": "Unión Eléctrica de Canarias Generación S.A.U.", "role": "Endesa generation subsidiary and applicant for definitive authorization of the permanent Los Guinchos installation", "sourceIds": ["palma-canary-2019"]},
+      {"name": "Ingeteam", "role": "Designer, manufacturer, and integrator of the power-conversion, control, and ultracapacitor system", "sourceIds": ["palma-ingeteam"]},
+      {"name": "Government of the Canary Islands", "role": "Regional energy authority that processed the 2019 definitive-installation authorization", "sourceIds": ["palma-canary-2019"]}
+    ],
+    "specifications": [
+      {"label": "Peak discharge power", "value": "4 MW", "sourceIds": ["palma-ingeteam", "palma-enel", "palma-paper-2015"]},
+      {"label": "Discharge duration", "value": "Ingeteam rates the system for up to 6 seconds; Endesa/Enel and the technical paper describe 20 MW-s, equivalent to 4 MW for 5 seconds. The difference appears to reflect rating versus stated energy, not separate systems", "sourceIds": ["palma-ingeteam", "palma-enel", "palma-paper-2015"]},
+      {"label": "Stored energy", "value": "20 MW-s, approximately 5.56 kWh", "sourceIds": ["palma-enel", "palma-paper-2015"]},
+      {"label": "Ultracapacitor bank", "value": "55.55 F at 1,080 Vdc, arranged as eight cabinets with six ultracapacitor units per cabinet", "sourceIds": ["palma-ingeteam"]},
+      {"label": "Grid interconnection", "value": "20 kV Los Guinchos plant bus through voltage-source converters and a medium-/low-voltage transformer", "sourceIds": ["palma-ingeteam", "palma-paper-2015"]},
+      {"label": "Power-conversion system", "value": "Two water-cooled INGEGRID SH-B converters, 400 V low-voltage side, collectively rated 4 MW for the short discharge and 2 MVAr continuously", "sourceIds": ["palma-ingeteam"]},
+      {"label": "Technology role", "value": "Short-duration frequency and voltage support; the system is not intended for bulk energy shifting", "sourceIds": ["palma-ingeteam", "palma-paper-2015"]}
+    ],
+    "equipment": [
+      {"category": "Ultracapacitor storage", "manufacturer": "Ingeteam", "detail": "Eight storage cabinets containing 48 ultracapacitor units in total, plus DC sectionalizing and measurement cabinets; the underlying cell maker is not identified in the cited project documentation", "sourceIds": ["palma-ingeteam"]},
+      {"category": "Power conversion", "manufacturer": "Ingeteam", "model": "INGEGRID SH-B", "detail": "Two water-cooled bidirectional converter units operating as a voltage-source converter system", "sourceIds": ["palma-ingeteam"]},
+      {"category": "Plant controller", "manufacturer": "Ingeteam", "model": "INGESYS IC3", "detail": "PLC-based management and control system coordinating detection and rapid power injection", "sourceIds": ["palma-ingeteam"]},
+      {"category": "Local supervisory system", "manufacturer": "Ingeteam", "model": "INGESYS IT", "detail": "Local SCADA for visualization, supervision, and data logging", "sourceIds": ["palma-ingeteam"]},
+      {"category": "Interconnection transformer", "detail": "Medium-/low-voltage transformer linking the 400 V conversion equipment to the 20 kV bus; manufacturer and nameplate are not disclosed", "sourceIds": ["palma-ingeteam"]}
+    ],
+    "technicalDetails": [
+      {"category": "Frequency response", "detail": "After the loss of a generating unit, the controller commands near-instantaneous active-power injection to slow the frequency decline while the surviving diesel generators' governors increase output.", "sourceIds": ["palma-ingeteam", "palma-paper-2015"]},
+      {"category": "Resilience function", "detail": "The short power burst was designed to reduce or avoid under-frequency load shedding on La Palma's isolated electric system.", "sourceIds": ["palma-enel", "palma-paper-2015"]},
+      {"category": "Reactive-power capability", "detail": "The converters can provide continuous reactive-power support up to 2 MVAr, adding voltage-control value beyond the seconds-long active-power discharge.", "sourceIds": ["palma-ingeteam"]},
+      {"category": "Energy-mix interpretation", "detail": "The ultracapacitor is storage and produces no net electricity. Its 4 MW figure should not be added to La Palma's generation capacity or treated as renewable generation; it stabilizes a diesel-dominated isolated grid that also includes renewable resources.", "sourceIds": ["palma-endesa", "palma-enel"]},
+      {"category": "Authorization update", "detail": "A 2019 official notice identified a 4 MW ultracapacitor installation at Central Diésel Los Guinchos and opened public review for definitive authorization, indicating a transition from research installation toward permanent-plant status.", "sourceIds": ["palma-canary-2019"]},
+      {"category": "Current-evidence limit", "detail": "Current corporate pages continue to cite the installation, but they do not disclose recent operating hours, outages, state of health, or whether the full original bank remains in service.", "sourceIds": ["palma-endesa"]}
+    ],
+    "sources": [
+      {"id": "palma-endesa", "title": "Energy storage, the key to a more sustainable future", "url": "https://www.endesa.com/en/projects/all-projects/energy-transition/electric-mobility/energy-storage-future-energy", "publisher": "Endesa", "kind": "primary"},
+      {"id": "palma-enel", "title": "Energy transition on the islands", "url": "https://www.enel.com/media/explore/search-news/news/2017/03/energy-transition-islands", "publisher": "Enel", "kind": "primary"},
+      {"id": "palma-ingeteam", "title": "STORE Project – Los Guinchos Ultracapacitor System", "url": "https://www.ingeteam.com/Portals/0/Catalogo/Sector/Documento/SSE_1420_Archivo_cs24iptt01-a-pga-store-guinchos.pdf", "publisher": "Ingeteam", "kind": "primary"},
+      {"id": "palma-canary-2019", "title": "Announcement of the application for definitive authorization of the Los Guinchos ultracapacitor installation", "url": "https://www.gobiernodecanarias.org/boc/2019/074/020.html", "publisher": "Government of the Canary Islands", "kind": "primary"},
+      {"id": "palma-paper-2015", "title": "Application of an Ultracapacitor System for Frequency Control in an Isolated Power System", "url": "https://icrepq.com/icrepq%2715/PL2.pdf", "publisher": "International Conference on Renewable Energies and Power Quality", "kind": "primary"},
+      {"id": "palma-legacy-archive", "title": "La Palma (archived legacy record)", "url": "https://web.archive.org/web/20200706000448id_/http://microgridprojects.com/microgrid/la-palma/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "lac-des-mille-lacs-first-nation": {
+    "researchedAt": "2026-07-20",
+    "summary": "Lac des Mille Lacs First Nation commissioned an off-grid solar-battery-diesel system for its community complex and roundhouse on July 28, 2017. JAZZ Solar's current project portfolio reports 97 kW of PV and 250 kWh of battery storage, with solar also diverted to domestic-hot-water preheating. The Nation reported in early 2018 that the system had nearly eliminated diesel use since launch, except for brief operation after four to six sunless days; that is strong early performance evidence, but not an audited present-day energy mix.",
+    "status": "Commissioned in 2017 and still presented in JAZZ Solar's current portfolio as an off-grid project and long-term partnership. The latest detailed first-party operating account located is from February 2018. No recent public record provides battery state of health, annual solar fraction, diesel runtime, or confirms whether the original 2017 storage bank remains unchanged in 2026.",
+    "organizations": [
+      {"name": "Lac des Mille Lacs First Nation", "role": "Community owner, project sponsor, host, and operator counterpart", "sourceIds": ["lac-community-2018", "lac-funding", "lac-thesis"]},
+      {"name": "JAZZ Solar Solutions", "role": "System designer and installer, with long-term maintenance and remote monitoring responsibilities", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"name": "Government of Canada", "role": "Capital-funding partner through public infrastructure funding", "sourceIds": ["lac-funding"]},
+      {"name": "Government of Ontario", "role": "Capital-funding partner through public infrastructure funding", "sourceIds": ["lac-funding"]},
+      {"name": "Independent Electricity System Operator", "role": "Funded a later Lac des Mille Lacs micro-utility operating-system initiative; this is a follow-on program, not proof of changes to the 2017 hardware", "sourceIds": ["lac-ieso-2023"]}
+    ],
+    "specifications": [
+      {"label": "Photovoltaic capacity", "value": "JAZZ Solar's current portfolio lists 97 kW; the Nation's February 2018 communiqué calls it 93 kW. The difference may reflect design/as-built scope or rounding and should be retained rather than silently reconciled", "sourceIds": ["lac-jazz", "lac-community-2018"]},
+      {"label": "Battery storage", "value": "250 kWh; the research case describes a 6,000 Ah bank weighing approximately 7,801 kg, but does not provide enough voltage and usable-capacity detail to independently recompute the current portfolio rating", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"label": "Inverters", "value": "Nine 8 kW inverter units, 72 kW aggregate AC rating", "sourceIds": ["lac-thesis"]},
+      {"label": "Domestic-hot-water diversion", "value": "22 kW controllable solar-diversion/preheat load", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"label": "Balance of system", "value": "Approximately 5,943 m of wire and 25,038 kg of array ballast were documented for the installation", "sourceIds": ["lac-thesis"]},
+      {"label": "Commissioning date", "value": "July 28, 2017", "sourceIds": ["lac-community-2018", "lac-thesis"]},
+      {"label": "Backup generation", "value": "Diesel generation retained for extended low-solar periods; capacity, manufacturer, model, and fuel-tank size were not disclosed in the cited sources", "sourceIds": ["lac-community-2018", "lac-thesis"]},
+      {"label": "Public infrastructure funding", "value": "C$531,234 announced across federal, provincial, and First Nation contributions for the infrastructure project", "sourceIds": ["lac-funding"]}
+    ],
+    "equipment": [
+      {"category": "Photovoltaic array", "detail": "Approximately 93–97 kW of ground- or building-associated solar generation serving the off-grid community complex; module manufacturer and model are not disclosed in the cited sources", "sourceIds": ["lac-jazz", "lac-community-2018", "lac-thesis"]},
+      {"category": "Battery bank", "detail": "250 kWh nominal portfolio rating, described in the research case as a 6,000 Ah, 7,801 kg bank; chemistry, cell maker, and usable-energy window are not publicly identified", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"category": "Inverters", "detail": "Nine 8 kW inverter units; manufacturer and model are not identified in the cited research case", "sourceIds": ["lac-thesis"]},
+      {"category": "Charge controllers", "manufacturer": "MidNite Solar", "model": "Classic 200", "detail": "Solar charge controllers used to regulate PV charging of the battery bank", "sourceIds": ["lac-thesis"]},
+      {"category": "Thermal diversion", "detail": "A 22 kW domestic-hot-water preheat diversion system captures otherwise curtailed solar energy", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"category": "Backup generator", "detail": "Existing diesel generator retained for rare extended low-solar intervals; nameplate and supplier are not disclosed", "sourceIds": ["lac-community-2018", "lac-thesis"]},
+      {"category": "Monitoring", "manufacturer": "JAZZ Solar Solutions", "detail": "Remote monitoring and long-term support from JAZZ's Ottawa operations", "sourceIds": ["lac-thesis"]}
+    ],
+    "technicalDetails": [
+      {"category": "Serving scope", "detail": "The documented system serves the First Nation's community complex and roundhouse. Available sources do not establish that every residence is electrically connected to this microgrid.", "sourceIds": ["lac-jazz", "lac-thesis"]},
+      {"category": "Early operating result", "detail": "The Nation reported that the complex remained off diesel from late July 2017 into early 2018 except for a couple of short periods following four to six consecutive days without adequate sun.", "sourceIds": ["lac-community-2018"]},
+      {"category": "Seasonality", "detail": "The case study reports approximately three months of exclusively solar-battery operation after commissioning before seasonal solar conditions required backup generation.", "sourceIds": ["lac-thesis"]},
+      {"category": "Dispatch logic", "detail": "PV first supplies facility loads and charges storage; surplus energy can be diverted to water heating, while diesel remains the firm backup for prolonged low-insolation events.", "sourceIds": ["lac-jazz", "lac-community-2018", "lac-thesis"]},
+      {"category": "Energy mix", "detail": "Early community testimony supports a very high solar share and near-elimination of diesel for the first months, but no audited annual percentage or recent fuel log is public. That 2017–2018 result should not be presented as a verified 2026 energy mix.", "sourceIds": ["lac-community-2018", "lac-thesis"]},
+      {"category": "Follow-on activity", "detail": "IESO's 2023 Indigenous Energy Support Program lists funding for development of a micro-utility operating system by Lac des Mille Lacs First Nation. It indicates continued energy-capacity building but does not specify replacement or expansion of the original PV-battery equipment.", "sourceIds": ["lac-ieso-2023"]}
+    ],
+    "sources": [
+      {"id": "lac-jazz", "title": "JAZZ Solar Solutions project portfolio – Lac des Mille Lacs First Nation", "url": "https://www.jazzsolar.com/", "publisher": "JAZZ Solar Solutions", "kind": "primary"},
+      {"id": "lac-community-2018", "title": "Communiqué – February 6, 2018", "url": "https://lacdesmillelacsfirstnation.ca/news/view/communique---february-6-2018", "publisher": "Lac des Mille Lacs First Nation", "kind": "primary"},
+      {"id": "lac-funding", "title": "LDMLFN successful in securing $531,234 in infrastructure funding", "url": "https://www.lacdesmillelacsfirstnation.ca/news/view/ldmlfn-successful-in-securing-531234-in-infrastructure-funding", "publisher": "Lac des Mille Lacs First Nation", "kind": "primary"},
+      {"id": "lac-thesis", "title": "Renewable Energy and Sustainable Development in a Remote First Nation Community: Lac des Mille Lacs First Nation Solar Project", "url": "https://knowledgecommons.lakeheadu.ca/bitstreams/5473f66e-2d69-460b-95c7-153372dee71a/download", "publisher": "Lakehead University Knowledge Commons", "kind": "primary"},
+      {"id": "lac-ieso-2023", "title": "Indigenous Energy Support Program Funding Recipients", "url": "https://ieso.ca/Get-Involved/Indigenous-Relations/Indigenous-Energy-Support-Program/Funding-Recipients", "publisher": "Independent Electricity System Operator", "kind": "primary"},
+      {"id": "lac-legacy-archive", "title": "Lac des Mille Lacs First Nation (archived legacy record)", "url": "https://web.archive.org/web/20210226183605id_/http://microgridprojects.com/microgrid/lac-des-mille-lacs-first-nation/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "les-anglais-haiti-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "EarthSpark's Les Anglais microgrid is an operating solar-battery-diesel utility that grew from a 14-customer clean-energy pilot in 2012 into a town-scale smart grid. The rebuilt 2019 configuration centers on 93.3 kWp of PV, a 100 kW power-electronic hub, 205.5 kWh of Samsung lithium-ion storage, and a 30 kW Cummins diesel set. EarthSpark now reports more than 500 connected homes and businesses; the most detailed operating factsheet reports 471 connections, 37 streetlights, and average use of 250–325 kWh/day in July 2021.",
+    "status": "Operating. The original 2015 grid was heavily damaged by Hurricane Matthew in October 2016, including destruction of the distribution network and about 40% of its PV modules, while its core power electronics and battery survived. The project was relaunched in 2018 and received a new battery and power-electronics configuration in June 2019 for 24/7 service. EarthSpark's current site lists Les Anglais as operating, but no newer audited reliability, fuel-share, or battery-health dataset was found.",
+    "organizations": [
+      {"name": "EarthSpark International", "role": "Nonprofit project developer, technical-assistance provider, and principal public reporter", "sourceIds": ["anglais-earthspark-current", "anglais-factsheet", "anglais-risk"]},
+      {"name": "Enèji Pwòp S.A.", "role": "Haitian microgrid operations company and local EarthSpark affiliate responsible for electricity service", "sourceIds": ["anglais-earthspark-current", "anglais-factsheet"]},
+      {"name": "EKo Pwòp", "role": "Initial clean-energy retail and micro-utility platform that launched the 2012 pilot", "sourceIds": ["anglais-factsheet"]},
+      {"name": "ZeroBase Energy", "role": "Integrator of the original modular solar-storage-diesel power plant and smart-grid controls", "sourceIds": ["anglais-zerobase"]},
+      {"name": "SparkMeter", "role": "Provider of prepaid smart metering, remote power limits, time-varying tariffs, and grid analytics; the company originated from EarthSpark's metering work", "sourceIds": ["anglais-factsheet", "anglais-earthspark-current"]},
+      {"name": "USAID Powering Agriculture", "role": "Major grant supporter for expansion of the Les Anglais grid and productive-use development", "sourceIds": ["anglais-factsheet"]},
+      {"name": "Les Anglais Energy Committee", "role": "Local governance and community liaison for the microgrid", "sourceIds": ["anglais-factsheet"]}
+    ],
+    "specifications": [
+      {"label": "Solar capacity", "value": "93.3 kWp in the rebuilt system; ZeroBase describes the original 2015 modular plant as 90 kW", "sourceIds": ["anglais-factsheet", "anglais-zerobase"]},
+      {"label": "Power-electronic hub", "value": "100 kW nameplate", "sourceIds": ["anglais-factsheet", "anglais-zerobase"]},
+      {"label": "Battery storage", "value": "205.5 kWh total and 164.4 kWh usable in the 2019 system; EarthSpark sometimes rounds the total to 208 kWh. The original 2015 plant had approximately 400–410 kWh", "sourceIds": ["anglais-factsheet", "anglais-zerobase"]},
+      {"label": "Diesel backup", "value": "30 kW emergency / 27 kW prime, 37.5 / 33.8 kVA, 480 V, 60 Hz", "sourceIds": ["anglais-factsheet"]},
+      {"label": "Distribution network", "value": "7.2/12.47 kV medium voltage and 120/240 V split-phase low voltage, with approximately 1.3 km of MV and 4.5 km of LV line", "sourceIds": ["anglais-factsheet"]},
+      {"label": "Peak customer demand", "value": "Approximately 40 kW, excluding battery charging", "sourceIds": ["anglais-factsheet"]},
+      {"label": "Average daily consumption", "value": "250–325 kWh/day in the July 2021 operating snapshot", "sourceIds": ["anglais-factsheet"]},
+      {"label": "PV production", "value": "Best effective noon output approximately 70 kW and nominal peak daily generation approximately 420 kWh", "sourceIds": ["anglais-factsheet"]},
+      {"label": "Connections and lighting", "value": "471 customer connections and 37 streetlights in July 2021; EarthSpark's current overview reports more than 500 homes and businesses", "sourceIds": ["anglais-factsheet", "anglais-earthspark-current"]},
+      {"label": "Service availability", "value": "The detailed July 2021 snapshot reports 90% uptime, while the same factsheet markets greater than 98% reliability. These appear to use different periods or definitions and should not be collapsed into one figure", "sourceIds": ["anglais-factsheet"]}
+    ],
+    "equipment": [
+      {"category": "Photovoltaic modules", "manufacturer": "SolarWorld", "model": "Sunmodule SW250 Poly", "detail": "239 modules in the rebuilt 360-module array", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Photovoltaic modules", "manufacturer": "SolarWorld", "model": "Sunmodule SW260 Poly", "detail": "61 modules in the rebuilt array", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Photovoltaic modules", "manufacturer": "SolarWorld", "model": "Sunmodule Plus SW295 Mono", "detail": "60 modules in the rebuilt array", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Battery storage", "manufacturer": "Samsung", "model": "22SIPs / ELPM762-00007/E2-M076", "detail": "Nickel-manganese-cobalt lithium-ion system rated 205.5 kWh total and 164.4 kWh usable", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Diesel generator", "manufacturer": "Cummins", "model": "C30D6", "detail": "Emergency backup set rated 30 kW emergency and 27 kW prime", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Hybrid power system", "manufacturer": "ZeroBase Energy", "detail": "Original modular 100 kW solar-storage-diesel plant and integration package commissioned in 2015; later battery and power electronics were reconfigured in 2019", "sourceIds": ["anglais-zerobase", "anglais-factsheet"]},
+      {"category": "Customer metering", "manufacturer": "SparkMeter", "detail": "Prepaid smart meters providing remote monitoring, tariff control, dynamic power limits, and theft/loss analytics", "sourceIds": ["anglais-factsheet", "anglais-earthspark-current"]}
+    ],
+    "technicalDetails": [
+      {"category": "Development timeline", "detail": "EKo Pwòp began with 14 customers in 2012 and reached 54 by October 2013; the town-scale system opened in June 2015 with approximately 430 customers.", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Hurricane damage", "detail": "Hurricane Matthew destroyed the distribution grid and roughly 40% of the PV array in October 2016, but the protected battery and core power electronics survived.", "sourceIds": ["anglais-risk", "anglais-factsheet"]},
+      {"category": "Reconstruction", "detail": "The service relaunched in 2018. New power electronics and the current Samsung battery arrangement entered operation in June 2019, enabling 24-hour service and street lighting.", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Dispatch and energy mix", "detail": "Solar supplies daytime loads and charges the battery; stored energy extends service after sunset, while the 30 kW diesel generator provides emergency and low-renewable backup. No current audited annual solar/diesel percentage is public.", "sourceIds": ["anglais-factsheet", "anglais-zerobase"]},
+      {"category": "Tariffs and load management", "detail": "SparkMeter supports prepaid service, time-varying prices, remotely adjustable customer power limits, usage analytics, and loss/theft detection, allowing the utility to manage scarcity without flat rolling blackouts.", "sourceIds": ["anglais-factsheet"]},
+      {"category": "Customer economics", "detail": "EarthSpark's current overview says grid electricity can cost customers up to 80% less than the kerosene, candles, phone charging, and other prior energy services it displaces; this is a comparative claim, not a published current tariff schedule.", "sourceIds": ["anglais-earthspark-current"]},
+      {"category": "Reliability interpretation", "detail": "The detailed 90% availability figure and headline greater-than-98% reliability claim likely represent different reporting windows or metrics. The underlying factsheet does not reconcile them.", "sourceIds": ["anglais-factsheet"]}
+    ],
+    "sources": [
+      {"id": "anglais-earthspark-current", "title": "Microgrid Electricity in Haiti", "url": "https://www.earthsparkinternational.org/microgrid-electricity-in-haiti.html", "publisher": "EarthSpark International", "kind": "primary"},
+      {"id": "anglais-factsheet", "title": "Les Anglais Microgrid Factsheet", "url": "https://www.earthsparkinternational.org/uploads/1/3/4/4/13442473/factsheet_-_les_anglais_grid_20210731.pdf", "publisher": "EarthSpark International", "kind": "primary"},
+      {"id": "anglais-risk", "title": "Risk assessment: Hurricane Matthew and the Les Anglais microgrid", "url": "https://www.earthsparkinternational.org/blog/risk-assessment", "publisher": "EarthSpark International", "kind": "primary"},
+      {"id": "anglais-zerobase", "title": "Haiti Case Study", "url": "https://zerobaseenergy.com/case-studies/haiti-case-study/", "publisher": "ZeroBase Energy", "kind": "primary"},
+      {"id": "anglais-legacy-archive", "title": "Les Anglais Haiti Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20210420141527id_/http://microgridprojects.com/microgrid/les-anglais-haiti-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "long-beach-microgrid-feasibility-study": {
+    "researchedAt": "2026-07-20",
+    "summary": "The City of Long Beach community microgrid was a 2016 NY Prize Stage 1 feasibility design, not an operating system. The concept linked civic, police, fire, water, wastewater, transit, housing, and shelter facilities with natural-gas generation, 300 kW of PV, 100 kW of battery power, and existing diesel backup. It was technically feasible in the study but economically dependent on resilience value and incentives; Long Beach is absent from NYSERDA's official Stage 2 award list, and no construction or commissioning evidence was found.",
+    "status": "Stage 1 feasibility study completed; unbuilt. Long Beach appears in NYSERDA's Stage 1 roster but not among the eleven Stage 2 awards. Classification as not advanced is an inference from the official award records plus the absence of subsequent construction or operating documentation.",
+    "organizations": [
+      {"name": "City of Long Beach", "role": "NY Prize applicant, sponsor, and owner/host of most proposed critical facilities", "sourceIds": ["longbeach-report", "longbeach-stage1"]},
+      {"name": "NRG Energy", "role": "Feasibility-team lead and prospective third-party project developer", "sourceIds": ["longbeach-report"]},
+      {"name": "NYSERDA", "role": "NY Prize Stage 1 funder and program administrator", "sourceIds": ["longbeach-report", "longbeach-stage1", "longbeach-stage2"]},
+      {"name": "PSEG Long Island / Long Island Power Authority", "role": "Electric distribution utility, interconnection authority, and feeder-data stakeholder", "sourceIds": ["longbeach-report"]},
+      {"name": "Metropolitan Transportation Authority / Long Island Rail Road", "role": "Critical transportation-load stakeholder at Long Beach station", "sourceIds": ["longbeach-report"]},
+      {"name": "Long Beach Housing Authority", "role": "Host/stakeholder for Channel Park Homes and the Michael Valente housing complex", "sourceIds": ["longbeach-report"]},
+      {"name": "Lawrence Berkeley National Laboratory", "role": "Provided DER-CAM optimization modeling used in the feasibility analysis", "sourceIds": ["longbeach-report"]},
+      {"name": "Industrial Economics, Inc.", "role": "Prepared the standardized NY Prize benefit-cost analysis", "sourceIds": ["longbeach-report"]}
+    ],
+    "specifications": [
+      {"label": "Natural-gas distributed generation", "value": "100 kW CHP at the Ice Arena, 500 kW fuel cell at the wastewater-treatment node, and 250 kW generator at the water-treatment plant", "sourceIds": ["longbeach-report"]},
+      {"label": "Dual-fuel generation", "value": "Proposed conversion of an existing 660 kW diesel generator to natural-gas/diesel dual-fuel operation", "sourceIds": ["longbeach-report"]},
+      {"label": "Solar generation", "value": "Two proposed 150 kW PV systems, one at Channel Park Homes and one at the Ice Arena, totaling 300 kW", "sourceIds": ["longbeach-report"]},
+      {"label": "Battery storage", "value": "Two proposed 50 kW systems, 100 kW total. The report does not specify energy capacity or duration; its model assigns about 23.3 MWh/year of throughput to each", "sourceIds": ["longbeach-report"]},
+      {"label": "Additional backup generation", "value": "550 kW of existing diesel standby capacity, comprising 100 kW and 450 kW units, not initially integrated into normal dispatch", "sourceIds": ["longbeach-report"]},
+      {"label": "Aggregate resource capacity", "value": "Approximately 1.91 MW of primary proposed/converted generation and storage power. The report also cites about 2.54 MW available when backup resources and controllable load are included", "sourceIds": ["longbeach-report"]},
+      {"label": "Study-area load", "value": "7,665,824 kWh/year, 1,646 kW coincident peak, and 1,898 kW non-coincident peak", "sourceIds": ["longbeach-report"]},
+      {"label": "Thermal load", "value": "Approximately 770,449 kWh/year with a 186 kW peak", "sourceIds": ["longbeach-report"]},
+      {"label": "Controllable demand", "value": "Approximately 80 kW available for prioritized load shedding", "sourceIds": ["longbeach-report"]},
+      {"label": "Benefit-cost result", "value": "Without outages the modeled net benefit was negative US$8.46 million and benefit-cost ratio 0.5; at 0.9 outage days/year the model reached about US$675,000 net benefit, a 1.0 ratio, and 7.7% internal rate of return", "sourceIds": ["longbeach-report"]}
+    ],
+    "equipment": [
+      {"category": "Combined heat and power", "detail": "Proposed 100 kW natural-gas CHP at the Ice Arena, modeled at 768.252 MWh/year and 12.85 MMBtu/MWh heat rate; supplier was not selected", "sourceIds": ["longbeach-report"]},
+      {"category": "Fuel cell", "detail": "Proposed 500 kW natural-gas fuel cell at the wastewater-treatment node, modeled at 3,157.98 MWh/year and 7.26 MMBtu/MWh; supplier and technology subtype were not finalized", "sourceIds": ["longbeach-report"]},
+      {"category": "Natural-gas generator", "detail": "Proposed 250 kW set at the water-treatment plant, modeled at 788.4 MWh/year and 12.18 MMBtu/MWh", "sourceIds": ["longbeach-report"]},
+      {"category": "Dual-fuel generator", "detail": "Existing 660 kW diesel set proposed for conversion to natural gas/diesel, modeled at 1,130.04 MWh/year and 8.15 MMBtu/MWh", "sourceIds": ["longbeach-report"]},
+      {"category": "Photovoltaics", "detail": "Two proposed 150 kW arrays, each modeled at 550.128 MWh/year; manufacturers were not selected", "sourceIds": ["longbeach-report"]},
+      {"category": "Battery storage", "detail": "Two proposed 50 kW systems for black start, frequency response, PV integration, and dispatch optimization; chemistry, kWh, manufacturer, and model were not defined", "sourceIds": ["longbeach-report"]},
+      {"category": "Microgrid control", "detail": "Conceptual controller integrated with building-energy-management systems, DER dispatch, fast load shedding, protection, and a 15 kV-class connecting line; final vendor was not selected", "sourceIds": ["longbeach-report"]}
+    ],
+    "technicalDetails": [
+      {"category": "Critical facilities", "detail": "The design covered City Hall, police and fire functions, wastewater and water treatment, Channel Park Homes/Michael Valente housing, the Ice Arena shelter, Long Beach LIRR station, and selected feeder loads.", "sourceIds": ["longbeach-report"]},
+      {"category": "Architecture", "detail": "A community-scale 15 kV-class network would coordinate multiple utility feeders and facility nodes, island from the PSEG Long Island system, and prioritize critical loads during outages.", "sourceIds": ["longbeach-report"]},
+      {"category": "Operating strategy", "detail": "The fuel cell and CHP were modeled as high-utilization resources, PV and batteries as variable/fast assets, and diesel or dual-fuel generators as resilience and peaking resources.", "sourceIds": ["longbeach-report"]},
+      {"category": "Black start", "detail": "Battery systems and standby generators were intended to establish local voltage and frequency, restart other DER, and bridge transitions into islanded service.", "sourceIds": ["longbeach-report"]},
+      {"category": "Energy mix", "detail": "The design was primarily natural-gas generation with smaller solar and battery components, plus diesel backup. All annual-output values are planning-model results, not measured generation.", "sourceIds": ["longbeach-report"]},
+      {"category": "Feasibility conclusion", "detail": "The study found the project technically feasible but financially dependent on incentives, third-party structures, and the assumed frequency/severity of grid outages.", "sourceIds": ["longbeach-report"]},
+      {"category": "Outcome", "detail": "The project is present on the official Stage 1 list and absent from the Stage 2 list, supporting classification as an unbuilt feasibility concept.", "sourceIds": ["longbeach-stage1", "longbeach-stage2"]}
+    ],
+    "sources": [
+      {"id": "longbeach-report", "title": "City of Long Beach NY Prize Stage 1 Feasibility Study", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/9-City-of-Long-Beach.pdf", "publisher": "NYSERDA / City of Long Beach", "kind": "primary"},
+      {"id": "longbeach-stage1", "title": "NY Prize Stage 1 Award Winners", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "longbeach-stage2", "title": "NY Prize Stage 2 Awarded Projects", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "longbeach-legacy-archive", "title": "Long Beach Microgrid Feasibility Study (archived legacy record)", "url": "https://web.archive.org/web/20210420125213id_/http://microgridprojects.com/microgrid/long-beach-microgrid-feasibility-study/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "long-island-community-microgrid-project-in-east-hampton": {
+    "researchedAt": "2026-07-20",
+    "summary": "The Long Island Community Microgrid Project (LICMP) was Clean Coalition's NY Prize Stage 1 concept around PSEG Long Island's East Hampton GT substation: 15 MWdc of distributed solar, a centralized 5 MW/25 MWh battery, smaller facility batteries, and existing diesel peakers would serve 3,343 accounts and priority community facilities. The modeled solar fleet could supply roughly half of the study area's annual electricity. LICMP did not advance to an NY Prize Stage 2 award and was not built in this form.",
+    "status": "Feasibility study completed in 2016; unbuilt. LICMP appears on NYSERDA's Stage 1 award roster but not the official Stage 2 list. A separate 76 kW solar/60 kW battery project at East Hampton Town Hall entered service in January 2023; it is not a reduced or commissioned phase of the 15 MW/25 MWh LICMP and must not be merged into this record.",
+    "organizations": [
+      {"name": "Town of East Hampton", "role": "NY Prize applicant, community sponsor, and proposed critical-facility partner", "sourceIds": ["licmp-report", "licmp-stage1"]},
+      {"name": "Clean Coalition", "role": "Project proposer and technical lead for the LICMP feasibility design", "sourceIds": ["licmp-report", "licmp-clean-copy"]},
+      {"name": "PSEG Long Island", "role": "Distribution-system operator, proposed microgrid-controls owner/operator, and procurement/interconnection partner", "sourceIds": ["licmp-report"]},
+      {"name": "Long Island Power Authority", "role": "Owner of the Long Island electric system and utility-policy stakeholder", "sourceIds": ["licmp-report"]},
+      {"name": "NYSERDA", "role": "NY Prize Stage 1 funder and program administrator", "sourceIds": ["licmp-report", "licmp-stage1", "licmp-stage2"]},
+      {"name": "Suffolk County Water Authority", "role": "Proposed critical-load host for two water facilities", "sourceIds": ["licmp-report"]},
+      {"name": "Springs Fire District", "role": "Proposed critical-load and emergency-response host", "sourceIds": ["licmp-report"]},
+      {"name": "National Renewable Energy Laboratory", "role": "Provided JEDI employment/economic-impact modeling", "sourceIds": ["licmp-report"]},
+      {"name": "Industrial Economics, Inc.", "role": "Prepared the standardized NY Prize benefit-cost evaluation", "sourceIds": ["licmp-report"]},
+      {"name": "New York Power Authority", "role": "Developer of the separate Town Hall solar-plus-storage project energized in 2023, not the LICMP", "sourceIds": ["licmp-nypa-2023"]}
+    ],
+    "specifications": [
+      {"label": "Proposed solar", "value": "15 MWdc distributed across the study area: 10 MW already contemplated through separate feed-in-tariff procurement plus 5 MW of additional PV enabled by storage", "sourceIds": ["licmp-report", "licmp-clean-copy"]},
+      {"label": "Central battery", "value": "5 MW / 25 MWh, five-hour duration, proposed on the low-voltage side of East Hampton substation Bank 4", "sourceIds": ["licmp-report"]},
+      {"label": "Distributed storage", "value": "Additional smaller batteries at critical facilities; sizes, chemistry, and manufacturers were not finalized", "sourceIds": ["licmp-report"]},
+      {"label": "Existing dispatchable generation", "value": "6 MW of distillate-fueled peaking generation at the substation, consisting of three 2 MW units, plus separate facility backup generators", "sourceIds": ["licmp-report"]},
+      {"label": "Customers served", "value": "3,343 utility accounts, representing roughly 10,000 residents and employees in the microgrid area", "sourceIds": ["licmp-report"]},
+      {"label": "Annual solar contribution", "value": "The 15 MW portfolio was modeled to provide approximately 50% of annual electricity consumed within the LICMP area", "sourceIds": ["licmp-report"]},
+      {"label": "Peak-load reduction", "value": "5 MW of storage plus approximately 3 MW effective coincident PV contribution, for an 8 MW modeled peak reduction", "sourceIds": ["licmp-report"]},
+      {"label": "Avoided infrastructure", "value": "Study proponents estimated approximately US$38 million in avoided transmission investment", "sourceIds": ["licmp-report", "licmp-clean-copy"]},
+      {"label": "Project cost", "value": "Approximately US$40.4 million including the optional additional 5 MW of PV, or US$27.6 million without it, in the feasibility estimate", "sourceIds": ["licmp-report"]},
+      {"label": "Emissions result", "value": "More than 7 million pounds of annual carbon-dioxide reduction projected; this was a model result, not measured performance", "sourceIds": ["licmp-report"]}
+    ],
+    "equipment": [
+      {"category": "Photovoltaics", "detail": "Multiple distributed systems totaling 15 MWdc; individual host sites, module makers, and inverter models were to be determined through procurement", "sourceIds": ["licmp-report"]},
+      {"category": "Central battery storage", "detail": "Proposed 5 MW / 25 MWh substation-sited system. Chemistry and vendor were not selected in the feasibility report", "sourceIds": ["licmp-report"]},
+      {"category": "Facility batteries", "detail": "Smaller distributed systems proposed at priority facilities to support local islanding and black start; final sizes were not defined", "sourceIds": ["licmp-report"]},
+      {"category": "Existing peaking generators", "detail": "Three existing 2 MW distillate-oil units at the East Hampton GT substation, reserved primarily for resilience in the concept", "sourceIds": ["licmp-report"]},
+      {"category": "Microgrid control", "detail": "Conceptual monitoring, communications, and control platform, called MC2 in the report, integrated with PSEG Long Island smart-grid systems; vendor and model were not finalized", "sourceIds": ["licmp-report"]},
+      {"category": "Advanced inverters", "detail": "PV and storage inverters were expected to provide voltage and reactive-power support and participate in coordinated island operation", "sourceIds": ["licmp-report"]},
+      {"category": "Separate Town Hall project", "detail": "The 2023 municipal installation comprises 76 kW of rooftop PV and a 60 kW battery; it is documented here only to prevent project conflation", "sourceIds": ["licmp-nypa-2023"]}
+    ],
+    "technicalDetails": [
+      {"category": "Topology", "detail": "The proposed microgrid centered on East Hampton GT substation Bank 4 and two distribution feeders, combining a large centralized battery with distributed PV and critical-facility resources.", "sourceIds": ["licmp-report"]},
+      {"category": "Critical loads", "detail": "Priority sites included two Suffolk County Water Authority plants and the Springs Fire District; the architecture allowed expansion to airport and other emergency-service facilities.", "sourceIds": ["licmp-report"]},
+      {"category": "Resilience modes", "detail": "The design called for feeder- or transmission-outage islanding, black start, tiered load priorities, and continued autonomous operation if communications with higher-level systems failed.", "sourceIds": ["licmp-report"]},
+      {"category": "Controls", "detail": "MC2 would use load, PV, weather, battery, and cost forecasts to schedule resources, manage state of charge, coordinate protection, and minimize use of diesel generators.", "sourceIds": ["licmp-report"]},
+      {"category": "Energy mix", "detail": "The feasibility model's approximately 50% annual solar share was prospective. Grid power would supply most of the balance in normal operation, while storage shifts solar and existing diesel provides emergency firm capacity.", "sourceIds": ["licmp-report"]},
+      {"category": "Economic interpretation", "detail": "Clean Coalition's analysis emphasized transmission deferral, resilience, and jobs, while the NY Prize standardized methodology tested different assumptions. All figures are planning estimates because the project was not constructed.", "sourceIds": ["licmp-report", "licmp-clean-copy"]},
+      {"category": "Outcome", "detail": "LICMP is listed among Stage 1 winners but not among NYSERDA's eleven Stage 2 awards; the unbuilt classification is therefore an evidence-based inference from official program records.", "sourceIds": ["licmp-stage1", "licmp-stage2"]},
+      {"category": "Project disambiguation", "detail": "The 2023 Town Hall system was developed separately by NYPA and Inclusive Prosperity Capital. Its 76 kW/60 kW scale and municipal-building scope are not evidence that the 15 MW LICMP was commissioned.", "sourceIds": ["licmp-nypa-2023"]}
+    ],
+    "sources": [
+      {"id": "licmp-report", "title": "Long Island Community Microgrid Project – NY Prize Stage 1 Feasibility Study", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/studies/8-Town-of-East-Hampton.pdf", "publisher": "NYSERDA / Town of East Hampton / Clean Coalition", "kind": "primary"},
+      {"id": "licmp-clean-copy", "title": "Final LICMP Feasibility Report", "url": "https://clean-coalition.org/wp-content/uploads/2018/12/FINAL-LICMP-Feasibility-Report-for-CC-website-22_kc-30-Aug-2016.pdf", "publisher": "Clean Coalition", "kind": "primary"},
+      {"id": "licmp-stage1", "title": "NY Prize Stage 1 Award Winners", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/NY-Prize-Stage-1-Award-Winners.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "licmp-stage2", "title": "NY Prize Stage 2 Awarded Projects", "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/NY-Prize/ny-prize-stage-2-awarded-projects.pdf", "publisher": "NYSERDA", "kind": "primary"},
+      {"id": "licmp-nypa-2023", "title": "East Hampton Solar Plus Storage Project Operational", "url": "https://www.nypa.gov/News/Press-Releases/2023/20230420-solar-plus-storage-project-long-island", "publisher": "New York Power Authority", "kind": "primary"},
+      {"id": "licmp-legacy-archive", "title": "Long Island Community Microgrid Project in East Hampton (archived legacy record)", "url": "https://web.archive.org/web/20210420183831id_/http://microgridprojects.com/microgrid/long-island-community-microgrid-project-in-east-hampton/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "longmeadow-headquarters": {
+    "researchedAt": "2026-07-20",
+    "summary": "ABB commissioned a grid-connected industrial microgrid at its 96,000 m² Longmeadow headquarters and manufacturing campus near Johannesburg in June 2016. The verified configuration is approximately 750–760 kWp of rooftop solar, an ABB PowerStore 1 MVA/380 kWh lithium-ion system, ABB Microgrid Plus control, and diesel backup. Official South African reporting in 2023 said solar supplied about 30% of the campus's roughly 2,400 MWh annual consumption; legacy claims of a wind turbine and flywheel do not match ABB's project documentation.",
+    "status": "Commissioned and publicly described as operating through at least 2023. ABB and successor Hitachi Energy continued to use Longmeadow as an operational microgrid reference after commissioning. Exact 2025–2026 battery state of health, diesel runtime, and recent reliability metrics are not public, so continued operation of every original component cannot be independently verified.",
+    "organizations": [
+      {"name": "ABB South Africa", "role": "Campus owner, project developer, system supplier, and original operator", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch", "longmeadow-sanews-2023"]},
+      {"name": "ABB Power Grids", "role": "Original supplier organization for PowerStore, Microgrid Plus, and grid-integration technology", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"name": "Hitachi Energy", "role": "Successor to ABB Power Grids and later corporate reporter using Longmeadow as a microgrid reference", "sourceIds": ["longmeadow-hitachi"]},
+      {"name": "South African Department of Trade, Industry and Competition", "role": "Government source for the 2023 campus energy-use and solar-share update", "sourceIds": ["longmeadow-sanews-2023"]}
+    ],
+    "specifications": [
+      {"label": "Rooftop solar", "value": "ABB's commissioning material reports 750 kW over approximately 5,000 m²; a 2023 South African government update reports 760 kWp", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch", "longmeadow-sanews-2023"]},
+      {"label": "Battery storage", "value": "1 MVA / 380 kWh lithium-ion ABB PowerStore", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"label": "Battery support duration", "value": "Approximately 20 minutes at full campus load, according to ABB's project sheet", "sourceIds": ["longmeadow-abb-sheet"]},
+      {"label": "Campus peak load", "value": "Approximately 1 MW", "sourceIds": ["longmeadow-abb-sheet"]},
+      {"label": "Diesel backup", "value": "Later ABB/industry documentation describes two remaining 600 kVA generators; initial launch material refers to four backup generators/feed sources. This likely reflects phased retirement or differing counting and should be preserved as an evolution", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"label": "Annual campus electricity", "value": "Approximately 2,400 MWh/year in the 2023 government update", "sourceIds": ["longmeadow-sanews-2023"]},
+      {"label": "Solar energy share", "value": "Approximately 30% of annual campus electricity in 2023", "sourceIds": ["longmeadow-sanews-2023"]},
+      {"label": "Peak solar penetration", "value": "Up to 100% of instantaneous campus demand under favorable conditions", "sourceIds": ["longmeadow-abb-sheet"]},
+      {"label": "Avoided emissions", "value": "ABB projected more than 1,000 tonnes of carbon-dioxide reduction per year", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]}
+    ],
+    "equipment": [
+      {"category": "Battery energy storage", "manufacturer": "ABB", "model": "PowerStore", "detail": "1 MVA/380 kWh lithium-ion grid-forming storage system for frequency, voltage, transition, and renewable-integration services; cell maker is not disclosed", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"category": "Microgrid control", "manufacturer": "ABB", "model": "Microgrid Plus", "detail": "Distributed control system coordinating PV, storage, utility-grid connection, diesel backup, and load priorities", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"category": "Photovoltaics", "detail": "Approximately 750–760 kWp of rooftop modules across about 5,000 m²; commissioning publicity described roughly 2,800 panels, but module and inverter models are not disclosed in the cited technical sheet", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-sanews-2023"]},
+      {"category": "Diesel generation", "detail": "Two 600 kVA sets are identified in later configuration reporting; manufacturers and models are not disclosed", "sourceIds": ["longmeadow-abb-sheet"]},
+      {"category": "Remote monitoring", "manufacturer": "ABB", "detail": "Cloud-connected remote service and visualization used to monitor plant performance and support diagnostics", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-hitachi"]},
+      {"category": "Legacy correction", "detail": "No wind turbine or flywheel is part of ABB's verified Longmeadow configuration. The 380 kWh storage asset is lithium-ion PowerStore, not a flywheel", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]}
+    ],
+    "technicalDetails": [
+      {"category": "Operating modes", "detail": "The system can operate grid-connected or islanded, with PowerStore establishing voltage and frequency and supporting transitions when the utility supply fails.", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-abb-launch"]},
+      {"category": "Dispatch", "detail": "Microgrid Plus prioritizes available PV, uses battery power for rapid balancing and transition support, and starts diesel generation when longer-duration firm supply is required.", "sourceIds": ["longmeadow-abb-sheet"]},
+      {"category": "Grid services", "detail": "PowerStore provides grid-forming capability, frequency and voltage regulation, renewable smoothing, and power-quality support in addition to short-duration backup.", "sourceIds": ["longmeadow-abb-sheet", "longmeadow-hitachi"]},
+      {"category": "Facility scale", "detail": "The 96,000 m² site includes ABB South Africa's headquarters, manufacturing, and logistics operations and employed approximately 1,000 people at commissioning.", "sourceIds": ["longmeadow-abb-launch"]},
+      {"category": "Measured energy mix", "detail": "The 2023 update's approximately 30% solar share is the strongest recent official energy-mix evidence. Grid electricity supplies much of the balance in normal operation, with diesel reserved for outages and resilience.", "sourceIds": ["longmeadow-sanews-2023"]},
+      {"category": "Performance evidence limit", "detail": "Public sources provide nameplate, architectural, and annual solar-share information but no recent battery degradation, diesel-fuel consumption, outage count, or islanding-success dataset.", "sourceIds": ["longmeadow-sanews-2023", "longmeadow-hitachi"]},
+      {"category": "Corporate lineage", "detail": "Hitachi Energy's later references reflect the transfer of ABB's Power Grids business; they do not mean the Longmeadow campus changed from ABB ownership to Hitachi Energy ownership.", "sourceIds": ["longmeadow-hitachi", "longmeadow-sanews-2023"]}
+    ],
+    "sources": [
+      {"id": "longmeadow-abb-sheet", "title": "Longmeadow Microgrid Project Data Sheet", "url": "https://resources.news.e.abb.com/attachments/published/38167/sv-SE/CBEF037E121A/Data-sheet-Longmeadow-FINAL.pdf", "publisher": "ABB", "kind": "primary"},
+      {"id": "longmeadow-abb-launch", "title": "ABB inaugurates microgrid in South Africa, boosting renewables and power reliability", "url": "https://resources.news.e.abb.com/attachments/published/45805/en-US/B349CC895347/ABB-inaugurates-microgrid-in-South-Africa--boosting-renewables-and-power-reliability.pdf", "publisher": "ABB", "kind": "primary"},
+      {"id": "longmeadow-sanews-2023", "title": "ABB invests over R10m to complete additional technology transfer", "url": "https://www.sanews.gov.za/south-africa/abb-invests-over-r10m-complete-additional-technology-transfer", "publisher": "South African Government News Agency", "kind": "primary"},
+      {"id": "longmeadow-hitachi", "title": "ABB's microgrid technology can help bridge the power gap in Africa", "url": "https://www.hitachienergy.com/pl/pl/news-and-events/features/2021/03/abb-s-microgrid-technology-can-help-bridge-the-power-gap-in-africa", "publisher": "Hitachi Energy", "kind": "primary"},
+      {"id": "longmeadow-legacy-archive", "title": "Longmeadow Headquarters (archived legacy record)", "url": "https://web.archive.org/web/20210420122403id_/http://microgridprojects.com/microgrid/longmeadow-headquarters/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "los-alamos-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Los Alamos's microgrid was the NEDO Japan–U.S. Collaborative Smart Grid Demonstration on Los Alamos County's municipal distribution system, not an internal Los Alamos National Laboratory microgrid. The project paired a nominal 1 MW landfill PV plant with 1.8 MW/8.3 MWh of hybrid storage—NGK's 1 MW/6 MWh sodium-sulfur battery and Hitachi's 0.8 MW/2.3 MWh lead-acid system—under Toshiba's μEMS. Full demonstration operation began in September 2012 and the bilateral program concluded in 2014–2015.",
+    "status": "Historical demonstration, now partially retired. County procurement documents issued in October 2024 state that the 1 MW/6 MWh sodium-sulfur battery had been unmaintained, unheated, and uncharged for at least 36 months and was at end of useful life. The County approved a roughly US$945,240 removal contract in December 2024 with a May 31, 2025 target; public completion evidence was not located. The present status of the separate lead-acid bank and full original μEMS configuration is unclear, so the 2012 hybrid system should not be labeled currently intact or fully operational.",
+    "organizations": [
+      {"name": "New Energy and Industrial Technology Development Organization", "role": "Japanese commissioning agency, funder, and program manager for the bilateral smart-grid demonstration", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"name": "Los Alamos County Department of Public Utilities", "role": "Host utility, distribution-system owner, demonstration operator counterpart, and owner of the retired sodium-sulfur battery", "sourceIds": ["losalamos-nedo", "losalamos-county-plan", "losalamos-removal-rfp"]},
+      {"name": "State of New Mexico", "role": "United States government partner in the Japan–U.S. demonstration", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"name": "Toshiba", "role": "Japanese project coordinator and supplier of the μEMS supervisory energy-management system", "sourceIds": ["losalamos-nedo"]},
+      {"name": "Hitachi", "role": "Supplier of the 0.8 MW/2.3 MWh lead-acid storage system and associated power-conversion technology", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"name": "NGK Insulators", "role": "Supplier of the 1 MW/6 MWh sodium-sulfur battery", "sourceIds": ["losalamos-nedo", "losalamos-removal-rfp"]},
+      {"name": "Kyocera", "role": "PV and smart-house technology participant, including HEMS coordination", "sourceIds": ["losalamos-nedo"]},
+      {"name": "Landis+Gyr", "role": "Smart-metering, head-end, and meter-data-management technology participant", "sourceIds": ["losalamos-nedo"]},
+      {"name": "Los Alamos National Laboratory and Sandia National Laboratories", "role": "Research and evaluation partners; LANL was not the owner of this municipal-distribution microgrid", "sourceIds": ["losalamos-nedo"]},
+      {"name": "Renewance", "role": "Contractor selected for end-of-life removal and disposal/recycling of the sodium-sulfur system", "sourceIds": ["losalamos-removal-rfp", "losalamos-council-2024"]}
+    ],
+    "specifications": [
+      {"label": "Photovoltaic plant", "value": "Nominal 1 MW; project documentation also identifies approximately 910 kW installed, reflecting rounded project nameplate versus as-built output/rating", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"label": "PV site", "value": "Approximately 4,000 modules on about 10 acres of a former landfill", "sourceIds": ["losalamos-hitachi-launch"]},
+      {"label": "Sodium-sulfur battery", "value": "1 MW / 6 MWh", "sourceIds": ["losalamos-nedo", "losalamos-removal-rfp"]},
+      {"label": "Lead-acid battery", "value": "0.8 MW / 2.3 MWh", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"label": "Combined storage", "value": "1.8 MW / 8.3 MWh across the two battery technologies", "sourceIds": ["losalamos-nedo"]},
+      {"label": "Demonstration feeder", "value": "One residential feeder serving approximately 1,600 homes; around 900 households volunteered for demand-response trials", "sourceIds": ["losalamos-nedo"]},
+      {"label": "PV smoothing result", "value": "Demonstration load factor improved from 79.7% to 90.2% on a sunny day and from 83.5% to 95.1% on a cloudy day", "sourceIds": ["losalamos-nedo"]},
+      {"label": "Demand-response result", "value": "Best reported summer critical-peak-pricing trial reduced peak demand by 10.49% among participating customers", "sourceIds": ["losalamos-nedo"]},
+      {"label": "Smart house", "value": "Approximately 3.4–3.44 kW of PV and 24 kWh of lithium-ion storage, plus HEMS-managed appliances and heat-pump water heating", "sourceIds": ["losalamos-nedo"]},
+      {"label": "NAS removal contract", "value": "Approximately US$945,240 approved in December 2024, with contingency handled separately and a target completion date of May 31, 2025", "sourceIds": ["losalamos-council-2024"]}
+    ],
+    "equipment": [
+      {"category": "Sodium-sulfur battery", "manufacturer": "NGK Insulators", "detail": "1 MW/6 MWh long-duration bank used for scheduled energy shifting and sustained PV balancing; later declared end-of-life and contracted for removal", "sourceIds": ["losalamos-nedo", "losalamos-removal-rfp", "losalamos-council-2024"]},
+      {"category": "Lead-acid battery", "manufacturer": "Hitachi", "detail": "0.8 MW/2.3 MWh high-response bank used for short-timescale PV fluctuation control; current condition is not documented", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"category": "Microgrid energy management", "manufacturer": "Toshiba", "model": "μEMS", "detail": "Forecasting, resource scheduling, hybrid-battery optimization, supply-demand balancing, and coordination with higher-level utility systems", "sourceIds": ["losalamos-nedo"]},
+      {"category": "Photovoltaics", "manufacturer": "Kyocera", "detail": "Coordination and module technology for the nominal 1 MW landfill array; exact module model is not given in the cited program summary", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"category": "Advanced metering", "manufacturer": "Landis+Gyr", "detail": "Smart meters, head-end system, and meter-data-management components supporting demand-response trials", "sourceIds": ["losalamos-nedo"]},
+      {"category": "Distribution switchgear", "manufacturer": "S&C Electric", "model": "Vista", "detail": "Automated switchgear used in the County distribution architecture", "sourceIds": ["losalamos-county-plan"]},
+      {"category": "Protection relays", "manufacturer": "Schweitzer Engineering Laboratories", "model": "SEL-451", "detail": "Bidirectional protection and automation relays associated with microgrid switching", "sourceIds": ["losalamos-county-plan"]},
+      {"category": "Smart-house equipment", "detail": "Kyocera/Sharp/NEC collaborative package with 3.4–3.44 kW PV, 24 kWh lithium-ion battery, HEMS, controllable appliances, and a heat-pump water heater", "sourceIds": ["losalamos-nedo"]}
+    ],
+    "technicalDetails": [
+      {"category": "Hybrid-storage control", "detail": "The μEMS assigned slower, sustained deviations to the 6 MWh sodium-sulfur bank and faster PV fluctuations to the 0.8 MW lead-acid system, while optimizing charge state and day-ahead dispatch.", "sourceIds": ["losalamos-nedo"]},
+      {"category": "Demonstration period", "detail": "Construction and staged testing began under the FY2009–2014 bilateral program; full operation was announced in September 2012 and the demonstration concluded around 2014–2015.", "sourceIds": ["losalamos-nedo", "losalamos-hitachi-launch"]},
+      {"category": "Islanding limitation", "detail": "County reliability documentation says island operation required a complete feeder shutdown and reconfiguration before and after the islanded period, and that the feature had never been tested at the time of that plan. It should not be described as proven seamless transfer.", "sourceIds": ["losalamos-county-plan"]},
+      {"category": "Renewable-share interpretation", "detail": "NEDO tested conditions in which PV supplied up to about 75% of energy at the demonstration site. This was a test condition, not a verified annual share for Los Alamos County's entire electric system.", "sourceIds": ["losalamos-nedo"]},
+      {"category": "End-of-life finding", "detail": "The 2024 County RFP reports that the NAS cells had been unmaintained, unheated, and uncharged or self-discharged for at least 36 months, making the bank unavailable since at least roughly 2021.", "sourceIds": ["losalamos-removal-rfp"]},
+      {"category": "Retirement update", "detail": "County Council approved Renewance's removal contract in December 2024 with a May 2025 target. A public completion notice was not found, so removal should be described as contracted rather than definitively completed.", "sourceIds": ["losalamos-council-2024"]},
+      {"category": "Ownership clarification", "detail": "The host was Los Alamos County's municipal utility. LANL and Sandia participated in research, but the project is not evidence of a LANL-campus microgrid.", "sourceIds": ["losalamos-nedo", "losalamos-county-plan"]},
+      {"category": "Current-system boundary", "detail": "Recent large solar-storage developments in the region are separate projects. They must not be treated as upgrades that keep this original 1 MW NEDO demonstration operational.", "sourceIds": ["losalamos-removal-rfp"]}
+    ],
+    "sources": [
+      {"id": "losalamos-nedo", "title": "Japan-U.S. Collaborative Smart Grid Demonstration Project in New Mexico", "url": "https://www.nedo.go.jp/content/100763123.pdf", "publisher": "New Energy and Industrial Technology Development Organization", "kind": "primary"},
+      {"id": "losalamos-hitachi-launch", "title": "Japan-U.S. Collaborative Smart Grid Demonstration Project Begins Full-scale Operations", "url": "https://www.hitachi.com/New/cnews/120918.html", "publisher": "Hitachi", "kind": "primary"},
+      {"id": "losalamos-county-plan", "title": "Electric Distribution Reliability Plan", "url": "https://www.losalamosnm.us/files/sharedassets/public/v/1/departments/utilities/documents/electric-distribution-reliability-plan.pdf", "publisher": "Los Alamos County Department of Public Utilities", "kind": "primary"},
+      {"id": "losalamos-removal-rfp", "title": "RFP25-13: Removal of Sodium Sulfur Battery System", "url": "https://www.losalamosnm.us/files/sharedassets/public/v/1/departments/procurement/rfp25-13/rfp25-13-removal-of-sodium-sulfur-battery-system_final_w_attachments.pdf", "publisher": "Los Alamos County", "kind": "primary"},
+      {"id": "losalamos-council-2024", "title": "December 17, 2024 County Council agenda packet – sodium-sulfur battery removal contract", "url": "https://losalamos.legistar.com/View.ashx?GUID=d7919ee3-3fc0-4c2c-9be3-77e6251d5298&ID=153345&M=AO&N=RGVjZW1iZXIgMTcsIDIwMjQgQ29tcGxldGUgQWdlbmRhIFBhY2tldC5wZGY%3D", "publisher": "Los Alamos County Council", "kind": "primary"},
+      {"id": "losalamos-legacy-archive", "title": "Los Alamos Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20210420201342id_/http://microgridprojects.com/microgrid/los-alamos-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  },
+  "mannheim-wallstadt-microgrid": {
+    "researchedAt": "2026-07-20",
+    "summary": "Mannheim-Wallstadt was a European field-test microgrid in an ecological residential estate of roughly 580 households and 1,200 inhabitants. MVV Energie developed it under the EU FP6 More Microgrids program to test demand response, medium- and low-voltage islanding, distributed PV and CHP, storage, and customer interfaces. Major trials ran from 2006 through 2009; public sources do not confirm that the exact research configuration remains in operation in 2026.",
+    "status": "Historical research demonstration completed around 2009. The residential district remains part of Mannheim's electricity system and its lessons fed later smart-grid work, including Model City Mannheim, but no current primary documentation confirms continued operation of the original islanding controller, flywheel, Sunny Backup battery, fuel cell, or participant equipment as one microgrid. It should not simply be labeled currently operational.",
+    "organizations": [
+      {"name": "MVV Energie", "role": "Local utility, project developer, system integrator, and field-test lead", "sourceIds": ["wallstadt-ieee", "wallstadt-lbnl", "wallstadt-symposium"]},
+      {"name": "European Commission FP6 More Microgrids", "role": "Research program and funding framework for the field demonstration", "sourceIds": ["wallstadt-ieee", "wallstadt-lbnl"]},
+      {"name": "Wallstadt residents and private DER owners", "role": "Participants in demand-response, solar-use, and distributed-generation trials", "sourceIds": ["wallstadt-ieee", "wallstadt-smartrue"]},
+      {"name": "Mannheim-Wallstadt municipal kindergarten / Kinderhaus", "role": "Host of the low-voltage islanding test, VisiKid display, PV, storage, and controllable loads", "sourceIds": ["wallstadt-lbnl", "wallstadt-symposium"]},
+      {"name": "SMA Solar Technology", "role": "Supplier of the Sunny Backup battery-inverter platform used at the Kinderhaus", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]}
+    ],
+    "specifications": [
+      {"label": "Community scale", "value": "Approximately 1,200 inhabitants and 580 households in the ecological estate", "sourceIds": ["wallstadt-lbnl", "wallstadt-symposium"]},
+      {"label": "Photovoltaics", "value": "Project descriptions vary by phase: one reports a 3.8 kW project array plus five private arrays totaling 30 kW, or 33.8 kW; another guide lists 23.5 kW total PV. The discrepancy likely reflects different dates or system boundaries", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Fuel cell", "value": "4.7 kW", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Combined heat and power", "value": "Two principal electrical CHP ratings of 9 kW and 5.5 kW, 14.5 kW total, with a privately owned WhisperGen unit also discussed in project material", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Flywheel", "value": "1.2 kW power rating; an energy capacity is not published in the cited summaries", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Kinderhaus battery buffer", "value": "Sunny Backup system capable of approximately 10 kW for one hour, implying about 10 kWh usable at that stated duty", "sourceIds": ["wallstadt-symposium"]},
+      {"label": "District electrical demand", "value": "Approximately 80–230 kW", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Controllable loads", "value": "Approximately 60 kW of ventilation and 48 kW of electric-boiler load", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"label": "Distribution voltage", "value": "Field tests addressed both 20 kV medium-voltage operation and a low-voltage Kinderhaus island", "sourceIds": ["wallstadt-ieee", "wallstadt-symposium"]}
+    ],
+    "equipment": [
+      {"category": "Photovoltaics", "detail": "A project-owned 3.8 kW system and multiple privately owned arrays; aggregate capacity differs across dated sources and module/inverter makes are not consistently published", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"category": "Fuel cell", "detail": "4.7 kW distributed generator; manufacturer, model, chemistry, and fuel-processing configuration are not identified in the cited project summaries", "sourceIds": ["wallstadt-symposium"]},
+      {"category": "Combined heat and power", "detail": "9 kW and 5.5 kW electrical CHP units plus a privately installed WhisperGen micro-CHP referenced in the broader trial", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"category": "Flywheel storage", "detail": "1.2 kW short-duration storage/power-quality unit. Published sources do not provide enough information to infer kWh or model", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"category": "Battery inverter", "manufacturer": "SMA Solar Technology", "model": "Sunny Backup", "detail": "Kinderhaus islanding and grid-forming system with a battery buffer documented at 10 kW for one hour", "sourceIds": ["wallstadt-symposium"]},
+      {"category": "Customer interface", "model": "Energy Butler", "detail": "Home display/automation interface trialed with about 20 customers in 2008 to coordinate flexible demand with renewable availability", "sourceIds": ["wallstadt-smartrue", "wallstadt-lbnl"]},
+      {"category": "Educational display", "model": "VisiKid", "detail": "Kindergarten visualization showing real-time PV production and energy behavior", "sourceIds": ["wallstadt-symposium", "wallstadt-smartrue"]},
+      {"category": "Controllable loads", "detail": "Ventilation and electric-boiler loads used for balancing and island tests", "sourceIds": ["wallstadt-symposium"]}
+    ],
+    "technicalDetails": [
+      {"category": "Research timeline", "detail": "The 'Washing with the Sun' customer trial ran in summer 2006, Energy Butler home trials followed in 2008, and final islanding field tests were carried out in 2009.", "sourceIds": ["wallstadt-ieee", "wallstadt-lbnl", "wallstadt-smartrue"]},
+      {"category": "Demand response", "detail": "More than 20 households and the daycare center shifted washing and other flexible loads away from evening or cloudy periods toward times of local solar production.", "sourceIds": ["wallstadt-ieee", "wallstadt-smartrue"]},
+      {"category": "Islanding test", "detail": "The Kinderhaus low-voltage section, containing two PV systems, Sunny Backup storage, and controllable loads, was separated and resynchronized during field trials.", "sourceIds": ["wallstadt-symposium", "wallstadt-lbnl"]},
+      {"category": "Frequency performance", "detail": "Published demonstration summaries report a brief frequency rise of about 2 Hz when loads were shed during islanding; control was described as imperfect but acceptable before reconnection.", "sourceIds": ["wallstadt-symposium"]},
+      {"category": "Energy mix", "detail": "Documented DER capacity was much smaller than the district's 80–230 kW load, so the public grid supplied most normal-operation energy. Island tests covered a limited subsection rather than continuously powering all 580 households.", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"category": "Storage interpretation", "detail": "The 1.2 kW flywheel and the approximately 10 kWh Sunny Backup battery are separate assets or phases. They should not be combined into one storage device or described as a 1.2 kWh battery.", "sourceIds": ["wallstadt-symposium", "wallstadt-hie"]},
+      {"category": "Successor work", "detail": "Lessons from Wallstadt contributed to later Mannheim smart-grid activities such as Model City Mannheim, but those successor deployments are distinct projects and do not prove the original hardware remains active.", "sourceIds": ["wallstadt-lbnl", "wallstadt-smartrue"]},
+      {"category": "Current-evidence limit", "detail": "No 2025–2026 primary source was found that inventories the original DER, storage, controls, and islanding equipment or reports current microgrid operation.", "sourceIds": ["wallstadt-symposium", "wallstadt-smartrue"]}
+    ],
+    "sources": [
+      {"id": "wallstadt-ieee", "title": "Long Term European Field Tests for Microgrids", "url": "https://doi.org/10.1109/PCCON.2007.373033", "publisher": "IEEE Power Conversion Conference", "kind": "primary"},
+      {"id": "wallstadt-lbnl", "title": "Microgrids: An Overview of Ongoing Research, Development, and Demonstration Projects", "url": "https://escholarship.org/content/qt3p3476zq/qt3p3476zq.pdf", "publisher": "Lawrence Berkeley National Laboratory", "kind": "primary"},
+      {"id": "wallstadt-symposium", "title": "MVV Mannheim-Wallstadt Microgrid", "url": "https://microgrid-symposiums.org/microgrid-examples-and-demonstrations/mvv-mannheim-wallstadt-microgrid/", "publisher": "International Microgrid Symposiums", "kind": "secondary"},
+      {"id": "wallstadt-hie", "title": "A Guide to Microgrids", "url": "https://www.hie.co.uk/media/5957/a-guide-to-microgrids.pdf", "publisher": "Highlands and Islands Enterprise", "kind": "secondary"},
+      {"id": "wallstadt-smartrue", "title": "Wallstadt", "url": "https://smartrue.gr/en/wallstadt-3/", "publisher": "Smartrue", "kind": "secondary"},
+      {"id": "wallstadt-legacy-archive", "title": "Mannheim-Wallstadt Microgrid (archived legacy record)", "url": "https://web.archive.org/web/20210420132045id_/http://microgridprojects.com/microgrid/mannheim-wallstadt-microgrid/", "publisher": "Microgrid Projects / Internet Archive", "kind": "archive"}
+    ]
+  }
+}
